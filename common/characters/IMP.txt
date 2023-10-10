@@ -13,7 +13,6 @@ characters={
 			ideology=imperial
 			traits={ headstrong sith_presence lord_vader }
 			expire="1965.1.1.1"
-			id=-1
 		}
 		advisor={
 			cost = 100
@@ -53,7 +52,6 @@ characters={
 			ideology=liberalism
 			traits={ imperial_connections respected_imperial imperial_doctrine }
 			expire="1965.1.1.1"
-			id=-1
 		}
 		advisor={
 			slot = army_chief
@@ -102,7 +100,6 @@ characters={
 			defense_skill=4
 			planning_skill=4
 			logistics_skill=4
-			id = 1950
 		}
 	}
 
@@ -121,7 +118,6 @@ characters={
 			defense_skill=1
 			planning_skill=2
 			logistics_skill=1
-			id = 1952
 		}
 	}
 
@@ -141,7 +137,6 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
-			id = 1953
 		}
 	}
 	
@@ -267,7 +262,6 @@ characters={
 			defense_skill=3
 			planning_skill=1
 			logistics_skill=2
-			id = 1951
 		}
 		advisor={
 			cost = 100
@@ -468,7 +462,6 @@ characters={
 			defense_skill=1
 			planning_skill=1
 			logistics_skill=1
-			id = 1954
 		}
 	}
 	
