@@ -3,7 +3,6 @@ ideas = {
 		sw_equipment_buff = {
 			allowed = {
 				or = {
-					original_tag = REA
 					original_tag = IMP
 				}
 			}
@@ -14,47 +13,22 @@ ideas = {
 			level = 3
 			
 			default = yes
-			modifier = {
+			equipment_bonus = {
 				infantry_equipment = {
-					soft_attack = 2
-					defense = 2
-					ap_attack = 2
+					soft_attack = 0.25
+					defense = 0.25
+					ap_attack = 0.25
 				}
-				custom_modifier_tooltip = sw_equipment_buff_tt
 			}
 		}
 	}
 	
-	starwars_equipment_buff_slot = {
-		sw_equipment_buff2 = {
-			allowed = {
-				original_tag = MDO
-			}
-			
-			picture = idea_sw_equipment_buff2
-			cost = 150
-			removal_cost = -1
-			level = 3
-			
-			default = yes
-			modifier = {
-				infantry_equipment = {
-					soft_attack = 10
-					defense = 10
-					ap_attack = 10
-				}
-				custom_modifier_tooltip = sw_equipment_buff2_tt
-			}
-		}
-	}
 	
 	starwars_industry_buff_slot = {
 		sw_industry_buff = {
 			allowed = {
 				or = {
-					original_tag = REA
 					original_tag = IMP
-					original_tag = MDO
 				}
 			}
 			
