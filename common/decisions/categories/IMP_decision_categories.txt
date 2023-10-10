@@ -38,6 +38,16 @@ IMP_wargoals_decisions = {
 	}
 }
 
+IMP_borderconflict_decisions = {
+	icon = usa_intervention_mandate
+	allowed = {
+		original_tag = IMP
+	}
+	visible = {
+		has_completed_focus = imp_border_conflict_decisions
+	}
+}
+
 IMP_campaign_decisions = {
 	icon = infiltration
 	allowed = {
