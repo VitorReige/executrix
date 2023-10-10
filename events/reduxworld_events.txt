@@ -1,0 +1,117 @@
+add_namespace = redux_world_news
+
+
+##IMPERIAL CITY CAPTURE NEWS
+# Iran Capture
+news_event = {
+	id = redux_world_news.1
+	title = redux_world_news.1.t
+	desc = redux_world_news.1.d
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = redux_world_news.1.a
+		trigger = {
+			original_tag = IMP
+		}
+	}
+	option = {
+		name = redux_world_news.1.b
+		trigger = { 
+			NOT = { original_tag = IMP }
+		}
+	}
+}
+
+# Afghan Capture
+news_event = {
+	id = redux_world_news.2
+	title = redux_world_news.2.t
+	desc = redux_world_news.2.d
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = redux_world_news.2.a
+		trigger = {
+			original_tag = IMP
+		}
+	}
+	option = {
+		name = redux_world_news.2.b
+		trigger = { 
+			NOT = { original_tag = IMP }
+		}
+	}
+}
+
+# Turkey Capture
+news_event = {
+	id = redux_world_news.3
+	title = redux_world_news.3.t
+	desc = redux_world_news.3.d
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = redux_world_news.3.a
+		trigger = {
+			original_tag = IMP
+		}
+	}
+	option = {
+		name = redux_world_news.3.b
+		trigger = { 
+			NOT = { original_tag = IMP }
+		}
+	}
+}
+
+# Soviet Capture
+news_event = {
+	id = redux_world_news.4
+	title = redux_world_news.4.t
+	desc = redux_world_news.4.d
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = redux_world_news.4.a
+		trigger = {
+			original_tag = IMP
+		}
+	}
+	option = {
+		name = redux_world_news.4.b
+		trigger = { 
+			NOT = { original_tag = IMP }
+		}
+	}
+}
+
+#GERMANY Capture
+
+#ITALY Capture
+
+#JAPAN Capture
+
+#CHINA Capture
+
+#FRANCE Capture
+
+#UK Capture
+
+#USA Capture

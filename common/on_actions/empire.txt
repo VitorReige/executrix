@@ -1,0 +1,92 @@
+on_actions = {
+
+	on_puppet = {
+		effect = {
+			#Flag for puppets
+			if = {
+				limit = {
+					FROM = {
+						has_government = imperialism
+					}
+				}
+				ROOT = {
+					set_cosmetic_tag = ALL
+				}
+			}
+		}
+	}
+
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						has_government = imperialism
+					}
+				}
+				ROOT = {
+					set_cosmetic_tag = ALL
+				}
+			}
+
+		}
+
+	}
+
+	on_capitulation = {
+		effect = {
+			#integration enabling
+
+			if = {
+				limit = {
+					ROOT = {
+						tag = TUR
+					}
+				}
+				IMP = { set_country_flag = enable_integration_turkey }
+			}
+
+			if = {
+				limit = {
+					ROOT = {
+						tag = AFG
+					}
+				}
+				IMP = { set_country_flag = enable_integration_afghanistan }
+			}
+
+			if = {
+				limit = {
+					ROOT = {
+						tag = PER
+					}
+				}
+				IMP = { set_country_flag = enable_integration_persia }
+			}
+
+			if = {
+				limit = {
+					ROOT = {
+						tag = IMP
+					}
+				}
+				FROM = { set_country_flag = star_wars_tech_flag }
+			}
+
+		}
+	}
+	on_startup = {
+		effect = {
+			IMP = {
+				country_event = {
+					id = imperial_story.0
+				}
+			}
+			IMP = {
+				country_event = {
+					id = modcredits.0
+				}
+			}
+		}
+	}
+}

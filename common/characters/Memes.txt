@@ -1,0 +1,57 @@
+characters={
+
+##################################
+#Command And Control Leaders
+##################################
+
+	glup_shitto={
+		name=glup_shitto
+		portraits={
+			army={
+				large="gfx/leaders/CC_Memes/portrait_glup_shitto.dds"
+				small="GFX_idea_glup_shitto"
+			}
+		}
+		
+		corps_commander={
+			traits={ mediocrity }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+		
+		advisor={
+			cost = 50
+			slot = political_advisor
+			idea_token = glup_shitto
+
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				trade_opinion_factor = .25
+			}
+		}
+	}
+	
+	rick_officer={
+		name=rick_officer
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_rick.dds"
+			}
+		}
+		
+		corps_commander={
+			traits={ imperial_moh }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+}

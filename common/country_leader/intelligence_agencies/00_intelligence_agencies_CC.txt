@@ -1,0 +1,25 @@
+# List of names and logos for intelligence agencies
+# available trigger will determine if the logo is in the list of available logos or not
+# names is a list of names. Can be a localization entry, or the name directly. A random name will be picked from them.
+
+##################################
+#Command And Control
+##################################
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_imi
+	names = { "Imperial Intelligence" "Imperial Security Bureau" }
+	
+	available = { has_government = imperialism }
+	default = { tag = IMP }
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_isb
+	names = { "Imperial Security Bureau" }
+	
+	available = { has_government = imperialism }
+	default = { tag = IMP } 
+}

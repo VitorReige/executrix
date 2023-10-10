@@ -1,0 +1,1163 @@
+IMP_rise_of_the_empire_decisions = {
+	imperialism_boost = {
+		available = {
+			is_ai = no
+			is_major = no
+			NOT = { has_government = imperialism }
+		}
+		visible = {
+			is_major = no
+			NOT = { has_government = imperialism }
+		}
+		cost = 50
+		days_remove = 180
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = empire_sympathy
+				days = 180
+			}
+		}
+	}
+	
+	imperialism_convert = {
+		available = {
+			imperialism > 0.4
+		}
+		visible = {
+			NOT = { has_government = imperialism }
+		}
+		cost = 150
+		days_remove = 0
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+			set_politics = {
+				ruling_party = imperialism
+			}
+			hidden_effect = {
+				set_cosmetic_tag = ALL
+				OVERLORD = { end_puppet = ROOT }
+			}
+			IMP = {
+				set_autonomy = {
+					target = ROOT
+					autonomy_state = autonomy_supervised_state
+				} 
+				ROOT = {
+					set_rule = {
+						can_declare_war_on_same_ideology = no
+					}
+				}
+			}
+			add_ideas = empire_sympathy
+			add_research_slot = 1
+		}
+	
+	}
+	
+	imperialism_share_research = {
+		available = {
+			is_in_faction_with = IMP
+			IMP = { is_faction_leader = yes }
+		}
+		visible = {
+			has_government = imperialism
+		}
+		cost = 30
+		fire_only_once = yes
+		days_remove = 0
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = { 
+			set_technology = {
+				#military tech
+				tech_special_forces = 1
+				republic_weapon1 = 1
+				infantry_weapons = 1
+				improved_special_forces = 1
+				survival_training = 1
+				elite_forces = 1
+				radio = 1
+				#industrial tech
+				#electronics
+				electronic_mechanical_engineering = 1
+				atomic_research = 1
+			}
+			ROOT = { set_country_flag = star_wars_tech_flag } 
+			custom_effect_tooltip = imperialism_share_research_tooltip
+		}
+	}
+
+}
+
+IMP_statebuilding_decisions = {
+	#Industry
+	focus_on_materials = {
+		available = {
+			NOT = { has_decision = focus_on_industry }
+		}
+
+		visible = {
+			has_full_control_of_state = 656
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+
+		cost = 50
+		fire_only_once = yes
+		days_remove = 35
+		remove_effect = {
+			add_resource = {
+				type = oil
+				amount = 18
+				state = 291
+			}
+			set_country_flag = materials_flag #this unlocks the synthetic materials focus#
+		}
+	}
+
+	focus_on_industry = {
+		available = {
+			NOT = { has_decision = focus_on_materials }
+		}
+
+		visible = {
+			has_full_control_of_state = 656
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		days_remove = 35
+
+		remove_effect = {
+			656 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = industrial_flag #This unlocks the industry focus#
+		}
+	}
+
+	concentrated_development = {
+		available = {
+			always = yes
+		}
+
+		visible = {
+			has_full_control_of_state = 836
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+
+		days_remove = 0
+
+		cost = 50
+		fire_only_once = yes
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = concentrated_industry
+				days = 360
+			}
+		}
+	}
+
+	dispersed_development = {
+		available = {
+			always = yes
+		}
+
+		visible = {
+			has_full_control_of_state = 656
+			has_full_control_of_state = 835
+			has_full_control_of_state = 836
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+
+		days_remove = 70
+		cost = 30
+
+		fire_only_once = yes
+
+		remove_effect = {
+			656 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			835 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			836 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+
+}
+
+IMP_wargoals_decisions = {
+
+	intimidate_oman = {
+		available = {
+			has_army_manpower = {
+				size > 25000
+			}
+			strength_ratio = {
+				tag = OMA
+				ratio > 2
+			}
+			OR = {
+				NOT = { country_exists = SAU }
+				SAU = { is_subject_of = IMP }
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+
+		days_remove = 50
+
+		cost = 15
+
+		fire_only_once = yes
+
+		remove_effect = {
+			if = {
+				limit = {
+					SAU = {
+						is_subject_of = IMP
+						is_neighbor_of = OMA
+					}
+					has_country_flag = tarkin_flag
+
+				}
+				SAU = {
+					transfer_state = 294
+					add_state_core = 294
+				}
+
+				else_if = {
+					limit = {
+						has_country_flag = tarkin_flag
+					}
+					IMP = {
+						set_autonomy = {
+							target = OMA
+							autonomy_state = autonomy_integrated_puppet
+						}
+					}
+
+					else = { transfer_state = 294 add_state_core = 294 }
+				}
+			}
+		}
+
+	}
+
+	intimidate_yemen = {
+		available = {
+			has_army_manpower = {
+				size > 25000
+			}
+			strength_ratio = {
+				tag = YEM
+				ratio > 2
+			}
+			OR = {
+				NOT = { country_exists = SAU }
+				SAU = { is_subject_of = IMP }
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+
+		days_remove = 50
+
+		cost = 15
+
+		fire_only_once = yes
+
+		remove_effect = {
+			if = {
+				limit = {
+					SAU = {
+						is_subject_of = IMP
+						is_neighbor_of = YEM
+					}
+					has_country_flag = tarkin_flag
+
+				}
+				SAU = {
+						transfer_state = 293
+						add_state_core = 293
+						if = {
+							limit = { YEM = { has_full_control_of_state = 659 } }
+							transfer_state = 659
+							add_state_core = 659
+						}
+					}
+				else_if = {
+					limit = {
+						has_country_flag = tarkin_flag
+					}
+					IMP = {
+						set_autonomy = {
+							target = YEM
+							autonomy_state = autonomy_integrated_puppet
+						}
+					}
+
+					else = {
+						transfer_state = 293
+						add_state_core = 293
+						if = {
+							limit = { YEM = { has_full_control_of_state = 659 } }
+							transfer_state = 659
+							add_state_core = 659
+						}
+					}
+				}
+			}
+		}
+	}
+
+	## Vaders Conquer Choices ##
+	take_turkey = {
+		available = {
+			OR = {
+				has_army_manpower = { size > 50000 }
+				num_divisions > 23
+			}
+		}
+
+		visible = {
+			OR = {
+				is_neighbor_of = TUR
+				IRQ = {
+					is_subject_of = IMP
+					is_neighbor_of = TUR
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+		fire_only_once = yes
+
+		days_remove = 100
+
+		cost = 0
+
+		remove_effect = {
+			declare_war_on = {
+				target = TUR
+				type = annex_everything
+			}
+		}
+	}
+
+	integrate_turkey = {
+		available = {
+			OR = {
+				IMP = {
+					owns_state = 49
+				}
+				any_country = {
+					is_subject_of = IMP
+					owns_state = 49
+				}
+			}
+		}
+
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 5
+		}
+
+		days_remove = 70
+
+		cost = 35
+
+		remove_effect = {
+			custom_effect_tooltip = turkey_build_tooltip
+			hidden_effect = {
+				set_country_flag = integrated_tur_flag
+			 	352 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+				350 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+
+				344 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+
+				348 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+
+				49 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+
+				347 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+
+				341 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+
+				49 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+
+			if = {
+				limit = { has_country_flag = tarkin_flag }
+					add_offsite_building = { type = industrial_complex level = 8 }
+					add_offsite_building = { type = arms_factory level = 8 }
+			}
+		}
+
+	}
+
+	take_persia = {
+		available = {
+			OR = {
+				has_army_manpower = { size > 50000 }
+				num_divisions > 23
+			}
+		}
+		visible = {
+			OR = {
+				is_neighbor_of = PER
+				IRQ = {
+					is_subject_of = IMP
+					is_neighbor_of = PER
+				}
+			}
+		}
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 5
+		}
+
+		days_remove = 100
+
+		cost = 0
+
+		remove_effect = {
+			declare_war_on = {
+				target = PER
+				type = annex_everything
+			}
+		}
+	}
+
+	integrate_persia = {
+		available = {
+			OR = {
+				IMP = {
+					owns_state = 266
+				}
+				any_country = {
+					is_subject_of = IMP
+					owns_state = 266
+				}
+			}
+		}
+
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 5
+		}
+
+		days_remove = 70
+
+		cost = 35
+
+		remove_effect = {
+			custom_effect_tooltip = turkey_build_tooltip
+			hidden_effect = {
+			#add cores#
+				set_country_flag = integrated_per_flag
+				413 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+				421 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+
+				417 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+
+				266 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+
+				416 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+
+				414 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+
+				266 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+
+			if = {
+				limit = { has_country_flag = tarkin_flag }
+				add_offsite_building = { type = industrial_complex level = 4 }
+				add_offsite_building = { type = arms_factory level = 3 }
+			}
+
+		}
+
+	}
+
+	take_afghanistan = {
+		available = {
+			OR = {
+				has_army_manpower = { size > 50000 }
+				num_divisions > 23
+			}
+		}
+
+		visible = {
+			OR = {
+				is_neighbor_of = AFG
+				any_country = {
+					is_subject_of = IMP
+					is_neighbor_of = AFG
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 5
+		}
+
+		days_remove = 100
+
+		cost = 0
+
+		remove_effect = {
+			declare_war_on = {
+				target = AFG
+				type = annex_everything
+			}
+		}
+	}
+
+	integrate_afghanistan = {
+		available = {
+			OR = {
+				IMP = {
+					owns_state = 267
+				}
+				any_country = {
+					is_subject_of = IMP
+					owns_state = 267
+				}
+			}
+		}
+
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 5
+		}
+
+		days_remove = 70
+
+		cost = 35
+
+		remove_effect = {
+		custom_effect_tooltip = turkey_build_tooltip
+			hidden_effect = {
+				set_country_flag = integrated_afg_flag
+				415 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+				267 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+
+			if = {
+				limit = { has_country_flag = tarkin_flag }
+				add_offsite_building = { type = industrial_complex level = 4 }
+				add_offsite_building = { type = arms_factory level = 2 }
+			}
+		}
+
+	}
+
+	## Tarkins Choices##
+	## End of Tarkins Choices ##
+
+}
+
+
+
+IMP_campaign_decisions = {
+
+	anti_communist_campaign = {
+		available = {
+			OR = {
+				SOV = { NOT = {is_subject_of = IMP} }
+				TAN = { NOT = {is_subject_of = IMP} }
+				MON = { NOT = {is_subject_of = IMP} }
+			}
+		}
+
+		visible = {
+			OR = {
+				SOV = { is_neighbor_of = IMP }
+				TAN = { is_neighbor_of = IMP}
+				MON = { is_neighbor_of = IMP }
+			}
+		}
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 50
+				has_war_with = TUR
+			}
+		}
+
+		days_remove = 50
+
+		cost = 50
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_timed_idea = {
+				idea = anti_commie_bonus
+				days = 720
+			}
+		}
+	}
+
+	anti_colonial_campaign = {
+		available = {
+			OR = {
+				FRA = { NOT = {is_subject_of = IMP} }
+				ENG = { NOT = {is_subject_of = IMP} }
+				RAJ = { NOT = {is_subject_of = IMP} }
+			}
+		}
+
+		visible = {
+			OR = {
+				ENG = { is_neighbor_of = IMP }
+				FRA = { is_neighbor_of = IMP}
+				RAJ = { is_neighbor_of = IMP }
+			}
+		}
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 50
+				has_war_with = TUR
+			}
+		}
+
+		days_remove = 50
+
+		cost = 50
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_timed_idea = {
+				idea = colonial_bonus
+				days = 720
+			}
+		}
+	}
+	balkan_campaign = {
+		available = {
+			OR = {
+				GRE = { is_subject = no }
+				BUL = {is_subject = no }
+				YUG = {  is_subject = no }
+				ROM = { is_subject = no }
+				HUN = { is_subject = no }
+				ALB = { is_subject = no }
+			}
+		}
+
+		visible = {
+			OR = {
+				GRE = { is_neighbor_of = IMP }
+				BUL = { is_neighbor_of = IMP}
+				YUG = { is_neighbor_of = IMP }
+				ROM = { is_neighbor_of = IMP }
+				HUN = { is_neighbor_of = IMP }
+				ALB = { is_neighbor_of = IMP }
+			}
+		}
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 50
+				has_war_with = TUR
+			}
+		}
+
+		days_remove = 50
+
+		cost = 50
+
+		fire_only_once = yes
+
+		remove_effect = {
+			add_timed_idea = {
+				idea = balkan_bonus
+				days = 720
+			}
+		}
+
+	}
+
+}	
+	
+	
+	
+	
+	
+	### BORDER CONFLICTS
+IMP_borderconflict_decisions = {
+	
+	IMP_test_the_british_sinai = {
+		icon = border_war
+		allowed = {
+			original_tag = IMP
+		}
+
+		available = {
+			NOT = {
+				has_war_with = ENG
+				is_in_faction_with = ENG
+				ENG = { is_puppet_of = IMP }
+			}
+			454 = {
+				any_neighbor_state = {
+					is_controlled_by = ENG
+				}
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+	 		highlight_state_targets = {
+				state = 453
+				state = 454
+			} 
+		}
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cost = 50
+		days_remove = 30
+		
+		
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 454
+					num_provinces = 4
+				}
+				
+				defender = {
+					state = 453
+					num_provinces = 4
+				}
+			}
+		}
+	}
+	
+	IMP_test_the_british_sinai2 = {
+		icon = border_war
+		allowed = {
+			original_tag = IMP
+		}
+
+		available = {
+			NOT = {
+				has_war_with = ENG
+				is_in_faction_with = ENG
+				ENG = { is_puppet_of = IMP }
+			}
+			453 = {
+				any_neighbor_state = {
+					is_controlled_by = ENG
+				}
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+	 		highlight_state_targets = {
+				state = 446
+				state = 453
+			} 
+		}
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cost = 50
+		days_remove = 30
+		
+		
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 453
+					num_provinces = 4
+				}
+				
+				defender = {
+					state = 446
+					num_provinces = 4
+				}
+			}
+		}
+	}
+	
+	IMP_test_the_british_cairo_north = {
+		icon = border_war
+		allowed = {
+			original_tag = IMP
+		}
+
+		available = {
+			NOT = {
+				has_war_with = ENG
+				is_in_faction_with = ENG
+				ENG = { is_puppet_of = IMP }
+			}
+			446 = {
+				any_neighbor_state = {
+					is_controlled_by = ENG
+				}
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+	 		highlight_state_targets = {
+				state = 447
+				state = 446
+			} 
+		}
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cost = 50
+		days_remove = 30
+		
+		
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 446
+					num_provinces = 4
+				}
+				
+				defender = {
+					state = 447
+					num_provinces = 4
+				}
+			}
+		}
+	}
+	
+	IMP_test_the_british_cairo_south = {
+		icon = border_war
+		allowed = {
+			original_tag = IMP
+		}
+
+		available = {
+			NOT = {
+				has_war_with = ENG
+				is_in_faction_with = ENG
+				ENG = { is_puppet_of = IMP }
+			}
+			446 = {
+				any_neighbor_state = {
+					is_controlled_by = ENG
+				}
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+	 		highlight_state_targets = {
+				state = 456
+				state = 446
+			} 
+		}
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cost = 50
+		days_remove = 30
+		
+		
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 446
+					num_provinces = 4
+				}
+				
+				defender = {
+					state = 456
+					num_provinces = 4
+				}
+			}
+		}
+	}
+	
+	IMP_test_the_british_cairo_south2 = {
+		icon = border_war
+		allowed = {
+			original_tag = IMP
+		}
+
+		available = {
+			NOT = {
+				has_war_with = ENG
+				is_in_faction_with = ENG
+				ENG = { is_puppet_of = IMP }
+			}
+			446 = {
+				any_neighbor_state = {
+					is_controlled_by = ENG
+				}
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+	 		highlight_state_targets = {
+				state = 457
+				state = 446
+			} 
+		}
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cost = 50
+		days_remove = 30
+		
+		
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 446
+					num_provinces = 4
+				}
+				
+				defender = {
+					state = 457
+					num_provinces = 4
+				}
+			}
+		}
+	}
+}

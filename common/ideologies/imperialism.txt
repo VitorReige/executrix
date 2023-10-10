@@ -1,0 +1,44 @@
+ideologies = {
+
+	imperialism = {
+
+		types = {
+
+			imperial = {
+			}
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_FASCIST_1"
+			"FACTION_NAME_FASCIST_2"
+			"FACTION_NAME_FASCIST_3"
+			"FACTION_NAME_FASCIST_4"
+			"FACTION_NAME_FASCIST_5"
+		}
+
+		color = { 40 10 90 }
+
+		war_impact_on_world_tension = 0.25 #indifferent
+		faction_impact_on_world_tension = 0.25 #Alien Invader
+
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+
+		can_collaborate = yes
+
+		modifiers = {
+			justify_war_goal_when_in_major_war_time = -0.80
+			civilian_intel_to_others = 0
+			army_intel_to_others = 0
+			navy_intel_to_others = 0
+			airforce_intel_to_others = 0
+			hidden_modifier = { join_faction_tension = -0.1 }
+		}
+
+		ai_fascist = yes # uses the fascist AI behaviour
+	}
+}

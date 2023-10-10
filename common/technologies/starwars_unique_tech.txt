@@ -1,0 +1,808 @@
+technologies = {
+	star_wars_unlock_technogly = {
+
+		research_speed_factor = 0.05
+		
+		path = {
+			leads_to_tech = star_wars_industry_buff_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = star_wars_industry_buff_second_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = star_wars_military_buff_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = star_wars_military_buff_second_1 
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		research_cost = 0.5
+		start_year = 1934
+		folder = {
+			name = starwars_folder
+			position = { x = 0 y = 3 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	
+	## Tech Unlocks Code - These are needed to properly unlock the tech for SW countries and also Subunits
+	
+	empire_unlock_tech = {
+
+		research_cost = 1
+		
+		allow = {
+			always = no
+		}
+
+	}
+	
+	blasterinf_unlock_tech = {
+
+		research_cost = 1
+		
+		allow = {
+			always = no
+		}
+		
+		enable_subunits = {
+            blaster_infantry
+			stormtrooper 
+        }
+
+	}
+	
+	blocked_tech = {
+
+		research_cost = 1
+		
+		allow = {
+			always = no
+		}
+
+	}
+	
+	## STAR WARS TECH
+	
+	#Empire Unique Tech
+	empire_tech_1 = {
+
+		conscription = 0.05
+		war_support_factor = 0.15
+		
+		dependencies = {
+			empire_unlock_tech = 1
+		}
+		
+		path = {
+			leads_to_tech = empire_tech_2 
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = starwars_folder
+			position = { x = 2 y = 9 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	empire_tech_2 = {
+		
+		forced_surrender_limit = 0.3
+		offensive_war_stability_factor = 0.25
+		defensive_war_stability_factor = 0.1
+		
+		research_cost = 2
+		start_year = 1938
+		
+		dependencies = {
+			empire_unlock_tech = 1
+		}
+		
+		path = {
+			leads_to_tech = empire_tech_3 
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		folder = {
+			name = starwars_folder
+			position = { x = 4 y = 9 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	empire_tech_3 = {
+
+		command_power_gain = 0.1
+		experience_gain_army_factor = 0.05
+		experience_gain_navy = 0.02
+		
+		research_cost = 2.5
+		start_year = 1940
+		
+		dependencies = {
+			empire_unlock_tech = 1
+		}
+		
+		force_use_small_tech_layout = yes
+		folder = {
+			name = starwars_folder
+			position = { x = 6 y = 9 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	
+	star_wars_industry_buff_1 = {
+
+		industrial_capacity_factory = 0.035
+		industrial_capacity_dockyard = 0.075
+		
+		path = {
+			leads_to_tech = star_wars_industry_buff_2 
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = starwars_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1934.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	star_wars_industry_buff_2 = {
+
+		industrial_capacity_factory = 0.035
+		industrial_capacity_dockyard = 0.075
+		
+		research_cost = 2.5
+		start_year = 1938
+		
+		path = {
+			leads_to_tech = star_wars_industry_buff_3 
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		folder = {
+			name = starwars_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1934.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	star_wars_industry_buff_3 = {
+
+		industrial_capacity_factory = 0.035
+		industrial_capacity_dockyard = 0.075
+		
+		research_cost = 3
+		start_year = 1940
+		
+		force_use_small_tech_layout = yes
+		folder = {
+			name = starwars_folder
+			position = { x = 6 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1934.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	star_wars_industry_buff_second_1 = {
+
+		industry_air_damage_factor = -0.05
+		production_factory_start_efficiency_factor = 0.02
+		
+		path = {
+			leads_to_tech = star_wars_industry_buff_second_2 
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = starwars_folder
+			position = { x = 2 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1934.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	star_wars_industry_buff_second_2 = {
+
+		industry_air_damage_factor = -0.05
+		production_factory_start_efficiency_factor = 0.02
+		
+		research_cost = 2.5
+		start_year = 1938
+		
+		path = {
+			leads_to_tech = star_wars_industry_buff_second_3 
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		folder = {
+			name = starwars_folder
+			position = { x = 4 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1934.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	star_wars_industry_buff_second_3 = {
+
+		industry_air_damage_factor = -0.05
+		production_factory_start_efficiency_factor = 0.02
+		
+		research_cost = 3
+		start_year = 1940
+		
+		force_use_small_tech_layout = yes
+		folder = {
+			name = starwars_folder
+			position = { x = 6 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1934.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	star_wars_military_buff_1 = {
+
+		refit_speed = 0.1
+		equipment_conversion_speed = 0.1
+		
+		force_use_small_tech_layout = yes
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = starwars_folder
+			position = { x = 2 y = 4 }
+		}
+		path = {
+			leads_to_tech = star_wars_military_buff_2 
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1934.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	star_wars_military_buff_2 = {
+
+		refit_speed = 0.1
+		equipment_conversion_speed = 0.1
+		
+		research_cost = 2.5
+		start_year = 1938
+		
+		force_use_small_tech_layout = yes
+		
+		folder = {
+			name = starwars_folder
+			position = { x = 4 y = 4 }
+		}
+		path = {
+			leads_to_tech = star_wars_military_buff_3 
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1934.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	star_wars_military_buff_3 = {
+
+		refit_speed = 0.1
+		equipment_conversion_speed = 0.1
+		
+		research_cost = 3
+		start_year = 1940
+		
+		force_use_small_tech_layout = yes
+
+		folder = {
+			name = starwars_folder
+			position = { x = 6 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1934.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	star_wars_military_buff_second_1 = {
+		
+        air_range_factor = 0.2
+		air_attack_factor = 0.05
+		air_defence_factor = 0.05
+		
+		force_use_small_tech_layout = yes
+		start_year = 1936
+		research_cost = 2
+		folder = {
+			name = starwars_folder
+			position = { x = 2 y = 6 }
+		}
+		path = {
+			leads_to_tech = star_wars_military_buff_second_2 
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1934.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	star_wars_military_buff_second_2 = {
+
+		air_range_factor = 0.2
+		air_attack_factor = 0.05
+		air_defence_factor = 0.05
+		
+		force_use_small_tech_layout = yes
+		research_cost = 2.5
+		start_year = 1938
+		folder = {
+			name = starwars_folder
+			position = { x = 4 y = 6 }
+		}
+		path = {
+			leads_to_tech = star_wars_military_buff_second_3 
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1934.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	star_wars_military_buff_second_3 = {
+
+		air_range_factor = 0.2
+		air_attack_factor = 0.05
+		air_defence_factor = 0.05
+		
+		research_cost = 3
+		start_year = 1940
+		
+		force_use_small_tech_layout = yes
+		folder = {
+			name = starwars_folder
+			position = { x = 6 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1934.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	
+	unique_tech_1 = {
+
+		production_oil_factor = 0.35
+		on_research_complete = {
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 5
+			}
+		}
+		
+		dependencies = {
+			empire_unlock_tech = 1
+		}
+		
+		force_use_small_tech_layout = yes
+		research_cost = 2.3
+		start_year = 1936
+		folder = {
+			name = starwars_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	unique_tech_2 = {
+
+		critical_receive_chance = -0.25
+		
+		
+		force_use_small_tech_layout = yes
+		research_cost = 2.3
+		start_year = 1936
+		folder = {
+			name = starwars_folder
+			position = { x = 2 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	unique_tech_3 = {
+
+		navy_org_factor = 0.08
+		
+		
+		dependencies = {
+			empire_unlock_tech = 1
+		}
+		
+		force_use_small_tech_layout = yes
+		research_cost = 2.3
+		start_year = 1936
+		folder = {
+			name = starwars_folder
+			position = { x = 4 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	unique_tech_4 = {
+
+		stability_factor = 0.05
+		
+		force_use_small_tech_layout = yes
+		research_cost = 2.3
+		start_year = 1936
+		folder = {
+			name = starwars_folder
+			position = { x = 6 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	unique_tech_5 = {
+
+		conscription = 0.025
+		
+		dependencies = {
+			empire_unlock_tech = 1
+		}
+		
+		force_use_small_tech_layout = yes
+		research_cost = 2.3
+		start_year = 1936
+		folder = {
+			name = starwars_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	unique_tech_6 = {
+
+		monthly_population = 0.1
+		
+		force_use_small_tech_layout = yes
+		research_cost = 2.3
+		start_year = 1936
+		folder = {
+			name = starwars_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+
+	}
+	
+	unique_tech_10 = {
+		
+		air_range_factor = 1
+	
+		force_use_small_tech_layout = yes
+		research_cost = 2.3
+		start_year = 1936
+		folder = {
+			name = starwars_folder
+			position = { x = 4 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+			
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+		
+	}
+	
+	
+	
+}

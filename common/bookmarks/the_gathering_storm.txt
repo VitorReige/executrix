@@ -1,0 +1,30 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "IMP"
+		default = yes
+		
+		"IMP"={
+			history = "IMPERIAL_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				ruined_ship
+				imperial_military
+				stranded
+			}
+			focuses = {
+				imp_phase_two
+				imp_stage_four
+				imp_intel_service
+			}
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

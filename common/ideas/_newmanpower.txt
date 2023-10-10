@@ -1,0 +1,39 @@
+ideas = {
+
+	mobilization_laws = {
+		law = yes
+		use_list_view = yes
+		
+		imp_recruit_law = {
+
+			visible = {
+				original_tag = IMP
+			}
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.1 group = mobilization_laws }
+				original_tag = IMP
+			}
+			
+			picture = imperial_service
+			
+			cost = 200
+			removal_cost = -1
+			level = 6
+
+			modifier = {
+				conscription = 0.15
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = -0.05
+				training_time_factor = 0.1
+			}
+			
+			allowed_to_remove = {
+				has_completed_focus = imp_land_doctrine
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+	}
+}

@@ -1,0 +1,32 @@
+﻿IMP = {
+	blaster_infantry = {
+		prefix = ""
+		generic = { "Imperial Infantry" }
+		unique = { "72nd Imperial Army Division" "1st Tapani Assault Battlegroup" "419th Infantry Regiment" "Nova Guard" "Arkinnea Militia" "1st Infantry Regiment" "2nd Infantry Regiment" "3rd Infantry Regiment" "6th Infantry Regiment" "656th Infantry Regiment" "414th Infantry Regiment" "101st Infantry Regiment" }
+	}
+	mountaineers = {
+		prefix = ""
+		generic = { "Imperial Mountaineer" }
+		unique = { "Explorer Squad Esk-23" "Streen Squad" "Tharlst Squad" "Brantz Squad" }
+	}
+	imperial_armor = {
+		prefix = ""
+		generic = { "Imperial Tank Division" }
+		unique = { "112th Repulsorlift Armor Regiment" "76th Assault Regiment" }
+	}
+	stormtrooper = {
+		prefix = ""
+		generic = { "Stormtrooper Division" }
+		unique = { "975th Stormtrooper Battalion" "7th Stormtrooper Legion" "41st Stormtrooper Legion" "105th Stormtrooper Platoon" "1st Legion" "291st Legion Dalisor" "439th Legion" "37th Detachment" "Moff's Own" "31st Stormtrooper Legion" "160th Stormtrooper Battalion"  "117th Stormtrooper Legion" "81st Stormtrooper Legion" }
+	}
+	scoutwalker = {
+		prefix = ""
+		generic = { "Walker Division" }
+		unique = { "958th Armored Scout Group" "523rd Scout Walker Division" "2nd Elite Armored Recon" "546th Scout Group" "453rd Scout Walker Battalion" }
+	}
+	atat = {
+		prefix = ""
+		generic = { "AT-AT Division" }
+		unique = {"535th Assault Wing" "3rd Imperial Heavy Armor" "224th Imperial Armored Division" "221st Mechanized Assault Group" "98th Elite Mechanized Assault Group" "88th Mechanized Assault Group" "71st Elite Mechanized Assault Group" "Blizzard Force" "Alpha Group" }
+	}
+}

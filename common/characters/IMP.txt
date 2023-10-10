@@ -1,0 +1,947 @@
+characters={
+	darth_vader={
+		name=darth_vader
+		portraits={
+			civilian={
+				large="gfx/leaders/IMP/portrait_imp_vader.dds"
+			}
+			army={
+				small="GFX_idea_vader"
+			}
+		}
+		country_leader={
+			ideology=imperial
+			traits={ headstrong sith_presence lord_vader }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			cost = 100
+			slot = air_chief
+			idea_token = vader
+			ledger = air
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				air_chief_all_weather_3
+			}
+		}
+	}
+	
+	darth_vader_alt={
+		name=darth_vader_alt
+		portraits={
+			civilian={
+				large="gfx/leaders/IMP/portrait_emperor_vader.dds"
+			}
+		}
+	}
+
+	tarkin={
+		name=tarkin
+		portraits={
+			civilian={
+				large="gfx/leaders/IMP/portrait_imp_tarkin.dds"
+			}
+			army={
+				large="gfx/leaders/IMP/portrait_imp_tarkin.dds"
+				small="GFX_idea_tarkin_general"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ imperial_connections respected_imperial imperial_doctrine }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = army_chief
+			cost = 100
+			idea_token = tarkin_general
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				army_chief_morale_3
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+
+	maximillian_veers={
+		name=maximillian_veers
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_veers.dds"
+				small="GFX_idea_maximillian_veers"
+			}
+		}	
+		advisor={
+			slot = high_command
+			idea_token = maximillian_veers
+			ledger = army
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+		
+		corps_commander={
+			traits={ war_hero armor_officer career_officer winter_specialist }
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+			id = 1950
+		}
+	}
+
+	mod_terrik={
+		name=mod_terrik
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_General_Sandtrooper.dds"
+				small="gfx/interface/ideas/idea_GER_friedrich_paulus.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			id = 1952
+		}
+	}
+
+	snowtrooper_maraway={
+		name=snowtrooper_maraway
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_General_snowtrooper.dds"
+				small="GFX_idea_erwin_rommel"
+			}
+		}
+		
+		corps_commander={
+			traits={ trickster }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			id = 1953
+		}
+	}
+	
+	##MILITARY 
+	#CHIEFS OF STAFF
+	thrawn_officer={
+		name=thrawn_officer
+		portraits={
+			army={
+				large="gfx/leaders/imp/portrait_thrawngen.dds"
+			}
+			army={
+				small="GFX_idea_thrawn"
+			}
+		}
+		field_marshal = {
+			traits={ grand_admiral brilliant_strategist adaptable}
+			skill= 6
+			attack_skill = 5
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 5
+		}
+		advisor={
+			slot = army_chief
+			cost = 100
+			idea_token = thrawn
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				army_chief_reform_3
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	
+	cassio_officer={
+		name=cassio_officer
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_cassio_tagge.dds"
+			}
+			army={
+				small="GFX_idea_cassio_tagge"
+			}
+		}
+		
+		field_marshal={
+			traits={ infantry_leader }
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=6
+			logistics_skill=3
+		}
+		advisor={
+			slot = army_chief
+			cost = 100
+			idea_token = cassio_tagge
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				army_chief_planning_3 
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	
+	#HIGH COMMAND
+	
+	wulf_yularen={
+		name=wulf_yularen
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_wulff_yularen.dds"
+			}
+			army={
+				small="GFX_idea_wulf_yularen"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = navy_chief
+			idea_token = wulf_yularen
+			ledger = navy
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				navy_chief_decisive_battle_3
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy aviation_enthusiast naval_lineage }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=3
+		}
+	}
+	
+	cc_appo={
+		name=cc_appo
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_General_TK_417.dds"
+			}
+			army={
+				small="GFX_idea_appo"
+			}
+		}
+		corps_commander={
+			traits={ old_guard infantry_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			id = 1951
+		}
+		advisor={
+			cost = 100
+			slot = high_command
+			idea_token = appo
+			ledger = army
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				army_regrouping_3
+			}
+		}
+	}
+	
+	otaking_officer={
+		name=otaking_officer
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_otaking.dds"
+			}
+			army={
+				small="GFX_idea_otaking"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = high_command
+			idea_token = otaking
+			ledger = air
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				air_pilot_training_3
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	krennic_officer={
+		name=krennic_officer
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_krennic.dds"
+			}
+			army={
+				small="GFX_idea_krennic"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = high_command
+			idea_token = krennic
+			ledger = army
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				army_logistics_3
+			}
+		}
+	}
+	
+
+	#GENERALS
+	gideon_officer={
+		name=gideon_officer
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_gideon.dds"
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	
+	tessala_officer={
+		name=tessala_officer
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_tessala.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+	
+	malsuum_officer={
+		name=malsuum_officer
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_imp_malsuum.dds"
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader trait_reckless old_guard }
+			skill=4
+			attack_skill=4
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+	
+	weir_officer={
+		name=weir_officer
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_imp_weir.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = cody
+			ledger = army
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				army_commando_3
+			}
+			cost = 75
+		}
+	}
+	
+	hurst_officer={
+		name=hurst_officer
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_hurst_romodi.dds"
+			}
+		}
+		
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+	
+	valin_officer={
+		name=valin_officer
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_valin_hess.dds"
+			}
+		}
+		
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+	
+	
+	#==
+	
+	tk_417_General={
+		name=tk_417_General
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_General_TK_417_real.dds"
+				small="GFX_idea_manstein"
+			}
+		}
+		
+		corps_commander={
+			traits={ trait_engineer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			id = 1954
+		}
+	}
+	
+	firmus_piett={
+		name=firmus_piett
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_piett.dds"
+			}
+			army = {
+				small="GFX_idea_firmus_piett"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = firmus_piett
+			ledger = army
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				military_theorist
+			}
+		}
+		navy_leader={
+			traits={ navy_career_officer battleship_adherent }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			maneuvering_skill=2
+			coordination_skill=3
+		}
+	}
+
+	kendal_ozzel={
+		name=kendal_ozzel
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_ozzel.dds"
+			}
+			army = {
+				small="GFX_idea_kendal_ozzel"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = kendal_ozzel
+			ledger = navy
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				naval_theorist
+			}
+		}
+		navy_leader={
+			traits={ naval_lineage old_guard_navy }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+		}
+	}
+
+	tiaan_jerjerrod={
+		name=tiaan_jerjerrod
+		portraits={
+			army={
+				large="gfx/leaders/GER/Portrait_Germany_Heinz_Guderian.dds"
+				small="GFX_idea_tiaan_jerjerrod"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = tiaan_jerjerrod
+			ledger = navy
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				air_warfare_theorist
+			}
+		}
+		navy_leader={
+			traits={ chief_engineer caustic_personality }
+			skill=3
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
+		}
+	}
+
+	conan_antonio_motti={
+		name=conan_antonio_motti
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_motti.dds"
+				small="GFX_idea_conan_antonio_motti"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = navy_chief
+			idea_token = conan_antonio_motti
+			ledger = navy
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				navy_chief_commerce_raiding_3
+			}
+		}
+		navy_leader={
+			traits={ navy_career_officer seawolf }
+			skill=4
+			attack_skill=4
+			defense_skill=1
+			maneuvering_skill=3
+			coordination_skill=4
+		}
+	}
+
+	officer1={
+		name=officer1
+		portraits={
+			army={
+				small="GFX_idea_officer1"
+			}
+			
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = officer1
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				prince_of_terror
+			}
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+	}
+
+	officer2={
+		name=officer2
+		portraits={
+			army={
+				small="GFX_idea_officer2"
+			}
+			
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = officer2
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				captain_of_industry
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	officer3={
+		name=officer3
+		portraits={
+			army={
+				small="GFX_idea_officer3"
+			}
+			
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = officer3
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				war_industrialist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	moradmin_bast={
+		name=moradmin_bast
+		portraits={
+			army={
+				small="GFX_idea_moradmin_bast"
+			}
+			
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = moradmin_bast
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				silent_workhorse
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	
+#############
+
+	tk_3634={
+		name=tk_3634
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_TK_3634.dds"
+				small="GFX_idea_manstein"
+			}
+		}
+		corps_commander={
+			traits={ holotank_commander career_officer infantry_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+
+	th_313={
+		name=th_313
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_th_313.dds"
+				small="GFX_idea_manstein"
+			}
+		}
+		corps_commander={
+			traits={ republic_hero }
+			skill= 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	
+	thrawn={
+		name=thrawn
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_thrawn.dds"
+				small="GFX_idea_manstein"
+			}
+		}
+		field_marshal = {
+			traits={ brilliant_strategist inspirational_leader grand_admiral }
+			skill= 7
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+
+	b1_268={
+		name=b1_268
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_b1_268.dds"
+				small="GFX_idea_manstein"
+			}
+		}
+		corps_commander={
+			traits={ chosen_by_thrawn }
+			skill= 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	freja_covell={
+		name=freja_covell
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_freja_covell.dds"
+				small="GFX_idea_freja_covell"
+			}
+		}	
+		
+		corps_commander={
+			traits={ chosen_by_thrawn war_hero armor_officer winter_specialist }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+	
+	ct_4483={
+		name=ct_4483
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_imperial_shock_trooper.dds"
+				small="GFX_idea_manstein"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	fs_451={
+		name=fs_451
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_incinerator_trooper.dds"
+				small="GFX_idea_manstein"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	ved_kennede={
+		name=ved_kennede
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_imperial_royal_guard.dds"
+				small="GFX_idea_manstein"
+			}
+		}
+		corps_commander={
+			traits={ imperial_royal_guard adaptable paratrooper }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+	}
+	
+	blackhole={
+		name=blackhole
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_blackhole_trooper.dds"
+				small="GFX_idea_manstein"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
+	
+	pellaeon={
+		name=pellaeon
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_gilad_pellaeon.dds"
+				small="GFX_idea_manstein"
+			}
+		}
+		corps_commander={
+			traits={ chosen_by_thrawn republic_hero }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	
+	joyier={
+		name=joyier
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_artillery_trooper.dds"
+				small="GFX_idea_manstein"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	td_4388={
+		name=td_4388
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_td_4388.dds"
+				small="GFX_idea_manstein"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	ledre_okins={
+		name=conan_ledre_okins
+		portraits={
+			navy={
+				large="gfx/leaders/IMP/portrait_ledre_okins.dds"
+			}
+		}
+
+		navy_leader={
+			traits={ chief_engineer gentlemanly }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=26
+		}
+	}
+	
+	salial_devrays={
+		name=salial_devrays
+		portraits={
+			army={
+				large="gfx/leaders/IMP/portrait_salial_devrays.dds"
+				small="GFX_idea_manstein"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+}

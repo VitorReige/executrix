@@ -1,0 +1,66 @@
+################
+##### IMP ######
+################
+
+
+IMP_rise_of_the_empire_decisions = {
+	icon = generic_propaganda
+
+	allowed = { 
+		is_ai = no
+		NOT = { original_tag = IMP }
+	}
+	visible = {
+		is_ai = no
+		NOT = { original_tag = IMP }
+		NOT = { original_tag = REA }
+		NOT = { original_tag = MDO }
+	}
+}
+
+IMP_statebuilding_decisions = {
+	icon = generic_industry
+	allowed = {
+		original_tag = IMP
+	}
+	visible = {
+		has_completed_focus = imp_logistics_review
+	}
+}
+
+IMP_wargoals_decisions = {
+	icon = usa_intervention_mandate
+	allowed = {
+		original_tag = IMP
+	}
+	visible = {
+		has_completed_focus = imp_war_plan
+	}
+}
+
+IMP_borderconflict_decisions = {
+	icon = usa_intervention_mandate
+	allowed = {
+		original_tag = IMP
+	}
+	visible = {
+		has_completed_focus = imp_border_conflict_decisions
+	}
+}
+
+IMP_campaign_decisions = {
+	icon = infiltration
+	allowed = {
+		original_tag = IMP
+	}
+	visible = {
+		has_completed_focus = imp_campaign_decisions
+	}
+}
+
+IMP_new_leaders = {
+	icon = generic_propaganda
+	allowed = {
+		original_tag = IMP
+	}
+}

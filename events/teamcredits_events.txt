@@ -1,0 +1,24 @@
+add_namespace = modcredits
+
+
+
+#mod credits
+
+country_event = {
+	id = modcredits.0
+	title = modcredits.0.t
+	desc = modcredits.0.d
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = modcredits.0.a
+	}
+
+}
+
+
+
+#End

@@ -1,0 +1,63 @@
+﻿
+IMP = {
+	male = {
+		names = {  
+			Sagcorb Sidhild
+			Kellbra Moumerr
+			Tyrmuh Infqui
+			Jamluc Stamark
+			Wilwar Valnotm
+			Jamijim Beemor
+			Jaremav Rantup
+			Stanstep Combig
+			Deongian Tormaws
+			Kengus Tyeirwi
+			Skydary Creajon
+			Raygia Doubgil
+			Weskevo Butilif
+			Nattrey Nuttholt
+			Greykurt Kingmell
+			Dasdor Kibhea
+			Kadsul Sarvnor
+			Jacrobe Tenpixt
+			Zacnels Reamfla
+			Marqbrya Wheahase
+			Bradabel Wilcsho
+			Lanejude Timmick
+			Phikev Besbla
+			Neilcol Devreid
+			Kelvnico Filcre
+			Samulore Pidcmat
+			Cobyaro Dodbask
+			Tremal Motbro
+			Javedext Redbwak
+			Keagchr Browelf
+		 }
+	}
+	female = {
+		names = { Anne Marie }
+	}
+	surnames = {
+		Bradabel 
+		Wilcsho
+		Lanejude 
+		Timmick
+		Phikev 
+		Besbla
+		Neilcol 
+		Devreid
+		Kelvnico
+		Filcre
+		Samulore 
+		Pidcmat
+		Cobyaro 
+		Dodbask
+		Tremal
+		Motbro
+		Javedext
+		Redbwak
+		Keagchr 
+		Browelf
+	}
+	callsigns = { "Aurek" "Besh" "Cresh" "Cherek" "Dorn" "Esk" "Enth" "Onith" "Forn" "Grek" "Herf" "Isk" "Jenth" "Krill" "Krenth" "Leth" "Mern"}
+}
