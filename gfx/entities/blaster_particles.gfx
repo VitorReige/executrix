@@ -1,0 +1,14 @@
+objectTypes = {
+
+#INFANTRY
+	pdxparticle = {
+		name = "hosw_red_blastershot_mg"
+		type = "hosw_red_blastershot_mg_file"
+		scale = 1
+	}
+	pdxparticle = {
+		name = "hosw_muzzlered_mg"
+		type = "hosw_muzzlered_mg_file"
+		scale = 1
+	}
+}

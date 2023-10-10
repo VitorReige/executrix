@@ -1,0 +1,542 @@
+objectTypes = {
+	
+#Empire
+
+	#Magmatrooper
+	pdxmesh = {
+		name = "IMP_magmatrooper_mesh"
+		file = "gfx/models/infantry/IMP_magmatrooper_mesh.mesh"
+		
+		#
+		## Idle
+		#
+		
+		animation = { id = "idle"				type = "mixamo_idle1" }
+		animation = { id = "long_idle02"		type = "mixamo_idle2_long" }
+		
+		#
+		## Fighting
+		#
+		
+		animation = { id = "charge_mg"			type = "mixamo_run_forward" }
+		animation = { id = "charge_mg_shoot"	type = "mixamo_Firing Rifle - Running" }
+		
+		animation = { id = "DownToAim" 			type = "mixamo_Rifle Down To Aim" }
+		animation = { id = "AimingIdle" 		type = "mixamo_Rifle Aiming Idle" }
+		animation = { id = "AimToDown" 			type = "mixamo_Rifle Aim To Down" }
+		
+		animation = { id = "KneelToAim" 		type = "mixamo_Rifle Kneel To Aim" }
+		animation = { id = "KneelIdle" 			type = "mixamo_Rifle Kneel Idle" }
+		animation = { id = "AimToKneel" 		type = "mixamo_Rifle Aim To Kneel" }	
+
+		animation = { id = "FiringStanding"		type = "mixamo_Firing Rifle - Standing" }
+		animation = { id = "FiringRunning"		type = "mixamo_Firing Rifle - Running" }	
+		
+		animation = { id = "RifleRun"		type = "mixamo_RifleRun" }
+		
+		animation = { id = "RunningReload"		type = "mixamo_RunningReload" }
+		animation = { id = "StandingReload"		type = "mixamo_StandingReload" }
+		
+		animation = { id = "ThrowingNade"		type = "mixamo_Run And Throw Grenade" }
+		
+		#
+		## Moving
+		#
+		
+		animation = { id = "move"				type = "mixamo_Rifle Walk" }
+		animation = { id = "march_move"			type = "mixamo_Rifle Walk" }
+		
+		#
+		## Training
+		#
+		
+		animation = { id = "jumping_jacks"		type = "mixamo_jumpingjacks" }
+		animation = { id = "pushup"				type = "mixamo_pushups" }
+		animation = { id = "aim_exercise"		type = "mixamo_Gunplay1" }
+		
+		#
+		## Loosing
+		#
+		
+		animation = { id = "retreat"			type = "mixamo_Rifle Walk" }
+		animation = { id = "death"				type = "mixamo_dying" }
+		
+		#
+		## Stuff
+		#
+		
+		animation = { id = "guard_rifle"		type = "mixamo_idle1" }
+		
+	}
+	
+	
+	#Deathtrooper
+	pdxmesh = {
+		name = "IMP_deathtrooper_mesh"
+		file = "gfx/models/infantry/IMP_deathtrooper_mesh.mesh"
+		
+		#
+		## Idle
+		#
+		
+		animation = { id = "idle"				type = "mixamo_idle1" }
+		animation = { id = "long_idle02"		type = "mixamo_idle2_long" }
+		
+		#
+		## Fighting
+		#
+		
+		animation = { id = "charge_mg"			type = "mixamo_run_forward" }
+		animation = { id = "charge_mg_shoot"	type = "mixamo_Firing Rifle - Running" }
+		
+		animation = { id = "DownToAim" 			type = "mixamo_Rifle Down To Aim" }
+		animation = { id = "AimingIdle" 		type = "mixamo_Rifle Aiming Idle" }
+		animation = { id = "AimToDown" 			type = "mixamo_Rifle Aim To Down" }
+		
+		animation = { id = "KneelToAim" 		type = "mixamo_Rifle Kneel To Aim" }
+		animation = { id = "KneelIdle" 			type = "mixamo_Rifle Kneel Idle" }
+		animation = { id = "AimToKneel" 		type = "mixamo_Rifle Aim To Kneel" }	
+
+		animation = { id = "FiringStanding"		type = "mixamo_Firing Rifle - Standing" }
+		animation = { id = "FiringRunning"		type = "mixamo_Firing Rifle - Running" }	
+		
+		animation = { id = "RifleRun"		type = "mixamo_RifleRun" }
+		
+		animation = { id = "RunningReload"		type = "mixamo_RunningReload" }
+		animation = { id = "StandingReload"		type = "mixamo_StandingReload" }
+		
+		animation = { id = "ThrowingNade"		type = "mixamo_Run And Throw Grenade" }
+		
+		#
+		## Moving
+		#
+		
+		animation = { id = "move"				type = "mixamo_Rifle Walk" }
+		animation = { id = "march_move"			type = "mixamo_Rifle Walk" }
+		
+		#
+		## Training
+		#
+		
+		animation = { id = "jumping_jacks"		type = "mixamo_jumpingjacks" }
+		animation = { id = "pushup"				type = "mixamo_pushups" }
+		animation = { id = "aim_exercise"		type = "mixamo_Gunplay1" }
+		
+		#
+		## Loosing
+		#
+		
+		animation = { id = "retreat"			type = "mixamo_Rifle Walk" }
+		animation = { id = "death"				type = "mixamo_dying" }
+		
+		#
+		## Stuff
+		#
+		
+		animation = { id = "guard_rifle"		type = "mixamo_idle1" }
+		
+	}
+	
+	#Shoretrooper
+	pdxmesh = {
+		name = "IMP_shoretrooper_mesh"
+		file = "gfx/models/infantry/IMP_shoretrooper_mesh.mesh"
+		
+		#
+		## Idle
+		#
+		
+		animation = { id = "idle"				type = "mixamo_idle1" }
+		animation = { id = "long_idle02"		type = "mixamo_idle2_long" }
+		
+		#
+		## Fighting
+		#
+		
+		animation = { id = "charge_mg"			type = "mixamo_run_forward" }
+		animation = { id = "charge_mg_shoot"	type = "mixamo_Firing Rifle - Running" }
+		
+		animation = { id = "DownToAim" 			type = "mixamo_Rifle Down To Aim" }
+		animation = { id = "AimingIdle" 		type = "mixamo_Rifle Aiming Idle" }
+		animation = { id = "AimToDown" 			type = "mixamo_Rifle Aim To Down" }
+		
+		animation = { id = "KneelToAim" 		type = "mixamo_Rifle Kneel To Aim" }
+		animation = { id = "KneelIdle" 			type = "mixamo_Rifle Kneel Idle" }
+		animation = { id = "AimToKneel" 		type = "mixamo_Rifle Aim To Kneel" }	
+
+		animation = { id = "FiringStanding"		type = "mixamo_Firing Rifle - Standing" }
+		animation = { id = "FiringRunning"		type = "mixamo_Firing Rifle - Running" }	
+		
+		animation = { id = "RifleRun"		type = "mixamo_RifleRun" }
+		
+		animation = { id = "RunningReload"		type = "mixamo_RunningReload" }
+		animation = { id = "StandingReload"		type = "mixamo_StandingReload" }
+		
+		animation = { id = "ThrowingNade"		type = "mixamo_Run And Throw Grenade" }
+		
+		#
+		## Moving
+		#
+		
+		animation = { id = "move"				type = "mixamo_Rifle Walk" }
+		animation = { id = "march_move"			type = "mixamo_Rifle Walk" }
+		
+		#
+		## Training
+		#
+		
+		animation = { id = "jumping_jacks"		type = "mixamo_jumpingjacks" }
+		animation = { id = "pushup"				type = "mixamo_pushups" }
+		animation = { id = "aim_exercise"		type = "mixamo_Gunplay1" }
+		
+		#
+		## Loosing
+		#
+		
+		animation = { id = "retreat"			type = "mixamo_Rifle Walk" }
+		animation = { id = "death"				type = "mixamo_dying" }
+		
+		#
+		## Stuff
+		#
+		
+		animation = { id = "guard_rifle"		type = "mixamo_idle1" }
+		
+	}
+
+	#Shocktrooper
+	pdxmesh = {
+		name = "IMP_specialops_mesh"
+		file = "gfx/models/infantry/IMP_shocktrooper_mesh.mesh"
+		
+		#
+		## Idle
+		#
+		
+		animation = { id = "idle"				type = "mixamo_idle1" }
+		animation = { id = "long_idle02"		type = "mixamo_idle2_long" }
+		
+		#
+		## Fighting
+		#
+		
+		animation = { id = "charge_mg"			type = "mixamo_run_forward" }
+		animation = { id = "charge_mg_shoot"	type = "mixamo_Firing Rifle - Running" }
+		
+		animation = { id = "DownToAim" 			type = "mixamo_Rifle Down To Aim" }
+		animation = { id = "AimingIdle" 		type = "mixamo_Rifle Aiming Idle" }
+		animation = { id = "AimToDown" 			type = "mixamo_Rifle Aim To Down" }
+		
+		animation = { id = "KneelToAim" 		type = "mixamo_Rifle Kneel To Aim" }
+		animation = { id = "KneelIdle" 			type = "mixamo_Rifle Kneel Idle" }
+		animation = { id = "AimToKneel" 		type = "mixamo_Rifle Aim To Kneel" }	
+
+		animation = { id = "FiringStanding"		type = "mixamo_Firing Rifle - Standing" }
+		animation = { id = "FiringRunning"		type = "mixamo_Firing Rifle - Running" }	
+		
+		animation = { id = "RifleRun"		type = "mixamo_RifleRun" }
+		
+		animation = { id = "RunningReload"		type = "mixamo_RunningReload" }
+		animation = { id = "StandingReload"		type = "mixamo_StandingReload" }
+		
+		animation = { id = "ThrowingNade"		type = "mixamo_Run And Throw Grenade" }
+		
+		#
+		## Moving
+		#
+		
+		animation = { id = "move"				type = "mixamo_Rifle Walk" }
+		animation = { id = "march_move"			type = "mixamo_Rifle Walk" }
+		
+		#
+		## Training
+		#
+		
+		animation = { id = "jumping_jacks"		type = "mixamo_jumpingjacks" }
+		animation = { id = "pushup"				type = "mixamo_pushups" }
+		animation = { id = "aim_exercise"		type = "mixamo_Gunplay1" }
+		
+		#
+		## Loosing
+		#
+		
+		animation = { id = "retreat"			type = "mixamo_Rifle Walk" }
+		animation = { id = "death"				type = "mixamo_dying" }
+		
+		#
+		## Stuff
+		#
+		
+		animation = { id = "guard_rifle"		type = "mixamo_idle1" }
+		
+	}
+	
+	#Clone Trooper
+	pdxmesh = {
+		name = "IMP_clonetrooper_mesh"
+		file = "gfx/models/infantry/IMP_clonetrooper_mesh.mesh"
+		
+		#
+		## Idle
+		#
+		
+		animation = { id = "idle"				type = "mixamo_idle1" }
+		animation = { id = "long_idle02"		type = "mixamo_idle2_long" }
+		
+		#
+		## Fighting
+		#
+		
+		animation = { id = "charge_mg"			type = "mixamo_run_forward" }
+		animation = { id = "charge_mg_shoot"	type = "mixamo_Firing Rifle - Running" }
+		
+		animation = { id = "DownToAim" 			type = "mixamo_Rifle Down To Aim" }
+		animation = { id = "AimingIdle" 		type = "mixamo_Rifle Aiming Idle" }
+		animation = { id = "AimToDown" 			type = "mixamo_Rifle Aim To Down" }
+		
+		animation = { id = "KneelToAim" 		type = "mixamo_Rifle Kneel To Aim" }
+		animation = { id = "KneelIdle" 			type = "mixamo_Rifle Kneel Idle" }
+		animation = { id = "AimToKneel" 		type = "mixamo_Rifle Aim To Kneel" }	
+
+		animation = { id = "FiringStanding"		type = "mixamo_Firing Rifle - Standing" }
+		animation = { id = "FiringRunning"		type = "mixamo_Firing Rifle - Running" }	
+		
+		animation = { id = "RifleRun"		type = "mixamo_RifleRun" }
+		
+		animation = { id = "RunningReload"		type = "mixamo_RunningReload" }
+		animation = { id = "StandingReload"		type = "mixamo_StandingReload" }
+		
+		animation = { id = "ThrowingNade"		type = "mixamo_Run And Throw Grenade" }
+		
+		#
+		## Moving
+		#
+		
+		animation = { id = "move"				type = "mixamo_Rifle Walk" }
+		animation = { id = "march_move"			type = "mixamo_Rifle Walk" }
+		
+		#
+		## Training
+		#
+		
+		animation = { id = "jumping_jacks"		type = "mixamo_jumpingjacks" }
+		animation = { id = "pushup"				type = "mixamo_pushups" }
+		animation = { id = "aim_exercise"		type = "mixamo_Gunplay1" }
+		
+		#
+		## Loosing
+		#
+		
+		animation = { id = "retreat"			type = "mixamo_Rifle Walk" }
+		animation = { id = "death"				type = "mixamo_dying" }
+		
+		#
+		## Stuff
+		#
+		
+		animation = { id = "guard_rifle"		type = "mixamo_idle1" }
+		
+	}
+	
+	#91st Recon
+	pdxmesh = {
+		name = "IMP_91st_Recon_mesh"
+		file = "gfx/models/infantry/IMP_91st_Recon_mesh.mesh"
+		
+		#
+		## Idle
+		#
+		
+		animation = { id = "idle"				type = "mixamo_idle1" }
+		animation = { id = "long_idle02"		type = "mixamo_idle2_long" }
+		
+		#
+		## Fighting
+		#
+		
+		animation = { id = "charge_mg"			type = "mixamo_run_forward" }
+		animation = { id = "charge_mg_shoot"	type = "mixamo_Firing Rifle - Running" }
+		
+		animation = { id = "DownToAim" 			type = "mixamo_Rifle Down To Aim" }
+		animation = { id = "AimingIdle" 		type = "mixamo_Rifle Aiming Idle" }
+		animation = { id = "AimToDown" 			type = "mixamo_Rifle Aim To Down" }
+		
+		animation = { id = "KneelToAim" 		type = "mixamo_Rifle Kneel To Aim" }
+		animation = { id = "KneelIdle" 			type = "mixamo_Rifle Kneel Idle" }
+		animation = { id = "AimToKneel" 		type = "mixamo_Rifle Aim To Kneel" }	
+
+		animation = { id = "FiringStanding"		type = "mixamo_Firing Rifle - Standing" }
+		animation = { id = "FiringRunning"		type = "mixamo_Firing Rifle - Running" }	
+		
+		animation = { id = "RifleRun"		type = "mixamo_RifleRun" }
+		
+		animation = { id = "RunningReload"		type = "mixamo_RunningReload" }
+		animation = { id = "StandingReload"		type = "mixamo_StandingReload" }
+		
+		animation = { id = "ThrowingNade"		type = "mixamo_Run And Throw Grenade" }
+		
+		#
+		## Moving
+		#
+		
+		animation = { id = "move"				type = "mixamo_Rifle Walk" }
+		animation = { id = "march_move"			type = "mixamo_Rifle Walk" }
+		
+		#
+		## Training
+		#
+		
+		animation = { id = "jumping_jacks"		type = "mixamo_jumpingjacks" }
+		animation = { id = "pushup"				type = "mixamo_pushups" }
+		animation = { id = "aim_exercise"		type = "mixamo_Gunplay1" }
+		
+		#
+		## Loosing
+		#
+		
+		animation = { id = "retreat"			type = "mixamo_Rifle Walk" }
+		animation = { id = "death"				type = "mixamo_dying" }
+		
+		#
+		## Stuff
+		#
+		
+		animation = { id = "guard_rifle"		type = "mixamo_idle1" }
+		
+	}
+	
+	#SpecOps
+	pdxmesh = {
+		name = "IMP_SpecOps_mesh"
+		file = "gfx/models/infantry/IMP_SpecOps_mesh.mesh"
+		
+		#
+		## Idle
+		#
+		
+		animation = { id = "idle"				type = "mixamo_idle1" }
+		animation = { id = "long_idle02"		type = "mixamo_idle2_long" }
+		
+		#
+		## Fighting
+		#
+		
+		animation = { id = "charge_mg"			type = "mixamo_run_forward" }
+		animation = { id = "charge_mg_shoot"	type = "mixamo_Firing Rifle - Running" }
+		
+		animation = { id = "DownToAim" 			type = "mixamo_Rifle Down To Aim" }
+		animation = { id = "AimingIdle" 		type = "mixamo_Rifle Aiming Idle" }
+		animation = { id = "AimToDown" 			type = "mixamo_Rifle Aim To Down" }
+		
+		animation = { id = "KneelToAim" 		type = "mixamo_Rifle Kneel To Aim" }
+		animation = { id = "KneelIdle" 			type = "mixamo_Rifle Kneel Idle" }
+		animation = { id = "AimToKneel" 		type = "mixamo_Rifle Aim To Kneel" }	
+
+		animation = { id = "FiringStanding"		type = "mixamo_Firing Rifle - Standing" }
+		animation = { id = "FiringRunning"		type = "mixamo_Firing Rifle - Running" }	
+		
+		animation = { id = "RifleRun"		type = "mixamo_RifleRun" }
+		
+		animation = { id = "RunningReload"		type = "mixamo_RunningReload" }
+		animation = { id = "StandingReload"		type = "mixamo_StandingReload" }
+		
+		animation = { id = "ThrowingNade"		type = "mixamo_Run And Throw Grenade" }
+		
+		#
+		## Moving
+		#
+		
+		animation = { id = "move"				type = "mixamo_Rifle Walk" }
+		animation = { id = "march_move"			type = "mixamo_Rifle Walk" }
+		
+		#
+		## Training
+		#
+		
+		animation = { id = "jumping_jacks"		type = "mixamo_jumpingjacks" }
+		animation = { id = "pushup"				type = "mixamo_pushups" }
+		animation = { id = "aim_exercise"		type = "mixamo_Gunplay1" }
+		
+		#
+		## Loosing
+		#
+		
+		animation = { id = "retreat"			type = "mixamo_Rifle Walk" }
+		animation = { id = "death"				type = "mixamo_dying" }
+		
+		#
+		## Stuff
+		#
+		
+		animation = { id = "guard_rifle"		type = "mixamo_idle1" }
+		
+	}
+	
+	#2nd Airborne
+	pdxmesh = {
+		name = "IMP_2nd_Airborne_mesh"
+		file = "gfx/models/infantry/IMP_2nd_Airborne_mesh.mesh"
+		
+		#
+		## Idle
+		#
+		
+		animation = { id = "idle"				type = "mixamo_idle1" }
+		animation = { id = "long_idle02"		type = "mixamo_idle2_long" }
+		
+		#
+		## Fighting
+		#
+		
+		animation = { id = "charge_mg"			type = "mixamo_run_forward" }
+		animation = { id = "charge_mg_shoot"	type = "mixamo_Firing Rifle - Running" }
+		
+		animation = { id = "DownToAim" 			type = "mixamo_Rifle Down To Aim" }
+		animation = { id = "AimingIdle" 		type = "mixamo_Rifle Aiming Idle" }
+		animation = { id = "AimToDown" 			type = "mixamo_Rifle Aim To Down" }
+		
+		animation = { id = "KneelToAim" 		type = "mixamo_Rifle Kneel To Aim" }
+		animation = { id = "KneelIdle" 			type = "mixamo_Rifle Kneel Idle" }
+		animation = { id = "AimToKneel" 		type = "mixamo_Rifle Aim To Kneel" }	
+
+		animation = { id = "FiringStanding"		type = "mixamo_Firing Rifle - Standing" }
+		animation = { id = "FiringRunning"		type = "mixamo_Firing Rifle - Running" }	
+		
+		animation = { id = "RifleRun"		type = "mixamo_RifleRun" }
+		
+		animation = { id = "RunningReload"		type = "mixamo_RunningReload" }
+		animation = { id = "StandingReload"		type = "mixamo_StandingReload" }
+		
+		animation = { id = "ThrowingNade"		type = "mixamo_Run And Throw Grenade" }
+		
+		#
+		## Moving
+		#
+		
+		animation = { id = "move"				type = "mixamo_Rifle Walk" }
+		animation = { id = "march_move"			type = "mixamo_Rifle Walk" }
+		
+		#
+		## Training
+		#
+		
+		animation = { id = "jumping_jacks"		type = "mixamo_jumpingjacks" }
+		animation = { id = "pushup"				type = "mixamo_pushups" }
+		animation = { id = "aim_exercise"		type = "mixamo_Gunplay1" }
+		
+		#
+		## Loosing
+		#
+		
+		animation = { id = "retreat"			type = "mixamo_Rifle Walk" }
+		animation = { id = "death"				type = "mixamo_dying" }
+		
+		#
+		## Stuff
+		#
+		
+		animation = { id = "guard_rifle"		type = "mixamo_idle1" }
+		
+	}
+
+}

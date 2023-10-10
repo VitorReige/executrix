@@ -1,0 +1,293 @@
+
+#Infantry
+
+
+#General
+entity = {
+	name = "hosw_infantry_rifle_entity"
+	pdxmesh = "generic_western_european_rifle_infantry_mesh"
+	
+	default_state = "idle"
+	state = { name = "attack"			animation = "charge_rifle" 					animation_blend_time = 0.0  animation_speed = 1.0 looping = no next_state = "attack" chance = 2 propagate_state = { rifle2 = "idle" } }
+	state = { name = "attack"			animation = "charge_rifle_shoot" 			animation_blend_time = 0.0  animation_speed = 1.0 looping = no next_state = "attack" chance = 1 }
+	state = { name = "defend"			animation = "attack" 			animation_blend_time = 0.3  animation_speed = 1.0 }
+	state = { name = "support_attack"	animation = "support_attack" 	animation_blend_time = 0.3 animation_speed = 1.0 }
+	
+	state = { name = "move"				animation = "move" 		 		animation_blend_time = 0.0 animation_speed = 1.0 chance = 1
+		event = { trigger_once = yes sound = { soundeffect = "infantry_move_animation" } }
+	}
+	state = { name = "move"				animation = "march_move" 		 		animation_blend_time = 0.0 animation_speed = 1.0 chance = 1
+		event = { trigger_once = yes sound = { soundeffect = "infantry_move_animation" } }
+	}
+	
+	state = { name = "retreat"			animation = "retreat" 	 		animation_blend_time = 0.3 animation_speed = 1.0 }
+	state = { name = "death"			animation = "death" 			animation_blend_time = 0.3 animation_speed = 1.0 }
+	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 1.0 chance = 15 looping = no }
+	state = { name = "idle"				animation = "long_idle02" 		animation_blend_time = 0.3 animation_speed = 1.0 chance = 1 looping = no }
+	
+	state = { name = "idle"				animation = "long_idle04" 		animation_blend_time = 0.3 animation_speed = 1.0 chance = 1 looping = no }
+	state = { name = "idle"				animation = "long_idle05" 		animation_blend_time = 0.3 animation_speed = 1.0 chance = 1 looping = no }
+	state = { name = "training"			animation = "training" 			animation_blend_time = 0.3 animation_speed = 1.0 chance = 2 looping = no }
+	state = { name = "training"			animation = "jumping_jacks" 	animation_blend_time = 0.3 animation_speed = 1.0 chance = 1 looping = no }
+	state = { name = "training"			animation = "pushup" 			animation_blend_time = 0.3 animation_speed = 1.0 chance = 1 looping = no }
+	state = { name = "training"			animation = "guard_rifle" 		animation_blend_time = 0.3 animation_speed = 1.0 chance = 1 looping = no }
+	state = { name = "training"			animation = "aim_exercise" 		animation_blend_time = 0.3 animation_speed = 1.0 chance = 1 looping = no }
+	
+	scale = 0.8			
+}	
+
+entity = {
+	name = "hosw_infantry_mg_entity"
+	pdxmesh = "generic_western_european_mg_infantry_mesh"
+	
+	default_state = "idle"
+	
+	state = { name = "attack"			animation = "charge_mg" 		animation_blend_time = 0.0  animation_speed = 1.0 looping = no next_state = "attack" chance = 20 propagate_state = { rifle1 = "idle" } }
+	state = { name = "attack"			animation = "charge_mg_shoot" 	animation_blend_time = 0.0  animation_speed = 1.0 looping = no next_state = "attack" chance = 0 }
+	state = { name = "defend"			animation = "attack" 			animation_blend_time = 0.3  animation_speed = 1.0 }
+	state = { name = "support_attack"	animation = "support_attack" 	animation_blend_time = 0.3 animation_speed = 1.0 }
+	
+	state = { name = "move"				animation = "move" 				animation_blend_time = 0.0 animation_speed = 1.0 chance = 1
+		event = { trigger_once = yes sound = { soundeffect = "infantry_move_animation" } }
+	}
+	state = { name = "move"				animation = "march_move" 		animation_blend_time = 0.0 animation_speed = 1.0 chance = 1
+		event = { trigger_once = yes sound = { soundeffect = "infantry_move_animation" } }
+	}
+	
+	state = { name = "retreat"			animation = "retreat" 			animation_blend_time = 0.3 animation_speed = 1.0 }
+	state = { name = "death"			animation = "death" 			animation_blend_time = 0.3 animation_speed = 1.0 }
+	
+	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 1.0 chance = 15 looping = no }
+	state = { name = "idle"				animation = "long_idle02"		animation_blend_time = 0.3 animation_speed = 1.0 chance = 1 looping = no }
+	state = { name = "idle"				animation = "long_idle04"		animation_blend_time = 0.3 animation_speed = 1.0 chance = 1 looping = no }
+	state = { name = "idle"				animation = "long_idle05"		animation_blend_time = 0.3 animation_speed = 1.0 chance = 1 looping = no }
+	
+	state = { name = "training"			animation = "training" 			animation_blend_time = 0.3 animation_speed = 1.0 chance = 2 looping = no }
+	state = { name = "training"			animation = "jumping_jacks" 	animation_blend_time = 0.3 animation_speed = 1.0 chance = 1 looping = no }
+	state = { name = "training"			animation = "pushup" 			animation_blend_time = 0.3 animation_speed = 1.0 chance = 1 looping = no }
+	state = { name = "training"			animation = "aim_exercise" 		animation_blend_time = 0.3 animation_speed = 1.0 chance = 1 looping = no }
+	
+	scale = 0.8			
+}
+
+#Imperial
+entity = {
+	name = "hosw_mixamo_infantry_entity"
+	pdxmesh = "IMP_SpecOps_mesh"
+	
+	default_state = "idle"
+	
+	#
+	## Idle
+	#
+	
+	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 1.0 chance = 15 looping = no }
+	state = { name = "idle"				animation = "long_idle02"		animation_blend_time = 0.3 animation_speed = 1.0 chance = 3 looping = no }
+	
+	#
+	## Attacking
+	#
+	
+	state = { name = "attack"			animation = "RunningReload" 	animation_blend_time = 0.0  animation_speed = 0.8 looping = no next_state = "attack" chance = 1 propagate_state = { rifle = "ReloadBlaster" } }
+	state = { name = "attack"			animation = "RifleRun" 			animation_blend_time = 0.3  animation_speed = 0.8 looping = no next_state = "attack" chance = 9 propagate_state = { rifle = "attack2" } }
+	
+	#
+	## Support Attacking
+	#
+	
+	state = { name = "support_attack"	animation = "StandingReload" 	animation_blend_time = 0.0  animation_speed = 0.8 looping = no next_state = "support_attack" chance = 1 propagate_state = { rifle = "ReloadBlaster" } }
+	state = { name = "support_attack"	animation = "FiringStanding"	animation_blend_time = 0.3  animation_speed = 0.5 looping = no next_state = "support_attack" chance = 9 propagate_state = { rifle = "attack2" } }
+	
+	#
+	## Defending
+	#
+	
+	state = { name = "defend"			animation = "StandingReload" 	animation_blend_time = 0.0  animation_speed = 0.8 looping = no next_state = "defend" chance = 1 propagate_state = { rifle = "ReloadBlaster" } }
+	state = { name = "defend"			animation = "FiringStanding"	animation_blend_time = 0.3  animation_speed = 0.5 looping = no next_state = "defend" chance = 9 propagate_state = { rifle = "attack2" } }
+	
+	#
+	## Moving
+	#
+	
+	state = { name = "move"				animation = "move" 				animation_blend_time = 0.0 animation_speed = 1.0 chance = 1
+		event = { trigger_once = yes sound = { soundeffect = "infantry_move_animation" } }
+	}
+	state = { name = "move"				animation = "march_move" 		animation_blend_time = 0.0 animation_speed = 1.0 chance = 1
+		event = { trigger_once = yes sound = { soundeffect = "infantry_move_animation" } }
+	}
+	
+	#
+	## Training
+	#
+	
+	state = { name = "training"			animation = "pushup" 			animation_blend_time = 0.5 animation_speed = 1.0 chance = 7 looping = no }
+	
+	#
+	## Loosing
+	#
+	
+	state = { name = "retreat"			animation = "retreat" 			animation_blend_time = 0.3 animation_speed = 1.0 }
+	state = { name = "death"			animation = "death" 			animation_blend_time = 0.3 animation_speed = 1.0 }
+	
+	#
+	
+	scale = 0.8
+}
+
+#Clone Trooper
+#example: commonwealth_gfx_infantry_entity_snow
+entity = {
+	clone = "hosw_mixamo_infantry_entity"
+	name = "IMP_infantry_entity"
+	pdxmesh = "IMP_clonetrooper_mesh"
+	
+	attach = { 	name = "rifle"	RightHand = "DC-15s_mixamo" }
+}
+
+entity = {
+	clone = "hosw_mixamo_infantry_entity"
+	name = "IMP_infantry_2_entity"
+	pdxmesh = "IMP_clonetrooper_mesh"
+	
+	attach = { 	name = "rifle"	RightHand = "DC-15a_mixamo_blue" }
+}
+
+entity = {
+	clone = "IMP_infantry_2_entity"
+	name = "IMP_infantry_3_entity"
+}
+
+
+# Shocktrooper
+entity = {
+	clone = "hosw_mixamo_infantry_entity"
+	name = "IMP_paratrooper_entity"
+	pdxmesh = "IMP_SpecialOps_mesh"
+	
+	attach = { 	name = "rifle"	RightHand = "DC-15a_mixamo_blue" }
+}
+
+entity = {
+	clone = "hosw_mixamo_infantry_entity"
+	name = "IMP_mountaineers_entity"
+	pdxmesh = "IMP_SpecialOps_mesh"
+	
+	attach = { 	name = "rifle"	RightHand = "DC-15a_mixamo_blue" }
+}
+
+entity = {
+	clone = "hosw_mixamo_infantry_entity"
+	name = "IMP_marine_entity"
+	pdxmesh = "IMP_SpecialOps_mesh"
+	
+	attach = { 	name = "rifle"	RightHand = "DC-15a_mixamo_blue" }
+}
+
+# 91st Recon
+entity = {
+	clone = "hosw_mixamo_infantry_entity"
+	name = "IMP_hoswInfantryAlternativeVariant_1_entity"
+	pdxmesh = "IMP_91st_Recon_mesh"
+	
+	attach = { 	name = "rifle"	RightHand = "DC-15a_mixamo_blue" }
+}
+
+#entity = {
+#	clone = "hosw_mixamo_infantry_entity"
+#	name = "IMP_91st_Recon_2_entity"
+#	pdxmesh = "IMP_91st_Recon_mesh"
+#	
+#	attach = { 	name = "rifle"	RightHand = "DC-15a_mixamo_blue" }
+#}
+#
+#entity = {
+#	clone = "hosw_mixamo_infantry_entity"
+#	name = "IMP_91st_Recon_3_entity"
+#	pdxmesh = "IMP_91st_Recon_mesh"
+#	
+#	attach = { 	name = "rifle"	RightHand = "DC-15a_mixamo_blue" }
+#}
+
+# SpecOps
+entity = {
+	clone = "hosw_mixamo_infantry_entity"
+	name = "IMP_hoswInfantryAlternativeVariant_2_entity"
+	pdxmesh = "IMP_SpecOps_mesh"
+	
+	attach = { 	name = "rifle"	RightHand = "DC-15a_mixamo_blue" }
+}
+
+#entity = {
+#	clone = "hosw_mixamo_infantry_entity"
+#	name = "IMP_91st_Recon_2_entity"
+#	pdxmesh = "IMP_91st_Recon_mesh"
+#	
+#	attach = { 	name = "rifle"	RightHand = "DC-15a_mixamo_blue" }
+#}
+#
+#entity = {
+#	clone = "hosw_mixamo_infantry_entity"
+#	name = "IMP_91st_Recon_3_entity"
+#	pdxmesh = "IMP_91st_Recon_mesh"
+#	
+#	attach = { 	name = "rifle"	RightHand = "DC-15a_mixamo_blue" }
+#}
+
+# 2nd Airborne
+entity = {
+	clone = "hosw_mixamo_infantry_entity"
+	name = "IMP_hoswInfantryAlternativeVariant_9_entity"
+	pdxmesh = "IMP_2nd_Airborne_mesh"
+	
+	attach = { 	name = "rifle"	RightHand = "DC-15a_mixamo_blue" }
+}
+
+
+#Magmatrooper
+
+entity = {
+	clone = "hosw_mixamo_infantry_entity"
+	name = "IMP_infantry_entity"
+	pdxmesh = "IMP_magmatrooper_mesh"
+	
+	attach = { 	name = "rifle"	RightHand = "E11_mixamo" }
+}
+
+entity = {
+	clone = "hosw_mixamo_infantry_entity"
+	name = "IMP_infantry_2_entity"
+	pdxmesh = "IMP_magmatrooper_mesh"
+	
+	attach = { 	name = "rifle"	RightHand = "DC-15a_mixamo_red" }
+}
+
+entity = {
+	clone = "IMP_infantry_2_entity"
+	name = "IMP_infantry_3_entity"
+}
+
+#Deathtrooper
+
+entity = {
+	clone = "hosw_mixamo_infantry_entity"
+	name = "IMP_paratrooper_entity"
+	pdxmesh = "IMP_deathtrooper_mesh"
+	
+	attach = { 	name = "rifle"	RightHand = "DC-15a_mixamo_red" }
+}
+
+entity = {
+	clone = "hosw_mixamo_infantry_entity"
+	name = "IMP_mountaineers_entity"
+	pdxmesh = "IMP_deathtrooper_mesh"
+	
+	attach = { 	name = "rifle"	RightHand = "DC-15a_mixamo_red" }
+}
+
+entity = {
+	clone = "hosw_mixamo_infantry_entity"
+	name = "IMP_marine_entity"
+	pdxmesh = "IMP_deathtrooper_mesh"
+	
+	attach = { 	name = "rifle"	RightHand = "DC-15a_mixamo_red" }
+}
