@@ -1,5 +1,7 @@
 spriteTypes = {
 
+	
+
 	spriteType = {
 		name = "GFX_techtree_details_progress_bar_frame"
 		textureFile = "gfx//interface//techtree//techtree_details_progress_bar_frame.dds"
@@ -134,6 +136,11 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_navaldoctrine_tab_large"
 		textureFile = "gfx/interface/techtree/techtree_navaldoctrine_tab_large.dds"
+		noOfFrames = 2		
+	}
+		spriteType = {
+		name = "GFX_specialforcesdoctrine_tab_large"
+		textureFile = "gfx/interface/techtree/techtree_specialforcesdoctrine_tab_large.dds"
 		noOfFrames = 2		
 	}
 
@@ -819,7 +826,6 @@ spriteTypes = {
 		name = "GFX_technology_infantry_folder_small_branch_item_bg"
 		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
 	}	
-	
 	########
 	####NEW STAR WARS STUFF
 	#########
@@ -884,7 +890,6 @@ spriteTypes = {
 	
 	############
 	########
-	
 	# support
 	spriteType = {
 		name = "GFX_technology_support_folder_small_unavailable_item_bg"
