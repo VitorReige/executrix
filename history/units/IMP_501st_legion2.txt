@@ -24,7 +24,7 @@
 
 units = {
 	division= {	
-		name = "501st Legion - 2"
+		name = "Carnivore Battalion"
 		location = 8085
 		division_template = "Unique Division: 501st Legion 2"	
 		start_experience_factor = 1.0
@@ -32,7 +32,7 @@ units = {
 	}
 
 	division= {	
-		name = "501st Legion - 3"
+		name = "Execute Battalion"
 		location = 8085
 		division_template = "Unique Division: 501st Legion 2"	
 		start_experience_factor = 1.0
@@ -40,7 +40,7 @@ units = {
 	}
 
 	division= {	
-		name = "501st Legion - 4"
+		name = "Triton Squad"
 		location = 8085
 		division_template = "Unique Division: 501st Legion 2"	
 		start_experience_factor = 1.0

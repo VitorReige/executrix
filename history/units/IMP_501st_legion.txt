@@ -24,7 +24,7 @@
 
 units = {
 	division= {	
-		name = "501st Legion"
+		name = "Torrent Company"
 		location = 8085
 		division_template = "Unique Division: 501st Legion"	
 		start_experience_factor = 1.0
