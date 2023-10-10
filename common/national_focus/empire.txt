@@ -96,6 +96,25 @@ focus_tree = {
 	}
 
 	focus = {
+		id = imp_repair
+		icon = GFX_focus_reconstruction
+		cost = 1
+		prerequisite =
+		{
+			focus = imp_investigate
+		}
+		x = 0
+		y = 2
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = imp_survey
+		completion_reward = {
+			country_event = {
+				id = imperial.2
+			}
+		}
+	}
+
+	focus = {
 		id = imp_fortify_land
 		icon = GFX_goal_fortify_the_westwall
 		cost = 2
@@ -228,24 +247,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = imp_repair
-		icon = GFX_focus_reconstruction
-		cost = 1
-		prerequisite =
-		{
-			focus = imp_investigate
-		}
-		x = 0
-		y = 2
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		relative_position_id = imp_survey
-		completion_reward = {
-			country_event = {
-				id = imperial.2
-			}
-		}
-	}
 
 	focus = {
 		id = imp_tarkin_doctrine
@@ -6699,6 +6700,68 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = imp_special_forces
+		icon = GFX_focus_specialforces
+		cost = 5
+		
+		available = {
+			or = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "Darth Vader"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "Emperor Vader"
+				}
+				has_country_leader = {
+					name = "Grand Admiral Thrawn"
+					ruling_only = yes
+				}
+			}
+		}
+		
+		mutually_exclusive = {
+			focus = imp_an_army
+		}
+
+		prerequisite = {
+			focus = imp_land_doctrine
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		x = 2
+		y = 1
+		relative_position_id = imp_land_doctrine
+
+		completion_reward = {
+			add_ideas = spec_forces
+		}
+	}
+
+	focus = {
+		id = imp_special_forces2
+		icon = GFX_focus_specialforces
+		cost = 3
+
+		prerequisite = {
+			focus = imp_mountaineers
+			focus = imp_paratroopers
+			focus = imp_marines
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = imp_special_forces
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = spec_forces
+				add_idea = spec_forces2
+			}
+		}
+	}
 	
 	focus = {
 		id = imp_land_supply3
@@ -7766,44 +7829,6 @@ focus_tree = {
 
 	}
 
-	focus = {
-		id = imp_special_forces
-		icon = GFX_focus_specialforces
-		cost = 5
-		
-		available = {
-			or = {
-				has_country_leader = {
-					ruling_only = yes
-					name = "Darth Vader"
-				}
-				has_country_leader = {
-					ruling_only = yes
-					name = "Emperor Vader"
-				}
-				has_country_leader = {
-					name = "Grand Admiral Thrawn"
-					ruling_only = yes
-				}
-			}
-		}
-		
-		mutually_exclusive = {
-			focus = imp_an_army
-		}
-
-		prerequisite = {
-			focus = imp_land_doctrine
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		x = 2
-		y = 1
-		relative_position_id = imp_land_doctrine
-
-		completion_reward = {
-			add_ideas = spec_forces
-		}
-	}
 
 	focus = {
 		id = imp_mountaineers
@@ -7865,29 +7890,6 @@ focus_tree = {
 				stormtrooper_marine = 1
 			}
 			custom_effect_tooltip = imp_marines_tt
-		}
-	}
-
-	focus = {
-		id = imp_special_forces2
-		icon = GFX_focus_specialforces
-		cost = 3
-
-		prerequisite = {
-			focus = imp_mountaineers
-			focus = imp_paratroopers
-			focus = imp_marines
-		}
-
-		x = 0
-		y = 2
-		relative_position_id = imp_special_forces
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = spec_forces
-				add_idea = spec_forces2
-			}
 		}
 	}
 
