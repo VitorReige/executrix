@@ -6,9 +6,8 @@ oob = IMP_starting_troopers
 # Starting tech
 set_technology = {
 	#military tech
-	basic_hovercrafts = 1
 	tech_special_forces = 1
-	stormtrooper_tech = 1
+	blasterinf_unlock_tech = 1
 	infantry_weapons = 1
 	improved_special_forces = 1
 	survival_training = 1
