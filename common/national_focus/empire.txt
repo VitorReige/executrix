@@ -6746,9 +6746,7 @@ focus_tree = {
 		cost = 3
 
 		prerequisite = {
-			focus = imp_mountaineers
-			focus = imp_paratroopers
-			focus = imp_marines
+			focus = imp_special_forces
 		}
 
 		x = 0
