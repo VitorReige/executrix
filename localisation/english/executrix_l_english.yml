@@ -2370,7 +2370,7 @@
  
  #mod credits event
  modcredits.0.t: "Mod Credits"
- modcredits.0.d: "Star Wars: Executrix was created to bring the spotlight back onto the Empire just like the original Star Wars: Executor mod. This would not be possible without the help and support of Penultimate who gifted the Mod Team a streamlined version of the Executor Redux that he made. Thank you Pen.\n\nCredits to everyone whom worked on SW:Executor, Executor Redux, and SW:Executrix.\n\nCreator of SW:Executor:\nMasterVeo1 \n\nCreator of Executor Redux:\nPenultimate  \n\nLead Dev of SW:Executrix:\nVitor Reige \nCaptainRex76 - GFX, CODING\nstormcommando - GFX\nYourWallissgFriend - GFX\nFubuma - 3D MODELS, ANIMATIONS\nMakronovo - TECHNOLOGY TREES"
+ modcredits.0.d: "Star Wars: Executrix was created to bring the spotlight back onto the Empire just like the original Star Wars: Executor mod. This would not be possible without the help and support of Penultimate who gifted the Mod Team a streamlined version of Executor Redux that he made. Thank you Pen.\n\nCredits to everyone whom worked on Executor, Redux, and Executrix.\n\nCreator of SW:Executor:\nMasterVeo1 \nCreator of Executor Redux:\nPenultimate \nLead Dev of SW:Executrix:\nVitor Reige \n\nTheProfessor - CODING\nBraineac2000 - CODING, WRITING\nCaptainRex76 - CODING, GFX\nFubuma - 3D MODELS, ANIMATIONS\nMakronovo - TECHNOLOGY TREES\nYourWallissgFriend - GFX\nBrancovich - GFX\nStormcommando - WRITER"
  modcredits.0.a: "Continue Gameplay"
  
  # STAR WARS LAWS
