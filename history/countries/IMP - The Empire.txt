@@ -1,0 +1,300 @@
+﻿capital = 656
+
+#oob = ""
+oob = IMP_starting_troopers
+
+# Starting tech
+set_technology = {
+	#military tech
+	basic_hovercrafts = 1
+	tech_special_forces = 1
+	stormtrooper_tech = 1
+	infantry_weapons = 1
+	improved_special_forces = 1
+	survival_training = 1
+	elite_forces = 1
+	motorised_infantry = 1
+	radio = 1
+	#support tech 
+	basic_train = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	#industrial tech
+	basic_machine_tools = 1
+	#electronics
+	electronic_mechanical_engineering = 1
+	#Seafaring
+	
+	#doctrines
+	#empire unlock
+	unique_tech_10 = 1
+	empire_unlock_tech = 1
+	blasterinf_unlock_tech = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		pre_dreadnoughts = 1
+		mtg_transport = 1
+		basic_torpedo = 1
+		improved_ship_torpedo_launcher = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_depth_charges = 1
+		sonar = 1
+		basic_cruiser_armor_scheme = 1
+	}
+}
+
+set_rule = {
+    can_create_factions = yes
+}
+set_research_slots = 3
+set_war_support = 0.9
+set_stability = 0.6
+set_country_flag = starwarstech_unlock
+
+create_faction = "GALACTIC EMPIRE"
+add_to_faction = IMP
+
+set_politics = {
+	ruling_party = imperialism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 12
+	communism = 0
+	neutrality = 24
+	imperialism = 64
+}
+
+add_ideas = {
+	tot_economic_mobilisation
+	imp_recruit_law
+	imp_closed_economy
+	ruined_ship
+	imperial_military
+	stranded
+	no_industry
+}
+
+recruit_character = darth_vader
+recruit_character = darth_vader_alt
+recruit_character = tarkin
+
+recruit_character = firmus_piett
+recruit_character = kendal_ozzel
+recruit_character = tiaan_jerjerrod
+
+recruit_character = officer1
+recruit_character = officer2
+recruit_character = officer3
+
+
+##MILITARY 
+
+#CHIEF OF STAFF
+recruit_character = thrawn_officer
+recruit_character = cassio_officer
+recruit_character = conan_antonio_motti
+#HIGH COMMAND
+recruit_character = weir_officer
+recruit_character = wulf_yularen
+recruit_character = otaking_officer
+recruit_character = cc_appo
+recruit_character = maximillian_veers
+recruit_character = krennic_officer
+#GENERALS
+recruit_character = tessala_officer
+recruit_character = moradmin_bast
+recruit_character = mod_terrik
+recruit_character = snowtrooper_maraway
+recruit_character = tk_417_General
+recruit_character = tk_3634
+recruit_character = freja_covell
+recruit_character = ct_4483
+recruit_character = ved_kennede
+recruit_character = pellaeon
+recruit_character = joyier
+recruit_character = td_4388
+recruit_character = ledre_okins
+recruit_character = salial_devrays
+
+##Deactivated
+#GENERALS
+#recruit_character = gideon_officer
+#recruit_character = malsuum_officer
+#recruit_character = hurst_officer
+#recruit_character = valin_officer
+#recruit_character = trech_molock
+#recruit_character = th_313
+#recruit_character = b1-268
+#recruit_character = blackhole
+#recruit_character = fs_451
+
+#Meme Characters
+recruit_character = glup_shitto
+#recruit_character = rick_officer
+
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+	
+		create_operative_leader = {
+			name = "VDP-21"
+			GFX = "gfx/leaders/IMP/portrait_vpd_21.dds"
+			traits = { operative_tough operative_seducer }
+			bypass_recruitment = no
+			available_to_spy_master = yes
+			nationalities = { IMP }
+		}
+	
+		create_operative_leader = {
+			name = "4D6-J-A7"
+			GFX = "gfx/leaders/IMP/portrait_4d6_j_a7.dds"
+			traits = { operative_tough operative_linguist }
+			bypass_recruitment = no
+			available_to_spy_master = yes
+			nationalities = { IMP }
+		}
+	
+		create_operative_leader = {
+			name = "Bozeden Jeems"
+			GFX = "gfx/leaders/IMP/portrait_bozeden_jeems.dds"
+			traits = { operative_escape_artist operative_commando }
+			bypass_recruitment = no
+			available_to_spy_master = yes
+			nationalities = { IMP }
+		}
+	
+		create_operative_leader = {
+			name = "Dedra Meero"
+			GFX = "gfx/leaders/IMP/portrait_dedra_meero.dds"
+			traits = { operative_seducer }
+			bypass_recruitment = no
+			available_to_spy_master = yes
+			nationalities = { IMP }
+		}
+	
+		create_operative_leader = {
+			name = "Tess Meero"
+			GFX = "gfx/leaders/IMP/portrait_tess_meero.dds"
+			traits = { operative_demolition_expert }
+			bypass_recruitment = no
+			available_to_spy_master = yes
+			nationalities = { IMP }
+		}
+	
+		create_operative_leader = {
+			name = "Eren Garai"
+			GFX = "gfx/leaders/IMP/portrait_eren_garai.dds"
+			traits = { operative_safe_cracker }
+			bypass_recruitment = no
+			available_to_spy_master = yes
+			nationalities = { IMP }
+		}
+	
+		create_operative_leader = {
+			name = "IT-O Interrogator Droid"
+			GFX = "gfx/leaders/IMP/portrait_it_o_interrogator.dds"
+			traits = { operative_master_interrogator }
+			bypass_recruitment = no
+			available_to_spy_master = yes
+			nationalities = { IMP }
+		}
+	
+		create_operative_leader = {
+			name = "LT-514"
+			GFX = "gfx/leaders/IMP/portrait_lt_514.dds"
+			traits = { operative_infiltrator operative_linguist }
+			bypass_recruitment = no
+			available_to_spy_master = yes
+			nationalities = { IMP }
+		}
+	
+		create_operative_leader = {
+			name = "Montra Varn"
+			GFX = "gfx/leaders/IMP/portrait_montra_varn.dds"
+			traits = { operative_well_groomed operative_infiltrator }
+			bypass_recruitment = no
+			available_to_spy_master = yes
+			nationalities = { IMP }
+		}
+	
+		create_operative_leader = {
+			name = "Airec Shun"
+			GFX = "gfx/leaders/IMP/portrait_airec_shun.dds"
+			traits = { operative_double_agent }
+			bypass_recruitment = no
+			available_to_spy_master = yes
+			nationalities = { IMP REA }
+		}
+	
+		create_operative_leader = {
+			name = "Orson Krennic"
+			GFX = "gfx/leaders/IMP/portrait_orson_krennic.dds"
+			traits = { operative_well_groomed operative_natural_orator }
+			bypass_recruitment = no
+			available_to_spy_master = yes
+			nationalities = { IMP }
+		}
+	
+		create_operative_leader = {
+			name = "TK-205"
+			GFX = "gfx/leaders/IMP/portrait_tk_205.dds"
+			traits = {  }
+			bypass_recruitment = no
+			available_to_spy_master = yes
+			nationalities = { IMP }
+		}
+	
+		create_operative_leader = {
+			name = "Vuld Tansen"
+			GFX = "gfx/leaders/IMP/portrait_vuld_tansen.dds"
+			traits = { operative_escape_artist operative_natural_orator }
+			bypass_recruitment = no
+			available_to_spy_master = yes
+			nationalities = { IMP }
+		}
+	
+		create_operative_leader = {
+			name = "Lehon Murr"
+			GFX = "gfx/leaders/IMP/portrait_lehon_murr.dds"
+			traits = { operative_escape_artist operative_commando }
+			bypass_recruitment = no
+			available_to_spy_master = yes
+			nationalities = { IMP }
+		}
+	}	
+	
+#do not delete this line as pdx coding sucks and this will break file

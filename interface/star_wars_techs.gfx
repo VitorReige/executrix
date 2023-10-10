@@ -1,0 +1,260 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_star_wars_tech_medium"
+		texturefile = "gfx/interface/technologies/electronic_mechanical_engineering.dds"
+	}
+	SpriteType = {
+		name = "GFX_starwars_techtree_bg"
+		texturefile = "gfx/interface/techtree/starwars_techtree_bg.dds"
+	}
+	
+	#SW SWAPPABLE BUFFS
+	spriteType = {
+		name = "GFX_idea_sw_equipment_buff2"
+		texturefile = "gfx/interface/ideas/idea_sw_equipment_buff2.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sw_bills"
+		texturefile = "gfx/interface/ideas/idea_sw_bills.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sw_bills1"
+		texturefile = "gfx/interface/ideas/idea_sw_bills1.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sw_bills2"
+		texturefile = "gfx/interface/ideas/idea_sw_bills2.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sw_blueprint"
+		texturefile = "gfx/interface/ideas/idea_sw_blueprint.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sw_capitol"
+		texturefile = "gfx/interface/ideas/idea_sw_capitol.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sw_citizen"
+		texturefile = "gfx/interface/ideas/idea_sw_citizen.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sw_coal"
+		texturefile = "gfx/interface/ideas/idea_sw_coal.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sw_crate"
+		texturefile = "gfx/interface/ideas/idea_sw_crate.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sw_factories"
+		texturefile = "gfx/interface/ideas/idea_sw_factories.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sw_helmetwithknife"
+		texturefile = "gfx/interface/ideas/idea_sw_helmetwithknife.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_xwing_medium"
+		texturefile = "gfx/interface/technologies/xwing.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_uwing_medium"
+		texturefile = "gfx/interface/technologies/uwing.dds"
+	}
+
+
+###-> GALACTIC TECHNOOLOGY <><>
+##-> INITIAL UNLOCK TECH <><>
+	SpriteType = {
+        name = "GFX_star_wars_unlock_technogly_medium"
+        texturefile = "gfx/interface/technologies/advanced_computing_machine.dds"
+    }
+	
+#-> EMPIRE TECH <><>
+	SpriteType = {
+        name = "GFX_empire_tech_1_medium"
+        texturefile = "gfx/interface/technologies/empire_tech_1.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_empire_tech_2_medium"
+        texturefile = "gfx/interface/technologies/empire_tech_2.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_empire_tech_3_medium"
+        texturefile = "gfx/interface/technologies/empire_tech_3.dds"
+    }
+
+#-> REBEL TECH <><>
+	SpriteType = {
+        name = "GFX_rebel_tech_1_medium"
+        texturefile = "gfx/interface/technologies/rebel_tech_1.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_rebel_tech_2_medium"
+        texturefile = "gfx/interface/technologies/rebel_tech_2.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_rebel_tech_3_medium"
+        texturefile = "gfx/interface/technologies/rebel_tech_3.dds"
+    }
+	
+#-> MANDO TECH <><>
+	SpriteType = {
+        name = "GFX_mando_tech_1_medium"
+        texturefile = "gfx/interface/technologies/mando_tech_1.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_mando_tech_2_medium"
+        texturefile = "gfx/interface/technologies/mando_tech_2.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_mando_tech_3_medium"
+        texturefile = "gfx/interface/technologies/mando_tech_3.dds"
+    }
+	
+	
+#-> INDUSTRY TECH <><>	
+	SpriteType = {
+        name = "GFX_star_wars_industry_buff_1_medium"
+        texturefile = "gfx/interface/technologies/starwars_industrybuff_1.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_star_wars_industry_buff_2_medium"
+        texturefile = "gfx/interface/technologies/starwars_industrybuff_2.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_star_wars_industry_buff_3_medium"
+        texturefile = "gfx/interface/technologies/starwars_industrybuff_3.dds"
+    }
+	
+	
+	SpriteType = {
+        name = "GFX_star_wars_industry_buff_second_1_medium"
+        texturefile = "gfx/interface/technologies/starwars_industrybuff_second1.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_star_wars_industry_buff_second_2_medium"
+        texturefile = "gfx/interface/technologies/starwars_industrybuff_second2.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_star_wars_industry_buff_second_3_medium"
+        texturefile = "gfx/interface/technologies/starwars_industrybuff_second3.dds"
+    }
+	
+	
+#-> MILITARY TECH <><>	
+	SpriteType = {
+        name = "GFX_star_wars_military_buff_1_medium"
+        texturefile = "gfx/interface/technologies/starwars_militarybuff_1.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_star_wars_military_buff_2_medium"
+        texturefile = "gfx/interface/technologies/starwars_militarybuff_2.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_star_wars_military_buff_3_medium"
+        texturefile = "gfx/interface/technologies/starwars_militarybuff_3.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_star_wars_military_buff_second_1_medium"
+        texturefile = "gfx/interface/technologies/starwars_militarybuff_second_1.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_star_wars_military_buff_second_2_medium"
+        texturefile = "gfx/interface/technologies/starwars_militarybuff_second_2.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_star_wars_military_buff_second_3_medium"
+        texturefile = "gfx/interface/technologies/starwars_militarybuff_second_3.dds"
+    }
+	
+#-> UNIQUE TECH <><>	
+	SpriteType = {
+        name = "GFX_unique_tech_1_medium"
+        texturefile = "gfx/interface/technologies/unique_tech_1.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_unique_tech_2_medium"
+        texturefile = "gfx/interface/technologies/unique_tech_2.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_unique_tech_3_medium"
+        texturefile = "gfx/interface/technologies/unique_tech_3.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_unique_tech_4_medium"
+        texturefile = "gfx/interface/technologies/unique_tech_4.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_unique_tech_5_medium"
+        texturefile = "gfx/interface/technologies/unique_tech_5.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_unique_tech_6_medium"
+        texturefile = "gfx/interface/technologies/unique_tech_6.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_unique_tech_7_medium"
+        texturefile = "gfx/interface/technologies/unique_tech_7.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_unique_tech_8_medium"
+        texturefile = "gfx/interface/technologies/unique_tech_8.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_unique_tech_9_medium"
+        texturefile = "gfx/interface/technologies/unique_tech_9.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_mando_beskar_equipment"
+        texturefile = "gfx/interface/technologies/mando_beskar_equipment.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_mando_beskar_equipment_1"
+        texturefile = "gfx/interface/technologies/mando_beskar_equipment_1.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_unique_tech_10_medium"
+        texturefile = "gfx/interface/technologies/unique_tech_10.dds"
+    }
+	
+}

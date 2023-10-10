@@ -1,0 +1,23 @@
+﻿l_english:
+ ##NEWS EVENTS
+ #IMPERIAL CITY CAPTURE
+ redux_world_news.1.t: "Tehran Falls! Iran Crumbles!"
+ redux_world_news.1.d: "Reports are sweeping in from the Middle-East that the new expansionast regime calling themselves 'The Empire' have taken hold of Tehran and the surronding districts. Iran's military force were taken by surprise and force unable to properly defend its territories.\n\nThere has been little comment from other countries as to the situation that has been developing within the Middle-East but only time will tell how the world reacts."
+ redux_world_news.1.a: "Glory to the Empire!"
+ redux_world_news.1.b: "May God help them"
+ 
+ redux_world_news.2.t: "Afghanistan in Anarchy!"
+ redux_world_news.2.d: ""
+ redux_world_news.2.a: "Glory to the Empire!"
+ redux_world_news.2.b: ""
+ 
+ redux_world_news.3.t: "Turkey overthrown!"
+ redux_world_news.3.d: ""
+ redux_world_news.3.a: "Glory to the Empire!"
+ redux_world_news.3.b: ""
+ 
+ redux_world_news.4.t: "USSR crumbles beneath the Empire!"
+ redux_world_news.4.d: ""
+ redux_world_news.4.a: "Glory to the Empire!"
+ redux_world_news.4.b: ""
+ 

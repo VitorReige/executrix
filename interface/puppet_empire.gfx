@@ -1,0 +1,12 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_autonomy_imperial_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_imperial_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_imperialism_group"
+		texturefile = "gfx/interface/ideologies/imperialism_group.dds"
+	}
+
+}

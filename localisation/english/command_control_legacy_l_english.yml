@@ -1,0 +1,60 @@
+﻿l_english:
+##################################
+#Characters
+##################################
+#Imperial
+ tk_3634:0 "TK-3634"
+ th_313:0 "TH-313"
+ ct_7567:0 "CT-7567 'Commander Rex'"
+ b1_268:0 "B1-268"
+ freja_covell:0 "High Colonel Freja Covell"
+ pellaeon:0 "Captain Gilad Pellaeon"
+ blackhole:0 "Blackhole Trooper"
+ ved_kennede:0 "Master Instructor Ved Kennede"
+ fs_451:0 "FS-451"
+ ct_4483:0 "CT-4483 'Corporal Sub'"
+ joyier:0 "TK-764 'Joyier'"
+ tessala:0 "Major General Tessala Corvae"
+ td_4388:0 "TD-4388 'Sergeant Isila Drutch'"
+ ledre_okins:0 "Admiral Ledre Okins"
+ salial_devrays:0 "Lieutenant Salial Devrays"
+ 
+#Memes
+ glup_shitto:0 "Glup Shitto"
+ glup_shitto_desc:0 "An obscure and mediocre commander, often showing up where he is least expected."
+ 
+##################################
+#Traits
+##################################
+ mediocrity:0 "Mediocrity"
+ mediocrity_desc:0 "This commander excessively depends on his subordinates, even for menial tasks, resulting in their skill development at the expense of his own personal growth." 
+ ptsd:0 "Post-Traumatic Stress Disorder"
+ ptsd_desc:0 "This commander is constantly plagued by flashbacks and nightmares of previous battles, making it hard for them to focus on the current task at hand."
+ 
+#Legacy Traits 
+ holotank_commander:0 "Holotank Commander"
+ holotank_commander_desc:0 "This commander refuses to lead from the front, transmitting his orders by the HoloNet instead."
+ grand_admiral:0 "Grand Admiral"
+ grand_admiral_desc:0 "There is satisfaction in defeating an enemy. But one must never allow oneself to become complacent. There are always more enemies to be identified, faced, and vanquished."
+ jedi_knight:0 "Jedi Knight"
+ jedi_knight_desc:0 "For over a thousand generations, the Jedi Knights were the guardians of peace and justice in the Old Republic. Before the dark times, before the Empire."
+ republic_hero:0 "Republic Hero"
+ republic_hero_desc:0 "Years ago he served the Galactic Republic in the Clone Wars, now he serves you in your struggle."
+ rebel_hero:0 "Rebel Hero"
+ rebel_hero_desc:0 "The Empire maintains order, and people like him disrupt that order."
+ chosen_by_thrawn:0 "Chosen by Thrawn"
+ chosen_by_thrawn_desc:0 "Grand Admiral Thrawn has an eye for talent, carfully hand selecting his sub commanders and trusting them to carry out his instructions completely."
+ imperial_royal_guard:0 "Imperial Royal Guard"
+ imperial_royal_guard_desc:0 "The Emperor's personal protectors—handpicked from the very best of his forces. Out of the millions of soldiers, they are unsurpassed."
+ democratic_franatic:0 "Democratic Franatic"
+ democratic_franatic_desc:0 "This Commander is willing to sacrifice thousands if it is in the name of Democracy."
+ corellian_treaty:0 "Corellian Treaty"
+ corellian_treaty_desc:0 "One of the founding members of the Rebel Alliance, their experience and knowledge is unmatched by everyone in the Alliance."
+ operative_alien:0 "Alien"
+ operative_alien_desc:0 "This Operative is an Alien, making it hard to blend in other countries without being noticed.
+ 
+##################################
+#Leaders
+##################################
+ isard_desc:0 "The daughter of Armand Isard, and current Director of Imperial Intelligence."
+ kaine_desc:0 "A fanactical supporter of the New Order brought about by Emperor Palpatine, and for his devotion become a Moff."

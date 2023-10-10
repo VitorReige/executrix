@@ -1,0 +1,27 @@
+spriteTypes = {
+
+#Command and Control Agencies
+	
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_isb"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_isb.dds"
+		noOfFrames = 2
+    }
+	
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_imi"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_imi.dds"
+		noOfFrames = 2
+    }	
+	
+		spriteType = {
+		name = "GFX_intelligence_agency_logo_ris"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_ris.dds"
+		noOfFrames = 2
+    }
+	
+		spriteType = {
+		name = "GFX_intelligence_agency_logo_ful"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_ful.dds"
+		noOfFrames = 2
+    }

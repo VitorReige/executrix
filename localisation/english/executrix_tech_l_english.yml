@@ -1,0 +1,65 @@
+﻿l_english:
+
+ starwars_folder: "Galactic Technology"
+ starwars_folder_desc: "Galactic Technology and Equipment from across the Galaxy."
+ 
+ # STAR WARS TECH UNLOCK
+ empire_unlock_tech: "Playing the Galactic Empire"
+ rebel_unlock_tech: "Playing the Rebel Alliance"
+ mando_unlock_tech: "Playing the Remnants of Mandalore"
+ 
+ #initial tech
+ star_wars_unlock_technogly: "Galactic Research Methodology"
+ star_wars_unlock_technogly_desc: "Galaxy is home to vast quanities of technology old, new, and ever changing. We shall apply our methods to help expand our presence."
+ 
+ #empire tech
+ empire_tech_1: "Imperial National Spirit"
+ empire_tech_1_desc: "The Imperial Way of life is one of great servitude towards the government and the people. Only in our desire to push the Empire's goals, shall we carry on."
+ empire_tech_2: "Imperial Propaganda"
+ empire_tech_2_desc: "Imperial Propaganda is a prominent piece of keeping our citizens aligned to our way of thought and the on-goings of the government and our military. We shall once again push forward our agenda."
+ empire_tech_3: "Imperial Academy"
+ 
+ #rebel tech
+ rebel_tech_1: "Rebellion Propaganda"
+ rebel_tech_2: "Rebellion Gurellia Tactics"
+ rebel_tech_3: "Rebellion Fleet Doctrine"
+ 
+ #mando tech
+ mando_tech_1: "Spirit of Mandalore"
+ mando_tech_2: "Warriors of Mandalore"
+ mando_tech_3: "Rage of Mandalore"
+ 
+ #industry buff
+ star_wars_industry_buff_1: "Galactic Production"
+ star_wars_industry_buff_2: "Galactic Production II"
+ star_wars_industry_buff_3: "Galactic Production III"
+ 
+ star_wars_industry_buff_second_1: "Galactic Facilities & Factories"
+ star_wars_industry_buff_second_2: "Galactic Facilities & Factories II"
+ star_wars_industry_buff_second_3: "Galactic Facilities & Factories III"
+ 
+ star_wars_military_buff_1: "Naval Stations"
+ star_wars_military_buff_2: "Naval Stations II"
+ star_wars_military_buff_3: "Naval Stations III"
+ 
+ star_wars_military_buff_second_1: "Starfighter Production"
+ star_wars_military_buff_second_2: "Starfighter Production II"
+ star_wars_military_buff_second_3: "Starfighter Production III"
+ 
+ 
+ # Unique Tech
+ unique_tech_1: "Galactic Refining Methods"
+ unique_tech_2: "Space-Resilient Construction"
+ unique_tech_3: "Naval Targeting Systems"
+ unique_tech_4: "Holonet"
+ 
+ unique_tech_5: "Bacta Tanks"
+ unique_tech_6: "Superior Medical Means"
+ unique_tech_7: "Galactic Bureaucracy"
+ unique_tech_8: "The White Book"
+ 
+ unique_tech_9: "Beskar Armor"
+ mando_beskar_equipment_1: "Beskar Armor"
+ mando_beskar_equipment_desc: "Beskar, also known as Mandalorian steel, is a metal that is used in Mandalorian armor and is notable for its high tolerance to extreme forms of damage. In its purest forms, the metal was durable enough to withstand a direct blaster shot and could repel lightsaber strikes. \n\nNeeds to be produced in order to equip our Soldiers with Armor."
+ 
+ unique_tech_10: "Starfighters"

@@ -1,0 +1,57 @@
+﻿division_template = {
+    name = "Stormtrooper Regiment"
+    regiments = {
+        stormtrooper = { x = 0 y = 0 }
+        stormtrooper = { x = 0 y = 1 }
+		stormtrooper = { x = 1 y = 0 }
+        stormtrooper = { x = 1 y = 1 }
+	}
+	support = { 
+    } 
+}
+
+division_template = {
+    name = "Imperial Regiment"
+    regiments = {
+        blaster_infantry = { x = 0 y = 0 }
+        blaster_infantry = { x = 0 y = 1 }
+		blaster_infantry = { x = 1 y = 0 }
+        blaster_infantry = { x = 1 y = 1 }
+	}
+	support = { 
+    } 
+}
+
+
+units = {
+	division= {	
+		name = "Foot Patrol 7"
+		location = 8085
+		division_template = "Stormtrooper Regiment"	
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "25th Regiment"
+		location = 8085
+		division_template = "Stormtrooper Regiment"	
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "Crash Site Garrison"
+		location = 8085
+		division_template = "Stormtrooper Regiment"	
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "66th Regiment"
+		location = 8085
+		division_template = "Stormtrooper Regiment"	
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	
+}
+

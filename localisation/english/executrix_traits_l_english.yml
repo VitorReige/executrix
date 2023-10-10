@@ -1,0 +1,36 @@
+﻿l_english:
+ #COUNTRY LEADER TRAITS
+ sith_presence:0 "Sith Presence"
+ lord_vader:0 "Dark Lord of the Sith"
+ emperor_vader:0 "Emperor of the Second Galactic Empire"
+ 
+ respected_imperial:0 "Respected Imperial"
+ imperial_doctrine:0 "Empire's Doctrine"
+ 
+ imperial_genius: "Tactical Genius"
+ thrawns_doctrine: "Thrawn's Doctrine"
+ 
+ #MILITARY TRAITS
+ experience_outranks: "Experience Outranks Anything"
+ experience_outranks_desc: "In this clone's eyes, experience outranks anything. He will only accept the most capable individuals to serve alongside him."
+ 
+ imperial_moh: "Imperial Medal of Honor"
+ imperial_moh_desc: "Having shown and distinguished themselves conspicuously by gallantry and intrepidity, risking their own life above and beyond the call of duty, this individual has been rewarded with the Medal of Honor."
+ 
+ holotank_commander:0 "Holotank Commander"
+ holotank_commander_desc:0 "This commander refuses to lead from the front, transmitting his orders by the HoloNet instead."
+ 
+ grand_admiral:0 "Grand Admiral"
+ grand_admiral_desc:0 "There is satisfaction in defeating an enemy. But one must never allow oneself to become complacent. There are always more enemies to be identified, faced, and vanquished."
+ 
+ chosen_by_thrawn:0 "Chosen by Thrawn"
+ chosen_by_thrawn_desc:0 "Grand Admiral Thrawn has an eye for talent, carfully hand selecting his sub commanders and trusting them to carry out his instructions completely."
+ 
+ imperial_royal_guard:0 "Imperial Royal Guard"
+ imperial_royal_guard_desc:0 "The Emperor's personal protectors—handpicked from the very best of his forces. Out of the millions of soldiers, they are unsurpassed."
+ 
+ ptsd:0 "Post-Traumatic Stress Disorder"
+ ptsd_desc:0 "This commander is constantly plagued by flashbacks and nightmares of previous battles, making it hard for them to focus on the current task at hand."
+ 
+ operative_alien:0 "Alien"
+ operative_alien_desc:0 "This Operative is an Alien, making it hard to blend in other countries without being noticed.

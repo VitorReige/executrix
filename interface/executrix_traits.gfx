@@ -1,0 +1,69 @@
+spriteTypes = {
+
+	spriteType = {
+        name = "GFX_trait_holotank_commander"
+        texturefile = "gfx/interface/traits/trait_holotank_commander.dds"
+		legacy_lazy_load = no
+    }
+	
+	spriteType = {
+        name = "GFX_trait_experience_outranks"
+        texturefile = "gfx/interface/traits/trait_experience_outranks.dds"
+		legacy_lazy_load = no
+    }
+	
+	spriteType = {
+        name = "GFX_trait_imperial_moh"
+        texturefile = "gfx/interface/traits/trait_imperial_moh.dds"
+		legacy_lazy_load = no
+    }
+	
+	spriteType = {
+        name = "GFX_trait_grand_admiral"
+        texturefile = "gfx/interface/traits/trait_grand_admiral.dds"
+		legacy_lazy_load = no
+    }
+	
+	spriteType = {
+        name = "GFX_trait_chosen_by_thrawn"
+        texturefile = "gfx/interface/traits/trait_chosen_by_thrawn.dds"
+		legacy_lazy_load = no
+    }
+	
+	spriteType = {
+        name = "GFX_trait_imperial_royal_guard"
+        texturefile = "gfx/interface/traits/trait_imperial_royal_guard.dds"
+		legacy_lazy_load = no
+    }
+	
+	spriteType = {
+        name = "GFX_trait_ptsd"
+        texturefile = "gfx/interface/traits/trait_lightbulb_broken.dds"
+		legacy_lazy_load = no
+    }
+	
+	spriteType = {
+        name = "GFX_trait_operative_alien"
+        texturefile = "gfx/interface/traits/trait_operative_alien.dds"
+		legacy_lazy_load = no
+    }
+	
+	spriteType = {
+        name = "GFX_trait_ptsd"
+        texturefile = "gfx/interface/traits/trait_lightbulb_broken.dds"
+		legacy_lazy_load = no
+    }
+	
+	spriteType = {
+        name = "GFX_trait_mediocrity"
+        texturefile = "gfx/interface/traits/trait_mediocrity.dds"
+		legacy_lazy_load = no
+    }
+	
+	spriteType = {
+        name = "GFX_trait_operative_force_sensitive"
+        texturefile = "gfx/interface/traits/trait_force_sensitive.dds"
+		legacy_lazy_load = no
+    }
+	
+}

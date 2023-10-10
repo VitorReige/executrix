@@ -1,0 +1,25 @@
+
+state={
+	id=656
+	name="STATE_CRASHED"
+
+	history={
+		add_core_of = IMP
+		owner = IMP
+		victory_points = {
+			8085 50 
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		8085 
+	}
+	manpower=79853
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

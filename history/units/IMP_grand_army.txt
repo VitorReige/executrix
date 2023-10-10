@@ -1,0 +1,148 @@
+﻿
+division_template = {
+    name = "Frontline Infantry"
+    regiments = {
+        blaster_infantry = { x = 0 y = 0 }
+        blaster_infantry = { x = 0 y = 1 }
+        blaster_infantry = { x = 1 y = 0 }
+        blaster_infantry = { x = 1 y = 1 }
+		blaster_infantry = { x = 2 y = 0 }
+        blaster_infantry = { x = 2 y = 1 }
+        blaster_infantry = { x = 3 y = 0 }
+        blaster_infantry = { x = 3 y = 1 }
+		blaster_infantry = { x = 0 y = 2 }
+	}
+	support = { 
+		imp_engineer = { x = 0 y = 0 }
+    } 
+}
+
+units = {
+	division= {	
+		name = "1st Infantry Division"
+		location = 8085
+		division_template = "Frontline Infantry"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "2nd Infantry Division"
+		location = 8085
+		division_template = "Frontline Infantry"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	
+	division= {	
+		name = "3rd Infantry Division"
+		location = 5093
+		division_template = "Frontline Infantry"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	
+	division= {	
+		name = "4th Infantry Division"
+		location = 5093
+		division_template = "Frontline Infantry"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	
+	division= {	
+		name = "5th Infantry Division"
+		location = 12883
+		division_template = "Frontline Infantry"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	
+	division= {	
+		name = "6th Infantry Division"
+		location = 2097
+		division_template = "Frontline Infantry"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	
+	division= {	
+		name = "7th Infantry Division"
+		location = 2097
+		division_template = "Frontline Infantry"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	
+	division= {	
+		name = "8th Infantry Division"
+		location = 2089
+		division_template = "Frontline Infantry"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "1st Foreign ST Division"
+		location = 1631
+		division_template = "Stormtrooper Regiment"	
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "2nd Foreign ST Division"
+		location = 12455
+		division_template = "Stormtrooper Regiment"	
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "3rd Foreign ST Division"
+		location = 2095
+		division_template = "Stormtrooper Regiment"	
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "4th Foreign ST Division"
+		location = 5093
+		division_template = "Stormtrooper Regiment"	
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "5th Foreign ST Division"
+		location = 1600
+		division_template = "Stormtrooper Regiment"	
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "6th Foreign ST Division"
+		location = 6826
+		division_template = "Stormtrooper Regiment"	
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "7th Foreign ST Division"
+		location = 78
+		division_template = "Stormtrooper Regiment"	
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "8th Foreign ST Division"
+		location = 12413
+		division_template = "Stormtrooper Regiment"	
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}	
+}
+

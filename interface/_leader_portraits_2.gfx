@@ -1,0 +1,24 @@
+spriteTypes = {
+	### IMP
+	spriteType = {
+		name = "GFX_portrait_darth_vader"
+		texturefile = "gfx/leaders/IMP/portrait_imp_vader.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_thrawn3"
+		texturefile = "gfx/leaders/IMP/portrait_thrawn3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_thrawn3gen"
+		texturefile = "gfx/leaders/IMP/portrait_thrawn3gen.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_portrait_imp_cody"
+		texturefile = "gfx/leaders/IMP/portrait_imp_cody.dds"
+	}
+	
+}
