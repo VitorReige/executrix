@@ -125,15 +125,12 @@ leader_traits = {
 			factor = 0
 		}
 		
-		trait_xp_factor = {
-			infantry_leader = 0.15
-			cavalry_leader = 0.15
-			panzer_leader = 0.15
-			trait_engineer = 0.15
-		}
-		
 		modifier = {
 			max_commander_army_size = 12
+			trait_infantry_leader_xp_gain_factor = 0.15
+			trait_cavalry_leader_xp_gain_factor = 0.15
+			trait_panzer_leader_xp_gain_factor = 0.15
+			trait_engineer_xp_gain_factor = 0.15
 		}
 		
 		field_marshal_modifier = {
