@@ -146,7 +146,7 @@ characters={
 		name=thrawn_officer
 		portraits={
 			army={
-				large="gfx/leaders/imp/portrait_thrawngen.dds"
+				large="gfx/leaders/imp/portrait_thrawn.dds"
 			}
 			army={
 				small="GFX_idea_thrawn"
@@ -298,14 +298,6 @@ characters={
 			traits = {
 				air_pilot_training_3
 			}
-		}
-		corps_commander={
-			traits={ trait_engineer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
 		}
 	}
 	
@@ -716,24 +708,6 @@ characters={
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 1
-		}
-	}
-	
-	thrawn={
-		name=thrawn
-		portraits={
-			army={
-				large="gfx/leaders/IMP/portrait_thrawn.dds"
-				small="GFX_idea_manstein"
-			}
-		}
-		field_marshal = {
-			traits={ brilliant_strategist inspirational_leader grand_admiral }
-			skill= 7
-			attack_skill = 4
-			defense_skill = 5
-			planning_skill = 5
-			logistics_skill = 4
 		}
 	}
 

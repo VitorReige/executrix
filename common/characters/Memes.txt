@@ -9,7 +9,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/CC_Memes/portrait_glup_shitto.dds"
-				small="GFX_idea_glup_shitto"
+				small=GFX_idea_glup_shitto
 			}
 		}
 		

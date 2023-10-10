@@ -137,7 +137,7 @@ leader_traits = {
 		}
 		
 		field_marshal_modifier = {
-			max_army_group_size = 3
+			max_army_group_size = 2
 		}
 		
 	}
