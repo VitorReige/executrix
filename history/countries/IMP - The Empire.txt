@@ -256,7 +256,7 @@ recruit_character = glup_shitto
 			traits = { operative_double_agent }
 			bypass_recruitment = no
 			available_to_spy_master = yes
-			nationalities = { IMP REA }
+			nationalities = { IMP }
 		}
 	
 		create_operative_leader = {
