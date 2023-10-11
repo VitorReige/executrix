@@ -14,3 +14,58 @@ blastech_organization = {
 	research_categories = { infantry_weapons }
 
 }
+
+kuat_drive_organization = {
+	name = IMP_kuat_drive_organization
+	icon = GFX_idea_kuat_drive
+
+	include = generic_battle_line_ship_organization
+
+	allowed = {
+		tag = IMP
+	}
+
+	equipment_type = {
+		ship_hull_light
+		ship_hull_cruiser
+		ship_hull_heavy
+	}
+	research_categories = {  }
+
+}
+
+kuat_vehicle_organization = {
+	name = IMP_kuat_vehicle_organization
+	icon = GFX_idea_kuat_vehicle
+
+	include = generic_tank_organization
+
+	allowed = {
+		tag = IMP
+	}
+
+	equipment_type = {
+		light_tank_chassis
+		super_heavy_tank_chassis
+	}
+	research_categories = {  }
+
+}
+
+sienar_fleet_organization = {
+	name = IMP_sienar_organization
+	icon = GFX_idea_sienar
+	
+	include = generic_light_aircraft_organization
+	
+	allowed = {
+		tag = IMP
+	}
+	
+	equipment_type = {
+		small_plane_airframe
+		medium_plane_airframe
+		transport_plane_equipment
+	}
+	research_categories = { }
+}
