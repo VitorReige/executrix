@@ -88,7 +88,7 @@ entity = {
 
 entity = {
 	name = "E-5_infantry_weapon_mg_right_entity"
-	pdxmesh = "E-5_mg_mesh"
+	pdxmesh = "E5_mg_mesh"
 	scale = 1
 	
 	get_state_from_parent = yes
@@ -117,13 +117,13 @@ entity = {
 
 entity = {
 	name = "E-5_infantry_weapon_mg_long_idle_entity"
-	pdxmesh = "E-5_mg_mesh"
+	pdxmesh = "E5_mg_mesh"
 	scale = 1.0
 }
 
 entity = {
 	name = "E-5_infantry_weapon_mg_left_entity"
-	pdxmesh = "E-5_mg_mesh"
+	pdxmesh = "E5_mg_mesh"
 	scale = 1.0
 }
 
@@ -155,6 +155,31 @@ entity = {
 	name = "support_attack"	animation = "support_attack" 
 	event = { time = 0 node="muzzle"  particle = "rifle_muzzle_particle"  keep_particle = yes light = "muzzle_flash" sound = { soundeffect = infantry_rifle_attack } }
 	event = { time = 1.2 node="cartridge" particle = "rifle_cartridge_particle"  keep_particle = yes sound = { soundeffect = infantry_rifle_cartridge } }
+	}
+}
+
+#DH-17 Mixamo
+
+entity = {
+	name = "DH-17_mixamo"
+	pdxmesh = "DH-17_pistol_mesh"
+	scale = 1
+	
+	get_state_from_parent = yes
+	default_state = "idle"
+	
+	state = { name = "idle" }
+	
+	state = { name = "attack"
+		event = { time = 0.5 node="muzzle"		particle = "hosw_muzzlegreen_mg_particle"	keep_particle = yes   light = "hosw_mg_muzzle_greenflash" sound = { soundeffect = infantry_blaster_attack } }
+		event = { time = 0.5 node="muzzle" 		particle = "mg_muzzle_smoke_particle" 		keep_particle = yes   light = "hosw_mg_muzzle_greenflash" sound = { soundeffect = infantry_blaster_attack } }
+		event = { time = 0.5 node="muzzle" 		particle = "hosw_green_blastershot_mg_particle" 	keep_particle = yes	}
+	}
+	
+	state = { name = "attack2"
+		event = { time = 0 node="muzzle" 		particle = "hosw_muzzlegreen_mg_particle"	keep_particle = yes   light = "hosw_mg_muzzle_greenflash" sound = { soundeffect = infantry_blaster_attack } }
+		event = { time = 0 node="muzzle" 		particle = "mg_muzzle_smoke_particle"  		keep_particle = yes   light = "hosw_mg_muzzle_greenflash" sound = { soundeffect = infantry_blaster_attack } }
+		event = { time = 0 node="muzzle" 		particle = "hosw_green_blastershot_mg_particle" 	keep_particle = yes	}
 	}
 }
 
@@ -217,7 +242,7 @@ entity = {
 
 entity = {
 	name = "E-11_infantry_weapon_mg_right_entity"
-	pdxmesh = "E-11_mg_mesh"
+	pdxmesh = "E11_mg_mesh"
 	scale = 1
 	
 	get_state_from_parent = yes
@@ -246,13 +271,13 @@ entity = {
 
 entity = {
 	name = "E-11_infantry_weapon_mg_long_idle_entity"
-	pdxmesh = "E-11_mg_mesh"
+	pdxmesh = "E11_mg_mesh"
 	scale = 1.0
 }
 
 entity = {
 	name = "E-11_infantry_weapon_mg_left_entity"
-	pdxmesh = "E-11_mg_mesh"
+	pdxmesh = "E11_mg_mesh"
 	scale = 1.0
 }
 
@@ -263,7 +288,7 @@ entity = {
 
 entity = {
 	name = "A280C_mixamo"
-	pdxmesh = "A280C_mixamo_mg_mesh"
+	pdxmesh = "A280C_mg_mesh"
 	scale = 1
 	
 	get_state_from_parent = yes
@@ -272,19 +297,15 @@ entity = {
 	state = { name = "idle" }
 	
 	state = { name = "attack"
-		event = { time = 0.5 node="muzzle"		particle = "hosw_muzzlegreen_mg_particle"	keep_particle = yes   light = "hosw_mg_muzzle_greenflash" sound = { soundeffect = infantry_rebel_blaster_attack } }
-		event = { time = 0.5 node="muzzle" 		particle = "hosw_muzzlesmoke_mg_particle" 		keep_particle = yes   light = "hosw_mg_muzzle_greenflash" sound = { soundeffect = infantry_rebel_blaster_attack } }
+		event = { time = 0.5 node="muzzle"		particle = "hosw_muzzlegreen_mg_particle"	keep_particle = yes   light = "hosw_mg_muzzle_greenflash" sound = { soundeffect = infantry_blaster_attack } }
+		event = { time = 0.5 node="muzzle" 		particle = "hosw_muzzlesmoke_mg_particle" 		keep_particle = yes   light = "hosw_mg_muzzle_greenflash" sound = { soundeffect = infantry_blaster_attack } }
 		event = { time = 0.5 node="muzzle" 		particle = "hosw_green_blastershot_mg_particle" 	keep_particle = yes	}
 	}
 	
 	state = { name = "attack2"
-		event = { time = 0 node="muzzle" 		particle = "hosw_muzzlegreen_mg_particle"	keep_particle = yes   light = "hosw_mg_muzzle_greenflash" sound = { soundeffect = infantry_rebel_blaster_attack } }
-		event = { time = 0 node="muzzle" 		particle = "hosw_muzzlesmoke_mg_particle"  		keep_particle = yes   light = "hosw_mg_muzzle_greenflash" sound = { soundeffect = infantry_rebel_blaster_attack } }
+		event = { time = 0 node="muzzle" 		particle = "hosw_muzzlegreen_mg_particle"	keep_particle = yes   light = "hosw_mg_muzzle_greenflash" sound = { soundeffect = infantry_blaster_attack } }
+		event = { time = 0 node="muzzle" 		particle = "hosw_muzzlesmoke_mg_particle"  		keep_particle = yes   light = "hosw_mg_muzzle_greenflash" sound = { soundeffect = infantry_blaster_attack } }
 		event = { time = 0 node="muzzle" 		particle = "hosw_green_blastershot_mg_particle" 	keep_particle = yes	}
-	}
-	
-	state = { name = "ReloadBlaster"
-		event = { sound = { soundeffect = infantry_blaster_reload_and_overheating } }
 	}
 }
 
@@ -292,7 +313,7 @@ entity = {
 
 entity = {
 	name = "DC-15a_mixamo_blue"
-	pdxmesh = "DC-15a_mixamo_mg_mesh"
+	pdxmesh = "DC-15a_mg_mesh"
 	scale = 1
 	
 	get_state_from_parent = yes
@@ -315,7 +336,7 @@ entity = {
 
 entity = {
 	name = "DC-15a_mixamo_red"
-	pdxmesh = "DC-15a_mixamo_mg_mesh"
+	pdxmesh = "DC-15a_mg_mesh"
 	scale = 1
 	
 	get_state_from_parent = yes
@@ -324,26 +345,22 @@ entity = {
 	state = { name = "idle" }
 	
 	state = { name = "attack"
-		event = { time = 0.5 node="muzzle"		particle = "hosw_muzzlered_mg_particle"			keep_particle = yes   light = "hosw_mg_muzzle_redflash" sound = { soundeffect = infantry_dc15_blaster_attack } }
-		event = { time = 0.5 node="muzzle" 		particle = "hosw_muzzlesmoke_mg_particle" 			keep_particle = yes   light = "hosw_mg_muzzle_redflash" sound = { soundeffect = infantry_dc15_blaster_attack } }
+		event = { time = 0.5 node="muzzle"		particle = "hosw_muzzlered_mg_particle"			keep_particle = yes   light = "hosw_mg_muzzle_redflash" sound = { soundeffect = infantry_blaster_attack } }
+		event = { time = 0.5 node="muzzle" 		particle = "hosw_muzzlesmoke_mg_particle" 			keep_particle = yes   light = "hosw_mg_muzzle_redflash" sound = { soundeffect = infantry_blaster_attack } }
 		event = { time = 0.5 node="muzzle" 		particle = "hosw_red_blastershot_mg_particle" 	keep_particle = yes	}
 	}
 	
 	state = { name = "attack2"
-		event = { time = 0 node="muzzle" 		particle = "hosw_muzzlered_mg_particle"		keep_particle = yes   light = "hosw_mg_muzzle_redflash" sound = { soundeffect = infantry_dc15_blaster_attack } }
-		event = { time = 0 node="muzzle" 		particle = "hosw_muzzlesmoke_mg_particle"  		keep_particle = yes   light = "hosw_mg_muzzle_redflash" sound = { soundeffect = infantry_dc15_blaster_attack } }
+		event = { time = 0 node="muzzle" 		particle = "hosw_muzzlered_mg_particle"		keep_particle = yes   light = "hosw_mg_muzzle_redflash" sound = { soundeffect = infantry_blaster_attack } }
+		event = { time = 0 node="muzzle" 		particle = "hosw_muzzlesmoke_mg_particle"  		keep_particle = yes   light = "hosw_mg_muzzle_redflash" sound = { soundeffect = infantry_blaster_attack } }
 		event = { time = 0 node="muzzle" 		particle = "hosw_red_blastershot_mg_particle" 	keep_particle = yes	}
-	}
-	
-	state = { name = "ReloadBlaster"
-		event = { sound = { soundeffect = infantry_blaster_reload_and_overheating } }
 	}
 }
 
 #DC-15s Mixamo
 entity = {
 	name = "DC-15s_mixamo"
-	pdxmesh = "DC-15s_mixamo_mg_mesh"
+	pdxmesh = "DC-15s_mg_mesh"
 	scale = 1
 	
 	get_state_from_parent = yes
@@ -374,7 +391,7 @@ entity = {
 
 entity = {
 	name = "DC-17_mixamo"
-	pdxmesh = "DC-17_mixamo_pistol_mesh"
+	pdxmesh = "DC-17_pistol_mesh"
 	scale = 1
 	
 	get_state_from_parent = yes
@@ -395,36 +412,11 @@ entity = {
 	}
 }
 
-#DH-17 Mixamo
-
-entity = {
-	name = "DH-17_mixamo"
-	pdxmesh = "DH-17_mixamo_pistol_mesh"
-	scale = 1
-	
-	get_state_from_parent = yes
-	default_state = "idle"
-	
-	state = { name = "idle" }
-	
-	state = { name = "attack"
-		event = { time = 0.5 node="muzzle"		particle = "hosw_muzzlegreen_mg_particle"	keep_particle = yes   light = "hosw_mg_muzzle_greenflash" sound = { soundeffect = infantry_blaster_attack } }
-		event = { time = 0.5 node="muzzle" 		particle = "mg_muzzle_smoke_particle" 		keep_particle = yes   light = "hosw_mg_muzzle_greenflash" sound = { soundeffect = infantry_blaster_attack } }
-		event = { time = 0.5 node="muzzle" 		particle = "hosw_green_blastershot_mg_particle" 	keep_particle = yes	}
-	}
-	
-	state = { name = "attack2"
-		event = { time = 0 node="muzzle" 		particle = "hosw_muzzlegreen_mg_particle"	keep_particle = yes   light = "hosw_mg_muzzle_greenflash" sound = { soundeffect = infantry_blaster_attack } }
-		event = { time = 0 node="muzzle" 		particle = "mg_muzzle_smoke_particle"  		keep_particle = yes   light = "hosw_mg_muzzle_greenflash" sound = { soundeffect = infantry_blaster_attack } }
-		event = { time = 0 node="muzzle" 		particle = "hosw_green_blastershot_mg_particle" 	keep_particle = yes	}
-	}
-}
-
 #E5 Mixamo
 
 entity = {
 	name = "E5_mixamo"
-	pdxmesh = "E5_mixamo_mg_mesh"
+	pdxmesh = "E5_mg_mesh"
 	scale = 1
 	
 	get_state_from_parent = yes
@@ -449,7 +441,7 @@ entity = {
 
 entity = {
 	name = "E11_mixamo"
-	pdxmesh = "E11_mixamo_mg_mesh"
+	pdxmesh = "E11_mg_mesh"
 	scale = 1
 	
 	get_state_from_parent = yes

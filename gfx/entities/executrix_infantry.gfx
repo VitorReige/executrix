@@ -206,7 +206,7 @@ objectTypes = {
 
 	#Shocktrooper
 	pdxmesh = {
-		name = "IMP_specialops_mesh"
+		name = "IMP_SpecialOps_mesh"
 		file = "gfx/models/infantry/IMP_shocktrooper_mesh.mesh"
 		
 		#
