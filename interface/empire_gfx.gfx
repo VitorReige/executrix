@@ -1049,6 +1049,21 @@ spriteTypes = {
 		name = "GFX_idea_blastech"
 		texturefile = "gfx/interface/ideas/idea_blastech.tga"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_kuat_drive"
+		texturefile = "gfx/interface/ideas/idea_kuat_drive.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_kuat_vehicle"
+		texturefile = "gfx/interface/ideas/idea_kuat_vehicle.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sienar"
+		texturefile = "gfx/interface/ideas/idea_sienar.tga"
+	}
 
 	spriteType = {
 		name = "GFX_idea_firmus_piett"
