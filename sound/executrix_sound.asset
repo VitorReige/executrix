@@ -32,51 +32,51 @@ sound =
 	file = "imp/blaster_sound5.wav"
 	always_load = no
 }
-#sound =
-#{
-#	name = "hosw_tanks_atte_ion_impacts_01"
-#	file = "animations/hosw_Weapons_Cannon_ATTE_ION_Impacts_1.wav"
-#	always_load = no
-#}
-#sound =
-#{
-#	name = "hosw_tanks_atte_ion_impacts_02"
-#	file = "animations/hosw_Weapons_Cannon_ATTE_ION_Impacts_2.wav"
-#	always_load = no
-#}
-#sound =
-#{
-#	name = "hosw_tanks_atte_ion_impacts_03"
-#	file = "animations/hosw_Weapons_Cannon_ATTE_ION_Impacts_3.wav"
-#	always_load = no
-#}
-#sound =
-#{
-#	name = "hosw_tanks_atte_ion_impacts_04"
-#	file = "animations/hosw_Weapons_Cannon_ATTE_ION_Impacts_4.wav"
-#	always_load = no
-#}
-#sound =
-#{
-#	name = "hosw_tanks_atte_ion_impacts_05"
-#	file = "animations/hosw_Weapons_Cannon_ATTE_ION_Impacts_5.wav"
-#	always_load = no
-#}
-#sound =
-#{
-#	name = "hosw_Weapons_Blasters_DroidekaTwinBlaster_Laser_Close_VAR_01"
-#	file = "animations/hosw_Weapons_Blasters_DroidekaTwinBlaster_Laser_Close_VAR_01.wav"
-#	always_load = no
-#}
-#sound =
-#{
-#	name = "hosw_Weapons_Blasters_DroidekaTwinBlaster_Laser_Close_VAR_02"
-#	file = "animations/hosw_Weapons_Blasters_DroidekaTwinBlaster_Laser_Close_VAR_02.wav"
-#	always_load = no
-#}
-#sound =
-#{
-#	name = "hosw_Weapons_Blasters_DroidekaTwinBlaster_Laser_Distant_VAR_01"
-#	file = "animations/hosw_Weapons_Blasters_DroidekaTwinBlaster_Laser_Distant_VAR_01.wav"
-#	always_load = no
-#}
+sound =
+{
+	name = "hosw_tanks_atte_ion_impacts_01"
+	file = "imp/hosw_Weapons_Cannon_ATTE_ION_Impacts_01.wav"
+	always_load = no
+}
+sound =
+{
+	name = "hosw_tanks_atte_ion_impacts_02"
+	file = "imp/hosw_Weapons_Cannon_ATTE_ION_Impacts_02.wav"
+	always_load = no
+}
+sound =
+{
+	name = "hosw_tanks_atte_ion_impacts_03"
+	file = "imp/hosw_Weapons_Cannon_ATTE_ION_Impacts_03.wav"
+	always_load = no
+}
+sound =
+{
+	name = "hosw_tanks_atte_ion_impacts_04"
+	file = "imp/hosw_Weapons_Cannon_ATTE_ION_Impacts_04.wav"
+	always_load = no
+}
+sound =
+{
+	name = "hosw_tanks_atte_ion_impacts_05"
+	file = "imp/hosw_Weapons_Cannon_ATTE_ION_Impacts_05.wav"
+	always_load = no
+}
+sound =
+{
+	name = "hosw_Weapons_Blasters_DroidekaTwinBlaster_Laser_Close_VAR_01"
+	file = "imp/hosw_Weapons_Blasters_DroidekaTwinBlaster_Laser_Close_VAR_01.wav"
+	always_load = no
+}
+sound =
+{
+	name = "hosw_Weapons_Blasters_DroidekaTwinBlaster_Laser_Close_VAR_02"
+	file = "imp/hosw_Weapons_Blasters_DroidekaTwinBlaster_Laser_Close_VAR_02.wav"
+	always_load = no
+}
+sound =
+{
+	name = "hosw_Weapons_Blasters_DroidekaTwinBlaster_Laser_Distant_VAR_01"
+	file = "imp/hosw_Weapons_Blasters_DroidekaTwinBlaster_Laser_Distant_VAR_01.wav"
+	always_load = no
+}

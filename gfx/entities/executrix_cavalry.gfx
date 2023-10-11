@@ -9,13 +9,13 @@ objectTypes = {
 		animation = { id = "attack"			type = "GER_mechanized_01_attack_animation" }
 	}
 	
-#	pdxmesh = {
-#		name = "droideka_mesh"
-#		file = "gfx/models/cavalry/Droideka.mesh"
-#		
-#		animation = { id = "idle"			type = "droideka_idle" }
-#		animation = { id = "move"			type = "droideka_rolling" }
-#		animation = { id = "attack"			type = "droideka_shooting" }
-#	}
+	pdxmesh = {
+		name = "droideka_mesh"
+		file = "gfx/models/cavalry/Droideka.mesh"
+		
+		animation = { id = "idle"			type = "droideka_idle" }
+		animation = { id = "move"			type = "droideka_rolling" }
+		animation = { id = "attack"			type = "droideka_shooting" }
+	}
 	
 	

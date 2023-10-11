@@ -2,5 +2,8 @@ category = {
  name = "Battle"
  soundeffects = {
     infantry_blaster_attack
+	atte_ion_fire
+	cavalry_droideka_blaster_attack
+	cavalry_droideka_distance_blaster_attack
   }
 }
