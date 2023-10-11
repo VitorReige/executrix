@@ -1,0 +1,94 @@
+technologies = {
+		##FOCUS ONLY ##
+
+	#hidden tech, required for stormtrooper unit
+	stormtrooper_tech = {
+		land_night_attack = 0.10
+		enable_subunits = {
+			stormtrooper
+		}
+		allow = {
+			tag = IMP
+		}
+		
+		research_cost = 4
+		start_year = 1938
+		folder = {
+			name = swinfantry_folder
+			position = { x = 2 y = 2 }
+		}
+		categories = {
+			imperial_tech
+			imperial_weapons_tech
+		}
+		
+	}
+
+    stormtrooper_mountain = {
+
+		research_cost = 1
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		
+		stormtrooper = {
+			mountain = {
+				attack = 0.2
+				movement = 0.1
+			}
+			hills = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+	}
+
+    stormtrooper_marine = {
+
+		research_cost = 1
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		
+		stormtrooper = {
+			marsh = {
+				attack = 0.1
+				movement = 0.1
+			}
+			river = {
+				attack = 0.1
+			}
+			amphibious = {
+				attack = 0.5
+				movement = 0.2
+			}
+		}
+	}
+
+    stormtrooper_paratrooper = {
+
+		research_cost = 1
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		
+		stormtrooper = {
+			urban = {
+				attack = 0.1
+				movement = 0.1
+				defence = 0.1
+			}
+			supply_consumption = -0.04
+		}
+	}
+		
+		
+		#END OF FOCUS##
+
+}

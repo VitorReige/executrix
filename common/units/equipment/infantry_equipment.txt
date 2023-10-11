@@ -1,0 +1,117 @@
+# All imperial infantry equipment
+
+equipments = {
+	republic_equipment_1 = {
+		year = 2096
+	
+		archetype = infantry_equipment
+		parent = infantry_equipment_3
+		
+		priority = 10
+		visual_level = 3
+		
+		lend_lease_cost = 100
+
+		#Defensive Abilities
+		defense = 42 # + 6
+		breakthrough = 10 # + 1
+
+		#Offensive Abilities
+		soft_attack = 7 # +3
+		hard_attack = 1.0 # +1
+		ap_attack = 15 # +5
+		air_attack = 1 
+
+		reliability = 1.0
+		build_cost_ic = 0.5
+		resources = {
+			steel = 4
+			chromium = 1
+		}
+	}
+	
+	imperial_equipment_1 = {
+		year = 2096
+	
+		archetype = infantry_equipment
+		parent = republic_equipment_1
+		priority = 10
+		visual_level = 4
+		
+		lend_lease_cost = 100
+		
+		#Defensive Abilities
+		defense = 62
+		breakthrough = 13
+
+		#Offensive Abilities
+		soft_attack = 10
+		hard_attack = 1.5
+		ap_attack = 30
+		air_attack = 1
+
+		reliability = 1.0
+		build_cost_ic = 0.6
+		resources = {
+			steel = 4
+			chromium = 2
+		}
+	}
+
+	imperial_equipment_2 = {
+		year = 2096
+	
+		archetype = infantry_equipment
+		parent = imperial_equipment_1
+		priority = 10
+		visual_level = 5
+		
+		lend_lease_cost = 100
+		
+		#Defensive Abilities
+		defense = 82
+		breakthrough = 16
+
+		#Offensive Abilities
+		soft_attack = 13
+		hard_attack = 2.0
+		ap_attack = 45
+		air_attack = 1
+
+		reliability = 0.95
+		build_cost_ic = 0.733
+		resources = {
+			steel = 4
+			chromium = 3
+		}
+	}
+
+	imperial_equipment_3 = {
+		year = 2096
+	
+		archetype = infantry_equipment
+		parent = imperial_equipment_2
+		priority = 10
+		visual_level = 6
+		
+		lend_lease_cost = 100
+
+		#Defensive Abilities
+		defense = 82
+		breakthrough = 22
+
+		#Offensive Abilities
+		soft_attack = 17
+		hard_attack = 4.0
+		ap_attack = 60
+		air_attack = 2
+
+		reliability = 0.9
+		build_cost_ic = 0.82
+		resources = {
+			steel = 4
+			chromium = 4
+		}
+	}
+	
+}

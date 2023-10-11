@@ -71,14 +71,7 @@ guiTypes = {
 			}
 			
 			gridboxtype = {
-				name = "rebel_tech_1_tree"
-				position = { x= 100 y= 160 }
-				slotsize = { width= 70 height= 70 }
-				format = "LEFT"
-			}
-			
-			gridboxtype = {
-				name = "mando_tech_1_tree"
+				name = "republic_weapon1_tree"
 				position = { x= 100 y= 160 }
 				slotsize = { width= 70 height= 70 }
 				format = "LEFT"

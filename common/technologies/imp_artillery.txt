@@ -1,0 +1,837 @@
+technologies = {
+
+	#IMPERIAL ARTILLERY
+	mortar = {
+		enable_equipments = {
+			mortar_equipment = 1
+		}
+		path = {
+			leads_to_tech = atap
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = rx
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = art_upgrade1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = target_system1
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_anti_air_2
+		}
+
+		research_cost = 2
+		start_year = 1936
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 8 y = -1 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_artillery
+		}
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+
+	}
+
+	target_system1 = {
+
+		static_anti_air_hit_chance_factor = 0.01
+		mobile_anti_air = {
+			air_attack = 0.07
+		}
+		mobile_artillery = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		start_year = 1939
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 4 y = 3 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_artillery
+			imperial_mobile_anti_air
+		}
+
+		ai_will_do = {
+			factor = 4
+		}
+
+	}
+
+
+	art_upgrade1 = {
+		mobile_artillery = {
+			soft_attack = 0.12
+		}
+		path = {
+			leads_to_tech = spha
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1937
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 8 y = 1 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_artillery
+		}
+
+		ai_will_do = {
+			factor = 4
+		}
+
+	}
+
+	spha = {
+
+		enable_equipments = {
+			spha_equipment = 1
+		}
+		path = {
+			leads_to_tech = art_upgrade2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = target_system2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1939
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 8 y = 3 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_artillery
+		}
+
+		ai_will_do = {
+			factor = 6
+		}
+
+	}
+
+	target_system2 = {
+		static_anti_air_hit_chance_factor = 0.01
+		mobile_anti_air = {
+			air_attack = 0.07
+		}
+		mobile_artillery = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		start_year = 1941
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 4 y = 5 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_artillery
+			imperial_mobile_anti_air
+		}
+
+		ai_will_do = {
+			factor = 4
+		}
+
+	}
+
+	art_upgrade2 = {
+		mobile_artillery = {
+			soft_attack = 0.12
+		}
+		path = {
+			leads_to_tech = art_upgrade3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1941
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 8 y = 5 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_artillery
+		}
+
+		ai_will_do = {
+			factor = 4
+		}
+
+	}
+
+	art_upgrade3 = {
+		mobile_artillery = {
+			soft_attack = 0.12
+		}
+		path = {
+			leads_to_tech = spma
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = target_system3
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ammo_improvement2
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 2
+		start_year = 1943
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 8 y = 7 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_artillery
+		}
+
+		ai_will_do = {
+			factor = 4
+		}
+
+	}
+
+	spma = {
+		path = {
+			leads_to_tech = advanced_spg
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			spma_equipment = 1
+		}
+
+		research_cost = 2
+		start_year = 1945
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 8 y = 9 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+	}
+
+	target_system3 = {
+		static_anti_air_hit_chance_factor = 0.01
+		mobile_anti_air = {
+			air_attack = 0.07
+		}
+		mobile_artillery = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		start_year = 1943
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 4 y = 7 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_artillery
+			imperial_mobile_anti_air
+		}
+
+		ai_will_do = {
+			factor = 4
+		}
+
+	}
+
+
+	advanced_spg = {
+
+		enable_equipments = {
+			advanced_spg_equipment = 1
+		}
+
+		research_cost = 2
+		start_year = 1947
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 8 y = 11 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_artillery
+		}
+
+		ai_will_do = {
+			factor = 8
+		}
+	}
+
+	#mobile anti-tank
+
+	atap = {
+		enable_equipments = {
+			atap_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = at_upgrade1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ammo_improvement1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1937
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 16 y = 1 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_anti_tank
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	ammo_improvement1 = {
+		mobile_artillery = {
+			soft_attack = 0.05
+			hard_attack = 0.02
+		}
+		mobile_anti_tank = {
+			hard_attack = 0.05
+			ap_attack = 0.05
+		}
+
+		research_cost = 2
+		start_year = 1938
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 12 y = 2 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_anti_tank
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	at_upgrade1 = {
+		mobile_anti_tank = {
+			hard_attack = 0.2
+			ap_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = at_upgrade2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1939
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 16 y = 3 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_anti_tank
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	at_upgrade2 = {
+		mobile_anti_tank = {
+			hard_attack = 0.2
+			ap_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = av7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1941
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 16 y = 5 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_anti_tank
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	av7 = {
+		enable_equipments = {
+			av7_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = at_upgrade3
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ammo_improvement2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1943
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 16 y = 7 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_anti_tank
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	ammo_improvement2 = {
+		mobile_artillery = {
+			soft_attack = 0.05
+			hard_attack = 0.02
+		}
+		mobile_anti_tank = {
+			hard_attack = 0.05
+			ap_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = ammo_improvement3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1943
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 12 y = 7 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_anti_tank
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	ammo_improvement3 = {
+		mobile_artillery = {
+			soft_attack = 0.05
+			hard_attack = 0.02
+		}
+		mobile_anti_tank = {
+			hard_attack = 0.05
+			ap_attack = 0.05
+		}
+
+		research_cost = 2
+		start_year = 1945
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 12 y = 9 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_anti_tank
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	at_upgrade3 = {
+		mobile_anti_tank = {
+			hard_attack = 0.2
+			ap_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = advanced_at
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1945
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 16 y = 9 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_anti_tank
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	advanced_at = {
+		enable_equipments = {
+			advanced_at_equipment = 1
+		}
+
+		research_cost = 2
+		start_year = 1947
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 16 y = 11 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_anti_tank
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	#mobile anti air
+
+
+	rx = {
+
+		enable_equipments = {
+			rx_equipment = 1
+		}
+		path = {
+			leads_to_tech = air_upgrade1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1937
+		enable_equipment_modules = {
+			ship_anti_air_3
+		}	
+		static_anti_air_damage_factor = 0.2
+		folder = {
+			name = swartillery_folder
+			position = { x = 0 y = 1 }
+		}
+
+		enable_building = {
+			building = anti_air_building
+			level = 5
+		}
+
+		
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_anti_air
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+	}
+
+	air_upgrade1 = {
+
+		mobile_anti_air = {
+			air_attack = 0.12
+		}
+
+		static_anti_air_hit_chance_factor = 0.03
+
+		path = {
+			leads_to_tech = target_system2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = air_upgrade2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1939
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 0 y = 3 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_anti_air
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+	}
+
+	air_upgrade2 = {
+
+		mobile_anti_air = {
+			air_attack = 0.12
+		}
+
+		static_anti_air_hit_chance_factor = 0.03
+		path = {
+			leads_to_tech = ataa
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1941
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 0 y = 5 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_anti_air
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+	}
+	ataa = {
+
+		enable_equipments = {
+			ataa_equipment = 1
+		}
+
+
+		path = {
+			leads_to_tech = air_upgrade3
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = target_system3
+			research_cost_coeff = 1
+		}
+		static_anti_air_damage_factor = 0.2
+		enable_equipment_modules = {
+			ship_anti_air_4
+		}
+		research_cost = 2
+		start_year = 1943
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 0 y = 7 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_anti_air
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	air_upgrade3 = {
+
+		mobile_anti_air = {
+			air_attack = 0.12
+		}
+
+		static_anti_air_hit_chance_factor = 0.03
+		path = {
+			leads_to_tech = advanced_aa
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1945
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 0 y = 9 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_anti_air
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+	}
+
+	advanced_aa = {
+
+		enable_equipments = {
+			advanced_aa_equipment = 1
+		}
+
+		research_cost = 2
+		start_year = 1947
+
+		folder = {
+			name = swartillery_folder
+			position = { x = 0 y = 11 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_mobile_anti_air
+		}
+		static_anti_air_damage_factor = 0.2
+		ai_will_do = {
+			factor = 3
+		}
+	}
+}

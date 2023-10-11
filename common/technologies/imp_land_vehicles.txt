@@ -1,0 +1,932 @@
+technologies = {
+	republic_tank = {
+
+		enable_equipments = {
+			republictank = 1
+		}
+
+		enable_subunits = {
+			imperial_tank = 1
+		}
+
+		dependencies = {
+            		republic_weapon1 = 1
+			
+       		}
+
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_assault"
+			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		path = {
+			leads_to_tech = tx130t
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = swarmour_folder
+			position = { x = 0 y = 0 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_assault_tech
+		}
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	tx130t = {
+
+		enable_equipments = {
+			tx130t_equipment = 1
+		}		
+
+		path = {
+			leads_to_tech = repulsor
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = swarmour_folder
+			position = { x = 0 y = 2 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_assault_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	repulsor = {
+
+		enable_equipments = {
+			repulsor_equipment = 1
+		}
+
+
+		path = {
+			leads_to_tech = mauler
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = px
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = h_repulsor
+			research_cost_coeff = 0.8
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = swarmour_folder
+			position = { x = 0 y = 4 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_assault_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	px = {
+		enable_equipments = {
+			px_equipment = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1944
+		folder = {
+			name = swarmour_folder
+			position = { x = -3 y = 8 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_assault_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	h_repulsor = {
+		enable_equipments = {
+			h_repulsor_equipment = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = swarmour_folder
+			position = { x = 3 y = 4 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_assault_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	mauler = {
+		enable_equipments = {
+			mauler_equipment = 1
+		}
+
+
+		path = {
+			leads_to_tech = crawler
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1942
+		folder = {
+			name = swarmour_folder
+			position = { x = 0 y = 6 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_assault_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	crawler = {
+		enable_equipments = {
+			crawler_equipment = 1
+		}
+
+
+		path = {
+			leads_to_tech = imperial_tank
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1944
+		folder = {
+			name = swarmour_folder
+			position = { x = 0 y = 8 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_assault_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	imperial_tank = {
+		enable_equipments = {
+			imperialtank = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1946
+		folder = {
+			name = swarmour_folder
+			position = { x = 0 y = 10 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_assault_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+	}
+
+	atrt = {
+		enable_equipments = {
+			atrt_equipment = 1
+		}
+
+		enable_subunits = {
+			scoutwalker = 1
+		}
+		dependencies = {
+            republic_weapon1 = 1
+        }
+
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_light"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+
+		}
+
+		path = {
+			leads_to_tech = atpt
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = atat_tech
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = atrct
+			research_cost_coeff = 0.5
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = swarmour_folder
+			position = { x = 6 y = 0 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_light_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	atrct = {
+		enable_equipments = {
+			atrct_equipment = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = swarmour_folder
+			position = { x = 9 y = 0 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_light_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+	}
+
+
+	atpt = {
+		enable_equipments = {
+			atpt_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = atdp
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = swarmour_folder
+			position = { x = 6 y = 3 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_light_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	atdp = {
+		enable_equipments = {
+			atdp_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = atst
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = swarmour_folder
+			position = { x = 6 y = 5 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_light_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	atst = {
+		enable_equipments = {
+			atst_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = foatst
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1944
+		folder = {
+			name = swarmour_folder
+			position = { x = 6 y = 8 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_light_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	foatst = {
+		enable_equipments = {
+			fo_atst_equipment = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1948
+		folder = {
+			name = swarmour_folder
+			position = { x = 6 y = 12 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_light_tech
+		}
+	}
+
+	atte = {
+		enable_equipments = {
+			atte_equipment = 1
+		}
+		path = {
+			leads_to_tech = utat_tech
+			research_cost_coeff = 0.8
+		}
+
+		path = {
+			leads_to_tech = atat_tech
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = atpt
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_heavy"
+			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		research_cost = 2.5
+		start_year = 1936
+		folder = {
+			name = swarmour_folder
+			position = { x = 12 y = 0 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_light_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	utat_tech = {
+		enable_equipments = {
+			utat_equipment = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1938
+		folder = {
+			name = swarmour_folder
+			position = { x = 15 y = 0 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_light_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	atat_tech = {
+		enable_equipments = {
+			atat_equipment = 1
+		}
+
+		enable_subunits = {
+			heavywalker = 1
+		}
+
+
+
+		path = {
+			leads_to_tech = elite_atat_tech
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1939
+		folder = {
+			name = swarmour_folder
+			position = { x = 12 y = 3 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_light_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	elite_atat_tech = {
+		enable_equipments = {
+			elite_atat_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = fo_atat_tech
+			research_cost_coeff = 2.5
+		}
+		research_cost = 10
+		start_year = 1943
+		folder = {
+			name = swarmour_folder
+			position = { x = 12 y = 7 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_light_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	fo_atat_tech = {
+		enable_equipments = {
+			fo_atat_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = atm6
+			research_cost_coeff = 0.8
+		}
+
+		research_cost = 3
+		start_year = 1948
+		folder = {
+			name = swarmour_folder
+			position = { x = 12 y = 12 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_light_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	atm6 = {
+		enable_equipments = {
+			atm6_equipment = 1
+		}
+
+		research_cost = 3
+		start_year = 1948
+		folder = {
+			name = swarmour_folder
+			position = { x = 15 y = 12 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_light_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	# Motorized
+
+	atot = {
+		enable_equipments = {
+			atot_equipment = 1
+		}
+
+		enable_subunits = {
+			armored_troop_transport  = 1
+		}
+
+		path = {
+			leads_to_tech = rtt
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = basic_hovercrafts
+			research_cost_coeff = 0.5
+		}
+
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_troop_transport"
+			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = swinfantry_folder
+			position = { x = 14 y = 0 }
+		}
+		folder = {
+			name = swsupport_folder
+			position = { x = 5 y = -1 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_motor_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	basic_hovercrafts = {
+		enable_equipments = {
+			hovercraft_equipment = 1
+		}
+		enable_equipments = {
+			bullet_train = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = swinfantry_folder
+			position = { x = 18 y = 0 }
+		}
+
+		categories = {
+			imperial_tech
+			imperial_motor_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	rtt = {
+		enable_equipments = {
+			rtt_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = itt
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = swinfantry_folder
+			position = { x = 14 y = 4 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_motor_tech
+		}
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	itt = {
+		enable_equipments = {
+			itt_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = itc
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = swinfantry_folder
+			position = { x = 14 y = 6 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_motor_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	itc = {
+		enable_equipments = {
+			itc_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = juggernaut
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1946
+		folder = {
+			name = swinfantry_folder
+			position = { x = 14 y = 10 }
+		}
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_motor_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+	}
+
+	juggernaut = {
+		enable_equipments = {
+			juggernaut_equipment = 1
+		}
+
+		enable_subunits = {
+			heavy_armored_troop_transport = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1946
+		folder = {
+			name = swinfantry_folder
+			position = { x = 18 y = 10 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_motor_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	#Speeders
+
+	isp = { #isorrowproductions
+
+		enable_equipments = {
+			infantry_support_platform = 1
+		}
+
+		enable_subunits = {
+			speeder = 1
+		}
+		path = {
+			leads_to_tech = barc
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_speeder"
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			}
+		}
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = swinfantry_folder
+			position = { x = 9 y = 0 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_speeder_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+	}
+
+	barc = {
+
+		enable_equipments = {
+			barc_equipment = 1
+		}
+		path = {
+			leads_to_tech = ava
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1940
+
+		folder = {
+			name = swinfantry_folder
+			position = { x = 9 y = 4 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_speeder_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+	}
+
+
+	ava = {
+
+		enable_equipments = {
+			ava_equipment = 1
+		}
+		path = {
+			leads_to_tech = z_speeder
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+
+		folder = {
+			name = swinfantry_folder
+			position = { x = 9 y = 6 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_speeder_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+	}
+
+
+	z_speeder = {
+
+		enable_equipments = {
+			z_speeder_equipment = 1
+		}
+
+		research_cost = 2
+		start_year = 1946
+
+		folder = {
+			name = swinfantry_folder
+			position = { x = 9 y = 10 }
+		}
+
+		categories = {
+			imperial_land_vehicle_tech
+			imperial_tech
+			imperial_vehicles_tech
+			imperial_speeder_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+
+	}
+
+
+
+}

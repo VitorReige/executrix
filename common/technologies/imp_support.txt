@@ -1,0 +1,1312 @@
+technologies = {
+	imp_support_eq = {
+
+		enable_equipments = {
+			imperial_support_equipment_1 = 1
+		}
+
+		path = {
+			leads_to_tech = imp_tech_engineers
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = imp_tech_recon
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = imp_tech_field_hospital
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = imp_tech_logistics_company
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = imp_tech_military_police
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = imp_tech_signal_company
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = imp_tech_maintenance_company
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			republic_weapon1 = 1
+		}
+
+		research_cost = 1.0
+		start_year = 1918
+		folder = {
+			name = swsupport_folder
+			position = { x = 0 y = -1 }
+		}
+
+		categories = {
+			imperial_support
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 7
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 7
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 7
+				date > "1939.1.1"
+			}
+		}
+	}
+
+	imp_tech_engineers = {
+
+		enable_subunits = {
+			imp_engineer = 1
+		}
+
+		path = {
+			leads_to_tech = imp_tech_engineers2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1937
+		folder = {
+			name = swsupport_folder
+			position = { x = -6 y = 1 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			engineers_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 7
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 7
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 7
+				date > "1939.1.1"
+			}
+		}
+	}
+
+	imp_tech_engineers2 = {
+
+		imp_engineer = {
+			entrenchment  = 3
+
+			fort = {
+				defence = 0.10
+				attack = 0.10
+			}
+		}
+
+
+		path = {
+			leads_to_tech = imp_tech_engineers3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = swsupport_folder
+			position = { x = -6 y = 3 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			engineers_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.2
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	imp_tech_engineers3 = {
+
+		imp_engineer = {
+			entrenchment  = 3
+			river = {
+				attack = 0.1
+				defence = 0.10
+			}
+		}
+		path = {
+			leads_to_tech = imp_tech_engineers4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = swsupport_folder
+			position = { x = -6 y = 6 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			engineers_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	imp_tech_engineers4 = {
+
+		imp_engineer = {
+			entrenchment  = 3
+			urban = {
+				attack = 0.1
+				defence = 0.1
+			}
+		}
+
+		research_cost = 1
+		start_year = 1945
+		folder = {
+			name = swsupport_folder
+			position = { x = -6 y = 9 }
+		}
+
+		categories = {
+			support_tech
+			engineers_tech
+			imperial_support
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	imp_tech_recon = {
+
+		enable_subunits = {
+			imp_recon
+		}
+
+		path = {
+			leads_to_tech = imp_tech_recon2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1937
+		folder = {
+			name = swsupport_folder
+			position = { x = -4 y = 1 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			recon_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				factor = 10
+				date > "1940.1.1"
+			}
+		}
+	}
+
+	imp_tech_recon2 = {
+
+		imp_recon = {
+			recon = 3
+		}
+
+		path = {
+			leads_to_tech = imp_tech_recon3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = swsupport_folder
+			position = { x = -4 y = 3 }
+		}
+
+		categories = {
+			support_tech
+			recon_tech
+			imperial_support
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	imp_tech_recon3 = {
+
+		imp_recon = {
+			recon = 3
+		}
+		path = {
+			leads_to_tech = imp_tech_recon4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = swsupport_folder
+			position = { x = -4 y = 6 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			recon_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+		}
+	}
+	imp_tech_recon4 = {
+
+		imp_recon = {
+			recon = 3
+		}
+
+		research_cost = 1
+		start_year = 1945
+		folder = {
+			name = swsupport_folder
+			position = { x = -4 y = 9 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			recon_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	imp_tech_military_police = {
+
+		enable_subunits = {
+			imp_military_police
+		}
+
+		path = {
+			leads_to_tech = imp_tech_military_police2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1937
+		folder = {
+			name = swsupport_folder
+			position = { x = -2 y = 1 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			military_police_tech
+		}
+
+		ai_will_do = {
+			factor = 0.5
+
+			modifier = {
+				factor = 10
+				tag = GER
+
+				POL = { has_capitulated = yes }
+				GER = { has_war = yes }
+			}
+
+			modifier = {
+				factor = 5
+				tag = JAP
+			}
+
+			modifier = {
+				factor = 2
+				tag = ITA
+			}
+
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+
+			modifier = {
+				factor = 2
+				tag = USA
+			}
+
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+	}
+
+	imp_tech_military_police2 = {
+
+		imp_military_police = {
+			suppression_factor = 0.15
+		}
+
+
+		path = {
+			leads_to_tech = imp_tech_military_police3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = swsupport_folder
+			position = { x = -2 y = 3 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			military_police_tech
+		}
+
+		ai_will_do = {
+			factor = 0.5
+
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+	}
+
+	imp_tech_military_police3 = {
+
+		imp_military_police = {
+			suppression_factor = 0.15
+		}
+		path = {
+			leads_to_tech = imp_tech_military_police4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = swsupport_folder
+			position = { x = -2 y = 6 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			military_police_tech
+		}
+
+		ai_will_do = {
+			factor = 0.5
+
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+	}
+	imp_tech_military_police4 = {
+
+		imp_military_police = {
+			suppression_factor = 0.1
+		}
+
+		research_cost = 1
+		start_year = 1945
+		folder = {
+			name = swsupport_folder
+			position = { x = -2 y = 9 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			military_police_tech
+		}
+
+		ai_will_do = {
+			factor = 0.5
+
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+	}
+
+	imp_tech_maintenance_company = {
+
+		enable_subunits = {
+			imp_maintenance_company
+		}
+
+		path = {
+			leads_to_tech = imp_tech_maintenance_company2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1937
+		folder = {
+			name = swsupport_folder
+			position = { x = 0 y = 1 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			maintenance_company_tech
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 7
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 7
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 7
+				date > "1939.1.1"
+			}
+		}
+	}
+
+	imp_tech_maintenance_company2 = {
+
+		imp_maintenance_company = {
+			reliability_factor = 0.07
+			equipment_capture_factor = 0.07
+		}
+
+
+		path = {
+			leads_to_tech = imp_tech_maintenance_company3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1937
+		folder = {
+			name = swsupport_folder
+			position = { x = 0 y = 3 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			maintenance_company_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	imp_tech_maintenance_company3 = {
+
+		imp_maintenance_company = {
+			reliability_factor = 0.07
+			equipment_capture_factor = 0.07
+		}
+		path = {
+			leads_to_tech = imp_tech_maintenance_company4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = swsupport_folder
+			position = { x = 0 y = 6 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			maintenance_company_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1945.1.1"
+			}
+		}
+	}
+	imp_tech_maintenance_company4 = {
+
+		imp_maintenance_company = {
+			reliability_factor = 0.07
+			equipment_capture_factor = 0.07
+		}
+
+		research_cost = 1
+		start_year = 1945
+		folder = {
+			name = swsupport_folder
+			position = { x = 0 y = 9 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			maintenance_company_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	imp_tech_field_hospital = {
+
+		enable_subunits = {
+			imp_field_hospital
+		}
+
+		path = {
+			leads_to_tech = imp_tech_field_hospital2
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			atot = 1
+		}
+
+		research_cost = 1
+		start_year = 1937
+		folder = {
+			name = swsupport_folder
+			position = { x = 3 y = 1 }
+		}
+
+		categories = {
+			support_tech
+			hospital_tech
+			imperial_support
+			imperial_motor_tech
+		}
+
+		ai_will_do = {
+			factor = 7
+
+			modifier = {
+				factor = 10
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 10
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 10
+				date > "1939.1.1"
+			}
+		}
+	}
+
+	imp_tech_field_hospital2 = {
+
+		imp_field_hospital = {
+			casualty_trickleback = 0.15
+			experience_loss_factor = -0.15
+		}
+
+		path = {
+			leads_to_tech = imp_tech_field_hospital3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = swsupport_folder
+			position = { x = 3 y = 3 }
+		}
+
+		categories = {
+			support_tech
+			hospital_tech
+			imperial_support
+			imperial_motor_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	imp_tech_field_hospital3 = {
+
+		imp_field_hospital = {
+			casualty_trickleback = 0.15
+			experience_loss_factor = -0.15
+		}
+		path = {
+			leads_to_tech = imp_tech_field_hospital4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = swsupport_folder
+			position = { x = 3 y = 6 }
+		}
+
+		categories = {
+			support_tech
+			hospital_tech
+			imperial_support
+			imperial_motor_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1945.1.1"
+			}
+		}
+	}
+	imp_tech_field_hospital4 = {
+
+		imp_field_hospital = {
+			casualty_trickleback = 0.15
+			experience_loss_factor = -0.15
+		}
+
+		research_cost = 1
+		start_year = 1945
+		folder = {
+			name = swsupport_folder
+			position = { x = 3 y = 9 }
+		}
+
+		categories = {
+			support_tech
+			hospital_tech
+			imperial_support
+			imperial_motor_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	imp_tech_logistics_company = {
+
+		enable_subunits = {
+			imp_logistics_company
+		}
+
+		path = {
+			leads_to_tech = imp_tech_logistics_company2
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			atot = 1
+		}
+
+		research_cost = 1
+		start_year = 1937
+		folder = {
+			name = swsupport_folder
+			position = { x = 5 y = 1 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			logistics_tech
+			imperial_motor_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+			modifier = {
+				factor = 5
+				date > "1940.1.1"
+			}
+		}
+	}
+
+	imp_tech_logistics_company2 = {
+
+		imp_logistics_company = {
+			supply_consumption_factor = -0.15
+			fuel_consumption_factor = -0.07
+		}
+
+
+		path = {
+			leads_to_tech = imp_tech_logistics_company3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = swsupport_folder
+			position = { x = 5 y = 3 }
+		}
+
+		categories = {
+			support_tech
+			logistics_tech
+			imperial_support
+			imperial_motor_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				tag = GER
+			}
+		}
+	}
+
+	imp_tech_logistics_company3 = {
+
+		imp_logistics_company = {
+			supply_consumption_factor = -0.15
+			fuel_consumption_factor = -0.07
+		}
+		path = {
+			leads_to_tech = imp_tech_logistics_company4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = swsupport_folder
+			position = { x = 5 y = 6 }
+		}
+
+		categories = {
+			support_tech
+			logistics_tech
+			imperial_support
+			imperial_motor_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+		}
+	}
+	imp_tech_logistics_company4 = {
+
+		imp_logistics_company = {
+			supply_consumption_factor = -0.15
+			fuel_consumption_factor = -0.07
+		}
+
+		research_cost = 1
+		start_year = 1945
+		folder = {
+			name = swsupport_folder
+			position = { x = 5 y = 9 }
+		}
+
+		categories = {
+			support_tech
+			logistics_tech
+			imperial_support
+			imperial_motor_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
+			}
+		}
+	}
+
+
+	imp_tech_signal_company = {
+
+		enable_subunits = {
+			imp_signal_company
+		}
+
+		path = {
+			leads_to_tech = imp_tech_signal_company2
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			radio = 1
+			atot = 1
+		}
+
+		research_cost = 1
+		start_year = 1937
+		folder = {
+			name = swsupport_folder
+			position = { x = 7 y = 1 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			signal_company_tech
+			electronics
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				is_major = yes
+				date > "1940.1.1"
+			}
+		}
+	}
+
+	imp_tech_signal_company2 = {
+
+		imp_signal_company = {
+			initiative = 0.17
+		}
+
+
+		path = {
+			leads_to_tech = imp_tech_signal_company3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = swsupport_folder
+			position = { x = 7 y = 3 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			signal_company_tech
+			electronics
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+	}
+
+	imp_tech_signal_company3 = {
+
+		imp_signal_company = {
+			initiative = 0.17
+		}
+
+		path = {
+			leads_to_tech = imp_tech_signal_company4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = swsupport_folder
+			position = { x = 7 y = 6 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			signal_company_tech
+			electronics
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	imp_tech_signal_company4 = {
+
+		imp_signal_company = {
+			initiative = 0.17
+		}
+
+		research_cost = 1
+		start_year = 1945
+		folder = {
+			name = swsupport_folder
+			position = { x = 7 y = 9 }
+		}
+
+		categories = {
+			support_tech
+			imperial_support
+			signal_company_tech
+			electronics
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+
+
+}

@@ -1,0 +1,651 @@
+technologies = {
+	#hidden rocket tech
+	executor_rocket_engines = {
+		allow = {
+			always = no
+		}
+		show_equipment_icon = yes
+		# can build ICBMs?
+		enable_equipments = {
+			guided_missile_equipment_4
+		}
+		research_cost = 1.0
+	}
+# &&&&&&&&&&
+
+	laat = {
+
+		dependencies = {
+            republic_weapon1 = 1
+        }
+
+		enable_equipments = {
+			laat_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = maat
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = swair_folder
+			position = { x = 10 y = 0 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_transport_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+	}
+
+	maat = {
+
+		enable_equipments = {
+			maat_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = idt
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = swair_folder
+			position = { x = 10 y = 2 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_transport_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+	}
+
+	idt = {
+
+		enable_equipments = {
+			idt_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = tie-rp
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = swair_folder
+			position = { x = 10 y = 4 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_transport_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+	}
+
+	tie-rb = {
+
+		enable_equipments = {
+			tie-rb_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = tie-rp
+			research_cost_coeff = 0.8
+		}
+
+		path = {
+			leads_to_tech = tie_fighter
+			research_cost_coeff = 0.8
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = swair_folder
+			position = { x = 7 y = 6 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_transport_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+	}
+
+	tie-rp = {
+
+		enable_equipments = {
+			tie-rp_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = aal
+			research_cost_coeff = 1
+		}
+
+
+		path = {
+			leads_to_tech = tie-rb
+			research_cost_coeff = 0.8
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = swair_folder
+			position = { x = 10 y = 6 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_transport_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+	}
+
+	aal = {
+
+		enable_equipments = {
+			aal_equipment = 1
+		}
+
+		research_cost = 2
+		start_year = 1948
+		folder = {
+			name = swair_folder
+			position = { x = 10 y = 12 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_transport_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+	}
+
+	torrent = {
+
+		enable_equipments = {
+			torrent_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = z-95
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = swair_folder
+			position = { x = 4 y = 0 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_starfighter_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+	}
+
+	z-95 = {
+
+		enable_equipments = {
+			z-95_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = tie_fighter
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = swair_folder
+			position = { x = 4 y = 2 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_starfighter_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+	}
+
+
+	tie_fighter = {
+
+		enable_equipments = {
+			tie_fighter_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = tie-sf
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = tie-rb
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = swair_folder
+			position = { x = 4 y = 6 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_starfighter_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+	}
+
+	tie-sf = {
+
+		enable_equipments = {
+			tie-sf_equipment = 1
+		}
+
+		research_cost = 2
+		start_year = 1948
+		folder = {
+			name = swair_folder
+			position = { x = 4 y = 12 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_starfighter_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+	}
+
+	y-wing = {
+
+		dependencies = {
+            republic_weapon1 = 1
+        }
+
+		enable_equipments = {
+			y-wing_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = skipray
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = swair_folder
+			position = { x = 14 y = 0 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_bomber_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+	}
+
+
+	skipray = {
+
+		enable_equipments = {
+			skipray_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = tie-sa
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = swair_folder
+			position = { x = 14 y = 2 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_bomber_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+	}
+
+	tie-sa = {
+
+		enable_equipments = {
+			tie_bomber_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = scimitar
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = swair_folder
+			position = { x = 14 y = 4 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_bomber_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+	}
+
+	scimitar = {
+
+		enable_equipments = {
+			scimitar_equipment = 1
+		}
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = swair_folder
+			position = { x = 14 y = 8 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_bomber_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	v_wing = {
+
+		dependencies = {
+            republic_weapon1 = 1
+        }
+
+		enable_equipments = {
+			v_wing_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = tie-in
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = swair_folder
+			position = { x = 0 y = 0 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_interceptor_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+	}
+
+	tie-in = {
+
+		enable_equipments = {
+			tie-in_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = tie-sk
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = swair_folder
+			position = { x = 0 y = 4 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_interceptor_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+	}
+
+
+	tie-sk = {
+
+		enable_equipments = {
+			tie-sk_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = tie-vn
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = swair_folder
+			position = { x = 0 y = 6 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_interceptor_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+	}
+
+
+	tie-vn = {
+
+		enable_equipments = {
+			tie-vn_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = tie-ba
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 2
+		start_year = 1946
+		folder = {
+			name = swair_folder
+			position = { x = 0 y = 10}
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_interceptor_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+	}
+
+	tie-ba = {
+
+		enable_equipments = {
+			tie-ba_equipment = 1
+		}
+
+		research_cost = 2
+		start_year = 1948
+		folder = {
+			name = swair_folder
+			position = { x = 0 y = 12}
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_interceptor_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+	}
+
+	arc-170 = {
+
+		enable_equipments = {
+			arc-170_equipment = 1
+		}
+
+		path = {
+			leads_to_tech = tie_defender
+			research_cost_coeff = 1.0
+		}
+
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = swair_folder
+			position = { x = 18 y = 5 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_defender_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+
+	tie_defender = {
+
+		enable_equipments = {
+			tie_defender_equipment = 1
+		}
+
+
+		research_cost = 2
+		start_year = 1946
+		folder = {
+			name = swair_folder
+			position = { x = 18 y = 10 }
+		}
+		categories = {
+			imperial_aircraft_tech
+			imperial_defender_tech
+			imperial_tech
+			imperial_vehicles_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+}
