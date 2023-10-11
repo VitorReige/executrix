@@ -78,7 +78,7 @@ set_war_support = 0.9
 set_stability = 0.6
 set_country_flag = starwarstech_unlock
 
-create_faction = "GALACTIC EMPIRE"
+create_faction = "Galactic Empire"
 add_to_faction = IMP
 
 set_politics = {

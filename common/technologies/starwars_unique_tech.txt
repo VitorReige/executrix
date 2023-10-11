@@ -65,7 +65,6 @@ technologies = {
 		}
 		
 		enable_subunits = {
-            blaster_infantry
 			stormtrooper 
         }
 
