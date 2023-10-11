@@ -1,0 +1,16 @@
+blastech_organization = {
+	name = IMP_blastech_organization
+	icon = GFX_idea_blastech
+
+	include = generic_infantry_equipment_organization
+
+	allowed = {
+		tag = IMP
+	}
+
+	equipment_type = {
+		infantry_equipment
+	}
+	research_categories = { infantry_weapons }
+
+}

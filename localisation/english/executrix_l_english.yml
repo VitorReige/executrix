@@ -405,7 +405,7 @@
  imperial_armor: "Imperial Tank"
  scoutwalker: "Scout Walker"
  imperialtank: "TX-225 GAVw Occupier"
- blastech: "Blastech Manufacturing"
+ IMP_blastech_organization: "Blastech Manufacturing"
  imperialtank_desc: "The 225 is the greatest assault vehicle in the Imperial Arsenal, featuring armor capable of deflecting the heaviest of enemy munitions and a speed on par with any vehicle of its class. It had two twin medium laser cannons capable of blasting away enemy fortifications and armor without issue, while also being able to serve as a mobile resupply point for troopers in the field with its impressive cargo carrying capabilities. Few enemies will be able to withstand the concentrated firepower of a battalion of TX-225s."
  atrt_equipment: "AT-RT"
  atrt_equipment_desc: "The AT-RT is perhaps one of the lightest walkers in our arsenal, which makes it an excellent place to begin production. It still provides a mobile platform for fire support while allowing us to begin getting experience making walkers in preparation for future, heavier designs."
