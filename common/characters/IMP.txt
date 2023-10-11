@@ -889,7 +889,6 @@ characters={
 			defense_skill=2
 			maneuvering_skill=3
 			coordination_skill=4
-			legacy_id=26
 		}
 	}
 	
