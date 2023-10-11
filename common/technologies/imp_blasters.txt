@@ -18,7 +18,7 @@ technologies = {
 			position = { x = 0 y = 0 }
 		}
 		categories = {
-			infantry_tech
+			infantry_weapons
 		}
 		
 		ai_will_do = {
@@ -46,7 +46,7 @@ technologies = {
 			position = { x = 2 y = 0 }
 		}
 		categories = {
-			infantry_tech
+			infantry_weapons
 		}
 		
 		ai_will_do = {
@@ -72,7 +72,7 @@ technologies = {
 			position = { x = 4 y = 0 }
 		}
 		categories = {
-			infantry_tech
+			infantry_weapons
 		}	
 		
 		ai_will_do = {

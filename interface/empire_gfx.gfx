@@ -447,7 +447,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_imperial_weapons_medium"
-		texturefile = "gfx/interface/technologies/imperial_weapons1.dds"
+		texturefile = "gfx/interface/technologies/imperial_weapon.dds"
 	}
 
 	spriteType = {

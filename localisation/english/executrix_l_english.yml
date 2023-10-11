@@ -79,6 +79,12 @@
  hovercraft_equipment_desc: "Although these vehicles are unarmed, they're useful for supplying the frontlines and getting troops to where they need to be quickly rather cheaply.                            (NOTE: THIS IS THE ONLY MOTORIZED TECH THAT PROVIDES MOTORIZED AS SUPPLY TRUCKS)"
  imperialism_share_research_tooltip: "Grants access to Imperial Technology Tree"
  republic_weapon1: "Republic-era Blasters"
+ republic_weapon1_desc:"E-10 blaster manufactured by BlasTech Industries replaced the Clone Wars Era DC-15 blaster carbine and served the wider Imperial Army troopers. The weapon itself is unreliable and many troopers have noted its ability to jam at the worst times. Though, it is easy to produce on a wide scale to arm a large military force."
+ imperial_equipment_1:0 "E-11 Blaster Rifle"
+ imperial_equipment_1_short:0 "E-11"
+ imperial_equipment_1_desc:0 "E-11 Blaster was one of the most manufactored Imperial Arms for the Galactic Empire. This weapon saw much use throughout the Empire's many conflicts, but its poor accuracy may be contributed to Imperial inconfidence."
+ imperial_equipment_2:0 "E-22 Blaster Rifle"
+
  imp_defender_equipment: "Defender"
  imperial_research_name: "Imperial Research"
  imperial_tech: "Imperial Tech"
@@ -2331,23 +2337,6 @@
  ##IMPERIAL EQUIPMENT
  # IMPERIAL INFANTRY EQUIPMENT
  imp_equipment_buff: "Imperial Equipment"
- 
- IMP_infantry_equipment_0: "E-10 Blaster Rifle"
- IMP_infantry_equipment_0_desc: "E-10 blaster manufactured by BlasTech Industries replaced the Clone Wars Era DC-15 blaster carbine and served the wider Imperial Army troopers. The weapon itself is unreliable and many troopers have noted its ability to jam at the worst times. Though, it is easy to produce on a wide scale to arm a large military force. "
- IMP_infantry_equipment_0_short:0 "E-10"
- 
- IMP_infantry_equipment_1:0 "E-11 Blaster Rifle"
- IMP_infantry_equipment_1_short:0 "E-11"
- IMP_infantry_equipment_1_desc:0 "E-11 Blaster was one of the most manufactored Imperial Arms for the Galactic Empire. This weapon saw much use throughout the Empire's many conflicts, but its poor accuracy may be contributed to Imperial inconfidence."
-
- 
- IMP_infantry_equipment_2:0 "E-22 Blaster Rifle"
- IMP_infantry_equipment_2_short:0 "E-22"
- IMP_infantry_equipment_2_desc:0 "wip"
- 
- IMP_infantry_equipment_3:0 "E-22 Blaster Rifle M."
- IMP_infantry_equipment_3_short:0 "E-22 M."
- IMP_infantry_equipment_3_desc:0 "wip"
  
  #IMPERIAL AIRCRAFT
  IMP_iw_small_airframe: "Arc-170 Frame"
