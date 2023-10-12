@@ -115,12 +115,49 @@ focus_tree = {
 	}
 
 	focus = {
+		id = imp_command_survives
+		icon = GFX_focus_reconstruction
+		cost = 1
+		prerequisite =
+		{
+			focus = imp_repair
+		}
+		x = -6
+		y = 1
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = imp_repair
+		completion_reward = {
+			country_event = {
+				id = imperial.2
+			}
+		}
+	}
+
+	focus = {
+		id = imp_command_unalived
+		icon = GFX_focus_reconstruction
+		cost = 1
+		prerequisite =
+		{
+			focus = imp_repair
+		}
+		x = 6
+		y = 1
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = imp_repair
+		completion_reward = {
+			country_event = {
+				id = imperial.2
+			}
+		}
+	}
+
+	focus = {
 		id = imp_fortify_land
 		icon = GFX_goal_fortify_the_westwall
 		cost = 2
 		
-		prerequisite =
-		{
+		prerequisite = {
 			focus = imp_repair
 		}
 		x = 0
@@ -157,8 +194,7 @@ focus_tree = {
 		id = imp_air_defense
 		icon = GFX_focus_generic_air_defense
 		cost = 2
-		prerequisite =
-		{
+		prerequisite = {
 			focus = imp_fortify_land
 		}
 		x = 0
@@ -194,23 +230,16 @@ focus_tree = {
 		icon = GFX_focus_phasetwo
 		cost = 1
 
+		prerequisite = {
+			focus = imp_reinforce_bases
+		}
 		available = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite =
-		{
-			focus = imp_supply_lines_iraq
-			focus = imp_establish_base_saudi
-		}
-
-		prerequisite =
-		{
-			focus = imp_establish_base_iraq
-			focus = imp_supply_lines_saudi
-		}
+		
 
 		x = 0
-		y = 7
+		y = 9
 		relative_position_id = imp_survey
 		completion_reward = {
 			if = {
@@ -254,7 +283,7 @@ focus_tree = {
 		cost = 1
 		
 		prerequisite = {
-			focus = imp_repair
+			focus = imp_determining_leadership
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -269,8 +298,8 @@ focus_tree = {
 			focus = imp_sith_might
 		}
 		x = -2
-		y = 1
-		relative_position_id = imp_repair
+		y = 4
+		relative_position_id = imp_command_survives
 		completion_reward = {
 			set_country_flag = tarkin_flag
 			add_ideas = {
@@ -301,7 +330,7 @@ focus_tree = {
 		cost = 1
 		
 		prerequisite = {
-			focus = imp_repair
+			focus = imp_determining_leadership
 		}
 		ai_will_do = {
 			factor = 4000
@@ -319,8 +348,8 @@ focus_tree = {
 			focus = imp_tarkin_doctrine
 		}
 		x = 2
-		y = 1
-		relative_position_id = imp_repair
+		y = 4
+		relative_position_id = imp_command_survives
 		completion_reward = {
 			add_ideas = {
 				sith_might
@@ -345,53 +374,6 @@ focus_tree = {
 		}
 	}
 
-
-	focus = {
-		id = imp_conquer_iraq
-		icon = GFX_goal_generic_major_war
-		will_lead_to_war_with = IRQ
-		cost = 2
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = {
-			focus = imp_sith_might
-		}
-		bypass = {
-			NOT = {
-			country_exists = IRQ
-			}
-		}
-		x = 0
-		y = 1
-		relative_position_id = imp_sith_might
-		completion_reward = {
-			declare_war_on = {
-				type = annex_everything
-				target = IRQ
-			}
-			IRQ = {
-				set_rule = {
-					can_create_factions = no
-					can_join_factions = no
-				}
-			}
-			custom_effect_tooltip = IMP_INSTANT_WAR
-			hidden_effect = {
-				add_ai_strategy = {
-					type = invade
-					id = IRQ
-					value = 200
-				}
-			}
-		}
-	}
-
 	focus = {
 		id = imp_subjugate_iraq
 		icon = GFX_goal_generic_forceful_treaty
@@ -406,7 +388,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
-			focus = imp_tarkin_doctrine
+			focus = imp_command_survives
 		}
 
 		bypass = {
@@ -422,9 +404,9 @@ focus_tree = {
 				}
 			}
 		}
-		x = -4
+		x = 1
 		y = 1
-		relative_position_id = imp_sith_might
+		relative_position_id = imp_command_survives
 		completion_reward = {
 			declare_war_on = {
 				type = puppet_wargoal_focus
@@ -461,9 +443,8 @@ focus_tree = {
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite =
-		{
-			focus = imp_tarkin_doctrine
+		prerequisite = {
+			focus = imp_command_survives
 		}
 
 		bypass = {
@@ -504,336 +485,16 @@ focus_tree = {
 		}
 	}
 
-	focus =
-	{
-		id = imp_conquer_saudi
-		icon = GFX_goal_generic_major_war
-		cost = 2
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		will_lead_to_war_with = SAU
-		prerequisite =
-		{
-			focus = imp_sith_might
-		}
-		bypass = {
-			NOT = {
-			country_exists = SAU
-			}
-		}
-		x = 2
-		y = 0
-		relative_position_id = imp_conquer_iraq
-		completion_reward = {
-			declare_war_on = {
-				type = annex_everything
-				target = SAU
-			}
-			SAU = {
-				set_rule = {
-					can_create_factions = no
-					can_join_factions = no
-				}
-			}
-			custom_effect_tooltip = IMP_INSTANT_WAR
-			hidden_effect = {
-				add_ai_strategy = {
-					type = invade
-					id = SAU
-					value = 200
-				}
-			}
-		}
-	}
-
 	focus = {
-		id = imp_supply_lines_iraq
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 2
-		prerequisite = {
-			focus = imp_conquer_iraq
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
-		
-		available = {
-			OR = {
-				IRQ = {
-					OR = {
-						is_subject_of = IMP
-						is_puppet_of = IMP
-					}
-				}
-				AND = {
-					IMP = {
-						has_full_control_of_state = 676
-						has_full_control_of_state = 675
-						has_full_control_of_state = 291
-					}
-				}
-			}
-		}
-		x = 0
-		y = 1
-		relative_position_id = imp_conquer_iraq
-		completion_reward = {
-			if = {
-				limit = {
-					IRQ = { is_puppet_of = IMP }
-				}
-				annex_country = {
-					target = IRQ
-					transfer_troops = no
-				}
-			}
-			676 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			675 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-			every_state = {
-    			limit = { is_core_of = IRQ }
-				add_core_of = ROOT
-			}
-		}
-	}
-
-	focus = {
-		id = imp_supply_lines_saudi
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 2
-		prerequisite =
-		{
-			focus = imp_conquer_saudi
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
-		available = {
-			OR = {
-				SAU = {
-					OR = {
-						is_subject_of = IMP
-						is_puppet_of = IMP
-					}
-				}
-				AND = {
-					IMP = {
-						has_full_control_of_state = 859
-						has_full_control_of_state = 858
-						has_full_control_of_state = 857
-						has_full_control_of_state = 856
-						has_full_control_of_state = 854
-						has_full_control_of_state = 855
-						has_full_control_of_state = 678
-						has_full_control_of_state = 679
-						has_full_control_of_state = 292
-						has_full_control_of_state = 679
-					}
-				}
-			}
-		}
-		x = 0
-		y = 1
-		relative_position_id = imp_conquer_saudi
-		completion_reward = {
-			if = {
-				limit = {
-					SAU = {
-						OR = {
-							is_subject_of = IMP
-							is_puppet_of = IMP
-						}
-					}
-				}
-				annex_country = {
-					target = SAU
-					transfer_troops = no
-				}
-			}
-			292 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			678 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-			every_state = {
-    			limit = { is_core_of = SAU }
-				add_core_of = ROOT
-			}
-		}
-	}
-
-	focus = {
-		id = imp_establish_base_iraq
-		icon = GFX_goal_generic_fortify_city
-		cost = 2
-		prerequisite = {
-			focus = imp_subjugate_iraq
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
-		available = {
-			OR = {
-				IRQ = {
-					OR = {
-						is_subject_of = IMP
-						is_puppet_of = IMP
-					}
-				}
-				AND = {
-					IMP = {
-						has_full_control_of_state = 676
-						has_full_control_of_state = 675
-						has_full_control_of_state = 291
-					}
-				}
-			}
-		}
-		x = 0
-		y = 1
-		relative_position_id = imp_subjugate_iraq
-		completion_reward = {
-			if = {
-				limit = {
-						NOT = { country_exists = IRQ }
-				}
-				release_puppet = IRQ
-			}
-			set_province_name = {
-				id = 2097
-				name = "Command Post Aurek"
-			}
-			transfer_state = 675
-			add_state_core = 675
-			IRQ = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 1
-			}
-
-			add_offsite_building = {
-				type = arms_factory
-				level = 1
-			}
-
-			675 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			291 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 2097
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 12855
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 12046
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-			if = {
-				limit = {
-					IRQ = {
-						NOT = {
-							has_country_flag = coop_enabled
-						}
-					}
-				}
-
-					IMP = {
-						set_autonomy = {
-							target = IRQ
-							autonomy_state = autonomy_imperial
-						}
-					}
-					IRQ = {
-						create_country_leader = {
-							name = "Darth Vader"
-							desc = "Vader_desc"
-							picture = "portrait_imp_vader.dds"
-							expire = "1965.1.1"
-							ideology = imperial
-							traits = { headstrong sith_presence lord_vader }
-						}
-					}
-					hidden_effect = {
-						IRQ = { set_cosmetic_tag = ALL }
-						set_party_name = {
-							ideology = neutrality
-							long_name = frebel_party_empire
-							name = frebel_party_empire
-						}
-
-						set_party_name = {
-							ideology = fascism
-							long_name = neutrality_party_empire
-							name = neutrality_party_empire
-						}
-
-						set_party_name = {
-							ideology = communism
-							long_name = crebel_party_empire
-							name = crebel_party_empire
-						}
-
-						set_party_name = {
-							ideology = democratic
-							long_name = drebel_party_empire
-							name = drebel_party_empire
-						}
-
-					}
-				}
-
-
-		}
-	}
-
-	focus = {
-		id = imp_establish_base_saudi
+		id = imp_establish_supply_lines
 		icon = GFX_goal_generic_fortify_city
 		cost = 2
 		prerequisite =
 		{
 			focus = imp_subjugate_saudi
+		}
+		prerequisite = {
+			focus = imp_subjugate_iraq
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
 		available = {
@@ -861,10 +522,43 @@ focus_tree = {
 			}
 		}
 		x = 0
-		y = 1
-		relative_position_id = imp_subjugate_saudi
+		y = 2
+		relative_position_id = imp_command_survives
 		completion_reward = {
-			if =	{
+			build_railway = {
+				level = 3
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+				}
+				fallback = yes
+				start_province = 8085
+				target_province = 10804
+			}
+			build_railway = {
+				level = 3
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+				}
+				fallback = yes
+				start_province = 8085
+				target_province = 12101
+			} 
+
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+				}
+				fallback = yes
+				start_province = 8085
+				target_province = 8030
+			}
+			custom_effect_tooltip = reinforce_supply_connection_tooltip
+			
+			if =  {
 				limit =	{
 						NOT =	{ country_exists = SAU }
 				}
@@ -987,7 +681,23 @@ focus_tree = {
 	}
 	
 	
-	
+	focus = {
+		id = imp_determining_leadership
+		icon = GFX_focus_reconstruction
+		cost = 1
+		prerequisite =
+		{
+			focus = imp_establish_supply_lines
+		}
+
+
+		x = 0
+		y = 3
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = imp_command_survives
+		completion_reward = {
+		}
+	}
 
 	
 
@@ -997,22 +707,18 @@ focus_tree = {
 		cost = 2
 
 		prerequisite = {
-			focus = imp_establish_base_saudi
-			focus = imp_supply_lines_iraq
+			focus = imp_sith_might
+			focus = imp_tarkin_doctrine
 		}
-		prerequisite = {
-			focus = imp_supply_lines_saudi
-			focus = imp_establish_base_iraq
-		}
+
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		x = -1
-		y = 3
-		relative_position_id = imp_tarkin_doctrine
+		x = 0
+		y = 5
+		relative_position_id = imp_command_survives
 
 		completion_reward = {
 
 			#add coastal forts
-
 			656 = {
 				add_building_construction = {
 					type = infrastructure
@@ -1036,66 +742,6 @@ focus_tree = {
 
 		}
 	}
-
-
-
-	focus = {
-		id = imp_reinforce_supply_chain
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 2
-
-		prerequisite = {
-			focus = imp_establish_base_saudi
-			focus = imp_supply_lines_iraq
-		}
-		prerequisite = {
-			focus = imp_supply_lines_saudi
-			focus = imp_establish_base_iraq
-		}
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		x = 1
-		y = 3
-		relative_position_id = imp_sith_might
-
-		completion_reward = {
-			build_railway = {
-				level = 3
-				build_only_on_allied = yes
-				controller_priority = {
-					base = 1
-				}
-				fallback = yes
-				start_province = 8085
-				target_province = 10804
-			}
-			build_railway = {
-				level = 3
-				build_only_on_allied = yes
-				controller_priority = {
-					base = 1
-				}
-				fallback = yes
-				start_province = 8085
-				target_province = 12101
-			} 
-
-			build_railway = {
-				level = 1
-				build_only_on_allied = yes
-				controller_priority = {
-					base = 1
-				}
-				fallback = yes
-				start_province = 8085
-				target_province = 8030
-			}
-			custom_effect_tooltip = reinforce_supply_connection_tooltip
-		}
-	}
-
-
 
 	###INDUSTRIAL PATH ###
 
