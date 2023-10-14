@@ -880,7 +880,7 @@ country_event = {
 	name = imperial.0.a
 		add_resource = {
 			type = steel
-			amount = 20
+			amount = 10
 			state = 656
 		}
 		add_popularity = {
@@ -897,7 +897,7 @@ country_event = {
 			amount = 5
 			state = 656
 		}
-		add_manpower = 50000
+		add_stability = 0.025
 	}
 }
 
@@ -916,20 +916,11 @@ country_event = {
 		name = imperial.1.a
 		291 = {
 			remove_building = {
-				type = industrial_complex
-				level = 2
-			}
-			remove_building = {
 				type = arms_factory
 				level = 1
 			}
 		}
 		656 = {
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
 			add_building_construction = {
 				type = arms_factory
 				level = 1
@@ -968,19 +959,12 @@ country_event = {
 				limit = { is_controlled_by = IMP }
 				add_building_construction = {
 					type = radar_station
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
-
 		}
-		656 = {
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}
+		add_political_power = 25
 	}
 }
 
