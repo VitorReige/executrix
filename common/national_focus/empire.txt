@@ -115,21 +115,42 @@ focus_tree = {
 	}
 
 	focus = {
-		id = imp_command_survives
+		id = imp_our_future
 		icon = GFX_focus_reconstruction
 		cost = 1
 		prerequisite =
 		{
 			focus = imp_repair
 		}
+		
 		x = 0
 		y = 1
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		relative_position_id = imp_repair
 		completion_reward = {
 			country_event = {
-				id = imperial.2
+				id = imperial.5
 			}
+		}
+	}
+
+	focus = {
+		id = imp_command_survives
+		icon = GFX_focus_reconstruction
+		cost = 1
+		prerequisite =
+		{
+			focus = imp_our_future
+		}
+		available = {
+			always = no
+		}
+		x = 0
+		y = 2
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = imp_repair
+		completion_reward = {
+			custom_effect_tooltip = "Command Survives!"
 		}
 	}
 
@@ -139,96 +160,24 @@ focus_tree = {
 		cost = 1
 		prerequisite =
 		{
-			focus = imp_repair
+			focus = imp_our_future
+		}
+		available = {
+			always = no
 		}
 		x = 6
-		y = 1
+		y = 2
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		relative_position_id = imp_repair
 		completion_reward = {
-			country_event = {
-				id = imperial.2
-			}
-		}
-	}
-
-	focus = {
-		id = imp_fortify_land
-		icon = GFX_goal_fortify_the_westwall
-		cost = 2
-		
-		prerequisite = {
-			focus = imp_repair
-		}
-		x = 3
-		y = 2
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
-		relative_position_id = imp_repair
-		completion_reward = {
-			656 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 8085
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					province = 8085
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_offsite_building = { type = arms_factory level = 2 }
-			add_manpower = 6000
-		}
-	}
-
-	focus =
-	{
-		id = imp_air_defense
-		icon = GFX_focus_generic_air_defense
-		cost = 2
-		prerequisite = {
-			focus = imp_fortify_land
-		}
-		x = 0
-		y = 1
-		relative_position_id = imp_fortify_land
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
-		completion_reward = {
-			656 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = radar_station
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 1
-					province = 8085
-					instant_build = yes
-				}
-			}
-			add_offsite_building = { type = arms_factory level = 2 }
-			add_manpower = 6000
+			custom_effect_tooltip = "??"
 		}
 	}
 
 	focus = {
 		id = imp_phase_two
 		icon = GFX_focus_phasetwo
-		cost = 1
+		cost = 3
 
 		prerequisite = {
 			focus = imp_reinforce_bases
@@ -239,8 +188,8 @@ focus_tree = {
 		
 
 		x = 0
-		y = 9
-		relative_position_id = imp_survey
+		y = 6
+		relative_position_id = imp_command_survives
 		completion_reward = {
 			if = {
 				limit = { is_ai = yes }
@@ -305,22 +254,6 @@ focus_tree = {
 			add_ideas = {
 				tarkin_doctrine
 			}
-			add_timed_idea = {
-				idea = IMP_initial_warbonus
-				days = 120
-			}
-			SAU = { 
-				add_timed_idea = {
-				idea = SAU_empire_invades
-				days = 120
-				}
-			}
-			IRQ = { 
-				add_timed_idea = {
-				idea = IRQ_empire_invades
-				days = 120
-				}
-			}
 		}
 	}
 
@@ -353,23 +286,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = {
 				sith_might
-			}
-			add_timed_idea = {
-				idea = IMP_initial_warbonus
-				days = 120
-			}
-			set_country_flag = sith_flag
-			SAU = { 
-				add_timed_idea = {
-				idea = SAU_empire_invades
-				days = 120
-				}
-			}
-			IRQ = { 
-				add_timed_idea = {
-				idea = IRQ_empire_invades
-				days = 120
-				}
 			}
 		}
 	}
@@ -488,7 +404,7 @@ focus_tree = {
 	focus = {
 		id = imp_establish_supply_lines
 		icon = GFX_goal_generic_fortify_city
-		cost = 2
+		cost = 3
 		prerequisite =
 		{
 			focus = imp_subjugate_saudi
@@ -505,6 +421,12 @@ focus_tree = {
 						is_puppet_of = IMP
 					}
 				}
+				IRQ = {
+					OR = {
+						is_subject_of = IMP
+						is_puppet_of = IMP
+					}
+				}
 				AND = {
 					IMP = {
 						has_full_control_of_state = 859
@@ -516,7 +438,7 @@ focus_tree = {
 						has_full_control_of_state = 678
 						has_full_control_of_state = 679
 						has_full_control_of_state = 292
-						has_full_control_of_state = 679
+						has_full_control_of_state = 291
 					}
 				}
 			}
@@ -526,24 +448,23 @@ focus_tree = {
 		relative_position_id = imp_command_survives
 		completion_reward = {
 			build_railway = {
-				level = 3
+				level = 1
 				build_only_on_allied = yes
 				controller_priority = {
 					base = 1
 				}
 				fallback = yes
 				start_province = 8085
-				target_province = 10804
+				target_province = 2089
 			}
 			build_railway = {
-				level = 3
+				level = 1
 				build_only_on_allied = yes
 				controller_priority = {
 					base = 1
 				}
 				fallback = yes
-				start_province = 8085
-				target_province = 12101
+				path = {8085 12749 10923 4968 10892 12758}
 			} 
 
 			build_railway = {
@@ -553,130 +474,30 @@ focus_tree = {
 					base = 1
 				}
 				fallback = yes
-				start_province = 8085
-				target_province = 8030
-			}
-			custom_effect_tooltip = reinforce_supply_connection_tooltip
-			
-			if =  {
-				limit =	{
-						NOT =	{ country_exists = SAU }
+				path = {10923 7995 12702 12727}
+			} 
+
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
 				}
-				release_puppet = SAU
-			}
+				fallback = yes
+				path = {8085 2089}
+			} 
+
+			
 
 			set_province_name = {
 				id = 12727
 				name = "Command Post Besh"
 			}
-			SAU =
-			{
-			add_offsite_building = {
-				type = industrial_complex
-				level = 1
-			}
 
-			add_offsite_building = {
-				type = arms_factory
-				level = 1
-			}
-
-			292 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 12727
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 1
-					instant_build = yes
-				}
-
-			}
-			678 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-
-			if =
-			{
-				limit =
-				{
-					SAU =
-					{
-						NOT = { has_country_flag = coop_enabled }
-					}
-				}
-				transfer_state = 859
-				add_state_core = 859
-				transfer_state = 857
-				add_state_core = 857
-				transfer_state = 854
-				add_state_core = 854
-				transfer_state = 855
-				add_state_core = 855
-				transfer_state = 679
-				add_state_core = 679
-				IMP =
-				{
-					set_autonomy = {
-						target = SAU
-						autonomy_state = autonomy_imperial
-					}
-				}
-
-				SAU = {
-					create_country_leader = {
-						name = "Commander Hock Malsuum"
-						desc = "Malsuum_desc"
-						picture = "portrait_imp_malsuum.dds"
-						expire = "1965.1.1"
-						ideology = imperial
-						traits = { indomitable_perseverance }
-					}
-				}
-
-				hidden_effect =
-				{
-					SAU = {
-					set_cosmetic_tag = ALL
-					set_party_name = {
-						ideology = neutrality
-						long_name = frebel_party_empire
-						name = frebel_party_empire
-					}
-					set_party_name = {
-						ideology = fascism
-						long_name = neutrality_party_empire
-						name = neutrality_party_empire
-					}
-					set_party_name = {
-						ideology = communism
-						long_name = crebel_party_empire
-						name = crebel_party_empire
-					}
-					set_party_name = {
-						ideology = democratic
-						long_name = drebel_party_empire
-						name = drebel_party_empire
-					}
-					news_event = {
-						id = imperial_global_news.0
-					}
-				}
-				}
-			}
+			set_province_name = {
+				id = 2097
+				name = "Command Post Aurek"
+			}			
 		}
 	}
 	
@@ -696,6 +517,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		relative_position_id = imp_command_survives
 		completion_reward = {
+			country_event = {
+				id = imperial.3
+			}
 		}
 	}
 
@@ -704,7 +528,7 @@ focus_tree = {
 	focus = {
 		id = imp_reinforce_bases
 		icon = GFX_goal_generic_fortify_city
-		cost = 2
+		cost = 3
 
 		prerequisite = {
 			focus = imp_sith_might
@@ -721,13 +545,14 @@ focus_tree = {
 			#add coastal forts
 			656 = {
 				add_building_construction = {
-					type = infrastructure
+					type = supply_node
 					level = 1
+					province = 8085
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = coastal_bunker
-					level = 3
+					level = 1
 					province = 8085
 					instant_build = yes
 				}
@@ -738,8 +563,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_offsite_building = { type = arms_factory level = 3 }
-
 		}
 	}
 
@@ -946,38 +769,17 @@ focus_tree = {
 		
 		available = {
 			OR = {
-				IMP = { controls_state = 292 }
+				IMP = { controls_state = 857 }
 				any_other_country = {
 					is_in_faction_with = IMP
-					controls_state = 292
+					controls_state = 857
 				}
 			}
 			OR = {
-				IMP = { controls_state = 679 }
+				IMP = { controls_state = 858 }
 				any_other_country = {
 					is_in_faction_with = IMP
-					controls_state = 679
-				}
-			}
-			OR = {
-				IMP = { controls_state = 678 }
-				any_other_country = {
-					is_in_faction_with = IMP
-					controls_state = 678
-				}
-			}
-			OR = {
-				IMP = { controls_state = 292 }
-				any_other_country = {
-					is_in_faction_with = IMP
-					controls_state = 292
-				}
-			}
-			OR = {
-				IMP = { controls_state = 679 }
-				any_other_country = {
-					is_in_faction_with = IMP
-					controls_state = 679
+					controls_state = 858
 				}
 			}
 			OR = {
@@ -985,6 +787,20 @@ focus_tree = {
 				any_other_country = {
 					is_in_faction_with = IMP
 					controls_state = 678
+				}
+			}
+			OR = {
+				IMP = { controls_state = 855 }
+				any_other_country = {
+					is_in_faction_with = IMP
+					controls_state = 855
+				}
+			}
+			OR = {
+				IMP = { controls_state = 854 }
+				any_other_country = {
+					is_in_faction_with = IMP
+					controls_state = 854
 				}
 			}
 		}
@@ -1000,31 +816,40 @@ focus_tree = {
 		relative_position_id = imp_phase_two
 		completion_reward = {
 			add_ideas = IMP_railroad_build
-			
-			build_railway = {
-				level = 1
-				build_only_on_allied = yes
-				path = {8085 2089 8001 10744 4951 1631 10815 10901 7970}
+			678 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
-			build_railway = {
-				level = 1
-				build_only_on_allied = yes
-				path = {1600 12372 12413 1631}
+			857 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
-			build_railway = {
-				level = 1
-				build_only_on_allied = yes
-				path = {8085 10850 7995 12727 12813 10892 12758}
+			855 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
-			build_railway = {
-				level = 1
-				build_only_on_allied = yes
-				path = {8085 10850 12749 5058 2057 7970}
+			854 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
-			build_railway = {
-				level = 1
-				build_only_on_allied = yes
-				path = {12758 7934 4981 5037 12883}
+			858 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}	

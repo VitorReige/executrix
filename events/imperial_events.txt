@@ -294,64 +294,8 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = imperial.3.a
-		create_field_marshal = {
-			name = "Wilhuff Tarkin"
-			picture = "portrait_imp_tarkin.dds"
-			traits = {
-				old_guard
-				career_officer
-			}
-			skill = 4
-			attack_skill = 1
-			defense_skill = 2
-			planning_skill = 4
-			logistics_skill = 6
-		}
-		country_event = {
-			id = imperial_story.2
-			days = 1
-		}
+		name = imperial_story.0.a
 	}
-
-	option = {
-		name = imperial.3.b
-		retire_country_leader = yes
-		create_country_leader = {
-			name = "Wilhuff Tarkin"
-			desc = "Tarkin_desc"
-			picture = "portrait_imp_tarkin.dds"
-			expire = "1965.1.1"
-			ideology = imperial
-			traits = { respected_imperial imperial_doctrine imperial_connections }
-		}
-
-		create_field_marshal = {
-			name = "Darth Vader"
-			picture = "portrait_imp_vader.dds"
-			traits = {
-				offensive_doctrine
-				harsh_leader
-				infantry_officer
-				desert_fox
-			}
-			skill = 4
-			attack_skill = 5
-			defense_skill = 2
-			planning_skill = 4
-			logistics_skill = 3
-		}
-		custom_effect_tooltip = deploy_tooltip2
-		hidden_effect = {
-			load_oob = "IMP_501st_legion"
-		}
-		country_event = {
-			id = imperial_story.1
-			days = 1
-		}
-		custom_effect_tooltip = thrawn_leader_tt
-	}
-
 }
 
 country_event = {
@@ -880,12 +824,13 @@ country_event = {
 	name = imperial.0.a
 		add_resource = {
 			type = steel
-			amount = 10
+			amount = 4
 			state = 656
 		}
-		add_popularity = {
-			ideology = imperialism
-			popularity = 0.05
+		add_resource = {
+			type = chromium
+			amount = 1
+			state = 656
 		}
 		add_stability = -0.025
 	}
@@ -894,9 +839,10 @@ country_event = {
 		name = imperial.0.b
 		add_resource = {
 			type = steel
-			amount = 5
+			amount = 2
 			state = 656
 		}
+		add_manpower = 2500
 		add_stability = 0.025
 	}
 }
@@ -963,6 +909,7 @@ country_event = {
 					instant_build = yes
 				}
 			}
+
 		}
 		add_political_power = 25
 	}
@@ -980,18 +927,75 @@ country_event = {
 
 	option = {
 		name = imperial.2.a
-		add_timed_idea = {
+		add_ideas = {
+			#TODO: Needs to be changed to construction speed bonus from Civ Goods
 			idea = more_droid
-			days = 365
 		}
 	}
 
 	option = {
 		name = imperial.2.b
-		add_timed_idea = {
+		add_ideas = {
 			idea = more_weapon
-			days = 365
 		}
+	}
+}
+country_event = {
+	id = imperial.3
+	title = imperial.3.t
+	desc = imperial.3.d
+	picture = GFX_report_event_bose_meeting #Placeholder
+
+	is_triggered_only = yes
+    
+	option = {
+		name = imperial.3.a
+		create_field_marshal = {
+			name = "Wilhuff Tarkin"
+			picture = "portrait_imp_tarkin.dds"
+			traits = {
+				old_guard
+			}
+			skill = 4
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	option = {
+		name = imperial.3.b
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Wilhuff Tarkin"
+			desc = "Tarkin_desc"
+			picture = "portrait_imp_tarkin.dds"
+			expire = "1965.1.1"
+			ideology = imperial
+			traits = { respected_imperial imperial_doctrine imperial_connections }
+		}
+
+		create_field_marshal = {
+			name = "Darth Vader"
+			picture = "portrait_imp_vader.dds"
+			traits = {
+				offensive_doctrine
+				harsh_leader
+				infantry_officer
+				desert_fox
+			}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+		custom_effect_tooltip = deploy_tooltip2
+		hidden_effect = {
+			load_oob = "IMP_501st_legion"
+		}
+		#custom_effect_tooltip = thrawn_leader_tt
 	}
 }
 
@@ -1033,6 +1037,24 @@ country_event = {
 		}
 
 	}
+}
+
+country_event = { # Command Survives? imp_our_future Event
+	id = imperial.5
+	title = imperial.5.t
+	desc = imperial.5.d
+	picture = GFX_report_event_bose_meeting
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = imperial.5.a
+		ai_chance = { factor = 60 }
+
+		complete_national_focus = imp_command_survives
+	}
+	
 }
 
 country_event = {
