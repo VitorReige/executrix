@@ -9,6 +9,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	improved_infantry_weapons = 1
+	improved_infantry_weapons_2 = 1
 	infantry_weapons2 = 1
 	advanced_infantry_weapons = 1
 	infantry_weapons3 = 1
@@ -57,6 +58,9 @@ set_technology = {
 
 	#Industrial Tech
 	basic_machine_tools = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+
 
 	# Electronic Engineering
 	electronic_mechanical_engineering = 1
