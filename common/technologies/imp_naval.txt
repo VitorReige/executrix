@@ -1,0 +1,17 @@
+technologies = {
+	Ship_turboblaster_tech = {
+		research_cost = 1
+		start_year = 1936
+		enable_equipment_modules = {
+			Ship_turboblaster1
+		}
+		categories = {
+			naval_equipment
+		}
+		folder = {
+			name = starwars_folder
+			position = { x = 0 y = 12 }
+		}
+	}
+
+}
