@@ -104,8 +104,8 @@ leader_traits = {
 		}
 		
 		modifier = {
-			max_commander_army_size = 8
-			reassignment_duration_factor = -0.75
+			max_commander_army_size = -12
+			reassignment_duration_factor = -0.90
 			wounded_chance_factor = -0.90
 		}
 		
@@ -126,15 +126,12 @@ leader_traits = {
 		}
 		
 		modifier = {
-			max_commander_army_size = 12
-			trait_infantry_leader_xp_gain_factor = 0.15
-			trait_cavalry_leader_xp_gain_factor = 0.15
-			trait_panzer_leader_xp_gain_factor = 0.15
-			trait_engineer_xp_gain_factor = 0.15
+			max_commander_army_size = 6
+			experience_gain_factor = 0.1
 		}
 		
 		field_marshal_modifier = {
-			max_army_group_size = 2
+			max_army_group_size = 1
 		}
 		
 	}
@@ -151,12 +148,12 @@ leader_traits = {
 		}
 		
 		non_shared_modifier = {
-			promote_cost_factor = -0.25
-			experience_gain_factor = 0.25
+			promote_cost_factor = -0.1
+			experience_gain_factor = 0.05
 		}
 		
 		modifier = {
-			army_morale_factor = 0.10
+			army_morale_factor = 0.05
 		}
 		
 	}
@@ -174,10 +171,9 @@ leader_traits = {
 		
 		modifier = {
 			out_of_supply_factor = -0.25
-			special_forces_attack_factor = 0.15
-			special_forces_defence_factor = 0.15
-			experience_gain_army = 0.15
-			max_commander_army_size = -12
+			special_forces_attack_factor = 0.1
+			special_forces_defence_factor = 0.1
+			max_commander_army_size = -18
 		}
 		
 	}
@@ -209,11 +205,10 @@ leader_traits = {
 		
 		modifier = {
 			experience_loss_factor = -0.1
-			
 		}
 		
 		non_shared_modifier = {
-			experience_gain_factor = -0.15
+			experience_gain_factor = -0.25
 		}
 		
 	}	

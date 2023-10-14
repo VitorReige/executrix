@@ -19,13 +19,15 @@ ideas = {
 			
 			picture = spice_export
 			
+			rule = {
+				can_access_market = no
+				desc = can_not_access_market_closed_economy
+			}
 			modifier = {
 				min_export = 0
-				consumer_goods_factor = -0.1
-				production_speed_buildings_factor = -0.05
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
-				research_speed_factor = 0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				cic_construction_boost = -0.1
 			}
 			
 			allowed_to_remove = {

@@ -92,13 +92,13 @@ characters={
 				factor = 1.500
 			}
 		}
-		
+
 		corps_commander={
 			traits={ war_hero armor_officer career_officer winter_specialist }
-			skill=5
-			attack_skill=5
-			defense_skill=4
-			planning_skill=4
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
 			logistics_skill=4
 		}
 	}
@@ -152,11 +152,12 @@ characters={
 				small="GFX_idea_thrawn"
 			}
 		}
+		#2
 		field_marshal = {
 			traits={ grand_admiral brilliant_strategist adaptable}
-			skill= 6
-			attack_skill = 5
-			defense_skill = 6
+			skill= 5
+			attack_skill = 4
+			defense_skill = 4
 			planning_skill = 6
 			logistics_skill = 5
 		}
@@ -186,14 +187,13 @@ characters={
 				small="GFX_idea_cassio_tagge"
 			}
 		}
-		
 		field_marshal={
 			traits={ infantry_leader }
-			skill=5
-			attack_skill=4
-			defense_skill=5
+			skill=4
+			attack_skill=2
+			defense_skill=4
 			planning_skill=6
-			logistics_skill=3
+			logistics_skill=2
 		}
 		advisor={
 			slot = army_chief
@@ -728,7 +728,7 @@ characters={
 			logistics_skill = 1
 		}
 	}
-	
+
 	freja_covell={
 		name=freja_covell
 		portraits={
@@ -740,11 +740,11 @@ characters={
 		
 		corps_commander={
 			traits={ chosen_by_thrawn war_hero armor_officer winter_specialist }
-			skill=4
+			skill=3
 			attack_skill=4
 			defense_skill=2
-			planning_skill=3
-			logistics_skill=3
+			planning_skill=4
+			logistics_skill=4
 		}
 	}
 	
@@ -795,10 +795,10 @@ characters={
 		corps_commander={
 			traits={ imperial_royal_guard adaptable paratrooper }
 			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
 		}
 	}
 	
@@ -829,11 +829,11 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ chosen_by_thrawn republic_hero }
-			skill=3
+			traits={ chosen_by_thrawn }
+			skill=2
 			attack_skill=2
-			defense_skill=3
-			planning_skill=1
+			defense_skill=2
+			planning_skill=2
 			logistics_skill=2
 		}
 	}

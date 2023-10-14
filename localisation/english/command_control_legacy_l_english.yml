@@ -10,7 +10,7 @@
  freja_covell:0 "High Colonel Freja Covell"
  pellaeon:0 "Captain Gilad Pellaeon"
  blackhole:0 "Blackhole Trooper"
- ved_kennede:0 "Master Instructor Ved Kennede"
+ ved_kennede:0 "Ved Kennede"
  fs_451:0 "FS-451"
  ct_4483:0 "CT-4483 'Corporal Sub'"
  joyier:0 "TK-764 'Joyier'"
@@ -34,7 +34,7 @@
 #Legacy Traits 
  holotank_commander:0 "Holotank Commander"
  holotank_commander_desc:0 "This commander refuses to lead from the front, transmitting his orders by the HoloNet instead."
- grand_admiral:0 "Grand Admiral"
+ grand_admiral:0 "Admiral"
  grand_admiral_desc:0 "There is satisfaction in defeating an enemy. But one must never allow oneself to become complacent. There are always more enemies to be identified, faced, and vanquished."
  jedi_knight:0 "Jedi Knight"
  jedi_knight_desc:0 "For over a thousand generations, the Jedi Knights were the guardians of peace and justice in the Old Republic. Before the dark times, before the Empire."

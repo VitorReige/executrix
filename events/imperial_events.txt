@@ -300,14 +300,13 @@ country_event = {
 			picture = "portrait_imp_tarkin.dds"
 			traits = {
 				old_guard
-				brilliant_strategist
 				career_officer
 			}
-			skill = 6
-			attack_skill = 5
-			defense_skill = 5
-			planning_skill = 5
-			logistics_skill = 5
+			skill = 4
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 6
 		}
 		country_event = {
 			id = imperial_story.2
