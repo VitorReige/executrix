@@ -21,7 +21,7 @@ focus_tree = {
 	}
 
 	default = no
-	continuous_focus_position = { x = 25 y = 3000 }
+	continuous_focus_position = { x = 25 y = 3500}
 
 	initial_show_position = {
 		x = 50
