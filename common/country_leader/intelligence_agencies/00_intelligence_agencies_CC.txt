@@ -11,15 +11,15 @@ intelligence_agency = {
 	picture = GFX_intelligence_agency_logo_imi
 	names = { "Imperial Intelligence" "Imperial Security Bureau" }
 	
-	available = { has_government = imperialism }
+	available = { original_tag = IMP }
 	default = { tag = IMP }
 }
 
-intelligence_agency = {
-	
-	picture = GFX_intelligence_agency_logo_isb
-	names = { "Imperial Security Bureau" }
-	
-	available = { has_government = imperialism }
-	default = { tag = IMP } 
-}
+#intelligence_agency = {
+#	
+#	picture = GFX_intelligence_agency_logo_isb
+#	names = { "Imperial Security Bureau" }
+#	
+#	available = { has_government = imperialism }
+#	default = { tag = IMP } 
+#}
