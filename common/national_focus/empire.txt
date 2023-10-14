@@ -567,6 +567,7 @@ focus_tree = {
 	}
 
 	###INDUSTRIAL PATH ###
+
 	
 	focus = {
 		id = imp_raw_material_surveillance
@@ -717,6 +718,7 @@ focus_tree = {
 	}
 
 	# foreign affairs focus
+	#TODO: Someone needs to plan this out
 	focus = {
 		id = imp_foreign_affairs
 		icon = GFX_foreign_affairs_start
@@ -2133,7 +2135,6 @@ focus_tree = {
 	}
 	
 	### WAR PLANS ###
-	
 	focus = {
 		id = imp_war_plan
 		icon = GFX_focus_phasetwo
@@ -2146,9 +2147,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 
-		x = 20
-		y = -10
-		relative_position_id = imp_stage_one
+		x = -25
+		y = 2
+		relative_position_id = imp_phase_two
 
 		completion_reward = {
 			custom_effect_tooltip = strategy_flag
@@ -2275,109 +2276,6 @@ focus_tree = {
 	
 	
 	focus = {
-		id = imp_target_europe_puppet
-		icon = GFX_focus_usa_focus_on_europe
-		cost = 3
-
-		prerequisite = {
-			focus = imp_global_domination
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		
-		mutually_exclusive = {
-			focus = imp_target_europe_annex
-		}
-		
-		available = {
-			has_country_leader = {
-				name = "Wilhuff Tarkin"
-				ruling_only = yes
-			}
-		}
-		
-		x = -8
-		y = 1
-		relative_position_id = imp_global_domination
-
-		completion_reward = {
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = ENG
-				expire = 0
-			}
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = FRA
-				expire = 0
-			}
-		}
-	}
-	
-	focus = {
-		id = imp_target_europe_puppet2
-		icon = GFX_focus_generic_annex_country_2
-		cost = 3
-
-		prerequisite = {
-			focus = imp_target_europe_puppet
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		
-		
-		x = 0
-		y = 1
-		relative_position_id = imp_target_europe_puppet
-
-		completion_reward = {
-			custom_effect_tooltip = "Add 35 compliance in any french and british held state."
-			every_controlled_state = {
-				limit = {
-					is_core_of = ENG
-				}
-				add_compliance = 35
-			}
-			every_controlled_state = {
-				limit = {
-					is_core_of = FRA
-				}
-				add_compliance = 35
-			}
-		}
-	}
-	
-	focus = {
-		id = imp_target_europe_puppet3
-		icon = GFX_focus_generic_annex_country_2
-		cost = 3
-
-		prerequisite = {
-			focus = imp_target_europe_puppet2
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		
-		
-		x = 0
-		y = 1
-		relative_position_id = imp_target_europe_puppet2
-
-		completion_reward = {
-			custom_effect_tooltip = "Add 35 compliance in any french and british held state."
-			every_controlled_state = {
-				limit = {
-					is_core_of = ENG
-				}
-				add_compliance = 35
-			}
-			every_controlled_state = {
-				limit = {
-					is_core_of = FRA
-				}
-				add_compliance = 35
-			}
-		}
-	}
-	
-	focus = {
 		id = imp_target_europe_annex
 		icon = GFX_focus_usa_focus_on_europe
 		cost = 3
@@ -2386,10 +2284,6 @@ focus_tree = {
 			focus = imp_global_domination
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
-		mutually_exclusive = {
-			focus = imp_target_europe_puppet
-		}
 		
 		available = {
 			or = {
@@ -2404,7 +2298,7 @@ focus_tree = {
 			}
 		}
 		
-		x = -6
+		x = -4
 		y = 1
 		relative_position_id = imp_global_domination
 
@@ -2511,93 +2405,6 @@ focus_tree = {
 		}
 	}
 	
-	
-	focus = {
-		id = imp_target_germans_puppet
-		icon = GFX_focus_POL_ban_nazi_party
-		cost = 3
-
-		prerequisite = {
-			focus = imp_global_domination
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		
-		mutually_exclusive = {
-			focus = imp_target_germans_annex
-		}
-		
-		available = {
-			has_country_leader = {
-				name = "Wilhuff Tarkin"
-				ruling_only = yes
-			}
-		}
-		
-		x = -4
-		y = 1
-		relative_position_id = imp_global_domination
-
-		completion_reward = {
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = GER
-				expire = 0
-			}
-		}
-	}
-	
-	focus = {
-		id = imp_target_germans_puppet2
-		icon = GFX_focus_generic_annex_country_2
-		cost = 3
-
-		prerequisite = {
-			focus = imp_target_germans_puppet
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		
-		
-		x = 0
-		y = 1
-		relative_position_id = imp_target_germans_puppet
-
-		completion_reward = {
-			custom_effect_tooltip = "Add 35 compliance in any german held state."
-			every_controlled_state = {
-				limit = {
-					is_core_of = GER
-				}
-				add_compliance = 35
-			}
-		}
-	}
-	
-	focus = {
-		id = imp_target_germans_puppet3
-		icon = GFX_focus_generic_annex_country_2
-		cost = 3
-
-		prerequisite = {
-			focus = imp_target_germans_puppet2
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		
-		
-		x = 0
-		y = 1
-		relative_position_id = imp_target_germans_puppet2
-
-		completion_reward = {
-			custom_effect_tooltip = "Add 35 compliance in any german held state."
-			every_controlled_state = {
-				limit = {
-					is_core_of = GER
-				}
-				add_compliance = 35
-			}
-		}
-	}
-	
 	focus = {
 		id = imp_target_germans_annex
 		icon = GFX_focus_POL_ban_nazi_party
@@ -2607,10 +2414,6 @@ focus_tree = {
 			focus = imp_global_domination
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
-		mutually_exclusive = {
-			focus = imp_target_germans_puppet
-		}
 		
 		available = {
 			or = {
@@ -2723,7 +2526,6 @@ focus_tree = {
 		
 		available = {
 			has_completed_focus = imp_stage_two
-			
 		}
 
 		x = 0
@@ -2856,98 +2658,7 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = {
-		id = imp_target_soviets_puppet
-		icon = GFX_focus_ger_strike_at_the_source
-		cost = 3
-
-		prerequisite = {
-			focus = imp_global_domination
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
 		
-		mutually_exclusive = {
-			focus = imp_target_soviets_annex
-		}
-		
-		available = {
-			has_country_leader = {
-				name = "Wilhuff Tarkin"
-				ruling_only = yes
-			}
-		}
-		
-		x = 2
-		y = 1
-		relative_position_id = imp_global_domination
-
-		completion_reward = {
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = SOV
-				expire = 0
-			}
-		}
-	}
-	
-	focus = {
-		id = imp_target_soviets_puppet2
-		icon = GFX_focus_ger_bulwark_against_bolshevism
-		cost = 3
-
-		prerequisite = {
-			focus = imp_target_soviets_puppet
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		
-		
-		
-		x = 0
-		y = 1
-		relative_position_id = imp_target_soviets_puppet
-
-		completion_reward = {
-			custom_effect_tooltip = "Deploy Battalions of Imperial Police and Patrols under strict guidelines from Tarkin across various territories of this land should ensure compliance and order. Add 35 compliance in any soviet state held."
-			every_controlled_state = {
-				limit = {
-					is_core_of = SOV
-				}
-				add_compliance = 35
-			}
-		}
-	}
-	
-	focus = {
-		id = imp_target_soviets_puppet3
-		icon = GFX_focus_ger_bulwark_against_bolshevism
-		cost = 5
-
-		prerequisite = {
-			focus = imp_target_soviets_puppet2
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		
-		
-		
-		x = 0
-		y = 1
-		relative_position_id = imp_target_soviets_puppet2
-
-		completion_reward = {
-			custom_effect_tooltip = "Tarkin will use local volunteers as new Battalions of Imperial Police and Patrols to reinforce various soviet cities, towns and villages across the various lands. Add 35 compliance in any soviet state held."
-			every_controlled_state = {
-				limit = {
-					is_core_of = SOV
-				}
-				add_compliance = 35
-			}
-		}
-	}
-	
-	
-	
-	
 	focus = {
 		id = imp_target_soviets_annex
 		icon = GFX_focus_ger_strike_at_the_source
@@ -2957,10 +2668,6 @@ focus_tree = {
 			focus = imp_global_domination
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
-		mutually_exclusive = {
-			focus = imp_target_soviets_puppet
-		}
 		
 		available = {
 			or = {
@@ -2975,7 +2682,7 @@ focus_tree = {
 			}
 		}
 		
-		x = 4
+		x = 2
 		y = 1
 		relative_position_id = imp_global_domination
 
@@ -3068,120 +2775,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = imp_target_asia_puppet
-		icon = GFX_focus_usa_focus_on_asia
-		cost = 3
-
-		prerequisite = {
-			focus = imp_global_domination
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		
-		mutually_exclusive = {
-			focus = imp_target_asia_annex
-		}
-		
-		available = {
-			has_country_leader = {
-				name = "Wilhuff Tarkin"
-				ruling_only = yes
-			}
-		}
-		
-		x = 6
-		y = 1
-		relative_position_id = imp_global_domination
-
-		completion_reward = {
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = SIK
-				expire = 0
-			}
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = XSM
-				expire = 0
-			}
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = PRC
-				expire = 0
-			}
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = SHX
-				expire = 0
-			}
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = CHI
-				expire = 0
-			}
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = YUN
-				expire = 0
-			}
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = GXC
-				expire = 0
-			}
-		}
-	}
-	
-	focus = {
-		id = imp_target_asia_puppet2
-		icon = GFX_focus_generic_annex_country_2
-		cost = 3
-
-		prerequisite = {
-			focus = imp_target_asia_puppet
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		
-		x = 0
-		y = 1
-		relative_position_id = imp_target_asia_puppet
-
-		completion_reward = {
-			custom_effect_tooltip = "Add 35 compliance in any chinese held state."
-			every_controlled_state = {
-				limit = {
-					is_core_of = CHI
-				}
-				add_compliance = 35
-			}
-		}
-	}
-	
-	focus = {
-		id = imp_target_asia_puppet3
-		icon = GFX_focus_generic_annex_country_2
-		cost = 3
-
-		prerequisite = {
-			focus = imp_target_asia_puppet2
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		
-		x = 0
-		y = 1
-		relative_position_id = imp_target_asia_puppet2
-
-		completion_reward = {
-			custom_effect_tooltip = "Add 35 compliance in any chinese held state."
-			every_controlled_state = {
-				limit = {
-					is_core_of = CHI
-				}
-				add_compliance = 35
-			}
-		}
-	}
-	
-	focus = {
 		id = imp_target_asia_annex
 		icon = GFX_focus_usa_focus_on_asia
 		cost = 3
@@ -3190,10 +2783,6 @@ focus_tree = {
 			focus = imp_global_domination
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		
-		mutually_exclusive = {
-			focus = imp_target_asia_puppet
-		}
 		
 		available = {
 			or = {
@@ -3208,7 +2797,7 @@ focus_tree = {
 			}
 		}
 		
-		x = 8
+		x = 4
 		y = 1
 		relative_position_id = imp_global_domination
 
