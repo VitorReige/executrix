@@ -1296,9 +1296,11 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			has_completed_focus = imp_establish_base_iraq
-			has_completed_focus = imp_supply_lines_iraq
+		IMP = {
+			has_completed_focus = imp_subjugate_iraq
+		}
+		NOT = {
+			country_exists = IRQ
 		}
 	}
 
@@ -1326,9 +1328,11 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			has_completed_focus = imp_establish_base_saudi
-			has_completed_focus = imp_supply_lines_saudi
+		IMP = {
+			has_completed_focus = imp_subjugate_saudi
+		}
+		NOT = {
+			country_exists = SAU
 		}
 	}
 
@@ -1501,8 +1505,32 @@ news_event = {
 	}
 }
 
+# WAR CAMPAIGN EVENTS
 
-# end of rebel events
+add_namespace = imp_campaign_diplo
+country_event = {
+	id = imp_campaign_diplo.1
+	title = imp_campaign_diplo.1.t
+	desc = imp_campaign_diplo.1.d
+
+	is_triggered_only = yes
+	
+	option = {
+		name = imp_campaign_diplo.1.a
+		IMP = {
+			puppet = THIS
+		}
+	}
+	option = {
+		name = imp_campaign_diplo.1.b
+		IMP = {
+			create_wargoal = {
+				type = annex_everything
+				target = THIS
+			}
+		}
+	}
+}
 
 
 #End Country Events
