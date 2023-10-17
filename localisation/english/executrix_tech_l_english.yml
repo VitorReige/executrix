@@ -63,3 +63,20 @@
  mando_beskar_equipment_desc: "Beskar, also known as Mandalorian steel, is a metal that is used in Mandalorian armor and is notable for its high tolerance to extreme forms of damage. In its purest forms, the metal was durable enough to withstand a direct blaster shot and could repel lightsaber strikes. \n\nNeeds to be produced in order to equip our Soldiers with Armor."
  
  unique_tech_10: "Starfighters"
+
+ # Slug Thrower
+ IMP_slug_thrower: "Slug Thrower"
+ IMP_infantry_equipment_3: "Slug Thrower"
+ IMP_infantry_equipment_3_short: "Slug Thrower"
+
+ #Inbetween Infantry Equipment Techs
+ sw_infantry_weapons2: "Improved Infantry Equipment I"
+ sw_infantry_weapons2_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs. Improved weapon models and more specialized equipment."
+ sw_improved_infantry_weapons_2:0 "Improved Infantry Equipment II"
+ sw_improved_infantry_weapons_2_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs. Improved weapon models and more specialized equipment."
+ sw_advanced_infantry_weapons2:0 "Improved Infantry Equipment III"
+ sw_advanced_infantry_weapons2_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs. Further Modernized to include personal Assault Rifles and anti-tank rockets. Improved availability of weapons previously distributed to a limited extent."
+ sw_infantry_at:0 "Infantry Anti-Tank I"
+ sw_infantry_at_desc:0 "Arming our infantry units with RPS-6 rocket launchers will allow them to take out armored vehicles while maintaining mobility."
+ sw_infantry_at2:0 "Infantry Anti-Tank II"
+ sw_infantry_at2_desc:0 "For infantry to effectively engage heavier armored units, high-explosive anti-tank weapons need to be made smaller and lighter."

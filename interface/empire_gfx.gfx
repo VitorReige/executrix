@@ -310,7 +310,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/tech_elite_forces.dds"
 	}
 
-
 	spriteType = {
 		name = "GFX_republic_weapon1_medium"
 		texturefile = "gfx/interface/technologies/republic_weapon1.dds"

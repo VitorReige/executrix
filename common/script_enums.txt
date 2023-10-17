@@ -577,6 +577,7 @@ script_enum_equipment_bonus_type = {
 	amphibious_tank_equipment_2
 
 	####### STAR WARS EXECUTRIX EQUIPMENT
+	slug_thrower
 	republic_equipment_1
 	imperial_equipment_1
 	imperial_equipment_2

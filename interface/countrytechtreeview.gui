@@ -61,13 +61,6 @@ guiTypes = {
 				slotsize = { width= 70 height= 70 }
 				format = "LEFT"
 			}
-			
-			gridboxtype = {
-				name = "republic_weapon1_tree"
-				position = { x= 100 y= 160 }
-				slotsize = { width= 70 height= 70 }
-				format = "LEFT"
-			}
 
 			gridboxtype = {
 				name = "laat_tree"
@@ -335,6 +328,15 @@ guiTypes = {
 				format = "LEFT"
 
 			}
+
+			# Star Wars Line
+			gridboxtype = {
+				name = "slug_thrower_tree"
+				position = { x= 140 y= 325 }
+				slotsize = { width= 70 height= 70 }
+				format = "LEFT"
+			}
+			####
 
 			gridboxtype = {
 				name = "tech_trucks_tree"

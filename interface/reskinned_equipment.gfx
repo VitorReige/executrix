@@ -26,31 +26,46 @@ spriteTypes = {
     #    name = "GFX_IMP_advanced_infantry_weapons_medium"
     #    texturefile = "gfx/interface/technologies/imperial_e-22.dds"
     #}
+
+	#SpriteType = {
+    #    name = "GFX_IMP_advanced_infantry_weapons_medium"
+    #    texturefile = "gfx/interface/technologies/imperial_e-22.dds"
+    #}
+	spriteType = {
+		name = "GFX_slug_thrower_medium"
+		texturefile = "gfx/interface/technologies/slug_thrower.dds"
+	}
+
+	
+	spriteType = {
+		name = "GFX_IMP_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/slug_thrower.dds"
+	}
 #-> Infantry Weapons - ANTI TANK <><>	
 	SpriteType = {
-		name = "GFX_IMP_infantry_at_medium"
+		name = "GFX_sw_infantry_at_medium"
 		texturefile = "gfx/interface/technologies/imperial_anti_tank1.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_IMP_infantry_at2_medium"
+		name = "GFX_sw_infantry_at2_medium"
 		texturefile = "gfx/interface/technologies/imperial_anti_tank2.dds"
 	}
 #-> Infantry Weapons - INTER WEAPON UPGRADES 1 2 3 <><>
-	# SpriteType = {
-	# 	name = "GFX_IMP_infantry_weapons2_medium"
-	# 	texturefile = "gfx/interface/technologies/blaster_efficiency1.dds"
-	# }	
+	SpriteType = {
+		name = "GFX_sw_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/blaster_efficiency1.dds"
+	}	
 
-	# SpriteType = {
-	# 	name = "GFX_IMP_improved_infantry_weapons_2_medium"
-	# 	texturefile = "gfx/interface/technologies/blaster_efficiency2.dds"
-	# }	
+	SpriteType = {
+		name = "GFX_sw_improved_infantry_weapons_2_medium"
+		texturefile = "gfx/interface/technologies/blaster_efficiency2.dds"
+	}	
 	
-	# SpriteType = {
-	# 	name = "GFX_IMP_advanced_infantry_weapons2_medium"
-	# 	texturefile = "gfx/interface/technologies/blaster_efficiency3.dds"
-	# }	
+	SpriteType = {
+		name = "GFX_sw_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/blaster_efficiency3.dds"
+	}	
 #-> Support Weapons <><>	
 	SpriteType = { 
 		name = "GFX_IMP_support_weapons_medium" 

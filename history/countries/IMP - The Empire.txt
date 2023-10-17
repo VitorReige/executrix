@@ -6,20 +6,9 @@ oob = IMP_starting_troopers
 # Starting tech
 set_technology = {
 	# Infantry
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	improved_infantry_weapons = 1
-	improved_infantry_weapons_2 = 1
-	infantry_weapons2 = 1
-	advanced_infantry_weapons = 1
-	infantry_weapons3 = 1
-	advanced_infantry_weapons2 = 1
 	night_vision = 1
-	night_vision2 = 1
 	tech_trucks = 1
-	armored_car1 = 1
-	armored_car2 = 1
-	armored_car3 = 1
+	slug_thrower = 1
 
 	# Support Companies
 	basic_train = 1
@@ -28,14 +17,8 @@ set_technology = {
 	tech_recon = 1
 
 	# Armor
-	#TODO: Need to add pre-NSB research for non-dlc holders
 	gwtank_chassis = 1
-	basic_medium_tank_chassis = 1
-	improved_medium_tank_chassis = 1
-	advanced_medium_tank_chassis = 1
-	main_battle_tank_chassis = 1
-	armor_tech_1 = 1
-	engine_tech_1 = 1
+	basic_light_tank_chassis = 1
 
 	# Artillery
 	gw_artillery = 1
@@ -44,17 +27,11 @@ set_technology = {
 
 	# Air
 	#TODO: Add non-BBA air techs
-	modern_small_airframe = 1
-	modern_medium_airframe = 1
-	modern_large_airframe = 1
 	early_bombs = 1
 	aa_lmg = 1
 	air_torpedoe_1 = 1
 	aircraft_construction = 1
 	engines_1 = 1
-	engines_2 = 1
-	engines_3 = 1
-	engines_4 = 1 
 
 	#Industrial Tech
 	basic_machine_tools = 1
@@ -67,12 +44,7 @@ set_technology = {
 	radio = 1
 	experimental_rockets = 1
 	rocket_engines = 1
-	improved_rocket_engines = 1
-	advanced_rocket_engines = 1
-	jet_engines = 1
 	atomic_research = 1
-	nuclear_reactor = 1
-	nukes = 1
 	
 	#doctrines
 	#empire unlock

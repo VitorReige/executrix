@@ -140,17 +140,17 @@ equipments = {
 		lend_lease_cost = 100
 
 		#Defensive Abilities
-		defense = 42 # + 6
-		breakthrough = 10 # + 1
+		defense = 40 # + 6
+		breakthrough = 6 # + 1
 
 		#Offensive Abilities
-		soft_attack = 7 # +3
-		hard_attack = 1.0 # +1
+		soft_attack = 15 # +3
+		hard_attack = 3 # +1
 		ap_attack = 15 # +5
-		air_attack = 1 
+		air_attack = 0.5
 
-		reliability = 1.0
-		build_cost_ic = 0.5
+		reliability = 0.9
+		build_cost_ic = 0.74
 		resources = {
 			steel = 4
 			chromium = 1
@@ -168,20 +168,20 @@ equipments = {
 		
 		
 		#Defensive Abilities
-		defense = 62
-		breakthrough = 13
+		defense = 46
+		breakthrough = 7
 
 		#Offensive Abilities
-		soft_attack = 10
-		hard_attack = 1.5
-		ap_attack = 30
+		soft_attack = 18
+		hard_attack = 5
+		ap_attack = 20
 		air_attack = 1
 
-		reliability = 1.0
-		build_cost_ic = 0.6
+		reliability = 0.95
+		build_cost_ic = 0.8
 		resources = {
 			steel = 4
-			chromium = 2
+			chromium = 1
 		}
 	}
 
@@ -196,20 +196,21 @@ equipments = {
 		
 		
 		#Defensive Abilities
-		defense = 82
-		breakthrough = 16
+		defense = 52
+		breakthrough = 8
 
 		#Offensive Abilities
-		soft_attack = 13
-		hard_attack = 2.0
-		ap_attack = 45
-		air_attack = 1
+		soft_attack = 21
+		hard_attack = 4
+		ap_attack = 25
+		air_attack = 1.5
 
-		reliability = 0.95
-		build_cost_ic = 0.733
+		reliability = 1
+		build_cost_ic = 0.94
 		resources = {
-			steel = 4
-			chromium = 3
+			steel = 2
+			chromium = 1
+			tungsten = 1
 		}
 	}
 }
