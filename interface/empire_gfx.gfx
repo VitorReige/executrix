@@ -310,10 +310,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/tech_elite_forces.dds"
 	}
 
-	spriteType = {
-		name = "GFX_republic_weapon1_medium"
-		texturefile = "gfx/interface/technologies/republic_weapon1.dds"
-	}
+	
 
 	spriteType = {
 		name = "GFX_imperial_techtree_bg"
@@ -444,20 +441,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/imperial_e-10.dds"
 	}
 	
-	spriteType = {
-		name = "GFX_imperial_weapons_medium"
-		texturefile = "gfx/interface/technologies/imperial_weapon.dds"
-	}
+	
 
-	spriteType = {
-		name = "GFX_small_repeater2_medium"
-		texturefile = "gfx/interface/technologies/nightvision1.dds"
-	}
+	
 
-	spriteType = {
-		name = "GFX_medium_repeater2_medium"
-		texturefile = "gfx/interface/technologies/nightvision2.dds"
-	}
+	
 
 	spriteType = {
 		name = "GFX_republic_tank_medium"
@@ -677,201 +665,6 @@ spriteTypes = {
 	#AIR END
 
 	spriteType = {
-		name = "GFX_atat_tech_medium"
-		texturefile = "gfx/interface/technologies/atat.dds"
-	}
-
-	spriteType = {
-		name = "GFX_foatst_medium"
-		texturefile = "gfx/interface/technologies/foatst.dds"
-	}
-
-	spriteType = {
-		name = "GFX_utat_tech_medium"
-		texturefile = "gfx/interface/technologies/utat.dds"
-	}
-
-	spriteType = {
-		name = "GFX_spma_medium"
-		texturefile = "gfx/interface/technologies/spma.dds"
-	}
-
-	spriteType = {
-		name = "GFX_spha_medium"
-		texturefile = "gfx/interface/technologies/spha.dds"
-	}
-
-	spriteType = {
-		name = "GFX_isp_medium"
-		texturefile = "gfx/interface/technologies/isp.dds"
-	}
-
-	spriteType = {
-		name = "GFX_barc_medium"
-		texturefile = "gfx/interface/technologies/barc.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ava_medium"
-		texturefile = "gfx/interface/technologies/ava.dds"
-	}
-
-	spriteType = {
-		name = "GFX_z_speeder_medium"
-		texturefile = "gfx/interface/technologies/z_speeder.dds"
-	}
-
-	spriteType = {
-		name = "GFX_atrct_medium"
-		texturefile = "gfx/interface/technologies/atrct.dds"
-	}
-
-	spriteType = {
-		name = "GFX_px_medium"
-		texturefile = "gfx/interface/technologies/px.dds"
-	}
-
-	spriteType = {
-		name = "GFX_av7_medium"
-		texturefile = "gfx/interface/technologies/av7.dds"
-	}
-
-	spriteType = {
-		name = "GFX_atot_medium"
-		texturefile = "gfx/interface/technologies/atot.dds"
-	}
-
-	spriteType = {
-		name = "GFX_basic_hovercrafts_medium"
-		texturefile = "gfx/interface/technologies/basic_hovercraft.dds"
-	}
-
-	spriteType = {
-		name = "GFX_hovercraft_equipment_medium"
-		texturefile = "gfx/interface/technologies/hovercraft_equipment.dds"
-	}
-
-	spriteType = {
-		name = "GFX_bullet_train_medium"
-		texturefile = "gfx/interface/technologies/bullet_train.dds"
-	}
-
-	spriteType = {
-		name = "GFX_rtt_medium"
-		texturefile = "gfx/interface/technologies/rtt.dds"
-	}
-
-	spriteType = {
-		name = "GFX_itt_medium"
-		texturefile = "gfx/interface/technologies/itt.dds"
-	}
-
-	spriteType = {
-		name = "GFX_itc_medium"
-		texturefile = "gfx/interface/technologies/itc.dds"
-	}
-
-	spriteType = {
-		name = "GFX_mauler_medium"
-		texturefile = "gfx/interface/technologies/mauler.dds"
-	}
-
-	spriteType = {
-		name = "GFX_atm6_medium"
-		texturefile = "gfx/interface/technologies/atm6.dds"
-	}
-
-	spriteType = {
-		name = "GFX_crawler_medium"
-		texturefile = "gfx/interface/technologies/crawler.dds"
-	}
-
-	spriteType = {
-		name = "GFX_juggernaut_medium"
-		texturefile = "gfx/interface/technologies/juggernaut.dds"
-	}
-
-	spriteType = {
-		name = "GFX_atat_tech_medium"
-		texturefile = "gfx/interface/technologies/atat.dds"
-	}
-
-	spriteType = {
-		name = "GFX_rx_medium"
-		texturefile = "gfx/interface/technologies/rx.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ataa_medium"
-		texturefile = "gfx/interface/technologies/ataa.dds"
-	}
-
-	spriteType = {
-		name = "GFX_h_repulsor_medium"
-		texturefile = "gfx/interface/technologies/h_repulsor.dds"
-	}
-
-	spriteType = {
-		name = "GFX_imp_support_eq_medium"
-		texturefile = "gfx/interface/technologies/imp_support_equipment_1.dds"
-	}
-
-	spriteType = {
-		name = "GFX_elite_atat_tech_medium"
-		texturefile = "gfx/interface/technologies/elite_atat.dds"
-	}
-
-	spriteType = {
-		name = "GFX_fo_atat_tech_medium"
-		texturefile = "gfx/interface/technologies/fo_atat.dds"
-	}
-
-	spriteType = {
-		name = "GFX_atpt_medium"
-		texturefile = "gfx/interface/technologies/atpt.dds"
-	}
-
-	spriteType = {
-		name = "GFX_tx130t_medium"
-		texturefile = "gfx/interface/technologies/tx130t.dds"
-	}
-
-	spriteType = {
-		name = "GFX_repulsor_medium"
-		texturefile = "gfx/interface/technologies/repulsor.dds"
-	}
-
-	spriteType = {
-		name = "GFX_atdp_medium"
-		texturefile = "gfx/interface/technologies/atdp.dds"
-	}
-
-	spriteType = {
-		name = "GFX_atdt_medium"
-		texturefile = "gfx/interface/technologies/atdt.dds"
-	}
-
-	spriteType = {
-		name = "GFX_atte_medium"
-		texturefile = "gfx/interface/technologies/atte.dds"
-	}
-
-	spriteType = {
-		name = "GFX_atap_medium"
-		texturefile = "gfx/interface/technologies/atap.dds"
-	}
-
-	spriteType = {
-		name = "GFX_atst_medium"
-		texturefile = "gfx/interface/technologies/atst.dds"
-	}
-
-	spriteType = {
-		name = "GFX_imperial_tank_medium"
-		texturefile = "gfx/interface/technologies/imperialtank.dds"
-	}
-
-	spriteType = {
 		name = "GFX_blaster_efficiency1_medium"
 		texturefile = "gfx/interface/technologies/blaster_efficiency1.dds"
 	}
@@ -890,10 +683,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/imperial_anti_tank.dds"
 	}
 
-	spriteType = {
-		name = "GFX_imperial_weapons2_medium"
-		texturefile = "gfx/interface/technologies/imperial_e-22.dds"
-	}
+	
 
 	spriteType = {
 		name = "GFX_firstorder_weapons_medium"

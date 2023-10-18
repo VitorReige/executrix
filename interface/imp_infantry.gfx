@@ -1,0 +1,31 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_hovercraft_equipment_medium"
+		texturefile = "gfx/interface/technologies/hovercraft_equipment.dds"
+	}
+
+	spriteType = {
+		name = "GFX_republic_weapon1_medium"
+		texturefile = "gfx/interface/technologies/republic_weapon1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_imperial_weapons_medium"
+		texturefile = "gfx/interface/technologies/imperial_weapon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_imperial_weapons2_medium"
+		texturefile = "gfx/interface/technologies/imperial_e-22.dds"
+	}
+
+	spriteType = {
+		name = "GFX_small_repeater2_medium"
+		texturefile = "gfx/interface/technologies/nightvision1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_medium_repeater2_medium"
+		texturefile = "gfx/interface/technologies/nightvision2.dds"
+	}
+}
