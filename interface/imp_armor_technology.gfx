@@ -60,21 +60,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_barc_medium"
-		texturefile = "gfx/interface/technologies/barc.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ava_medium"
-		texturefile = "gfx/interface/technologies/ava.dds"
-	}
-
-	spriteType = {
-		name = "GFX_z_speeder_medium"
-		texturefile = "gfx/interface/technologies/z_speeder.dds"
-	}
-
-	spriteType = {
 		name = "GFX_atrct_medium"
 		texturefile = "gfx/interface/technologies/atrct.dds"
 	}

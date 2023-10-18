@@ -80,3 +80,8 @@
  sw_infantry_at_desc:0 "Arming our infantry units with RPS-6 rocket launchers will allow them to take out armored vehicles while maintaining mobility."
  sw_infantry_at2:0 "Infantry Anti-Tank II"
  sw_infantry_at2_desc:0 "For infantry to effectively engage heavier armored units, high-explosive anti-tank weapons need to be made smaller and lighter."
+
+ # Speeders/Armored Cars (Armoured) <- just incase i accidentally used british spelling
+ speeder_equipment_1:0 "BARC Speeder"
+ speeder_equipment_2:0 "614-AvA Speeder"
+ speeder_equipment_3:0 "74-Z Speeder" 

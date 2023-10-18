@@ -1591,6 +1591,11 @@ technologies = {
 			research_cost_coeff = 1
 		} 
 
+		path = { # Update this on game update
+			leads_to_tech = speeder1
+			research_cost_coeff = 1
+		} 
+
 		research_cost = 1.5
 		start_year = 1936
 		folder = {
@@ -1744,7 +1749,12 @@ technologies = {
 		enable_equipments = {
 			gw_armored_car_equipment
 		}
-		allow_branch = { has_dlc = "La Resistance" }
+		allow_branch = { 
+			AND = {
+				has_dlc = "La Resistance" 
+				NOT = { original_tag = IMP }
+			}
+		}
 		path = {
 			leads_to_tech = armored_car2
 			research_cost_coeff = 1
@@ -2387,7 +2397,10 @@ technologies = {
 		}
 	}
 
-	# Star Wars Infantry Line
+	# Star Wars Infantry Line 
+	# Everything above just needs to be replaced if game is updated
+	# Allow_branch code needs to be included as well for the above techs
+
 	slug_thrower = {
 
 		enable_equipments = {
@@ -2786,6 +2799,202 @@ technologies = {
 			modifier = {
 				factor = 2
 				date > "1946.1.1"
+			}
+		}
+	}
+
+	# Speeders/Armored Cars
+
+	speeder1 = { 
+
+		enable_subunits = {
+			armored_car
+		}
+
+		enable_equipments = {
+			speeder_equipment_1
+		}
+
+		allow_branch = { 
+			AND = {
+				has_dlc = "La Resistance" 
+				original_tag = IMP
+			}
+		}
+
+		path = {
+			leads_to_tech = speeder2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1914
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1924 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+	speeder2 = {
+
+		enable_equipments = {
+			speeder_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = speeder3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1940 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+	speeder3 = {
+
+		enable_equipments = {
+			speeder_equipment_3
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1942 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		
+		sub_technologies = {
+			speeder_at_upgrade
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+	speeder_at_upgrade = {
+
+		enable_equipments = {
+			speeder_at_equipment
+		}
+
+		research_cost = 1
+		start_year = 1942
+		sub_tech_index = 1
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
 			}
 		}
 	}

@@ -1,9 +1,12 @@
 spriteTypes = {
+	# Truck
 	spriteType = {
 		name = "GFX_hovercraft_equipment_medium"
 		texturefile = "gfx/interface/technologies/hovercraft_equipment.dds"
 	}
+	###
 
+	# Infantry Equipment
 	spriteType = {
 		name = "GFX_republic_weapon1_medium"
 		texturefile = "gfx/interface/technologies/republic_weapon1.dds"
@@ -27,5 +30,22 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_medium_repeater2_medium"
 		texturefile = "gfx/interface/technologies/nightvision2.dds"
+	}
+	###
+
+	# ARMORED CARS/ SPEEDERS
+	spriteType = {
+		name = "GFX_speeder1_medium"
+		texturefile = "gfx/interface/technologies/barc.dds"
+	}
+
+	spriteType = {
+		name = "GFX_speeder2_medium"
+		texturefile = "gfx/interface/technologies/ava.dds"
+	}
+
+	spriteType = {
+		name = "GFX_speeder3_medium"
+		texturefile = "gfx/interface/technologies/z_speeder.dds"
 	}
 }
