@@ -1475,14 +1475,16 @@
  imp_focus: "Imperial Focus Tree"
  
  ### START FOCUSES ####
- imp_crashed: "Deploy the Stormtroopers"
- imp_crashed_desc: "\"EMERGANCY: To all Imperial Crew survivors of the Executor Crash, we have become stranded on an unidentified world.\" With the Executor being disabled and near destroyed in a seemingly endless desert--with no knowledge of our surroundings, we must deploy our surviving stormtrooper regiments immediately and assess our situation to find out if this planet is hostile."
- imp_survey: "Survey Surroundings"
- imp_survey_desc: "The survivng Imperial Troopers have reorganized abroad the wreckage of the Executor and have recovered from the crash. \n\nExecutor lays scattered across for miles and miles in what seems to be endless sand dunes. We may now begin investigating our surroundings to determine if we are near any point of life."
- imp_investigate: "Investigate the Signal"
- imp_investigate_desc: "We detected a signal coming from the northern perimeter, most likely from a city or mining colony due to the frequency of chatter we pick up from them. We should begin investigating so that we may determine the people inhabiting this planet, a small reconnaissance team should make do."
+ imp_emergency_power: "Emergency Power"
+ imp_emergency_power_desc: "With the Executor being disabled as it exits hyperspace. It's trajectory is headed towards a seemingly endless desert--with no knowledge of our position, we must carefully decide which systems to restore as we land, deploy our surviving stormtrooper regiments, and assess our situation to find out if this planet is hostile."
+ imp_assessing_the_situation: "Assessing the Situation"
+ imp_assessing_the_situation_desc: "The surviving Imperial Troopers have reorganized abroad the wreckage of the Executor and have recovered from the crash. \n\n The Executor lays scattered across for miles and miles in what seems to be endless sand dunes."
+ imp_salvaging_the_equipment: "Salvage Operations"
+ imp_salvaging_the_equipment_desc: "We detected a signal coming from the northern perimeter, most likely from a city or mining colony due to the frequency of chatter we pick up from them. We should begin investigating so that we may determine the people inhabiting this planet, a small reconnaissance team should make do."
  imp_repair: "Reconstruction Effort"
  imp_repair_desc: "We cannot risk ourselves on a foreign planet without a strong base of operations with which to defend and conduct ourselves. Having the Imperial Engineering Corps that survived the crash be repurposed temporarily to reconstruction teams ready with a number of working droids will speed our efforts up greatly."
+ imp_our_future: "Our Future"
+ imp_our_future_desc: "There is damage throughout the ship, but the worst of it hit the command tower. Most of Senior Command is still trapped inside and immediately crews begin moving through the rubble to try to find them. Not many are confident of their survival."
  imp_tarkin_doctrine: "Tarkin's Doctrine"
  imp_tarkin_doctrine_desc: "\"Rule through fear of force, rather than force itself.\" The Tarkin doctrine used fear and scare tactics in order to keep the populace in line; he believed that by using large shows of force that it would quell any thoughts of rebellion in the general populace. This form of leadership should suit us well on this alien backwater as we begin to show force in the local region."
  imp_sith_might: "Sith Might"
@@ -1886,9 +1888,6 @@
  imperial_coop.1.b: "Saudi Arabia Only (2 Player Co-Op)"
  imperial_coop.1.c: "Iraq Only (2 Player Co-Op)"
  imperial_coop.1.e: "I Changed My Mind (1 Player)"
- info.0.t: "Tech Tree Toggle"
- info.0.d: "There is an option in the decisions list to switch between imperial and vanilla techs at will.\n\n When you switch, you may be presented with the previous screen you were on when you were in vanilla techs. \nSimply clicking on any of the tabs will bring you to the actual Imperial Technologies."
- info.0.a: "Ok!"
  
  
  #REDUX Events
@@ -1933,11 +1932,9 @@
  
  
  ### EVENTS STORY ####
- imperial_story.0.t: "Introduction -- WELCOME TO EXECUTOR REDUX"
- imperial_story.0.d: "EXECUTOR REDUX is an overhaul to the gameplay of the original mod of the same title.\n\nTarkin is recommened to play for your first playthrough in Redux. Tarkin leading Imperial Command unlocks the opportunity to go down alternate paths for the Empire such as emplacing Grand Admiral Thrawn into leadership.\n\nEnjoy the mod as this is still a work in progress. If you have any feedback, leave it on the official Executor Discord which can be found on the mod's steam page. \n\n--STORY--\n\nAfter taking the nearly completed Super Star Destroyer Executor for a test flight accompanied by many high ranking officials in the Imperial Army and Navy, catastrophe struck. \n\nWhat was supposed to be a many hour jump through hyperspace, Executor was suddenly lurched into the gravity well of an unknown planet due to one of the main reactors of the ship failing. This sent the Executor crashing down onto the surface. Thankfully due to the skill of the entire crew, we were able to use the remaining engines to move ourselves over land, narrowly escaping a watery grave. We ended up crashing in a vast sea of sand dunes.\n\nLord Vader and Grand Moff Tarkin are both present on the ship due to their personal oversight in the launch of the Super Star Destoryer. Vader and Tarkin are currently discussing whom shall over see the upcoming recovery operations.\n\nCrew is in disarray as the Executor is badly damaged in the crash, navigation systems are completely fried and there is no telling where they are. Both Vader and Tarkin are adept in their fields but the choice of whom shall oversee the upcoming events could shape the future of the surviving crew..."
- imperial_story.0.a: "Darth Vader will Lead"
- imperial_story.0.a: "Lord Vader Will Bring Order!"
- imperial_story.0.b: "Grand Moff Tarkin Will Ensure Loyalty!"
+ imperial_story.0.t: "Introduction"
+ imperial_story.0.d: "\"Executrix is an attempt to restructure the original storyline so that it's more consistent, makes sense, and doesn't ruin the integrity of canon. This also means all references to the First Order have been removed. Executrix is meant to be an Executor 2.0, so for all intents and purposes, this is a successor to the original mod. I will leave the original mod on the workshop for anyone that wishes to replay that experience.\" \n-MasterVeo1, Developer of Executor\n\nThe Original Tarkin/Vader path has been restructured and there will eventually be an alternative route available in the future.\n\nIf you have any feedback, leave it on the official Executor Discord which can be found on the mod's steam page. \n\n--STORY--\n\nAfter taking the nearly completed Executrix for a test flight accompanied by many high ranking officials in the Imperial Army and Navy, catastrophe struck. \n\nWhat was supposed to be a many hour jump through hyperspace, Executrix was suddenly lurched into the gravity well of an unknown planet due to one of the main reactors of the ship failing. This sent the Executor crashing down onto the surface. Thankfully due to the skill of the entire crew, we were able to use the remaining engines to move ourselves over land, narrowly escaping a watery grave. We ended up crashing in a vast sea of sand dunes.\n\nLord Vader and Grand Moff Tarkin are both present on the ship due to their personal oversight in the launch of the Super Star Destoryer. Vader and Tarkin are currently discussing whom shall over see the upcoming recovery operations.\n\nCrew is in disarray as the Executor is badly damaged in the crash, navigation systems are completely fried and there is no telling where they are. Both Vader and Tarkin are adept in their fields but the choice of whom shall oversee the upcoming events could shape the future of the surviving crew..."
+ imperial_story.0.a: "OK"
  imperial_story.1.t: "Tarkin leads the Executor's Operations"
  imperial_story.1.d: "With Grand Moff Tarkin at the helm of the Executor's operations, the Imperial Army breathes a short sigh of relief. Many of the survivng Imperials whom were left after the Executor's crash have good faith in the choice of Tarkin to lead. \n\nTarkin is considered a War Hero to the Imperial public having served for many years in the Clone Wars. His contributions and efforts alone shaped many victories for the Republic having served as a Captain and eventually Admiral. Tarkin is known to lead the Imperial Navy effectively for years as much of his doctrines and strategy permeate the Imperial Navy and Army.\n\nOur men have confidence that perhaps they will once again see home, though the troops are bit fearful of the Dark Lord's presence. With Tarkin helming as the Head of Operations, Vader will oversee the Imperial forces in person..."
  imperial_story.1.a: "Perhaps there is still a chance."
@@ -2021,10 +2018,11 @@
  imperial.5.d: "TODO: Description"
  imperial.5.a: "Command Survives"
  imperial.5.b: "They dead bruh"
- imperial.6.t: "Rebel Organization!"
- imperial.6.d: "The rebels are always working against us in order to overthrow our government. We believe that they may strike soon and should work towards counteracting said acts.\n\nHaving a Secret Police will make containing this easier."
- imperial.6.a: "We cannot have internal forces working against us!"
- imperial.6.b: "They aren't to be taken seriously..."
+ imperial.6.t: "Power Allocation"
+ imperial.6.d: "Executrix is disabled as it exits hyperspace, trapped in the gravity well of Earth. As it plunged down towards the surface, the crew managed to get emergency power on but the amount required to stop a crash landing meant that all of it needed to go into one component."
+ imperial.6.a: "Repulsors will give most room for recovery."
+ imperial.6.b: "We'll tank the blow with our shields."
+ imperial.6.c: "The ship is lost, focus on evacuation."
  imperial.7.t: "The Empire Invites Iran"
  imperial.7.d: "We've stopped hearing from Iraq and Saudi Arabia for a while now and we weren't sure why, now we know. A group of men outfitted in strange white armor approached the capital. They claim to be following orders from an entity known as the 'Imperial Provisional Government of Earth'. The Imperials are offering us an invitation to their 'Galactic Empire' in exchange for full cooperation. However, based on what we know of Iraq and Saudi Arabia, they aren't coming in peace. There will surely be resistance against the idea of us submitting to a foreign nation we haven't heard of until now."
  imperial.7.a: "There is security within the Empire. Join."

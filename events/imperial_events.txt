@@ -269,21 +269,6 @@ country_event = {
 
 #### STORY EVENTS###
 
-
-country_event = {
-	id = info.0
-	title = info.0.t
-	desc = info.0.d
-	picture = GFX_introduction
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = info.0.a
-	}
-}
-
 country_event = {
 	id = imperial_story.0
 	title = imperial_story.0.t
@@ -822,28 +807,26 @@ country_event = {
 
 	option = {
 	name = imperial.0.a
-		add_resource = {
-			type = steel
-			amount = 4
-			state = 656
-		}
-		add_resource = {
-			type = chromium
-			amount = 1
-			state = 656
-		}
-		add_stability = -0.025
-	}
+		
+		custom_effect_tooltip = deploy_tooltip
+		add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 100
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 5
+			}
+		hidden_effect = {
+			load_oob = "IMP_deploy_troopers"
+			
+			if = { # Just so the AI isn't complete shit
+				limit = { is_ai = yes }
+				load_oob = "IMP_ai_troopers"
+				add_manpower = 2000000
+			}
 
-	option = {
-		name = imperial.0.b
-		add_resource = {
-			type = steel
-			amount = 2
-			state = 656
 		}
-		add_manpower = 2500
-		add_stability = 0.025
 	}
 }
 
@@ -927,14 +910,36 @@ country_event = {
 
 	option = {
 		name = imperial.2.a
+		
+		add_resource = {
+			type = steel
+			amount = 4
+			state = 656
+		}
+		add_resource = {
+			type = chromium
+			amount = 1
+			state = 656
+		}
+
 		add_ideas = {
-			#TODO: Needs to be changed to construction speed bonus from Civ Goods
 			idea = more_droid
 		}
 	}
 
 	option = {
 		name = imperial.2.b
+		add_resource = {
+			type = steel
+			amount = 4
+			state = 656
+		}
+		add_resource = {
+			type = chromium
+			amount = 1
+			state = 656
+		}
+
 		add_ideas = {
 			idea = more_weapon
 		}
@@ -1053,6 +1058,36 @@ country_event = { # Command Survives? imp_our_future Event
 		ai_chance = { factor = 60 }
 
 		complete_national_focus = imp_command_survives
+	}
+	
+}
+
+country_event = { # assesing the situation event
+	id = imperial.6
+	title = imperial.6.t
+	desc = imperial.6.d
+	picture = GFX_report_event_bose_meeting
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = imperial.6.a
+		ai_chance = { factor = 60 }
+		#TODO: Complete Research for Small Airframe and Interwar Airframe, give 50 planes
+	}
+
+	option = {
+		name = imperial.6.b
+		ai_chance = { factor = 60 }
+		#TODO: Complete Research for GW tanks and Light Tank 1 when tech tree is finished, deploy 1 Light Tank division (AT-ST)
+	}
+
+	option = {
+		name = imperial.6.c
+		ai_chance = { factor = 60 }
+		add_stability = 0.05
+		add_manpower = 10000
 	}
 	
 }

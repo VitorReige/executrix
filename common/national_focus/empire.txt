@@ -29,7 +29,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = imp_crashed
+		id = imp_emergency_power
 		icon = GFX_focus_deploy_trooper
 		x = 0
 		y = 0
@@ -47,37 +47,22 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			custom_effect_tooltip = deploy_tooltip
-			add_equipment_to_stockpile = {
-					type = motorized_equipment
-					amount = 100
-				}
-				add_equipment_to_stockpile = {
-					type = train_equipment
-					amount = 5
-				}
-			hidden_effect = {
-				load_oob = "IMP_deploy_troopers"
-				if = { # Just so the AI isn't complete shit
-					limit = { is_ai = yes }
-					load_oob = "IMP_ai_troopers"
-					add_manpower = 2000000
-
-				}
+			country_event = {
+				id = imperial.6
 			}
 		}
 	}
 
 	focus = {
-		id = imp_survey
+		id = imp_assessing_the_situation
 		icon = GFX_focus_survey
 		x = 0
 		y = 1
-		relative_position_id = imp_crashed
+		relative_position_id = imp_emergency_power
 		cost = 1
 		prerequisite =
 		{
-			focus = imp_crashed
+			focus = imp_emergency_power
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -86,12 +71,6 @@ focus_tree = {
 			country_event = {
 				id = imperial.0
 			}
-			if = {
-				limit = { has_country_flag = tarkin_flag }
-				add_offsite_building = { type = industrial_complex level = 1 }
-				add_offsite_building = { type = arms_factory level = 1 }
-			}
-
 		}
 	}
 
@@ -101,12 +80,12 @@ focus_tree = {
 		cost = 1
 		prerequisite =
 		{
-			focus = imp_investigate
+			focus = imp_salvaging_the_equipment
 		}
 		x = 0
 		y = 2
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		relative_position_id = imp_survey
+		relative_position_id = imp_assessing_the_situation
 		completion_reward = {
 			country_event = {
 				id = imperial.2
@@ -208,16 +187,16 @@ focus_tree = {
 	}
 
 	focus = {
-		id = imp_investigate
+		id = imp_salvaging_the_equipment
 		icon = GFX_focus_investigate
 		cost = 1
 		prerequisite = {
-			focus = imp_survey
+			focus = imp_assessing_the_situation
 		}
 		x = 0
 		y = 1
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		relative_position_id = imp_survey
+		relative_position_id = imp_assessing_the_situation
 		completion_reward = {
 			country_event = {
 				id = imperial.1
