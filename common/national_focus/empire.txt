@@ -58,7 +58,7 @@ focus_tree = {
 				}
 			hidden_effect = {
 				load_oob = "IMP_deploy_troopers"
-				if = {
+				if = { # Just so the AI isn't complete shit
 					limit = { is_ai = yes }
 					load_oob = "IMP_ai_troopers"
 					add_manpower = 2000000
@@ -1934,17 +1934,11 @@ focus_tree = {
 			focus = imp_direct_control
 		}
 		available = {
-			or = {
-				has_country_leader = {
-					name = "Wilhuff Tarkin"
-					ruling_only = yes
-				}
-				has_country_leader = {
-					ruling_only = yes
-					name = "Grand Admiral Thrawn"
-				}
+			has_country_leader = {
+				name = tarkin
+				ruling_only = yes
 			}
-	
+		
 			has_full_control_of_state = 656
 			has_full_control_of_state = 675
 			has_full_control_of_state = 857
@@ -2003,16 +1997,11 @@ focus_tree = {
 			focus = imp_appoint_a_city_manager
 		}
 		available = {
-			or = {
-				has_country_leader = {
-					ruling_only = yes
-					name = "Darth Vader"
-				}
-				has_country_leader = {
-					ruling_only = yes
-					name = "Emperor Vader"
-				}
+			has_country_leader = {
+				ruling_only = yes
+				name = darth_vader
 			}
+
 			has_full_control_of_state = 656
 			has_full_control_of_state = 675
 			has_full_control_of_state = 857
@@ -2109,10 +2098,7 @@ focus_tree = {
 			focus = imp_rapid_industrialization
 		}
 		available = {
-			has_full_control_of_state = 656
-			has_full_control_of_state = 675
-			has_full_control_of_state = 857
-			has_full_control_of_state = 859
+			
 		}
 
 		x = -1
@@ -2121,11 +2107,17 @@ focus_tree = {
 		relative_position_id = imp_rapid_industrialization
 		completion_reward = {
 			add_ideas = IMP_citizenship
-			857 = {
-				add_manpower = 2146875
+			SAU = {
+				every_core_state = {
+					non_core_manpower = 0.3
+					compliance_gain = 0.3
+				}
 			}
-			675 = {
-				add_manpower = 149876
+			IRQ = {
+				every_core_state = {
+					non_core_manpower = 0.3
+					compliance_gain = 0.3
+				}
 			}
 			country_event = {
 					id = imperial_economicstory.3
@@ -3134,8 +3126,8 @@ focus_tree = {
 			custom_effect_tooltip = "Completion will allow the Empire to now change Conscription Laws"
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 2
+				cost_reduction = 0.9
+				uses = 1
 				category = land_doctrine
 			}
 			army_experience = 50
@@ -3148,20 +3140,7 @@ focus_tree = {
 		cost = 5
 		
 		available = {
-			or = {
-				has_country_leader = {
-					ruling_only = yes
-					name = "Darth Vader"
-				}
-				has_country_leader = {
-					ruling_only = yes
-					name = "Emperor Vader"
-				}
-				has_country_leader = {
-					name = "Grand Admiral Thrawn"
-					ruling_only = yes
-				}
-			}
+			
 		}
 		
 		mutually_exclusive = {
@@ -3917,16 +3896,7 @@ focus_tree = {
 		cost = 5
 		
 		available = {
-			or = {
-				has_country_leader = {
-					name = "Wilhuff Tarkin"
-					ruling_only = yes
-				}
-				has_country_leader = {
-					name = "Grand Admiral Thrawn"
-					ruling_only = yes
-				}
-			}
+			
 		}
 		
 		mutually_exclusive = {
@@ -3938,21 +3908,16 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		x = 2
-		y = 1
+		y = 2
 
 		relative_position_id = imp_biweekly_conference
 
 		completion_reward = { #Replace with support research#
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.5
+				cost_reduction = 0.99
 				uses = 2
 				category = land_doctrine
-			}
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
 			}
 		}
 	}
@@ -3994,9 +3959,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.15
-				ahead_reduction = 0.5
-				uses = 3
+				bonus = 1.0
+				uses = 2
 				category = support_tech
 			}
 		}
@@ -4095,9 +4059,6 @@ focus_tree = {
 				idea = recruitment_drive
 				days = 365
 			}
-			836 = {
-				add_manpower = 350000
-			}
 		}
 	}
 
@@ -4117,7 +4078,7 @@ focus_tree = {
 		relative_position_id = imp_special_forces2
 
 		completion_reward = {
-			army_experience = 50
+			army_experience = 10
 			add_ideas = training_camp
 			set_province_name = {
 				id = 12879
