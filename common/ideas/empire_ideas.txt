@@ -2817,249 +2817,40 @@ ideas = {
 			}
 
 		}
-<<<<<<< Updated upstream
-=======
-	
-	
-	
-	
-	
-	}
 
+		#Campaign Ideas
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	political_advisor = {
-
-		officer1 = {
-
-			picture = officer1
-
+		imp_india_help = {
 			allowed = {
-				original_tag = IMP
+				always = no
 			}
 
-			traits = { prince_of_terror }
+			removal_cost = -1
 
-			ai_will_do = {
-				factor = 1
-			}
-		}
+			picture = generic_acquire_tanks
 
-		officer2 = {
-			picture = officer2
-			allowed = {
-				original_tag = IMP
-			}
-
-			traits = { captain_of_industry }
-		}
-
-		officer3 = {
-			picture = officer3
-			allowed = {
-				original_tag = IMP
-			}
-
-			traits = { war_industrialist }
-		}
-
-		moradmin_bast = {
-			picture = moradmin_bast
-			allowed = {
-				original_tag = IMP
-			}
-
-			traits = { silent_workhorse }
-		}
-	}
-
-	army_chief = {
-		cassio_tagge = {
-			picture = cassio_tagge
-			allowed = {
-				original_tag = IMP
-			}
-
-			traits = {
-				army_chief_organizational_2
-			}
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-	}
-
-	air_chief = {
-
-		officer4 = {
-			picture = officer4
-
-			allowed = {
-				original_tag = IMP
-			}
-
-			traits = {
-			air_chief_reform_2
-			}
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-	}
-
-	navy_chief = {
-
-		motti = {
-			picture = conan_antonio_motti
-
-			allowed = {
-				original_tag = IMP
-			}
-
-			traits = { navy_chief_commerce_raiding_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	high_command = {
-
-		romodi = {
-			picture = hurst_romodi
-			ledger = army
-			allowed = {
-				original_tag = IMP
-			}
-
-			traits = { army_regrouping_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		yularen = {
-			picture = wulf_yularen
-			ledger = army
-			allowed = {
-				original_tag = IMP
-			}
-
-			traits = { army_infantry_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		veers = {
-			picture = maximillian_veers
-			ledger = army
-			allowed = {
-				original_tag = IMP
-			}
-
-			traits = { army_armored_3 }
-
-			ai_will_do = {
-				factor = 1
+			modifier = {
+				lend_lease_tension = -1
+				send_volunteers_tension = -1
+				send_volunteer_factor = 0.5
 			}
 
 		}
 
-
-		molock = {
-
-			picture = trech_molock
-			ledger = army
+		imp_india_buff = {
 			allowed = {
-				original_tag = IMP
+				always = no
 			}
 
-			traits = { air_close_air_support_2 }
+			removal_cost = -1
 
-			ai_will_do = {
-				factor = 1
+			picture = generic_acquire_tanks
+
+			targeted_modifier = {
+				tag = RAJ
+				attack_bonus_against = 0.10
 			}
 		}
-
-	}
-
-	theorist = {
-		piett = {
-
-			picture = firmus_piett
-			ledger = army
-			allowed = {
-				original_tag = IMP
-			}
-
-			cost = 150
-
-			research_bonus = {
-				land_doctrine = 0.15
-			}
-
-			traits = {
-				superior_firepower_expert
-			}
-		}
-
-		ozzel = {
-
-			picture = kendal_ozzel
-			ledger = navy
-			allowed = {
-				original_tag = IMP
-			}
-
-			research_bonus = {
-				naval_doctrine = 0.15
-			}
-
-			traits = { naval_theorist }
-		}
-
-		jerjerrod = {
-
-			picture = tiaan_jerjerrod
-			ledger = air
-			allowed = {
-				original_tag = IMP
-			}
-
-			research_bonus = {
-				air_doctrine = 0.15
-			}
-
-			traits = { victory_through_airpower }
-		}
-
->>>>>>> Stashed changes
 	}
 	
 }

@@ -775,6 +775,16 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_campaign_decisions
 		}
+
+		available = {
+			any_neighbor_country = {
+				OR = {
+					tag = TUR
+					tag = PER
+					tag = AFG
+				}
+			}
+		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		bypass = {
 		}
@@ -872,6 +882,22 @@ focus_tree = {
 			focus = imp_diplomacy_with_middle_east
 			focus = imp_attack_middle_east
 		}
+
+		available = {
+			OR = {
+				TUR = {is_puppet_of = IMP}
+				NOT = {country_exists = TUR}
+			}
+			OR = {
+				PER = {is_puppet_of = IMP}
+				NOT = {country_exists = PER}
+			}
+			OR = {
+				AFG = {is_puppet_of = IMP}
+				NOT = {country_exists = AFG}
+			}
+		}
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		bypass = {
 		}
@@ -881,6 +907,13 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.10
+			if = {
+				limit = {
+					has_completed_focus = imp_attack_middle_east
+				}
+				remove_ideas = turkey_bonus
+			}
+
 			if = {
 				limit = {
 					TUR = {is_puppet_of = IMP}
@@ -966,12 +999,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = imp_campaign_asia
+		id = imp_campaign_india
 		icon = GFX_focus_generic_military_mission
 		cost = 1
 
 		prerequisite = {
 			focus = imp_campaign_decisions
+		}
+		available = {
+			any_neighbor_country = {original_tag = RAJ}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		bypass = {
@@ -981,6 +1017,149 @@ focus_tree = {
 		relative_position_id = imp_campaign_decisions
 
 		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = imp_contact_sympathizers_india
+		icon = GFX_focus_generic_military_mission
+		cost = 10
+
+		prerequisite = {
+			focus = imp_campaign_india
+		}
+		available = {
+		}
+
+		mutually_exclusive = {focus = imp_attack_india}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		bypass = {
+		}
+		x = -1
+		y = 1
+		relative_position_id = imp_campaign_india
+
+		completion_reward = {
+			add_ideas = imp_india_help
+
+
+			RAJ = {
+				start_civil_war = {
+					ideology = imperialism
+					size = 0.1
+					army_ratio = 0.2
+					navy_ratio = 0.2
+					air_ratio = 0.2
+					states = {
+						444 445 442 443 787 441 440
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = imp_attack_india
+		icon = GFX_focus_generic_military_mission
+		cost = 3
+
+		prerequisite = {
+			focus = imp_campaign_india
+		}
+		available = {
+			any_neighbor_country = {tag = RAJ}
+		}
+
+		mutually_exclusive = {focus = imp_contact_sympathizers_india}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		bypass = {
+		}
+		x = 1
+		y = 1
+		relative_position_id = imp_campaign_india
+
+		completion_reward = {
+			add_ideas = imp_india_buff
+
+			create_wargoal = {
+				target = RAJ
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = imp_integrate_india
+		icon = GFX_focus_generic_military_mission
+		cost = 10
+
+		prerequisite = {
+			focus = imp_contact_sympathizers_india
+			focus = imp_attack_india
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		bypass = {
+		}
+		x = 0
+		y = 2
+		relative_position_id = imp_campaign_india
+
+		completion_reward = {
+			add_stability = 0.10
+
+			if = {
+				limit = {
+					has_completed_focus = imp_attack_india
+				}
+				remove_ideas = imp_india_buff
+				RAJ = {
+					every_core_state = {
+						add_compliance = 25
+						add_resistance = -10
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = imp_contact_sympathizers_india
+				}
+				if = {
+					limit = {
+						444 = {
+							controller = {
+								original_tag = RAJ
+								has_civil_war = no
+								has_government = imperialism
+							}
+						}
+					}
+					444 = {
+						controller = {
+							IMP = {
+								puppet = PREV
+							}
+						}
+					}
+				}
+				else = {
+					444 = {
+						controller = {
+							IMP = {
+								create_wargoal = {
+									target = PREV
+									type = puppet_wargoal_focus
+								}
+							}
+						}
+					}
+				}
+			}
 
 		}
 	}
