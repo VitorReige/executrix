@@ -4493,9 +4493,6 @@ focus_tree = {
 				uses = 2
 				category = fleet_in_being_tree
 			}
-			mio:kuat_drive_organization = {
-				add_mio_size = 2
-			}	
 		}
 	}
 
