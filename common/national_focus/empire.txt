@@ -93,65 +93,30 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
-		id = imp_our_future
+		id = imp_regrouping_of_command
 		icon = GFX_focus_reconstruction
 		cost = 1
 		prerequisite =
 		{
 			focus = imp_repair
 		}
-		
+		available = {
+			always = no
+		}
 		x = 0
 		y = 1
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		relative_position_id = imp_repair
 		completion_reward = {
-			country_event = {
-				id = imperial.5
-			}
+			add_stability = 0.03
+			add_political_power = 25
+			add_command_power = 10
 		}
 	}
 
-	focus = {
-		id = imp_command_survives
-		icon = GFX_focus_reconstruction
-		cost = 1
-		prerequisite =
-		{
-			focus = imp_our_future
-		}
-		available = {
-			always = no
-		}
-		x = 0
-		y = 2
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		relative_position_id = imp_repair
-		completion_reward = {
-			custom_effect_tooltip = "Command Survives!"
-		}
-	}
-
-	focus = {
-		id = imp_command_unalived
-		icon = GFX_focus_reconstruction
-		cost = 1
-		prerequisite =
-		{
-			focus = imp_our_future
-		}
-		available = {
-			always = no
-		}
-		x = 6
-		y = 2
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		relative_position_id = imp_repair
-		completion_reward = {
-			custom_effect_tooltip = "??"
-		}
-	}
+	
 
 	focus = {
 		id = imp_phase_two
@@ -168,7 +133,7 @@ focus_tree = {
 
 		x = 0
 		y = 6
-		relative_position_id = imp_command_survives
+		relative_position_id = imp_regrouping_of_command
 		completion_reward = {
 			if = {
 				limit = { is_ai = yes }
@@ -227,7 +192,7 @@ focus_tree = {
 		}
 		x = -2
 		y = 4
-		relative_position_id = imp_command_survives
+		relative_position_id = imp_regrouping_of_command
 		completion_reward = {
 			set_country_flag = tarkin_flag
 			add_ideas = {
@@ -261,7 +226,7 @@ focus_tree = {
 		}
 		x = 2
 		y = 4
-		relative_position_id = imp_command_survives
+		relative_position_id = imp_regrouping_of_command
 		completion_reward = {
 			add_ideas = {
 				sith_might
@@ -283,7 +248,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
-			focus = imp_command_survives
+			focus = imp_regrouping_of_command
 		}
 
 		bypass = {
@@ -301,7 +266,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		relative_position_id = imp_command_survives
+		relative_position_id = imp_regrouping_of_command
 		completion_reward = {
 			declare_war_on = {
 				type = puppet_wargoal_focus
@@ -339,7 +304,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
-			focus = imp_command_survives
+			focus = imp_regrouping_of_command
 		}
 
 		bypass = {
@@ -424,7 +389,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 2
-		relative_position_id = imp_command_survives
+		relative_position_id = imp_regrouping_of_command
 		completion_reward = {
 			build_railway = {
 				level = 1
@@ -494,7 +459,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		relative_position_id = imp_command_survives
+		relative_position_id = imp_regrouping_of_command
 		completion_reward = {
 			country_event = {
 				id = imperial.3
@@ -517,7 +482,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 0
 		y = 5
-		relative_position_id = imp_command_survives
+		relative_position_id = imp_regrouping_of_command
 
 		completion_reward = {
 

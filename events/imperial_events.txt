@@ -1044,23 +1044,6 @@ country_event = {
 	}
 }
 
-country_event = { # Command Survives? imp_our_future Event
-	id = imperial.5
-	title = imperial.5.t
-	desc = imperial.5.d
-	picture = GFX_report_event_bose_meeting
-
-
-	is_triggered_only = yes
-
-	option = {
-		name = imperial.5.a
-		ai_chance = { factor = 60 }
-
-		complete_national_focus = imp_command_survives
-	}
-	
-}
 
 country_event = { # assesing the situation event
 	id = imperial.6
