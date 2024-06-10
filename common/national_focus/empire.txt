@@ -4532,6 +4532,10 @@ focus_tree = {
 				uses = 1
 				category = ss_tech
 			}
+
+			set_technology = {
+				ship_sub_tech = 1
+			}
 		}
 	}
 
