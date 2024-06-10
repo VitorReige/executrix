@@ -14,4 +14,19 @@ technologies = {
 		}
 	}
 
+	ship_sub_tech = {
+		research_cost = 1
+		start_year = 1936
+		enable_equipments = {
+			ship_hull_imperial_submarine_1
+		}
+		categories = {
+			naval_equipment
+		}
+		folder = {
+			name = starwars_folder
+			position = { x = 0 y = 13 }
+		}
+	}
+
 }
