@@ -1073,14 +1073,35 @@ country_event = { # assesing the situation event
 
 	option = {
 		name = imperial.6.a
-		ai_chance = { factor = 60 }
-		#TODO: Complete Research for Small Airframe and Interwar Airframe, give 50 planes
+		ai_chance = { factor = 20 }
+		add_ideas = imp_repulsor_remnants
+		656 = {
+			add_building_construction = {
+				type = fuel_silo
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_manpower = 4000
 	}
 
 	option = {
 		name = imperial.6.b
-		ai_chance = { factor = 60 }
-		#TODO: Complete Research for GW tanks and Light Tank 1 when tech tree is finished, deploy 1 Light Tank division (AT-ST)
+		ai_chance = { factor = 20 }
+		add_ideas = imp_shield_remnants
+		656 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_manpower = 4000
 	}
 
 	option = {
