@@ -1,4 +1,4 @@
-version="1.12.*"
+version="1.14.5"
 tags={
 	"Alternative History"
 	"Technologies"
@@ -6,7 +6,8 @@ tags={
 	"Events"
 	"Military"
 	"Map"
+	"Utilities"
 }
 name="Executrix Dev Version"
-supported_version="1.12.14"
 remote_file_id="3048827990"
+supported_version="1.14.6"
