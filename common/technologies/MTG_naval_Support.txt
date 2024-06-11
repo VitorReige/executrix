@@ -9,6 +9,10 @@ technologies = {
 
 	basic_battery = {
 
+		allow_branch = {
+			NOT = { original_tag = IMP }
+		}
+
 		research_cost = 1
 
 		start_year = 1922
@@ -967,9 +971,7 @@ technologies = {
 		enable_equipment_modules = {
 			Ship_turboblaster2
 		}
-		allow_branch = {
-			original_tag = IMP
-		}
+		
 		path = {
 			leads_to_tech = Ship_light_turboblaster_tech_3
 			research_cost_coeff = 1
