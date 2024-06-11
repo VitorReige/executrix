@@ -58,7 +58,31 @@ equipment_modules = {
    
 		critical_parts = { damaged_light_guns }
    
-	   }
+	}
+
+	Ship_turboblaster3 = {
+		category = ship_light_battery
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+		   lg_attack = 100
+		   hg_attack = 70
+		   build_cost_ic = 135
+		}  
+		multiply_stats = {
+		   naval_speed = -0.05
+		}
+		add_average_stats = {
+		   lg_armor_piercing = 100
+		   hg_armor_piercing = 120
+		}
+		can_convert_from = {
+		   module_category = ship_light_battery
+		   convert_cost_ic = 60
+		} 
+   
+		critical_parts = { damaged_light_guns }
+   
+	}
 
 	ship_proton_torpedo_1 = {
 		category = ship_torpedo_sub

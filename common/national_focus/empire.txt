@@ -261,8 +261,10 @@ focus_tree = {
 		relative_position_id = imp_regrouping_of_command
 	
 		completion_reward = {
-			remove_ideas = imp_crashed_isd
-			add_ideas = imp_repairing_stage_one
+			swap_ideas = {
+				remove_idea = ruined_ship
+				add_idea = damaged_ship
+			}
 		}
 	}
 
