@@ -441,7 +441,11 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = imp_deploy_the_remaining_troops
-		completion_reward = { }
+		completion_reward = {
+			add_manpower = 1000
+			add_war_support = 0.05
+			army_experience = 5
+		}
 	}
 	
 	focus = {

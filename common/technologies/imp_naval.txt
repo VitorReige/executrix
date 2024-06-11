@@ -24,7 +24,7 @@ technologies = {
 			naval_equipment
 		}
 		folder = {
-			name = starwars_folder
+			name = naval_folder
 			position = { x = 1 y = 13 }
 		}
 	}
