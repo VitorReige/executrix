@@ -585,32 +585,7 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = imperial_story.9
-	title = imperial_story.9.t
-	desc = imperial_story.9.d
-	picture = GFX_crashed_executor
 
-	fire_only_once = yes
-
-	trigger = {
-		date > 1936.10.01
-		tag = IMP
-	}
-
-	option = {
-		name = imperial_story.9.a
-		add_popularity = {
-			ideology = neutrality
-			popularity = 0.05
-		}
-		add_ideas = imp_great_depression
-		country_event = {
-			id = imperial_story.10
-			days = 42
-		}
-	}
-}
 
 country_event = {
 	id = imperial_story.10
