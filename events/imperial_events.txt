@@ -586,7 +586,6 @@ country_event = {
 }
 
 
-
 country_event = {
 	id = imperial_story.10
 	title = imperial_story.10.t

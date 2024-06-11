@@ -575,5 +575,66 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = imp_restoring_order_to_the_cities
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = imp_bring_the_holo_maps_online
+		}
+		relative_position_id = imp_bring_the_holo_maps_online
+		completion_reward = {
+			291 = {
+				add_core_of = IMP
+			}
+			675 = {
+				add_core_of = IMP
+			}
+			676 = {
+				add_core_of = IMP
+			}
+		 }
+	}
+
+	focus = {
+		id = imp_restoring_order_over_the_desert
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 1
+		y = 1
+		relative_position_id = imp_bring_the_holo_maps_online
+		prerequisite = {
+			focus = imp_bring_the_holo_maps_online
+		}
+		completion_reward = {
+			292 = {
+				add_core_of = IMP
+			}
+			854 = {
+				add_core_of = IMP
+			}
+			855 = {
+				add_core_of = IMP
+			}
+			679 = {
+				add_core_of = IMP
+			}
+			856 = {
+				add_core_of = IMP
+			}
+			858 = {
+				add_core_of = IMP
+			}
+			678 = {
+				add_core_of = IMP
+			}
+			859 = {
+				add_core_of = IMP
+			}
+		 }
+	}
+
  #END OF THE FOCUS TREE 
 }
