@@ -943,6 +943,10 @@ technologies = {
  
 	Ship_light_turboblaster_tech_1 = {
 		
+		allow_branch = {
+			original_tag = IMP
+		}
+
 		research_cost = 1
 
 		start_year = 1922
@@ -961,6 +965,14 @@ technologies = {
 		categories = {
 			naval_equipment
 			ship_modules_tech
+			cat_ship_light_battery
+			cat_ship_medium_battery
+			cat_ship_heavy_battery
+			mio_cat_tech_all_capital_ship_and_modules
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_carrier_and_modules
+			mio_cat_tech_all_cruiser_and_modules
+			mio_cat_tech_all_destroyer_and_modules
 		}
 		folder = {
 			name = mtgnavalsupportfolder
