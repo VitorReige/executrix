@@ -456,8 +456,8 @@ focus_tree = {
 		relative_position_id = imp_begin_fixing_the_reactor
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = imp_re
-				add_idea = CSA_avions_fairey
+				remove_idea = imp_reactor_works_0
+				add_idea = imp_reactor_works_1
 			}
 		 }
 	}
