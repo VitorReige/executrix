@@ -100,6 +100,24 @@ ideas = {
 			}
 		}
 
+		imp_base_shielding = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = idea_droid
+
+			modifier = {
+				industry_air_damage_factor = -0.05
+				industry_free_repair_factor = 0.05
+			}
+		}
+
 		imp_repulsor_remnants = {
 			allowed = {
 				always = no

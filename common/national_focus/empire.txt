@@ -528,7 +528,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = imp_stage_one_reactor_repairs
 		completion_reward = {
-			
+			add_ideas = imp_base_shielding
 		}
 	}
 
@@ -545,7 +545,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = imp_stage_one_reactor_repairs
-		completion_reward = { }
+		completion_reward = {
+			add_idea = auxiliary_systems
+		}
 	}
 
 	focus = {
@@ -566,7 +568,7 @@ focus_tree = {
 		relative_position_id = imp_begining_ship_repairs
 		completion_reward = {
 			country_event = {
-			 id = imperial.story.4
+			 id = imperial_story.4
 			 days = 1
 			}
 			add_political_power = 10
