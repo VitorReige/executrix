@@ -942,6 +942,10 @@ technologies = {
 
 	Ship_light_turboblaster_tech_1 = {
 		
+		research_cost = 1
+
+		start_year = 1922
+
 		enable_equipment_modules = {
 			Ship_turboblaster1
 		}
@@ -952,14 +956,13 @@ technologies = {
 			leads_to_tech = Ship_light_turboblaster_tech_2
 			research_cost_coeff = 1
 		}
-		research_cost = 1
-		start_year = 1936
+		
 		categories = {
 			naval_equipment
 		}
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = -6 y = 7 }
+			position = { x = 0 y = 1 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -989,6 +992,28 @@ technologies = {
 			factor = 1
 		}
 	}
+
+	Ship_light_turboblaster_tech_3 = {
+
+		enable_equipment_modules = {
+			Ship_turboblaster3
+		}
+		
+		
+		research_cost = 1
+		start_year = 1940
+		categories = {
+			naval_equipment
+		}
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = 9 y = 17 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 
 ###  ##  ###  ###  ### ###   ##      #   #  ##  ###   ##  ### ###  ###
  #  #  # #  # #  # #   #  # #  #     #   # #  # #  # #  # #   #  # #  
