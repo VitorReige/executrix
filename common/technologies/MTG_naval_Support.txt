@@ -940,6 +940,7 @@ technologies = {
 		}
 	}
 
+ 
 	Ship_light_turboblaster_tech_1 = {
 		
 		research_cost = 1
@@ -959,6 +960,7 @@ technologies = {
 		
 		categories = {
 			naval_equipment
+			ship_modules_tech
 		}
 		folder = {
 			name = mtgnavalsupportfolder
@@ -983,6 +985,7 @@ technologies = {
 		start_year = 1938
 		categories = {
 			naval_equipment
+			ship_modules_tech
 		}
 		folder = {
 			name = mtgnavalsupportfolder
@@ -1004,6 +1007,7 @@ technologies = {
 		start_year = 1940
 		categories = {
 			naval_equipment
+			ship_modules_tech
 		}
 		folder = {
 			name = mtgnavalsupportfolder
