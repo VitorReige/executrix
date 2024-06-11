@@ -278,7 +278,7 @@ focus_tree = {
 		relative_position_id = imp_begining_ship_repairs
 		completion_reward = {
 			add_equipment_to_stockpile = {
-				type = imperial_equipment_1
+				type = republic_equipment_1
 				amount = 250
 				producer = IMP
 			}
@@ -340,7 +340,7 @@ focus_tree = {
 	focus = {
 		id = imp_deploy_the_remaining_troops
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 2
 		prerequisite = {
 			focus = imp_equip_the_garrisons
 		}
@@ -350,7 +350,11 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = imp_salvage_the_armouries
-		completion_reward = { }
+		completion_reward = {
+			load_oob = "imp_deployed_troops"
+			army_experience = 15
+			add_command_power = 10
+		}
 	}
 
 	focus = {
@@ -363,7 +367,9 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = imp_begining_ship_repairs
-		completion_reward = { }
+		completion_reward = {
+
+		 }
 	}
 
 	focus = {
@@ -443,7 +449,7 @@ focus_tree = {
 	focus = {
 		id = imp_focus_on_the_shields
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = imp_stage_one_reactor_repairs
 		}
@@ -453,7 +459,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = imp_stage_one_reactor_repairs
-		completion_reward = { }
+		completion_reward = {
+		
+		}
 	}
 
 	focus = {

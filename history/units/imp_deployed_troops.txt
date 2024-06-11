@@ -1,0 +1,29 @@
+division_template = {
+    name = "Stormtrooper Regiment"
+    regiments = {
+        stormtrooper = { x = 0 y = 0 }
+        stormtrooper = { x = 0 y = 1 }
+		stormtrooper = { x = 1 y = 0 }
+        stormtrooper = { x = 1 y = 1 }
+	}
+	support = { 
+    } 
+}
+
+units = {
+    division = {
+        name = "2nd legion"
+        location = 8085
+        division_template = "Stormtrooper Regiment"
+        start_experience_factor =  0.5
+        start_equipment_factor = 1.0
+    }
+
+    division = {
+        name = "3rd legion"
+        location = 8085
+        division_template = "Stormtrooper Regiment"
+        start_equipment_factor = 0.5
+        start_equipment_factor = 1.0
+    }
+}
