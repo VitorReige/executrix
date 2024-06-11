@@ -489,17 +489,6 @@ country_event = {
 
 	fire_only_once = yes
 
-	trigger = {
-		OR = {
-			date > 1936.08.07
-			focus_progress = {
-				focus = imp_stage_one
-				progress > 0.10
-			}
-		}
-		tag = IMP
-	}
-
 	option = {
 		name = imperial_story.4.a
 		country_event = {

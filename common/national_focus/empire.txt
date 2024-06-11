@@ -551,7 +551,7 @@ focus_tree = {
 	focus = {
 		id = imp_bring_the_holo_maps_online
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = imp_fortify_the_crash_site
 			focus = imp_raising_new_conscripts
@@ -564,7 +564,13 @@ focus_tree = {
 		x = 0
 		y = 5
 		relative_position_id = imp_begining_ship_repairs
-		completion_reward = { }
+		completion_reward = {
+			country_event = {
+			 id = imperial.story.4
+			 days = 1
+			}
+			add_political_power = 10
+		}
 	}
 
  #END OF THE FOCUS TREE 
