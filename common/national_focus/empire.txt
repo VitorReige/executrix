@@ -384,8 +384,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = imp_begining_ship_repairs
 		completion_reward = {
-
-		 }
+			add_ideas = imp_reactor_works_0
+			656 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -398,7 +405,17 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = imp_begin_fixing_the_reactor
-		completion_reward = { }
+		completion_reward = {
+			656 = {
+				add_building_construction = {
+					type = fuel_silo
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_fuel = 4000
+		}
 	}
 
 	focus = {
@@ -411,7 +428,17 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = imp_begin_fixing_the_reactor
-		completion_reward = { }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			656 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -427,7 +454,12 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = imp_begin_fixing_the_reactor
-		completion_reward = { }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = imp_re
+				add_idea = CSA_avions_fairey
+			}
+		 }
 	}
 
 	focus = {
