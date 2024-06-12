@@ -656,7 +656,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = imp_vaders_first
+		id = imp_vaders_fist
 		icon = GFX_unique_tech_10_medium
 		cost = 3
 		x = 0
@@ -717,7 +717,12 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_continue_reactor_repairs
 		}
-		completion_reward = { }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = imp_reactor_works_1
+				add_idea = imp_reactor_works_2
+			}
+		 }
 	}
 
 	focus = {
@@ -774,6 +779,64 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
+
+	focus = {
+		id = imp_finalise_reactor_repairs
+		icon = GFX_unique_tech_10_medium
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = imp_gathering_resources
+		prerequisite = {
+			focus = imp_gathering_resources
+		}
+		completion_reward = {
+			remove_ideas = imp_reactor_works_2
+		}
+	}
+
+	focus = {
+		id = imp_rebuild_the_armouries
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = -1
+		y = 1
+		relative_position_id = imp_finalise_reactor_repairs
+		prerequisite = {
+			focus = imp_finalise_reactor_repairs
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_begin_salvaging_the_walker_bays
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = imp_finalise_reactor_repairs
+		prerequisite = {
+			focus = imp_finalise_reactor_repairs
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_take_direct_control_over_the_oil_fields
+		icon = GFX_unique_tech_10_medium
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = imp_finalise_reactor_repairs
+		prerequisite = {
+			focus = imp_rebuild_the_armouries
+		}
+		prerequisite = {
+			focus = imp_begin_salvaging_the_walker_bays
+		}
+		completion_reward = { }
+	}
+
 
  #END OF THE FOCUS TREE 
 }

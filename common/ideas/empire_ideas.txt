@@ -175,6 +175,25 @@ ideas = {
 			}
 		}
 
+		imp_reactor_works_2 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = idea_droid
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_gain = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+
 		imp_moff_tarkin = {
 			allowed = {
 				always = no
