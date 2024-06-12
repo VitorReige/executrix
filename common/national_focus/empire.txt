@@ -665,6 +665,7 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_the_role_of_vader
 		}
+		
 		completion_reward = { }
 	}
 
