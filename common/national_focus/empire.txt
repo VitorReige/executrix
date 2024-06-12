@@ -655,5 +655,125 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = imp_vaders_first
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = imp_the_role_of_vader
+		prerequisite = {
+			focus = imp_the_role_of_vader
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_tarkins_governors
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = -2
+		y = 1
+		relative_position_id = imp_the_role_of_vader
+		prerequisite = {
+			focus = imp_the_role_of_vader
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_the_imperial_cabinet
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = 2
+		y = 1
+		relative_position_id = imp_the_role_of_vader
+		prerequisite = {
+			focus = imp_the_role_of_vader
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_continue_reactor_repairs
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = imp_the_imperial_cabinet
+		prerequisite = {
+			focus = imp_the_imperial_cabinet
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_connect_the_crash_site
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = imp_continue_reactor_repairs
+		prerequisite = {
+			focus = imp_continue_reactor_repairs
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_assess_the_fuel_tanks
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = imp_open_the_hangar_doors
+		prerequisite = {
+			focus = imp_open_the_hangar_doors
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_restart_conquered_industry
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = imp_connect_the_crash_site
+		prerequisite = {
+			focus = imp_connect_the_crash_site
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_open_the_hangar_doors
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 1
+		y = 1
+		relative_position_id = imp_continue_reactor_repairs
+		prerequisite = {
+			focus = imp_continue_reactor_repairs
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_gathering_resources
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = imp_restart_conquered_industry
+		prerequisite = {
+			focus = imp_restart_conquered_industry
+		}
+		prerequisite = {
+			focus = imp_assess_the_fuel_tanks
+		}
+		completion_reward = { }
+	}
+
  #END OF THE FOCUS TREE 
 }
