@@ -1985,9 +1985,7 @@
  imperial_story.16.t: "Middle-Eastern Offensive is a Success!"
  imperial_story.16.d: "Our plans of initial conquest of surronding territories that pose threat to us has been a success.\n\nMuch of the Exectuor's crew faith in the Empire is revitalizing. The crew now recongizes that all is not yet lost. While we may never get to see our home again, we can create a new home here on Earth and in this galaxy.\n\nThe natives, however, are becoming nervous about our renewed ambition and bolstering their resources in the background."
  imperial_story.16.a: "Victory For The Empire!"
- imperial_story.17.t: "War is a Failure!"
- imperial_story.17.d: "Our plan of conquest has failed, the men have lost their faith in the Senior Officers of the Executor to maintain order and restore the Empire. Several splinter groups have already formed, led by various admirals and generals all wanting to reforge the Empire in their own image. Our own troopers no longer follow orders, and march behind the banner of Yularen, while the natives rise behind Mikhail Tuchakevsky; the Junior Officer Corps have taken the Outer Regions for themselves. The Empire is falling, we must swiftly crack the whip and reorder ourselves before it is gone for good."
- imperial_story.17.a: "Collapse of the Empire"
+ 
  imperial_story.18.t: "Communist Insurgents"
  imperial_story.18.d: "The communists we've protected have decided to rise up against out supposed tyranny amongst the free peoples of the middle-east! We can either submit to their demands and form a new socialist state or try to fight a three way civil war."
  imperial_story.18.a: "A People's Republic"
