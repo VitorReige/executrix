@@ -673,7 +673,7 @@ focus_tree = {
 		id = imp_tarkins_governors
 		icon = GFX_unique_tech_10_medium
 		cost = 3
-		x = -2
+		x = -4
 		y = 1
 		relative_position_id = imp_the_role_of_vader
 		prerequisite = {
@@ -683,10 +683,36 @@ focus_tree = {
 	}
 
 	focus = {
+		id = imp_fund_new_police_forces
+		icon = GFX_unique_tech_10_medium
+		cost = x
+		x = -1
+		y = 1
+		relative_position_id = imp_tarkins_governors
+		prerequisite = {
+			focus = imp_tarkins_governors
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_start_hiring_locals
+		icon = GFX_unique_tech_10_medium
+		cost = x
+		x = 1
+		y = 1
+		relative_position_id = imp_tarkins_governors
+		prerequisite = {
+			focus = imp_tarkins_governors
+		}
+		completion_reward = { }
+	}
+
+	focus = {
 		id = imp_the_imperial_cabinet
 		icon = GFX_unique_tech_10_medium
 		cost = 3
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = imp_the_role_of_vader
 		prerequisite = {
