@@ -23,7 +23,7 @@ units = {
         name = "3rd legion"
         location = 8085
         division_template = "Stormtrooper Regiment"
-        start_equipment_factor = 0.5
+        start_experience_factor = 0.5
         start_equipment_factor = 1.0
     }
 }
