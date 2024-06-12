@@ -754,7 +754,67 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = imperial_story.17
+	title = imperial_story.17.t
+	desc = imperial_story.17.d
+	picture = GFX_vader_choice
 
+	fire_only_once = yes
+
+
+	option = {
+		name = imperial.17.a
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Wilhuff Tarkin"
+			desc = "Tarkin_desc"
+			picture = "portrait_imp_tarkin.dds"
+			expire = "1965.1.1"
+			ideology = imperial
+			traits = { respected_imperial imperial_doctrine imperial_connections }
+		}
+
+		create_field_marshal = {
+			name = "Darth Vader"
+			picture = "portrait_imp_vader.dds"
+			traits = {
+				offensive_doctrine
+				harsh_leader
+				infantry_officer
+				desert_fox
+			}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	option = {
+		name = imperial.17.b
+		create_field_marshal = {
+			name = "Wilhuff Tarkin"
+			picture = "portrait_imp_tarkin.dds"
+			traits = {
+				old_guard
+			}
+			skill = 4
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	option = {
+		name = imperial.17.c
+		add_ideas = imp_moff_tarkin
+	}
+
+	
+}
 
 
 ##### END OF STORY EVENTS####

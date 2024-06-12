@@ -175,6 +175,25 @@ ideas = {
 			}
 		}
 
+		imp_moff_tarkin = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_tarkin_general
+
+			modifier = {
+				political_advisor_cost_factor = -0.1
+				command_power_gain = 0.05
+				war_stability_factor = 0.05
+			}
+		}
+
 		IMP_initial_warbonus = {
 			allowed = {
 				always = no

@@ -636,5 +636,24 @@ focus_tree = {
 		 }
 	}
 
+	focus = {
+		id = imp_the_role_of_vader
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 0
+		y = 2
+		relative_position_id = imp_bring_the_holo_maps_online
+		prerequisite = {
+			focus = imp_restoring_order_over_the_desert
+			focus = imp_restoring_order_to_the_cities
+		}
+		completion_reward = {
+			country_event = {
+				id = imperial_story.17
+				days = 1
+			}
+		}
+	}
+
  #END OF THE FOCUS TREE 
 }

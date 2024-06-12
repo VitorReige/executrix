@@ -20,4 +20,11 @@
  redux_world_news.4.d: ""
  redux_world_news.4.a: "Glory to the Empire!"
  redux_world_news.4.b: ""
- 
+
+ imperial_story.17.t: "The role of Vader"
+ imperial_story.17.d: "With our stranding apparent Lord Vader has continued to command the crew. However some have expressed unease over this. Some would prefer he assumed frontline command allowing Tarkin to take the reigns of government, while others are happy to see vader assume supreme power. Admiral Thrawn has privately purposed a third option inspired by earth systems of governance in which Vader assumes the role of Emperor to give stability while Tarkin assumes the burden of day-to-day running of the growing list of government duties, freeing vader to take command where needed. A choice is needed now to set our direction in this wasteland!"
+ imperial_story.17.a: "Let Tarkin assume full governing responsibilties"
+ imperial_story.17.b: "No change is needed, Tarkin can take over the army"
+ imperial_story.17.c: "Thrawn's option will bring about a good comprimise"
+ imp_salvage_the_armouries: "Salvage the armouries"
+ imp_the_role_of_vader: "The role of Vader"
