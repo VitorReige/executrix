@@ -764,7 +764,7 @@ country_event = {
 
 
 	option = {
-		name = imperial.17.a
+		name = imperial_story.17.a
 		retire_country_leader = yes
 		create_country_leader = {
 			name = "Wilhuff Tarkin"
@@ -793,7 +793,7 @@ country_event = {
 	}
 
 	option = {
-		name = imperial.17.b
+		name = imperial_story.17.b
 		create_field_marshal = {
 			name = "Wilhuff Tarkin"
 			picture = "portrait_imp_tarkin.dds"
@@ -809,7 +809,7 @@ country_event = {
 	}
 
 	option = {
-		name = imperial.17.c
+		name = imperial_story.17.c
 		add_ideas = imp_moff_tarkin
 	}
 
