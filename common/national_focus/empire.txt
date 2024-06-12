@@ -281,7 +281,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = republic_equipment_1
-				amount = 250
+				amount = 1000
 				producer = IMP
 			}
 			656 = {
@@ -308,7 +308,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = support_equipment
-				amount = 250
+				amount = 500
 				producer = IMP
 			}
 			656 = {
@@ -546,7 +546,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = imp_stage_one_reactor_repairs
 		completion_reward = {
-			add_idea = auxiliary_systems
+			add_ideas = auxiliary_systems
 		}
 	}
 
