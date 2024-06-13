@@ -27,7 +27,7 @@
  imperial_story.17.b: "No change is needed, Tarkin can take over the army"
  imperial_story.17.c: "Thrawn's option will bring about a good comprimise"
 
-
+ imp_regrouping_of_command: "Regrouping of the high command"
  imp_begining_ship_repairs: "Begin ship repairs"
  imp_salvage_the_armouries: "Salvage the armouries"
  imp_equip_the_garrisons: "Equip the Garrisons"
@@ -43,7 +43,7 @@
  imp_focus_on_radar: "Focus on radar"
  imp_bring_the_holo_maps_online: "Bring the holo-maps online"
  imp_restoring_order_to_the_cities: "Restoring order to the cities"
- imp_restoring_order_to_the_desert: "Restoring order to the desert"
+ imp_restoring_order_over_the_desert: "Restoring order over the desert"
  imp_the_role_of_vader: "The role of Vader"
  imp_open_the_hangar_doors: "Open the hangar doors"
  imp_connect_the_crash_site: "Connect the crash site"

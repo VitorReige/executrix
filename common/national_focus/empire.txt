@@ -763,7 +763,12 @@ focus_tree = {
 			focus = imp_approach_the_colonial_powers
 		}
 
-		completion_reward = { }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = imp_reactor_works_1
+				add_idea = imp_reactor_works_2
+			}
+		}
 	}
 
 	focus = {
@@ -780,11 +785,11 @@ focus_tree = {
 			focus = imp_fund_new_police_forces
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = imp_reactor_works_1
-				add_idea = imp_reactor_works_2
+			build_railway = {
+				path = { 12879 5058 4968 10892 12813 12727 }
+				level = 1
 			}
-		 }
+		}
 	}
 
 	focus = {
@@ -810,7 +815,57 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_connect_the_crash_site
 		}
-		completion_reward = { }
+		completion_reward = {
+			676 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			675 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			292 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			856 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 12883
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
