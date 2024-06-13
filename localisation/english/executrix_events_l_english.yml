@@ -28,7 +28,7 @@
  imperial_story.17.c: "Thrawn's option will bring about a good comprimise"
 
 
- imp_beginning_ship_repairs: "Begin ship repairs"
+ imp_begining_ship_repairs: "Begin ship repairs"
  imp_salvage_the_armouries: "Salvage the armouries"
  imp_equip_the_garrisons: "Equip the Garrisons"
  imp_setting_up_defences: "Setting up Defences"
@@ -42,6 +42,8 @@
  imp_focus_on_the_shields: "Focus on the shields"
  imp_focus_on_radar: "Focus on radar"
  imp_bring_the_holo_maps_online: "Bring the holo-maps online"
+ imp_restoring_order_to_the_cities: "Restoring order to the cities"
+ imp_restoring_order_to_the_desert: "Restoring order to the desert"
  imp_the_role_of_vader: "The role of Vader"
  imp_open_the_hangar_doors: "Open the hangar doors"
  imp_connect_the_crash_site: "Connect the crash site"
@@ -61,6 +63,6 @@
  imp_start_training_local_troops: "Start training local troops"
  imp_look_to_iran: "Look to Iran"
  imp_doctrinal_reforms: "Doctrinal reforms"
- imp_appointing_a_new_government: "Appointing a new government"
+ imp_start_appointing_a_new_government: "Start appointing a new government"
  imp_approach_the_colonial_powers: "Approach the colonial powers"
  
