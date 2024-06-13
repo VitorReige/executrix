@@ -926,7 +926,15 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_vaders_fist
 		}
-		completion_reward = { }
+		completion_reward = {
+			656 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		 }
 	}
 
 	focus = {
@@ -955,7 +963,25 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_begin_salvaging_the_walker_bays
 		}
-		completion_reward = { }
+		completion_reward = {
+			291 = {
+				add_manpower = 2000
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			675 = {
+				add_manpower = 1500
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_manpower = 3000
+		}
 	}
 
 	focus = {
@@ -968,7 +994,12 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_start_training_local_troops
 		}
-		completion_reward = { }
+		completion_reward = {
+			create_wargoal = {
+				target = IRA
+				type = annex_everything
+			}
+		 }
 	}
 
 	focus = {
