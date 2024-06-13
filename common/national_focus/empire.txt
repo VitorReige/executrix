@@ -722,10 +722,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = imp_continue_reactor_repairs
+		id = imp_start_appointing_a_new_government
 		icon = GFX_unique_tech_10_medium
-		cost = 3
-		x = 0
+		cost = 4
+		x = -1
 		y = 1
 		relative_position_id = imp_the_imperial_cabinet
 		prerequisite = {
@@ -735,14 +735,49 @@ focus_tree = {
 	}
 
 	focus = {
+		id = imp_approach_the_colonial_governments
+		icon = GFX_unique_tech_10_medium
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = imp_the_imperial_cabinet
+		prerequisite = {
+			focus = imp_the_imperial_cabinet
+		}
+		completion_reward = { }
+	}
+
+
+
+	focus = {
+		id = imp_continue_reactor_repairs
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = 0
+		y = 2
+		relative_position_id = imp_the_imperial_cabinet
+		prerequisite = {
+			focus = imp_start_appointing_a_new_government
+		}
+		prerequisite = {
+			focus = imp_approach_the_colonial_governments
+		}
+
+		completion_reward = { }
+	}
+
+	focus = {
 		id = imp_connect_the_crash_site
 		icon = GFX_unique_tech_10_medium
 		cost = 4
 		x = 0
-		y = 1
-		relative_position_id = imp_continue_reactor_repairs
+		y = 2
+		relative_position_id = imp_tarkins_governors
 		prerequisite = {
-			focus = imp_continue_reactor_repairs
+			focus = imp_start_hiring_locals
+		}
+		prerequisite = {
+			focus = imp_fund_new_police_forces
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -782,7 +817,7 @@ focus_tree = {
 		id = imp_open_the_hangar_doors
 		icon = GFX_unique_tech_10_medium
 		cost = 4
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = imp_continue_reactor_repairs
 		prerequisite = {
@@ -795,15 +830,13 @@ focus_tree = {
 		id = imp_gathering_resources
 		icon = GFX_unique_tech_10_medium
 		cost = 3
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = imp_restart_conquered_industry
 		prerequisite = {
 			focus = imp_restart_conquered_industry
 		}
-		prerequisite = {
-			focus = imp_assess_the_fuel_tanks
-		}
+		
 		completion_reward = { }
 	}
 
@@ -812,8 +845,14 @@ focus_tree = {
 		icon = GFX_unique_tech_10_medium
 		cost = 5
 		x = 0
-		y = 1
-		relative_position_id = imp_gathering_resources
+		y = 5
+		relative_position_id = imp_vaders_fist
+		prerequisite = {
+			focus = imp_assess_the_fuel_tanks
+		}
+		prerequisite = {
+			focus = imp_doctrinal_reforms
+		}
 		prerequisite = {
 			focus = imp_gathering_resources
 		}
@@ -828,9 +867,9 @@ focus_tree = {
 		cost = 3
 		x = -1
 		y = 1
-		relative_position_id = imp_finalise_reactor_repairs
+		relative_position_id = imp_vaders_fist
 		prerequisite = {
-			focus = imp_finalise_reactor_repairs
+			focus = imp_vaders_fist
 		}
 		completion_reward = { }
 	}
@@ -841,9 +880,51 @@ focus_tree = {
 		cost = 3
 		x = 1
 		y = 1
-		relative_position_id = imp_finalise_reactor_repairs
+		relative_position_id = imp_vaders_fist
 		prerequisite = {
-			focus = imp_finalise_reactor_repairs
+			focus = imp_vaders_fist
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_start_training_local_troops
+		icon = GFX_unique_tech_10_medium
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = imp_vaders_fist
+		prerequisite = {
+			focus = imp_rebuild_the_armouries
+		}
+		prerequisite = {
+			focus = imp_begin_salvaging_the_walker_bays
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_look_to_iran
+		icon = GFX_unique_tech_10_medium
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = imp_start_training_local_troops
+		prerequisite = {
+			focus = imp_start_training_local_troops
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_doctrinal_reforms
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = imp_look_to_iran
+		prerequisite = {
+			focus = imp_look_to_iran
 		}
 		completion_reward = { }
 	}
@@ -853,13 +934,10 @@ focus_tree = {
 		icon = GFX_unique_tech_10_medium
 		cost = 5
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = imp_finalise_reactor_repairs
 		prerequisite = {
-			focus = imp_rebuild_the_armouries
-		}
-		prerequisite = {
-			focus = imp_begin_salvaging_the_walker_bays
+			focus = imp_finalise_reactor_repairs
 		}
 		completion_reward = { }
 	}
