@@ -892,7 +892,14 @@ focus_tree = {
 			focus = imp_restart_conquered_industry
 		}
 		
-		completion_reward = { }
+		completion_reward = {
+			add_tech_bonus = {
+				name = imp_gathering_resources
+				uses = 1
+				category = excavation_tech
+				ahead_reduction = 1
+			}
+		 }
 	}
 
 	focus = {
@@ -996,7 +1003,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			create_wargoal = {
-				target = IRA
+				target = PER
 				type = annex_everything
 			}
 		 }
@@ -1012,7 +1019,14 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_look_to_iran
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				name = imp_doctrinal_reforms
+				uses = 2
+				category = land_doctrine
+			}
+		 }
 	}
 
 	focus = {
