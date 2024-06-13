@@ -735,7 +735,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = imp_approach_the_colonial_governments
+		id = imp_approach_the_colonial_powers
 		icon = GFX_unique_tech_10_medium
 		cost = 5
 		x = 1
@@ -760,7 +760,7 @@ focus_tree = {
 			focus = imp_start_appointing_a_new_government
 		}
 		prerequisite = {
-			focus = imp_approach_the_colonial_governments
+			focus = imp_approach_the_colonial_powers
 		}
 
 		completion_reward = { }
