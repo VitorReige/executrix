@@ -13,6 +13,7 @@ equipment_modules = {
 
 
   Ship_turboblaster1 = {
+	 abbreviation = "stl"
 	 category = ship_light_battery
 	 sfx = sfx_ui_sd_module_turret
 	 add_stats = {
