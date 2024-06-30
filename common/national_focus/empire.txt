@@ -802,7 +802,12 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_open_the_hangar_doors
 		}
-		completion_reward = { }
+		completion_reward = {
+			country_event = {
+				id = imperial_story.18
+				days = 1
+			}
+		}
 	}
 
 	focus = {
