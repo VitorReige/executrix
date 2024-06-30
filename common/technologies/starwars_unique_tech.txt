@@ -54,6 +54,10 @@ technologies = {
 			always = no
 		}
 
+		path = {
+			leads_to_tech = empire_tech_1
+			research_cost_coeff = 1
+		}
 	}
 	
 	blasterinf_unlock_tech = {

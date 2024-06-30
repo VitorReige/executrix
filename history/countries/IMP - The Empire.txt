@@ -29,7 +29,7 @@ set_technology = {
 	#TODO: Add non-BBA air techs
 	early_bombs = 1
 	aa_lmg = 1
-	air_torpedoe_1 = 1
+	air_torpedo_1 = 1
 	aircraft_construction = 1
 	engines_1 = 1
 
@@ -40,7 +40,7 @@ set_technology = {
 
 	#Naval Tech
 	Ship_light_turboblaster_tech_1 = 1
-
+	
 	# Electronic Engineering
 	electronic_mechanical_engineering = 1
 	radio = 1
