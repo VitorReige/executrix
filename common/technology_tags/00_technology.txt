@@ -132,7 +132,7 @@ technology_folders = {
 		ledger = army
 	}
 	starwars_folder = {
-		ledger = civilian
+		ledger = navy
 		available = {
 			has_country_flag = starwarstech_unlock
 		}
