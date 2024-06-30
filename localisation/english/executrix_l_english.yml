@@ -1986,10 +1986,11 @@
  imperial_story.16.d: "Our plans of initial conquest of surronding territories that pose threat to us has been a success.\n\nMuch of the Exectuor's crew faith in the Empire is revitalizing. The crew now recongizes that all is not yet lost. While we may never get to see our home again, we can create a new home here on Earth and in this galaxy.\n\nThe natives, however, are becoming nervous about our renewed ambition and bolstering their resources in the background."
  imperial_story.16.a: "Victory For The Empire!"
  
- imperial_story.18.t: "Communist Insurgents"
- imperial_story.18.d: "The communists we've protected have decided to rise up against out supposed tyranny amongst the free peoples of the middle-east! We can either submit to their demands and form a new socialist state or try to fight a three way civil war."
- imperial_story.18.a: "A People's Republic"
- imperial_story.18.b: "The Empire Will Fight"
+ imperial_story.18.t: "Fuel priorities"
+ imperial_story.18.d: "Our fuel tanks were badly damaged in the crash. We need to decide what part of our forces recevies priority until a new source can be brought operational. Alternatively we can sell the reserves and boost our available local funds"
+ imperial_story.18.a: "Fuel the army"
+ imperial_story.18.b: "Fuel the airforce"
+ imperial_story.18.c: "Sell the fuel"
 
 
  imperial.0.t: "Survey Complete!"

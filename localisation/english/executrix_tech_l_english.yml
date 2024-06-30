@@ -85,3 +85,6 @@
  speeder_equipment_1:0 "BARC Speeder"
  speeder_equipment_2:0 "614-AvA Speeder"
  speeder_equipment_3:0 "74-Z Speeder" 
+
+ #naval
+ Ship_light_turboblaster_tech_1: "Basic Turbolazer"
