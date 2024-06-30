@@ -56,7 +56,7 @@ guiTypes = {
 				position = { x=0 y=0 }
 			}	
 			gridboxtype = {
-				name = "Ship_turboblaster_tech_tree"
+				name = "Ship_light_turboblaster_tech_tree"
 				position = { x= 100 y= 160 }
 				slotsize = { width= 70 height= 70 }
 				format = "LEFT"
