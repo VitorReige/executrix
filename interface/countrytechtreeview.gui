@@ -4080,7 +4080,7 @@ guiTypes = {
 			}
 
 			buttonType = {
-				name = "imp_naval_folder"
+				name = "imp_naval_folder_tab"
 				position = { x = 378 y = 0 }
 				quadTextureSprite = "GFX_naval_folder_tab"
 				frame = 1
