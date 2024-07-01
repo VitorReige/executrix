@@ -1125,4 +1125,10 @@ spriteTypes = {
 		name = "GFX_idea_sw_industry_buff"
 		texturefile = "gfx/interface/ideas/idea_sw_industry_buff.tga"
 	}
+
+	##NAVAL
+	spriteType = {
+		name = "GFX_imp_submarine_1_medium"
+		textureFile = "gfx/imp_submarine_1"
+	}
 }
