@@ -132,9 +132,10 @@ technology_folders = {
 		ledger = army
 	}
 	starwars_folder = {
-		ledger = navy
+		ledger = civilian
 		available = {
 			has_country_flag = starwarstech_unlock
+			original_tag = IMP
 		}
 	}
 	support_folder = {
@@ -179,9 +180,22 @@ technology_folders = {
 		}
 		ledger = navy
 	}
+
+	imp_naval_folder = {
+		available = {
+			has_dlc = "Man the Guns"
+
+			OR = {
+				has_country_flag = starwarstech_unlock
+				original_tag = IMP
+			}
+		}
+	}
+
 	mtgnavalsupportfolder = {
 		available = {
 			has_dlc = "Man the Guns"
+			NOT = { original_tag = IMP }
 		}
 		ledger = navy
 	}

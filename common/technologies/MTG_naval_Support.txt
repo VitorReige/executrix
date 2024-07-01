@@ -941,7 +941,7 @@ technologies = {
 	}
 
  
-	Ship_light_turboblaster_tech_1 = {
+	ship_light_turboblaster_tech_1 = {
 		
 		allow_branch = {
 			original_tag = IMP

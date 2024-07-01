@@ -312,8 +312,8 @@ equipments = {
 		}
 	}
 
-	ship_hull_imperial_submarine_1 = {
-		abbreviation = "iss"
+	imp_submarine_hull_1 = {
+		
 		year = 1922
 
 		archetype = ship_hull_submarine

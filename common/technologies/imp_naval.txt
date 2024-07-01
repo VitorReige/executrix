@@ -1,12 +1,16 @@
-technologies = {
-	
+technolgies = {
 
-	ship_sub_tech = {
+	imp_submarine_1 = {
 		research_cost = 1
 		start_year = 1936
 		enable_equipments = {
-			ship_hull_imperial_submarine_1
+		 imp_submarine_1
 		}
+
+		enable_equipment_modules = {
+			ship_proton_torpedo_1
+		}
+
 		categories = {
 			naval_equipment
 		}
@@ -16,20 +20,5 @@ technologies = {
 		}
 	}
 
-	ship_proton_torpedo_tech = {
-		research_cost = 1
-		start_year = 1936
-		enable_equipment_modules = {
-			ship_proton_torpedo_1
-		}
-		categories = {
-			naval_equipment
-		}
-		folder = {
-			name = starwars_folder
-			position = { x = 0 y = 14 }
-		}
-	}
 
-
-	S
+}

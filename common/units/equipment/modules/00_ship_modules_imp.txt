@@ -85,7 +85,7 @@ equipment_modules = {
    
 	}
 
-	ship_proton_torpedo_1 = {
+	imp_proton_torpedo_1 = {
 		category = ship_torpedo_sub
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
