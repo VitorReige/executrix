@@ -4078,6 +4078,14 @@ guiTypes = {
 				frame = 1
 				clicksound = ui_research_tab_infantry
 			}
+
+			buttonType = {
+				name = "imp_naval_folder"
+				position = { x = 378 y = 0 }
+				quadTextureSprite = "GFX_naval_folder_tab"
+				frame = 1
+				clicksound = ui_research_tab_naval
+			}
 			
 			######
 			######

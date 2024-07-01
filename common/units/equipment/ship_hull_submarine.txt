@@ -325,7 +325,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo_sub
-					ship_minelayer_sub
 				}
 			}
 		}

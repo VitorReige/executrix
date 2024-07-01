@@ -16,7 +16,7 @@ technolgies = {
 			submarine
 		}
 		folder = {
-			name = naval_folder
+			name = imp_naval_folder
 			position = { x = 1 y = 13 }
 		}
 	}
