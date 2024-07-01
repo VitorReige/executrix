@@ -1,4 +1,4 @@
-technolgies = {
+technologies = {
 
 	imp_submarine_1 = {
 		research_cost = 1
