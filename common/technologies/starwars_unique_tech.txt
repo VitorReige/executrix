@@ -1,5 +1,5 @@
 technologies = {
-	star_wars_unlock_technogly = {
+	star_wars_unlock_technology = {
 
 		research_speed_factor = 0.05
 		
@@ -806,7 +806,7 @@ technologies = {
 		
 	}
 	
-	hip_light_turboblaster_tech_1 = {
+	ship_light_turboblaster_tech_1 = {
 		
 		
 

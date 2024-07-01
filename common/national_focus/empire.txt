@@ -1052,9 +1052,100 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_finalise_reactor_repairs
 		}
+		completion_reward = {
+			411 = {
+				add_core_of = IMP
+			}
+			
+			412 = {
+				add_core_of = IMP
+			}
+
+			413 = {
+				add_core_of = IMP
+			}
+		 }
+	}
+
+
+
+
+	###INTERNATIONAL TREE###
+
+	focus = {
+		id = imp_approach_the_germans
+		icon = GFX_unique_tech_10_medium
+		cost = x
+		x = 15
+		y = 0
 		completion_reward = { }
 	}
 
+
+	focus = {
+		id = imp_reach_out_to_the_smaller_powers
+		icon = GFX_unique_tech_10_medium
+		cost = x
+		x = 12
+		y = 0
+		completion_reward = { }
+	}
+
+
+	focus = {
+		id = imp_reach_out_to_the_empires
+		icon = GFX_unique_tech_10_medium
+		cost = 6
+		x = 18
+		y = 0
+		available = {
+			has_idea = imp_moff_tarkin
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_make_a_deal_with_turkey
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = -1
+		y = 1
+		relative_position_id = imp_reach_out_to_the_empires
+		mutually_exclusive = {
+			focus = imp_prepare_the_isb
+		}
+		prerequisite = {
+			focus = imp_reach_out_to_the_empires
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_prepare_the_isb
+		icon = GFX_unique_tech_10_medium
+		cost = x
+		x = 1
+		y = 1
+		relative_position_id = imp_reach_out_to_the_empires
+		mutually_exclusive = {
+			focus = imp_make_a_deal_with_turkey
+		}
+		prerequisite = {
+			focus = imp_reach_out_to_the_empires
+		}
+		completion_reward = { }
+	}
+
+	##MILITARY TREE##
+	focus = {
+		id = imp_reorganise_the_officer_core
+		icon = GFX_unique_tech_10_medium
+		cost = x
+		x = x
+		y = x
+		completion_reward = { }
+	}
+	
 
  #END OF THE FOCUS TREE 
 }
