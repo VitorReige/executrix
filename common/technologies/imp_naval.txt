@@ -9,6 +9,15 @@ technolgies = {
 
 		enable_equipment_modules = {
 			ship_proton_torpedo_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = imp_submarine_2
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
 		}
 
 		categories = {
@@ -21,5 +30,17 @@ technolgies = {
 		}
 	}
 
+	imp_submarine_2 = {
+		research_cost = 1
+		start_year = 1940
+		enable_equipments = {
+			imp_submarine_hull_2
+		}
 
+		folder = {
+			name = imp_naval_folder
+			position = { x = 1 y = 19 }
+		}
+		
+	}
 }
