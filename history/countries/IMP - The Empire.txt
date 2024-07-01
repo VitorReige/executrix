@@ -90,6 +90,7 @@ if = {
 		basic_depth_charges = 1
 		sonar = 1
 		basic_cruiser_armor_scheme = 1
+		imp_submarine_1 = 1
 	}
 }
 

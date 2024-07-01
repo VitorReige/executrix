@@ -4,7 +4,7 @@ technolgies = {
 		research_cost = 1
 		start_year = 1936
 		enable_equipments = {
-		 imp_submarine_1
+		 imp_submarine_hull_1
 		}
 
 		enable_equipment_modules = {
@@ -13,6 +13,7 @@ technolgies = {
 
 		categories = {
 			naval_equipment
+			submarine
 		}
 		folder = {
 			name = naval_folder

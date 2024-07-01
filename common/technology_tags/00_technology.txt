@@ -178,6 +178,7 @@ technology_folders = {
 		available = {
 			has_dlc = "Man the Guns"
 			NOT = { original_tag = IMP }
+			NOT = { has_country_flag = starwarstech_unlock }
 		}
 		ledger = navy
 	}
@@ -187,8 +188,8 @@ technology_folders = {
 			has_dlc = "Man the Guns"
 
 			OR = {
-				has_country_flag = starwarstech_unlock
 				original_tag = IMP
+				has_country_flag = starwarstech_unlock
 			}
 		}
 		ledger = navy
