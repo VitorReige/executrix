@@ -177,6 +177,7 @@ technology_folders = {
 	mtgnavalfolder = {
 		available = {
 			has_dlc = "Man the Guns"
+			NOT = { original_tag = IMP }
 		}
 		ledger = navy
 	}
