@@ -190,12 +190,12 @@ technology_folders = {
 				original_tag = IMP
 			}
 		}
+		ledger = navy
 	}
 
 	mtgnavalsupportfolder = {
 		available = {
 			has_dlc = "Man the Guns"
-			NOT = { original_tag = IMP }
 		}
 		ledger = navy
 	}

@@ -9,10 +9,6 @@ technologies = {
 
 	basic_battery = {
 
-		allow_branch = {
-			NOT = { original_tag = IMP }
-		}
-
 		research_cost = 1
 
 		start_year = 1922
