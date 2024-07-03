@@ -348,7 +348,7 @@ equipments = {
 	}
 
 
-	imp_submarine_hull_1 = {
+	imp_submarine_hull_2 = {
 		
 		year = 1940
 

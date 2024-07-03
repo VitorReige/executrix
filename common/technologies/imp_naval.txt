@@ -21,7 +21,7 @@ technologies = {
 		}
 		folder = {
 			name = imp_naval_folder
-			position = { x = 1 y = 4 }
+			position = { x = 1 y = 1 }
 		}
 	}
 
@@ -29,12 +29,12 @@ technologies = {
 		research_cost = 1
 		start_year = 1940
 		enable_equipments = {
-			imp_submarine_hull_2
+		 imp_submarine_hull_2
 		}
 
 		folder = {
 			name = imp_naval_folder
-			position = { x = 4 y = 4 }
+			position = { x = 4 y = 1 }
 		}
 		
 	}

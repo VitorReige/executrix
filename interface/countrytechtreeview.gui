@@ -807,6 +807,21 @@ guiTypes = {
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
+
+			containerWindowType = {
+				name = "tiled_window_transparent_transparent"
+				position = { x= 0 y = 0 }
+				size = {
+					width=1700 height=1300
+					min = { width=100%% height=100%% }
+				}
+				clipping = no
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_window_transparent_transparent"
+				}
+			}
 			
 			gridBoxType = {
 				name = "proton_torpedoes_1_tree"
@@ -816,9 +831,7 @@ guiTypes = {
 				}
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
-			}
-					
-			
+			}	
 		}
 
 
@@ -4410,10 +4423,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "imp_naval_modules_folder_tab"
-				position = {
-					x = 467
-					y = 0
-				}
+				position = { x = 467 y = 0 }
 				quadTextureSprite = "GFX_naval_support_tab"
 				frame = 1
 				clicksound = ui_research_tab_naval

@@ -195,7 +195,7 @@ technology_folders = {
 		ledger = navy
 	}
 
-	imp_naval_folder = {
+	imp_naval_modules_folder = {
 		available = {
 			has_dlc = "Man the Guns"
 
