@@ -221,6 +221,38 @@ technology_folders = {
 		ledger = army
 	}
 
+	imp_arty_folder = {
+		available = {
+			original_tag = IMP
+			has_country_flag = starwarstech_unlock
+		}
+		ledger = army
+	}
+
+	imp_armour_folder = {
+		available = {
+			original_tag = IMP
+			has_country_flag = starwarstech_unlock
+		}
+		ledger = army
+	}
+
+	imp_support_folder = {
+		available = {
+			original_tag = IMP
+			has_country_flag = starwarstech_unlock
+		}
+		ledger = army
+	}
+
+	imp_air_folder = {
+		available = {
+			original_tag = IMP
+			has_country_flag = starwarstech_unlock
+		}
+		ledger = air
+	}
+
 	mtgnavalsupportfolder = {
 		available = {
 			has_dlc = "Man the Guns"
