@@ -1063,7 +1063,7 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				name = "imp_republic_blaster_tree"
+				name = "imp_weapon_1_tree"
 				position = { x = 140 y = 325 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -4702,6 +4702,13 @@ guiTypes = {
 				clicksound = ui_research_tab_naval
 			}
 
+			buttonType = {
+				name = "imp_infantry_folder_tab"
+				position = { x = 22 y = 0 }
+				quadTextureSprite = "GFX_infantry_folder_tab"
+				frame = 1
+				clicksound = ui_research_tab_infantry
+			}
 
 			######
 			######

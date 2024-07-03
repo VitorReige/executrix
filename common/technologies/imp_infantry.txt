@@ -1,5 +1,5 @@
 technologies = {
-	republic_blaster = {
+	imp_weapon_1 = {
 		enable_equipments = {
 			republic_equipment_1
 		}
@@ -29,7 +29,7 @@ technologies = {
 			factor = 1
 		}
 	}
-	imperial_blaster = {
+	imp_weapon_2 = {
 		enable_equipments = {
 			imperial_equipment_1
 		}
