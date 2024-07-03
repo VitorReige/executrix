@@ -7,7 +7,7 @@ technologies = {
 		research_cost = 1
 
 		path = {
-			leads_to_tech = imperial_blaster
+			leads_to_tech = imp_weapon_2
 			research_cost_coeff = 1
 		}
 
@@ -17,7 +17,7 @@ technologies = {
 			name = imp_infantry_folder
 			position = {
 				x = 0
-				y = -1
+				y = 0
 			}
 		}
 
@@ -37,16 +37,44 @@ technologies = {
 		research_cost = 1
 
 		path = {
-			leads_to_tech = imperial_blaster_2
+			leads_to_tech = imp_weapon_3
 			research_cost_coeff = 1
 		}
 
 		folder = {
 			name = imp_infantry_folder
-			position = { x = 0 y = @1936 }
+			position = { x = 0 y = 2 }
 		}
 
 		start_year = 1936
+
+		categories = {
+			infantry_weapons
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	imp_weapon_3 = {
+		enable_equipments = {
+			imperial_equipment_2
+		}
+
+		research_cost = 1
+
+		path = {
+			leads_to_tech = imp_weapon_4
+			research_cost_coeff = 1
+		}
+
+		start_year = 1938
+
+		folder = {
+			name = imp_infantry_folder
+			position = { x = 0 y = 4 }
+		}
 
 		categories = {
 			infantry_weapons
