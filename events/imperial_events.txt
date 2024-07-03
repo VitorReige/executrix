@@ -462,24 +462,6 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = imperial_story.3
-	title = imperial_story.3.t
-	desc = imperial_story.3.d
-	picture = GFX_crashed_executor
-
-	fire_only_once = yes
-
-	trigger = {
-		date > 1936.04.04
-		tag = IMP
-	}
-
-	option = {
-		name = imperial_story.3.a
-		add_stability = -0.05
-	}
-}
 
 country_event = {
 	id = imperial_story.4
@@ -678,39 +660,6 @@ country_event = {
 		add_threat = 5
 	}
 
-}
-
-country_event = {
-	id = imperial_story.14
-	title = imperial_story.14.t
-	desc = imperial_story.14.d
-	picture = GFX_crashed_executor
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = IMP
-		date > 1937.03.02
-	}
-
-	option = {
-		name = imperial_story.14.a
-		add_popularity = {
-			ideology = democratic
-			popularity = 0.10
-		}
-
-#		create_country_leader = {
-#			name = "Wullf Yularen"
-#			desc = ""
-#			picture = "portrait_Wulff_Yularen.dds"
-#			expire = "1965.1.1"
-#			ideology = liberalism
-#			traits = {
-#
-		#	}
-		#}
-	}
 }
 
 country_event = {
