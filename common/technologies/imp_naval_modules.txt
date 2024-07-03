@@ -1,0 +1,13 @@
+technologies = {
+	proton_torpedoes_1 = {
+		research_cost = 1
+		start_year = 1918
+		enable_equipment_modules = {
+			imp_proton_torpedo_1
+		}
+		folder = {
+			name = imp_naval_modules_folder
+			position = { x = 1 y = 9 }
+		}
+	}
+}

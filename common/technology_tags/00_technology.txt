@@ -195,9 +195,23 @@ technology_folders = {
 		ledger = navy
 	}
 
+	imp_naval_folder = {
+		available = {
+			has_dlc = "Man the Guns"
+
+			OR = {
+				original_tag = IMP
+				has_country_flag = starwarstech_unlock
+			}
+		}
+		ledger = navy
+	}
+
 	mtgnavalsupportfolder = {
 		available = {
 			has_dlc = "Man the Guns"
+			NOT = { original_tag = IMP }
+			NOT = { has_country_flag = starwarstech_unlock }
 		}
 		ledger = navy
 	}
