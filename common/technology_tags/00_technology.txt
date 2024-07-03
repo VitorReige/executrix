@@ -130,6 +130,12 @@ technology_categories = {
 technology_folders = {
 	infantry_folder = {
 		ledger = army
+		available = {
+			NOT = {
+				original_tag = IMP
+				has_country_flag = starwarstech_unlock
+			}
+		}
 	}
 	starwars_folder = {
 		ledger = civilian
@@ -205,6 +211,14 @@ technology_folders = {
 			}
 		}
 		ledger = navy
+	}
+
+	imp_infantry_folder = {
+		available = {
+			original_tag = IMP
+			has_country_flag = starwarstech_unlock
+		}
+		ledger = army
 	}
 
 	mtgnavalsupportfolder = {

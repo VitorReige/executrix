@@ -1063,7 +1063,7 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				name = "imp_infantry_weapons_tree"
+				name = "imp_republic_blaster_tree"
 				position = { x = 140 y = 325 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
