@@ -146,6 +146,10 @@ technology_folders = {
 	}
 	support_folder = {
 		ledger = army
+		available = {
+			NOT = { original_tag = IMP }
+			NOT = { has_country_flag = starwarstech_unlock }
+		}
 	}
 	armour_folder = {
 		ledger = army
@@ -159,10 +163,16 @@ technology_folders = {
 		ledger = army
 		available = {
 			has_dlc = "No Step Back"
+			NOT = { original_tag = IMP }
+			NOT = { has_country_flag = starwarstech_unlock }
 		}
 	}
 	artillery_folder = {
 		ledger = army
+		available = {
+			NOT = { original_tag = IMP }
+			NOT = { has_country_flag = starwarstech_unlock }
+		}
 	}
 	air_techs_folder = {
 		available = { NOT = { has_dlc = "By Blood Alone" } }
@@ -171,6 +181,8 @@ technology_folders = {
 	bba_air_techs_folder = {
 		available = {
 			has_dlc = "By Blood Alone"
+			NOT = { original_tag = IMP }
+			NOT = { has_country_flag = starwarstech_unlock }
 		}
 		ledger = air
 	}

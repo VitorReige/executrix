@@ -666,7 +666,9 @@ focus_tree = {
 			focus = imp_the_role_of_vader
 		}
 		
-		completion_reward = { }
+		completion_reward = {
+			load_oob = IMP_501st_legion
+		}
 	}
 
 	focus = {
@@ -679,7 +681,9 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_the_role_of_vader
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_ideas = imp_imperial_governors
+		}
 	}
 
 	focus = {
@@ -718,7 +722,10 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_the_role_of_vader
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.02
+		 }
 	}
 
 	focus = {
@@ -967,7 +974,14 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_vaders_fist
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_tech_bonus = {
+				name = imp_begin_salvaging_the_walker_bays
+				uses = 2
+				category = armor
+				bonus = 0.5
+			}
+		 }
 	}
 
 	focus = {
