@@ -1329,6 +1329,58 @@ guiTypes = {
 				format = "LEFT"
 			}
 
+			gridBoxType = {
+				name = "imp_military_police_1_tree"
+				position = {
+					x = 100
+					y = 160
+				}
+				slotsize = {
+					width = 70
+					height = 70
+				}
+				format = "LEFT"
+			}
+
+			gridBoxType = {
+				name = "imp_recon_1_tree"
+				position = {
+					x = 100
+					y = 160
+				}
+				slotsize = {
+					width = 70
+					height = 70
+				}
+				format = "LEFT"
+			}
+
+			gridBoxType = {
+				name = "imp_signal_1_tree"
+				position = {
+					x = 100
+					y = 160
+				}
+				slotsize = {
+					width = 70
+					height = 70
+				}
+				format = "LEFT"
+			}
+
+			gridBoxType = {
+				name = "imp_maintenance_1_tree"
+				position = {
+					x = 100
+					y = 160
+				}
+				slotsize = {
+					width = 70
+					height = 70
+				}
+				format = "LEFT"
+			}
+
 			gridboxtype = {
 				name = "electronic_mechanical_engineering_tree"
 				position = { x= 100 y=160 }

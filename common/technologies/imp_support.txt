@@ -21,6 +21,25 @@ technologies = {
 		}
 	}
 
+	imp_engineers_2 = {
+		imp_engineer = {
+			hills = {
+				defence = 0.25
+			}
+		}
+
+		start_year = 1939
+
+		path = {
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = imp_support_folder
+			position = { x = 0 y = 6 }
+		}
+	}
+
 	imp_logi_1 = {
 		enable_subunits = {
 			imp_logistics_company
@@ -43,4 +62,101 @@ technologies = {
 			factor = 1
 		}
 	}
+
+	imp_logi_2 = {
+		imp_logistics_company = {
+			supply_consumption_factor = -0.5
+		}
+
+		start_year = 1939
+
+		research_cost = 1
+
+		path = {
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = imp_support_folder
+			position = { x = 1 y = 6 }
+		}
+	}
+
+
+	imp_military_police_1 = {
+		enable_subunits = {
+			imp_military_police
+		}
+
+		start_year = 1936
+
+		research_cost = 1
+
+		path = {
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = imp_support_folder
+			position = { x = 2 y = 3  }
+		}
+	}
+
+	imp_recon_1 = {
+		enable_subunits = {
+			imp_recon
+		}
+
+		start_year = 1936
+
+		research_cost = 1
+
+		path = {
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = imp_support_folder
+			position = { x = 3 y = 3 }
+		}
+	}
+
+	imp_maintenance_1 = {
+		enable_subunits = {
+			imp_maintenance_company
+		}
+
+		start_year = 1936
+
+		research_cost = 1
+
+		path = {
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = imp_support_folder
+			position = { x = 4 y = 3 }
+		}
+	}
+
+	imp_signal_1 = {
+		enable_subunits = {
+			imp_signal_company
+		}
+
+		start_year = 1936
+
+		research_cost = 1
+
+		path = {
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = imp_support_folder
+			position = { x = 5 y = 3 }
+		}
+	}
+
 }
