@@ -2015,7 +2015,7 @@ guiTypes = {
 		}
 
 		containerWindowType = {
-			name = "imp_air_folder_tab"
+			name = "imp_air_folder"
 			position = { x=0 y=47 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 0 bottom = 24 right = 25}
