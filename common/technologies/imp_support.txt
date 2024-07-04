@@ -1,3 +1,23 @@
 technologies = {
-	
+	imp_engineers_1 = {
+		enable_subunits = {
+			imp_engineer
+		}
+		start_year = 1936
+		research_cost = 1
+
+		path = {
+			leads_to_tech = imp_engineers_2
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = imp_support_folder
+			position = { x = 0 y = @1936 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

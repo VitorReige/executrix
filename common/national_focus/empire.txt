@@ -259,7 +259,7 @@ focus_tree = {
 
 		available = {
 			controls_state = 291
-			controls_state = 679
+			controls_state = 292
 		}
 
 		x = 0
@@ -705,7 +705,14 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_tarkins_governors
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_tech_bonus = {
+				name = imp_fund_new_police_forces
+				bonus = 1
+				uses = 1
+				category = imp_military_police_tech
+			}
+		 }
 	}
 
 	focus = {
