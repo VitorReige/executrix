@@ -698,7 +698,7 @@ focus_tree = {
 	focus = {
 		id = imp_fund_new_police_forces
 		icon = GFX_unique_tech_10_medium
-		cost = x
+		cost = 4
 		x = -1
 		y = 1
 		relative_position_id = imp_tarkins_governors
@@ -710,7 +710,7 @@ focus_tree = {
 				name = imp_fund_new_police_forces
 				bonus = 1
 				uses = 1
-				category = imp_military_police_tech
+				category = support_tech
 			}
 		 }
 	}
@@ -718,7 +718,7 @@ focus_tree = {
 	focus = {
 		id = imp_start_hiring_locals
 		icon = GFX_unique_tech_10_medium
-		cost = x
+		cost = 4
 		x = 1
 		y = 1
 		relative_position_id = imp_tarkins_governors
@@ -1170,10 +1170,32 @@ focus_tree = {
 	focus = {
 		id = imp_reorganise_the_officer_core
 		icon = GFX_unique_tech_10_medium
-		cost = x
-		x = x
-		y = x
+		cost = 4
+		x = 25
+		y = 0
 		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_lessons_from_the_desert
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = imp_reorganise_the_officer_core
+		prerequisite = {
+			focus = imp_reorganise_the_officer_core
+		}
+		completion_reward = { 
+			add_tech_bonus = {
+				name = imp_lessons_from_the_desert
+				uses = 1
+				category = infantry_weapons
+				bonus = 0.5
+			}
+			add_command_power = 25
+			army_experience = 15
+		 }
 	}
 	
 

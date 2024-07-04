@@ -117,7 +117,7 @@ sub_units = {
 			weight = 0.1
 			supply_consumption = 0.02
 			
-			entrenchment = 4
+			entrenchment = 9
 			
 			battalion_mult = {
 				category = category_light_infantry
@@ -144,35 +144,39 @@ sub_units = {
 			can_be_parachuted = yes
 			forest = {
 				defence = 0.25
-				movement = 0.05
+				movement = 0.25
 			}
 	
 			hills = {
 				defence = 0.1
 				attack = 0.15
+				movement = 0.25
 			}
 	
 			jungle = {
 				defence = 0.25
+				movement = 0.25
 			}
 	
 			marsh = {
 				defence = 0.25
-				movement = 0.2
+				movement = 0.25
 			}
 	
 			fort = {
 				attack = 0.25
 				defence = 0.35
+				movement = 0.1
 			}
 	
 			river = {
 				defence = 0.25
-				movement = 0.25
+				movement = 0.3
 			}
 	
 			amphibious = {
 				attack = 0.15
+				movement = 0.05
 			}
 	
 			same_support_type = engineer
@@ -214,8 +218,8 @@ sub_units = {
 			can_be_parachuted = yes
 	
 			# Important Ability
-			supply_consumption_factor = -0.3
-			fuel_consumption_factor = -0.1
+			supply_consumption_factor = -0.45
+			fuel_consumption_factor = -0.35
 	
 			own_equipment_fuel_consumption_mult = 0.0 # no fuel use
 			
@@ -270,7 +274,7 @@ sub_units = {
 			can_be_parachuted = yes
 			
 			# Important Ability
-			suppression_factor = 0.20
+			suppression_factor = 0.5
 	
 			essential = {
 				infantry_equipment
@@ -327,6 +331,7 @@ sub_units = {
 		breakthrough = -0.5
 		soft_attack = -0.9
 		hard_attack = -0.9
+		recon = 0.25
 
 		maximum_speed = 0.6 # move at horsie speeds
 		
@@ -372,6 +377,7 @@ sub_units = {
 		
 		same_support_type = recon # blocks adding other recon types to template
 	}
+
 	imp_signal_company = {
 		abbreviation = "SIG"
 		sprite = infantry
@@ -409,7 +415,7 @@ sub_units = {
 		can_be_parachuted = yes
 		
 		# Important Ability
-		initiative = 0.1
+		initiative = 0.5
 		
 		own_equipment_fuel_consumption_mult = 0.0 # no fuel use
 		
@@ -460,8 +466,8 @@ sub_units = {
 		can_be_parachuted = yes
 		
 		# Important Ability
-		reliability_factor = 0.05
-		equipment_capture_factor = 0.05
+		reliability_factor = 0.25
+		equipment_capture_factor = 0.25
 		
 		essential = {
 			support_equipment

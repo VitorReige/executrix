@@ -23,12 +23,27 @@ technologies = {
 
 	imp_engineers_2 = {
 		imp_engineer = {
+			entrenchment = 0.25
+			
+			urban = {
+				attack = 0.05
+				defence = 0.1
+			}
+
 			hills = {
 				defence = 0.25
+			}
+
+			desert = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.05
 			}
 		}
 
 		start_year = 1939
+
+		research_cost = 1
 
 		path = {
 			research_cost_coeff = 1
@@ -55,7 +70,7 @@ technologies = {
 
 		folder = {
 			name = imp_support_folder
-			position = { x = 1 y = 3 }
+			position = { x = 2 y = 3 }
 		}
 
 		ai_will_do = {
@@ -66,6 +81,7 @@ technologies = {
 	imp_logi_2 = {
 		imp_logistics_company = {
 			supply_consumption_factor = -0.5
+			max_organisation = 25
 		}
 
 		start_year = 1939
@@ -78,7 +94,7 @@ technologies = {
 
 		folder = {
 			name = imp_support_folder
-			position = { x = 1 y = 6 }
+			position = { x = 2 y = 6 }
 		}
 	}
 
@@ -98,7 +114,7 @@ technologies = {
 
 		folder = {
 			name = imp_support_folder
-			position = { x = 2 y = 3  }
+			position = { x = 4 y = 3  }
 		}
 	}
 
@@ -117,7 +133,7 @@ technologies = {
 
 		folder = {
 			name = imp_support_folder
-			position = { x = 3 y = 3 }
+			position = { x = 6 y = 3 }
 		}
 	}
 
@@ -136,7 +152,7 @@ technologies = {
 
 		folder = {
 			name = imp_support_folder
-			position = { x = 4 y = 3 }
+			position = { x = 8 y = 3 }
 		}
 	}
 
@@ -155,7 +171,7 @@ technologies = {
 
 		folder = {
 			name = imp_support_folder
-			position = { x = 5 y = 3 }
+			position = { x = 10 y = 3 }
 		}
 	}
 
