@@ -256,6 +256,12 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_subjugate_saudi
 		}
+
+		available = {
+			controls_state = 291
+			controls_state = 679
+		}
+
 		x = 0
 		y = 2
 		relative_position_id = imp_regrouping_of_command
@@ -622,6 +628,9 @@ focus_tree = {
 				add_core_of = IMP
 			}
 			856 = {
+				add_core_of = IMP
+			}
+			857 = {
 				add_core_of = IMP
 			}
 			858 = {
