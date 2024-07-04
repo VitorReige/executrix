@@ -13,7 +13,30 @@ technologies = {
 
 		folder = {
 			name = imp_support_folder
-			position = { x = 0 y = @1936 }
+			position = { x = 0 y = 3 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	imp_logi_1 = {
+		enable_subunits = {
+			imp_logistics_company
+		}
+		start_year = 1936
+
+		research_cost = 1
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = imp_logi_2
+		}
+
+		folder = {
+			name = imp_support_folder
+			position = { x = 1 y = 3 }
 		}
 
 		ai_will_do = {
