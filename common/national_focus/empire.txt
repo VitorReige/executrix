@@ -287,7 +287,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = republic_equipment_1
-				amount = 1000
+				amount = 10000
 				producer = IMP
 			}
 			656 = {

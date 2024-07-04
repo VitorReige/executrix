@@ -12,7 +12,7 @@ equipment_modules = {
 
 
 
-  Ship_turboblaster1 = {
+  Ship_turboblaster_1 = {
 	 abbreviation = "stl"
 	 category = ship_light_battery
 	 sfx = sfx_ui_sd_module_turret
@@ -37,7 +37,7 @@ equipment_modules = {
 
     } 
 	
-	Ship_turboblaster2 = {
+	Ship_turboblaster_2 = {
 		category = ship_light_battery
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -61,7 +61,7 @@ equipment_modules = {
    
 	}
 
-	Ship_turboblaster3 = {
+	Ship_turboblaster_3 = {
 		category = ship_light_battery
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
