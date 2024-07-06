@@ -1199,5 +1199,67 @@ focus_tree = {
 	}
 	
 
+	focus = {
+		id = imp_taking_to_the_water
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = -1
+		y = 1
+		relative_position_id = imp_lessons_from_the_desert
+		prerequisite = {
+			focus = imp_lessons_from_the_desert
+		}
+		completion_reward = {
+			591 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			navy_experience = 15
+		}
+	}
+
+	focus = {
+		id = imp_returning_to_the_air
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 1
+		y = 1
+		relative_position_id = imp_lessons_from_the_desert
+		prerequisite = {
+			focus = imp_lessons_from_the_desert
+		}
+		completion_reward = { 
+			air_experience = 15
+		}
+	}
+
+	focus = {
+		id = imp_adapting_to_earth_tactics
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 0
+		y = 2
+		relative_position_id = imp_lessons_from_the_desert
+		prerequisite = {
+			focus = imp_taking_to_the_water
+		}
+
+		prerequisite = {
+			focus = imp_returning_to_the_air
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.99
+				name = imp_adapting_to_earth_tactics
+				category = land_doctrine
+				uses = 1
+			}
+		 }
+	}
+
  #END OF THE FOCUS TREE 
 }
