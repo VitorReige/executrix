@@ -1151,9 +1151,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = imp_start_bribing_local_officials
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = imp_make_a_deal_with_turkey
+		prerequisite = {
+			focus = imp_make_a_deal_with_turkey
+		}
+		completion_reward = { }
+	}
+
+	focus = {
 		id = imp_prepare_the_isb
 		icon = GFX_unique_tech_10_medium
-		cost = x
+		cost = 4
 		x = 1
 		y = 1
 		relative_position_id = imp_reach_out_to_the_empires
@@ -1162,6 +1175,19 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = imp_reach_out_to_the_empires
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_look_for_local_puppets
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = imp_prepare_the_isb
+		prerequisite = {
+			focus = imp_prepare_the_isb
 		}
 		completion_reward = { }
 	}
@@ -1259,6 +1285,19 @@ focus_tree = {
 				uses = 1
 			}
 		 }
+	}
+
+	focus = {
+		id = imp_train_local_officers
+		icon = GFX_unique_tech_10_medium
+		cost = 6
+		x = 0
+		y = 1
+		relative_position_id = imp_adapting_to_earth_tactics
+		prerequisite = {
+			focus = imp_adapting_to_earth_tactics
+		}
+		completion_reward = { }
 	}
 
  #END OF THE FOCUS TREE 
