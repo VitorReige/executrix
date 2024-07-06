@@ -1036,7 +1036,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_look_to_iran
-		icon = GFX_unique_tech_10_medium
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 5
 		x = 0
 		y = 1
