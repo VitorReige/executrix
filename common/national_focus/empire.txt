@@ -1203,7 +1203,9 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_prepare_the_isb
 		}
-		completion_reward = { }
+		completion_reward = {
+			unlock_decision_category_tooltip = imp_turkey_puppet_decisions
+		 }
 	}
 
 	focus = {
