@@ -1,0 +1,96 @@
+objectTypes = {
+	
+	# REPUBLIC ERA
+	
+	#CAS 
+	pdxmesh = {
+		name = "IMP_LAATi_CAS_mesh"
+		file = "gfx/models/planes/LAATi_CAS.mesh"
+		
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}	
+	
+	#Fighter #Naval Bomber
+	pdxmesh = {
+		name = "IMP_V-19_light_mesh"
+		file = "gfx/models/planes/V-19.mesh"
+		
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	
+	#Jet Fighter
+	pdxmesh = {
+		name = "IMP_ARC-170_jet_mesh"
+		file = "gfx/models/planes/ARC-170.mesh"
+		
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	
+	#Heavy Fighter #Tac Bomber #Jet Tac Bomber
+	pdxmesh = {
+		name = "IMP_ARC-170_medium_mesh"
+		file = "gfx/models/planes/ARC-170.mesh"
+		
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	}
+	
+	#Strat Bomber #Jet Strat Bomber
+	pdxmesh = {
+		name = "IMP_BTL-B-Y_heavy_mesh"
+		file = "gfx/models/planes/BTL-B-Y-Wing_bomber.mesh"
+		
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	}
+	
+	#Transport
+	pdxmesh = {
+		name = "IMP_LAAT/c_mesh"
+		file = "gfx/models/planes/LAATi_CAS.mesh"
+		
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		#animation = { id = "idle" type = "bomber_default_idle_animation" }
+	}
+
+	# IMPERIAL ERA
+	
+	#CAS #Fighter #Naval Bomber
+	pdxmesh = {
+		name = "IMP_TIE_light_mesh"
+		file = "gfx/models/planes/TIE_Fighter.mesh"
+		
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	
+	#Jet Fighter
+	pdxmesh = {
+		name = "IMP_TIE_jet_mesh"
+		file = "gfx/models/planes/TIE_Fighter.mesh"
+		
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	
+	#Heavy Fighter #Tac Bomber #Jet Tac Bomber
+	pdxmesh = {
+		name = "IMP_TIE_medium_mesh"
+		file = "gfx/models/planes/TIE_Interceptor.mesh"
+		
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	}
+	
+	#Strat Bomber #Jet Strat Bomber
+	pdxmesh = {
+		name = "IMP_TIE_heavy_mesh"
+		file = "gfx/models/planes/TIE_Bomber.mesh"
+		
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	}
+	
+	#Transport
+	pdxmesh = {
+		name = "IMP_Lambda_mesh"
+		file = "gfx/models/planes/Lambda_TRANSPORT.mesh"
+		
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	}
+	
+}

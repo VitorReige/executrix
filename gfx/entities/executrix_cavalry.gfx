@@ -1,8 +1,8 @@
 objectTypes = {
 
 	pdxmesh = {
-		name = "repBARC_mesh"
-		file = "gfx/models/cavalry/repBARC.mesh"
+		name = "BARC_mesh"
+		file = "gfx/models/cavalry/BARC.mesh"
 
 		animation = { id = "idle"			type = "GER_mechanized_01_idle_animation" }
 		animation = { id = "move"			type = "GER_mechanized_01_move_animation" }
@@ -18,4 +18,4 @@ objectTypes = {
 		animation = { id = "attack"			type = "droideka_shooting" }
 	}
 	
-	
+}

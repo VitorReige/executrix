@@ -1,6 +1,6 @@
 entity = {
 	name = "IMP_cavalry_entity"
-	pdxmesh = "repBARC_mesh"
+	pdxmesh = "BARC_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle" 				animation_blend_time = 0.3 animation_speed = 1.0 }
@@ -39,7 +39,7 @@ entity = {
 
 entity = { #TODO: Move to a seperate .asset folder and .gfx
 	name = "IMP_armored_car_entity"
-	pdxmesh = "repBARC_mesh"
+	pdxmesh = "BARC_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle"				animation = "idle" 				animation_blend_time = 0.3 animation_speed = 1.0 }

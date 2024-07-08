@@ -5,7 +5,7 @@ objectTypes = {
 	#Magmatrooper
 	pdxmesh = {
 		name = "IMP_magmatrooper_mesh"
-		file = "gfx/models/infantry/IMP_magmatrooper_mesh.mesh"
+		file = "gfx/models/infantry/IMP_MagmaTrooper_mesh.mesh"
 		
 		#
 		## Idle
