@@ -830,9 +830,26 @@ imp_turkey_puppet_decisions = {
 			random_list = {
 				50 = {
 					352 = {
-						set_state_flag = TUR_imp_puppet_control
+						add_state_core = IMP
 					}
 					add_political_power = 50
+					TUR = {
+						add_ideas = imp_control_1
+						if = {
+							limit = { has_idea = imp_control_1 }
+							swap_ideas = {
+								remove_idea = imp_control_1
+								add_ideas = imp_control_2
+							}
+						}
+						else_if = {
+							limit = { has_idea = imp_control_2 }
+							swap_ideas = {
+								remove_idea = imp_control_2
+								add_idea = imp_control_3
+							}
+						}
+					}
 				}
 				50 = {
 					country_event = {
@@ -843,5 +860,8 @@ imp_turkey_puppet_decisions = {
 			}
 		}
 
+	}
+	imp_appoint_puppet_government_in_instanbul = {
+		
 	}
 }
