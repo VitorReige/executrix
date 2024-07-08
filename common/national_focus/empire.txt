@@ -767,7 +767,20 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_the_imperial_cabinet
 		}
-		completion_reward = { }
+		completion_reward = {
+			ENG = {
+				country_event = {
+					id = imperial_ambition.0
+					days = 1
+				}
+			}
+			FRA = {
+				country_event = {
+					id = imperial_ambition.0
+					days = 1
+				}
+			}
+		 }
 	}
 
 
@@ -1218,7 +1231,15 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_look_for_local_puppets
 		}
-		completion_reward = { }
+		completion_reward = {
+			TUR = {
+			 country_event ={
+				id = imperial_move.1
+				days = 1
+			 } 
+			}
+
+		}
 	}
 
 	focus = {
