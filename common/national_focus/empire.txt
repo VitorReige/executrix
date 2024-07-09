@@ -769,7 +769,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_approach_the_colonial_powers
-		icon = GFX_unique_tech_10_medium
+		icon = GFX_focus_approach_the_colonial_powers
 		cost = 5
 		x = 1
 		y = 1
@@ -969,7 +969,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = imp_vaders_fist
 		prerequisite = {
-			focus = imp_assess_the_fuel_tanks
+			focus = imp_focus_assess_the_fuel_tanks
 		}
 		prerequisite = {
 			focus = imp_doctrinal_reforms

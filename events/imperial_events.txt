@@ -7,6 +7,8 @@ add_namespace = imperial_global_news
 add_namespace = imperial_coop
 add_namespace = imperial_ambition
 add_namespace = imperial_economicstory
+add_namespace = imperial_move
+
 
 #diplomacy
 country_event = {
