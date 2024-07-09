@@ -839,8 +839,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = imp_assess_the_fuel_tanks
-		icon = GFX_unique_tech_10_medium
+		id = imp_focus_assess_the_fuel_tanks
+		icon = GFX_focus_assess_the_fuel_tanks
 		cost = 3
 		x = 0
 		y = 1
