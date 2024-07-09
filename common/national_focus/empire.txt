@@ -657,7 +657,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_the_role_of_vader
-		icon = GFX_unique_tech_10_medium
+		icon = GFX_focus_role_of_vader
 		cost = 4
 		x = 0
 		y = 2
@@ -676,7 +676,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_vaders_fist
-		icon = GFX_unique_tech_10_medium
+		icon = GFX_focus_vaders_fist
 		cost = 3
 		x = 0
 		y = 1
@@ -740,7 +740,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_the_imperial_cabinet
-		icon = GFX_unique_tech_10_medium
+		icon = GFX_focus_the_imperial_cabinet
 		cost = 3
 		x = 4
 		y = 1
@@ -756,7 +756,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_start_appointing_a_new_government
-		icon = GFX_unique_tech_10_medium
+		icon = GFX_focus_start_appointing_a_new_government
 		cost = 4
 		x = -1
 		y = 1
@@ -797,7 +797,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_continue_reactor_repairs
-		icon = GFX_unique_tech_10_medium
+		icon = GFX_focus_continue_reactor_repairs
 		cost = 3
 		x = 0
 		y = 2
@@ -921,7 +921,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_open_the_hangar_doors
-		icon = GFX_unique_tech_10_medium
+		icon = GFX_focus_open_the_hangar_doors
 		cost = 4
 		x = 0
 		y = 1
@@ -963,7 +963,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_finalise_reactor_repairs
-		icon = GFX_unique_tech_10_medium
+		icon = GFX_focus_finalise_reactor_repairs
 		cost = 5
 		x = 0
 		y = 5
@@ -984,7 +984,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_rebuild_the_armouries
-		icon = GFX_unique_tech_10_medium
+		icon = GFX_focus_rebuild_the_armouries
 		cost = 3
 		x = -1
 		y = 1
