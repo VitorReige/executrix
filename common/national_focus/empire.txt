@@ -692,7 +692,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_tarkins_governors
-		icon = GFX_tarkins_governors
+		icon = GFX_focus_tarkins_governors
 		cost = 3
 		x = -4
 		y = 1
@@ -707,7 +707,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_fund_new_police_forces
-		icon = GFX_fund_new_police_forces
+		icon = GFX_focus_fund_new_police_forces
 		cost = 4
 		x = -1
 		y = 1
@@ -727,7 +727,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_start_hiring_locals
-		icon = GFX_start_hiring_locals
+		icon = GFX_focus_start_hiring_locals
 		cost = 4
 		x = 1
 		y = 1
@@ -819,7 +819,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_connect_the_crash_site
-		icon = GFX_connect_the_crash_site
+		icon = GFX_focus_connect_the_crash_site
 		cost = 4
 		x = 0
 		y = 2
@@ -858,7 +858,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_restart_conquered_industry
-		icon = GFX_restart_conquered_industry
+		icon = GFX_focus_restart_conquered_industry
 		cost = 3
 		x = 0
 		y = 1
@@ -942,7 +942,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_gathering_resources
-		icon = GFX_gathering_resources
+		icon = GFX_focus_gathering_resources
 		cost = 3
 		x = 0
 		y = 1
@@ -1005,7 +1005,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_begin_salvaging_the_walker_bays
-		icon = GFX_begin_salvaging_the_walker_bays
+		icon = GFX_focus_begin_salvaging_the_walker_bays
 		cost = 3
 		x = 1
 		y = 1
@@ -1025,7 +1025,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_start_training_local_troops
-		icon = GFX_start_training_local_troops
+		icon = GFX_focus_start_training_local_troops
 		cost = 5
 		x = 0
 		y = 2
@@ -1059,7 +1059,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_look_to_iran
-		icon = GFX_look_to_iran
+		icon = GFX_focus_look_to_iran
 		cost = 5
 		x = 0
 		y = 1
@@ -1077,7 +1077,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_doctrinal_reforms
-		icon = GFX_doctrinal_reform
+		icon = GFX_focus_doctrinal_reform
 		cost = 4
 		x = 0
 		y = 1
@@ -1097,7 +1097,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_take_direct_control_over_the_oil_fields
-		icon = GFX_direct_oil_control
+		icon = GFX_focus_direct_oil_control
 		cost = 5
 		x = 0
 		y = 1

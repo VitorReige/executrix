@@ -410,12 +410,12 @@ spriteTypes ={
 	}
 
 	spriteType = {
-		name = "GFX_begin_salvaging_the_walker_bays"
+		name = "GFX_focus_begin_salvaging_the_walker_bays"
 		textureFile = "gfx/interface/imperial/BeginSalvagingTheWalkerBays.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_begin_salvaging_the_walker_bays_shine"
+		name = "GFX_focus_begin_salvaging_the_walker_bays_shine"
 		texturefile = "gfx/interface/imperial/BeginSalvagingTheWalkerBays.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -447,12 +447,12 @@ spriteTypes ={
 	}
 
 	spriteType = {
-		name = "GFX_connect_the_crash_site"
+		name = "GFX_focus_connect_the_crash_site"
 		textureFile = "gfx/interface/imperial/ConnectTheCrashSite.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_connect_the_crash_site_shine"
+		name = "GFX_focus_connect_the_crash_site_shine"
 		texturefile = "gfx/interface/imperial/ConnectTheCrashSite.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -484,12 +484,12 @@ spriteTypes ={
 	}
 
 	spriteType = {
-		name = "GFX_direct_oil_control"
+		name = "GFX_focus_direct_oil_control"
 		textureFile = "gfx/interface/imperial/DirectOilControl.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_direct_oil_control_shine"
+		name = "GFX_focus_direct_oil_control_shine"
 		texturefile = "gfx/interface/imperial/DirectOilControl.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -521,12 +521,12 @@ spriteTypes ={
 	}
 
 	spriteType = {
-		name = "GFX_doctrinal_reform"
+		name = "GFX_focus_doctrinal_reform"
 		textureFile = "gfx/interface/imperial/DoctrinalReform.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_doctrinal_reform_shine"
+		name = "GFX_focus_doctrinal_reform_shine"
 		texturefile = "gfx/interface/imperial/DoctrinalReform.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -558,12 +558,12 @@ spriteTypes ={
 	}
 
 	spriteType = {
-		name = "GFX_fund_new_police_forces"
+		name = "GFX_focus_fund_new_police_forces"
 		textureFile = "gfx/interface/imperial/FundNewPoliceForces.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_fund_new_police_forces_shine"
+		name = "GFX_focus_fund_new_police_forces_shine"
 		texturefile = "gfx/interface/imperial/FundNewPoliceForces.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -595,12 +595,12 @@ spriteTypes ={
 	}
 
 	spriteType = {
-		name = "GFX_gathering_resources"
+		name = "GFX_focus_gathering_resources"
 		textureFile = "gfx/interface/imperial/GatheringResources.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_gathering_resources_shine"
+		name = "GFX_focus_gathering_resources_shine"
 		texturefile = "gfx/interface/imperial/GatheringResources.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -632,12 +632,12 @@ spriteTypes ={
 	}
 
 	spriteType = {
-		name = "GFX_look_to_iran"
+		name = "GFX_focus_look_to_iran"
 		textureFile = "gfx/interface/imperial/LookToIran.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_look_to_iran_shine"
+		name = "GFX_focus_look_to_iran_shine"
 		texturefile = "gfx/interface/imperial/LookToIran.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -669,12 +669,12 @@ spriteTypes ={
 	}
 
 	spriteType = {
-		name = "GFX_restart_conquered_industry"
+		name = "GFX_focus_restart_conquered_industry"
 		textureFile = "gfx/interface/imperial/RestartConqueredIndustry.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_restart_conquered_industry_shine"
+		name = "GFX_focus_restart_conquered_industry_shine"
 		texturefile = "gfx/interface/imperial/RestartConqueredIndustry.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -706,12 +706,12 @@ spriteTypes ={
 	}
 
 	spriteType = {
-		name = "GFX_start_hiring_locals"
+		name = "GFX_focus_start_hiring_locals"
 		textureFile = "gfx/interface/imperial/StartHiringLocals.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_start_hiring_locals_shine"
+		name = "GFX_focus_start_hiring_locals_shine"
 		texturefile = "gfx/interface/imperial/StartHiringLocals.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -743,12 +743,12 @@ spriteTypes ={
 	}
 
 	spriteType = {
-		name = "GFX_tarkins_governors"
+		name = "GFX_focus_tarkins_governors"
 		textureFile = "gfx/interface/imperial/TarkinsGovernors.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_tarkins_governors_shine"
+		name = "GFX_focus_tarkins_governors_shine"
 		texturefile = "gfx/interface/imperial/TarkinsGovernors.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -780,12 +780,12 @@ spriteTypes ={
 	}
 
 	spriteType = {
-		name = "GFX_start_training_local_troops"
+		name = "GFX_focus_start_training_local_troops"
 		textureFile = "gfx/interface/imperial/TrainingLocalTroops.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_start_training_local_troops_shine"
+		name = "GFX_focus_start_training_local_troops_shine"
 		texturefile = "gfx/interface/imperial/TrainingLocalTroops.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
