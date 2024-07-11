@@ -1437,7 +1437,16 @@ focus_tree = {
 		available = {
 			has_completed_focus = imp_the_role_of_vader
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_command_power = 25
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.75
+				name = imp_reorganise_the_officer_core
+				uses = 1
+				category = land_doctrine
+			}
+		 }
 	}
 
 	focus = {

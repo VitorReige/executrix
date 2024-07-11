@@ -990,6 +990,12 @@ country_event = {
 			state = 656
 		}
 
+		add_resource = {
+			type = aluminium
+			amount = 5
+			state = 656
+		}
+
 		add_ideas = {
 			idea = more_droid
 		}
@@ -1005,6 +1011,12 @@ country_event = {
 		add_resource = {
 			type = chromium
 			amount = 4
+			state = 656
+		}
+
+		add_resource = {
+			type = aluminium
+			amount = 5
 			state = 656
 		}
 
