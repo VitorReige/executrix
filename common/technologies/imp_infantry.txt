@@ -99,7 +99,7 @@ technologies = {
 
 		folder = {
 			name = imp_infantry_folder
-			position = { x = 0 y = 7 }
+			position = { x = 0 y = 9 }
 		}
 	}
 }

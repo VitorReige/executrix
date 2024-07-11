@@ -57,6 +57,9 @@ technologies = {
 	}
 
 	imp_engineers_3 = {
+
+		research_cost = 1.5
+
 		imp_engineer = {
 			entrenchment = 0.4
 
@@ -78,7 +81,7 @@ technologies = {
 		}
 		folder = {
 			name = imp_support_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = 10 }
 		}
 	}
 
@@ -148,7 +151,7 @@ technologies = {
 
 	imp_military_police_2 = {
 		imp_military_police = {
-			suppression = 3
+			suppression = 0.5
 			max_organisation = 0.5
 			urban = {
 				defence = 0.2

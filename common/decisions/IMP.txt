@@ -811,7 +811,7 @@ IMP_turkey_puppet_decisions = {
 		}
 
 		visible = {
-			always = yes
+			has_completed_focus = imp_look_for_local_puppets
 		}
 
 		highlight_states = {
@@ -882,7 +882,7 @@ IMP_turkey_puppet_decisions = {
 		}
 
 		visible = {
-			always = yes
+			has_completed_focus = imp_look_for_local_puppets
 		}
 
 		highlight_states = {

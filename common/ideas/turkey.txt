@@ -2562,6 +2562,45 @@ ideas = {
 			}
 		}
 
+		TUR_imp_control_2 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+		    picture = gfx_droid
+
+			modifier = {
+				local_resources_factor = 0.1
+				political_power_gain = -0.1
+				stability_weekly_factor = -0.04
+			}
+		}
+
+		TUR_imp_control_3 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = gfx_droid
+
+			modifier = {
+				local_resources_factor = 0.15
+				political_power_gain = -0.12
+				stability_weekly_factor = -0.06
+			}
+		}
+
 
 
 	}
