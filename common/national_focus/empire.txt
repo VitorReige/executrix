@@ -106,7 +106,7 @@ focus_tree = {
 		relative_position_id = imp_repair
 		completion_reward = {
 			add_stability = 0.03
-			add_political_power = 25
+			add_political_power = 100
 			add_command_power = 10
 		}
 	}
@@ -492,7 +492,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = imp_deploy_the_remaining_troops
 		completion_reward = {
-			add_manpower = 1000
+			add_manpower = 2500
 			add_war_support = 0.05
 			army_experience = 5
 		}
@@ -1001,7 +1001,10 @@ focus_tree = {
 			focus = imp_gathering_resources
 		}
 		completion_reward = {
-			remove_ideas = imp_reactor_works_2
+			swap_ideas = {
+				remove_idea = imp_reactor_works_2
+				add_idea = imp_reactor_fixed
+			}
 		}
 	}
 
