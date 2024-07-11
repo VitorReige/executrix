@@ -213,4 +213,29 @@ equipments = {
 			tungsten = 1
 		}
 	}
+
+	imperial_equipment_3 = {
+		year = 2096
+
+		archetype = infantry_equipment
+		parent = imperial_equipment_1
+		priority = 12
+		visual_level = 6
+
+		defense = 65
+		breakthrough = 12
+
+		soft_attack = 55
+		hard_attack = 17
+		ap_attack = 35
+		air_attack = 4
+
+		reliability = 1.1
+		build_cost_ic = 0.95
+		resources = {
+			steel = 3
+			chromium = 1
+			tungsten = 2
+		}
+	}
 }

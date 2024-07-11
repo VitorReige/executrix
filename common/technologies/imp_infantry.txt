@@ -84,4 +84,22 @@ technologies = {
 			factor = 1
 		}
 	}
+	imp_weapon_4 = {
+		enable_equipments = {
+			imperial_equipment_3
+		}
+
+		research_cost = 1
+
+		path = {
+			research_cost_coeff = 1
+		}
+
+		start_year = 1940
+
+		folder = {
+			name = imp_infantry_folder
+			position = { x = 0 y = 7 }
+		}
+	}
 }

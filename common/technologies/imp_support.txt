@@ -46,12 +46,39 @@ technologies = {
 		research_cost = 1
 
 		path = {
+			leads_to_tech = imp_engineers_3
 			research_cost_coeff = 1
 		}
 
 		folder = {
 			name = imp_support_folder
 			position = { x = 0 y = 6 }
+		}
+	}
+
+	imp_engineers_3 = {
+		imp_engineer = {
+			entrenchment = 0.4
+
+			forest = {
+				movement = 0.25
+				defence = 0.1
+			}
+			
+			mountain = {
+				movement = 0.2
+				attack = 0.1
+				defence = 0.2
+			}
+		}
+		start_year = 1941
+
+		path = {
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = imp_support_folder
+			position = { x = 0 y = 8 }
 		}
 	}
 
@@ -109,12 +136,36 @@ technologies = {
 		research_cost = 1
 
 		path = {
+			leads_to_tech = imp_military_police_2
 			research_cost_coeff = 1
 		}
 
 		folder = {
 			name = imp_support_folder
 			position = { x = 4 y = 3  }
+		}
+	}
+
+	imp_military_police_2 = {
+		imp_military_police = {
+			suppression = 3
+			max_organisation = 0.5
+			urban = {
+				defence = 0.2
+			}
+		}
+
+		start_year = 1939
+
+		research_cost = 1
+
+		path = {
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = imp_support_folder
+			position = { x = 4 y = 6 }
 		}
 	}
 
