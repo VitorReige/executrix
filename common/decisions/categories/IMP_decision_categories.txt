@@ -64,3 +64,12 @@ IMP_new_leaders = {
 		original_tag = IMP
 	}
 }
+IMP_turkey_puppet_decisions = {
+	icon = generic_propaganda
+	allowed = {
+		original_tag = IMP
+	}
+	visible = {
+		has_completed_focus = imp_look_for_local_puppets
+	}
+}

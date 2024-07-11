@@ -1227,7 +1227,7 @@ focus_tree = {
 			focus = imp_prepare_the_isb
 		}
 		completion_reward = {
-		   unlock_decision_tooltip = imp_turkey_puppet_decisions
+		   unlock_decision_tooltip = IMP_turkey_puppet_decisions
 		 }
 	}
 
