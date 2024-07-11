@@ -95,7 +95,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_regrouping_of_command
-		icon = GFX_focus_reconstruction
+		icon = GFX_focus_the_imperial_cabinet
 		cost = 1
 		prerequisite = {
 			focus = imp_repair
@@ -361,7 +361,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_deploy_the_remaining_troops
-		icon = GFX_unique_tech_10_medium
+		icon = GFX_focus_deploy_trooper
 		cost = 2
 		prerequisite = {
 			focus = imp_equip_the_garrisons
@@ -593,7 +593,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_restoring_order_to_the_cities
-		icon = GFX_unique_tech_10_medium
+		icon = GFX_focus_start_hiring_locals
 		cost = 4
 		x = -1
 		y = 1
@@ -616,7 +616,7 @@ focus_tree = {
 
 	focus = {
 		id = imp_restoring_order_over_the_desert
-		icon = GFX_unique_tech_10_medium
+		icon = GFX_focus_start_hiring_locals
 		cost = 4
 		x = 1
 		y = 1
