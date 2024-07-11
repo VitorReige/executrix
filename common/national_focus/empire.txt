@@ -764,7 +764,9 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_the_imperial_cabinet
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 150
+		}
 	}
 
 	focus = {
@@ -1131,6 +1133,10 @@ focus_tree = {
 		cost = x
 		x = 13
 		y = 0
+		available = {
+			has_completed_focus = imp_the_role_of_vader
+			has_country_leader = darth_vader
+		}
 		completion_reward = { }
 	}
 
@@ -1141,6 +1147,10 @@ focus_tree = {
 		cost = x
 		x = 9
 		y = 0
+		available = {
+			has_completed_focus = imp_the_role_of_vader
+			has_country_leader = tarkin
+		}
 		completion_reward = { }
 	}
 
@@ -1424,6 +1434,9 @@ focus_tree = {
 		cost = 4
 		x = 30
 		y = 0
+		available = {
+			has_completed_focus = imp_the_role_of_vader
+		}
 		completion_reward = { }
 	}
 
