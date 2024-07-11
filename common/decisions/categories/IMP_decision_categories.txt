@@ -73,3 +73,12 @@ IMP_turkey_puppet_decisions = {
 		has_completed_focus = imp_look_for_local_puppets
 	}
 }
+IMP_turkey_core_decisions = {
+	icon = generic_propaganda
+	allowed = {
+		original_tag = IMP
+	}
+	visible = {
+		has_completed_focus = imp_begin_intergrating_turkey
+	}
+}

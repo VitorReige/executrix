@@ -862,6 +862,76 @@ IMP_turkey_puppet_decisions = {
 
 	}
 	imp_appoint_puppet_government_in_instanbul = {
+		icon = border_war
+		allowed = {
+			original_tag = IMP
+		}
 
+		available = {
+			NOT = {
+				has_war_with = TUR
+				is_in_faction_with = TUR
+				TUR = { is_puppet_of = IMP }
+				792 = {
+					has_state_flag = TUR_imp_puppet_control
+				}
+			}
+			792 = {
+				is_controlled_by = TUR
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 792
+			}
+		}
+
+		fire_only_once = no
+
+		cost = 100
+
+		days_remove = 20
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					792 = {
+						add_state_core = IMP
+					}
+					add_political_power = 50
+					TUR = {
+						add_ideas = imp_control_1
+						if = {
+							limit = { has_idea = TUR_imp_control_1 }
+							swap_ideas = {
+								remove_idea = TUR_imp_control_1
+								add_ideas = TUR_imp_control_2
+							}
+						}
+						else_if = {
+							limit = { has_idea = imp_control_2 }
+							swap_ideas = {
+								remove_idea = TUR_imp_control_2
+								add_idea = TUR_imp_control_3
+							}
+						}
+					}
+				}
+				50 = {
+					country_event = {
+						id = imp_turkey_failed
+						days = 1
+					}
+				}
+			}
+		}
 	}
+}
+IMP_turkey_core_decisions = {
+
 }
