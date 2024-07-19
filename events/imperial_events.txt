@@ -8,6 +8,7 @@ add_namespace = imperial_coop
 add_namespace = imperial_ambition
 add_namespace = imperial_economicstory
 add_namespace = imperial_move
+add_namespace = imperial_move_turkey
 
 
 #diplomacy
@@ -861,7 +862,19 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = imperial_move_turkey.1
+	title = imperial_move_turkey.1.t
+	desc = imperial_move_turkey.1.d
+	picture = GFX_AT-AT
+	is_triggered_only = yes
+	fire_only_once = yes
 
+	option = {
+		name = imperial_move_turkey.1.a
+	}
+
+}
 
 
 

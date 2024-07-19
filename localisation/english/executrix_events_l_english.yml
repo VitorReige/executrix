@@ -27,6 +27,15 @@
  imperial_story.17.b: "No change is needed, Tarkin can take over the army"
  imperial_story.17.c: "Thrawn's option will bring about a good comprimise"
 
+ imperial_move_turkey.1.t: "Efforts failed"
+ imperial_move_turkey.1.d: "The local population has not engaged well with our local puppets. We will need to regroup and appoint new personel in order to secure control over the region."
+ imperial_move_turkey.1.a: "Unacceptable!"
+ imperial_move.1.t: "The empire asks for more control over us"
+ imperial_move.1.d: "A telegram arrived to government HQ asking for more direct control over our country. We need to make a decision."
+ imperial_move.1.a: "We wholeheartly accept"
+ imperial_move.1.b: "We relucantly accept"
+ imperial_move.1.c: "We decline" 
+
  imp_regrouping_of_command: "Regrouping of the high command"
  imp_begining_ship_repairs: "Begin ship repairs"
  imp_salvage_the_armouries: "Salvage the armouries"

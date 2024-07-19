@@ -801,9 +801,6 @@ IMP_turkey_puppet_decisions = {
 				has_war_with = TUR
 				is_in_faction_with = TUR
 				TUR = { is_puppet_of = IMP }
-				352 = {
-					has_state_flag = TUR_imp_puppet_control
-				}
 			}
 			352 = {
 				is_controlled_by = TUR
@@ -853,7 +850,7 @@ IMP_turkey_puppet_decisions = {
 				}
 				50 = {
 					country_event = {
-						id = imp_turkey_failed
+						id = imperial_move_turkey.1
 						days = 1
 					}
 				}
@@ -872,9 +869,6 @@ IMP_turkey_puppet_decisions = {
 				has_war_with = TUR
 				is_in_faction_with = TUR
 				TUR = { is_puppet_of = IMP }
-				792 = {
-					has_state_flag = TUR_imp_puppet_control
-				}
 			}
 			792 = {
 				is_controlled_by = TUR
@@ -924,7 +918,7 @@ IMP_turkey_puppet_decisions = {
 				}
 				50 = {
 					country_event = {
-						id = imp_turkey_failed
+						id = imperial_move_turkey.1
 						days = 1
 					}
 				}
