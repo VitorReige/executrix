@@ -1261,8 +1261,8 @@ focus_tree = {
 			focus = imp_prepare_the_isb
 		}
 		completion_reward = {
-		   unlock_decision_tooltip = IMP_turkey_puppet_decisions
-		 }
+			add_political_power = 100
+		}
 	}
 
 	focus = {

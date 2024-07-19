@@ -66,6 +66,7 @@ IMP_new_leaders = {
 }
 IMP_turkey_puppet_decisions = {
 	icon = generic_propaganda
+	priority = 12
 	allowed = {
 		original_tag = IMP
 	}
@@ -75,6 +76,7 @@ IMP_turkey_puppet_decisions = {
 }
 IMP_turkey_core_decisions = {
 	icon = generic_propaganda
+	priority = 10
 	allowed = {
 		original_tag = IMP
 	}

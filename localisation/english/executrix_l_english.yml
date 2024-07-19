@@ -1076,6 +1076,12 @@
  IMP_british_border_c: "Yemen Offensive: Aden"
  IMP_counter_attack_292: "Counter Attack"
  IMP_counter_attack_292_desc: "The enemy has pushed through, we must force them out."
+
+
+ IMP_turkey_core_decisions: "Turkish coring efforts"
+ IMP_turkey_puppet_decisions: "Turkish puppet efforts"
+ 
+
  #Focuses
  reinforce_supply_connection_tooltip:0 "§YThis focus will update when Iraq and Saudi Arabia are annexed/puppeted." 
  
