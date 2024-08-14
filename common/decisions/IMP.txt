@@ -858,6 +858,7 @@ IMP_turkey_puppet_decisions = {
 		}
 
 	}
+
 	imp_appoint_puppet_government_in_instanbul = {
 		icon = border_war
 		allowed = {
@@ -925,7 +926,9 @@ IMP_turkey_puppet_decisions = {
 			}
 		}
 	}
+	
 }
+
 IMP_turkey_core_decisions = {
 
 }
