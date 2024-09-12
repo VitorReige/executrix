@@ -1439,6 +1439,20 @@ focus_tree = {
 	}
 
 	focus = {
+		id = imp_lessons_of_earth
+		icon = GFX_unique_tech_10_medium
+		cost = 5
+		x = 0
+		y = 3
+		relative_position_id = imp_keep_the_current_stormtrooper
+		prerequisite = {
+			focus = imp_the_imperial_logistics_core
+			focus = imp_improve_policing_skills
+		}
+		completion_reward = { }
+	}
+
+	focus = {
 		id = imp_imperial_para_core
 		icon = GFX_unique_tech_10_medium
 		cost = 4
