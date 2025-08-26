@@ -137,7 +137,7 @@ ideas = {
 
 		imp_reactor_works_0 = {
 			allowed = {
-				always = no`
+				always = no
 			}
 
 			allowed_civil_war = {
