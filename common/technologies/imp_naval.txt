@@ -39,5 +39,29 @@ technologies = {
 		}
 		
 	}
-
+	imp_destroyer_1 = {
+		research_cost = 1
+		start_year = 1936
+		enable_equipments = {
+			imp_destroyer_1
+		}
+		path = {
+			leads_to_tech = imp_destroyer_2
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		categories = {
+			naval_equipment
+			mio_cat_tech_all_destroyer_and_modules
+			dd_tech
+		}
+		folder = {
+			name = imp_naval_folder
+			position = {
+				x = 1
+				y = 5
+			}
+		}
+	}
 }

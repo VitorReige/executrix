@@ -8,7 +8,7 @@ set_technology = {
 	# Infantry
 	night_vision = 1
 	tech_trucks = 1
-	slug_thrower = 1
+	imp_weapon_1 = 1
 
 	# Support Companies
 	basic_train = 1
