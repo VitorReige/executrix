@@ -6142,7 +6142,7 @@ guiTypes = {
 			}
 
 			}
-	    }
+
 		containerWindowType = {
 			name = "folder_tabs"
 			position = { x=0 y=7 }
@@ -6332,8 +6332,9 @@ guiTypes = {
 			 pdx_tooltip = "CLOSE"
 		    }
 	    }
+	}	
 
-	    containerWindowType = {
+	containerWindowType = {
 			name = "unlock_tech_info_window"
 			position = { x=500 y=100 }
 			size = { width = 550 height = 550 }
