@@ -17,7 +17,8 @@ technologies = {
 
 		categories = {
 			naval_equipment
-			submarine
+			mio_cat_tech_all_submarine_and_modules
+			ss_tech
 		}
 		folder = {
 			name = imp_naval_folder
