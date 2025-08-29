@@ -1183,34 +1183,6 @@ focus_tree = {
 	###INTERNATIONAL TREE###
 
 	focus = {
-		id = imp_approach_the_germans
-		icon = GFX_unique_tech_10_medium
-		cost = x
-		x = 13
-		y = 0
-		available = {
-			has_completed_focus = imp_the_role_of_vader
-			has_country_leader = darth_vader
-		}
-		completion_reward = { }
-	}
-
-
-	focus = {
-		id = imp_reach_out_to_the_smaller_powers
-		icon = GFX_unique_tech_10_medium
-		cost = x
-		x = 9
-		y = 0
-		available = {
-			has_completed_focus = imp_the_role_of_vader
-			has_country_leader = tarkin
-		}
-		completion_reward = { }
-	}
-
-
-	focus = {
 		id = imp_reach_out_to_the_balkan_powers
 		icon = GFX_unique_tech_10_medium
 		cost = 6
@@ -1223,160 +1195,88 @@ focus_tree = {
 	}
 
 	focus = {
-		id = imp_make_a_deal_with_turkey
+		id = imp_claim_turkish_territory
 		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = -3
+		cost = 6
+		x = -2
 		y = 1
 		relative_position_id = imp_reach_out_to_the_balkan_powers
-		mutually_exclusive = {
-			focus = imp_prepare_the_isb
-		}
 		prerequisite = {
 			focus = imp_reach_out_to_the_balkan_powers
 		}
-		completion_reward = {
-			TUR = {
-				country_event = {
-					id = imperial_move.1
-					days = 1
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = imp_start_bribing_local_officials
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 0
-		y = 1
-		relative_position_id = imp_make_a_deal_with_turkey
-		prerequisite = {
-			focus = imp_make_a_deal_with_turkey
+		mutually_exclusive = {
+			focus = imp_reach_out_to_turkey
 		}
 		completion_reward = { }
 	}
 
 	focus = {
-		id = imp_request_control_over_more_resources
+		id = imp_build_up_the_levant
 		icon = GFX_unique_tech_10_medium
 		cost = 4
 		x = 0
 		y = 1
-		relative_position_id = imp_start_bribing_local_officials
+		relative_position_id = imp_claim_turkish_territory
 		prerequisite = {
-			focus = imp_start_bribing_local_officials
+			focus = imp_claim_turkish_territory
 		}
 		completion_reward = { }
 	}
 
-
 	focus = {
-		id = imp_prepare_the_isb
+		id = imp_assign_new_governors
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 5
 		x = 1
 		y = 1
-		relative_position_id = imp_reach_out_to_the_balkan_powers
-		mutually_exclusive = {
-			focus = imp_make_a_deal_with_turkey
-		}
+		relative_position_id = imp_build_up_the_levant
 		prerequisite = {
-			focus = imp_reach_out_to_the_balkan_powers
+			focus = imp_build_up_the_levant
 		}
 		completion_reward = { }
 	}
 
 	focus = {
-		id = imp_look_for_local_puppets
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 0
-		y = 1
-		relative_position_id = imp_prepare_the_isb
-		prerequisite = {
-			focus = imp_prepare_the_isb
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-
-	focus = {
-		id = imp_seize_control_over_the_border_areas
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 0
-		y = 1
-		relative_position_id = imp_look_for_local_puppets
-		prerequisite = {
-			focus = imp_look_for_local_puppets
-		}
-		completion_reward = {
-			TUR = {
-			 country_event ={
-				id = imperial_move.1
-				days = 1
-			 } 
-			}
-
-		}
-	}
-
-	focus = {
-		id = imp_declare_turkey_a_protectorate
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 1
-		y = 1
-		relative_position_id = imp_seize_control_over_the_border_areas
-		prerequisite = {
-			focus = imp_seize_control_over_the_border_areas
-		}
-		mutually_exclusive = {
-			focus = imp_begin_intergrating_turkey
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = imp_begin_intergrating_turkey
+		id = imp_reward_romania
 		icon = GFX_unique_tech_10_medium
 		cost = 4
 		x = -1
 		y = 1
-		relative_position_id = imp_seize_control_over_the_border_areas
+		relative_position_id = imp_build_up_the_levant
 		prerequisite = {
-			focus = imp_seize_control_over_the_border_areas
+			focus = imp_build_up_the_levant
 		}
-		mutually_exclusive = {
-			focus = imp_declare_turkey_a_protectorate
-		}
-		completion_reward = {
-			unlock_decision_tooltip = IMP_turkey_core_decisions
-		 }
+		completion_reward = { }
 	}
 
 	focus = {
-		id = imp_turn_to_the_hills
+		id = imp_reach_out_to_turkey
 		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 0
-		y = 2
-		relative_position_id = imp_seize_control_over_the_border_areas
+		cost = 6
+		x = 2
+		y = 1
+		relative_position_id = imp_reach_out_to_the_balkan_powers
 		prerequisite = {
-			focus = imp_begin_intergrating_turkey
-			focus = imp_declare_turkey_a_protectorate
+			focus = imp_reach_out_to_the_balkan_powers
 		}
-		completion_reward = {
-			create_wargoal = {
-				target = AFG
-				type = annex_everything
-			}
-		 }
+		mutually_exclusive = {
+			focus = imp_claim_turkish_territory
+		}
+		completion_reward = { }
 	}
 
+	focus = {
+		id = imp_improve_romanian_forces
+		icon = GFX_unique_tech_10_medium
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = imp_reach_out_to_turkey
+		prerequisite = {
+			focus = imp_reach_out_to_turkey
+		}
+		completion_reward = { }
+	}
 
 	focus = {
 		id = imp_start_expanding_the_mechanized_core
