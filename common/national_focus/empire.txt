@@ -1279,6 +1279,46 @@ focus_tree = {
 	}
 
 	focus = {
+		id = imp_begin_propaganda_campaigns
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = -1
+		y = 1
+		relative_position_id = imp_improve_romanian_forces
+		prerequisite = {
+			focus = imp_improve_romanian_forces
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_turkish_geological_surveys
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 1
+		y = 1
+		relative_position_id = imp_improve_romanian_forces
+		prerequisite = {
+			focus = imp_improve_romanian_forces
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_begin_establshing_a_shadow_admin
+		icon = GFX_unique_tech_10_medium
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = imp_improve_romanian_forces
+		prerequisite = {
+			focus = imp_begin_propaganda_campaigns
+			focus = imp_turkish_geological_surveys
+		}
+		completion_reward = { }
+	}
+
+	focus = {
 		id = imp_start_expanding_the_mechanized_core
 		icon = GFX_unique_tech_10_medium
 		cost = 4
