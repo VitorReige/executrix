@@ -3092,6 +3092,25 @@ ideas = {
 				attack_bonus_against = 0.10
 			}
 		}
+		#imperial army ideas
+		imp_specialised_storm_troopers = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = stormtrooper_squad
+
+			modifier = {
+				special_forces_cap = -0.2
+				special_forces_defence_factor = 0.05
+				special_forces_attack_factor = 0.05
+				special_forces_training_time_factor = 0.1
+			}
+
+		}
+		
 	}
 	
 }

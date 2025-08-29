@@ -1318,6 +1318,127 @@ focus_tree = {
 		completion_reward = { }
 	}
 
+	
+	##MILITARY TREE##
+	focus = {
+		id = imp_reorganise_the_officer_core
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 30
+		y = 0
+		available = {
+			has_completed_focus = imp_the_role_of_vader
+		}
+		completion_reward = {
+			add_command_power = 25
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.75
+				name = imp_reorganise_the_officer_core
+				uses = 1
+				category = land_doctrine
+			}
+		 }
+	}
+
+	focus = {
+		id = imp_lessons_from_the_desert
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = imp_reorganise_the_officer_core
+		prerequisite = {
+			focus = imp_reorganise_the_officer_core
+		}
+		completion_reward = { 
+			add_tech_bonus = {
+				name = imp_lessons_from_the_desert
+				uses = 1
+				category = infantry_weapons
+				bonus = 0.5
+			}
+			add_command_power = 25
+			army_experience = 15
+		 }
+	}
+	
+
+	focus = {
+		id = imp_taking_to_the_water
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = -1
+		y = 1
+		relative_position_id = imp_lessons_from_the_desert
+		prerequisite = {
+			focus = imp_lessons_from_the_desert
+		}
+		completion_reward = {
+			656 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			navy_experience = 15
+		}
+	}
+
+	focus = {
+		id = imp_returning_to_the_air
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 1
+		y = 1
+		relative_position_id = imp_lessons_from_the_desert
+		prerequisite = {
+			focus = imp_lessons_from_the_desert
+		}
+		completion_reward = { 
+			air_experience = 15
+		}
+	}
+
+	focus = {
+		id = imp_adapting_to_earth_tactics
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 0
+		y = 2
+		relative_position_id = imp_lessons_from_the_desert
+		prerequisite = {
+			focus = imp_taking_to_the_water
+		}
+
+		prerequisite = {
+			focus = imp_returning_to_the_air
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.99
+				name = imp_adapting_to_earth_tactics
+				category = land_doctrine
+				uses = 1
+			}
+		 }
+	}
+
+	focus = {
+		id = imp_train_local_officers
+		icon = GFX_unique_tech_10_medium
+		cost = 6
+		x = 0
+		y = 1
+		relative_position_id = imp_adapting_to_earth_tactics
+		prerequisite = {
+			focus = imp_adapting_to_earth_tactics
+		}
+		completion_reward = { }
+	}
+
 	focus = {
 		id = imp_start_expanding_the_mechanized_core
 		icon = GFX_unique_tech_10_medium
@@ -1360,7 +1481,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = imp_keep_the_current_stormtrooper
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_ideas = imp_specialised_storm_troopers
+		 }
 	}
 
 	focus = {
@@ -1486,128 +1609,11 @@ focus_tree = {
 			focus = imp_imperial_marines
 		}
 
-		completion_reward = { }
-	}
-
-	##MILITARY TREE##
-	focus = {
-		id = imp_reorganise_the_officer_core
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 30
-		y = 0
-		available = {
-			has_completed_focus = imp_the_role_of_vader
-		}
 		completion_reward = {
-			add_command_power = 25
-			army_experience = 25
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.75
-				name = imp_reorganise_the_officer_core
-				uses = 1
-				category = land_doctrine
-			}
-		 }
-	}
-
-	focus = {
-		id = imp_lessons_from_the_desert
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 0
-		y = 1
-		relative_position_id = imp_reorganise_the_officer_core
-		prerequisite = {
-			focus = imp_reorganise_the_officer_core
-		}
-		completion_reward = { 
-			add_tech_bonus = {
-				name = imp_lessons_from_the_desert
-				uses = 1
-				category = infantry_weapons
-				bonus = 0.5
-			}
-			add_command_power = 25
-			army_experience = 15
-		 }
-	}
-	
-
-	focus = {
-		id = imp_taking_to_the_water
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = -1
-		y = 1
-		relative_position_id = imp_lessons_from_the_desert
-		prerequisite = {
-			focus = imp_lessons_from_the_desert
-		}
-		completion_reward = {
-			591 = {
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-			navy_experience = 15
+			
 		}
 	}
 
-	focus = {
-		id = imp_returning_to_the_air
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 1
-		y = 1
-		relative_position_id = imp_lessons_from_the_desert
-		prerequisite = {
-			focus = imp_lessons_from_the_desert
-		}
-		completion_reward = { 
-			air_experience = 15
-		}
-	}
-
-	focus = {
-		id = imp_adapting_to_earth_tactics
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 0
-		y = 2
-		relative_position_id = imp_lessons_from_the_desert
-		prerequisite = {
-			focus = imp_taking_to_the_water
-		}
-
-		prerequisite = {
-			focus = imp_returning_to_the_air
-		}
-
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.99
-				name = imp_adapting_to_earth_tactics
-				category = land_doctrine
-				uses = 1
-			}
-		 }
-	}
-
-	focus = {
-		id = imp_train_local_officers
-		icon = GFX_unique_tech_10_medium
-		cost = 6
-		x = 0
-		y = 1
-		relative_position_id = imp_adapting_to_earth_tactics
-		prerequisite = {
-			focus = imp_adapting_to_earth_tactics
-		}
-		completion_reward = { }
-	}
 
  #END OF THE FOCUS TREE 
 }
