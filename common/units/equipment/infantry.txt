@@ -158,7 +158,7 @@ equipments = {
 	}
 	
 	#Empire mid blaster
-	imperial_equipment_1 = {
+	imperial_inf_equipment_1 = {
 		year = 2096
 	
 		archetype = infantry_equipment
@@ -186,7 +186,7 @@ equipments = {
 	}
 
 	#Empire endgame blaster
-	imperial_equipment_2 = {
+	imperial_inf_equipment_2 = {
 		year = 2096
 	
 		archetype = infantry_equipment
@@ -214,7 +214,7 @@ equipments = {
 		}
 	}
 
-	imperial_equipment_3 = {
+	imperial_inf_equipment_3 = {
 		year = 2096
 
 		archetype = infantry_equipment

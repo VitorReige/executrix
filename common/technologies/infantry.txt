@@ -2534,7 +2534,7 @@ technologies = {
 	imperial_weapons = {
 		land_night_attack = 0.05
 		enable_equipments = {
-			imperial_equipment_1
+			imperial_inf_equipment_1
 		}	
 		
 		path = {
@@ -2713,7 +2713,7 @@ technologies = {
 	imperial_weapons2 = {
 		land_night_attack = 0.05
 		enable_equipments = {
-			imperial_equipment_2
+			imperial_inf_equipment_2
 		}
 		
 		path = {

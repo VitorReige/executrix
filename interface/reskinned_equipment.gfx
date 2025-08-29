@@ -536,4 +536,15 @@ spriteTypes = {
 		name = "GFX_IMP_main_battle_tank_chassis_medium" 
 		texturefile = "gfx/interface/technologies/tank/imperial_modern.dds" 
 	}
+
+	##naval##
+	spriteType = {
+		name = GFX_imp_destroyer_1
+		textureFile = "gfx/imp_submarine_1.dds"
+	}
+
+	spriteType = {
+		name = GFX_imp_proton_torpedo_1
+		textureFile = "gfx/interface/technologies/naval/proton_torpedo_large.dds" 
+	}
 }
