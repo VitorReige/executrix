@@ -66,6 +66,11 @@ technologies = {
 	}
 
 	imp_destroyer_2 = {
+		research_cost = 1
+		start_year = 1940
+		enable_equipments = {
+			imp_destroyer_2
+		}
 		
 	}
 
@@ -110,7 +115,7 @@ technologies = {
 		}
 		folder = {
 			name = imp_naval_folder
-			position = { x = 1 y = @1940 }
+			position = { x = 1 y = 5 }
 		}
 	}
 }

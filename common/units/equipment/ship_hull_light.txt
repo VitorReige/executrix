@@ -567,6 +567,8 @@ equipments = {
 
 		max_strength = 60
 
+		manpower = 200
+
 		type = {
 			screen_ship
 			anti_air
@@ -579,5 +581,53 @@ equipments = {
 		}
 
 	}
+	imp_destroyer_2 = {
+		year = 1940
 
+		archetype = ship_hull_light
+		priority = 2000
+		parent = imp_destroyer_1
+		module_slots = inherit
+		default_modules = {
+			fixed_ship_battery_slot = empty
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = empty
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		lg_armor_piercing = 0.3
+		lg_attack = 0.15
+		torpedo_attack = 0.55
+		sub_attack = 0.2
+
+		anti_air_attack = 0.7
+
+		armor_value = 0.1
+
+		surface_detection = 28
+		sub_detection = 15
+		surface_visibility = 8
+		naval_speed = 33
+		reliability = 0.9
+
+		naval_range = 3000
+
+		max_strength = 75
+
+		manpower = 190
+
+		type = {
+			screen_ship
+			anti_air
+		}
+
+		build_cost_ic = 225
+
+		resources = {
+			steel = 3
+		}
+	}
 }
