@@ -35,7 +35,7 @@ technologies = {
 
 		folder = {
 			name = imp_naval_folder
-			position = { x = 1 y = 4 }
+			position = { x = 1 y = 5 }
 		}
 		
 	}
@@ -64,6 +64,11 @@ technologies = {
 			}
 		}
 	}
+
+	imp_destroyer_2 = {
+		
+	}
+
 	imp_cruiser_1 = {
 		research_cost = 1
 		enable_equipments = {
@@ -87,6 +92,25 @@ technologies = {
 				x = 1
 				y = 2
 			 }
+		}
+	}
+	imp_cruiser_2 = {
+		research_cost = 1
+		enable_equipments = {
+			imp_cruiser_2
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns" 
+		}
+		categories = {
+			naval_equipment
+			mio_cat_tech_all_cruiser_and_modules
+			ca_tech
+			cl_tech
+		}
+		folder = {
+			name = imp_naval_folder
+			position = { x = 1 y = @1940 }
 		}
 	}
 }
