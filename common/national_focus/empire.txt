@@ -1710,5 +1710,25 @@ focus_tree = {
 		completion_reward = { }
 	}
 
+	focus = {
+		id = imp_improved_stormtrooper
+		icon = GFX_unique_tech_10_medium
+		cost = 5
+		x = 0
+		y = 3
+		relative_position_id = imp_specialise_the_storm_troopers
+		prerequisite = {
+			focus = imp_extend_training
+			focus = imp_new_transports
+			focus = imp_landing_efforts
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = imp_specialised_storm_troopers
+				add_idea = imp_specialised_storm_troopers_2
+			}
+		}
+	}
+
  #END OF THE FOCUS TREE 
 }

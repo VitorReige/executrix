@@ -1385,7 +1385,7 @@ ideas = {
 				imperialism_drift = 0.1
 				non_core_manpower = -0.15
 				political_power_gain = -0.35
-				required_garrison_factor = 0.15
+				required_garrison_factor = 0.05
 			}
 		}
 
@@ -3110,7 +3110,23 @@ ideas = {
 			}
 
 		}
-		
+		imp_specialised_storm_troopers_2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = stormtrooper_squad
+
+			modifier = {
+				special_forces_cap = -0.18
+				special_forces_attack_factor = 0.06
+				special_forces_defence_factor = 0.05
+				special_forces_training_time_factor = 0.1
+				terrain_trait_xp_gain_factor = 0.05
+			}
+		}
 	}
 	
 }
