@@ -129,6 +129,26 @@ equipment_modules = {
 		}
 	}
 
+	ship_medium_turboblaster_2 = {
+		category = ship_medium_battery_duel
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			lg_attack = 125
+			hg_attack = 80
+		}
+		multiply_stats = {
+			naval_speed = 0.05
+		}
+		add_average_stats = {
+			lg_armor_piercing = 125
+			hg_armor_piercing = 125
+		}
+		can_convert_from = {
+			module_category = ship_medium_battery_duel
+			convert_cost_ic = 60
+		}
+	}
+
 	imp_proton_torpedo_1 = {
 		category = ship_torpedo_sub
 		sfx = sfx_ui_sd_module_turret

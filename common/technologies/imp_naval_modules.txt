@@ -74,7 +74,7 @@ technologies = {
 
 		folder = {
 			name = imp_naval_modules_folder
-			position = { x = 10 y = 4 }
+			position = { x = 12 y = 4 }
 		}
 	}
 
@@ -83,6 +83,23 @@ technologies = {
 		start_year = 1936
 		enable_equipment_modules = {
 			ship_medium_turboblaster_1
+		}
+
+		path = {
+			leads_to_tech = medium_turbolaser_2
+		}
+
+		folder = {
+			name = imp_naval_modules_folder
+			position = { x = 1 y = 6 }
+		}
+	}
+
+	medium_turbolaser_2 = {
+		research_cost = 1
+		start_year = 1940
+		enable_equipment_modules = {
+			ship_medium_turboblaster_2
 		}
 
 		folder = {
