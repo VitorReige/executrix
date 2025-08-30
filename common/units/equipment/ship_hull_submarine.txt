@@ -384,8 +384,24 @@ equipments = {
 	}
 
 	imp_submarine_hull_3 = {
-
 		year = 1940
+
+		archetype = ship_hull_submarine
+
+		sub_visibility = 18
+		naval_speed = 22
+
+		module_slots = {
+			fixed_ship_engine_slot = inherit
+			fixed_ship_torpedo_slot = inherit
+			front_1_custom_slot = inherit
+			front_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo_sub
+				}
+			}
+		}
 	}
 
 	ship_hull_midget_submarine = {

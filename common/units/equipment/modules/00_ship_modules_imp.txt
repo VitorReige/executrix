@@ -179,4 +179,14 @@ equipment_modules = {
 		}
 	}
 
+	imp_proton_torpedo_2 = {
+		category = ship_torpedo_sub
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			torpedo_attack = 37
+			build_cost_ic = 160
+			naval_torpedo_hit_chance_factor = 0.06
+		}
+	}
+
 }
