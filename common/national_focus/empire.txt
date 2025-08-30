@@ -474,7 +474,7 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-				add_compliance = 20
+				add_core_of = IMP
 			}
 			859 = {
 				add_building_construction = {
@@ -482,7 +482,7 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-				add_compliance = 20
+				add_core_of = IMP
 			}
 
 		}
@@ -636,12 +636,15 @@ focus_tree = {
 			291 = {
 				add_core_of = IMP
 			}
-			675 = {
+			
+			1011 = {
 				add_core_of = IMP
 			}
+
 			676 = {
 				add_core_of = IMP
 			}
+			
 		 }
 	}
 
@@ -680,9 +683,7 @@ focus_tree = {
 			678 = {
 				add_core_of = IMP
 			}
-			859 = {
-				add_core_of = IMP
-			}
+
 		 }
 	}
 
@@ -1191,7 +1192,9 @@ focus_tree = {
 		available = {
 			has_idea = imp_moff_tarkin
 		}
-		completion_reward = { }
+		completion_reward = {
+			
+		 }
 	}
 
 	focus = {
@@ -1207,7 +1210,23 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = imp_reach_out_to_turkey
 		}
-		completion_reward = { }
+		completion_reward = {
+			344 = {
+				add_claim_by = IMP
+			}
+			350 = {
+				add_claim_by = IMP
+			}
+			352 = {
+				add_claim_by = IMP
+			}
+
+			create_wargoal = {
+				target = TUR
+				type = annex_everything
+			}
+			
+		}
 	}
 
 	focus = {
