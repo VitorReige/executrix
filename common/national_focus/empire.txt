@@ -1023,7 +1023,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = imp_vaders_fist
 		prerequisite = {
-			focus = imp_focus_assess_the_fuel_tanks
+			focus = imp_assess_the_fuel_tanks
 		}
 		prerequisite = {
 			focus = imp_doctrinal_reforms
@@ -1186,7 +1186,7 @@ focus_tree = {
 		id = imp_reach_out_to_the_balkan_powers
 		icon = GFX_unique_tech_10_medium
 		cost = 6
-		x = 18
+		x = 16
 		y = 0
 		available = {
 			has_idea = imp_moff_tarkin
@@ -1250,6 +1250,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = imp_begin_intergrating_turkey
+		icon = GFX_unique_tech_10_medium
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = imp_build_up_the_levant
+		prerequisite = {
+			focus = imp_reward_romania
+		}
+		prerequisite = {
+			focus = imp_assign_new_governors
+		}
+		completion_reward = { }
+	}
+
+	focus = {
 		id = imp_reach_out_to_turkey
 		icon = GFX_unique_tech_10_medium
 		cost = 6
@@ -1264,7 +1280,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-
+    
 	focus = {
 		id = imp_improve_romanian_forces
 		icon = GFX_unique_tech_10_medium
@@ -1317,7 +1333,20 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-
+    
+	focus = {
+		id = imp_establish_the_planning_office
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 0
+		y = 5
+		relative_position_id = imp_reach_out_to_the_balkan_powers
+		prerequisite = {
+			focus = imp_begin_establshing_a_shadow_admin
+			focus = imp_begin_intergrating_turkey
+		}
+		completion_reward = { }
+	}
 	
 	##MILITARY TREE##
 	focus = {
@@ -1510,7 +1539,14 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_improve_landing_ships
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_tech_bonus = {
+				name = logistics
+				uses = 1
+				bonus = 0.75
+				category = logistics_tech
+			}
+		 }
 	}
 
 	focus = {
@@ -1536,7 +1572,14 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_focus_on_hostile_enviroment_training
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_tech_bonus = {
+				name = policing
+				uses = 1
+				bonus = 0.75
+				category = military_police_tech
+			}
+		 }
 	}
 
 	focus = {
@@ -1573,6 +1616,26 @@ focus_tree = {
 	}
 
 	focus = {
+		id = imp_new_transports
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = imp_imperial_para_core
+		prerequisite = {
+			focus = imp_imperial_para_core
+		}
+		completion_reward = { 
+			add_tech_bonus = {
+				name = tranports
+				uses = 1
+				category = para_tech
+				bonus = 0.75
+			}
+		}
+	}
+
+	focus = {
 		id = imp_imperial_marines
 		icon = GFX_unique_tech_10_medium
 		cost = 4
@@ -1589,6 +1652,26 @@ focus_tree = {
 			focus = imp_imperial_para_core
 		}
 		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_landing_efforts
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = imp_imperial_marines
+		prerequisite = {
+			focus = imp_imperial_marines
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = landing
+				uses = 1
+				bonus = 1
+				category = marine_tech
+			}
+		 }
 	}
 
 	focus = {
@@ -1613,7 +1696,19 @@ focus_tree = {
 			
 		}
 	}
-
+	
+	focus = {
+		id = imp_extend_training
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = imp_imperial_mountaineer_core
+		prerequisite = {
+			focus = imp_imperial_mountaineer_core
+		}
+		completion_reward = { }
+	}
 
  #END OF THE FOCUS TREE 
 }
