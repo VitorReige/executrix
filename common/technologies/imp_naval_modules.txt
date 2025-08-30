@@ -25,7 +25,7 @@ technologies = {
 
 		folder = {
 			name = imp_naval_modules_folder
-			position = { x = 1 y = 6 }
+			position = { x = 1 y = 4 }
 		}
 	}
 
@@ -43,7 +43,7 @@ technologies = {
 
 		folder = {
 			name = imp_naval_modules_folder
-			position = { x = 4 y = 6 }
+			position = { x = 4 y = 4 }
 		}
 	}
 
@@ -61,11 +61,11 @@ technologies = {
 
 		folder = {
 			name = imp_naval_modules_folder
-			position = { x = 8 y = 6 }
+			position = { x = 8 y = 4 }
 		}
 	}
 
-	light_turbo_laser_4 = {
+	light_turbolaser_4 = {
 		research_cost = 1
 		start_year = 1942
 		enable_equipment_modules = {
@@ -73,8 +73,21 @@ technologies = {
 		}
 
 		folder = {
-			name = infantry_folder
-			position = { x = 10 y = 6 }
+			name = imp_naval_modules_folder
+			position = { x = 10 y = 4 }
+		}
+	}
+
+	medium_turbolaser_1 = {
+		research_cost = 1
+		start_year = 1936
+		enable_equipment_modules = {
+			ship_medium_turboblaster_1
+		}
+
+		folder = {
+			name = imp_naval_modules_folder
+			position = { x = 1 y = 6 }
 		}
 	}
 }

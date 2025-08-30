@@ -893,6 +893,19 @@ guiTypes = {
 				}
 				format = "UP"
 			}
+
+			gridBoxType = {
+				name = "medium_turbolaser_1_tree"
+				position = {
+					x = 150
+					y = 326
+				}
+				slotsize = {
+					width = 70
+					height = 70
+				}
+				format = "UP"
+			}
 		}
 
 		containerWindowType = {
