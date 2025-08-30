@@ -520,6 +520,9 @@ focus_tree = {
 			678 = {
 				add_compliance = 20
 			}
+			1010 = {
+				add_compliance = 20
+			}
 
 		}
 	}
@@ -717,6 +720,9 @@ focus_tree = {
 				add_core_of = IMP
 			}
 			678 = {
+				add_core_of = IMP
+			}
+			1010 = {
 				add_core_of = IMP
 			}
 
