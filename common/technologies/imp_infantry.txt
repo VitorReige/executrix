@@ -31,7 +31,7 @@ technologies = {
 	}
 	imp_weapon_2 = {
 		enable_equipments = {
-			imperial_equipment_1
+			imperial_inf_equipment_1
 		}
 
 		research_cost = 1
@@ -59,7 +59,7 @@ technologies = {
 
 	imp_weapon_3 = {
 		enable_equipments = {
-			imperial_equipment_2
+			imperial_inf_equipment_2
 		}
 
 		research_cost = 1
@@ -86,7 +86,7 @@ technologies = {
 	}
 	imp_weapon_4 = {
 		enable_equipments = {
-			imperial_equipment_3
+			imperial_inf_equipment_3
 		}
 
 		research_cost = 1

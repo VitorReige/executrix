@@ -54,9 +54,27 @@ technologies = {
 			Ship_turboblaster_3
 		}
 
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = light_turbolaser_4
+		}
+
 		folder = {
 			name = imp_naval_modules_folder
 			position = { x = 8 y = 6 }
+		}
+	}
+
+	light_turbo_laser_4 = {
+		research_cost = 1
+		start_year = 1942
+		enable_equipment_modules = {
+			Ship_turboblaster_4
+		}
+
+		folder = {
+			name = infantry_folder
+			position = { x = 10 y = 6 }
 		}
 	}
 }
