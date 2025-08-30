@@ -2,7 +2,7 @@ technologies = {
 
 	imp_submarine_1 = {
 		research_cost = 1
-		start_year = 1936
+		start_year = 1922
 		enable_equipments = {
 		 imp_submarine_hull_1
 		}
@@ -28,20 +28,34 @@ technologies = {
 
 	imp_submarine_2 = {
 		research_cost = 1
-		start_year = 1940
+		start_year = 1936
 		enable_equipments = {
 		 imp_submarine_hull_2
 		}
 
 		folder = {
 			name = imp_naval_folder
-			position = { x = 1 y = 5 }
+			position = { x = 1 y = 9 }
 		}
 		
 	}
+
+	imp_submarine_3 = {
+		research_cost = 1
+		start_year = 1940
+		enable_equipments = {
+			imp_submarine_hull_3
+		}
+
+		folder = {
+			name = imp_naval_folder
+			position = { x = 1 y = 12 }
+		}
+	}
+
 	imp_destroyer_1 = {
 		research_cost = 1
-		start_year = 1936
+		start_year = 1922
 		enable_equipments = {
 			imp_destroyer_1
 		}
@@ -67,7 +81,7 @@ technologies = {
 
 	imp_destroyer_2 = {
 		research_cost = 1
-		start_year = 1940
+		start_year = 1936
 		enable_equipments = {
 			imp_destroyer_2
 		}
@@ -81,7 +95,7 @@ technologies = {
 		}
 		folder = {
 			name = imp_naval_folder
-			position = { x = 1 y = 5 }
+			position = { x = 1 y = 9 }
 		}
 	}
 
@@ -126,7 +140,7 @@ technologies = {
 		}
 		folder = {
 			name = imp_naval_folder
-			position = { x = 1 y = 5 }
+			position = { x = 1 y = 9 }
 		}
 	}
 }

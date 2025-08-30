@@ -350,7 +350,7 @@ equipments = {
 
 	imp_submarine_hull_2 = {
 		
-		year = 1940
+		year = 1936
 
 		archetype = ship_hull_submarine
 		priority = 2000
@@ -383,6 +383,10 @@ equipments = {
 		}
 	}
 
+	imp_submarine_hull_3 = {
+
+		year = 1940
+	}
 
 	ship_hull_midget_submarine = {
 		abbreviation = "ssm"
