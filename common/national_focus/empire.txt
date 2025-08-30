@@ -485,6 +485,42 @@ focus_tree = {
 				add_core_of = IMP
 			}
 
+			291 = {
+				add_compliance = 20
+			}
+			
+			1011 = {
+				add_compliance = 20
+			}
+
+			676 = {
+				add_compliance = 20
+			}
+			292 = {
+				add_compliance = 20
+			}
+			854 = {
+				add_compliance = 20
+			}
+			855 = {
+				add_compliance = 20
+			}
+			679 = {
+				add_compliance = 20
+			}
+			856 = {
+				add_compliance = 20
+			}
+			857 = {
+				add_compliance = 20
+			}
+			858 = {
+				add_compliance = 20
+			}
+			678 = {
+				add_compliance = 20
+			}
+
 		}
 	}
 

@@ -387,7 +387,7 @@ equipments = {
 		year = 1940
 
 		archetype = ship_hull_submarine
-
+		parent = imp_submarine_hull_2
 		sub_visibility = 18
 		naval_speed = 22
 

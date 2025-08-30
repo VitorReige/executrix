@@ -9,7 +9,10 @@ technologies = {
 		path = {
 			leads_to_tech = proton_torpedoes_2
 		}
-
+		categories = {
+			cat_torpedoes
+			mio_cat_tech_all_submarine_and_modules
+		}
 		folder = {
 			name = imp_naval_modules_folder
 			position = { x = 1 y = 9 }
@@ -26,6 +29,10 @@ technologies = {
 		path = {
 			leads_to_tech = proton_torpedoes_3
 		}
+		categories = {
+			cat_torpedoes
+			mio_cat_tech_all_submarine_and_modules
+		}
 
 		folder = {
 			name = imp_naval_modules_folder
@@ -39,6 +46,10 @@ technologies = {
 		start_year = 1941
 		enable_equipment_modules = {
 			imp_proton_torpedo_3
+		}
+		categories = {
+			cat_torpedoes
+			mio_cat_tech_all_submarine_and_modules
 		}
 		folder = {
 			name = imp_naval_modules_folder
@@ -59,6 +70,11 @@ technologies = {
 			leads_to_tech = light_turbolaser_2
 		}
 
+		categories = {
+			dd_tech
+			mio_cat_tech_all_destroyer_and_modules
+		}
+
 		folder = {
 			name = imp_naval_modules_folder
 			position = { x = 1 y = 4 }
@@ -70,6 +86,11 @@ technologies = {
 		start_year = 1936
 		enable_equipment_modules = {
 			Ship_turboblaster_2
+		}
+
+		categories = {
+			dd_tech
+			mio_cat_tech_all_destroyer_and_modules
 		}
 
 		path = {
@@ -95,6 +116,11 @@ technologies = {
 			leads_to_tech = light_turbolaser_4
 		}
 
+		categories = {
+			dd_tech
+			mio_cat_tech_all_destroyer_and_modules
+		}
+
 		folder = {
 			name = imp_naval_modules_folder
 			position = { x = 8 y = 4 }
@@ -106,6 +132,11 @@ technologies = {
 		start_year = 1942
 		enable_equipment_modules = {
 			Ship_turboblaster_4
+		}
+
+		categories = {
+			dd_tech
+			mio_cat_tech_all_destroyer_and_modules
 		}
 
 		folder = {

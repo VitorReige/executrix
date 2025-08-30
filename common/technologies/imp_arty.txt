@@ -1,16 +1,41 @@
 technologies = {
-	imp_arty_1 = {
+	imp_artilery_1 = {
 		research_cost = 1
 		start_year = 1918
 		enable_equipments = {
 			imp_arty_1
 		}
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
 		path = {
 			leads_to_tech = imp_arty_2
 		}
+
 		folder = {
 			name = imp_arty_folder
-			position = { }
+			position = { x = 1 y = 1 }
+		}
+	}
+	imp_arty_2 = {
+		research_cost = 1
+		start_year = 1936
+		artillery = {
+			soft_attack = 0.1
+		}
+		artillery_brigade = {
+			soft_attack = 0.1
+		}
+		mot_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		category_self_propelled_artillery = {
+			soft_attack = 0.15
+		}
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
 		}
 	}
 }
