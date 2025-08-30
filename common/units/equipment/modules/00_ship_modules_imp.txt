@@ -149,6 +149,26 @@ equipment_modules = {
 		}
 	}
 
+	ship_medium_turbolaser_3 = {
+		category = ship_medium_battery_duel
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			lg_attack = 150
+			hg_attack = 100
+		}
+		multiply_stats = {
+			naval_speed = 0.05
+		}
+		add_average_stats = {
+			lg_armor_piercing = 130
+			hg_armor_piercing = 135
+		}
+		can_convert_from = {
+			module_category = ship_medium_battery_duel
+			convert_cost_ic = 60
+		}
+	}
+
 	imp_proton_torpedo_1 = {
 		category = ship_torpedo_sub
 		sfx = sfx_ui_sd_module_turret

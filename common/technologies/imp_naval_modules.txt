@@ -102,9 +102,25 @@ technologies = {
 			ship_medium_turboblaster_2
 		}
 
+		path = {
+			leads_to_tech = medium_turbolaser_3
+		}
+
 		folder = {
 			name = imp_naval_modules_folder
-			position = { x = 1 y = 6 }
+			position = { x = 4 y = 6 }
+		}
+	}
+
+	medium_turbolaser_3 = {
+		research_cost = 1
+		start_year = 1942
+		enable_equipment_modules = {
+			ship_medium_turbolaser_3
+		}
+		folder = {
+			name = imp_naval_modules_folder
+			position = { x = 8 y = 6 }
 		}
 	}
 }
