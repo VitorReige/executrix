@@ -113,291 +113,58 @@ guiTypes = {
 			}
 
 			
-			instantTextBoxType = {
-				name = "naval_year1"
-				position = { x = 30 y = 50 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1918"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
+			
+				instantTextBoxType = {
+					name = "naval_year1"
+					position = { x = 224 y = 20 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1922"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
 
-			instantTextBoxType = {
-				name = "naval_year2"
-				position = { x = 40 y = 50 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1920"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
+				instantTextBoxType = {
+					name = "naval_year2"
+					position = { x = 644 y = 20 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1936"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
 
-			instantTextBoxType = {
-				name = "naval_year3"
-				position = { x = 50 y = -795 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1924"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
+				instantTextBoxType = {
+					name = "naval_year3"
+					position = { x = 1064 y = 20 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1940"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
 
-			instantTextBoxType = {
-				name = "naval_year4"
-				position = { x = 60 y = 50 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1926"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year5"
-				position = { x = 70 y = 50 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1928"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year6"
-				position = { x = 80 y = -795 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1930"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year7"
-				position = { x = 90 y = -795 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1934"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year8"
-				position = { x = 100 y = 50 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1936"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year9"
-				position = { x = 110 y = 50 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1937"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year10"
-				position = { x = 120 y = -795 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1938"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year11"
-				position = { x = 130 y = 50 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1939"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year12"
-				position = { x = 140 y = 50 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1940"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year13"
-				position = { x = 150 y = 50 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1941"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year14"
-				position = { x = 160 y = 50 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1942"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year15"
-				position = { x = 170 y = 50 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1943"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year16"
-				position = { x = 180 y = 50 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1944"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year17"
-				position = { x = 190 y = 50 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1945"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year18"
-				position = { x = 200 y = 50 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1946"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year19"
-				position = { x = 200 y = 50 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1947"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year20"
-				position = { x = 210 y = 50 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1948"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year21"
-				position = { x = 220 y = 50 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1949"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year22"
-				position = { x = 230 y = 50 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1950"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
+				instantTextBoxType = {
+					name = "naval_year4"
+					position = { x = 1484 y = 20 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1944"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
 
 			
 			instantTextBoxType = {
@@ -570,291 +337,58 @@ guiTypes = {
 				position = { x=0 y=0 }
 			}
 
-			instantTextBoxType = {
-				name = "naval_year1"
-				position = { x = 30 y = -795 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1918"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
+			
+				instantTextBoxType = {
+					name = "naval_year1"
+					position = { x = 224 y = 20 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1922"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
 
-			instantTextBoxType = {
-				name = "naval_year2"
-				position = { x = 30 y = -655 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1920"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
+				instantTextBoxType = {
+					name = "naval_year2"
+					position = { x = 644 y = 20 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1936"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
 
-			instantTextBoxType = {
-				name = "naval_year3"
-				position = { x = 30 y = -515 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1924"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
+				instantTextBoxType = {
+					name = "naval_year3"
+					position = { x = 1064 y = 20 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1940"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
 
-			instantTextBoxType = {
-				name = "naval_year4"
-				position = { x = 30 y = -375 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1926"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year5"
-				position = { x = 30 y = -235 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1928"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year6"
-				position = { x = 30 y = -95 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1930"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year7"
-				position = { x = 30 y = 45 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1934"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year8"
-				position = { x = 30 y = 185 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1936"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year9"
-				position = { x = 30 y = 325 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1937"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year10"
-				position = { x = 30 y = 465 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1938"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year11"
-				position = { x = 30 y = 605 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1939"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year12"
-				position = { x = 30 y = 745 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1940"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year13"
-				position = { x = 30 y = 885 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1941"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year14"
-				position = { x = 30 y = 1025 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1942"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year15"
-				position = { x = 30 y = 1165 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1943"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year16"
-				position = { x = 30 y = 1305 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1944"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year17"
-				position = { x = 30 y = 1445 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1945"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year18"
-				position = { x = 30 y = 1585 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1946"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year19"
-				position = { x = 30 y = 1725 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1947"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year20"
-				position = { x = 30 y = 1865 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1948"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year21"
-				position = { x = 30 y = 2005 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1949"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "naval_year22"
-				position = { x = 30 y = 2145 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4 }
-				text = "1950"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
+				instantTextBoxType = {
+					name = "naval_year4"
+					position = { x = 1484 y = 20 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1944"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
 
 			containerWindowType = {
 				name = "tiled_window_transparent_transparent"
