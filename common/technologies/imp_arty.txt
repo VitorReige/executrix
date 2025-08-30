@@ -1,1 +1,16 @@
-technologies = {}
+technologies = {
+	imp_arty_1 = {
+		research_cost = 1
+		start_year = 1918
+		enable_equipments = {
+			imp_arty_1
+		}
+		path = {
+			leads_to_tech = imp_arty_2
+		}
+		folder = {
+			name = imp_arty_folder
+			position = { }
+		}
+	}
+}
