@@ -1587,7 +1587,14 @@ focus_tree = {
 			focus = imp_keep_the_current_stormtrooper
 		}
 		
-		completion_reward = { }
+		completion_reward = {
+			add_tech_bonus = {
+				name = landing1
+				bonus = 0.75
+				uses = 1
+				category = marine_tech
+			}
+		 }
 	}
 
 	focus = {
@@ -1654,7 +1661,14 @@ focus_tree = {
 			focus = imp_the_imperial_logistics_core
 			focus = imp_improve_policing_skills
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.99
+				name = imp_adapting_to_earth_tactics
+				category = land_doctrine
+				uses = 1
+			}
+		}
 	}
 
 	focus = {

@@ -164,11 +164,31 @@ technologies = {
 
 		path = {
 			research_cost_coeff = 1
+			leads_to_tech = imp_military_police_3
 		}
 
 		folder = {
 			name = imp_support_folder
 			position = { x = 4 y = 6 }
+		}
+	}
+
+	imp_military_police_3 = {
+		imp_military_police = {
+			suppression = 0.8
+			max_organisation = 0.7
+			urban = {
+				attack = 0.05
+			}
+		}
+
+		start_year = 1941
+
+		research_cost = 1
+
+		folder = {
+			name = imp_support_folder
+			position = { x = 4 y = 9 }
 		}
 	}
 
