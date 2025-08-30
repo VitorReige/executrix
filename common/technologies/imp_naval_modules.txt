@@ -5,11 +5,47 @@ technologies = {
 		enable_equipment_modules = {
 			imp_proton_torpedo_1
 		}
+
+		path = {
+			leads_to_tech = proton_torpedoes_2
+		}
+
 		folder = {
 			name = imp_naval_modules_folder
 			position = { x = 1 y = 9 }
 		}
 	}
+
+	proton_torpedoes_2 = {
+		research_cost = 1
+		start_year = 1938
+		enable_equipment_modules = {
+			imp_proton_torpedo_2
+		}
+
+		path = {
+			leads_to_tech = proton_torpedoes_3
+		}
+
+		folder = {
+			name = imp_naval_modules_folder
+			position = { x = 10 y = 9 }
+		}
+
+	}
+
+	proton_torpedoes_3 = {
+		research_cost = 1
+		start_year = 1941
+		enable_equipment_modules = {
+			imp_proton_torpedo_3
+		}
+		folder = {
+			name = imp_naval_modules_folder
+			position = { x = 15 y = 9  }
+		}
+	}
+
 
 	light_turbolaser_1 = {
 		research_cost = 1
@@ -121,6 +157,21 @@ technologies = {
 		folder = {
 			name = imp_naval_modules_folder
 			position = { x = 8 y = 6 }
+		}
+	}
+
+	###Imperial special naval projects##
+	imp_reactor_tech = {
+		enable_equipment_modules = {
+			imp_reactor_1
+		}
+		
+		research_cost = 1
+		start_year = 1936
+
+		#set at gamestart
+		allow = {
+			always = no
 		}
 	}
 }
