@@ -33,6 +33,11 @@ technologies = {
 		 imp_submarine_hull_2
 		}
 
+		categories = {
+			ss_tech
+			mio_cat_tech_all_submarine_and_modules
+		}
+
 		folder = {
 			name = imp_naval_folder
 			position = { x = 1 y = 9 }
@@ -45,6 +50,11 @@ technologies = {
 		start_year = 1940
 		enable_equipments = {
 			imp_submarine_hull_3
+		}
+
+		categories = {
+			mio_cat_tech_all_submarine_and_modules
+			ss_tech
 		}
 
 		folder = {

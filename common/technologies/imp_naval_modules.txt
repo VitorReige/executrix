@@ -156,6 +156,12 @@ technologies = {
 			leads_to_tech = medium_turbolaser_2
 		}
 
+		categories = {
+			cl_tech
+			ca_tech
+			mio_cat_tech_all_cruiser_and_modules
+		}
+
 		folder = {
 			name = imp_naval_modules_folder
 			position = { x = 1 y = 6 }
@@ -173,6 +179,12 @@ technologies = {
 			leads_to_tech = medium_turbolaser_3
 		}
 
+		categories = {
+			cl_tech
+			ca_tech
+			mio_cat_tech_all_cruiser_and_modules
+		}
+
 		folder = {
 			name = imp_naval_modules_folder
 			position = { x = 4 y = 6 }
@@ -185,6 +197,13 @@ technologies = {
 		enable_equipment_modules = {
 			ship_medium_turbolaser_3
 		}
+
+		categories = {
+			cl_tech
+			ca_tech
+			mio_cat_tech_all_cruiser_and_modules
+		}
+
 		folder = {
 			name = imp_naval_modules_folder
 			position = { x = 8 y = 6 }
