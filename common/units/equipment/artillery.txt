@@ -317,7 +317,7 @@ equipments = {
 	##########################################################################
 
 	imp_arty_1 = {
-		year = 1942
+		year = 1936
 
 		archetype = artillery_equipment
 		parent = artillery_equipment_1
@@ -334,5 +334,41 @@ equipments = {
 			steel = 3
 		}
 	}
+	imp_arty_2 = {
+		year = 1940
 
+		archetype = artillery_equipment
+		parent = imp_arty_1
+		priority = 50
+		visual_level = 2
+
+		defense = 20
+		breakthrough = 10
+		soft_attack = 38
+
+		build_cost_ic = 5
+		resources = {
+			tungsten = 2
+			steel = 4
+		}
+	}
+	imp_arty_3 = {
+		year = 1943
+
+		archetype = artillery_equipment
+		parent = imp_arty_1
+		priority = 50
+		visual_level = 2
+
+		defense = 23
+		breakthrough = 13
+		soft_attack = 40
+
+		build_cost_ic = 5.5
+
+		resources = {
+			tungsten = 4
+			steel = 4
+		}
+	}
 }

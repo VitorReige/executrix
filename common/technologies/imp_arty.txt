@@ -37,5 +37,71 @@ technologies = {
 			artillery
 			mio_cat_all_artillery_equipment
 		}
+		path = {
+			leads_to_tech = imp_arty_3
+		}
+		folder = {
+			name = imp_arty_folder
+			position = { x = 1 y = 3 }
+		}
+	}
+	imp_arty_3 = {
+		research_cost = 1
+		start_year = 1940
+		enable_equipments = {
+			imp_arty_2
+		}
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+		path = {
+			leads_to_tech = imp_arty_4
+		}
+		folder = {
+			name = imp_arty_folder
+			position = { x = 1 y = 6 }
+		}
+	}
+
+	imp_arty_4 = {
+		research_cost = 1
+		start_year = 1942
+		artillery = {
+			hard_attack = 0.15
+		}
+		artillery_brigade = {
+			hard_attack = 0.15
+		}
+		mot_artillery_brigade = {
+			hard_attack = 0.15
+		}
+		category_self_propelled_artillery = {
+			hard_attack = 0.15
+		}
+		path = {
+			leads_to_tech = imp_arty_5
+		}
+		folder = {
+			name = imp_arty_folder
+			position = { x = 1 y = 9 }
+		}
+	}
+
+
+	imp_arty_5 = {
+		research_cost = 1
+		start_year = 1944
+		enable_equipments = {
+			imp_arty_3
+		}
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+		folder = {
+			name = imp_arty_folder
+			position = { x = 1 y = 11 }
+		}
 	}
 }

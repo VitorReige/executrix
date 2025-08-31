@@ -1415,6 +1415,9 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_take_the_levant
 		}
+		available = {
+			
+		}
 		completion_reward = { }
 	}
 
@@ -1431,7 +1434,9 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_assign_new_governors
 		}
-		completion_reward = { }
+		completion_reward = {
+			
+		}
 	}
 
 	focus = {

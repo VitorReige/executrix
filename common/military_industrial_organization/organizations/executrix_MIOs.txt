@@ -30,7 +30,7 @@ kuat_drive_organization = {
 		ship_hull_cruiser
 		ship_hull_heavy
 	}
-	research_categories = {  }
+	research_categories = { ca_tech cl_tech bb_tech bc_tech cv_tech }
 
 }
 
