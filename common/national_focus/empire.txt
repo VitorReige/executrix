@@ -1221,22 +1221,111 @@ focus_tree = {
 	}
 
 
+	
+
+	
+
 
 
 	###INTERNATIONAL TREE###
 
 	focus = {
-		id = imp_reach_out_to_the_balkan_powers
-		icon = GFX_unique_tech_10_medium
-		cost = 6
-		x = 16
-		y = 0
+	 id = imp_romanian_agreement
+		icon = GFX_focus_invite_romania
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
 		available = {
-			has_idea = imp_moff_tarkin
+			IMP = {
+				has_government = imperialism
+				is_subject = no
+				has_completed_focus = imp_the_role_of_vader
+			}
+			country_exists = ROM
+			ROM = {
+				is_subject = no
+				NOT = {
+					has_war_with = IMP
+				}
+				is_in_faction = no
+			}
 		}
+
+		x = 15
+		y = 0
+
 		completion_reward = {
-			
-		 }
+			ROM = {
+				add_ideas = empire_sympathy
+				add_popularity = {
+					ideology = imperialism
+					popularity = 0.05
+				}
+			}
+			ROM = {
+				add_tech_bonus = {
+				   bonus = 0.5
+					 ahead_reduction = 2.0
+				   uses = 3
+				   category = electronics
+				}
+			}
+			ROM = {
+				diplomatic_relation = {
+					country = IMP
+					relation = non_aggression_pact
+					active = yes
+				}
+				diplomatic_relation = {
+					country = TUR
+					relation = guarantee
+					active = no
+				}
+			}
+			TUR = { 
+				add_opinion_modifier = {
+					target = ROM
+					modifier = western_betrayal
+				}
+			}
+		}
+
+	}
+
+	focus = {
+		id = imp_romanian_integration
+		icon = GFX_focus_rom_preserve_romania
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = imp_romanian_agreement
+		}
+
+		available = {
+			ROM = {
+				is_subject = no
+				imperialism > 0.1
+			}
+		}
+
+
+		x = 0
+		y = 1
+		relative_position_id = imp_romanian_agreement
+
+		completion_reward = {
+			ROM = {
+				set_politics = {
+					ruling_party = imperialism
+				}
+				set_cosmetic_tag = ALL
+				
+			}
+			set_autonomy = {
+				target = ROM
+				autonomy_state = autonomy_dominion
+			}
+		}
 	}
 
 	focus = {
@@ -1245,9 +1334,9 @@ focus_tree = {
 		cost = 6
 		x = -2
 		y = 1
-		relative_position_id = imp_reach_out_to_the_balkan_powers
+		relative_position_id = imp_romanian_integration
 		prerequisite = {
-			focus = imp_reach_out_to_the_balkan_powers
+			focus = imp_romanian_integration
 		}
 		mutually_exclusive = {
 			focus = imp_reach_out_to_turkey
@@ -1272,16 +1361,36 @@ focus_tree = {
 	}
 
 	focus = {
-		id = imp_build_up_the_levant
+		id = imp_take_the_levant
 		icon = GFX_unique_tech_10_medium
 		cost = 4
 		x = 0
 		y = 1
 		relative_position_id = imp_claim_turkish_territory
+		available = {
+			has_army_manpower = { size > 20000 }
+		}
 		prerequisite = {
 			focus = imp_claim_turkish_territory
 		}
-		completion_reward = { }
+		completion_reward = { 
+			annex_country = {
+				target = SYR
+			}
+			
+			annex_country = {
+				target = LEB
+			}
+
+			annex_country = {
+				target = JOR
+			}
+
+			annex_country = {
+				target = PAL
+			}
+
+		}
 	}
 
 	focus = {
@@ -1290,9 +1399,9 @@ focus_tree = {
 		cost = 5
 		x = 1
 		y = 1
-		relative_position_id = imp_build_up_the_levant
+		relative_position_id = imp_take_the_levant
 		prerequisite = {
-			focus = imp_build_up_the_levant
+			focus = imp_take_the_levant
 		}
 		completion_reward = { }
 	}
@@ -1303,9 +1412,9 @@ focus_tree = {
 		cost = 4
 		x = -1
 		y = 1
-		relative_position_id = imp_build_up_the_levant
+		relative_position_id = imp_take_the_levant
 		prerequisite = {
-			focus = imp_build_up_the_levant
+			focus = imp_take_the_levant
 		}
 		completion_reward = { }
 	}
@@ -1316,7 +1425,7 @@ focus_tree = {
 		cost = 10
 		x = 0
 		y = 2
-		relative_position_id = imp_build_up_the_levant
+		relative_position_id = imp_take_the_levant
 		prerequisite = {
 			focus = imp_reward_romania
 		}
@@ -1327,14 +1436,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = imp_reach_out_to_turkey
+		id = imp_reach_out_to_turkish_opp
 		icon = GFX_unique_tech_10_medium
 		cost = 6
 		x = 2
 		y = 1
-		relative_position_id = imp_reach_out_to_the_balkan_powers
+		relative_position_id = imp_romanian_integration
 		prerequisite = {
-			focus = imp_reach_out_to_the_balkan_powers
+			focus = imp_romanian_integration
 		}
 		mutually_exclusive = {
 			focus = imp_claim_turkish_territory
@@ -1348,9 +1457,9 @@ focus_tree = {
 		cost = 5
 		x = 0
 		y = 1
-		relative_position_id = imp_reach_out_to_turkey
+		relative_position_id = imp_reach_out_to_turkish_opp
 		prerequisite = {
-			focus = imp_reach_out_to_turkey
+			focus = imp_reach_out_to_turkish_opp
 		}
 		completion_reward = { }
 	}
@@ -1401,7 +1510,7 @@ focus_tree = {
 		cost = 4
 		x = 0
 		y = 5
-		relative_position_id = imp_reach_out_to_the_balkan_powers
+		relative_position_id = imp_romanian_integration
 		prerequisite = {
 			focus = imp_begin_establshing_a_shadow_admin
 			focus = imp_begin_intergrating_turkey
