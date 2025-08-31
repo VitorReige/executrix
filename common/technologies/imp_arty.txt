@@ -1,4 +1,5 @@
 technologies = {
+	#standard arty#
 	imp_artilery_1 = {
 		research_cost = 1
 		start_year = 1918
@@ -11,6 +12,9 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = imp_arty_2
+		}
+		path = {
+			leads_to_tech = imp_aa_1
 		}
 
 		folder = {
@@ -88,7 +92,6 @@ technologies = {
 		}
 	}
 
-
 	imp_arty_5 = {
 		research_cost = 1
 		start_year = 1944
@@ -102,6 +105,23 @@ technologies = {
 		folder = {
 			name = imp_arty_folder
 			position = { x = 1 y = 11 }
+		}
+	}
+	#AA#
+	imp_aa_1 = {
+		research_cost = 1
+		start_year = 1936
+		enable_equipments = {
+			imp_aa_1
+		}
+		categories = {
+			artillery
+			cat_anti_air
+			mio_cat_all_artillery_equipment
+		}
+		folder = {
+			name = imp_arty_folder
+			position = { x = -3 y = 2 }
 		}
 	}
 }

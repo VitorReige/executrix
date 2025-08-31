@@ -371,4 +371,5 @@ equipments = {
 			steel = 4
 		}
 	}
+
 }
