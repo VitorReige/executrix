@@ -1367,7 +1367,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = imp_claim_turkish_territory
 		available = {
-			has_army_manpower = { size > 20000 }
+			has_army_manpower = { size > 45000 }
 		}
 		prerequisite = {
 			focus = imp_claim_turkish_territory
