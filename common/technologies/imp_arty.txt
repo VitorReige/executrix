@@ -185,7 +185,7 @@ technologies = {
 
 		folder = {
 			name = imp_arty_folder
-			position = { x = 3 y = 2 }
+			position = { x = 7 y = 2 }
 		}
 	}
 	imp_at_2 = {
@@ -215,7 +215,7 @@ technologies = {
 		}
 		folder = {
 			name = imp_arty_folder
-			position = { x = 3 y = 4 }
+			position = { x = 7 y = 4 }
 		}
 	}
 }
