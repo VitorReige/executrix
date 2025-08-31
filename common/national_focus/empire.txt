@@ -1338,7 +1338,7 @@ focus_tree = {
 			focus = imp_romanian_integration
 		}
 		mutually_exclusive = {
-			focus = imp_reach_out_to_turkey
+			focus = imp_reach_out_to_turkish_opp
 		}
 		completion_reward = {
 			344 = {
