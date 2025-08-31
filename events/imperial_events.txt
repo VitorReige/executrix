@@ -149,16 +149,19 @@ country_event = {
 				limit = {
 					FROM = {
 						owns_state = 765
+						owns_state = 1014
 					}
 				}
 				IMP = {
 					if = {
 						limit = { has_country_flag = tarkin_flag }
-						SAU = { transfer_state = 765 add_state_core = 765}
+						SAU = { transfer_state = 765 add_state_core = 765 transfer_state = 1014 add_state_core = 1014 }
 					}
 					else = {
 						transfer_state = 765
 						add_state_core = 765
+						transfer_state = 1014
+						add_state_core = 1014
 					}
 				}
 			}
