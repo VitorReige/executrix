@@ -83,4 +83,26 @@ equipments = {
 			steel = 3
 		}
 	}
+	##Imperial tech##
+	imp_at_1 = {
+		year = 1936
+
+		archetype = anti_tank_equipment
+		parent = anti_tank_equipment_1
+		priority = 90
+		visual_level = 2
+
+		hard_attack = 30
+		ap_attack = 125
+
+		build_cost_ic = 4
+
+		resources = {
+			tungsten = 1
+			chromium = 1
+			steel = 2
+		}
+
+
+	}
 }
