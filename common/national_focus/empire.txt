@@ -485,13 +485,15 @@ focus_tree = {
 				add_core_of = IMP
 			}
 
+			1011 = {
+				add_core_of = IMP
+			}
+
+
 			291 = {
 				add_compliance = 20
 			}
 			
-			1011 = {
-				add_compliance = 20
-			}
 
 			676 = {
 				add_compliance = 20
@@ -676,9 +678,6 @@ focus_tree = {
 				add_core_of = IMP
 			}
 			
-			1011 = {
-				add_core_of = IMP
-			}
 
 			676 = {
 				add_core_of = IMP
