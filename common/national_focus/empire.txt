@@ -1465,7 +1465,20 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_reach_out_to_turkish_opp
 		}
-		completion_reward = { }
+		completion_reward = {
+			ROM = {
+				add_tech_bonus = {
+					name = romanian
+					bonus = 0.75
+					uses = 2
+					category = infantry_weapons
+				}
+				add_equipment_to_stockpile = {
+					type = imperial_inf_equipment_2
+					amount = 3500
+				}
+			}
+		 }
 	}
 
 	focus = {
