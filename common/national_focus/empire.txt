@@ -308,7 +308,7 @@ focus_tree = {
 	focus = {
 		id = imp_salvage_the_armouries
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 2
 		prerequisite = {
 			focus = imp_begining_ship_repairs
 		}
@@ -335,7 +335,7 @@ focus_tree = {
 	focus = {
 		id = imp_equip_the_garrisons
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = imp_salvage_the_armouries
 		}
@@ -366,7 +366,7 @@ focus_tree = {
 	focus = {
 		id = imp_setting_up_defences
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = imp_salvage_the_armouries
 		}
@@ -413,7 +413,7 @@ focus_tree = {
 	focus = {
 		id = imp_begin_fixing_the_reactor
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 2
 		prerequisite = {
 			focus = imp_begining_ship_repairs
 		}
@@ -435,7 +435,7 @@ focus_tree = {
 	focus = {
 		id = imp_secure_the_fuel_rods
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = imp_begin_fixing_the_reactor
 		}
@@ -458,7 +458,7 @@ focus_tree = {
 	focus = {
 		id = imp_start_water_filtration
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = imp_begin_fixing_the_reactor
 		}
@@ -553,7 +553,7 @@ focus_tree = {
 	focus = {
 		id = imp_raising_new_conscripts
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = imp_deploy_the_remaining_troops
 		}
@@ -573,7 +573,7 @@ focus_tree = {
 	focus = {
 		id = imp_fortify_the_crash_site
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = imp_deploy_the_remaining_troops
 		}
@@ -623,7 +623,7 @@ focus_tree = {
 	focus = {
 		id = imp_focus_on_radar
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = imp_stage_one_reactor_repairs
 		}
