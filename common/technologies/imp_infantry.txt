@@ -102,6 +102,88 @@ technologies = {
 			position = { x = 0 y = 9 }
 		}
 	}
+
+	sw_infantry_at = {
+
+		category_all_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		
+		path = {
+			leads_to_tech = sw_infantry_at2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = imp_infantry_folder
+			position = { x = 2 y = @1942 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+		}
+	}
+	
+	sw_infantry_at2 = {
+
+		category_all_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1943
+		folder = {
+			name = imp_infantry_folder
+			position = { x = 2 y = @1943 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+		}
+	}
+
 	##armoured cars##
 	speeder1 = { 
 
