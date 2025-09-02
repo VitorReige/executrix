@@ -1656,6 +1656,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = imp_begin_dockyard_expansions
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		prerequisite = {
+			focus = imp_train_local_officers
+		}
+		x = 8
+		y = 1
+		relative_position_id = imp_train_local_officers
+		completion_reward = {
+			
+		 }
+	}
+
+
+	focus = {
 		id = imp_start_expanding_the_mechanized_core
 		icon = GFX_unique_tech_10_medium
 		cost = 4
