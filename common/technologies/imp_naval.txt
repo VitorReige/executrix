@@ -69,6 +69,11 @@ technologies = {
 		enable_equipments = {
 			imp_destroyer_1
 		}
+
+		enable_equipment_modules = {
+			imp_light_engine_1
+		}
+
 		path = {
 			leads_to_tech = imp_destroyer_2
 		}
