@@ -177,7 +177,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = imp_infantry_folder
-			position = { x = 4 y = 2 }
+			position = { x = 4 y = 3 }
 		}
 		
 		categories = {
