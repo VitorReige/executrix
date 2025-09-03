@@ -240,4 +240,15 @@ equipment_modules = {
 			fuel_consumption = 0.3
 		}
 	}
+	imp_light_engine_2 = {
+		category = small_ship_engine
+		sfx = sfx_ui_sd_module_turret
+		multiply_stats = {
+			naval_range = 0.35
+			naval_speed = 0.55
+			build_cost_ic = 0.13
+			fuel_consumption = 0.3
+
+		}
+	}
 }
