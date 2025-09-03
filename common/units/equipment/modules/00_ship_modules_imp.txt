@@ -242,7 +242,6 @@ equipment_modules = {
 	}
 	imp_light_engine_2 = {
 		category = small_ship_engine
-		sfx = sfx_ui_sd_module_turret
 		multiply_stats = {
 			naval_range = 0.35
 			naval_speed = 0.55
@@ -254,7 +253,6 @@ equipment_modules = {
 
 	imp_cruiser_engine_1 = {
 		category = medium_ship_engine
-		sfx = sfx_ui_sd_module_turret
 		multiply_stats = {
 			naval_range = 0.2
 			naval_speed = 0.5
