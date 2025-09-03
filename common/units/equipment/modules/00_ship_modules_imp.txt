@@ -251,4 +251,15 @@ equipment_modules = {
 
 		}
 	}
+
+	imp_cruiser_engine_1 = {
+		category = medium_ship_engine
+		sfx = sfx_ui_sd_module_turret
+		multiply_stats = {
+			naval_range = 0.2
+			naval_speed = 0.5
+			build_cost_ic = 0.13
+			fuel_consumption = 0.2
+		}
+	}
 }
