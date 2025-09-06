@@ -450,6 +450,18 @@ guiTypes = {
 				}
 				format = "UP"
 			}
+			gridBoxType = {
+				name = "heavy_turbolaser_1_tree"
+				position = {
+					x = 150
+					y = 326
+				}
+				slotsize = {
+					width = 70
+					height = 70
+				}
+				format = "UP"
+			}
 		}
 
 		containerWindowType = {
@@ -1965,6 +1977,41 @@ guiTypes = {
 					name = "Background"
 					quadTextureSprite ="GFX_tiled_research_bg"
 				}
+			}
+
+			gridBoxType = {
+				name = "imp_small_airframe_tree"
+				position = { x = 100 y = 32 }
+				size = { width = 400 height = 1000 }
+				slotsize = {
+					width = 60
+					height = 70
+				}
+				format = "UP"
+			}
+
+			gridBoxType = {
+				name = "imp_medium_airframe_tree"
+				position = {
+					x = 235
+					y = 32
+				}
+				size = {
+					width = 400
+					height = 1000
+				}
+				slotsize = {
+					width = 60
+					height = 70
+				}
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "imp_large_airframe_tree"
+				position = { x = 715 y = 32 }
+				size = { width = 200 height = 1000 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
 			}
 
 			gridboxtype = {

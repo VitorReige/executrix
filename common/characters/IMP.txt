@@ -734,6 +734,8 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/IMP/portrait_freja_covell.dds"
+			}
+			army = {
 				small="GFX_idea_freja_covell"
 			}
 		}	
