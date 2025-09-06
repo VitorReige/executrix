@@ -929,7 +929,7 @@ IMP_turkey_puppet_decisions = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 792
+				state = 797
 			}
 		}
 
@@ -972,7 +972,6 @@ IMP_turkey_puppet_decisions = {
 		}
 	}
 	imp_extend_imperialism_1 = {
-		icon = border_war
 		visible = {
 			has_completed_focus = imp_begin_propaganda_campaigns
 		}
@@ -990,7 +989,6 @@ IMP_turkey_puppet_decisions = {
 		}
 	}
 	imp_extend_imperialism_2 = {
-		icon = border_war
 		visible = {
 			TUR = {
 				imperialism = >0.1
@@ -1026,7 +1024,6 @@ IMP_turkey_puppet_decisions = {
 		}
 	}
 	imp_take_our_claims = {
-		icon = border_war
 		visible = {
 			TUR = {
 				imperialism = >0.29
