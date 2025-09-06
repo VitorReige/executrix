@@ -1211,8 +1211,7 @@ ideas = {
 				land_reinforce_rate = 0.07
 				training_time_factor = -0.1
 				army_attack_factor = 0.05
-				naval_detection = 0.05
-				trait_ironside_xp_gain_factor = 0.1
+				
 			}
 		}
 		
@@ -1235,8 +1234,11 @@ ideas = {
 				training_time_factor = -0.15
 				army_org_factor = 0.05
 				army_attack_factor = 0.05
+				naval_detection = 0.05
+				trait_ironside_xp_gain_factor = 0.1
 			}
 		}
+
 
 		balkan_bonus = {
 			allowed = {
