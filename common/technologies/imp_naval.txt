@@ -164,4 +164,21 @@ technologies = {
 			position = { x = 1 y = 9 }
 		}
 	}
+
+	imp_bb_1 = {
+		enable_equipments = {
+			imp_bb_1
+		}
+		research_cost = 1
+		start_year = 1936
+
+		#set at gamestart
+		allow = {
+			always = no
+		}
+		folder = {
+			name = imp_naval_folder
+			position = { x = 1 y = 2 }
+		}
+	}
 }
