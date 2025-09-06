@@ -76,7 +76,7 @@ technologies = {
 		}
 		folder = {
 			name = imp_infantry_folder
-			position = { x = 0 y = 4.5 }
+			position = { x = 0 y = 5 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -99,7 +99,7 @@ technologies = {
 
 		folder = {
 			name = imp_infantry_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = 9.5 }
 		}
 
 		categories = {
@@ -132,7 +132,7 @@ technologies = {
 
 		folder = {
 			name = imp_infantry_folder
-			position = { x = 0 y = 10.5 }
+			position = { x = 0 y = 12.5 }
 		}
 	}
 
@@ -151,7 +151,7 @@ technologies = {
 
 		folder = {
 			name = imp_infantry_folder
-			position = { x = 0 y = 13 }
+			position = { x = 0 y = 15.5 }
 		}
 	}
 

@@ -1385,7 +1385,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			667 = {
+			677 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -1735,7 +1735,14 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_destroyer_concepts
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_tech_bonus = {
+				name = imp_think_big
+				uses = 1
+				category = bb_tech
+				bonus = 0.99
+			}
+		}
 	}
 
 	focus = {
@@ -1752,7 +1759,40 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_destroyer_concepts
 		}
-		completion_reward = { }
+		completion_reward = {
+			IF = {
+				limit = {
+					has_completed_focus = imp_specialise_the_storm_troopers
+				}
+
+				swap_ideas = {
+					remove_idea = imp_specialised_storm_troopers
+					add_idea = imp_specialised_storm_troopers_3
+				}
+
+				else_if = {
+					limit = { has_idea = imp_specialised_storm_troopers_2 }
+
+					swap_ideas = {
+						remove_idea = imp_specialised_storm_troopers_2
+						add_idea = imp_specialised_storm_troopers_3
+					}
+				}
+
+				else_if = {
+				 limit = {
+					has_completed_focus = imp_keep_the_current_stormtrooper
+				 }
+				 swap_ideas = {
+				  remove_idea = IMP_Imperial_Army
+				  add_idea = IMP_Imperial_Army2
+			     }
+				}
+				
+			}
+
+			
+		 }
 	}
 
 	focus = {
@@ -1768,7 +1808,14 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_destroyer_concepts
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_tech_bonus = {
+				name = imp_cruiser
+				uses = 1
+				bonus = 0.9
+				category = ca_tech
+			}
+		 }
 	}
 
 	focus = {
@@ -1797,7 +1844,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = imp_specialise_the_storm_troopers
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_ideas = IMP_Imperial_Army
+		}
 	}
 
 	focus = {
@@ -2040,9 +2089,21 @@ focus_tree = {
 			focus = imp_landing_efforts
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = imp_specialised_storm_troopers
-				add_idea = imp_specialised_storm_troopers_2
+			if = {
+				limit = {
+					has_completed_focus = imp_naval_academy
+			    }
+				swap_ideas = {
+					remove_idea = imp_specialised_storm_troopers_3
+					add_idea = imp_specialised_storm_troopers_4
+				}
+			}
+			else_if = {
+				limit = { has_idea = imp_specialised_storm_troopers }
+				swap_ideas = {
+					remove_idea = imp_specialised_storm_troopers
+					add_idea = imp_specialised_storm_troopers_2
+				}
 			}
 		}
 	}
