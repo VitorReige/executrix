@@ -1449,7 +1449,12 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = imp_claim_turkish_territory
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_command_power = 25
+			TUR = {
+				add_ideas = TUR_imp_influence
+			}
+		}
 	}
     
 	focus = {

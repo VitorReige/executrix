@@ -2602,7 +2602,24 @@ ideas = {
 			}
 		}
 
+		TUR_imp_influence = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+			 always = no	
+			}
+			
+			removal_cost = -1
 
+			picture = gfx_droid
+
+			modifier = {
+				political_advisor_cost_factor = 0.15
+				stability_weekly_factor = -0.4
+			}
+
+		}
 
 	}
 
