@@ -13,8 +13,7 @@ IMP_rise_of_the_empire_decisions = {
 	visible = {
 		is_ai = no
 		NOT = { original_tag = IMP }
-		NOT = { original_tag = REA }
-		NOT = { original_tag = MDO }
+		
 	}
 }
 
@@ -34,7 +33,7 @@ IMP_wargoals_decisions = {
 		original_tag = IMP
 	}
 	visible = {
-		has_completed_focus = imp_war_plan
+		has_completed_focus = im
 	}
 }
 

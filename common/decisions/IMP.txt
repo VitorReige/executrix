@@ -292,7 +292,10 @@ IMP_wargoals_decisions = {
 						}
 					}
 
-					else = { transfer_state = 294 add_state_core = 294 }
+					else = { transfer_state = 294 add_state_core = 294 
+					         transfer_state = 1015 add_state_core = 1015
+							 transfer_state = 1016 add_state_core = 1016
+							}
 				}
 			}
 		}
@@ -371,7 +374,47 @@ IMP_wargoals_decisions = {
 			}
 		}
 	}
+	intimidate_syria = {
+		available = {
+			has_army_manpower = {
+				size >35000
+			}
 
+			strength_ratio = {
+				tag = SYR
+				ratio > 2
+			}
+			OR = {
+				NOT = { country_exists = SYR }
+				SYR = { is_subject_of = IMP }
+			}
+		}
+		visible = {
+			always = yes
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+
+		days_remove = 50
+
+		cost = 15
+
+		fire_only_once = yes
+
+		remove_effect = {
+			transfer_state = 554
+			add_state_core = 554
+			transfer_state = 680
+			add_state_core = 680
+			transfer_state = 677
+			add_state_core = 677
+			transfer_state = 799
+			add_state_core = 799
+		}
+	}	
+}
 
 
 IMP_campaign_decisions = {
