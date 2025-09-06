@@ -71,7 +71,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			imp_light_engine_1
+			imp_light_ship_engine_1
 		}
 
 		path = {
@@ -101,7 +101,7 @@ technologies = {
 			imp_destroyer_2
 		}
 		enable_equipment_modules = {
-			imp_light_engine_2
+			imp_light_ship_engine_2
 		}
 		allow_branch = {
 			has_dlc = "Man the Guns"
