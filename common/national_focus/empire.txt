@@ -882,6 +882,7 @@ focus_tree = {
 					days = 1
 				}
 			}
+			custom_effect_tooltip = imp_indimidation_tt
 		 }
 	}
 
@@ -1012,6 +1013,7 @@ focus_tree = {
 				remove_idea = no_industry
 				add_idea = small_industry
 			}
+			custom_effect_tooltip = imp_industry_tt
 		}
 	}
 
@@ -1538,7 +1540,10 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_improve_romanian_forces
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip =  imp_turkey_decisions_tt
+		 }
 	}
     
 	focus = {
@@ -1555,8 +1560,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 100
-			custom_effect_tooltip = imp_turkey_decisions
-		 }
+			unlock_decision_category_tooltip = imp_planning_tt
+		}
 	}
 	
 	##MILITARY TREE##
