@@ -1553,7 +1553,10 @@ focus_tree = {
 			focus = imp_begin_propaganda_campaigns
 			focus = imp_turkish_geological_surveys
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = imp_turkey_decisions
+		 }
 	}
 	
 	##MILITARY TREE##
@@ -1673,7 +1676,11 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_adapting_to_earth_tactics
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_ideas = IMP_Imperial_Army
+			army_experience = 25
+			add_command_power = 20
+		}
 	}
 
 	focus = {
