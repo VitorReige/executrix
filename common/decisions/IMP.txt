@@ -119,6 +119,11 @@ IMP_statebuilding_decisions = {
 				amount = 18
 				state = 291
 			}
+			add_resource = {
+				type = steel
+				amount = 5
+				state = 554
+			}
 			set_country_flag = materials_flag #this unlocks the synthetic materials focus#
 		}
 	}
@@ -869,7 +874,7 @@ IMP_turkey_puppet_decisions = {
 
 		complete_effect = {
 			random_list = {
-				50 = {
+				55 = {
 					add_state_core = 352
 					add_political_power = 50
 					TUR = {
@@ -913,7 +918,7 @@ IMP_turkey_puppet_decisions = {
 				is_in_faction_with = TUR
 				TUR = { is_puppet_of = IMP }
 			}
-			792 = {
+			797 = {
 				is_controlled_by = TUR
 			}
 		}
@@ -936,8 +941,8 @@ IMP_turkey_puppet_decisions = {
 
 		complete_effect = {
 			random_list = {
-				50 = {
-					add_state_core =  792 
+				55 = {
+					add_state_core =  797 
 					add_political_power = 50
 					TUR = {
 						add_ideas = imp_control_1

@@ -1488,10 +1488,10 @@ focus_tree = {
 		icon = GFX_unique_tech_10_medium
 		cost = 3
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = imp_improve_romanian_forces
 		prerequisite = {
-			focus = imp_improve_romanian_forces
+			focus = imp_begin_establshing_a_shadow_admin
 		}
 		completion_reward = { }
 	}
@@ -1501,10 +1501,10 @@ focus_tree = {
 		icon = GFX_unique_tech_10_medium
 		cost = 4
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = imp_improve_romanian_forces
 		prerequisite = {
-			focus = imp_improve_romanian_forces
+			focus = imp_begin_establshing_a_shadow_admin
 		}
 		completion_reward = { }
 	}
@@ -1514,11 +1514,10 @@ focus_tree = {
 		icon = GFX_unique_tech_10_medium
 		cost = 5
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = imp_improve_romanian_forces
 		prerequisite = {
-			focus = imp_begin_propaganda_campaigns
-			focus = imp_turkish_geological_surveys
+			focus = imp_improve_romanian_forces
 		}
 		completion_reward = { }
 	}
@@ -1531,8 +1530,9 @@ focus_tree = {
 		y = 5
 		relative_position_id = imp_romanian_integration
 		prerequisite = {
-			focus = imp_begin_establshing_a_shadow_admin
 			focus = imp_begin_intergrating_turkey
+			focus = imp_begin_propaganda_campaigns
+			focus = imp_turkish_geological_surveys
 		}
 		completion_reward = { }
 	}
