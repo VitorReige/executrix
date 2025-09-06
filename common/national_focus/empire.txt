@@ -1514,7 +1514,9 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_begin_establshing_a_shadow_admin
 		}
-		completion_reward = { }
+		completion_reward = { 
+			custom_effect_tooltip = imp_puppet_decisions_tt
+		}
 	}
 
 	focus = {

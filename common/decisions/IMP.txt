@@ -971,6 +971,83 @@ IMP_turkey_puppet_decisions = {
 			}
 		}
 	}
+	imp_extend_imperialism_1 = {
+		icon = border_war
+		allowed = {
+			has_completed_focus = imp_begin_propaganda_campaigns
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 25
+
+		complete_effect = {
+			TUR = {
+				add_ideas = empire_sympathy
+			}
+		}
+	}
+	imp_extend_imperialism_2 = {
+		icon = border_war
+		allowed = {
+			TUR = {
+				imperialism = >0.1
+			}
+		}
+		fire_only_once = no
+		cost = 150
+		days_remove = 50
+
+		complete_effect = {
+			
+			50 = {
+			    TUR = {
+				 add_popularity = {
+					 ideology = imperialism
+					 popularity = 0.05
+				   } 
+			    }
+		   }
+		}
+	}
+	imp_take_our_claims = {
+		icon = border_war
+		allowed = {
+			TUR = {
+				imperialism = >0.29
+			}
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 40
+
+		complete_effect = {
+			transfer_state = 797
+			transfer_state = 352
+		}
+	}
+	imp_finish_turkey = {
+		icon = border_war
+		allowed = {
+			TUR = {
+				imperialism = >0.55
+			}
+		}
+		fire_only_once = yes
+		cost = 200
+		days_remove = 55
+		complete_effect = {
+			TUR = {
+			set_politics = {
+					ruling_party = imperialism
+				}
+				set_cosmetic_tag = ALL	
+			}
+			set_autonomy = {
+				target = ROM
+				autonomy_state = autonomy_dominion
+			}
+		}
+	}
 	
 }
 

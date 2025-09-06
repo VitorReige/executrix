@@ -46,7 +46,7 @@ technologies = {
 		start_year = 1940
 		torpedo_attack = 0.02
 		naval_torpedo_hit_chance_factor = 0.03
-		naval_torpedo_reveal_chance_factor = 0.05
+		naval_torpedo_reveal_chance_factor = -0.05
 		categories = {
 			cat_torpedoes
 			mio_cat_tech_all_submarine_and_modules
