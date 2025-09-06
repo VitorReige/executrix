@@ -146,7 +146,7 @@ characters={
 		name=thrawn_officer
 		portraits={
 			army={
-				large="gfx/leaders/imp/portrait_thrawn.dds"
+				large="gfx/leaders/IMP/portrait_thrawn.dds"
 			}
 			army={
 				small="GFX_idea_thrawn"
@@ -875,7 +875,7 @@ characters={
 	}
 
 	ledre_okins={
-		name=conan_ledre_okins
+		name=ledre_okins
 		portraits={
 			navy={
 				large="gfx/leaders/IMP/portrait_ledre_okins.dds"

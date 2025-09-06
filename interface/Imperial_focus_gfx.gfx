@@ -2776,12 +2776,12 @@ spriteTypes ={
 	}
 	spriteType = {
 		name = "GFX_focus_data_segment_speeder"
-		texturefile = "gfx/interface/goals/focus_data_segment_speeder.dds"
+		texturefile = "gfx/interface/goals/focus_data_segment_speeder.tga"
 	}
 	
 		SpriteType = {
 		name = "GFX_focus_data_segment_speeder_shine"
-		texturefile = "gfx/interface/goals/focus_data_segment_speeder.dds"			
+		texturefile = "gfx/interface/goals/focus_data_segment_speeder.tga"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_data_segment_speeder.dds"			

@@ -213,6 +213,27 @@ leader_traits = {
 		
 	}	
 
+	republic_hero = { 
+		type = land
+		trait_type = personality_trait
+		gain_xp = {
+			always = no
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+		
+		modifier = {
+		planning_speed = 0.2
+		}
+		
+		non_shared_modifier = {
+			promote_cost_factor = -0.5
+			reassignment_duration_factor = 0.75   # +75% cost to replace leader
+		}
+	}
+
 	operative_force_sensitive = {
 		type = operative
 		trait_type = basic_trait

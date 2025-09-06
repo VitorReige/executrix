@@ -212,7 +212,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_Portrait_Imperial_Female_Generic_5"
-		texturefile = "gfx/leaders/IMP/portrait_F5"
+		texturefile = "gfx/leaders/IMP/portrait_F5.dds"
 	}
 	spriteType = {
 		name = "GFX_Portrait_Imperial_Generic_5_small"
@@ -221,7 +221,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_Portrait_Imperial_Female_Generic_6"
-		texturefile = "gfx/leaders/IMP/portrait_F6"
+		texturefile = "gfx/leaders/IMP/portrait_F6.dds"
 	}
 	spriteType = {
 		name = "GFX_Portrait_Imperial_Generic_6_small"

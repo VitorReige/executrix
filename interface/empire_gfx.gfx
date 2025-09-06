@@ -698,6 +698,16 @@ spriteTypes = {
 
 	#ideas
 	spriteType = {
+		name = "GFX_idea_freja_covell"
+		texturefile = "gfx/interface/ideas/idea_freja.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_glup_shitto"
+		texturefile = "gfx/interface/ideas/idea_glup_shitto.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_imperial_service"
 		texturefile = "gfx/interface/ideas/idea_imperial_service.tga"
 	}
