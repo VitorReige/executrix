@@ -869,9 +869,7 @@ IMP_turkey_puppet_decisions = {
 		complete_effect = {
 			random_list = {
 				50 = {
-					352 = {
-						add_state_core = IMP
-					}
+					add_state_core = 352
 					add_political_power = 50
 					TUR = {
 						add_ideas = imp_control_1

@@ -23,7 +23,7 @@ IMP_statebuilding_decisions = {
 		original_tag = IMP
 	}
 	visible = {
-		has_completed_focus = imp_logistics_review
+		has_completed_focus = imp_restart_conquered_industry
 	}
 }
 
@@ -53,7 +53,7 @@ IMP_campaign_decisions = {
 		original_tag = IMP
 	}
 	visible = {
-		has_completed_focus = imp_campaign_decisions
+		has_completed_focus = imp_establish_the_planning_office
 	}
 }
 
