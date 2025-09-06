@@ -2616,7 +2616,7 @@ ideas = {
 
 			modifier = {
 				political_advisor_cost_factor = 0.15
-				stability_weekly_factor = -0.4
+				stability_weekly_factor = -0.05
 			}
 
 		}
