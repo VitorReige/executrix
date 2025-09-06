@@ -1434,9 +1434,13 @@ focus_tree = {
 			focus = imp_improve_the_levant
 		}
 		available = {
-			
+			controls_state = 341
 		}
-		completion_reward = { }
+		completion_reward = {
+			ROM = {
+				transfer_state = 341
+			}
+		 }
 	}
 
 	focus = {

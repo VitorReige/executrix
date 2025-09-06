@@ -1089,7 +1089,7 @@ IMP_turkey_core_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = imp_begin_establshing_a_shadow_admin
+			has_completed_focus = imp_begin_intergrating_turkey
 		}
 
 		highlight_states = {
@@ -1098,7 +1098,7 @@ IMP_turkey_core_decisions = {
 			}
 		}
 
-		fire_only_once = no
+		fire_only_once = yes
 
 		cost = 150
 		
@@ -1108,5 +1108,76 @@ IMP_turkey_core_decisions = {
 		complete_effect = {
 			add_state_core =  797					
 		}
-	}	
+	}
+	imp_core_diyarbakir = {
+		icon = border_war
+		available = {
+			has_completed_focus = imp_begin_intergrating_turkey
+		}
+		available = {
+			NOT = {
+				has_war_with = TUR
+				is_in_faction_with = TUR
+				TUR = { is_puppet_of = IMP }
+			}
+			350 = {
+				is_controlled_by = IMP
+			}
+		}
+		visible = {
+			has_completed_focus = imp_begin_intergrating_turkey
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 350
+			}
+		}
+		fire_only_once = yes
+
+		cost = 150
+
+		days_remove = 35
+
+		complete_effect = {
+			add_state_core = 350
+		}
+	}
+	imp_core_malatya = {
+		icon = border_war
+		available = {
+			has_completed_focus = imp_begin_intergrating_turkey
+		}
+		available = {
+			NOT = {
+				has_war_with = TUR
+				is_in_faction_with = TUR
+				TUR = { is_puppet_of = IMP }
+			}
+			344 = {
+				is_controlled_by = IMP
+			}
+		}
+		visible = {
+			has_completed_focus = imp_begin_intergrating_turkey
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 344
+			}
+		}
+		fire_only_once = yes
+
+		cost = 150
+
+		days_remove = 35
+
+		complete_effect = {
+			add_state_core = 344
+		}
+	}
+
+}
+
+imp_turkish_resources_decisions = {
+
 }

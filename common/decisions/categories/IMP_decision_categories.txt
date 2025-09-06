@@ -83,3 +83,13 @@ IMP_turkey_core_decisions = {
 		has_completed_focus = imp_begin_intergrating_turkey
 	}
 }
+IMP_turkish_resources_decisions = {
+	icon = generic_propaganda
+	priority = 10
+	allowed = {
+		original_tag = IMP
+	}
+	visible = {
+		has_completed_focus = imp_turkish_geological_surveys
+	}
+}
