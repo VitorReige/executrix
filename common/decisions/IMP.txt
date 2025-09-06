@@ -1072,5 +1072,41 @@ IMP_turkey_puppet_decisions = {
 }
 
 IMP_turkey_core_decisions = {
-	
+	imp_core_instanbul = {
+		icon = border_war
+		available = {
+			has_completed_focus = imp_begin_intergrating_turkey
+		}
+		available = {
+			NOT = {
+				has_war_with = TUR
+				is_in_faction_with = TUR
+				TUR = { is_puppet_of = IMP }
+			}
+			797 = {
+				is_controlled_by = IMP
+			}
+		}
+
+		visible = {
+			has_completed_focus = imp_begin_establshing_a_shadow_admin
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 797
+			}
+		}
+
+		fire_only_once = no
+
+		cost = 150
+		
+
+		days_remove = 35
+
+		complete_effect = {
+			add_state_core =  797					
+		}
+	}	
 }

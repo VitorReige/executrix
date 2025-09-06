@@ -223,14 +223,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			lg_attack = 45
-			hg_attack = 75
+			hg_attack = 85
 		}
 		multiply_stats = {
 		 naval_speed = -0.05
 	    }
 	    add_average_stats = {
-		 lg_armor_piercing = 50
-		 hg_armor_piercing = 35
+		 lg_armor_piercing = 55
+		 hg_armor_piercing = 40
 	    }
 		can_convert_from = {
 			module_category = ship_heavy_battery_duel
@@ -242,14 +242,14 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			lg_attack = 45
-			hg_attack = 75
+			hg_attack = 90
 		}
 		multiply_stats = {
 		 naval_speed = -0.05
 	    }
 	    add_average_stats = {
-		 lg_armor_piercing = 50
-		 hg_armor_piercing = 35
+		 lg_armor_piercing = 65
+		 hg_armor_piercing = 60
 	    }
 		can_convert_from = {
 			module_category = ship_heavy_battery_duel
