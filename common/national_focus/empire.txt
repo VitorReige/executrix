@@ -641,7 +641,7 @@ focus_tree = {
 	focus = {
 		id = imp_bring_the_holo_maps_online
 		icon = GFX_unique_tech_10_medium
-		cost = 3
+		cost = 2
 		prerequisite = {
 			focus = imp_fortify_the_crash_site
 			focus = imp_raising_new_conscripts
@@ -659,7 +659,7 @@ focus_tree = {
 			 id = imperial_story.4
 			 days = 1
 			}
-			add_political_power = 10
+			add_political_power = 25
 		}
 	}
 

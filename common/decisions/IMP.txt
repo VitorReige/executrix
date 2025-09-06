@@ -295,6 +295,7 @@ IMP_wargoals_decisions = {
 					else = { transfer_state = 294 add_state_core = 294 
 					         transfer_state = 1015 add_state_core = 1015
 							 transfer_state = 1016 add_state_core = 1016
+							 transfer_state = 1013 add_state_core = 1013
 							}
 				}
 			}
@@ -385,8 +386,8 @@ IMP_wargoals_decisions = {
 				ratio > 2
 			}
 			OR = {
-				NOT = { country_exists = SYR }
-				SYR = { is_subject_of = IMP }
+				NOT = { country_exists = SAU }
+				SAU = { is_subject_of = IMP }
 			}
 		}
 		visible = {
@@ -851,7 +852,7 @@ IMP_turkey_puppet_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = imp_look_for_local_puppets
+			has_completed_focus = imp_begin_establshing_a_shadow_admin
 		}
 
 		highlight_states = {
@@ -877,7 +878,7 @@ IMP_turkey_puppet_decisions = {
 							limit = { has_idea = TUR_imp_control_1 }
 							swap_ideas = {
 								remove_idea = TUR_imp_control_1
-								add_ideas = TUR_imp_control_2
+								add_idea = TUR_imp_control_2
 							}
 						}
 						else_if = {
@@ -918,7 +919,7 @@ IMP_turkey_puppet_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = imp_look_for_local_puppets
+			has_completed_focus = imp_begin_establshing_a_shadow_admin
 		}
 
 		highlight_states = {
@@ -936,9 +937,7 @@ IMP_turkey_puppet_decisions = {
 		complete_effect = {
 			random_list = {
 				50 = {
-					792 = {
-						add_state_core = IMP
-					}
+					add_state_core =  792 
 					add_political_power = 50
 					TUR = {
 						add_ideas = imp_control_1
@@ -946,7 +945,7 @@ IMP_turkey_puppet_decisions = {
 							limit = { has_idea = TUR_imp_control_1 }
 							swap_ideas = {
 								remove_idea = TUR_imp_control_1
-								add_ideas = TUR_imp_control_2
+								add_idea = TUR_imp_control_2
 							}
 						}
 						else_if = {
@@ -971,5 +970,5 @@ IMP_turkey_puppet_decisions = {
 }
 
 IMP_turkey_core_decisions = {
-
+	
 }
