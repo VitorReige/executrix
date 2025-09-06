@@ -37,8 +37,12 @@ technologies = {
 		research_cost = 1
 
 		path = {
-			leads_to_tech = imp_weapon_3
+			leads_to_tech = imp_weapon_up_1
 			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = sw_infantry_at
 		}
 
 		folder = {
@@ -57,6 +61,28 @@ technologies = {
 		}
 	}
 
+	imp_weapon_up_1 = {
+		category_all_infantry = {
+			soft_attack = 0.05
+			hard_attack = 0.02
+			lg_armor_piercing = 0.04
+		}
+		path = {
+			leads_to_tech = imp_weapon_3
+		}
+		start_year = 1938
+		categories = {
+			infantry_weapons
+		}
+		folder = {
+			name = imp_infantry_folder
+			position = { x = 0 y = 5 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	imp_weapon_3 = {
 		enable_equipments = {
 			imperial_inf_equipment_2
@@ -65,15 +91,15 @@ technologies = {
 		research_cost = 1
 
 		path = {
-			leads_to_tech = imp_weapon_4
+			leads_to_tech = imp_weapon_up_2
 			research_cost_coeff = 1
 		}
 
-		start_year = 1938
+		start_year = 1939
 
 		folder = {
 			name = imp_infantry_folder
-			position = { x = 0 y = 5 }
+			position = { x = 0 y = 9.5 }
 		}
 
 		categories = {
@@ -84,6 +110,32 @@ technologies = {
 			factor = 1
 		}
 	}
+
+	imp_weapon_up_2 = {
+		category_all_infantry = {
+			lg_armor_piercing = 0.1
+			hard_attack = 0.08
+			soft_attack = 0.02
+			suppression = 0.03
+		}
+
+		path = {
+			leads_to_tech = imp_weapon_4
+			research_cost_coeff = 1
+		}
+
+		start_year = 1939
+
+		categories = {
+			infantry_weapons
+		}
+
+		folder = {
+			name = imp_infantry_folder
+			position = { x = 0 y = 12.5 }
+		}
+	}
+
 	imp_weapon_4 = {
 		enable_equipments = {
 			imperial_inf_equipment_3
@@ -95,11 +147,287 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		start_year = 1940
+		start_year = 1942
 
 		folder = {
 			name = imp_infantry_folder
-			position = { x = 0 y = 9 }
+			position = { x = 0 y = 15.5 }
+		}
+	}
+
+	sw_infantry_at = {
+
+		category_all_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		
+		path = {
+			leads_to_tech = sw_infantry_at2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = imp_infantry_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+		}
+	}
+	
+	sw_infantry_at2 = {
+
+		category_all_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1940
+		folder = {
+			name = imp_infantry_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	##armoured cars##
+	speeder1 = { 
+
+		enable_subunits = {
+			armored_car
+		}
+
+		enable_equipments = {
+			speeder_equipment_1
+		}
+
+		allow_branch = { 
+			AND = {
+				has_dlc = "La Resistance" 
+				original_tag = IMP
+			}
+		}
+
+		path = {
+			leads_to_tech = speeder2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1914
+		folder = {
+			name = imp_infantry_folder
+			position = { x = 4 y = -1 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+	speeder2 = {
+
+		enable_equipments = {
+			speeder_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = speeder3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = imp_infantry_folder
+			position = { x = 4 y = 3 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+	speeder3 = {
+
+		enable_equipments = {
+			speeder_equipment_3
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = imp_infantry_folder
+			position = { x = 4 y = 9 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		
+		sub_technologies = {
+			speeder_at_upgrade
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+	speeder_at_upgrade = {
+
+		enable_equipments = {
+			speeder_at_equipment
+		}
+
+		research_cost = 1
+		start_year = 1942
+		sub_tech_index = 1
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
 		}
 	}
 }

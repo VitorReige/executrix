@@ -69,6 +69,11 @@ technologies = {
 		enable_equipments = {
 			imp_destroyer_1
 		}
+
+		enable_equipment_modules = {
+			imp_light_ship_engine_1
+		}
+
 		path = {
 			leads_to_tech = imp_destroyer_2
 		}
@@ -95,6 +100,9 @@ technologies = {
 		enable_equipments = {
 			imp_destroyer_2
 		}
+		enable_equipment_modules = {
+			imp_light_ship_engine_2
+		}
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
@@ -113,6 +121,9 @@ technologies = {
 		research_cost = 1
 		enable_equipments = {
 			imp_cruiser_1
+		}
+		enable_equipment_modules = {
+			imp_cruiser_engine_1
 		}
 		path = {
 			leads_to_tech = imp_cruiser_2
@@ -151,6 +162,23 @@ technologies = {
 		folder = {
 			name = imp_naval_folder
 			position = { x = 1 y = 9 }
+		}
+	}
+
+	imp_bb_1 = {
+		enable_equipments = {
+			imp_bb_1
+		}
+		research_cost = 1
+		start_year = 1936
+
+		#set at gamestart
+		allow = {
+			always = no
+		}
+		folder = {
+			name = imp_naval_folder
+			position = { x = 1 y = 2 }
 		}
 	}
 }

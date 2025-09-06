@@ -3366,4 +3366,49 @@ sp_imperial_reactor = {
 	}
 
 }
+sp_imperial_battleship = {
+	specialization = specialization_naval
 
+	project_tags = sp_tag_surface_ship
+
+	allowed = {
+		has_dlc = "Man the Guns"
+		tag = IMP
+	}
+
+	resource_cost = {
+		resources = { 
+			steel = 15
+			chromium = 17
+			tungsten = 9
+		}
+	}
+
+	complexity = sp_complexity.large 
+	prototype_time = sp_time.prototype.long 
+
+	breakthrough_cost = {
+		specialization_naval = 2
+	}
+	project_output = {
+		set_technology = {
+			imp_bb_hull_1 = 1
+			pop_up = no
+		}
+	}
+
+	generic_prototype_rewards = {
+		 sp_naval_generic_reward_scientist_xp_1
+		sp_naval_generic_reward_scientist_xp_2
+		sp_naval_generic_reward_scientist_xp_3
+		sp_naval_generic_reward_navy_xp_1
+		sp_naval_generic_reward_navy_xp_2
+		sp_naval_generic_reward_navy_xp_3
+		sp_naval_generic_reward_major_progress_1
+		sp_naval_generic_reward_major_progress_2
+		sp_naval_generic_reward_major_progress_3
+		sp_naval_generic_reward_test_failure_1
+		sp_naval_generic_reward_test_failure_2
+		sp_naval_generic_reward_test_failure_3			
+	}
+}

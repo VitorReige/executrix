@@ -308,7 +308,7 @@ focus_tree = {
 	focus = {
 		id = imp_salvage_the_armouries
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 2
 		prerequisite = {
 			focus = imp_begining_ship_repairs
 		}
@@ -335,7 +335,7 @@ focus_tree = {
 	focus = {
 		id = imp_equip_the_garrisons
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = imp_salvage_the_armouries
 		}
@@ -366,7 +366,7 @@ focus_tree = {
 	focus = {
 		id = imp_setting_up_defences
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = imp_salvage_the_armouries
 		}
@@ -413,7 +413,7 @@ focus_tree = {
 	focus = {
 		id = imp_begin_fixing_the_reactor
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 2
 		prerequisite = {
 			focus = imp_begining_ship_repairs
 		}
@@ -435,7 +435,7 @@ focus_tree = {
 	focus = {
 		id = imp_secure_the_fuel_rods
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = imp_begin_fixing_the_reactor
 		}
@@ -458,7 +458,7 @@ focus_tree = {
 	focus = {
 		id = imp_start_water_filtration
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = imp_begin_fixing_the_reactor
 		}
@@ -532,7 +532,7 @@ focus_tree = {
 	focus = {
 		id = imp_stage_one_reactor_repairs
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 2
 		prerequisite = {
 			focus = imp_secure_the_fuel_rods
 		}
@@ -553,7 +553,7 @@ focus_tree = {
 	focus = {
 		id = imp_raising_new_conscripts
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 2.5
 		prerequisite = {
 			focus = imp_deploy_the_remaining_troops
 		}
@@ -573,7 +573,7 @@ focus_tree = {
 	focus = {
 		id = imp_fortify_the_crash_site
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 2.5
 		prerequisite = {
 			focus = imp_deploy_the_remaining_troops
 		}
@@ -605,7 +605,7 @@ focus_tree = {
 	focus = {
 		id = imp_focus_on_the_shields
 		icon = GFX_unique_tech_10_medium
-		cost = 3
+		cost = 2.5
 		prerequisite = {
 			focus = imp_stage_one_reactor_repairs
 		}
@@ -623,7 +623,7 @@ focus_tree = {
 	focus = {
 		id = imp_focus_on_radar
 		icon = GFX_unique_tech_10_medium
-		cost = 4
+		cost = 2.5
 		prerequisite = {
 			focus = imp_stage_one_reactor_repairs
 		}
@@ -641,7 +641,7 @@ focus_tree = {
 	focus = {
 		id = imp_bring_the_holo_maps_online
 		icon = GFX_unique_tech_10_medium
-		cost = 3
+		cost = 2
 		prerequisite = {
 			focus = imp_fortify_the_crash_site
 			focus = imp_raising_new_conscripts
@@ -659,14 +659,14 @@ focus_tree = {
 			 id = imperial_story.4
 			 days = 1
 			}
-			add_political_power = 10
+			add_political_power = 25
 		}
 	}
 
 	focus = {
 		id = imp_restoring_order_to_the_cities
 		icon = GFX_focus_start_hiring_locals
-		cost = 4
+		cost = 3
 		x = -1
 		y = 1
 		prerequisite = {
@@ -689,7 +689,7 @@ focus_tree = {
 	focus = {
 		id = imp_restoring_order_over_the_desert
 		icon = GFX_focus_start_hiring_locals
-		cost = 4
+		cost = 3
 		x = 1
 		y = 1
 		relative_position_id = imp_bring_the_holo_maps_online
@@ -781,7 +781,7 @@ focus_tree = {
 	focus = {
 		id = imp_fund_new_police_forces
 		icon = GFX_focus_fund_new_police_forces
-		cost = 4
+		cost = 3
 		x = -1
 		y = 1
 		relative_position_id = imp_tarkins_governors
@@ -801,7 +801,7 @@ focus_tree = {
 	focus = {
 		id = imp_start_hiring_locals
 		icon = GFX_focus_start_hiring_locals
-		cost = 4
+		cost = 3
 		x = 1
 		y = 1
 		relative_position_id = imp_tarkins_governors
@@ -882,6 +882,7 @@ focus_tree = {
 					days = 1
 				}
 			}
+			custom_effect_tooltip = imp_indimidation_tt
 		 }
 	}
 
@@ -912,7 +913,7 @@ focus_tree = {
 	focus = {
 		id = imp_connect_the_crash_site
 		icon = GFX_focus_connect_the_crash_site
-		cost = 4
+		cost = 3
 		x = 0
 		y = 2
 		relative_position_id = imp_tarkins_governors
@@ -1012,6 +1013,7 @@ focus_tree = {
 				remove_idea = no_industry
 				add_idea = small_industry
 			}
+			custom_effect_tooltip = imp_industry_tt
 		}
 	}
 
@@ -1125,7 +1127,7 @@ focus_tree = {
 	focus = {
 		id = imp_start_training_local_troops
 		icon = GFX_focus_start_training_local_troops
-		cost = 5
+		cost = 3
 		x = 0
 		y = 2
 		relative_position_id = imp_vaders_fist
@@ -1360,33 +1362,49 @@ focus_tree = {
 	}
 
 	focus = {
-		id = imp_take_the_levant
+		id = imp_improve_the_levant
 		icon = GFX_unique_tech_10_medium
 		cost = 4
 		x = 0
 		y = 1
 		relative_position_id = imp_claim_turkish_territory
 		available = {
-			has_army_manpower = { size > 45000 }
+			controls_state = 554
 		}
 		prerequisite = {
 			focus = imp_claim_turkish_territory
 		}
 		completion_reward = { 
-			annex_country = {
-				target = SYR
+			554 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
-			
-			annex_country = {
-				target = LEB
+			677 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
-
-			annex_country = {
-				target = JOR
-			}
-
-			annex_country = {
-				target = PAL
+			680 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
 			}
 
 		}
@@ -1398,9 +1416,9 @@ focus_tree = {
 		cost = 5
 		x = 1
 		y = 1
-		relative_position_id = imp_take_the_levant
+		relative_position_id = imp_improve_the_levant
 		prerequisite = {
-			focus = imp_take_the_levant
+			focus = imp_improve_the_levant
 		}
 		completion_reward = { }
 	}
@@ -1411,9 +1429,9 @@ focus_tree = {
 		cost = 4
 		x = -1
 		y = 1
-		relative_position_id = imp_take_the_levant
+		relative_position_id = imp_improve_the_levant
 		prerequisite = {
-			focus = imp_take_the_levant
+			focus = imp_improve_the_levant
 		}
 		available = {
 			
@@ -1427,7 +1445,7 @@ focus_tree = {
 		cost = 10
 		x = 0
 		y = 2
-		relative_position_id = imp_take_the_levant
+		relative_position_id = imp_improve_the_levant
 		prerequisite = {
 			focus = imp_reward_romania
 		}
@@ -1452,7 +1470,12 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = imp_claim_turkish_territory
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_command_power = 25
+			TUR = {
+				add_ideas = TUR_imp_influence
+			}
+		}
 	}
     
 	focus = {
@@ -1465,7 +1488,20 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_reach_out_to_turkish_opp
 		}
-		completion_reward = { }
+		completion_reward = {
+			ROM = {
+				add_tech_bonus = {
+					name = romanian
+					bonus = 0.75
+					uses = 2
+					category = infantry_weapons
+				}
+				add_equipment_to_stockpile = {
+					type = imperial_inf_equipment_2
+					amount = 3500
+				}
+			}
+		 }
 	}
 
 	focus = {
@@ -1473,12 +1509,14 @@ focus_tree = {
 		icon = GFX_unique_tech_10_medium
 		cost = 3
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = imp_improve_romanian_forces
 		prerequisite = {
-			focus = imp_improve_romanian_forces
+			focus = imp_begin_establshing_a_shadow_admin
 		}
-		completion_reward = { }
+		completion_reward = { 
+			custom_effect_tooltip = imp_puppet_decisions_tt
+		}
 	}
 
 	focus = {
@@ -1486,10 +1524,10 @@ focus_tree = {
 		icon = GFX_unique_tech_10_medium
 		cost = 4
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = imp_improve_romanian_forces
 		prerequisite = {
-			focus = imp_improve_romanian_forces
+			focus = imp_begin_establshing_a_shadow_admin
 		}
 		completion_reward = { }
 	}
@@ -1499,13 +1537,15 @@ focus_tree = {
 		icon = GFX_unique_tech_10_medium
 		cost = 5
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = imp_improve_romanian_forces
 		prerequisite = {
-			focus = imp_begin_propaganda_campaigns
-			focus = imp_turkish_geological_surveys
+			focus = imp_improve_romanian_forces
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip =  imp_turkey_decisions_tt
+		 }
 	}
     
 	focus = {
@@ -1516,10 +1556,14 @@ focus_tree = {
 		y = 5
 		relative_position_id = imp_romanian_integration
 		prerequisite = {
-			focus = imp_begin_establshing_a_shadow_admin
 			focus = imp_begin_intergrating_turkey
+			focus = imp_begin_propaganda_campaigns
+			focus = imp_turkish_geological_surveys
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip =  imp_planning_tt
+		}
 	}
 	
 	##MILITARY TREE##
@@ -1639,7 +1683,150 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_adapting_to_earth_tactics
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_ideas = IMP_Imperial_Army
+			army_experience = 25
+			add_command_power = 20
+		}
+	}
+
+	focus = {
+		id = imp_begin_dockyard_expansions
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		prerequisite = {
+			focus = imp_train_local_officers
+		}
+		x = 8
+		y = 1
+		relative_position_id = imp_train_local_officers
+		completion_reward = {
+			1013 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			294 = {
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+			}
+		    navy_experience = 25
+		}
+	}
+
+	focus = {
+		id = imp_destroyer_concepts
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = imp_begin_dockyard_expansions
+		prerequisite = {
+			focus = imp_begin_dockyard_expansions
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = destroyer_1
+				uses = 1
+				bonus = 0.75
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = imp_think_big
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = imp_destroyer_concepts
+		prerequisite = {
+			focus = imp_destroyer_concepts
+		}
+		completion_reward = { 
+			add_tech_bonus = {
+				name = imp_think_big
+				uses = 1
+				category = bb_tech
+				bonus = 0.99
+			}
+		}
+	}
+
+	focus = {
+		id = imp_naval_academy
+		icon = GFX_unique_tech_10_medium
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = imp_destroyer_concepts
+		available = {
+			has_completed_focus = imp_establish_the_planning_office
+			controls_state = 354
+			has_completed_focus = imp_specialise_the_storm_troopers
+			OR = {
+				has_completed_focus = imp_keep_the_current_stormtrooper
+			}
+			
+		}
+		prerequisite = {
+			focus = imp_destroyer_concepts
+		}
+		completion_reward = {
+			IF = {
+				limit = {
+					has_completed_focus = imp_specialise_the_storm_troopers
+				}
+
+				swap_ideas = {
+					remove_idea = imp_specialised_storm_troopers
+					add_idea = imp_specialised_storm_troopers_3
+				}
+
+
+				else_if = {
+				 limit = {
+					has_completed_focus = imp_keep_the_current_stormtrooper
+				 }
+				 swap_ideas = {
+				  remove_idea = IMP_Imperial_Army2
+				  add_idea = IMP_Imperial_Army3
+			     }
+				}
+				
+			}
+
+			
+		 }
+	}
+
+	focus = {
+		id = imp_cruisers
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = 2
+		y = 1
+		relative_position_id = imp_destroyer_concepts
+		available = {
+			has_tech = imp_destroyer_1
+		}
+		prerequisite = {
+			focus = imp_destroyer_concepts
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = imp_cruiser
+				uses = 1
+				bonus = 0.9
+				category = ca_tech
+			}
+		 }
 	}
 
 	focus = {
@@ -1668,7 +1855,12 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = imp_specialise_the_storm_troopers
 		}
-		completion_reward = { }
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = IMP_Imperial_Army
+				add_idea = IMP_Imperial_Army2
+			}
+		}
 	}
 
 	focus = {
@@ -1911,9 +2103,21 @@ focus_tree = {
 			focus = imp_landing_efforts
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = imp_specialised_storm_troopers
-				add_idea = imp_specialised_storm_troopers_2
+			if = {
+				limit = {
+					has_completed_focus = imp_naval_academy
+			    }
+				swap_ideas = {
+					remove_idea = imp_specialised_storm_troopers_3
+					add_idea = imp_specialised_storm_troopers_4
+				}
+			}
+			else_if = {
+				limit = { has_idea = imp_specialised_storm_troopers }
+				swap_ideas = {
+					remove_idea = imp_specialised_storm_troopers
+					add_idea = imp_specialised_storm_troopers_2
+				}
 			}
 		}
 	}

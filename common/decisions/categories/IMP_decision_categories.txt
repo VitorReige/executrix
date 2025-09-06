@@ -13,8 +13,7 @@ IMP_rise_of_the_empire_decisions = {
 	visible = {
 		is_ai = no
 		NOT = { original_tag = IMP }
-		NOT = { original_tag = REA }
-		NOT = { original_tag = MDO }
+		
 	}
 }
 
@@ -24,7 +23,7 @@ IMP_statebuilding_decisions = {
 		original_tag = IMP
 	}
 	visible = {
-		has_completed_focus = imp_logistics_review
+		has_completed_focus = imp_restart_conquered_industry
 	}
 }
 
@@ -34,7 +33,7 @@ IMP_wargoals_decisions = {
 		original_tag = IMP
 	}
 	visible = {
-		has_completed_focus = imp_war_plan
+		has_completed_focus = imp_approach_the_colonial_powers
 	}
 }
 
@@ -54,7 +53,7 @@ IMP_campaign_decisions = {
 		original_tag = IMP
 	}
 	visible = {
-		has_completed_focus = imp_campaign_decisions
+		has_completed_focus = imp_establish_the_planning_office
 	}
 }
 
@@ -71,7 +70,7 @@ IMP_turkey_puppet_decisions = {
 		original_tag = IMP
 	}
 	visible = {
-		has_completed_focus = imp_look_for_local_puppets
+		has_completed_focus = imp_begin_establshing_a_shadow_admin
 	}
 }
 IMP_turkey_core_decisions = {

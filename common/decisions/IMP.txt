@@ -119,6 +119,11 @@ IMP_statebuilding_decisions = {
 				amount = 18
 				state = 291
 			}
+			add_resource = {
+				type = steel
+				amount = 5
+				state = 554
+			}
 			set_country_flag = materials_flag #this unlocks the synthetic materials focus#
 		}
 	}
@@ -292,7 +297,11 @@ IMP_wargoals_decisions = {
 						}
 					}
 
-					else = { transfer_state = 294 add_state_core = 294 }
+					else = { transfer_state = 294 add_state_core = 294 
+					         transfer_state = 1015 add_state_core = 1015
+							 transfer_state = 1016 add_state_core = 1016
+							 transfer_state = 1013 add_state_core = 1013
+							}
 				}
 			}
 		}
@@ -371,7 +380,47 @@ IMP_wargoals_decisions = {
 			}
 		}
 	}
+	intimidate_syria = {
+		available = {
+			has_army_manpower = {
+				size >35000
+			}
 
+			strength_ratio = {
+				tag = SYR
+				ratio > 2
+			}
+			OR = {
+				NOT = { country_exists = SAU }
+				SAU = { is_subject_of = IMP }
+			}
+		}
+		visible = {
+			always = yes
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+
+		days_remove = 50
+
+		cost = 15
+
+		fire_only_once = yes
+
+		remove_effect = {
+			transfer_state = 554
+			add_state_core = 554
+			transfer_state = 680
+			add_state_core = 680
+			transfer_state = 677
+			add_state_core = 677
+			transfer_state = 799
+			add_state_core = 799
+		}
+	}	
+}
 
 
 IMP_campaign_decisions = {
@@ -808,7 +857,7 @@ IMP_turkey_puppet_decisions = {
 		}
 
 		visible = {
-			has_completed_focus = imp_look_for_local_puppets
+			has_completed_focus = imp_begin_establshing_a_shadow_admin
 		}
 
 		highlight_states = {
@@ -825,10 +874,8 @@ IMP_turkey_puppet_decisions = {
 
 		complete_effect = {
 			random_list = {
-				50 = {
-					352 = {
-						add_state_core = IMP
-					}
+				60 = {
+					add_state_core = 352
 					add_political_power = 50
 					TUR = {
 						add_ideas = imp_control_1
@@ -836,7 +883,7 @@ IMP_turkey_puppet_decisions = {
 							limit = { has_idea = TUR_imp_control_1 }
 							swap_ideas = {
 								remove_idea = TUR_imp_control_1
-								add_ideas = TUR_imp_control_2
+								add_idea = TUR_imp_control_2
 							}
 						}
 						else_if = {
@@ -871,18 +918,18 @@ IMP_turkey_puppet_decisions = {
 				is_in_faction_with = TUR
 				TUR = { is_puppet_of = IMP }
 			}
-			792 = {
+			797 = {
 				is_controlled_by = TUR
 			}
 		}
 
 		visible = {
-			has_completed_focus = imp_look_for_local_puppets
+			has_completed_focus = imp_begin_establshing_a_shadow_admin
 		}
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 792
+				state = 797
 			}
 		}
 
@@ -894,10 +941,8 @@ IMP_turkey_puppet_decisions = {
 
 		complete_effect = {
 			random_list = {
-				50 = {
-					792 = {
-						add_state_core = IMP
-					}
+				60 = {
+					add_state_core =  797 
 					add_political_power = 50
 					TUR = {
 						add_ideas = imp_control_1
@@ -905,7 +950,7 @@ IMP_turkey_puppet_decisions = {
 							limit = { has_idea = TUR_imp_control_1 }
 							swap_ideas = {
 								remove_idea = TUR_imp_control_1
-								add_ideas = TUR_imp_control_2
+								add_idea = TUR_imp_control_2
 							}
 						}
 						else_if = {
@@ -926,9 +971,106 @@ IMP_turkey_puppet_decisions = {
 			}
 		}
 	}
+	imp_extend_imperialism_1 = {
+		visible = {
+			has_completed_focus = imp_begin_propaganda_campaigns
+		}
+		allowed = {
+			has_completed_focus = imp_begin_propaganda_campaigns
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 25
+
+		complete_effect = {
+			TUR = {
+				add_ideas = empire_sympathy
+			}
+		}
+	}
+	imp_extend_imperialism_2 = {
+		visible = {
+			TUR = {
+				imperialism = >0.1
+			}
+		}
+		allowed = {
+			TUR = {
+				imperialism = >0.1
+			}
+		}
+		fire_only_once = no
+		cost = 150
+		days_remove = 50
+
+		complete_effect = {
+			
+			50 = {
+			    TUR = {
+				 add_popularity = {
+					 ideology = imperialism
+					 popularity = 0.05
+				   } 
+			    }
+		   }
+		   50 = {
+			    IMP = {
+			     country_event = {
+					 id = imperial_move_turkey.1
+					 days = 1
+				    }
+			    }
+		   }
+		}
+	}
+	imp_take_our_claims = {
+		visible = {
+			TUR = {
+				imperialism = >0.29
+			}
+		}
+		allowed = {
+			TUR = {
+				imperialism = >0.29
+			}
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 40
+
+		complete_effect = {
+			IMP = {
+			 transfer_state = 797
+			 transfer_state = 352
+			}
+		}
+	}
+	imp_finish_turkey = {
+		icon = border_war
+		allowed = {
+			TUR = {
+				imperialism = >0.55
+			}
+		}
+		fire_only_once = yes
+		cost = 200
+		days_remove = 55
+		complete_effect = {
+			TUR = {
+			set_politics = {
+					ruling_party = imperialism
+				}
+				set_cosmetic_tag = ALL	
+			}
+			set_autonomy = {
+				target = ROM
+				autonomy_state = autonomy_dominion
+			}
+		}
+	}
 	
 }
 
 IMP_turkey_core_decisions = {
-
+	
 }

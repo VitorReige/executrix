@@ -1211,6 +1211,7 @@ ideas = {
 				land_reinforce_rate = 0.07
 				training_time_factor = -0.1
 				army_attack_factor = 0.05
+				
 			}
 		}
 		
@@ -1233,8 +1234,11 @@ ideas = {
 				training_time_factor = -0.15
 				army_org_factor = 0.05
 				army_attack_factor = 0.05
+				naval_detection = 0.05
+				trait_ironside_xp_gain_factor = 0.1
 			}
 		}
+
 
 		balkan_bonus = {
 			allowed = {
@@ -3127,6 +3131,44 @@ ideas = {
 				terrain_trait_xp_gain_factor = 0.05
 			}
 		}
+		imp_specialised_storm_troopers_3 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = stormtrooper_squad
+
+			modifier = {
+				special_forces_cap = -0.18
+				special_forces_attack_factor = 0.06
+				special_forces_defence_factor = 0.05
+				special_forces_training_time_factor = 0.1
+				terrain_trait_xp_gain_factor = 0.05
+				trait_naval_invader_xp_gain_factor = 0.08
+				commando_xp_gain_factor = 0.07
+			}
+		}
+		imp_specialised_storm_troopers_4 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = stormtrooper_squad
+
+			modifier = {
+				special_forces_cap = -0.12
+				special_forces_attack_factor = 0.1
+				special_forces_defence_factor = 0.1
+				special_forces_training_time_factor = 0.14
+				terrain_trait_xp_gain_factor = 0.1
+				trait_naval_invader_xp_gain_factor = 0.08
+				commando_xp_gain_factor = 0.07
+			}
+		}
+
 	}
 	
 }
