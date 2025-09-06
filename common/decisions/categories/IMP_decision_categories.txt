@@ -33,7 +33,7 @@ IMP_wargoals_decisions = {
 		original_tag = IMP
 	}
 	visible = {
-		has_completed_focus = im
+		has_completed_focus = imp_approach_the_colonial_powers
 	}
 }
 
