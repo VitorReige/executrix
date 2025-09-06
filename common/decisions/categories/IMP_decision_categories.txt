@@ -70,7 +70,7 @@ IMP_turkey_puppet_decisions = {
 		original_tag = IMP
 	}
 	visible = {
-		has_completed_focus = imp_look_for_local_puppets
+		has_completed_focus = imp_begin_establshing_a_shadow_admin
 	}
 }
 IMP_turkey_core_decisions = {
