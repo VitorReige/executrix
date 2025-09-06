@@ -1016,10 +1016,12 @@ IMP_turkey_puppet_decisions = {
 			    }
 		   }
 		   50 = {
-			 country_event = {
-					id = imperial_move_turkey.1
-					days = 1
-				}
+			    IMP = {
+			     country_event = {
+					 id = imperial_move_turkey.1
+					 days = 1
+				    }
+			    }
 		   }
 		}
 	}
