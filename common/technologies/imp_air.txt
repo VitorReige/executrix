@@ -1,9 +1,10 @@
 technologies = {
-	imp_small_airframe = {
+	imp_small_airframe_1 = {
         research_cost = 1
         start_year = 1933
         enable_equipment = {
             imp_small_airframe_1
+            small_plane_airframe_0
         }
         
         path = {
@@ -21,6 +22,13 @@ technologies = {
                 y = 2
             }
         }
+
+        categories = {
+			light_air
+			light_fighter
+            air_equipment
+		}
+
     }
     imp_small_airframe_2 = {
         research_cost = 1
@@ -45,6 +53,13 @@ technologies = {
                 y = 4
             }
         }
+
+        categories = {
+			light_air
+			light_fighter
+            air_equipment
+		}
+
     }
     imp_small_airframe_3 = {
         research_cost = 1
@@ -110,7 +125,7 @@ technologies = {
             }
         }
     }
-    imp_medium_airframe = {
+    imp_medium_airframe_1 = {
         research_cost = 1
         start_year = 1936
         enable_equipment = {
@@ -220,12 +235,18 @@ technologies = {
             }
         }
     }
-    imp_large_airframe = {
+    imp_large_airframe_1 = {
         research_cost = 1
         start_year = 1936
         enable_equipment = {
-            imp_large_airframe_1
+            imp_large_airframe_1   
+         }      
+       
+         path = {
+            leads_to_tech = imp_large_airframe_2
+            research_cost_coeff = 1
         }
+         
         ai_will_do = {
             factor = 1
         }
@@ -241,8 +262,14 @@ technologies = {
         research_cost = 1
         start_year = 1936
         enable_equipment = {
-            imp_large_airframe_1
+            imp_large_airframe_2
         }
+        
+        path = {
+            leads_to_tech = imp_large_airframe_3
+            research_cost_coeff = 1
+        }
+        
         ai_will_do = {
             factor = 1
         }
@@ -251,6 +278,70 @@ technologies = {
             position = {
                 x = 0
                 y = 4
+            }
+        }
+    }
+    imp_large_airframe_3 = {
+        research_cost = 1
+        start_year = 1936
+        enable_equipment = {
+            imp_large_airframe_3
+        }
+        
+        path = {
+            leads_to_tech = imp_large_airframe_4
+            research_cost_coeff = 1
+        }
+        
+        ai_will_do = {
+            factor = 1
+        }
+        folder = {
+            name = imp_air_folder
+            position = {
+                x = 0
+                y = 6
+            }
+        }
+    }
+    imp_large_airframe_4 = {
+        research_cost = 1
+        start_year = 1936
+        enable_equipment = {
+            imp_large_airframe_4
+        }
+        
+        path = {
+            leads_to_tech = imp_large_airframe_5
+            research_cost_coeff = 1
+        }
+        
+        ai_will_do = {
+            factor = 1
+        }
+        folder = {
+            name = imp_air_folder
+            position = {
+                x = 0
+                y = 8
+            }
+        }
+    }
+    imp_large_airframe_5 = {
+        research_cost = 1
+        start_year = 1936
+        enable_equipment = {
+            imp_large_airframe_5
+        }
+        
+        ai_will_do = {
+            factor = 1
+        }
+        folder = {
+            name = imp_air_folder
+            position = {
+                x = 0
+                y = 12
             }
         }
     }
