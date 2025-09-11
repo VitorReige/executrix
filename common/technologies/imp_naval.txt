@@ -119,6 +119,7 @@ technologies = {
 
 	imp_cruiser_1 = {
 		research_cost = 1
+		start_year = 1936
 		enable_equipments = {
 			imp_cruiser_1
 		}
@@ -147,6 +148,7 @@ technologies = {
 	}
 	imp_cruiser_2 = {
 		research_cost = 1
+		start_year = 1940
 		enable_equipments = {
 			imp_cruiser_2
 		}
@@ -156,6 +158,9 @@ technologies = {
 		allow_branch = {
 			has_dlc = "Man the Guns" 
 		}
+		path = {
+			leads_to_tech = imp_cruiser_3
+		}
 		categories = {
 			naval_equipment
 			mio_cat_tech_all_cruiser_and_modules
@@ -164,8 +169,30 @@ technologies = {
 		}
 		folder = {
 			name = imp_naval_folder
-			position = { x = 1 y = 9 }
+			position = { x = 1 y = 14.5 }
 		}
+	}
+
+	imp_cruiser_3 = {
+		research_cost = 1
+		start_year = 1944
+		enable_equipments = {
+			imp_cruiser_3
+		}
+		enable_equipment_modules = {
+			imp_cruiser_engine_3
+		}
+		categories = {
+			naval_equipment
+			mio_cat_tech_all_cruiser_and_modules
+			ca_tech
+			cl_tech
+		}
+		folder = {
+			name = imp_naval_folder
+			position = { x = 1 y = 20 }
+		}
+
 	}
 
 	imp_bb_1 = {
