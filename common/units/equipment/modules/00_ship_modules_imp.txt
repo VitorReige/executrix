@@ -262,13 +262,26 @@ equipment_modules = {
 		gfx = ship_sub_snorkel_1
 
 		multiply_stats = {
-			sub_visibility = 0.1
+			sub_visibility = -0.1
+		}
+
+		add_stats = {
+			build_cost_ic = 50
+		}
+	}	
+
+	imp_life_support_2 = {
+		category = ship_sub_snorkel
+		gfx = ship_sub_snorkel_2
+		multiply_stats = {
+			sub_visibility = -0.2
 		}
 
 		add_stats = {
 			build_cost_ic = 50
 		}
 	}
+
 
 	imp_reactor_1 = {
 		category = large_ship_engine
@@ -379,7 +392,7 @@ equipment_modules = {
 			convert_cost_ic = 150
 		}
 	}
-	imp_cruiser_2 = {
+	imp_cruiser_engine_2 = {
 		category = medium_ship_engine
 		sfx = sfx_ui_sd_module_engine
 
