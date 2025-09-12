@@ -1954,12 +1954,12 @@ guiTypes = {
 			}
 
 			instantTextBoxType = {
-				name = "airtech_subtitle_engines"
+				name = "airtech_subtitle_power"
 				position = { x = 1520 y = 110 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
-				text = "AIR_TITLE_ENGINES"
+				text = "AIR_TITLE_POWER"
 				maxWidth = 300
 				maxHeight = 62
 				format = center
@@ -2011,6 +2011,16 @@ guiTypes = {
 				position = { x = 715 y = 32 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridBoxType = {
+				name = "imp_air_power_1_tree"
+				position = { x = 1470 y = 32 }
+				size = { width = 400 height = 1000 }
+				slotsize = {
+					width = 60
+					height = 70
+				}
 				format = "UP"
 			}
 

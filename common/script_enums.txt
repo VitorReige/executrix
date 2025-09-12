@@ -581,4 +581,10 @@ script_enum_equipment_bonus_type = {
 	republic_equipment_1
 	imperial_equipment_1
 	imperial_equipment_2
+	imp_small_airframe
+	imp_small_airframe_1
+	imp_small_airframe_2
+	imp_small_airframe_3
+	imp_small_airframe_4
+	imp_small_airframe_5
 }
