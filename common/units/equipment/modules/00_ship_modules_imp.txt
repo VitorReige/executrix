@@ -257,6 +257,32 @@ equipment_modules = {
 		}
 	}
 
+	imp_life_support_1 = {
+		category = ship_sub_snorkel
+		gfx = ship_sub_snorkel_1
+
+		multiply_stats = {
+			sub_visibility = -0.1
+		}
+
+		add_stats = {
+			build_cost_ic = 50
+		}
+	}	
+
+	imp_life_support_2 = {
+		category = ship_sub_snorkel
+		gfx = ship_sub_snorkel_2
+		multiply_stats = {
+			sub_visibility = -0.2
+		}
+
+		add_stats = {
+			build_cost_ic = 50
+		}
+	}
+
+
 	imp_reactor_1 = {
 		category = large_ship_engine
 		sfx = sfx_ui_sd_module_engine
@@ -280,7 +306,6 @@ equipment_modules = {
 		
 		
 	}
-
 
 	imp_light_ship_engine_1 = {
 		abbreviation = "sbn"
@@ -327,9 +352,29 @@ equipment_modules = {
 		}
 	}
 
+	imp_light_engine_3 = {
+		category = light_ship_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			fuel_consumption = 7
+		}
+
+		multiply_stats = {
+			naval_speed = 0.15
+			naval_range = 0.1
+			build_cost_ic = 0.14
+		}
+
+		can_convert_from = {
+			module_category = light_ship_engine
+			convert_cost_ic = 250
+		}
+	}
 
 	imp_cruiser_engine_1 = {
-		category = medium_ship_engine
+		category = cruiser_ship_engine
+		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
 			fuel_consumption = 7
@@ -343,7 +388,47 @@ equipment_modules = {
 		}
 
 		can_convert_from = {
-			module_category = medium_ship_engine
+			module_category = cruiser_ship_engine
+			convert_cost_ic = 150
+		}
+	}
+
+	imp_cruiser_engine_2 = {
+		category = cruiser_ship_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			fuel_consumption = 6
+		}
+
+		multiply_stats = {
+			naval_range = 0.1
+			naval_speed = 0.6
+			build_cost_ic = 0.15
+			fuel_consumption = 0.22
+		}
+
+		can_convert_from = {
+			module_category = cruiser_ship_engine
+			convert_cost_ic = 150
+		}
+	}
+	imp_cruiser_engine_3 = {
+		category = cruiser_ship_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			fuel_consumption = 6
+		}
+
+		multiply_stats = {
+			naval_range = 0.05
+			naval_speed = 0.4
+			build_cost_ic = 0.15
+			fuel_consumption = 0.22
+		}
+		can_convert_from = {
+			module_category = cruiser_ship_engine
 			convert_cost_ic = 150
 		}
 	}
