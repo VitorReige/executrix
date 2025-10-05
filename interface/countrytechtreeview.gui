@@ -1983,38 +1983,36 @@ guiTypes = {
 				name = "imp_small_airframe_1_tree"
 				position = { x = 100 y = 32 }
 				size = { width = 400 height = 1000 }
-				slotsize = {
-					width = 60
-					height = 70
-				}
+				slotsize = { width = 60 height = 70	}
 				format = "UP"
 			}
 
 			gridBoxType = {
 				name = "imp_medium_airframe_1_tree"
-				position = {
-					x = 235
-					y = 32
-				}
-				size = {
-					width = 400
-					height = 1000
-				}
-				slotsize = {
-					width = 60
-					height = 70
-				}
+				position = { x = 235 y = 32	}
+				size = { width = 400	height = 1000 }
+				slotsize = { width = 60 height = 70 }
 				format = "UP"
 			}
 			gridboxtype = {
 				name = "imp_large_airframe_1_tree"
 				position = { x = 715 y = 32 }
 				size = { width = 200 height = 1000 }
-				slotsize = { width = 70 height = 70 }
+				slotsize = { width = 60 height = 70 }
 				format = "UP"
 			}
 			gridBoxType = {
 				name = "imp_air_power_1_tree"
+				position = { x = 1470 y = 32 }
+				size = { width = 400 height = 1000 }
+				slotsize = {
+					width = 60
+					height = 70
+				}
+				format = "UP"
+			}
+			gridBoxType = {
+				name = "imp_air_engines_1_tree"
 				position = { x = 1470 y = 32 }
 				size = { width = 400 height = 1000 }
 				slotsize = {

@@ -7,7 +7,7 @@ equipment_modules = {
 		has_dlc = "By Blood Alone"
 	}
 	#Power Sources
-	#Fusion
+	#Fission
 	reactor_1_1x = {
 		abbreviation = "e11"
 		category = plane_low_power_type
@@ -15,13 +15,13 @@ equipment_modules = {
 
 		add_stats = {
 			weight = 5
-			reliability = 0.02
-			build_cost_ic = 6
+			reliability = 0.15
+			build_cost_ic = 2
 			power_generation = 10
 		}
 		
 	}
-	#Fusion
+	#Fission
 	reactor_1_2x = {
 		abbreviation = "e12"
 		category = plane_low_power_type
@@ -29,12 +29,12 @@ equipment_modules = {
 
 		add_stats = {
 			weight = 10
-			reliability = 0.02
-			build_cost_ic = 12
+			reliability = 0.15
+			build_cost_ic = 4
 			power_generation = 20
 		}
 	}
-	#Fusion
+	#Fission
 	reactor_1_3x = {
 		abbreviation = "e13"
 		category = plane_medium_power_type
@@ -42,12 +42,12 @@ equipment_modules = {
 
 		add_stats = {
 			weight = 15
-			reliability = 0.02
-			build_cost_ic = 18
+			reliability = 0.15
+			build_cost_ic = 6
 			power_generation = 30
 		}
 	}
-	#Fusion
+	#Fission
 	reactor_1_4x = {
 		abbreviation = "e14"
 		category = plane_large_power_type
@@ -55,12 +55,12 @@ equipment_modules = {
 
 		add_stats = {
 			weight = 20
-			reliability = 0.02
-			build_cost_ic = 24
+			reliability = 0.15
+			build_cost_ic = 8
 			power_generation = 40
 		}
 	}
-	#Fusion
+	#Fission
 	reactor_1_6x = {
 		abbreviation = "e16"
 		category = plane_massive_power_type
@@ -68,12 +68,12 @@ equipment_modules = {
 
 		add_stats = {
 			weight = 25
-			reliability = 0.02
-			build_cost_ic = 30
+			reliability = 0.15
+			build_cost_ic = 10
 			power_generation = 50
 		}
 	}
-	#Fusion?
+	#Fission
 	reactor_2_1x = {
 		abbreviation = "e11"
 		category = plane_low_power_type
@@ -81,8 +81,8 @@ equipment_modules = {
 
 		add_stats = {
 			weight = 5
-			reliability = 0.04
-			build_cost_ic = 10
+			reliability = 0.30
+			build_cost_ic = 2.5
 			power_generation = 10
 		}
 		
@@ -95,8 +95,8 @@ equipment_modules = {
 
 		add_stats = {
 			weight = 10
-			reliability = 0.04
-			build_cost_ic = 20
+			reliability = 0.30
+			build_cost_ic = 5
 			power_generation = 20
 		}
 	}
@@ -108,8 +108,8 @@ equipment_modules = {
 
 		add_stats = {
 			weight = 15
-			reliability = 0.04
-			build_cost_ic = 30
+			reliability = 0.30
+			build_cost_ic = 7.5
 			power_generation = 30
 		}
 	}
@@ -121,8 +121,8 @@ equipment_modules = {
 
 		add_stats = {
 			weight = 20
-			reliability = 0.04
-			build_cost_ic = 40
+			reliability = 0.30
+			build_cost_ic = 9
 			power_generation = 40
 		}
 	}
@@ -134,8 +134,8 @@ equipment_modules = {
 
 		add_stats = {
 			weight = 25
-			reliability = 0.04
-			build_cost_ic = 50
+			reliability = 0.30
+			build_cost_ic = 11.5
 			power_generation = 50
 		}
 	}
@@ -148,7 +148,23 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 11
-			build_cost_ic = 12
+			reliability = -0.20
+			build_cost_ic = 2
+			fuel_consumption = 0.16
+			power_generation = -10
+		}
+		
+	}
+	
+	thruster_1_1x = {
+		abbreviation = "e11"
+		category = plane_thruster_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 11
+			reliability = -0.20
+			build_cost_ic = 2
 			fuel_consumption = 0.16
 			power_generation = -10
 		}
@@ -162,7 +178,8 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 19
-			build_cost_ic = 24
+			reliability = -0.20
+			build_cost_ic = 4
 			fuel_consumption = 0.32
 			power_generation = -20
 		}
@@ -175,7 +192,8 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 23
-			build_cost_ic = 36
+			reliability = -0.20
+			build_cost_ic = 6
 			fuel_consumption = 0.48
 			power_generation = -30
 		}
@@ -188,7 +206,8 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 32
-			build_cost_ic = 48
+			reliability = -0.20
+			build_cost_ic = 8
 			fuel_consumption = 0.64
 			power_generation = -40
 		}
@@ -201,7 +220,8 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 41
-			build_cost_ic = 68
+			reliability = -0.20
+			build_cost_ic = 10
 			fuel_consumption = 0.8
 			power_generation = -50
 		}
@@ -214,7 +234,8 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 11
-			build_cost_ic = 12
+			reliability = -0.35
+			build_cost_ic = 2.5
 			fuel_consumption = 0.16
 			power_generation = -10
 		}
@@ -228,7 +249,8 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 19
-			build_cost_ic = 24
+			reliability = -0.35
+			build_cost_ic = 5
 			fuel_consumption = 0.32
 			power_generation = -20
 		}
@@ -241,7 +263,8 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 23
-			build_cost_ic = 36
+			reliability = -0.35
+			build_cost_ic = 7.5
 			fuel_consumption = 0.48
 			power_generation = -30
 		}
@@ -254,7 +277,8 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 32
-			build_cost_ic = 48
+			reliability = -0.35
+			build_cost_ic = 9
 			fuel_consumption = 0.64
 			power_generation = -40
 		}
@@ -267,7 +291,8 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 41
-			build_cost_ic = 68
+			reliability = -0.35
+			build_cost_ic = 11.5
 			fuel_consumption = 0.8
 			power_generation = -50
 		}
@@ -280,7 +305,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 11
-			build_cost_ic = 12
+			build_cost_ic = 3
 			fuel_consumption = 0.16
 			power_generation = -10
 		}
@@ -294,7 +319,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 19
-			build_cost_ic = 24
+			build_cost_ic = 6
 			fuel_consumption = 0.32
 			power_generation = -20
 		}
@@ -307,7 +332,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 23
-			build_cost_ic = 36
+			build_cost_ic = 9
 			fuel_consumption = 0.48
 			power_generation = -30
 		}
@@ -320,7 +345,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 32
-			build_cost_ic = 48
+			build_cost_ic = 12
 			fuel_consumption = 0.64
 			power_generation = -40
 		}
@@ -333,7 +358,7 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 41
-			build_cost_ic = 68
+			build_cost_ic = 15
 			fuel_consumption = 0.8
 			power_generation = -50
 		}
