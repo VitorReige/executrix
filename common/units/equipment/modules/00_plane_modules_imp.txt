@@ -156,20 +156,6 @@ equipment_modules = {
 		
 	}
 	
-	thruster_1_1x = {
-		abbreviation = "e11"
-		category = plane_thruster_type
-		sfx = sfx_ui_sd_module_engine
-
-		add_stats = {
-			thrust = 11
-			reliability = -0.20
-			build_cost_ic = 2
-			fuel_consumption = 0.16
-			power_generation = -10
-		}
-		
-	}
 
 	thruster_1_2x = {
 		abbreviation = "e12"
