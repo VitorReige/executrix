@@ -828,7 +828,7 @@ clone_wars_tactics = {
                     local_org_regain = 0.04
                 }
             }
-            max_organisation = 5
+            max_organisation = 0.05
         }
         
         embedded_officers = {
