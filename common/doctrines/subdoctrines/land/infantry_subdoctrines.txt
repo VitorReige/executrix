@@ -825,7 +825,7 @@ clone_wars_tactics = {
                 urban = {
                     soft_attack = 0.05
                     hard_attack = 0.02
-                    local_org_regain = 0.04
+                    recovery = 0.04
                 }
             }
             max_organisation = 0.05
@@ -842,7 +842,6 @@ clone_wars_tactics = {
                 soft_attack = 0.1
                 battalion_mult = {
                    category = category_light_infantry
-                   intel_from_combat_factor = -0.03
                    breakthrough = 0.1
                    hard_attack = 0.1
                 }
@@ -854,10 +853,9 @@ clone_wars_tactics = {
                 defense = 0.05
                 max_organisation = 5
             }
-        
-         redoubt_networks = {
+        }
+        redoubt_networks = {
             dig_in_speed_factor = 0.10
-         }
-       } 
+        } 
     }   
 }
