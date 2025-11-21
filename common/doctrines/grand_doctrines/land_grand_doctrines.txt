@@ -489,8 +489,7 @@ imperial_land_power = {
     }
 
     category_blaster_infantry = {
-        attack = 0.05
-        defence = 0.03
+        soft_attack = 0.05
     }
 
     out_of_supply_factor = -0.05

@@ -796,3 +796,68 @@ great_war_infantry = {
 
     }
 }
+clone_wars_tactics = {
+    track = infantry 
+    name = SUBDOCTRINE_CLONE_TACTICS
+        description = SUBDOCTRINE_CLONE_TACTICS_DESC
+        icon = GFX_doctrine_great_war_infantry_medium
+
+    xp_cost = 75
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    visible = {
+        tag = IMP
+    }
+        
+    category_all_infantry = {
+        experience_loss_factor = -0.05
+        org_loss_when_moving = -0.05
+    }
+
+    rewards = {
+        close_knit_squads = {
+            mastery = 50
+            stormtrooper = {
+                urban = {
+                    soft_attack = 0.05
+                    hard_attack = 0.02
+                    local_org_regain = 0.04
+                }
+            }
+            max_organisation = 5
+        }
+        
+        embedded_officers = {
+            category_all_infantry = {
+                land_reinforce_rate = 0.1
+                initiative = 0.1
+            }
+        }
+        creeping_barrages = {
+            artillery = {
+                soft_attack = 0.1
+                battalion_mult = {
+                   category = category_light_infantry
+                   intel_from_combat_factor = -0.03
+                   breakthrough = 0.1
+                   hard_attack = 0.1
+                }
+            }
+         }
+        field_fortification_emphasis = {
+            category_light_infantry = {
+                reliability = 0.05
+                defense = 0.05
+                max_organisation = 5
+            }
+        
+         redoubt_networks = {
+            dig_in_speed_factor = 0.10
+         }
+       } 
+    }   
+}
