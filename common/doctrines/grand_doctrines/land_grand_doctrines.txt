@@ -466,3 +466,115 @@ mass_assault = {
         }
     }
 }
+imperial_land_power = {
+    folder = land
+
+    name = GRAND_DOCTRINE_IMPERIAL_LAND_POWER
+    description = GRAND_DOCTRINE_IMPERIAL_LAND_POWER_DESC
+    icon = GFX_doctrine_mass_assault_medium
+    available = {
+        always = yes
+    }
+    visible = {
+        tag = IMP
+    }
+    xp_cost = 100
+    xp_type = army
+
+     tracks = {
+        infantry
+        combat_support
+        armor
+        operations
+    }
+
+    category_blaster_infantry = {
+        attack = 0.05
+        defence = 0.03
+    }
+
+    out_of_supply_factor = -0.05
+    minimum_training_level = 0.1
+
+    milestones = {
+           {
+            #Infantry
+            enable_tactic = tactic_human_wave_tactics
+            additional_brigade_column_size = 1
+
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = infantry_milestone_var
+                        }
+                    }
+                    set_variable = { infantry_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { infantry_milestone_var = 1 }
+                }
+            }
+        }
+        {
+            #Artillery/Support
+            enable_tactic = tactic_elastic_defense
+            out_of_supply_factor = -0.05
+            minimum_training_level = -0.05
+
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = support_milestone_var
+                        }
+                    }
+                    set_variable = { support_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { support_milestone_var = 1 }
+                }
+            }
+        }
+        {
+            #Armor
+            land_reinforce_rate = 0.02
+            enable_tactic = tactic_overwhelming_fire
+
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = armor_milestone_var
+                        }
+                    }
+                    set_variable = { armor_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { armor_milestone_var = 1 }
+                }
+            }
+        }
+        {
+            #Operations
+            enable_tactic = tactic_backhand_blow
+            weekly_casualties_war_support = 0.001
+            minimum_training_level = -0.05
+            dig_in_speed_factor = 0.05
+
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = operations_milestone_var
+                        }
+                    }
+                    set_variable = { operations_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { operations_milestone_var = 1 }
+                }
+            }
+        }
+    }
+}
