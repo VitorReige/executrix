@@ -223,6 +223,10 @@ technologies = {
 		research_cost = 1
 		start_year = 1936
 
+		path = {
+			leads_to_tech = imp_bb_2
+		}
+
 		#set at gamestart
 		allow = {
 			always = no
@@ -230,6 +234,17 @@ technologies = {
 		folder = {
 			name = imp_naval_folder
 			position = { x = 1 y = 2 }
+		}
+	}
+	imp_bb_2 = {
+		enable_equipments = {
+			imp_bb_2
+		}
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = imp_naval_folder
+			position = { x = 1 y = 12 }
 		}
 	}
 	
