@@ -27,6 +27,7 @@ set_technology = {
 
 	# Air
 	#TODO: Add non-BBA air techs
+	imp_small_airframe = 1
 	early_bombs = 1
 	aa_lmg = 1
 	air_torpedo_1 = 1
@@ -121,6 +122,7 @@ if = {
 		early_bomber = 1
 		strategic_bomber1 = 1
 		naval_bomber1 = 1
+		imp_small_airframe = 1
 	}
 }
 

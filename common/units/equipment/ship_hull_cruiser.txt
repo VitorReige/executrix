@@ -1302,7 +1302,7 @@ equipments = {
 	imp_cruiser_2 = {
 		year = 1940
 		visual_level = 1
-		archetype = ship_hull_cruiser
+		archetype = imp_cruiser_1
 		priority = 2000
 		parent = imp_cruiser_1
 		manpower = 750
@@ -1323,4 +1323,29 @@ equipments = {
 			fixed_ship_armor_slot = inherit	
 		}
 	}
-}
+
+	imp_cruiser_3 = {
+		year = 1944
+		visual_level = 1
+		archetype = imp_cruiser_2
+		priority = 2000
+		parent = imp_cruiser_2
+		manpower = 800
+		sub_detection = 3
+		naval_speed = 33
+		reliability = 0.95
+		naval_range = 3500
+		max_strength = 120
+		module_slots = inherit
+		default_modules = {
+			fixed_ship_battery_slot = inherit
+			fixed_ship_anti_air_slot = inherit
+			fixed_ship_fire_control_system_slot = inherit
+			fixed_ship_radar_slot = inherit
+			fixed_ship_engine_slot = inherit
+			fixed_ship_secondaries_slot = inherit
+			fixed_ship_armor_slot = inherit	
+		}
+	}
+
+}	

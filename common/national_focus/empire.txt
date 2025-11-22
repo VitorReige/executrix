@@ -1984,11 +1984,11 @@ focus_tree = {
 			focus = imp_improve_policing_skills
 		}
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.99
-				name = imp_adapting_to_earth_tactics
-				category = land_doctrine
-				uses = 1
+			add_daily_mastery = {
+				name = imp_lessons_from_the_desert
+				amount = 1
+				days = 175
+				track = infantry
 			}
 		}
 	}

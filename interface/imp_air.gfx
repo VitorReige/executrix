@@ -1,0 +1,85 @@
+spriteTypes = {
+
+	# Air Equipment
+	spriteType = {
+		name = "GFX_imp_small_airframe_1_medium"
+		texturefile = "gfx\interface\technologies\torrent.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_small_airframe_2_medium"
+		texturefile = "gfx\interface\technologies\v_wing.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_small_airframe_3_medium"
+		texturefile = "gfx\interface\technologies\z-95.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_small_airframe_4_medium"
+		texturefile = "gfx\interface\technologies\tie_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_small_airframe_5_medium"
+		texturefile = "gfx\interface\technologies\tie-ba.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_medium_airframe_1_medium"
+		texturefile = "gfx\interface\technologies\y-wing.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_medium_airframe_2_medium"
+		texturefile = "gfx\interface\technologies\skipray.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_medium_airframe_3_medium"
+		texturefile = "gfx\interface\technologies\tie_bomber.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_medium_airframe_4_medium"
+		texturefile = "gfx\interface\technologies\tie-rb.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_medium_airframe_5_medium"
+		texturefile = "gfx\interface\technologies\tie_defender.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_large_airframe_1_medium"
+		texturefile = "gfx\interface\technologies\laat.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_large_airframe_2_medium"
+		texturefile = "gfx\interface\technologies\maat.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_large_airframe_3_medium"
+		texturefile = "gfx\interface\technologies\idt.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_large_airframe_4_medium"
+		texturefile = "gfx\interface\technologies\tie-rp.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_large_airframe_5_medium"
+		texturefile = "gfx\interface\technologies\aal.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_air_engines_1_medium"
+		texturefile = "gfx\interface\technologies\starwars_militarybuff_second_1.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_air_engines_2_medium"
+		texturefile = "gfx\interface\technologies\starwars_militarybuff_second_2.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_air_power_1_medium"
+		texturefile = "gfx\interface\technologies\twin_ion_engine.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_air_power_2_medium"
+		texturefile = "gfx\interface\technologies\unique_tech_10.dds"
+	}
+	spriteType = {
+		name = "GFX_imp_air_power_3_medium"
+		texturefile = "gfx\interface\technologies\unique_tech_10.dds"
+	}
+
+}

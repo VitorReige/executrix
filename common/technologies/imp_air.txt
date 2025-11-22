@@ -1,13 +1,18 @@
 technologies = {
-	imp_small_airframe = {
+	imp_small_airframe_1 = {#V-19 Torrent
         research_cost = 1
         start_year = 1933
-        enable_equipment = {
+        enable_equipments = {
             imp_small_airframe_1
         }
         
         path = {
             leads_to_tech = imp_small_airframe_2
+            research_cost_coeff = 1
+        }
+
+         path = {
+            leads_to_tech = imp_small_airframe_3
             research_cost_coeff = 1
         }
 
@@ -17,20 +22,27 @@ technologies = {
         folder = {
             name = imp_air_folder
             position = {
-                x = 0
+                x = 1
                 y = 2
             }
         }
+
+        categories = {
+			light_air
+			light_fighter
+            air_equipment
+		}
+
     }
-    imp_small_airframe_2 = {
+    imp_small_airframe_2 = {#V-Wing Starfighter
         research_cost = 1
         start_year = 1936
-        enable_equipment = {
+        enable_equipments = {
             imp_small_airframe_2
         }
        
        path = {
-            leads_to_tech = imp_small_airframe_3
+            leads_to_tech = imp_small_airframe_4
             research_cost_coeff = 1
         }
        
@@ -41,15 +53,22 @@ technologies = {
         folder = {
             name = imp_air_folder
             position = {
-                x = 0
+                x = -1
                 y = 4
             }
         }
+
+        categories = {
+			light_air
+			light_fighter
+            air_equipment
+		}
+
     }
-    imp_small_airframe_3 = {
+    imp_small_airframe_3 = {#Z-95 Headhunter
         research_cost = 1
-        start_year = 1940
-        enable_equipment = {
+        start_year = 1936
+        enable_equipments = {
             imp_small_airframe_3
         }
         
@@ -64,15 +83,15 @@ technologies = {
         folder = {
             name = imp_air_folder
             position = {
-                x = 0
-                y = 6
+                x = 3
+                y = 4
             }
         }
     }
-    imp_small_airframe_4 = {
+    imp_small_airframe_4 = {#TIE/LN
         research_cost = 1
-        start_year = 1944
-        enable_equipment = {
+        start_year = 1940
+        enable_equipments = {
             imp_small_airframe_4
         } 
        
@@ -87,15 +106,15 @@ technologies = {
         folder = {
             name = imp_air_folder
             position = {
-                x = 0
-                y = 8
+                x = 1
+                y = 6
             }
         }
     }
-    imp_small_airframe_5 = {
+    imp_small_airframe_5 = {#TIE/BA
         research_cost = 1
         start_year = 1945
-        enable_equipment = {
+        enable_equipments = {
             imp_small_airframe_5
         } 
        
@@ -105,15 +124,15 @@ technologies = {
         folder = {
             name = imp_air_folder
             position = {
-                x = 0
-                y = 12
+                x = 1
+                y = 8
             }
         }
     }
-    imp_medium_airframe = {
+    imp_medium_airframe_1 = {#BTL-B Y-Wing
         research_cost = 1
         start_year = 1936
-        enable_equipment = {
+        enable_equipments = {
             imp_medium_airframe_1
         }
         
@@ -128,15 +147,15 @@ technologies = {
         folder = {
             name = imp_air_folder
             position = {
-                x = 2
+                x = 4
                 y = 2
             }
         }
     }
-    imp_medium_airframe_2 = {
+    imp_medium_airframe_2 = {#Skipray Blastboat
         research_cost = 1
         start_year = 1938
-        enable_equipment = {
+        enable_equipments = {
             imp_medium_airframe_2
         }
         
@@ -151,15 +170,15 @@ technologies = {
         folder = {
             name = imp_air_folder
             position = {
-                x = 2
+                x = 4
                 y = 4
             }
         }
     }
-    imp_medium_airframe_3 = {
+    imp_medium_airframe_3 = {#TIE/SA Bomber
         research_cost = 1
         start_year = 1936
-        enable_equipment = {
+        enable_equipments = {
             imp_medium_airframe_3
         }
         
@@ -174,15 +193,15 @@ technologies = {
         folder = {
             name = imp_air_folder
             position = {
-                x = 2
+                x = 4
                 y = 6
             }
         }
     }
-    imp_medium_airframe_4 = {
+    imp_medium_airframe_4 = {#TIE/RB
         research_cost = 1
         start_year = 1936
-        enable_equipment = {
+        enable_equipments = {
             imp_medium_airframe_4
         }
         
@@ -197,18 +216,128 @@ technologies = {
         folder = {
             name = imp_air_folder
             position = {
+                x = 4
+                y = 8
+            }
+        }
+    }
+    imp_medium_airframe_5 = {#TIE/D Defender
+        research_cost = 1
+        start_year = 1936
+        enable_equipments = {
+            imp_medium_airframe_5
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+        folder = {
+            name = imp_air_folder
+            position = {
+                x = 4
+                y = 12
+            }
+        }
+    }
+    imp_large_airframe_1 = {#LAAT
+        research_cost = 1
+        start_year = 1936
+        enable_equipments = {
+            imp_large_airframe_1   
+         }      
+       
+         path = {
+            leads_to_tech = imp_large_airframe_2
+            research_cost_coeff = 1
+        }
+         
+        ai_will_do = {
+            factor = 1
+        }
+        folder = {
+            name = imp_air_folder
+            position = {
+                x = 2
+                y = 2
+            }
+        }
+    }
+    imp_large_airframe_2 = {#MAAT
+        research_cost = 1
+        start_year = 1938
+        enable_equipments = {
+            imp_large_airframe_2
+        }
+        
+        path = {
+            leads_to_tech = imp_large_airframe_3
+            research_cost_coeff = 1
+        }
+        
+        ai_will_do = {
+            factor = 1
+        }
+        folder = {
+            name = imp_air_folder
+            position = {
+                x = 2
+                y = 4
+            }
+        }
+    }
+    imp_large_airframe_3 = {#Imperial Drop Transport
+        research_cost = 1
+        start_year = 1940
+        enable_equipments = {
+            imp_large_airframe_3
+        }
+        
+        path = {
+            leads_to_tech = imp_large_airframe_4
+            research_cost_coeff = 1
+        }
+        
+        ai_will_do = {
+            factor = 1
+        }
+        folder = {
+            name = imp_air_folder
+            position = {
+                x = 2
+                y = 6
+            }
+        }
+    }
+    imp_large_airframe_4 = {#TIE/RP
+        research_cost = 1
+        start_year = 1936
+        enable_equipments = {
+            imp_large_airframe_4
+        }
+        
+        path = {
+            leads_to_tech = imp_large_airframe_5
+            research_cost_coeff = 1
+        }
+        
+        ai_will_do = {
+            factor = 1
+        }
+        folder = {
+            name = imp_air_folder
+            position = {
                 x = 2
                 y = 8
             }
         }
     }
-    imp_medium_airframe_5 = {
+    imp_large_airframe_5 = {#AAL-1971/9.1
         research_cost = 1
         start_year = 1936
-        enable_equipment = {
-            imp_medium_airframe_5
+        enable_equipments = {
+            imp_large_airframe_5
         }
-
+        
         ai_will_do = {
             factor = 1
         }
@@ -220,38 +349,143 @@ technologies = {
             }
         }
     }
-    imp_large_airframe = {
-        research_cost = 1
-        start_year = 1936
-        enable_equipment = {
-            imp_large_airframe_1
-        }
-        ai_will_do = {
-            factor = 1
-        }
-        folder = {
-            name = imp_air_folder
-            position = {
-                x = 0
-                y = 2
-            }
-        }
-    }
-    imp_large_airframe_2 = {
-        research_cost = 1
-        start_year = 1936
-        enable_equipment = {
-            imp_large_airframe_1
-        }
-        ai_will_do = {
-            factor = 1
-        }
-        folder = {
-            name = imp_air_folder
-            position = {
-                x = 0
-                y = 4
-            }
-        }
-    }
+    imp_air_power_1 = {#Fission Reactors
+
+		enable_equipment_modules = {
+			reactor_1_1x
+			reactor_1_2x
+			reactor_1_3x
+			reactor_1_4x
+			reactor_1_6x	
+		}
+		
+		research_cost = 1
+		start_year = 1922
+
+		folder = {
+			name = imp_air_folder
+			position = { x = 0 y = 2 }
+		}
+
+		path = {
+			leads_to_tech = imp_air_power_2
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_power
+		}
+	}
+    imp_air_power_2 = {#Solar Cells
+
+		enable_equipment_modules = {
+			reactor_2_1x
+			reactor_2_2x
+			reactor_2_3x
+			reactor_2_4x
+			reactor_2_6x	
+		}
+		
+		research_cost = 1
+		start_year = 1922
+
+		folder = {
+			name = imp_air_folder
+			position = { x = 0 y = 4 }
+		}
+
+		path = {
+			leads_to_tech = imp_air_power_3
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_power
+		}
+	}
+    imp_air_power_3 = {#Hypermatter Reactors
+
+		
+		research_cost = 1
+		start_year = 1922
+
+		folder = {
+			name = imp_air_folder
+			position = { x = 0 y = 6 }
+		}
+
+		path = {
+			leads_to_tech = imp_air_power_3
+			research_cost_coeff = 1
+		}
+
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_power
+		}
+	}
+    imp_air_engines_1 = {#Ion Engines
+
+		enable_equipment_modules = {
+			thruster_1_1x
+			thruster_1_2x
+			thruster_1_3x
+			thruster_1_4x
+			thruster_1_6x	
+		}
+		
+		research_cost = 1
+		start_year = 1922
+
+		folder = {
+			name = imp_air_folder
+			position = { x = -3 y = 2 }
+		}
+
+		path = {
+			leads_to_tech = imp_air_engines_2
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+            cat_air_thruster
+		}
+	}
+    imp_air_engines_2 = {#Ion Engine Improvements
+
+		enable_equipment_modules = {
+			thruster_2_1x
+			thruster_2_2x
+			thruster_2_3x
+			thruster_2_4x
+			thruster_2_6x	
+		}
+		
+		research_cost = 1
+		start_year = 1922
+
+		folder = {
+			name = imp_air_folder
+			position = { x = -3 y = 6 }
+		}
+
+		path = {
+			leads_to_tech = imp_air_engines_3
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+            cat_air_thruster
+		}
+	}
 }

@@ -1,5 +1,352 @@
+#Currently determining what power sources to grant to each reactor module by doing a bit of wiki diving. 
+#Thrusters might be a little simpler and after thrusters are complete I will move on to other modules
+
+
 equipment_modules = {
 	limit = {
 		has_dlc = "By Blood Alone"
 	}
+	#Power Sources
+	#Fission
+	reactor_1_1x = {
+		abbreviation = "e11"
+		category = plane_low_power_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			weight = 5
+			reliability = 0.15
+			build_cost_ic = 2
+			power_generation = 10
+		}
+		
 	}
+	#Fission
+	reactor_1_2x = {
+		abbreviation = "e12"
+		category = plane_low_power_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			weight = 10
+			reliability = 0.15
+			build_cost_ic = 4
+			power_generation = 20
+		}
+	}
+	#Fission
+	reactor_1_3x = {
+		abbreviation = "e13"
+		category = plane_medium_power_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			weight = 15
+			reliability = 0.15
+			build_cost_ic = 6
+			power_generation = 30
+		}
+	}
+	#Fission
+	reactor_1_4x = {
+		abbreviation = "e14"
+		category = plane_large_power_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			weight = 20
+			reliability = 0.15
+			build_cost_ic = 8
+			power_generation = 40
+		}
+	}
+	#Fission
+	reactor_1_6x = {
+		abbreviation = "e16"
+		category = plane_massive_power_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			weight = 25
+			reliability = 0.15
+			build_cost_ic = 10
+			power_generation = 50
+		}
+	}
+	#Fission
+	reactor_2_1x = {
+		abbreviation = "e11"
+		category = plane_low_power_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			weight = 5
+			reliability = 0.30
+			build_cost_ic = 2.5
+			power_generation = 10
+		}
+		
+	}
+	#Solar Cells
+	reactor_2_2x = {
+		abbreviation = "e12"
+		category = plane_low_power_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			weight = 10
+			reliability = 0.30
+			build_cost_ic = 5
+			power_generation = 20
+		}
+	}
+
+	reactor_2_3x = {
+		abbreviation = "e13"
+		category = plane_medium_power_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			weight = 15
+			reliability = 0.30
+			build_cost_ic = 7.5
+			power_generation = 30
+		}
+	}
+
+	reactor_2_4x = {
+		abbreviation = "e14"
+		category = plane_large_power_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			weight = 20
+			reliability = 0.30
+			build_cost_ic = 9
+			power_generation = 40
+		}
+	}
+
+	reactor_2_6x = {
+		abbreviation = "e16"
+		category = plane_massive_power_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			weight = 25
+			reliability = 0.30
+			build_cost_ic = 11.5
+			power_generation = 50
+		}
+	}
+	#Thrusters
+
+	thruster_1_1x = {
+		abbreviation = "e11"
+		category = plane_thruster_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 11
+			reliability = -0.20
+			build_cost_ic = 2
+			fuel_consumption = 0.16
+			power_generation = -10
+		}
+		
+	}
+	
+
+	thruster_1_2x = {
+		abbreviation = "e12"
+		category = plane_thruster_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 19
+			reliability = -0.20
+			build_cost_ic = 4
+			fuel_consumption = 0.32
+			power_generation = -20
+		}
+	}
+
+	thruster_1_3x = {
+		abbreviation = "e13"
+		category = plane_thruster_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 23
+			reliability = -0.20
+			build_cost_ic = 6
+			fuel_consumption = 0.48
+			power_generation = -30
+		}
+	}
+
+	thruster_1_4x = {
+		abbreviation = "e14"
+		category = plane_thruster_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 32
+			reliability = -0.20
+			build_cost_ic = 8
+			fuel_consumption = 0.64
+			power_generation = -40
+		}
+	}
+
+	thruster_1_6x = {
+		abbreviation = "e16"
+		category = plane_thruster_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 41
+			reliability = -0.20
+			build_cost_ic = 10
+			fuel_consumption = 0.8
+			power_generation = -50
+		}
+	}
+
+	thruster_2_1x = {
+		abbreviation = "e11"
+		category = plane_thruster_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 11
+			reliability = -0.35
+			build_cost_ic = 2.5
+			fuel_consumption = 0.16
+			power_generation = -10
+		}
+		
+	}
+
+	thruster_2_2x = {
+		abbreviation = "e12"
+		category = plane_thruster_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 19
+			reliability = -0.35
+			build_cost_ic = 5
+			fuel_consumption = 0.32
+			power_generation = -20
+		}
+	}
+
+	thruster_2_3x = {
+		abbreviation = "e13"
+		category = plane_thruster_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 23
+			reliability = -0.35
+			build_cost_ic = 7.5
+			fuel_consumption = 0.48
+			power_generation = -30
+		}
+	}
+
+	thruster_2_4x = {
+		abbreviation = "e14"
+		category = plane_thruster_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 32
+			reliability = -0.35
+			build_cost_ic = 9
+			fuel_consumption = 0.64
+			power_generation = -40
+		}
+	}
+
+	thruster_2_6x = {
+		abbreviation = "e16"
+		category = plane_thruster_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 41
+			reliability = -0.35
+			build_cost_ic = 11.5
+			fuel_consumption = 0.8
+			power_generation = -50
+		}
+	}
+
+	thruster_3_1x = {
+		abbreviation = "e11"
+		category = plane_thruster_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 11
+			build_cost_ic = 3
+			fuel_consumption = 0.16
+			power_generation = -10
+		}
+		
+	}
+
+	thruster_3_2x = {
+		abbreviation = "e12"
+		category = plane_thruster_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 19
+			build_cost_ic = 6
+			fuel_consumption = 0.32
+			power_generation = -20
+		}
+	}
+
+	thruster_3_3x = {
+		abbreviation = "e13"
+		category = plane_thruster_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 23
+			build_cost_ic = 9
+			fuel_consumption = 0.48
+			power_generation = -30
+		}
+	}
+
+	thruster_3_4x = {
+		abbreviation = "e14"
+		category = plane_thruster_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 32
+			build_cost_ic = 12
+			fuel_consumption = 0.64
+			power_generation = -40
+		}
+	}
+
+	thruster_3_6x = {
+		abbreviation = "e16"
+		category = plane_thruster_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 41
+			build_cost_ic = 15
+			fuel_consumption = 0.8
+			power_generation = -50
+		}
+	}
+}
