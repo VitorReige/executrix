@@ -1773,6 +1773,43 @@ focus_tree = {
 				category = bb_tech
 				bonus = 0.99
 			}
+			IF = {
+				1011 = {
+					is_fully_controlled_by = IMP 
+					air_facility < 1
+					land_facility < 1
+					naval_facility < 1
+					nuclear_facility < 1
+				}
+				1011 ={
+			      add_building_construction = {
+				    type = naval_facility
+				   level = 1
+				   instant_build = yes
+				   province = { id = 2089 }
+			      }
+		        }
+			}
+			ELSE = {
+				random_core_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						air_facility < 1
+						land_facility < 1
+						naval_facility < 1
+						nuclear_facility < 1
+					} 
+					add_building_construction = {
+						type = naval_facility
+						level = 1
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							first = yes 
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -1913,6 +1950,74 @@ focus_tree = {
 			
 		 }
 	}
+
+	focus = {
+		id = imp_found_new_design_offices
+		icon = GFX_unique_tech_10_medium
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = imp_allow_air_experimentation
+		prerequisite = {
+			focus = imp_allow_air_experimentation
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_begin_training_local_pilots
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = 2
+		y = 1
+		relative_position_id = imp_move_beyond_the_hangars
+		prerequisite = {
+			focus = imp_move_beyond_the_hangars
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_expand_training
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		available = {
+			has_deployed_air_force_size = {
+			  size >300
+			  type = fighter
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = imp_begin_training_local_pilots
+		prerequisite = {
+			focus = imp_begin_training_local_pilots
+		}
+		completion_reward = { }
+	}	
+
+	focus = {
+		id = imp_finalise_the_training_programe
+		icon = GFX_unique_tech_10_medium
+		cost = x
+		available = {
+			has_deployed_air_force_size = {
+				size = >900
+				type = fighter
+
+				size = >300
+				type = cas
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = imp_expand_training
+		prerequisite = {
+			focus = imp_expand_training
+		}
+		completion_reward = { }
+	}
+
 	
 	focus = {
 		id = imp_start_expanding_the_mechanized_core
