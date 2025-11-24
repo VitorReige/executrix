@@ -1583,6 +1583,117 @@ focus_tree = {
 		}
 	}
 	
+
+	focus = {
+		id = imp_begin_urbanisation
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 23
+		y = 0
+		completion_reward = { }
+	}
+
+
+	focus = {
+		id = imp_intergrate_iran
+		icon = GFX_unique_tech_10_medium
+		cost = 6
+		x = 1
+		y = 1
+		relative_position_id = imp_begin_urbanisation
+		prerequisite = {
+			focus = imp_begin_urbanisation
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_intergrate_the_levant
+		icon = GFX_unique_tech_10_medium
+		cost = 6
+		x = -1
+		y = 1
+		relative_position_id = imp_begin_urbanisation
+		prerequisite = {
+			focus = imp_begin_urbanisation
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_imperial_merchant_fleet
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = 0
+		y = 2
+		relative_position_id = imp_begin_urbanisation
+		prerequisite = {
+			focus = imp_intergrate_iran
+		}
+		prerequisite = {
+			focus = imp_intergrate_the_levant
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_imperial_mining_guilds
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = -2
+		y = 1
+		relative_position_id = imp_imperial_merchant_fleet
+		prerequisite = {
+			focus = imp_imperial_merchant_fleet
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_establish_new_isb_offices
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = imp_imperial_merchant_fleet
+		prerequisite = {
+			focus = imp_imperial_merchant_fleet
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_help_rural_populations
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = 2
+		y = 1
+		relative_position_id = imp_imperial_merchant_fleet
+		prerequisite = {
+			focus = imp_imperial_merchant_fleet
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = begin_contruction_of_a_new_captial
+		icon = GFX_unique_tech_10_medium
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = imp_imperial_merchant_fleet
+		prerequisite = {
+			focus = imp_imperial_mining_guilds
+		}
+		prerequisite = {
+			focus = imp_establish_new_isb_offices
+		}
+		prerequisite = {
+			focus = imp_help_rural_populations
+		}
+		completion_reward = { }
+	}
+
 	##MILITARY TREE##
 	focus = {
 		id = imp_reorganise_the_officer_core
@@ -1965,6 +2076,49 @@ focus_tree = {
 	}
 
 	focus = {
+		id = imp_secure_new_rubber_supplies
+		icon = GFX_unique_tech_10_medium
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = imp_found_new_design_offices
+		prerequisite = {
+			focus = imp_found_new_design_offices
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_new_airbases
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = imp_found_new_design_offices
+		prerequisite = {
+			focus = imp_found_new_design_offices
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_establish_an_imperial_airforce_academy
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = 0
+		y = 4
+		relative_position_id = imp_move_beyond_the_hangars
+		prerequisite = {
+			focus = imp_finalise_the_training_programe
+		}
+		prerequisite = {
+			focus = imp_secure_new_rubber_supplies
+			focus = imp_new_airbases
+		}
+		completion_reward = { }
+	}
+
+	focus = {
 		id = imp_begin_training_local_pilots
 		icon = GFX_unique_tech_10_medium
 		cost = 3
@@ -2002,10 +2156,11 @@ focus_tree = {
 		cost = x
 		available = {
 			has_deployed_air_force_size = {
-				size = >900
+				size >900
 				type = fighter
-
-				size = >300
+			}
+			has_deployed_air_force_size = {
+				size >300
 				type = cas
 			}
 		}
