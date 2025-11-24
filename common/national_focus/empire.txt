@@ -1681,11 +1681,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.99
-				name = imp_adapting_to_earth_tactics
-				category = land_doctrine
-				uses = 1
+			add_daily_mastery = {
+				name = imp_lessons_from_the_desert
+				amount = 1
+				days = 175
+				track = infantry
 			}
 		 }
 	}
@@ -1846,6 +1846,74 @@ focus_tree = {
 		 }
 	}
 
+
+	focus = {
+		id = imp_move_beyond_the_hangars
+		icon = GFX_unique_tech_10_medium
+		cost = 3
+		x = 16
+		y = 1
+		relative_position_id = imp_train_local_officers
+		prerequisite = {
+			focus = imp_train_local_officers
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = imp_allow_air_experimentation
+		icon = GFX_unique_tech_10_medium
+		cost = 4
+		x = -2
+		y = 1
+		relative_position_id = imp_move_beyond_the_hangars
+		prerequisite = {
+			focus = imp_move_beyond_the_hangars
+		}
+		completion_reward = {
+			IF = {
+				291 = {
+					is_fully_controlled_by = IMP 
+					air_facility < 1
+					land_facility < 1
+					naval_facility < 1
+					nuclear_facility < 1
+				}
+				291 ={
+			      add_building_construction = {
+				    type = air_facility
+				   level = 1
+				   instant_build = yes
+				   province = { id = 2097 }
+			      }
+		        }
+			}
+			ELSE = {
+				random_core_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						air_facility < 1
+						land_facility < 1
+						naval_facility < 1
+						nuclear_facility < 1
+					} 
+					add_building_construction = {
+						type = air_facility
+						level = 1
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							first = yes 
+						}
+					}
+				}
+			}
+			
+			
+			
+		 }
+	}
+	
 	focus = {
 		id = imp_start_expanding_the_mechanized_core
 		icon = GFX_unique_tech_10_medium
@@ -1984,12 +2052,7 @@ focus_tree = {
 			focus = imp_improve_policing_skills
 		}
 		completion_reward = {
-			add_daily_mastery = {
-				name = imp_lessons_from_the_desert
-				amount = 1
-				days = 175
-				track = infantry
-			}
+			
 		}
 	}
 
