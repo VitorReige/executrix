@@ -108,6 +108,7 @@ focus_tree = {
 			add_stability = 0.03
 			add_political_power = 100
 			add_command_power = 10
+			army_experience = 25
 		}
 	}
 
@@ -2417,6 +2418,9 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_imperial_marines
 		}
+		available = {
+			has_completed_focus = imp_naval_academy
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = landing
@@ -2476,24 +2480,42 @@ focus_tree = {
 			focus = imp_landing_efforts
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					has_completed_focus = imp_naval_academy
-			    }
-				swap_ideas = {
-					remove_idea = imp_specialised_storm_troopers_3
-					add_idea = imp_specialised_storm_troopers_4
-				}
+			
+			swap_ideas = {
+				remove_idea = imp_specialised_storm_troopers_3
+				add_idea = imp_specialised_storm_troopers_4
 			}
-			else_if = {
-				limit = { has_idea = imp_specialised_storm_troopers }
-				swap_ideas = {
-					remove_idea = imp_specialised_storm_troopers
-					add_idea = imp_specialised_storm_troopers_2
-				}
-			}
+			
+			add_potential_special_forces_tree = yes
 		}
 	}
 
+	focus = {
+		id = imp_the_army_of_earth
+		icon = GFX_focus_deploy_trooper
+		cost = 5
+		x = 0
+		y = 5
+		relative_position_id = imp_start_expanding_the_mechanized_core
+		prerequisite = {
+			focus = imp_lessons_of_earth
+			focus = imp_improved_stormtrooper
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = imp_lessons_of_earth
+				}
+				swap_ideas = {
+					remove_idea = imp_army_3
+					add_idea = imp_army_4
+				}
+			}
+			else = {
+				add_ideas = imp_specialised_storm_troopers_5
+			}
+		}
+	}
+	
  #END OF THE FOCUS TREE 
 }
