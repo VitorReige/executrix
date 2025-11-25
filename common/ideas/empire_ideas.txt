@@ -3169,6 +3169,42 @@ ideas = {
 			}
 		}
 
+		imp_air_force = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				fighter_sortie_efficiency = -0.55
+				air_accidents_factor = 0.25
+				air_training_xp_gain_factor = -0.15
+				experience_gain_air_factor = -0.30
+				air_range_factor = -0.40
+			}
+		}
+
+		imp_air_force_1 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				fighter_sortie_efficiency = -0.45
+				air_accidents_factor = 0.2
+				air_training_xp_gain_factor = 0.15
+				experience_gain_air_factor = -0.25
+				air_range_factor = -0.4
+			}
+		}
+
 	}
 	
 }

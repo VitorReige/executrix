@@ -2198,7 +2198,12 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_move_beyond_the_hangars
 		}
-		completion_reward = { }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = imp_air_force
+				add_idea = imp_air_force_1
+			}
+		 }
 	}
 
 	focus = {
