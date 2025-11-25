@@ -339,7 +339,7 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_salvage_the_armouries
 		}
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = imp_salvage_the_armouries
 		completion_reward = {
@@ -360,20 +360,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-		}
-	}
-
-	focus = {
-		id = imp_setting_up_defences
-		icon = GFX_unique_tech_10_medium
-		cost = 3
-		prerequisite = {
-			focus = imp_salvage_the_armouries
-		}
-		x = 1
-		y = 1
-		relative_position_id = imp_salvage_the_armouries
-		completion_reward = {
 			656 = {
 				add_building_construction = {
 					type = infrastructure
@@ -387,7 +373,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-		 }
+			
+		}
 	}
 
 	focus = {
@@ -396,9 +383,6 @@ focus_tree = {
 		cost = 2
 		prerequisite = {
 			focus = imp_equip_the_garrisons
-		}
-		prerequisite = {
-			focus = imp_setting_up_defences
 		}
 		x = 0
 		y = 2
@@ -432,28 +416,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = imp_secure_the_fuel_rods
-		icon = GFX_unique_tech_10_medium
-		cost = 3
-		prerequisite = {
-			focus = imp_begin_fixing_the_reactor
-		}
-		x = -1
-		y = 1
-		relative_position_id = imp_begin_fixing_the_reactor
-		completion_reward = {
-			656 = {
-				add_building_construction = {
-					type = fuel_silo
-					level = 2
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 1
-			}
-			add_fuel = 4000
-		}
-	}
+
 
 	focus = {
 		id = imp_start_water_filtration
@@ -462,7 +425,7 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_begin_fixing_the_reactor
 		}
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = imp_begin_fixing_the_reactor
 		completion_reward = {
@@ -525,7 +488,7 @@ focus_tree = {
 			1010 = {
 				add_compliance = 20
 			}
-
+			
 		}
 	}
 
@@ -547,6 +510,15 @@ focus_tree = {
 				remove_idea = imp_reactor_works_0
 				add_idea = imp_reactor_works_1
 			}
+			656 = {
+				add_building_construction = {
+					type = fuel_silo
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_fuel = 4000
 		 }
 	}
 
@@ -659,7 +631,8 @@ focus_tree = {
 			 id = imperial_story.4
 			 days = 1
 			}
-			add_political_power = 25
+			add_political_power = 50
+			add_stability = 0.05
 		}
 	}
 
@@ -667,7 +640,7 @@ focus_tree = {
 		id = imp_restoring_order_to_the_cities
 		icon = GFX_focus_start_hiring_locals
 		cost = 3
-		x = -1
+		x = 0
 		y = 1
 		prerequisite = {
 			focus = imp_bring_the_holo_maps_online
@@ -678,25 +651,10 @@ focus_tree = {
 				add_core_of = IMP
 			}
 			
-
 			676 = {
 				add_core_of = IMP
 			}
 			
-		 }
-	}
-
-	focus = {
-		id = imp_restoring_order_over_the_desert
-		icon = GFX_focus_start_hiring_locals
-		cost = 3
-		x = 1
-		y = 1
-		relative_position_id = imp_bring_the_holo_maps_online
-		prerequisite = {
-			focus = imp_bring_the_holo_maps_online
-		}
-		completion_reward = {
 			292 = {
 				add_core_of = IMP
 			}
@@ -724,9 +682,9 @@ focus_tree = {
 			1010 = {
 				add_core_of = IMP
 			}
-
 		 }
 	}
+
 
 	focus = {
 		id = imp_the_role_of_vader
@@ -736,7 +694,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = imp_bring_the_holo_maps_online
 		prerequisite = {
-			focus = imp_restoring_order_over_the_desert
+			
 			focus = imp_restoring_order_to_the_cities
 		}
 		completion_reward = {
