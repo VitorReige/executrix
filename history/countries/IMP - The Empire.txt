@@ -179,6 +179,7 @@ add_ideas = {
 	imperial_military
 	stranded
 	no_industry
+	imp_air_force
 }
 
 recruit_character = darth_vader
