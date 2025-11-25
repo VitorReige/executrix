@@ -1590,11 +1590,15 @@ focus_tree = {
 		cost = 4
 		x = 23
 		y = 0
+		available = {
+			has_completed_focus = imp_the_role_of_vader
+		}
 		completion_reward = {
 			656 = {
 				set_state_category = town
 			}
-		 }
+			add_ideas = IMP_new_coruscant
+		}
 	}
 
 
@@ -1676,7 +1680,20 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_intergrate_the_levant
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 100
+			}
+			656 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = {id = 8085 }
+				}
+			}
+		 }
 	}
 
 	focus = {
@@ -1689,7 +1706,9 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_imperial_merchant_fleet
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_ideas = exploitation_idea
+		 }
 	}
 
 	focus = {
@@ -1738,6 +1757,10 @@ focus_tree = {
 			656 = {
 			  set_state_category = city
 		    }
+			swap_ideas = {
+				remove_idea = IMP_new_coruscant
+				add_idea = IMP_new_coruscant2
+			}
 		} 
 	}
 
