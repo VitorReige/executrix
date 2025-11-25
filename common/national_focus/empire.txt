@@ -1590,7 +1590,11 @@ focus_tree = {
 		cost = 4
 		x = 23
 		y = 0
-		completion_reward = { }
+		completion_reward = {
+			656 = {
+				set_state_category = town
+			}
+		 }
 	}
 
 
@@ -1604,7 +1608,46 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_begin_urbanisation
 		}
-		completion_reward = { }
+		completion_reward = {
+			421 = {
+				add_core_of = IMP
+			}
+			1001 = {
+				add_core_of = IMP
+			}
+			419 = {
+				add_core_of = IMP
+			}
+			1000 = {
+				add_core_of = IMP
+			}
+			420 = {
+				add_core_of = IMP
+			}
+			266 = {
+				add_core_of = IMP
+			}
+			418 = {
+				add_core_of = IMP
+			}
+			1003 = {
+				add_core_of = IMP
+			}
+			1004 = {
+				add_core_of = IMP
+			}
+			1002 = {
+				add_core_of = IMP
+			}
+			
+			416 = {
+				add_core_of = IMP
+			}
+
+			410 = {
+				add_core_of = IMP
+			}
+		}
 	}
 
 	focus = {
@@ -1691,7 +1734,11 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_help_rural_populations
 		}
-		completion_reward = { }
+		completion_reward = {
+			656 = {
+			  set_state_category = city
+		    }
+		} 
 	}
 
 	##MILITARY TREE##
