@@ -1240,6 +1240,8 @@ ideas = {
 		}
 
 
+		
+
 		balkan_bonus = {
 			allowed = {
 				always = no
@@ -3166,6 +3168,25 @@ ideas = {
 				terrain_trait_xp_gain_factor = 0.1
 				trait_naval_invader_xp_gain_factor = 0.08
 				commando_xp_gain_factor = 0.07
+			}
+		}
+
+		imp_specialised_storm_troopers_5 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = stormtrooper_squad
+
+			modifier = {
+				special_forces_cap = -0.15
+				special_forces_attack_factor = 0.12
+				special_forces_defence_factor = 0.1
+				special_forces_training_time_factor = 0.15
+				terrain_trait_xp_gain_factor = 0.15
+				trait_naval_invader_xp_gain_factor = 0.1
+				commando_xp_gain_factor = 0.1
 			}
 		}
 
