@@ -7,9 +7,9 @@
 ### search_filters = {FOCUS_FILTER_MANPOWER}
 ### search_filters = {FOCUS_FILTER_ANNEXATION}
 
+### Intro Path ###
 focus_tree = {
 	id = imp_focus
-
 	country = {
 		factor = 0
 		modifier = {
@@ -19,32 +19,55 @@ focus_tree = {
 			}
 		}
 	}
-
 	default = no
 	continuous_focus_position = { x = 25 y = 3500}
-
 	initial_show_position = {
 		x = 0
 		y = 0
 	}
-	
+	###Focus Path Shortcuts###
+	shortcut = {
+		name = imp_economy_shortcut
+		target = imp_logistics_review
+		scroll_wheel_factor = 1.5
+	}
+	shortcut = {
+		name = imp_conquest_shortcut
+		target = imp_subjugate_iran
+		scroll_wheel_factor = 1.5
+	}
+	shortcut = {
+		name = imp_army_shortcut
+		target = imp_army_two
+		scroll_wheel_factor = 1.5
+	}
+	shortcut = {
+		name = imp_air_shortcut
+		target = imp_bombers
+		scroll_wheel_factor = 1.5
+	}
+	shortcut = {
+		name = imp_navy_shortcut
+		target = imp_capital_ships
+		scroll_wheel_factor = 1.5
+	}
+	shortcut = {
+		name = imp_executrix_shortcut
+		target = imp_phase_one
+		scroll_wheel_factor = 1.5
+	}
 	focus = {
 		id = imp_emergency_power
 		icon = GFX_focus_deploy_trooper
 		x = 5
 		y = 0
-
 		cost = 1
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		ai_will_do = {
 			factor = 50
-
 		}
 		completion_reward = {
 			country_event = {
@@ -52,7 +75,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = imp_assessing_the_situation
 		icon = GFX_focus_survey
@@ -60,20 +82,32 @@ focus_tree = {
 		y = 1
 		relative_position_id = imp_emergency_power
 		cost = 1
-		prerequisite =
-		{
-			focus = imp_emergency_power
-		}
+		prerequisite = {
+			focus = imp_emergency_power}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward =
-		{
+		completion_reward ={
 			country_event = {
 				id = imperial.0
 			}
 		}
 	}
-
+	focus = {
+		id = imp_salvaging_the_equipment
+		icon = GFX_focus_investigate
+		cost = 1
+		prerequisite = {
+			focus = imp_assessing_the_situation
+		}
+		x = 0
+		y = 1
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		relative_position_id = imp_assessing_the_situation
+		completion_reward = {
+			country_event = {
+				id = imperial.1
+			}
+		}
+	}
 	focus = {
 		id = imp_repair
 		icon = GFX_focus_reconstruction
@@ -91,8 +125,6 @@ focus_tree = {
 			}
 		}
 	}
-
-
 	focus = {
 		id = imp_regrouping_of_command
 		icon = GFX_focus_the_imperial_cabinet
@@ -111,31 +143,6 @@ focus_tree = {
 			army_experience = 25
 		}
 	}
-
-	
-
-
-	focus = {
-		id = imp_salvaging_the_equipment
-		icon = GFX_focus_investigate
-		cost = 1
-		prerequisite = {
-			focus = imp_assessing_the_situation
-		}
-		x = 0
-		y = 1
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		relative_position_id = imp_assessing_the_situation
-		completion_reward = {
-			country_event = {
-				id = imperial.1
-			}
-		}
-	}
-
-
-
-
 	focus = {
 		id = imp_subjugate_iraq
 		icon = GFX_goal_generic_forceful_treaty
@@ -148,11 +155,10 @@ focus_tree = {
 				has_war = yes
 			}
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		prerequisite = {
 			focus = imp_regrouping_of_command
 		}
-
 		bypass = {
 			OR = {
 				NOT = {
@@ -180,7 +186,6 @@ focus_tree = {
 					can_join_factions = no
 				}
 			}
-
 			ENG = {
 				diplomatic_relation = {
 					country = IRQ
@@ -188,7 +193,6 @@ focus_tree = {
 					active = no
 				}
 			}
-
 			FRA = {
 				diplomatic_relation = {
 					country = IRQ
@@ -196,7 +200,6 @@ focus_tree = {
 					active = no
 				}
 			}
-			
 			custom_effect_tooltip = IMP_INSTANT_WAR
 			hidden_effect = {
 				add_ai_strategy = {
@@ -214,9 +217,7 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus =
-	{
+	focus = {
 		id = imp_subjugate_saudi
 		icon = GFX_goal_generic_forceful_treaty
 		will_lead_to_war_with = SAU
@@ -228,11 +229,10 @@ focus_tree = {
 				has_war = yes
 			}
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		prerequisite = {
 			focus = imp_regrouping_of_command
 		}
-
 		bypass = {
 			OR = {
 				NOT = {
@@ -277,10 +277,8 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
-		id = imp_begining_ship_repairs
-		icon = GFX
+		id = imp_phase_one 
 		cost = 2
 		prerequisite = {
 			focus = imp_subjugate_iraq
@@ -288,15 +286,20 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_subjugate_saudi
 		}
-
 		available = {
 			controls_state = 291
 			controls_state = 292
 		}
-
-		x = 0
-		y = 2
-		relative_position_id = imp_regrouping_of_command
+		x = 5
+		y = 6
+	}
+	focus = {
+		id = imp_beginning_ship_repairs
+		cost = 2
+		prerequisite = {
+			focus = imp_phase_one
+		}
+		relative_position_id = imp_phase_one
 	
 		completion_reward = {
 			swap_ideas = {
@@ -304,2237 +307,815 @@ focus_tree = {
 				add_idea = damaged_ship
 			}
 		}
+		x = 0
+		y = 1
 	}
-
 	focus = {
-		id = imp_salvage_the_armouries
-		icon = GFX_unique_tech_10_medium
+		id = imp_hull_repair
 		cost = 2
 		prerequisite = {
-			focus = imp_begining_ship_repairs
+			focus = imp_beginning_ship_repairs
 		}
+		relative_position_id = imp_beginning_ship_repairs
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = imp_repair_conference_room
+		cost = 2
+		prerequisite = {
+			focus = imp_beginning_ship_repairs
+		}
+		relative_position_id = imp_beginning_ship_repairs
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = imp_executrix_phase_two
+		cost = 2
+		prerequisite = {
+			focus = imp_repair_conference_room
+		}
+		prerequisite = {
+			focus = imp_hull_repair
+		}
+		relative_position_id = imp_hull_repair
+		x = 1
+		y = 1
+	}
+		### Economic Branch ###
+	focus = {
+		id = imp_logistics_review
+		cost = 2
+		prerequisite = {
+			focus = imp_executrix_phase_two
+		}
+		relative_position_id = imp_executrix_phase_two
+		x = -20
+		y = 1
+	}
+		###Intelligence Branch###
+	focus = {
+		id = imp_intelligence_branch
+		cost = 2
+		prerequisite = {
+			focus = imp_executrix_phase_two
+		}
+		relative_position_id = imp_executrix_phase_two
+		x = -7
+		y = 1
+	}
+	focus = {
+		id = imp_intelligence_two
+		cost = 2
+		prerequisite = {
+			focus = imp_intelligence_branch
+		}
+		relative_position_id = imp_intelligence_branch
+		x = 0
+		y = 3
+	}
+	focus = {
+		id = imp_intelligence_three
+		cost = 2
+		prerequisite = {
+			focus = imp_intelligence_two
+		}
+		relative_position_id = imp_intelligence_two
+		x = 0
+		y = 3
+	}
+	focus = {
+		id = imp_intelligence_four
+		cost = 2
+		prerequisite = {
+			focus = imp_intelligence_three
+		}
+		prerequisite = {
+			focus = imp_phase_three
+		}
+		relative_position_id = imp_intelligence_three
+		x = 0
+		y = 2
+	}
+	focus = { 
+		id = imp_intelligence_five
+		cost = 2
+		prerequisite = {
+			focus = imp_intelligence_four
+		}
+		relative_position_id = imp_intelligence_four
+		x = 0
+		y = 2
+	}
+	### Executrix Phase Two Branch ###
+	focus = {
+		id = imp_reconstruction_phase_two_branch
+		cost = 2
+		prerequisite = {
+			focus = imp_executrix_phase_two
+		}
+		relative_position_id = imp_executrix_phase_two
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_base_iraq
+		cost = 2
+		prerequisite = {
+			focus = imp_reconstruction_phase_two_branch
+		}
+		relative_position_id = imp_reconstruction_phase_two_branch
 		x = -2
 		y = 1
-		relative_position_id = imp_begining_ship_repairs
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = republic_equipment_1
-				amount = 10000
-				producer = IMP
-			}
-			656 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		 }
 	}
-	
 	focus = {
-		id = imp_equip_the_garrisons
-		icon = GFX_unique_tech_10_medium
-		cost = 3
+		id = imp_base_saudi
+		cost = 2
 		prerequisite = {
-			focus = imp_salvage_the_armouries
+			focus = imp_base_iraq
 		}
+		relative_position_id = imp_base_iraq
 		x = 0
 		y = 1
-		relative_position_id = imp_salvage_the_armouries
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = 500
-				producer = IMP
-			}
-			656 = {
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 2
-					instant_build = yes
-				}
-			}
-			656 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 8005
-					instant_build = yes
-				}
-			}
-			
-		}
 	}
-
 	focus = {
-		id = imp_deploy_the_remaining_troops
-		icon = GFX_focus_deploy_trooper
+		id = imp_supply_lines_iraq
 		cost = 2
 		prerequisite = {
-			focus = imp_equip_the_garrisons
+			focus = imp_supply_lines_saudi
 		}
+		relative_position_id = imp_supply_lines_saudi
 		x = 0
-		y = 2
-		relative_position_id = imp_salvage_the_armouries
-		completion_reward = {
-			load_oob = "imp_deployed_troops"
-			army_experience = 15
-			add_command_power = 10
-		}
+		y = 1
 	}
-
 	focus = {
-		id = imp_begin_fixing_the_reactor
-		icon = GFX_unique_tech_10_medium
+		id = imp_supply_lines_saudi
 		cost = 2
 		prerequisite = {
-			focus = imp_begining_ship_repairs
+			focus = imp_reconstruction_phase_two_branch
 		}
+		relative_position_id = imp_reconstruction_phase_two_branch
 		x = 2
 		y = 1
-		relative_position_id = imp_begining_ship_repairs
-		completion_reward = {
-			add_ideas = imp_reactor_works_0
-			656 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
 	}
-
-
-
 	focus = {
-		id = imp_start_water_filtration
-		icon = GFX_unique_tech_10_medium
-		cost = 3
-		prerequisite = {
-			focus = imp_begin_fixing_the_reactor
-		}
-		x = 0
-		y = 1
-		relative_position_id = imp_begin_fixing_the_reactor
-		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 50
-			675 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_core_of = IMP
-			}
-			859 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_core_of = IMP
-			}
-
-			1011 = {
-				add_core_of = IMP
-			}
-
-
-			291 = {
-				add_compliance = 20
-			}
-			
-
-			676 = {
-				add_compliance = 20
-			}
-			292 = {
-				add_compliance = 20
-			}
-			854 = {
-				add_compliance = 20
-			}
-			855 = {
-				add_compliance = 20
-			}
-			679 = {
-				add_compliance = 20
-			}
-			856 = {
-				add_compliance = 20
-			}
-			857 = {
-				add_compliance = 20
-			}
-			858 = {
-				add_compliance = 20
-			}
-			678 = {
-				add_compliance = 20
-			}
-			1010 = {
-				add_compliance = 20
-			}
-			
-		}
-	}
-
-	focus = {
-		id = imp_stage_one_reactor_repairs
-		icon = GFX_unique_tech_10_medium
+		id = imp_fortify_crash_site
 		cost = 2
 		prerequisite = {
-			focus = imp_secure_the_fuel_rods
+			focus = imp_reconstruction_phase_two_branch
 		}
-		prerequisite = {
-			focus = imp_start_water_filtration
-		}
+		relative_position_id = imp_reconstruction_phase_two_branch
 		x = 0
-		y = 2
-		relative_position_id = imp_begin_fixing_the_reactor
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = imp_reactor_works_0
-				add_idea = imp_reactor_works_1
-			}
-			656 = {
-				add_building_construction = {
-					type = fuel_silo
-					level = 2
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 1
-			}
-			add_fuel = 4000
-		 }
-	}
-
-	focus = {
-		id = imp_raising_new_conscripts
-		icon = GFX_unique_tech_10_medium
-		cost = 2.5
-		prerequisite = {
-			focus = imp_deploy_the_remaining_troops
-		}
-		mutually_exclusive = {
-			focus = imp_fortify_the_crash_site
-		}
-		x = -1
 		y = 1
-		relative_position_id = imp_deploy_the_remaining_troops
-		completion_reward = {
-			add_manpower = 2500
-			add_war_support = 0.05
-			army_experience = 5
-		}
 	}
-	
 	focus = {
-		id = imp_fortify_the_crash_site
-		icon = GFX_unique_tech_10_medium
-		cost = 2.5
-		prerequisite = {
-			focus = imp_deploy_the_remaining_troops
-		}
-		mutually_exclusive = {
-			focus = imp_raising_new_conscripts
-		}
-		x = 1
-		y = 1
-		relative_position_id = imp_deploy_the_remaining_troops
-		completion_reward = {
-			656 = {
-				add_building_construction = {
-					type = bunker
-					level = 3
-					province = 8005 
-					instant_build = yes
-				}
-
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					province = 8005
-					instant_build = yes
-				}
-			}
-		 }
-	}
-
-	focus = {
-		id = imp_focus_on_the_shields
-		icon = GFX_unique_tech_10_medium
-		cost = 2.5
-		prerequisite = {
-			focus = imp_stage_one_reactor_repairs
-		}
-		mutually_exclusive = {
-			focus = imp_focus_on_radar
-		}
-		x = -1
-		y = 1
-		relative_position_id = imp_stage_one_reactor_repairs
-		completion_reward = {
-			add_ideas = imp_base_shielding
-		}
-	}
-
-	focus = {
-		id = imp_focus_on_radar
-		icon = GFX_unique_tech_10_medium
-		cost = 2.5
-		prerequisite = {
-			focus = imp_stage_one_reactor_repairs
-		}
-		mutually_exclusive = {
-			focus = imp_focus_on_the_shields
-		}
-		x = 1
-		y = 1
-		relative_position_id = imp_stage_one_reactor_repairs
-		completion_reward = {
-			add_ideas = auxiliary_systems
-		}
-	}
-
-	focus = {
-		id = imp_bring_the_holo_maps_online
-		icon = GFX_unique_tech_10_medium
+		id = imp_air_defenses
 		cost = 2
 		prerequisite = {
-			focus = imp_fortify_the_crash_site
-			focus = imp_raising_new_conscripts
+			focus = imp_fortify_crash_site
 		}
-
-		prerequisite = {
-			focus = imp_focus_on_radar
-			focus = imp_focus_on_the_shields
-		}
-		x = 0
-		y = 5
-		relative_position_id = imp_begining_ship_repairs
-		completion_reward = {
-			country_event = {
-			 id = imperial_story.4
-			 days = 1
-			}
-			add_political_power = 50
-			add_stability = 0.05
-		}
-	}
-
-	focus = {
-		id = imp_restoring_order_to_the_cities
-		icon = GFX_focus_start_hiring_locals
-		cost = 3
+		relative_position_id = imp_fortify_crash_site
 		x = 0
 		y = 1
-		prerequisite = {
-			focus = imp_bring_the_holo_maps_online
-		}
-		relative_position_id = imp_bring_the_holo_maps_online
-		completion_reward = {
-			291 = {
-				add_core_of = IMP
-			}
-			
-			676 = {
-				add_core_of = IMP
-			}
-			
-			292 = {
-				add_core_of = IMP
-			}
-			854 = {
-				add_core_of = IMP
-			}
-			855 = {
-				add_core_of = IMP
-			}
-			679 = {
-				add_core_of = IMP
-			}
-			856 = {
-				add_core_of = IMP
-			}
-			857 = {
-				add_core_of = IMP
-			}
-			858 = {
-				add_core_of = IMP
-			}
-			678 = {
-				add_core_of = IMP
-			}
-			1010 = {
-				add_core_of = IMP
-			}
-		 }
 	}
-
-
 	focus = {
-		id = imp_the_role_of_vader
-		icon = GFX_focus_role_of_vader
-		cost = 4
-		x = 0
-		y = 2
-		relative_position_id = imp_bring_the_holo_maps_online
+		id = imp_reinforce_bases
+		cost = 2
 		prerequisite = {
-			
-			focus = imp_restoring_order_to_the_cities
+			focus = imp_base_saudi
 		}
-		completion_reward = {
-			country_event = {
-				id = imperial_story.17
-				days = 1
-			}
-		}
+		relative_position_id = imp_base_saudi
+		x = -2
+		y = 1
 	}
-
 	focus = {
-		id = imp_vaders_fist
-		icon = GFX_focus_vaders_fist
-		cost = 3
+		id = imp_reinforce_supply_chain
+		cost = 2
+		prerequisite = {
+			focus = imp_supply_lines_iraq
+		}
+		relative_position_id = imp_supply_lines_iraq
+		x = 2
+		y = 1
+	}
+	focus = {
+		id = imp_restore_weapon_systems
+		cost = 2
+		prerequisite = {
+			focus = imp_supply_lines_iraq
+			focus = imp_air_defenses
+			focus = imp_base_saudi
+		}
+		relative_position_id = imp_air_defenses
 		x = 0
 		y = 1
-		relative_position_id = imp_the_role_of_vader
-		prerequisite = {
-			focus = imp_the_role_of_vader
-		}
-		
-		completion_reward = {
-			load_oob = IMP_501st_legion
-		}
 	}
-
 	focus = {
-		id = imp_tarkins_governors
-		icon = GFX_focus_tarkins_governors
-		cost = 3
-		x = -4
+		id = imp_navigation_repair
+		cost = 2
+		prerequisite = {
+			focus = imp_supply_lines_iraq
+			focus = imp_air_defenses
+			focus = imp_base_saudi
+		}
+		relative_position_id = imp_air_defenses
+		x = -2
 		y = 1
-		relative_position_id = imp_the_role_of_vader
-		prerequisite = {
-			focus = imp_the_role_of_vader
-		}
-		completion_reward = { 
-			add_ideas = imp_imperial_governors
-		}
 	}
-
 	focus = {
-		id = imp_fund_new_police_forces
-		icon = GFX_focus_fund_new_police_forces
-		cost = 3
-		x = -1
+		id = imp_motion_sensor_i
+		cost = 2
+		prerequisite = {
+			focus = imp_navigation_repair
+		}
+		relative_position_id = imp_navigation_repair
+		x = 0
 		y = 1
-		relative_position_id = imp_tarkins_governors
-		prerequisite = {
-			focus = imp_tarkins_governors
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = imp_fund_new_police_forces
-				bonus = 1
-				uses = 1
-				category = support_tech
-			}
-		 }
 	}
-
 	focus = {
-		id = imp_start_hiring_locals
-		icon = GFX_focus_start_hiring_locals
-		cost = 3
-		x = 1
+		id = imp_complement_1
+		cost = 2
+		prerequisite = {
+			focus = imp_supply_lines_iraq
+			focus = imp_air_defenses
+			focus = imp_base_saudi
+		}
+		relative_position_id = imp_supply_lines_iraq
+		x = 0
 		y = 1
-		relative_position_id = imp_tarkins_governors
-		prerequisite = {
-			focus = imp_tarkins_governors
-		}
-		completion_reward = {
-			854 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 2
-			}
-			855 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 2
-			}
-		 }
 	}
-
 	focus = {
-		id = imp_the_imperial_cabinet
-		icon = GFX_focus_the_imperial_cabinet
-		cost = 3
+		id = imp_shield_repair
+		cost = 2
+		prerequisite = {
+			focus = imp_complement_1
+		}
+		relative_position_id = imp_complement_1
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_executrix_hanger_resupply
+		cost = 2
+		prerequisite = {
+			focus = imp_complement_1
+		}
+		relative_position_id = imp_complement_1
+		x = 2
+		y = 1
+	}
+	focus = {
+		id = imp_complement_2
+		cost = 2
+		prerequisite = {
+			focus = imp_complement_1
+		}
+		relative_position_id = imp_complement_1
 		x = 4
 		y = 1
-		relative_position_id = imp_the_role_of_vader
-		prerequisite = {
-			focus = imp_the_role_of_vader
-		}
-		completion_reward = {
-			add_political_power = 150
-			add_stability = 0.02
-		 }
 	}
-
 	focus = {
-		id = imp_start_appointing_a_new_government
-		icon = GFX_focus_start_appointing_a_new_government
-		cost = 4
-		x = -1
-		y = 1
-		relative_position_id = imp_the_imperial_cabinet
+		id = imp_complement_air
+		cost = 2
 		prerequisite = {
-			focus = imp_the_imperial_cabinet
+			focus = imp_complement_2
 		}
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-	focus = {
-		id = imp_approach_the_colonial_powers
-		icon = GFX_focus_approach_the_colonial_powers
-		cost = 5
-		x = 1
-		y = 1
-		relative_position_id = imp_the_imperial_cabinet
-		prerequisite = {
-			focus = imp_the_imperial_cabinet
-		}
-		completion_reward = {
-			ENG = {
-				country_event = {
-					id = imperial_ambition.0
-					days = 1
-				}
-			}
-			FRA = {
-				country_event = {
-					id = imperial_ambition.0
-					days = 1
-				}
-			}
-			custom_effect_tooltip = imp_indimidation_tt
-		 }
-	}
-
-
-
-	focus = {
-		id = imp_continue_reactor_repairs
-		icon = GFX_focus_continue_reactor_repairs
-		cost = 3
-		x = 0
-		y = 2
-		relative_position_id = imp_the_imperial_cabinet
-		prerequisite = {
-			focus = imp_start_appointing_a_new_government
-		}
-		prerequisite = {
-			focus = imp_approach_the_colonial_powers
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = imp_reactor_works_1
-				add_idea = imp_reactor_works_2
-			}
-		}
-	}
-
-	focus = {
-		id = imp_connect_the_crash_site
-		icon = GFX_focus_connect_the_crash_site
-		cost = 3
-		x = 0
-		y = 2
-		relative_position_id = imp_tarkins_governors
-		prerequisite = {
-			focus = imp_start_hiring_locals
-		}
-		prerequisite = {
-			focus = imp_fund_new_police_forces
-		}
-		completion_reward = {
-			build_railway = {
-				path = { 12879 5058 4968 10892 12813 12727 }
-				level = 1
-			}
-		}
-	}
-
-	focus = {
-		id = imp_assess_the_fuel_tanks
-		icon = GFX_focus_assess_the_fuel_tanks
-		cost = 3
+		relative_position_id = imp_complement_2
 		x = 0
 		y = 1
-		relative_position_id = imp_open_the_hangar_doors
-		prerequisite = {
-			focus = imp_open_the_hangar_doors
-		}
-		completion_reward = {
-			country_event = {
-				id = imperial_story.18
-				days = 1
-			}
-		}
 	}
-
 	focus = {
-		id = imp_restart_conquered_industry
-		icon = GFX_focus_restart_conquered_industry
-		cost = 3
-		x = 0
-		y = 1
-		relative_position_id = imp_connect_the_crash_site
+		id = imp_phase_three
+		cost = 2
 		prerequisite = {
-			focus = imp_connect_the_crash_site
-		}
-		completion_reward = {
-			676 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			675 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			292 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			856 = {
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 1
-					province = 12883
-					instant_build = yes
-				}
-			}
-			swap_ideas = {
-				remove_idea = no_industry
-				add_idea = small_industry
-			}
-			custom_effect_tooltip = imp_industry_tt
-		}
-	}
-
-	focus = {
-		id = imp_open_the_hangar_doors
-		icon = GFX_focus_open_the_hangar_doors
-		cost = 4
-		x = 0
-		y = 1
-		relative_position_id = imp_continue_reactor_repairs
-		prerequisite = {
-			focus = imp_continue_reactor_repairs
-		}
-		completion_reward = {
-			656 = {
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}	
-		}
-	}
-
-	focus = {
-		id = imp_gathering_resources
-		icon = GFX_focus_gathering_resources
-		cost = 3
-		x = 0
-		y = 1
-		relative_position_id = imp_restart_conquered_industry
-		prerequisite = {
-			focus = imp_restart_conquered_industry
-		}
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = imp_gathering_resources
-				uses = 1
-				category = excavation_tech
-				ahead_reduction = 1
-			}
-		 }
-	}
-
-	focus = {
-		id = imp_finalise_reactor_repairs
-		icon = GFX_focus_finalise_reactor_repairs
-		cost = 5
-		x = 0
-		y = 5
-		relative_position_id = imp_vaders_fist
-		prerequisite = {
-			focus = imp_assess_the_fuel_tanks
+			focus = imp_restore_weapon_systems
 		}
 		prerequisite = {
-			focus = imp_doctrinal_reforms
+			focus = imp_shield_repair
 		}
 		prerequisite = {
-			focus = imp_gathering_resources
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = imp_reactor_works_2
-				add_idea = imp_reactor_fixed
-			}
-		}
-	}
-
-	focus = {
-		id = imp_rebuild_the_armouries
-		icon = GFX_focus_rebuild_the_armouries
-		cost = 3
-		x = -1
-		y = 1
-		relative_position_id = imp_vaders_fist
-		prerequisite = {
-			focus = imp_vaders_fist
-		}
-		completion_reward = {
-			656 = {
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-		 }
-	}
-
-	focus = {
-		id = imp_begin_salvaging_the_walker_bays
-		icon = GFX_focus_begin_salvaging_the_walker_bays
-		cost = 3
-		x = 1
-		y = 1
-		relative_position_id = imp_vaders_fist
-		prerequisite = {
-			focus = imp_vaders_fist
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = imp_begin_salvaging_the_walker_bays
-				uses = 2
-				category = armor
-				bonus = 0.5
-			}
-		 }
-	}
-
-	focus = {
-		id = imp_start_training_local_troops
-		icon = GFX_focus_start_training_local_troops
-		cost = 3
-		x = 0
-		y = 2
-		relative_position_id = imp_vaders_fist
-		prerequisite = {
-			focus = imp_rebuild_the_armouries
+			focus = imp_motion_sensor_i
 		}
 		prerequisite = {
-			focus = imp_begin_salvaging_the_walker_bays
+			focus = imp_integrate_afghanistan
 		}
-		completion_reward = {
-			291 = {
-				add_manpower = 2000
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			675 = {
-				add_manpower = 1500
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_manpower = 3000
-		}
-	}
-
-	focus = {
-		id = imp_look_to_iran
-		icon = GFX_focus_look_to_iran
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = imp_start_training_local_troops
-		prerequisite = {
-			focus = imp_start_training_local_troops
-		}
-		completion_reward = {
-			create_wargoal = {
-				target = PER
-				type = annex_everything
-			}
-		 }
-	}
-
-	focus = {
-		id = imp_doctrinal_reforms
-		icon = GFX_focus_doctrinal_reform
-		cost = 4
-		x = 0
-		y = 1
-		relative_position_id = imp_look_to_iran
-		prerequisite = {
-			focus = imp_look_to_iran
-		}
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.5
-				name = imp_doctrinal_reforms
-				uses = 2
-				category = land_doctrine
-			}
-		 }
-	}
-
-	focus = {
-		id = imp_take_direct_control_over_the_oil_fields
-		icon = GFX_focus_direct_oil_control
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = imp_finalise_reactor_repairs
-		prerequisite = {
-			focus = imp_finalise_reactor_repairs
-		}
-		completion_reward = {
-			411 = {
-				add_core_of = IMP
-			}
-			
-			412 = {
-				add_core_of = IMP
-			}
-
-			413 = {
-				add_core_of = IMP
-			}
-		 }
-	}
-
-
-	
-
-	
-
-
-
-	###INTERNATIONAL TREE###
-
-	focus = {
-	 id = imp_romanian_agreement
-		icon = GFX_focus_invite_romania
-		cost = 5
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		available = {
-			IMP = {
-				has_government = imperialism
-				is_subject = no
-				has_completed_focus = imp_the_role_of_vader
-			}
-			country_exists = ROM
-			ROM = {
-				is_subject = no
-				NOT = {
-					has_war_with = IMP
-				}
-				is_in_faction = no
-			}
-		}
-
-		x = 15
-		y = 0
-
-		completion_reward = {
-			ROM = {
-				add_ideas = empire_sympathy
-				add_popularity = {
-					ideology = imperialism
-					popularity = 0.05
-				}
-			}
-			ROM = {
-				add_tech_bonus = {
-				   bonus = 0.5
-					 ahead_reduction = 2.0
-				   uses = 3
-				   category = electronics
-				}
-			}
-			ROM = {
-				diplomatic_relation = {
-					country = IMP
-					relation = non_aggression_pact
-					active = yes
-				}
-				diplomatic_relation = {
-					country = TUR
-					relation = guarantee
-					active = no
-				}
-			}
-			TUR = { 
-				add_opinion_modifier = {
-					target = ROM
-					modifier = western_betrayal
-				}
-			}
-		}
-
-	}
-
-	focus = {
-		id = imp_romanian_integration
-		icon = GFX_focus_rom_preserve_romania
-		cost = 5
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = {
-			focus = imp_romanian_agreement
-		}
-
-		available = {
-			ROM = {
-				is_subject = no
-				imperialism > 0.1
-			}
-		}
-
-
-		x = 0
-		y = 1
-		relative_position_id = imp_romanian_agreement
-
-		completion_reward = {
-			ROM = {
-				set_politics = {
-					ruling_party = imperialism
-				}
-				set_cosmetic_tag = ALL
-				
-			}
-			set_autonomy = {
-				target = ROM
-				autonomy_state = autonomy_dominion
-			}
-		}
-	}
-
-	focus = {
-		id = imp_claim_turkish_territory
-		icon = GFX_unique_tech_10_medium
-		cost = 6
-		x = -2
-		y = 1
-		relative_position_id = imp_romanian_integration
-		prerequisite = {
-			focus = imp_romanian_integration
-		}
-		mutually_exclusive = {
-			focus = imp_reach_out_to_turkish_opp
-		}
-		completion_reward = {
-			344 = {
-				add_claim_by = IMP
-			}
-			350 = {
-				add_claim_by = IMP
-			}
-			352 = {
-				add_claim_by = IMP
-			}
-
-			create_wargoal = {
-				target = TUR
-				type = annex_everything
-			}
-			
-		}
-	}
-
-	focus = {
-		id = imp_improve_the_levant
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 0
-		y = 1
-		relative_position_id = imp_claim_turkish_territory
-		available = {
-			controls_state = 554
-		}
-		prerequisite = {
-			focus = imp_claim_turkish_territory
-		}
-		completion_reward = { 
-			554 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			677 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			680 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-
-		}
-	}
-
-	focus = {
-		id = imp_assign_new_governors
-		icon = GFX_unique_tech_10_medium
-		cost = 5
-		x = 1
-		y = 1
-		relative_position_id = imp_improve_the_levant
-		prerequisite = {
-			focus = imp_improve_the_levant
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = imp_reward_romania
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = -1
-		y = 1
-		relative_position_id = imp_improve_the_levant
-		prerequisite = {
-			focus = imp_improve_the_levant
-		}
-		available = {
-			controls_state = 341
-		}
-		completion_reward = {
-			ROM = {
-				transfer_state = 341
-			}
-			341 = {
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 2
-			}
-		}
-	}
-
-	focus = {
-		id = imp_begin_intergrating_turkey
-		icon = GFX_unique_tech_10_medium
-		cost = 10
-		x = 0
-		y = 2
-		relative_position_id = imp_improve_the_levant
-		prerequisite = {
-			focus = imp_reward_romania
-		}
-		prerequisite = {
-			focus = imp_assign_new_governors
-		}
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = imp_reach_out_to_turkish_opp
-		icon = GFX_unique_tech_10_medium
-		cost = 6
-		x = 2
-		y = 1
-		relative_position_id = imp_romanian_integration
-		prerequisite = {
-			focus = imp_romanian_integration
-		}
-		mutually_exclusive = {
-			focus = imp_claim_turkish_territory
-		}
-		completion_reward = { 
-			add_command_power = 25
-			TUR = {
-				add_ideas = TUR_imp_influence
-			}
-		}
-	}
-    
-	focus = {
-		id = imp_improve_romanian_forces
-		icon = GFX_unique_tech_10_medium
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = imp_reach_out_to_turkish_opp
-		prerequisite = {
-			focus = imp_reach_out_to_turkish_opp
-		}
-		completion_reward = {
-			ROM = {
-				add_tech_bonus = {
-					name = romanian
-					bonus = 0.75
-					uses = 2
-					category = infantry_weapons
-				}
-				add_equipment_to_stockpile = {
-					type = imperial_inf_equipment_2
-					amount = 3500
-				}
-			}
-		 }
-	}
-
-	focus = {
-		id = imp_begin_propaganda_campaigns
-		icon = GFX_unique_tech_10_medium
-		cost = 3
-		x = -1
-		y = 2
-		relative_position_id = imp_improve_romanian_forces
-		prerequisite = {
-			focus = imp_begin_establshing_a_shadow_admin
-		}
-		completion_reward = { 
-			custom_effect_tooltip = imp_puppet_decisions_tt
-		}
-	}
-
-	focus = {
-		id = imp_turkish_geological_surveys
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 1
-		y = 2
-		relative_position_id = imp_improve_romanian_forces
-		prerequisite = {
-			focus = imp_begin_establshing_a_shadow_admin
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = imp_begin_establshing_a_shadow_admin
-		icon = GFX_unique_tech_10_medium
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = imp_improve_romanian_forces
-		prerequisite = {
-			focus = imp_improve_romanian_forces
-		}
-		completion_reward = {
-			add_political_power = 100
-			custom_effect_tooltip =  imp_turkey_decisions_tt
-		 }
-	}
-    
-	focus = {
-		id = imp_establish_the_planning_office
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 0
-		y = 5
-		relative_position_id = imp_romanian_integration
-		prerequisite = {
-			focus = imp_begin_intergrating_turkey
-			focus = imp_begin_propaganda_campaigns
-			focus = imp_turkish_geological_surveys
-		}
-		completion_reward = {
-			add_political_power = 100
-			custom_effect_tooltip =  imp_planning_tt
-		}
-	}
-	
-
-	focus = {
-		id = imp_begin_urbanisation
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 23
-		y = 0
-		available = {
-			has_completed_focus = imp_the_role_of_vader
-		}
-		completion_reward = {
-			656 = {
-				set_state_category = town
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 2
-			} 
-			add_ideas = IMP_new_coruscant
-		}
-	}
-
-
-	focus = {
-		id = imp_intergrate_iran
-		icon = GFX_unique_tech_10_medium
-		cost = 6
-		x = 1
-		y = 1
-		relative_position_id = imp_begin_urbanisation
-		prerequisite = {
-			focus = imp_begin_urbanisation
-		}
-		completion_reward = {
-			421 = {
-				add_core_of = IMP
-			}
-			1001 = {
-				add_core_of = IMP
-			}
-			419 = {
-				add_core_of = IMP
-			}
-			1000 = {
-				add_core_of = IMP
-			}
-			420 = {
-				add_core_of = IMP
-			}
-			266 = {
-				add_core_of = IMP
-			}
-			418 = {
-				add_core_of = IMP
-			}
-			1003 = {
-				add_core_of = IMP
-			}
-			1004 = {
-				add_core_of = IMP
-			}
-			1002 = {
-				add_core_of = IMP
-			}
-			
-			416 = {
-				add_core_of = IMP
-			}
-
-			410 = {
-				add_core_of = IMP
-			}
-		}
-	}
-
-	focus = {
-		id = imp_intergrate_the_levant
-		icon = GFX_unique_tech_10_medium
-		cost = 6
-		x = -1
-		y = 1
-		relative_position_id = imp_begin_urbanisation
-		prerequisite = {
-			focus = imp_begin_urbanisation
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = imp_imperial_merchant_fleet
-		icon = GFX_unique_tech_10_medium
-		cost = 3
-		x = 0
-		y = 2
-		relative_position_id = imp_begin_urbanisation
-		prerequisite = {
-			focus = imp_intergrate_iran
-		}
-		prerequisite = {
-			focus = imp_intergrate_the_levant
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = convoy
-				amount = 100
-			}
-			656 = {
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build = yes
-					province = {id = 8085 }
-				}
-			}
-		 }
-	}
-
-	focus = {
-		id = imp_imperial_mining_guilds
-		icon = GFX_unique_tech_10_medium
-		cost = 3
-		x = -2
-		y = 1
-		relative_position_id = imp_imperial_merchant_fleet
-		prerequisite = {
-			focus = imp_imperial_merchant_fleet
-		}
-		completion_reward = {
-			add_ideas = exploitation_idea
-		 }
-	}
-
-	focus = {
-		id = imp_establish_new_isb_offices
-		icon = GFX_unique_tech_10_medium
-		cost = 3
-		x = 0
-		y = 1
-		relative_position_id = imp_imperial_merchant_fleet
-		prerequisite = {
-			focus = imp_imperial_merchant_fleet
-		}
-		completion_reward = {
-			add_ideas = IMP_intel_service
-		}
-	}
-
-	focus = {
-		id = imp_help_rural_populations
-		icon = GFX_unique_tech_10_medium
-		cost = 3
-		x = 2
-		y = 1
-		relative_position_id = imp_imperial_merchant_fleet
-		prerequisite = {
-			focus = imp_imperial_merchant_fleet
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = begin_contruction_of_a_new_captial
-		icon = GFX_unique_tech_10_medium
-		cost = 5
-		x = 0
-		y = 2
-		relative_position_id = imp_imperial_merchant_fleet
-		prerequisite = {
-			focus = imp_imperial_mining_guilds
-		}
-		prerequisite = {
-			focus = imp_establish_new_isb_offices
-		}
-		prerequisite = {
-			focus = imp_help_rural_populations
-		}
-		completion_reward = {
-			656 = {
-			  set_state_category = city
-		    }
-			swap_ideas = {
-				remove_idea = IMP_new_coruscant
-				add_idea = IMP_new_coruscant2
-			}
-		} 
-	}
-
-	##MILITARY TREE##
-	focus = {
-		id = imp_reorganise_the_officer_core
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 30
-		y = 0
-		available = {
-			has_completed_focus = imp_the_role_of_vader
-		}
-		completion_reward = {
-			add_command_power = 25
-			army_experience = 25
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.75
-				name = imp_reorganise_the_officer_core
-				uses = 1
-				category = land_doctrine
-			}
-		 }
-	}
-
-	focus = {
-		id = imp_lessons_from_the_desert
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 0
-		y = 1
-		relative_position_id = imp_reorganise_the_officer_core
-		prerequisite = {
-			focus = imp_reorganise_the_officer_core
-		}
-		completion_reward = { 
-			add_tech_bonus = {
-				name = imp_lessons_from_the_desert
-				uses = 1
-				category = infantry_weapons
-				bonus = 0.5
-			}
-			add_command_power = 25
-			army_experience = 15
-		 }
-	}
-	
-
-	focus = {
-		id = imp_taking_to_the_water
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = -1
-		y = 1
-		relative_position_id = imp_lessons_from_the_desert
-		prerequisite = {
-			focus = imp_lessons_from_the_desert
-		}
-		completion_reward = {
-			656 = {
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-			navy_experience = 15
-		}
-	}
-
-	focus = {
-		id = imp_returning_to_the_air
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 1
-		y = 1
-		relative_position_id = imp_lessons_from_the_desert
-		prerequisite = {
-			focus = imp_lessons_from_the_desert
-		}
-		completion_reward = { 
-			air_experience = 15
-		}
-	}
-
-	focus = {
-		id = imp_adapting_to_earth_tactics
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 0
-		y = 2
-		relative_position_id = imp_lessons_from_the_desert
-		prerequisite = {
-			focus = imp_taking_to_the_water
-		}
-
-		prerequisite = {
-			focus = imp_returning_to_the_air
-		}
-
-		completion_reward = {
-			add_daily_mastery = {
-				name = imp_lessons_from_the_desert
-				amount = 1
-				days = 175
-				track = infantry
-			}
-		 }
-	}
-
-	focus = {
-		id = imp_train_local_officers
-		icon = GFX_unique_tech_10_medium
-		cost = 6
-		x = 0
-		y = 1
-		relative_position_id = imp_adapting_to_earth_tactics
-		prerequisite = {
-			focus = imp_adapting_to_earth_tactics
-		}
-		completion_reward = {
-			add_ideas = IMP_Imperial_Army
-			army_experience = 25
-			add_command_power = 20
-		}
-	}
-
-	focus = {
-		id = imp_begin_dockyard_expansions
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		prerequisite = {
-			focus = imp_train_local_officers
-		}
-		x = 8
-		y = 1
-		relative_position_id = imp_train_local_officers
-		completion_reward = {
-			1013 = {
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			294 = {
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-			}
-		    navy_experience = 25
-		}
-	}
-
-	focus = {
-		id = imp_destroyer_concepts
-		icon = GFX_unique_tech_10_medium
-		cost = 3
-		x = 0
-		y = 1
-		relative_position_id = imp_begin_dockyard_expansions
-		prerequisite = {
-			focus = imp_begin_dockyard_expansions
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = destroyer_1
-				uses = 1
-				bonus = 0.75
-				category = dd_tech
-			}
-		}
-	}
-
-	focus = {
-		id = imp_think_big
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 0
-		y = 1
-		relative_position_id = imp_destroyer_concepts
-		prerequisite = {
-			focus = imp_destroyer_concepts
-		}
-		completion_reward = { 
-			add_tech_bonus = {
-				name = imp_think_big
-				uses = 1
-				category = bb_tech
-				bonus = 0.99
-			}
-			IF = {
-				1011 = {
-					is_fully_controlled_by = IMP 
-					air_facility < 1
-					land_facility < 1
-					naval_facility < 1
-					nuclear_facility < 1
-				}
-				1011 ={
-			      add_building_construction = {
-				    type = naval_facility
-				   level = 1
-				   instant_build = yes
-				   province = { id = 2089 }
-			      }
-		        }
-			}
-			ELSE = {
-				random_core_state = {
-					limit = {
-						is_fully_controlled_by = ROOT
-						air_facility < 1
-						land_facility < 1
-						naval_facility < 1
-						nuclear_facility < 1
-					} 
-					add_building_construction = {
-						type = naval_facility
-						level = 1
-						instant_build = yes
-						province = {
-							all_provinces = yes
-							first = yes 
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = imp_naval_academy
-		icon = GFX_unique_tech_10_medium
-		cost = 5
-		x = -2
-		y = 1
-		relative_position_id = imp_destroyer_concepts
-		available = {
-			has_completed_focus = imp_establish_the_planning_office
-			controls_state = 354
-			has_completed_focus = imp_specialise_the_storm_troopers
-			OR = {
-				has_completed_focus = imp_keep_the_current_stormtrooper
-			}
-			
-		}
-		prerequisite = {
-			focus = imp_destroyer_concepts
-		}
-		completion_reward = {
-			IF = {
-				limit = {
-					has_completed_focus = imp_specialise_the_storm_troopers
-				}
-
-				swap_ideas = {
-					remove_idea = imp_specialised_storm_troopers
-					add_idea = imp_specialised_storm_troopers_3
-				}
-
-
-				else_if = {
-				 limit = {
-					has_completed_focus = imp_keep_the_current_stormtrooper
-				 }
-				 swap_ideas = {
-				  remove_idea = IMP_Imperial_Army2
-				  add_idea = IMP_Imperial_Army3
-			     }
-				}
-				
-			}
-
-			
-		 }
-	}
-
-	focus = {
-		id = imp_cruisers
-		icon = GFX_unique_tech_10_medium
-		cost = 3
-		x = 2
-		y = 1
-		relative_position_id = imp_destroyer_concepts
-		available = {
-			has_tech = imp_destroyer_1
-		}
-		prerequisite = {
-			focus = imp_destroyer_concepts
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = imp_cruiser
-				uses = 1
-				bonus = 0.9
-				category = ca_tech
-			}
-		 }
-	}
-
-
-	focus = {
-		id = imp_move_beyond_the_hangars
-		icon = GFX_unique_tech_10_medium
-		cost = 3
-		x = 16
-		y = 1
-		relative_position_id = imp_train_local_officers
-		prerequisite = {
-			focus = imp_train_local_officers
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = imp_allow_air_experimentation
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = -2
-		y = 1
-		relative_position_id = imp_move_beyond_the_hangars
-		prerequisite = {
-			focus = imp_move_beyond_the_hangars
-		}
-		completion_reward = {
-			IF = {
-				291 = {
-					is_fully_controlled_by = IMP 
-					air_facility < 1
-					land_facility < 1
-					naval_facility < 1
-					nuclear_facility < 1
-				}
-				291 ={
-			      add_building_construction = {
-				    type = air_facility
-				   level = 1
-				   instant_build = yes
-				   province = { id = 2097 }
-			      }
-		        }
-			}
-			ELSE = {
-				random_core_state = {
-					limit = {
-						is_fully_controlled_by = ROOT
-						air_facility < 1
-						land_facility < 1
-						naval_facility < 1
-						nuclear_facility < 1
-					} 
-					add_building_construction = {
-						type = air_facility
-						level = 1
-						instant_build = yes
-						province = {
-							all_provinces = yes
-							first = yes 
-						}
-					}
-				}
-			}
-			
-			
-			
-		 }
-	}
-
-	focus = {
-		id = imp_found_new_design_offices
-		icon = GFX_unique_tech_10_medium
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = imp_allow_air_experimentation
-		prerequisite = {
-			focus = imp_allow_air_experimentation
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = imp_secure_new_rubber_supplies
-		icon = GFX_unique_tech_10_medium
-		cost = 5
-		x = -1
-		y = 1
-		relative_position_id = imp_found_new_design_offices
-		prerequisite = {
-			focus = imp_found_new_design_offices
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = imp_new_airbases
-		icon = GFX_unique_tech_10_medium
-		cost = 3
-		x = 1
-		y = 1
-		relative_position_id = imp_found_new_design_offices
-		prerequisite = {
-			focus = imp_found_new_design_offices
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = imp_establish_an_imperial_airforce_academy
-		icon = GFX_unique_tech_10_medium
-		cost = 4
+		relative_position_id = imp_restore_weapon_systems
 		x = 0
 		y = 4
-		relative_position_id = imp_move_beyond_the_hangars
-		prerequisite = {
-			focus = imp_finalise_the_training_programe
-		}
-		prerequisite = {
-			focus = imp_secure_new_rubber_supplies
-			focus = imp_new_airbases
-		}
-		completion_reward = { }
 	}
-
 	focus = {
-		id = imp_begin_training_local_pilots
-		icon = GFX_unique_tech_10_medium
-		cost = 3
-		x = 2
-		y = 1
-		relative_position_id = imp_move_beyond_the_hangars
+		id = imp_motion_sensor_ii
+		cost = 2
 		prerequisite = {
-			focus = imp_move_beyond_the_hangars
+			focus = imp_phase_three
 		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = imp_air_force
-				add_idea = imp_air_force_1
-			}
-		 }
-	}
-
-	focus = {
-		id = imp_expand_training
-		icon = GFX_unique_tech_10_medium
-		cost = 3
-		available = {
-			has_deployed_air_force_size = {
-			  size >300
-			  type = fighter
-			}
-		}
-		x = 0
-		y = 1
-		relative_position_id = imp_begin_training_local_pilots
-		prerequisite = {
-			focus = imp_begin_training_local_pilots
-		}
-		completion_reward = { }
-	}	
-
-	focus = {
-		id = imp_finalise_the_training_programe
-		icon = GFX_unique_tech_10_medium
-		cost = x
-		available = {
-			has_deployed_air_force_size = {
-				size >900
-				type = fighter
-			}
-			has_deployed_air_force_size = {
-				size >300
-				type = cas
-			}
-		}
-		x = 0
-		y = 1
-		relative_position_id = imp_expand_training
-		prerequisite = {
-			focus = imp_expand_training
-		}
-		completion_reward = { }
-	}
-
-	
-	focus = {
-		id = imp_start_expanding_the_mechanized_core
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = -2
-		y = 1
-		relative_position_id = imp_train_local_officers
-		prerequisite = {
-			focus = imp_train_local_officers
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = imp_keep_the_current_stormtrooper
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = -3
-		y = 1
-		relative_position_id = imp_start_expanding_the_mechanized_core
-		prerequisite = {
-			focus = imp_start_expanding_the_mechanized_core
-		}
-		mutually_exclusive = {
-			focus = imp_specialise_the_storm_troopers
-		}
-		completion_reward = { 
-			swap_ideas = {
-				remove_idea = IMP_Imperial_Army
-				add_idea = IMP_Imperial_Army2
-			}
-		}
-	}
-
-	focus = {
-		id = imp_specialise_the_storm_troopers
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 3
-		y = 1
-		relative_position_id = imp_start_expanding_the_mechanized_core
-		prerequisite = {
-			focus = imp_start_expanding_the_mechanized_core
-		}
-		mutually_exclusive = {
-			focus = imp_keep_the_current_stormtrooper
-		}
-		completion_reward = {
-			add_ideas = imp_specialised_storm_troopers
-		 }
-	}
-
-	focus = {
-		id = imp_improve_landing_ships
-		icon = GFX_unique_tech_10_medium
-		cost = 4
+		relative_position_id = imp_phase_three
 		x = -1
 		y = 1
-		relative_position_id = imp_keep_the_current_stormtrooper
-		prerequisite = {
-			focus = imp_keep_the_current_stormtrooper
-		}
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = landing1
-				bonus = 0.75
-				uses = 1
-				category = marine_tech
-			}
-		 }
 	}
-
 	focus = {
-		id = imp_the_imperial_logistics_core
-		icon = GFX_unique_tech_10_medium
-		cost = 4
+		id = imp_auxiliary_systems_complete
+		cost = 2
+		prerequisite = {
+			focus = imp_motion_sensor_ii
+		}
+		relative_position_id = imp_motion_sensor_ii
 		x = 0
 		y = 1
-		relative_position_id = imp_improve_landing_ships
-		prerequisite = {
-			focus = imp_improve_landing_ships
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = logistics
-				uses = 1
-				bonus = 0.75
-				category = logistics_tech
-			}
-		 }
 	}
-
 	focus = {
-		id = imp_focus_on_hostile_enviroment_training
-		icon = GFX_unique_tech_10_medium
-		cost = 4
+		id = imp_hull_repair2
+		cost = 2
+		prerequisite = {
+			focus = imp_phase_three
+		}
+		relative_position_id = imp_phase_three
+		x = 1
+		y = 2
+	}
+	focus = {
+		id = imp_reactor_repair
+		cost = 2
+		prerequisite = {
+			focus = imp_auxiliary_systems_complete
+		}
+		prerequisite = {
+			focus = imp_hull_repair2
+		}
+		relative_position_id = imp_hull_repair2
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = imp_complement_land_1
+		cost = 2
+		prerequisite = {
+			focus = imp_phase_three
+		}
+		relative_position_id = imp_phase_three
+		x = 4
+		y = 1		
+	}
+	focus = {
+		id = imp_phase_four
+		cost = 2
+		prerequisite = {
+			focus = imp_reactor_repair
+		}
+		relative_position_id = imp_reactor_repair
+		x = 0
+		y = 1		
+	}
+	### Conquest Branch ###
+	focus = {
+		id = imp_prepare_for_expansion
+		cost = 2
+		prerequisite = {
+			focus = imp_executrix_phase_two
+		}
+		relative_position_id = imp_executrix_phase_two
+		x = 9
+		y = 1
+	}
+	focus = { 
+		id = imp_intimidate_yemen_and_oman
+		cost = 2
+		prerequisite = {
+			focus = imp_prepare_for_expansion
+		}
+		relative_position_id = imp_prepare_for_expansion
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = imp_colonial_deal
+		cost = 2
+		prerequisite = {
+			focus = imp_prepare_for_expansion
+		}
+		relative_position_id = imp_prepare_for_expansion
 		x = 1
 		y = 1
-		relative_position_id = imp_keep_the_current_stormtrooper
-		prerequisite = {
-			focus = imp_keep_the_current_stormtrooper
-		}
-		completion_reward = { }
-	}
 
+	}
 	focus = {
-		id = imp_improve_policing_skills
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 0
+		id = imp_subjugate_iran
+		cost = 2
+		prerequisite = {
+			focus = imp_colonial_deal
+		}
+		prerequisite = {
+			focus = imp_intimidate_yemen_and_oman
+		}
+		relative_position_id = imp_colonial_deal
+		x = -1
 		y = 1
-		relative_position_id = imp_focus_on_hostile_enviroment_training
-		prerequisite = {
-			focus = imp_focus_on_hostile_enviroment_training
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = policing
-				uses = 1
-				bonus = 0.75
-				category = military_police_tech
-			}
-		 }
 	}
-
 	focus = {
-		id = imp_lessons_of_earth
-		icon = GFX_unique_tech_10_medium
-		cost = 5
-		x = 0
-		y = 3
-		relative_position_id = imp_keep_the_current_stormtrooper
+		id = imp_integrate_iran
+		cost = 2
 		prerequisite = {
-			focus = imp_the_imperial_logistics_core
-			focus = imp_improve_policing_skills
-		}
-		completion_reward = {
-			random_army_leader = {
-				add_planning = 2
-				add_attack = 1
-				add_defense = 1
-			}
-			random_army_leader = {
-				add_planning = 2
-				add_attack = 1
-				add_defense = 1
-			}
-			random_army_leader = {
-				add_planning = 2
-				add_attack = 1
-				add_defense = 1
-			}
-			army_experience = 25
-			if = {
-				limit = { has_idea = stranded}
-				swap_ideas = {
-					remove_idea = stranded
-					add_idea = stranded2
-				}
-				else_if = {
-				 limit = { has_idea = stranded2 }
-				  swap_ideas = {
-					 remove_idea = stranded2
-					 add_idea = stranded3
-				    } 
-			    }
-			}
-		}
-	}
-
-	focus = {
-		id = imp_imperial_para_core
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 0
-		y = 1
-		relative_position_id = imp_specialise_the_storm_troopers
-		prerequisite = {
-			focus = imp_specialise_the_storm_troopers
-		}
-		
-		completion_reward = { }
-	}
-
-	focus = {
-		id = imp_new_transports
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 0
-		y = 1
-		relative_position_id = imp_imperial_para_core
-		prerequisite = {
-			focus = imp_imperial_para_core
-		}
-		completion_reward = { 
-			add_tech_bonus = {
-				name = tranports
-				uses = 1
-				category = para_tech
-				bonus = 0.75
-			}
-		}
-	}
-
-	focus = {
-		id = imp_imperial_marines
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 2
-		y = 1
-		relative_position_id = imp_specialise_the_storm_troopers
-		prerequisite = {
-			focus = imp_specialise_the_storm_troopers
-		}
-		
-		completion_reward = { }
-	}
-
-	focus = {
-		id = imp_landing_efforts
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = 0
-		y = 1
-		relative_position_id = imp_imperial_marines
-		prerequisite = {
-			focus = imp_imperial_marines
+			focus = imp_subjugate_iran
 		}
 		available = {
-			has_completed_focus = imp_naval_academy
+			is_subject_of = IMP
+			is_controlled_by = IMP
 		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = landing
-				uses = 1
-				bonus = 1
-				category = marine_tech
-			}
-		 }
-	}
-
-	focus = {
-		id = imp_imperial_mountaineer_core
-		icon = GFX_unique_tech_10_medium
-		cost = 4
-		x = -2
-		y = 1
-		relative_position_id = imp_specialise_the_storm_troopers
-		prerequisite = {
-			focus = imp_specialise_the_storm_troopers
-		}
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = imp_extend_training
-		icon = GFX_unique_tech_10_medium
-		cost = 4
+		relative_position_id = imp_subjugate_iran
 		x = 0
 		y = 1
-		relative_position_id = imp_imperial_mountaineer_core
+	}
+	focus = {
+		id = imp_prepare_for_afghanistan
+		cost = 2
 		prerequisite = {
-			focus = imp_imperial_mountaineer_core
+			focus = imp_integrate_iran
 		}
-		completion_reward = { }
+		relative_position_id = imp_integrate_iran
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_subjugate_afghanistan
+		cost = 2
+		prerequisite = {
+			focus = imp_prepare_for_afghanistan
+		}
+		relative_position_id = imp_prepare_for_afghanistan
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_integrate_afghanistan
+		cost = 2
+		prerequisite = {
+			focus = imp_subjugate_afghanistan
+		}
+		available = {
+			is_subject_of = IMP
+			is_controlled_by = IMP
+		}
+		relative_position_id = imp_subjugate_afghanistan
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_turkey_one
+		cost = 2
+		prerequisite = {
+			focus = imp_integrate_afghanistan
+		}
+		prerequisite = {
+			focus = imp_phase_three
+		}
+		relative_position_id = imp_integrate_afghanistan
+		x = 0
+		y = 2
 	}
 
+	### Vader Branch ###
 	focus = {
-		id = imp_improved_stormtrooper
-		icon = GFX_unique_tech_10_medium
-		cost = 5
-		x = 0
-		y = 3
-		relative_position_id = imp_specialise_the_storm_troopers
+		id = imp_political_path
+		cost = 2
 		prerequisite = {
-			focus = imp_extend_training
-			focus = imp_new_transports
-			focus = imp_landing_efforts
+			focus = imp_executrix_phase_two
 		}
-		completion_reward = {
-			
-			swap_ideas = {
-				remove_idea = imp_specialised_storm_troopers_3
-				add_idea = imp_specialised_storm_troopers_4
-			}
-			
-			add_potential_special_forces_tree = yes
+		relative_position_id = imp_executrix_phase_two
+		x = 15
+		y = 1
+	}
+	focus = {
+		id = imp_vader_branch
+		cost = 2
+		prerequisite = {
+			focus = imp_political_path
+		}
+		relative_position_id = imp_political_path
+		x = -1
+		y = 1
+	}
+	### Army Branch ###
+	focus = {
+		id = imp_biweekly_conference
+		cost = 2
+		prerequisite = {
+			focus = imp_executrix_phase_two
+		}
+		relative_position_id = imp_executrix_phase_two
+		x = 30
+		y = 1
+	}
+	focus = {
+		id = imp_army_branch
+		cost = 2
+		prerequisite = {
+			focus = imp_biweekly_conference
+		}
+		relative_position_id = imp_biweekly_conference
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_logistics
+		cost = 2
+		prerequisite = {
+			focus = imp_army_branch
+		}
+		relative_position_id = imp_army_branch
+		x = -4
+		y = 1
+	}
+	focus = {
+		id = imp_army_one
+		cost = 2
+		prerequisite = {
+			focus = imp_army_branch
+		}
+		relative_position_id = imp_army_branch
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = imp_stormtrooper_corps
 		}
 	}
+	focus = {
+		id = imp_army_two
+		cost = 2
+		prerequisite = {
+		focus = imp_army_one
+		}
+		relative_position_id = imp_army_one
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_army_three
+		cost = 2
+		prerequisite = {
+		focus = imp_army_two
+		}
+		relative_position_id = imp_army_two
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = imp_army_four
+		cost = 2
+		prerequisite = {
+		focus = imp_army_two
+		}
+		relative_position_id = imp_army_two
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = imp_army_five
+		cost = 2
+		prerequisite = {
+		focus = imp_army_four
+		}
+		prerequisite = {
+		focus = imp_army_three
+		}
+		relative_position_id = imp_army_four
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = imp_army_six
+		cost = 2
+		prerequisite = {
+		focus = imp_army_five
+		}
+		relative_position_id = imp_army_five
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_stormtrooper_corps
+		cost = 2
+		prerequisite = {
+			focus = imp_army_branch
+		}
+		relative_position_id = imp_army_branch
+		x = 7
+		y = 1
+		mutually_exclusive = {
+			focus = imp_army_one
+		}
+	}
+	focus = {
+		id = imp_marines
+		cost = 2
+		prerequisite = {
+			focus = imp_stormtrooper_corps
+		}
+		relative_position_id = imp_stormtrooper_corps
+		x = -3
+		y = 1
+	}
+	focus = {
+		id = imp_paratroopers
+		cost = 2
+		prerequisite = {
+			focus = imp_stormtrooper_corps
+		}
+		relative_position_id = imp_stormtrooper_corps
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = imp_mountaineers
+		cost = 2
+		prerequisite = {
+			focus = imp_stormtrooper_corps
+		}
+		relative_position_id = imp_stormtrooper_corps
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = imp_rangers
+		cost = 2
+		prerequisite = {
+			focus = imp_stormtrooper_corps
+		}
+		relative_position_id = imp_stormtrooper_corps
+		x = 3
+		y = 1
+	}
+	focus = {
+		id = imp_stormtrooper_corps_two
+		cost = 2
+		prerequisite = {
+			focus = imp_marines
+			focus = imp_paratroopers
+			focus = imp_mountaineers
+			focus = imp_rangers
+		}
+		relative_position_id = imp_paratroopers
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = imp_recruitment_drive
+		cost = 2
+		prerequisite = {
+			focus = imp_stormtrooper_corps_two
+			focus = imp_army_four
+		}
+		relative_position_id = imp_stormtrooper_corps_two
+		x = -4
+		y = 1
+	}
+	focus = {
+		id = imp_training_camps
+		cost = 2
+		prerequisite = {
+			focus = imp_stormtrooper_corps_two
+		}
+		relative_position_id = imp_stormtrooper_corps_two
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_armored_path
+		cost = 2
+		prerequisite = {
+			focus = imp_army_branch
+		}
+		relative_position_id = imp_army_branch
+		x = 15
+		y = 1
+	}
+	### Air Branch ###
+	focus = {
+		id = imp_air_branch
+		cost = 2
+		prerequisite = {
+			focus = imp_biweekly_conference
+		}
+		relative_position_id = imp_biweekly_conference
+		x = 20
+		y = 1	
+	}
+	focus = {
+		id = imp_bombers
+		cost = 2
+		prerequisite = {
+			focus = imp_air_branch
+		}
+		relative_position_id = imp_air_branch
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = imp_cas
+		}
+	}
+	focus = {
+		id = imp_cas
+		cost = 2
+		prerequisite = {
+			focus = imp_air_branch
+		}
+		relative_position_id = imp_air_branch
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = imp_bombers
+		}
+	}
+	### Navy Branch ###
+	focus = {
+		id = imp_establish_navy
+		cost = 2
+		prerequisite = {
+			focus = imp_biweekly_conference
+		}
+		relative_position_id = imp_biweekly_conference
+		x = 26
+		y = 1
+	}
+	focus = {
+		id = imp_navy_two
+		cost = 2
+		prerequisite = {
+			focus = imp_establish_navy
+		}
+		relative_position_id = imp_establish_navy
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_flexible_navy
+		cost = 2
+		prerequisite = {
+			focus = imp_navy_two
+		}
+		mutually_exclusive = {
+			focus = imp_large_navy
+		}
+		relative_position_id = imp_navy_two
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = imp_submarines
+		cost = 2
+		prerequisite = {
+			focus = imp_flexible_navy
+			focus = imp_large_navy
+		}
+		relative_position_id = imp_flexible_navy
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_destroyers
+		cost = 2
+		prerequisite = {
+			focus = imp_submarines
+		}
+		relative_position_id = imp_submarines
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_large_navy
+		cost = 2
+		prerequisite = {
+			focus = imp_navy_two
+		}
+		mutually_exclusive = {
+			focus = imp_flexible_navy
+		}
+		relative_position_id = imp_navy_two
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = imp_cruisers
+		cost = 2
+		prerequisite = {
+			focus = imp_large_navy
+			focus = imp_flexible_navy
+		}
+		relative_position_id = imp_large_navy
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_capital_ships
+		cost = 2
+		prerequisite = {
+			focus = imp_cruisers
+		}
+		relative_position_id = imp_cruisers
+		x = 0
+		y = 1
+	}
+	### Technology Branch ###
 
-	focus = {
-		id = imp_the_army_of_earth
-		icon = GFX_focus_deploy_trooper
-		cost = 5
-		x = 0
-		y = 5
-		relative_position_id = imp_start_expanding_the_mechanized_core
-		prerequisite = {
-			focus = imp_lessons_of_earth
-			focus = imp_improved_stormtrooper
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					has_completed_focus = imp_lessons_of_earth
-				}
-				swap_ideas = {
-					remove_idea = imp_army_2
-					add_idea = imp_army_3
-				}
-			}
-			else = {
-				add_ideas = imp_specialised_storm_troopers_5
-			}
-		}
-	}
-	      
- #END OF THE FOCUS TREE 
+ 	#END OF THE FOCUS TREE#
 }

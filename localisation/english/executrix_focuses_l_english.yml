@@ -1,0 +1,144 @@
+﻿l_english:
+  ### Shortcuts ###
+  imp_navy_shortcut: "Navy"
+  imp_air_shortcut: "Air Force"
+  imp_army_shortcut: "Army"
+  imp_economy_shortcut: "Economy"
+  imp_conquest_shortcut: "Conquest"
+  imp_technology_shortcut: "Technology"
+  imp_executrix_shortcut: "Executrix"
+  ### Executrix Intro Focuses ###
+  imp_emergency_power: "Emergency Power"
+  imp_emergency_power_desc: "With the Executrix being disabled as it exits hyperspace. It's trajectory is headed towards a seemingly endless desert--with no knowledge of our position, we must carefully decide which systems to restore as we land, deploy our surviving stormtrooper regiments, and assess our situation to find out if this planet is hostile."
+  imp_assessing_the_situation: "Assessing the Situation"
+  imp_assessing_the_situation_desc: "The surviving Imperial Troopers have reorganized abroad the wreckage of the Executrix and have recovered from the crash. \n\n The Executrix lays scattered across for miles and miles in what seems to be endless sand dunes."
+  imp_salvaging_the_equipment: "Salvage Operations"
+  imp_salvaging_the_equipment_desc: "We detected a signal coming from the northern perimeter, most likely from a city or mining colony due to the frequency of chatter we pick up from them. We should begin investigating so that we may determine the people inhabiting this planet, a small reconnaissance team should make do."
+  imp_repair: "Reconstruction Effort"
+  imp_repair_desc: "We cannot risk ourselves on a foreign planet without a strong base of operations with which to defend and conduct ourselves. Having the Imperial Engineering Corps that survived the crash be repurposed temporarily to reconstruction teams ready with a number of working droids will speed our efforts up greatly."
+  imp_regrouping_of_command: "Regrouping of The High Command"
+  imp_regrouping_of_command_desc: "The surviving members of the High Command have regrouped and are ready to take on the task of leading the survivors and rebuilding our forces. We should begin by assigning them to their respective positions and giving them orders to begin organizing the survivors into a more efficient structure."
+  imp_subjugate_iraq: "Subjugate Iraq"
+  imp_subjugate_iraq_desc: "To our northwest lies a more developed region of industry and resources, which we will need to acquire in order to begin repairs of our ship and the construction of arms. Allowing them to retain 'control' of their own lands will make the people more receptive to our demands for resources, and save trouble in the future."
+  imp_subjugate_saudi: "Subjugate Saudi Arabia"
+  imp_subjugate_saudi_desc: "To our south lies a vast desert sparsely populated by locals, if we were to install a local government of our own we could potentially turn these empty lands into something useful for ourselves, while increasing our own ranks."
+  imp_phase_one: "Initiate Phase One"
+  imp_phase_one_desc: "Now that we have established a foothold in the region we can initiate Phase One."
+  imp_beginning_ship_repairs: "Initiate Ship Repairs"
+  imp_beginning_ship_repairs_desc: "Our first priority should be to establish a reconstruction site around the crash site so that we may begin repairs on critical areas of the Executrix."
+  imp_hull_repair: "Hull Repair"
+  imp_hull_repair_desc: "Basic repairs to the hull of the ship will allow us to seal off the ship from the outside air and cool off the interior, allowing everyone inside a breather from the heat of the desert."
+  imp_repair_conference_room: "Repair The Conference Room"
+  imp_repair_conference_room_desc: "Having a central location with which to meet will allow our highest officials (Which also happen to be Generals and Marshals) to meet in peace aboard the ship, allowing an easier time strategizing while using the ship’s systems."
+  imp_executrix_phase_two: "Phase II"
+  imp_executrix_phase_two_desc: "We have accumulated enough manpower and resources from our surroundings to begin reconstruction of the ship, allowing for us to utilize previously inaccessible areas blocked off in the crash."
+  imp_biweekly_conference: "Bi-weekly Conference"
+  imp_biweekly_conference_desc: "Having a biweekly meeting of all high command officials remaining will allow us to adapt to the changing environment we find ourselves in. Physical attendance will not be required, as we may use holo calls to include members serving within the field."
+  ### Executrix Focuses ###
+  imp_reconstruction_phase_two_branch: "Partially Repaired Ship"
+  imp_reconstruction_phase_two_branch_desc: "Our ship lies spread out in three main clusters of debris, our first priority should be the recovery of these major sections and merging them together again. With our ship whole, we can then begin to repair more intricate systems."
+  imp_base_iraq: "Establish Bases in Iraq"
+  imp_base_iraq_desc: "We must establish bases in Iraq to secure the region and provide a staging ground for our operations. The resources and infrastructure in this area will be crucial for our efforts to rebuild the ship and expand our influence."
+  imp_base_saudi: "Establish Bases in Saudi Arabia"
+  imp_base_saudi_desc: "The vast desert of Saudi Arabia may not be the most hospitable environment, but it offers strategic advantages for our operations. Establishing bases here will allow us to control key areas and access valuable resources."
+  imp_supply_lines_saudi: "Establish Supply Lines"
+  imp_supply_lines_saudi_desc: "Most of the territories here are desert and inhibit our movements, we must eliminate this weakness."
+  imp_supply_lines_iraq: "Improve Operational Efficiency"
+  imp_supply_lines_iraq_desc: "Nothing but wasteland and mountains, we must spend time developing the infrastructure here."
+  imp_fortify_crash_site: "The Fortress"
+  imp_fortify_crash_site_desc: "We have been able to recover the prefabricated garrisons from the wreckage of the Executrix, and have put them to use with our shield generators in order to provide a heavily fortified area around the entire crash site."
+  imp_air_defenses: "Turrets to the Skies!"
+  imp_air_defenses_desc: "A limited number of turrets still remain active, however a larger number still remain usable but are unconnected to the ship. We can use the connected turrets to functionally control the airspace around our ship."
+  imp_reinforce_bases: "Reinforce Bases"
+  imp_reinforce_bases_desc: "We will fortify the bases in the regions so we can have another line of defense. Improving the transport system will also allow us to quickly react to any threats in our sphere of influence, effectively increasing the defenses across our holdings."
+  imp_navigation_repair: "Navigation System Repair"
+  imp_navigation_repair_desc: "Repairing the ships navigational systems will allow us to locate enemy aircraft with relative ease, allowing our pilots to operate more effectively. The navigation system is still heavily damaged, only offering marginal detection."
+  imp_motion_sensor_i: "Motion Sensors"
+  imp_motion_sensor_i_desc: "Using our sensors to spot targets on the ground is a trivial matter once they are further repaired, allowing us to further coordinate our own men and find out the location of enemies in the field."
+  imp_restore_weapons_systems: "Restore Weapon Systems"
+  imp_restore_weapons_systems_desc: "Rebuilding our main weapons will be a top priority, as the Executor was at one time the most well armed ship in the entire Imperial Navy. Focusing on the concussion missiles will aid us greatly, as their range is enough to cover a wide radius around the ship."
+  imp_complement_1: "Restore Hangars"
+  imp_complement_1_desc: "Repairing the Hangars will go a long way in increasing our ability to wage war. Currently our aircraft must land in the sandy dunes of whatever airfields we conquer, not optimized for aircraft that are able to take off and land without the need of a landing strip."
+  imp_shield_repair: "Shield Repair"
+  imp_shield_repair_desc: "Repairing the hull allows us to use our power plants at a higher efficiency, which in turn will allow us to begin repairs on the shields to protect ourselves from any enemy bombardment."
+  imp_reinforce_supply_chain: "Reinforce Supply Connections"
+  imp_reinforce_supply_chain_desc: "By utilizing the remaining droids we have functional, we can use them to create infrastructure leading to our most important regions, creating new roads where previously none had existed. This is a top priority, for without adequate supply lines our technological advantage means nothing."
+  imp_executrix_hanger_resupply: "Rebuilding Hanger Supply-Hubs"
+  imp_executrix_hanger_resupply_desc: "Repairing the Hangars allowed our aircraft to dock within the Executor once more. Currently our aircraft can now re-use the resupply devices and machines located within the hangers, but we will have to spend some time to repair these instruments. Once the repairs are complete, our aircraft will be able to resupply on a constant basis improving operational efficiency."
+  imp_complement_2: "Expand Hangars"
+  imp_complement_2_desc: "Finally clearing our hangar of wreckage has given us plenty of space to work with, allowing us to house our newly constructed aircraft."
+  imp_auxiliary_systems_complete: "Finish Auxiliary Systems"
+  imp_complement_air: "TIE Series: Salaving the Wreckage"
+  imp_complement_air_desc: "With the hangars repaired and cleared out once more, we can salvage any workable TIEs held within and make repairs to the damaged craft we have available."
+  imp_complement_air2: "TIE Series: Salaving the Wreckage II"
+  imp_phase_three: "Half Functional Ship"
+  imp_phase_three_desc: "Repairing basic systems such as air circulation and electricity throughout the entire ship will provide a boost to morale, and allow us to greatly improve the quality of life onboard. It will also allow for us to begin work on more detailed systems such as the advanced sensors."
+  imp_motion_sensor_ii: "Advanced Motion Sensors"
+  imp_motion_sensor_ii_desc: "Further repairs allow for us to detect enemy aircraft as they take off, allowing increased air superiority in any region we choose to occupy."
+  imp_auxiliary_systems_complete: "Finish Auxiliary Systems"
+  imp_auxiliary_systems_complete_desc: "The ships sensors are operating at nearly 100%, allowing us to effectively detect enemies and coordinate our defenses with field commanders being given information as soon as it’s available."
+  imp_hull_repair2: "Finalize Hull Repairs"
+  imp_hull_repair2_desc: "Completely resealing the hull will allow us to one day return to space, and in the meantime it allows for us to house all of our troopers inside of the ship once again, and makes us nearly invulnerable to any kind of bombing our enemies may attempt."
+  imp_complement_land_1: "Walker/Tank Support"
+  imp_complement_land_1_desc: "With our prefabricated garrisons there were also large numbers of ground vehicles stored in a nearby hangar. With time and effort, we could begin to clear the rubble and salvage what vehicles we can. It is likely a number of vehicles survived due to their high durability, and location of the hangar."
+  ###Conquest Branch ###
+  imp_prepare_for_expansion: "War Plans"
+  imp_prepare_for_expansion_desc: "Planning out our assaults on our neighbors will allow us greater lethality and speed in subjugating them. Using our newly repaired conference room we will swiftly plan to end the conflicts with our neighbors while mitigating casualties to our own men where possible."
+  imp_intimidate_yemen_and_oman: "Intimidate Yemen and Oman"
+  imp_intimidate_yemen_and_oman_desc: "Yemen and Oman are weak nations to our south that must be controlled in order to secure our border. It should be no issue to intimidate them into folding into our rule."
+  imp_colonial_deal: "Colonial Agreement"
+  imp_colonial_deal_desc: "We can negotiate with the bordering colonial powers of this planet in giving us the surrounding territories. These territories will help make our borders more coherent and allow room for development."
+  imp_subjugate_iran: "Subjugate Iran"
+  imp_subjugate_iran_desc: "f"
+  imp_integrate_iran: "Integrate Iran"
+  imp_integrate_iran_desc: "f"
+  imp_prepare_for_afghanistan: "Prepare For Afghanistan"
+  imp_prepare_for_afghanistan_desc: "Afghanistan is a mountainous country which would be difficult to conquer with very few airports and a lack of supply infastructure. We should send a logistics team to the region to build critical supply lines and makeshift airfields to allow us to more easily conquer the region when the time comes."
+  imp_subjugate_afghanistan: "Subjugate Afghanistan"
+  imp_subjugate_afghanistan_desc: "f"
+  imp_integrate_afghanistan: "Integrate Afghanistan"
+  imp_integrate_afghanistan_desc: "f"
+  imp_turkey_one: "Invite Turkey"
+  imp_turkey_one_desc: "Inviting Turkey rather than beginning with force will be seen as a gesture of goodwill between us, making it appear as though we aren’t the aggressors. If they decline, however, we will take them by force. Goodwill only gets you so far."
+  ### Army Branch ###
+  imp_army_branch: "Lessons of the Clone Wars"
+  imp_army_branch_desc: "We do not have many troops to spare and are heavily reliant on our superior technology. We've been in this situation before during the Clone Wars, when the Droids greatly outnumbered our Clone Troops. We have to adopt strategies that prioritize our Stormtroopers' lives, otherwise we'll have no men left!"
+  imp_logistics:
+  imp_logistics_desc:
+  imp_army_one:
+  imp_army_one_desc:
+  imp_army_two:
+  imp_army_two_desc:
+  imp_army_three:
+  imp_army_three_desc:
+  imp_army_four:
+  imp_army_four_desc:
+  imp_army_five:
+  imp_army_five_desc:
+  imp_army_six:
+  imp_army_six_desc:
+  imp_recruitment_drive:
+  imp_recruitment_drive_desc:
+  imp_stormtrooper_corps:
+  imp_stormtrooper_corps_desc:
+  imp_marines:
+  imp_marines_desc:
+  imp_paratroopers:
+  imp_paratroopers_desc:
+  imp_mountaineers:
+  imp_mountaineers_desc:
+  imp_rangers:
+  imp_rangers_desc:
+  imp_stormtrooper_corps_two:
+  imp_stormtrooper_corps_two_desc:
+  imp_training_camp:
+  imp_training_camp_desc:
+  ### Air Branch ###
+  imp_air_branch:
+  imp_air_branch_desc:
+  ### Navy Branch ###
+  imp_navy_branch:
+  imp_navy_branch_desc:
+  ### Technology Branch ###
+  imp_restore_database:
+  imp_restore_database_desc:

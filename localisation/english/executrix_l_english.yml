@@ -1115,13 +1115,6 @@
  IMP_turkey_core_decisions: "Turkish coring efforts"
  IMP_turkey_puppet_decisions: "Turkish puppet efforts"
  
-
- #Focuses
- reinforce_supply_connection_tooltip:0 "§YThis focus will update when Iraq and Saudi Arabia are annexed/puppeted." 
- 
- 
- 
- 
  #generic
  stormtrooper_tech: "Stormtrooper"
  generic_empire_focus:0 "Imperial National Focus"
@@ -1254,161 +1247,7 @@
  air_innovation_2_imp_desc:0 "Every advantage we can gain in the skies is precious. We should focus all of our efforts on developing our fighters."
  naval_air_effort_imp:0 "Naval Air Effort"
  naval_air_effort_imp_desc:0 "The efficacy of air strikes against naval targets was demonstrated by the Americans already back in 1921. We should not neglect this branch of the Air Force if we intend to wage war on a naval power."
- 
- 
- 
- 
- 
- ### EMPIRE FOCUS TREE ###
- oil_company: "Gulf Oil Corporation"
- imp_logistics_review: "Logistics Review"
- imp_logistics_review_desc: "Due to our location being in a resource poor area of the world, we must come to terms with the facts we are presented with. We have little raw material with which to work, little food to distribute, and no access to resources such as tibanna and durasteel. Addressing and formulating a strategy for dealing with these issues is of the utmost importance; deciding what to prioritize will be an important decision in shaping this Imperial world."
- 
- 
- 
- #LEFT INDUSTRY PATH#
- imp_synthetic_materials: "Synthetic Materials"
- imp_synthetic_materials_desc: "Creating synthetic materials with which to fuel our growing industrial base will be essential, allowing us to grow at a faster pace without being under the strain of rationing every resource under our control."
- imp_efficient_collection: "Efficient Collection"
- imp_efficient_collection_desc: "The inhabitants of this world are incredibly inefficient in the collection of raw resources, frequently using hand tools and carts to harvest material. Using Imperial tools, we can greatly increase the rate of extraction and processing."
- imp_efficient_collection2: "Efficient Collection II"
- imp_efficient_collection2_desc: "With the collection of raw resources using Imperial tools underway for some time, there has already been a solid increase in the rate of extraction and processing."
- imp_efficient_collection3: "Efficient Collection III"
- imp_efficient_collection3_desc: "Further recovery of Imperial mining and excavation methods shall yield many resources from the untapped wealth of this new planet." 
- imp_efficient_collection4: "Efficient Collection IV"
- imp_efficient_collection4_desc: "The remnants of the original Executor survivors have truly conducted a miraclce in the collection of new resources for the Imperials on this planet. We are close to reaching the collection methods deployed in our galaxy."
- imp_efficient_collection5: "Efficient Collection V"
- imp_efficient_collection5_desc: "Galactic Empire dedicated its vast economic resources and quintillions of credits to expand the Imperial Military and to fund new scientific developments in a wide variety of fields. Imperial Navy fielding millions of starships, the Imperial Army being comprised of tens of trillions of soldiers, and the creation of a vast force of stormtroopers. Perhaps we may once more reach this scale."
- 
- imp_aluminium_plant: "Aluminium Plant"
- imp_aluminium_plant_desc: "Creation of new Aluminium Plants should benefit the Imperial Forces."
- imp_aluminium_plant2: "Aluminium Plant II"
- imp_aluminium_plant2_desc: "Creation of new Aluminium Plants should benefit the Imperial Forces."
- imp_aluminium_plant3: "Aluminium Plant III"
- imp_aluminium_plant3_desc: "Creation of new Aluminium Plants should benefit the Imperial Forces."
- imp_aluminium_plant4: "Aluminium Plant IV"
- imp_aluminium_plant4_desc: "Creation of new Aluminium Plants should benefit the Imperial Forces."
- imp_aluminium_plant5: "Aluminium Plant V"
- imp_aluminium_plant5_desc: "Creation of new Aluminium Plants should benefit the Imperial Forces."
- 
- imp_chromium_plant: "Chromium Plant"
- imp_chromium_plant_desc: "Creation of new Chromium Plants should benefit the Imperial Forces."
- imp_chromium_plant2: "Chromium Plant II"
- imp_chromium_plant2_desc: "Creation of new Chromium Plants should benefit the Imperial Forces."
- imp_chromium_plant3: "Chromium Plant III"
- imp_chromium_plant3_desc: "Creation of new Chromium Plants should benefit the Imperial Forces."
- imp_chromium_plant4: "Chromium Plant IV"
- imp_chromium_plant4_desc: "Creation of new Chromium Plants should benefit the Imperial Forces."
- imp_chromium_plant5: "Chromium Plant V"
- imp_chromium_plant5_desc: "Creation of new Chromium Plants should benefit the Imperial Forces."
- 
- imp_steel_plant: "Steel Plant"
- imp_steel_plant_desc: "Creation of new Steel Plants should benefit the Imperial Forces."
- imp_steel_plant2: "Steel Plant II"
- imp_steel_plant2_desc: "Creation of new Steel Plants should benefit the Imperial Forces."
- imp_steel_plant3: "Steel Plant III"
- imp_steel_plant3_desc: "Creation of new Steel Plants should benefit the Imperial Forces."
- imp_steel_plant4: "Steel Plant IV"
- imp_steel_plant4_desc: "Creation of new Steel Plants should benefit the Imperial Forces."
- imp_steel_plant5: "Steel Plant V"
- imp_steel_plant5_desc: "Creation of new Steel Plants should benefit the Imperial Forces."
- 
- imp_tungsten_plant: "Tungsten Plant"
- imp_tungsten_plant_desc: "Creation of new Tungsten Plants should benefit the Imperial Forces."
- imp_tungsten_plant2: "Tungsten Plant II"
- imp_tungsten_plant2_desc: "Creation of new Tungsten Plants should benefit the Imperial Forces."
- imp_tungsten_plant3: "Tungsten Plant III"
- imp_tungsten_plant3_desc: "Creation of new Tungsten Plants should benefit the Imperial Forces."
- imp_tungsten_plant4: "Tungsten Plant IV"
- imp_tungsten_plant4_desc: "Creation of new Tungsten Plants should benefit the Imperial Forces."
- imp_tungsten_plant5: "Tungsten Plant V"
- imp_tungsten_plant5_desc: "Creation of new Tungsten Plants should benefit the Imperial Forces."
- 
- #RIGHT INDUSTRY PATH
- imp_industrial_build-up: "Industrial Build-up"
- imp_industrial_build-up_desc: "Quickly constructed factories will allow us to use the resources at our disposal, producing usable materials out of the resources available in order to allow further construction."
- 
- imp_railway_saudi: "Improve Saudi Railway Network" 
- imp_railway_saudi_desc: "Improving the network infrastructure of the Saudi Region should damper supply issues while also bolsetering our troops movement throughout the region." 
- imp_railway_iraq: "Improve Iraq Railway Network"
- imp_railway_iraq_desc: "Improving the network infrastructure of the Iraq Region should damper supply issues while also bolsetering our troops movement throughout the region." 
- imp_railway_building: "Imperial Railway Engineering"
- imp_railway_building_desc: "Imperial Engineering Corps, the Empire's military engineers are responsible for building out our operations and constructing our various bases and sites. We should focus some of their efforts into quickening our ability to construct railways as much of the surronding terrian is without proper infrastructure."
- 
- imp_industrialize_the_desert: "Industrialize the Desert"
- imp_industrialize_the_desert_desc: "Making use of the vast swaths of land available to us, we will construct a variety of factories for the use of general construction."
- imp_industrialize_the_desert2: "Infrastructure in the Desert"
- imp_industrialize_the_desert2_desc: "The Imperial Engineering Corps has been hard at work creating usable land out of the sandy dunes of what this planet calls "Saudi Arabia". Constructing a vast network of infrastructure through the deserts will allow us full use of the empty surroundings."
- imp_industrialize_the_desert3: "Factories in the Desert"
- imp_industrialize_the_desert3_desc: "Imperial Engineering Corps is ready to construct the large sector of industry drafted up by Command. If a decent amount of time and resources are invested, the Corps should be able to create a whole new section of labor to fuel our later development needs." 
- imp_industrialize_the_desert4: "Factories in the Desert II"
- imp_industrialize_the_desert4_desc: "The outcome of the previous construction project to industrialize the deserts of the south have yieled greater success than originally believed. Local populace is quite pleased with the vast amount of new jobs that were created, so much so that they are more willing to work for us. Perhaps we can further invest into deserts."
- 
- imp_industrialize_iraq: "Industrialize the Northern Sector"
- imp_industrialize_iraq_desc: "Making use of the northern territories of the nation once known as Iraq, we can construct a hub of industrial factories."
- imp_industrialize_iraq2: "Infrastructure in the North"
- imp_industrialize_iraq2_desc: "The Imperial Engineering Corps has been hard at work creating usable land out of nothing. Constructing a vast network of infrastructure through the northern territories should bolster our means of production."
- imp_industrialize_iraq3: "Factories in the North"
- imp_industrialize_iraq3_desc: "Imperial Engineering Corps is ready to construct a large sector of military industry drafted up by Command. If a decent amount of time and resources are invested, the Corps should be able to create a whole new section of labor to fuel our objectives." 
- imp_industrialize_iraq4: "Factories in North II"
- imp_industrialize_iraq4_desc: "The outcome of the previous construction project to industrialize the north yieled greater success than originally believed. Local populace is quite pleased with the vast amount of new jobs that were created, so much so that they are more willing to work for us. Perhaps we can further invest into the cities."
- 
- imp_war-industry_buildup: "War Industry Build-Up Phase I"
- imp_war-industry_buildup_desc: "Our military arms industry is severly lacking compared to the vastly superior infrastructure we had emplace in our Galaxy. High Command has drafted up a two phase operation that should allow us to broaden out much faster, there is vast sweaths of untapped land on this planet ready for industry."
- imp_war-industry_buildup2: "War Industry Build-Up Phase II"
- imp_war-industry_buildup2_desc: "Phase II build up will be shorter than our initial investment into the constructing a suitable war industry. We should focus on using the time of increased production to broaden the areas in which we place our factories, and increase the amount of logitiscal hubs for the Imperial Army in low supply regions."
- 
- #CENTER INDUSTRY PATH
- imp_outer_regions_development: "Coastal Development"
- imp_outer_regions_development_desc: "The Arabian coast is an untapped well of potential, as we could turn this land into anything of our choosing. A single, massive city to house our growing population or many smaller cities, each capable of producing different goods and services to provide for our growing Empire. The choice is ours."
- imp_rural_development: "Rural Development"
- imp_rural_development_desc: "he desert is difficult to cross, as one can easily get lost, or worse, stranded. The construction of a road network linking major hotspots of activity will be a great boon to our construction efforts, as well as troop deployment throughout the region."
- imp_urban_development: "Urban Development"
- imp_urban_development_desc: "Developing our growing urban regions into zones of production will aid us with further construction, and help to alleviate the strain of food rationing to our army as our ranks swell with new recruits."
- imp_self-sustained_city: "Self-Sustained Cities"
- imp_self-sustained_city_desc: "Creating self sustaining cities will take away some of the strain on our upper council, allowing for them to focus on matters more important than city management specfically our wars and future operations. It will also give the citizens living under our rule a degree of “Freedom” from our control, therefore decreasing the likelihood of dissent."
- imp_appoint_a_city_manager: "Appoint City Managers"
- imp_appoint_a_city_manager_desc: "Appointing City Managers will allow for Imperial aligned politicians to oversee our cities as it will not fall upon the shoulders of anyone important to make mundane decisions such as building placements or food distribution."
- imp_direct_control: "Direct Control"
- imp_direct_control_desc: "Allowing our cities to be controlled by a source outside of our inner circles can and would spell trouble. We have seen in the past how allowing the people free reign leaves open opportunity for thoughts of rebellion. We shall take direct rule with Imperial loyalists and ensure a swift grip on our citizens."
- imp_establish_city_council: "Establish Imperial Council"
- imp_establish_city_council_desc: "Allowing the reestablishment of the Imperial Council will aid us in handling the day to day activities of our efforts and various operations on this world."
- imp_rapid_industrialization: "Rapid Industrialization"
- imp_rapid_industrialization_desc: "As it stands, our state economy is incredibly weak compared to the natives; a problem that we must remedy quickly before we find ourselves out matched, unable to arm our men. By rapidly constructing factories in a preplanned, prefabricated manner we can reduce construction time considerably."
- imp_elitism: "Elitism"
- imp_elitism_desc: "By becoming one of the world's primary sources of oil, we have placed ourselves high above any of our neighboring countries, and even above the ‘Major Powers’. A sense of elitism is justified, as this world revolves around oil to power its war machines, granting us a large advantage if we were to decide to no longer export any."
- imp_citizenship_for_service: "Citizenship For Service"
- imp_citizenship_for_service_desc: "Establishing a program to draw new recruits into the Imperial Army will help us to improve our pool of manpower. By offering citizenship into the Empire and all of the benefits that come along with it, the native population will flock to our training centers."
- imp_landscape_terraforming: "Landscape Terraforming"
- imp_landscape_terraforming_desc: "Turning a vast desert into something usable is no small feat, the Imperial Engineering Corps has been hard at work creating stable, usable land out of these sandy dunes. Finalizing their work by constructing factories and other infrastructure will allow us full use of our surroundings."
- imp_export_resources: "Export Resources"
- imp_export_resources_desc: "Currently, we do not allow the export of any Imperial resources. We require everything we currently possess to fuel our war machine, however we have surpluses of oil going unused. Perhaps the sale of oil would in turn help to fuel our economy further."
- imp_internal_developments: "Internal Developments"
- imp_internal_developments_desc: "Developing a proper section of government to handle the development of our civilian industries will allow it to grow quicker without having to wait for approval from a higher authority. Choosing who may be at the head of this economic planning committee will be a relatively simple task."
- imp_civilian_industry: "Civilian Industry"
- imp_civilian_industry_desc: "Our civilian industry is the lifeblood of the Empire, providing us with the resources we need to construct everything from simple handheld comms to sensors capable of detecting a single man jumping in the air from miles away. We must continuously improve it, for it is the basis for everything we do."
- imp_corporate_system: "Corporate System"
- imp_corporate_system_desc: "By making the world reliant on our goods, primarily consisting of oil, we may hold significant sway over world affairs. Adopting a dedicated group to manage our supply of oil will allow for an increase in the amount of oil we can sell to the world market."
- imp_imperial_warmachine: "Imperial Warmachine"
- imp_imperial_warmachine_desc: "In order to further our goal of subjugating this world for the Empire, we must increase the amount of weaponry at our disposal. We may not have the manpower we require, but manpower is useless if we cannot put a blaster in each hand and a starfighter above each battlefield."
- imp_war_industry: "War Industry"
- imp_war_industry_desc: "Capitalizing on our location, we have the ability to expand nearly unlimitedly in all directions. By constructing factories with cities around them, we may dedicate entire populations strictly to the production of military arms"
- imp_exploitation: "Exploitation"
- imp_exploitation_desc: "While having the capacity to build many weapons at once is wonderful, we lack the raw materials to do so. Many of our factories sit idle as they await shipments of material to work with, wasting valuable time. There are many displaced laborers, out of work due to Imperial mining machines replacing them at their job. We can use them as cheap labor to provide a boost to our resource extraction output."
- imp_new_headquarters: "New Headquarters"
- imp_new_headquarters_desc: "Constructing a new headquarters with which to base ourselves from would allow for increased work efficiency for our men, as working from the Executor gives a feeling of only being on this planet temporarily. A permanent headquarters will reinforce the idea that the Empire is here to stay. We will conquer this world, regardless of resistance."
- imp_imperial_might: "Imperial Might"
- imp_imperial_might_desc: "Our headquarters is complete, a massive complex of durasteel and concrete. Impenetrable, colossal, awe inspiring, all qualities to fit the Imperial doctrine and strike fear into the hearts of any assailants. The Empire stands unconquerable, and will do so for a thousand years."
- imp_increased_autonomy: "Increased Autonomy"
- imp_increased_autonomy_desc: "Allowing our Senate to be the controllers of the citizens will allow our higher staff to focus on military matters, which was their original role before being forced into the role of bureaucrat after being stranded. The Senate will be allowed a degree of autonomy with limited oversight from our military commanders, able to operate at their own discretion."
- imp_the_senate: "The Imperial Senate"
- imp_the_senate_desc: "Appointing a Senate will allow for our citizens to have a voice in our policy, however the Senate will ultimately still be under our control if the public were to vote in an unfavorable way. The Senate will allow for citizens to decide their own way of life, something we shall allow as long as it does not affect our own intentions."
- imp_gulf_city: "New Coruscant"
- imp_gulf_city_desc: "New Coruscant, our growing metropolis to the west of the crash site, is becoming a major hub of activity in this region of the world. Investing further into the city to draw more of the natives into Imperial territory will increase our own population. It will serve as our beacon, glistening with steel and glass shining to the world."
- imp_utopian_civilization: "Utopian Civilization"
- imp_utopian_civilization_desc: "On the surface, the Empire is a utopia for the inhabitants of this world. Our medicine able to cure nearly any disease, and any wound suffered. Our knowledge is drawing the worlds intellectuals to study in our ranks, and our food the world's poorest. However, below it is a system of forced labor, conscription, secret police, and fleeting freedom. If they believe they have sought a Utopia, then they have."
- 
- 
+
  ###INTEL
  imp_intel_service: "Imperial Intelligence"
  imp_intel_service_desc: "Imperial Intelligence was the espionage organization of the Empire that provided services on their own accord and fed resources to other military branches. If we are too realie our ambitions of controlling this planet, we will likely face counter-operations carried about by various entities.  We must reestablish the agency at once to combat these threats. "
@@ -1514,21 +1353,7 @@
  capital_ships_effort1_desc: "Our capital ship will be as powerful as the executor!"
  imp_focus: "Imperial Focus Tree"
  
- ### START FOCUSES ####
- imp_emergency_power: "Emergency Power"
- imp_emergency_power_desc: "With the Executor being disabled as it exits hyperspace. It's trajectory is headed towards a seemingly endless desert--with no knowledge of our position, we must carefully decide which systems to restore as we land, deploy our surviving stormtrooper regiments, and assess our situation to find out if this planet is hostile."
- imp_assessing_the_situation: "Assessing the Situation"
- imp_assessing_the_situation_desc: "The surviving Imperial Troopers have reorganized abroad the wreckage of the Executor and have recovered from the crash. \n\n The Executor lays scattered across for miles and miles in what seems to be endless sand dunes."
- imp_salvaging_the_equipment: "Salvage Operations"
- imp_salvaging_the_equipment_desc: "We detected a signal coming from the northern perimeter, most likely from a city or mining colony due to the frequency of chatter we pick up from them. We should begin investigating so that we may determine the people inhabiting this planet, a small reconnaissance team should make do."
- imp_repair: "Reconstruction Effort"
- imp_repair_desc: "We cannot risk ourselves on a foreign planet without a strong base of operations with which to defend and conduct ourselves. Having the Imperial Engineering Corps that survived the crash be repurposed temporarily to reconstruction teams ready with a number of working droids will speed our efforts up greatly."
- imp_our_future: "Our Future"
- imp_our_future_desc: "There is damage throughout the ship, but the worst of it hit the command tower. Most of Senior Command is still trapped inside and immediately crews begin moving through the rubble to try to find them. Not many are confident of their survival."
- imp_tarkin_doctrine: "Tarkin's Doctrine"
- imp_tarkin_doctrine_desc: "\"Rule through fear of force, rather than force itself.\" The Tarkin doctrine used fear and scare tactics in order to keep the populace in line; he believed that by using large shows of force that it would quell any thoughts of rebellion in the general populace. This form of leadership should suit us well on this alien backwater as we begin to show force in the local region."
- imp_sith_might: "Sith Might"
- imp_sith_might_desc: "Lord Vader has the ability to use the Force to his advantage. Perhaps a combination of intimidation and a display of his power will show the inhabitants who is in control."
+
  
  ##UPGRADED DOCTRINES##
  imp_tarkin_doctrine2: "Improving Tarkin's Doctrine"
@@ -1586,35 +1411,16 @@
  IMP_thrawn_navy_reform: "Thrawn's Naval Reforms"
  IMP_thrawn_navy_reform2: "Thrawn's Naval Reforms"
  
- 
- imp_air_defense_desc: "A limited number of turrets still remain active, however a larger number still remain usable but are unconnected to the ship. We can use the connected turrets to functionally control the airspace around our ship."
- imp_air_defense: "Turrets to the Skies!"
+
  imp_naval_base: "Construct Docking Posts"
  imp_naval_base_desc: "We currently have a limited number of transport craft available to fly supplies to our troops, constructing a dock for more primitive means may be necessary for the current times."
- imp_fortify_land: "The Fortress"
- imp_fortify_land_desc: "We have been able to recover the prefabricated garrisons from the wreckage of the Executor, and have put them to use with our shield generators in order to provide a heavily fortified area around the entire crash site."
- imp_subjugate_saudi: "Subjugate Saudi Arabia"
- imp_subjugate_saudi_desc: "To our south lies a vast desert sparsely populated by locals, if we were to install a local government of our own we could potentially turn these empty lands into something useful for ourselves, while increasing our own ranks."
- imp_subjugate_iraq: "Subjugate Iraq"
- imp_subjugate_iraq_desc: "To our northwest lies a more developed region of industry and resources, which we will need to acquire in order to begin repairs of our ship and the construction of arms. Allowing them to retain 'control' of their own lands will make the people more receptive to our demands for resources, and save trouble in the future."
- imp_conquer_iraq: "Conquer Iraq"
- imp_conquer_iraq_desc: "Try as they might, they cannot stop us."
- imp_conquer_saudi: "Conquer Saudi Arabia"
- imp_conquer_saudi_desc: "The citizens of this territory have the spirit of rebellion in them, we must make sure to quash this as soon as possible."
- imp_supply_lines_iraq: "Improve Operational Efficiency"
- imp_supply_lines_iraq_desc: "Nothing but wasteland and mountains, we must spend time developing the infrastructure here."
- imp_supply_lines_saudi: "Establish Supply Lines"
- imp_supply_lines_saudi_desc: "Most of the territories here are desert and inhibit our movements, we must eliminate this weakness."
+ 
  imp_establish_base_saudi: "Operational Base Besh"
  imp_establish_base_saudi_desc: "With it’s vast deserts, this will make an opportune location for operating in secret. Our secret police shall be given reign over this region, allowing for them to hold prisoners with very little chance of escape across the deserts."
  imp_establish_base_iraq: "Operational Base Aurek"
  imp_establish_base_iraq_desc: "Establishing a military stronghold in this region will be vital to our future in the area, as it’s rivers and many hills provide us with natural defense as well as a staging area with which to launch future campaigns."
- imp_phase_two: "Phase II"
- imp_phase_two_desc: "We have accumulated enough manpower and resources from our surroundings to begin reconstruction of the ship, allowing for us to utilize previously inaccessible areas blocked off in the crash."
- imp_reinforce_bases: "Reinforce Bases"
- imp_reinforce_bases_desc: "We will fortify the bases in the regions so we can have another line of defense. Improving the transport system will also allow us to quickly react to any threats in our sphere of influence, effectively increasing the defenses across our holdings."
- imp_reinforce_supply_chain: "Reinforce Supply Connections"
- imp_reinforce_supply_chain_desc: "By utilizing the remaining droids we have functional, we can use them to create infrastructure leading to our most important regions, creating new roads where previously none had existed. This is a top priority, for without adequate supply lines our technological advantage means nothing."
+ 
+ 
  imp_air_defense_two: "Extra Gun Turrets"
  imp_air_defense_two_desc: "It turns out there are more turrets that survived the crash than we previously thought."
  imp_naval_development: "Naval Development"
@@ -1625,14 +1431,12 @@
  imp_intimidate_yemen_desc: "Yemen is a weak nation to our south that must be controlled in order to secure our border. It should be no issue to intimidate them into folding into our rule."
  imp_intimidate_oman: "Intimidate Oman"
  imp_intimidate_oman_desc: "Our southern border requires securing, the nation of Oman is weak and will submit to our will quickly, they know that there is no chance of holding out against our might."
- imp_land_doctrine: "Lessons of the Clone Wars"
- imp_land_doctrine_desc: "We do not have many troops to spare and are heavily reliant on our superior technology. We've been in this situation before during the clone wars, when the droids greatly outnumbered our clone troops. We have to adopt strategies that prioritize our stormtroopers lives, otherwise we'll have no men left!"
+
  imp_take_tur: "Secure Turkey"
  imp_take_tur_desc: "Turkey will be our first challenge since crashing, as they are an industrialized nation with a difficult terrain to cross. Taking their industry will be an incredible boost to our efforts here, and allow for us to manufacture more with their natural resources."
  imp_reconstructing_the_ship: "Reconstructing The Ship"
  imp_reconstructing_the_ship_desc: "It’s time we begin to create some more permanent facilities within the ship to allow us to not only salvage weapons and materials from the wreckage, but to make all new weapons and other supplies we require. The crash site shall be made into a bustling construction zone."
- imp_repair_conference_room: "Repair The Conference Room"
- imp_repair_conference_room_desc: "Having a central location with which to meet will allow our highest officials (Which also happen to be Generals and Marshals) to meet in peace aboard the ship, allowing an easier time strategizing while using the ship’s systems."
+
  imp_stage_one: "Partially Repaired Ship"
  imp_stage_one_desc: "Our ship lies spread out in three main clusters of debris, our first priority should be the recovery of these major sections and merging them together again. With our ship whole, we can then begin to repair more intricate systems."
  imp_stage_two: "Half-Functional Ship"
@@ -1641,8 +1445,6 @@
  imp_stage_three_desc: "The majority of our basic systems are online and functioning, as well as the more advanced systems. The remaining major systems to restore are the ships engines, which have been saved for last; if we were to attempt to restart them without all of our other systems online, who knows how large of a crater we would be in."
  imp_stage_four: "Star Dreadnought Executor"
  imp_stage_four_desc: "We’ve fully repaired the ship, there is nothing holding us back any longer. We may take off from our crash site and enter orbit of this planet."
- imp_biweekly_conference: "Bi-weekly Conference"
- imp_biweekly_conference_desc: "Having a biweekly meeting of all high command officials remaining will allow us to adapt to the changing environment we find ourselves in. Physical attendance will not be required, as we may use holo calls to include members serving within the field."
  
  
  imp_restore_weapon_systems: "Restore Weapon Systems"
@@ -1665,51 +1467,18 @@
  imp_gun_modifications_three_desc: "By using coordinated launches, we can have multiple missiles strike the target at the same time, entirely devastating the area we chose to strike in an instant."
  imp_gun_modifications_four: "Orbital Bombardment"
  imp_gun_modifications_four_desc: "With the ship repaired and in orbit, we can strike anywhere on the planet at will. With terrain no longer impeding us, we can strike any target with no repercussions. "
- imp_hull_repair: "Hull Repair"
- imp_hull_repair_desc: "Basic repairs to the hull of the ship will allow us to seal off the ship from the outside air and cool off the interior, allowing everyone inside a breather from the heat of the desert."
- imp_shield_repair: "Shield Repair"
- imp_shield_repair_desc: "Repairing the hull allows us to use our power plants at a higher efficiency, which in turn will allow us to begin repairs on the shields to protect ourselves from any enemy bombardment."
- imp_hull_repair2: "Finalize Hull Repairs"
- imp_hull_repair2_desc: "Completely resealing the hull will allow us to one day return to space, and in the meantime it allows for us to house all of our troopers inside of the ship once again, and makes us nearly invulnerable to any kind of bombing our enemies may attempt."
- imp_navigation_repair: "Navigation System Repair"
- imp_navigation_repair_desc: "Repairing the ships navigational systems will allow us to locate enemy aircraft with relative ease, allowing our pilots to operate more effectively. The navigation system is still heavily damaged, only offering marginal detection."
- imp_motion_sensor_i: "Motion Sensors"
- imp_motion_sensor_i_desc: "Using our sensors to spot targets on the ground is a trivial matter once they are further repaired, allowing us to further coordinate our own men and find out the location of enemies in the field."
- imp_motion_sensor_ii: "Advanced Motion Sensors"
- imp_motion_sensor_ii_desc: "Further repairs allow for us to detect enemy aircraft as they take off, allowing increased air superiority in any region we choose to occupy."
- 
- 
 
- 
- imp_complement_1: "Restore Hangars"
- imp_complement_1_desc: "Repairing the Hangars will go a long way in increasing our ability to wage war. Currently our aircraft must land in the sandy dunes of whatever airfields we conquer, not optimized for aircraft that are able to take off and land without the need of a landing strip."
- imp_executor_hanger_resupply: "Rebuilding Hanger Supply-Hubs"
- imp_executor_hanger_resupply_desc: "Repairing the Hangars allowed our aircraft to dock within the Executor once more. Currently our aircraft can now re-use the resupply devices and machines located within the hangers, but we will have to spend some time to repair these instruments. Once the repairs are complete, our aircraft will be able to resupply on a constant basis improving operational efficiency."
- 
- imp_complement_air: "TIE Series: Salaving the Wreckage"
- imp_complement_air_desc: "With the hangars repaired and cleared out once more, we can salvage any workable TIEs held within and make repairs to the damaged craft we have available."
- imp_complement_air2: "TIE Series: Salaving the Wreckage II"
+  imp_phase_four: "Grounded Ship"
+  imp_phase_four_desc: "The majority of our basic systems are online and functioning, as well as the more advanced systems. The remaining major systems to restore are the ships engines, which have been saved for last; if we were to attempt to restart them without all of our other systems online, who knows how large of a crater we would be in."
+
  imp_complement_air2_desc: "The initial crash site of the Executor stretched miles, we may still be able to salvage parts of starcraft scattered throughout the sand dunes and make craft suituable to fly again."
  imp_complement_air3: "TIE Production"
  imp_complement_air3_desc: "With working models onboard the ship, we have a basis for constructing more TIEs, which will be necessary for our future success on this planet. We must use our newly constructed industries to provide support for our growing armies."
- 
- imp_complement_land_1: "Walker/Tank Support"
- imp_complement_land_1_desc: "With our prefabricated garrisons there were also large numbers of ground vehicles stored in a nearby hangar. With time and effort, we could begin to clear the rubble and salvage what vehicles we can. It is likely a number of vehicles survived due to their high durability, and location of the hangar."
+
  imp_complement_land_2: "Walker/Tank Production"
  imp_complement_land_2_desc: "Much like our TIEs, our walkers and tanks are another necessary component of the Imperial Army. Without armored support, our troopers would be left vulnerable! We must use our current models and increase production."
  
-
- imp_complement_2: "Expand Hangars"
- imp_complement_2_desc: "Finally clearing our hangar of wreckage has given us plenty of space to work with, allowing us to house our newly constructed aircraft."
- imp_auxiliary_systems_complete: "Finish Auxiliary Systems"
- imp_auxiliary_systems_complete_desc: "The ships sensors are operating at nearly 100%, allowing us to effectively detect enemies and coordinate our defenses with field commanders being given information as soon as it’s available."
  
- imp_war_plan: "War Plans"
- imp_war_plan_desc: "Planning out our assaults on our neighbors will allow us greater lethality and speed in subjugating them. Using our newly repaired conference room we will swiftly plan to end the conflicts with our neighbors while mitigating casualties to our own men where possible."
- imp_protect_tur: "Invite Turkey"
- imp_protect_tur_desc: "Inviting Turkey rather than beginning with force will be seen as a gesture of goodwill between us, making it appear as though we aren’t the aggressors. If they decline, however, we will take them by force. Goodwill only gets you so far."
- imp_skirmish_conflict: "Colonial Agreement"
- imp_skirmish_conflict_desc: "We can negotiate with the bordering colonial powers of this planet in giving us the surrounding territories. These territories will help make our borders more coherent and allow room for development."
  imp_campaign_decisions: "Campaigns"
  imp_campaign_decisions_desc: "Beginning to plan our military campaigns will aid us in the future, allowing us to more effectively dominate our enemies.\n\nTarkin Bonus: A secret police will be necessary, as discontent among our subjects is already becoming apparent. Forming a division within Operational Base Besh shall serve as serve as our secret police."
  imp_global_domination: "Global Domination"
@@ -1719,193 +1488,6 @@
  imp_planet_desc: "We've conquered enough of the planet to throw away our facade. We will reveal that our goal was to bring order and unity to an otherwise chaotic planet. All are welcome to the Empire."
  imp_planet2: "Planetary Government Phase II"
  imp_planet2_desc: "We have conquered enough of the Middle-Eastern countries and territories to integrate them fully into the Imperial control. Most of the various people living within these lands have been under rule since we crashed landed those years ago, we shall offer them a place in the Empire."
- 
- 
- #FOCUSES DEALING WITH BULGARIA
- imp_bulgaria: "The Bulgarian Accord"
- 
- imp_bulgaria2: "Influencing Bulgarian Government"
- 
- imp_bulgaria_annex: "Staking a Foothold in the Balkans"
- imp_bulgaria_annex2: "Subjugating Bulgarian People"
- imp_bulgaria_core: "Integrating Bulgaria"
- 
- imp_bulgaria_puppet: "Bulgaria Investments"
- imp_bulgaria_puppet2: "Bulgaria Investments II"
- imp_bulgaria_puppet3: "New Allies in the Balkans"
- 
- 
- 
- #FOCUSES DEALING WITH ROMANIA 
- imp_romanian_integration: "Invite Romania"
- imp_romanian_integration_desc: "Our accord with romania has made them believe in our cause and are now willing to join with us."
- imp_romanian_agreement: "The Romanian Accord"
- imp_romanian_agreement_desc: "Currently, the romanian government sees us as nothing more than an aggressive nation pretending to be from the stars. This is problematic as their guarantee of independence on Turkey prevents us from further expansion. However, they may change their minds once we show them proof of our origins and the protection we can offer."
- 
- imp_romanian_puppet: "Romanian Imperials"
- imp_romanian_puppet_desc: "Romania populace and its Imperial styled government have served the Empire well enough. Let us bring them into the fold and offer true Imperial Friendship, they are as much of brothers and sisters as those who came from our galaxy far far away. Romania shall serve as this planet's guiding force."
- imp_romanian_puppet2: "Imperial Tools and Weapons for Romania"
- imp_romanian_puppet2_desc: "Imperial Romania will need access to new tools and weaponry if it is going to be able to join our conquests at the standard set by us. We shall issue them schematics and a variety of tools. We will also issue a number of industrial officials to start the great scheme of turning our ally into a wrecking force."
- imp_romanian_puppet3: "Our New Brothers and Sisters"
- imp_romanian_puppet3_desc: "\"Glory to the Empire!" Our new Brothers and Sisters of Imperial Romania chant out in the streets. Romania have found themselves equal within our social heirachy and systems. We shall continue the conquest of this world with a powerful ally at our side. The remaining scum will be cleansed off of this planet. \n"LONG LIVE THE EMPIRE!""
- 
- imp_romanian_annex: "Annexation of Romania"
- imp_romanian_annex_desc: "Romania populace and its Imperial styled government have served the Empire well enough. Let us bring them into the fold and offer true Imperial Citizenship, they are as much of brothers and sisters as those who came from our galaxy far far away."
- imp_romanian_annex2: "Romanian Love of Coruscant Imperialism"
- imp_romanian_annex2_desc: "Romanian populace is more than happy to belong in the Galactic Empire. They grew much affinity to the Imperial way of life and of our government systems. We shall honor our brothers greatly and the populace is more than happy to cooperate with us. Our new brothers and sisters are more than welcome."
- imp_romanian_core: "Integrating our New Brothers and Sisters"
- imp_romanian_core_desc: "Various programs could be emplaced in the coming weeks to help ease the transition for the romanian people into their new Imperial lives. Unlike the Imperial Citzenship we grant to those across the planet, we shall offer our Romainan brother and sisters positions of greater power and a better life than the lowly scum of this planet."
- 
- #IMP RESEARCH FOCUSES
- imp_restore_galtech: "Bacta Tanks"
- imp_restore_galtech2: "Galactic Refining Methods"
- imp_restore_galtech3: "Space-Resilient Construction"
- imp_restore_galtech4: "The Holonet"
- 
- ###IMP GENERIC WAR GOALS
- ##TARKINS WARS
- #TARKINS EUROPE WAR
- imp_target_europe_puppet: "Tarkin's War: Puppeting Europe"
- imp_target_europe_puppet2: "Tarkin's War: Strict Guidelines"
- imp_target_europe_puppet3: "Tarkin's War: Foreign Volunteers"
- 
- #TARKINS GERMAN WAR
- imp_target_germans_puppet: "Tarkin's War: Puppeting Germany"
- imp_target_germans_puppet2: "Tarkin's War: Strict Guidelines"
- imp_target_germans_puppet3: "Tarkin's War: Foreign Volunteers"
- 
- #TARKINS SOVIET WAR
- imp_target_soviets_puppet: "Tarkin's War: Puppeting the Soviets"
- imp_target_soviets_puppet2: "Tarkin's War: Strict Guidelines"
- imp_target_soviets_puppet3: "Tarkin's War: Foreign Volunteers"
- 
- #TARKINS ASIA WAR
- imp_target_asia_puppet: "Tarkin's War: Puppeting Asia"
- imp_target_asia_puppet2: "Tarkin's War: Strict Guidelines"
- imp_target_asia_puppet3: "Tarkin's War: Foreign Volunteers"
- 
- ##VADERS WARS
- #VADERS EUROPE WAR
- imp_target_europe_annex: "Vader's War: Conquest of Europe"
- imp_target_europe_annex2: "Vader's War: Suppressing Europe"
- imp_target_europe_annex3: "Vader's War: Terror and Fear!"
- imp_target_europe_annex4: "Vader's War: Subjugation" 
- #VADERS GERMAN WAR 
- imp_target_germans_annex: "Vader's War: Conquest of Germany"
- imp_target_germans_annex2: "Vader's War: Suppressing Germany"
- imp_target_germans_annex3: "Vader's War: Terror and Fear!"
- imp_target_germans_annex4: "Vader's War: Subjugation" 
- #VADERS SOVIET WAR
- imp_target_soviets_annex: "Vader's War: Conquest of the Soviets"
- imp_target_soviets_annex_desc: "Lord Vader organizes and plans for a swift conquest of the Soviet lands to our North. These scum rely upon an outdated ideology and equipment that trumps even the lowest level of scum in our galaxy. Tarkin has advised a different strategy but it is futile against a vast land of worthless rats that can be better put to use in Imperial labor or other posts."
- imp_target_soviets_annex2: "Vader's War: Suppressing the Soviets"
- imp_target_soviets_annex2_desc: "Lord Vader and High Command have grown displeased with the current handling of the newly taken Soviet lands. If we are to fully advance then we must suppress these people by any means. We have dealt with rebellious scum before, and these people are no different. They shall know the true power of the Empire."
- imp_target_soviets_annex3: "Vader's War: Terror and Fear!"
- imp_target_soviets_annex3_desc: "It is clear that the further we advance into these lands, it becomes obvious how poor these people are. Their current rulers are less than adept at maintainning a fuctioning society. Lord Vader will see to it personally that these people know what True Terror and Fear is, and to obey the Empire. Vader has ordered that the local garrisons and patrolling Imperial Police are to fire upon any who overstep the martial law."
- imp_target_soviets_annex4: "Vader's War: Subjugation"
- imp_target_soviets_annex4_desc: "Lord Vader's conquest of the soviets has ended. We now occupy a vast array of land that is currently being subjugated personally by Lord Vader. We shall integrate these people into our lower class of Imperial citizens, they can drive our industrial lands and provide a wealth of production to the Empire. We shall make it more enticing than their previous rulers, but make no mistake, they are nothing more than dirt."
- #VADERS ASIA WAR
- imp_target_asia_annex: "Vader's War: Conquest of Asia"
- imp_target_asia_annex2: "Vader's War: Suppressing Asia"
- imp_target_asia_annex3: "Vader's War: Terror and Fear!"
- imp_target_asia_annex4: "Vader's War: Subjugation" 
- 
- ##FOCUSES LEADING TO REBEL ALLIANCE WAR
- imp_border_conflict_decisions: "Imperial Operations: Border Conflicts"
- imp_border_conflict_decisions_desc: "Imperial Operations will expand into creating border conflicts with the sole purpose of raiding and capturing neighboring land. We shall test the feebile armies of this world, and gain new land. The various governments of this world dare not openly declare war against the sheer firepower and superior tech force of the Imperial Army. Let us see how far we can push these rats."
- 
- imp_border_conflict_decisions_tt: "§RDO NOT TAKE THIS FOCUS AS BORDER CONFLICTS WERE BROKEN WITH THE BBA PATCH -- COMPLETE THE BORDER CONTROL FOCUS INSTEAD§!"
- 
- imp_border_conflict_decisions_alt: "Imperial Operations: Border Control"
- imp_border_conflict_decisions_alt_desc: "Imperial Operations will expand into creating border conflicts with the sole purpose of capturing neighboring land without instigating open warfare. We shall test the feebile governments of this world, and gain new land without a single drop of Imperial Blood. The various governments of this world dare not openly declare war against Imperial Army. Let us see how far we can push these rats."
- 
- imp_border_conflict_results: "Imperial Operations: Results"
- imp_border_conflict_results_desc: "Threatening these British Dogs now that we control most of their the desert lands to hand over the remaining territory should be easy with their attention turned elsewhere. They wouldn't dare open a new front of war with the Galactic Empire."
- imp_suppress_egypt: "Imperial Operations: Suppression of Egypt"
- imp_suppress_egypt_desc: "Suppression of Egypt: The people of these lands were previously under the rule of what some deem to be a tyranical government. We shall offer a basic form of Imperial Citzenship for the people of these lands if they choose to devote their lives to the Empire and work. We shall convince them with our superior technology and might. This should open up the Imperial Army to waves of new conscripts."
- 
- 
- imp_integrate_tur: "Integrate Turkey"
- imp_integrate_tur_desc: "Improving supply lines to suit the needs of our troopers and walkers rather than Turkish men and tanks will aid us in the future and allow supplies to flow in, rather than trickle through the mountains."
- imp_take_per: "Take Iran"
- imp_take_per_desc: "To our East lies Iran, a nation that has limited resources and industry, but will allow us entry into Asia, an important area for Imperial expansion. It will be difficult to cross, as infrastructure in the region is sparse at best."
- imp_take_afg: "Take Afghanistan"
- imp_take_afg_desc: "Afghanistan will give us a small amount of strategic resources that are vital to us, as well as more manpower with which to use in our future efforts. Taking them isn’t vital, but it is a viable option for expansion."
- imp_protect_per: "Invite Persia"
- imp_protect_per_desc: "Inviting Persia with a promise of 'Independence' will be a thinly veiled threat, enough to make them likely cave to us."
- imp_integrate_per: "Integrate Persia"
- imp_integrate_per_desc: "Iran is a poor nation with little in developed infrastructure, it is necessary for us to build it from the ground up in order to be able to supply our troops in the region."
- imp_protect_afg: "Invite Afghanistan"
- imp_protect_afg_desc: "Afghanistan, similar to Persia, has very little in the way of organized infrastructure. We must increase our ability to move through the region if we are to progress further eastward."
- imp_integrate_afg: "Integrate Afghanistan"
- imp_integrate_afg_desc: "Now that we own the territory, let us build up on it so our troops can be more easily transferred."
- imp_stormtroopers: "Stormtrooper Corps"
- imp_stormtroopers_desc: "Expanding the Corps is a necessary development to safeguard the future of the Empire on this planet, we must improve the quality of our training as well so we do not fall into the trap of sacrificing quality for quantity."
- imp_an_army: "Imperial Army"
- imp_special_forces: "Specialized Troopers"
- imp_an_army_desc: "Utilizing specialized troopers to fight in the various different environments we find ourselves in. Our advanced environmental training will allow for our men to triumph over any enemies they come across with significantly fewer casualties, while inflicting maximum casualties on the enemy."
- imp_special_forces_desc: "We should priortize in creating special sections of stormtroopers that go above and beyond. We can use these troopers to more efficiently attack and defend areas with fewer losses."
- imp_an_army2: "Army Weapon Production"
- imp_an_army2_desc: "We are quickly running into the problem of arms shortage, sometimes even resorting to using captured enemy slugthrowers for our men. We must improve our blaster production in our own manufactories in order to hold our technological edge."
- imp_special_forces2: "Elite Units"
- imp_special_forces2_desc: "Combing through the ranks of our standard troopers and selecting the men best fit, we can bolster our own specialized troopers ranks with the best of the best we have to offer, with the best equipment in the Imperial Army at their disposal."
- imp_recruitment_drive: "Recruitment Drive"
- imp_recruitment_drive_desc: "Broadcasting Imperial propaganda across all forms of wireless media across the globe will surely draw in recruits from the farthest reaches of this planet. Setting up recruitment centers in Operational Base Besh will allow us to use our secret police to filter out candidates who are deemed ‘undesirable.’"
- imp_training_camps_desc: "Setting up local training camps across our territories will eliminate the need to travel to our capital for training."
- imp_training_camps: "Training Camps"
- imp_grand_army: "Grand Army"
- imp_grand_army_desc: "Having trained a newly recruited army and expanded our military facilities, everything comes together at once. We can assemble our freshly armored troopers from their training grounds and deploy them into the field, armed with weapons created by our newly constructed manufacturies and supported by newly constructed aircraft."
- imp_air_superiority: "Air Superiority"
- imp_air_superiority_desc: "We need to prevent enemy bombers from attacking our troops and infrastructure from the skies."
- imp_bombing_desc: "We need to cut off the enemy's supplylines to win wars."
- imp_bombing: "Strategic Bomber"
- imp_heavy_planes: "Long-Range Support"
- imp_heavy_planes_desc: "Until we get back into space, we are limited on what areas we can cover. Making sure our equipment is able to reach long distances is a must."
- 
- imp_marines: "Imperial Galactic Marines"
- imp_marines_desc: "Naval invasions are an incredibly messy affair, with the attacker being at a large disadvantage. The former Imperial Galactic Marines are the closest equivalent we have to men experienced with naval invasions upon enemy shores giving us a basis with which to begin developing our own specialized divisions for assaulting enemy waters."
- imp_mountaineers_desc: "Mountains are one of the most common obstacles we face in the surrounding terrain. Developing further specialized equipment is a high priority, as gaining every advantage we can and sparing our manpower is vitally important to our survival."
- imp_paratroopers_desc: "Utilizing our superior aircraft is another area in which we should pay extra focus, as our enemies cannot hope to keep up with or shoot down our fighters or transports. Using aerial assault tactics we can drop behind enemy lines and disrupt their supplies, or take entire cities with little resistance while their men are on the front lines."
- imp_mountaineers: "Mountain Troopers"
- imp_paratroopers: "Imperial Paratrooper Force"
- 
- imp_paratroopers_tt: "Integrates the §GParatroopers§! Stats & Bonuses into the §GStormtrooper§! Unit"
- imp_marines_tt: "Integrates the §GMarines§! Stats & Bonuses into the§G Stormtrooper§! Unit"
- imp_mountaineers_tt: "Integrates the §GMountaineers§! Stats & Bonuses into the §GStormtrooper§! Unit"
- 
- imp_an_army3: "Supporting Roles"
- imp_an_army3_desc: "The current state of our militia is poor without extra equipment. Giving our troops support companies will improve their efficiency on the battlefield."
- stormtrooper_marine: "Integrate Galactic Marines"
- stormtrooper_marine_desc: "Marines Integrated"
- stormtrooper_mountain: "Integrate Mountain Troopers"
- stormtrooper_mountain_desc: "Mountaineers Integrated"
- stormtrooper_paratrooper: "Integrate Paratrooper Force"
- stormtrooper_paratrooper_desc: "Paratroopers Integrated"
- naval_effort1: "Naval Effort"
- large_navy1: "Large Navy"
- flexible_navy11: "Flexible Navy"
- submarine_effort11: "Submarine Effort"
- cruiser_effort1: "Cruiser Effort"
- destroyer_effort1: "Destroyer Effort"
- capital_ships_effort1: "Capital Ships Effort"
- 
- ### NEW MILITARY FOCUSES ###
- imp_land_supply:0 "Land and Supply"
- imp_land_supply_desc:0 "Clone Wars which predated the Empire's Reign was a deadily conflict requiring a myraid of resources that needed to produced or precured at a moment's notice. Military of the Republic had created a logistics corps to oversee these issues, perhaps we can take some notes."
- imp_land_supply2:0 "Improving New Logistics"
- imp_land_supply2_desc:0 "Galatic Empire was truly troubled in logistics. Keeping order and control on a multitude of planets across a vast galaxy meant some regions were on a constant need of supply. With only one world now our focus for the time being, we shall bolster up our logistics and supply sites for the Imperial Army."
- imp_land_supply3:0 "Imperial Supply Fleet"
- imp_land_supply3_desc:0 "Imperial Supply Fleet was apart of the Imperial Navy, and had hundreds of ships throughout any given sector constantly refulling and resupplying our fleets of Star Destoryers and ground forces. We shall reinstate this service using transport craft and this should greatly bolster our supply."
- 
- imp_an_army4:0 "Imperial Grunts"
- imp_an_army4_desc:0 "Imperial Army Troopers or Imperial Army soldiers were soldiers that deployed throuhgout the Galactic Empire as its main infantry throughout the galaxy. Formed from eager and often young conscripts, these grunts served as expeditionary units for the Empire, tasked with the subjugation of worlds that dared to resist the Emperor's rule. We shall conscript the local populace into these roles."
- imp_an_army5:0 "Standardization of the Army"
- imp_an_army5_desc:0 "As the grunts of the Imperial Military, Army troopers had access to the extensive arsenal deployed by the Galactic Empire. This included the E-10 and E-11 blaster rifles, E-22 reciprocating double-barreled blaster rifles, SX-21 pump-action scatter blasters, DLT-19 heavy blaster rifles, and sidearms such as the EC-17 hold-out blaster. This shall once more be the standard issue equipment for these grunts."
- imp_an_army6:0 "A New Imperial Force"
- imp_an_army6_desc:0 "Imperial Army troopers utilized a set of armor similar to that of the Imperial officer battle armor, with the addition of polarized goggles and respirator masks to filter out toxic substances. Swamp troopers of the 224th Imperial Armored Division possessed waterproof capes in order to keep mud from gathering within the gaps of their armor. This shall be the look of our New Imperial Forces. "
- 
- 
- 
  
  #Events
  imperial_ambition.0.t: "Unknown Government asks for Land"
@@ -2032,7 +1614,6 @@
  imperial_story.18.b: "Fuel the airforce"
  imperial_story.18.c: "Sell the fuel"
 
-
  imperial.0.t: "Survey Complete!"
  imperial.0.d: "A small reconnaissance team of desert troopers have returned from their survey and have made a disturbing discovery. \n\nThe area in which the Executor had crash landed is surrounded by numerous buildings now destoryed and may have once been a city before our arrival. \n\nThere is no telling how the survivors of this city may react to us destroying their homes so measures must be taken. We can first try to save the survivors of this city and persuade them that we were shot down by a neighboring nation and put the blame on them. The alternative would be to execute the remaining survivors and keep our 'landing' secret which would also allows us to harvest the resources of the area without restriction. \n\nThis choice could have ramifications in the future..."
  imperial.0.a: "Maintain Secrecy"
@@ -2112,8 +1693,6 @@
  imperial_global_news.6.t: "Major Removed"
  imperial_global_news.5.t: "Puppet gains tech"
  
- 
- 
  #RISE OF THE EMPIRE
  IMP_rise_of_the_empire_decisions: "Rise of the Empire"
  imperialism_boost: "Boost Imperialism"
@@ -2123,253 +1702,6 @@
  imp_closed_economy: "Imperial Self-Reliance"
  imp_recruit_law: "Imperial Service"
  
- 
- 
- 
- 
- # ALT PATHS
- imp_alt_paths: "Alternative Solutions"
- imp_alt_paths_desc: "Alternative Solutions have presented themselves to the Empire. The future of Imperial Presence on Earth will be decided shortly by Imperial Leadership."
- imp_alt_paths_tt: "§2Alternate Forms of Imperial Leadership and Government will now become available.§! §OHowever, New Forms of Imperial Doctrine will become locked.§!"
- 
- 
- thrawn_leader_tt: "§2Tarkin must be Leader for Thrawn's Path or Vader's Alternate Path to be available!§!"
- imp_thrawn1: "Dispose of Tarkin"
- imp_thrawn1_desc: "Grand Admiral Thrawn, the most brillant tactical genius within the Empire. Serving as Leader of Imperial 7th Fleet before the subseqeunt crash, Thrawn was present upon the Executor for its test flight and has since been helping military actions throughout the Planet. Imperial Leadership especially Thrawn have not been keen with Tarkin's actions following the crash. Thrawn will devise an immediate termination."
- 
- imp_thrawn2: "Speak with Vader"
- imp_thrawn2_desc: "Lord Vader and Thrawn share many similar opinions regarding the Empire. Both share a degree of private respect for one another. Vader believes Thrawn's chain of reasoning, talent, and ability are the keenest amongst the Imperial Officers. Both believe the Death Star was a giant waste of time, resources, and money. Vader's animosity towards Tarkin is noted by many, perhaps Vader will listen to Thrawn."
- imp_thrawn2_1: "Speak with Piett"
- imp_thrawn2_1_desc: "First Officer Piett commands much of the Executor flagship and his orders directly affect the entirity of its crew. One of the most ambitious officers noted by both Thrawn and Yularen, they believe Piett to be a wild-card as he has throughout his career shifted blame to fellow officers. Yularen believes a swift boot on Piett will be enough to have him fall in line for Thrawn's operation."
- imp_thrawn2_2: "Speak with Tagge"
- imp_thrawn2_2_desc: "Major General Tagge has openly opposed many of Tarkin's policies believing the Grand Moff to a fool for believing the DS-Battle Station to be a giant waste of resources and military presence. Following the crash, Tagge clearly showed disdain in Tarkin's Leadership of the Crew. Yularen will be able to convince the Major General to our operation."
- imp_thrawn3: "Speak with Yularen"
- imp_thrawn3_desc: "Yularen is Thrawn's closest ally, having assisted Thrawn in his early career against Rebel Agents. Yularen and Thrawn have helped one another throughout much of their time within the Empire, and their ability to solve problems is unprecedented. Yularen is an excellent observer of many of the high ranking Imperial Officers and soldiers. Thrawn knows Yularen does not take liking to Tarkin's leadership."
- imp_thrawn3_1: "Speak with Veers"
- imp_thrawn3_1_desc: "General Veers is one of the key officers whom commands our Imperial Military. He will needed to be convinced of the upcoming leadership change by Thrawn. Veers is highly respected by both his men and his peers always placing himself within in harm's way on the frontlines to lead by example. Veers is extremely loyal to Lord Vader, having earned Vader's backing, Veers will surely follow."
- imp_thrawn3_2: "Speak with Jerjerrod"
- imp_thrawn3_2_desc: "Jerjerrod is afraid of Vader, not wanting to have his name added to Vader's list of kills as there isnt a single Imperial soldier who has not heard about the Lord's predilection for strangling those whom failed to carry out orders. Jerjerrod lacks ambition but being a Moff he holds great responsibility for the men. He can be easily convinced to follow Thrawn and Vader."
- 
- 
- 
- imp_thrawn4: "Operation Alderaan"
- imp_thrawn4_desc: "Operation Alderaan is Thrawn's decisive plan to terminate Tarkin from Imperial Leadership. Having suppressed many governments and citizens amongst the Earth populace, Thrawn will have 'partisans' assiassinate Tarkin in a brutal ambush behind our own lines. Tarkin will be killed allowing for an immediate emergancy leadership transfer to Lord Vader following the Grand Moff's demise."
- imp_thrawn4_tt: "§OEffects will display correctly when Tarkin is Leader of the Empire§!"
- 
- imp_thrawn5: "Heir to the Empire"
- imp_thrawn5_desc: "With the demise of Tarkin, Lord Vader has cordinated a meeting with all High-Ranking Imperial Officers. Thrawn's plan was a success and those whom were initially weary have fallen into line by Vader's doing or Yularen's. Vader will now transfer Imperial Leadership to Grand Admiral Thrawn, which brings some relief to not just the soldiers of the Empire, but to high ranking officers as well."
- 
- imp_alt_vader: "The Dark Lord's Vision"
- imp_alt_vader_desc: "With the demise of Tarkin, Lord Vader has cordinated a meeting with all High-Ranking Imperial Officers. Thrawn's plan was a success and those whom were initially weary have fallen into line by Vader's doing. Vader will retain Imperial Leadership as a new form of government is formed out of the absence of the Emperor. Many are concerned, but only time will tell what will come of this."
- 
- 
- #unify thrawn path 
- imp_thrawn_unify1: "A Unified Imperial Government"
- imp_thrawn_unify1_desc: "With Lord Vader taking a beakseat to the Imperial Government and Tarkin's demise, many question where the Imperial Goverment on this planet will head. Thrawn's doctrine is radically different from Tarkin's and Vader's, and is much more align with the good intentions. Thrawn is a logical and reasonable leader, and he will unify the Imperial Body into a strong and healthy government."
- 
- imp_thrawn_unify_military1: "Imperial Military Reorganization"
- imp_thrawn_unify_military1_desc: "Imperial Military itself has concerned Thrawn for years. The inability to correctly construct an effective military body has aggrivated Thrawn greatly. He will begin a great military reorgainzation effort to correct much of the Imperial Military's wrong doings and ineffectiveness."
- 
- IMP_thrawn_revamp_mil: "Imperial Military Reorganization"
- IMP_thrawn_revamp_mil2: "The Grand Earth Military of the Unified Imperial Government (G.E.M.U.I.G)"
- IMP_alt_vader_revamp_mil2: "Vader's New Galactic Military"
- 
- IMP_thrawn_revamp_army1: "Army Reorganization"
- IMP_thrawn_revamp_army2: "Army Reorganization"
- IMP_thrawn_revamp_army3: "Army Reorganization"
- imp_thrawn_unify_army1: "Army Reorganization Phase I"
- imp_thrawn_unify_army1_desc: "Thrawn believes the entire Imperial Military should be comprised of Stromtroopers while this is not exactly a realistic approach, Thrawn will integrate many measures to ensure the basic infantry of the Empire recieves major overhauls to treat them as valuable personale not just expendable grunts in service to a ineffective government."
- imp_thrawn_unify_army2: "Army Reorganization Phase II"
- imp_thrawn_unify_army2_desc: "With Thrawn retraining most of the Imperial Military core, he will begin with a total doctrinal change to the Military as a whole. Thrawn believes much in a mobile fighting force less so quantity of troops. Thrawn will make sure new military programs are installed to ensure the Military furthers its doctrine into pursuing a mobile fighting force of quality."
- imp_thrawn_unify_army3: "Army Reorganization Phase III"
- imp_thrawn_unify_army3_desc: "Thrawn's final phase of army reorgainzation will be to rid the Military Command of any officers whom fail to adhere to the new army plan. Officers whom in the past used soldiers like meatshields will be retired immediatly, and those whom show strong stragetic and tactical prowess will be promoted to proper ranks. Thrawn wants men and women of experience to lead not yes-men."
- 
- IMP_thrawn_revamp_navy1: "Navy Reorganization"
- IMP_thrawn_revamp_navy2: "Navy Reorganization"
- IMP_thrawn_revamp_navy3: "Navy Reorganization"
- imp_thrawn_unify_navy1: "Navy Reorganization Phase I"
- imp_thrawn_unify_navy1_desc: "Thrawn had the most issues with the doctrine of the Imperial Navy. Their use of large battleships such as the Imperial-1 Class Star Destoryer as a show of force rather than its proper position in a navy angered him deeply. The Rebels were able to cripple valuable and large ships of the Empire due to the incompetence of the navy doctrine. Thrawn will completely reorganize the navy from the ground up."
- imp_thrawn_unify_navy2: "Navy Reorganization Phase II"
- imp_thrawn_unify_navy2_desc: "With the Thrawn's Leadership, the Navy has begun to undergo much retraining as members of the 7th fleet did accompany Thrawn and were present on the crash site. Their training program has started to proporely train Naval Officers to support the various new roles assigned to their ships. Thrawn will no longer have large ships unsupported without a proper fleet to accompany battleships."
- imp_thrawn_unify_navy3: "Navy Reorganization Phase III"
- imp_thrawn_unify_navy3_desc: "Thrawn's Naval Doctrine has fully begun to flush throughout the various ranks and ships of the Imperial Military. The Navy has never once been at its strongest nor its most competent before not since the Clone Wars. With this shift, Yularen will oversee the Imperial Navy alongside Thrawn as both are acting Grand Admirals."
- 
- IMP_thrawn_revamp_air1: "Air Reorganization"
- IMP_thrawn_revamp_air2: "Air Reorganization"
- IMP_thrawn_revamp_air3: "Air Reorganization"
- imp_thrawn_unify_air1: "Air Reorganization Phase I"
- imp_thrawn_unify_air1_desc: "Imperial Starfighter Corps has much displeased Thrawn due to various levels of pilot training. Thrawn will see to it that the Starfighter Corps will strongly focus on training its existing pilots while slowing down its recruitment process to ensure every pilot is a capable pilot."
- imp_thrawn_unify_air2: "Air Reorganization Phase II"
- imp_thrawn_unify_air2_desc: "Starfighter Corps has slowly become a more stable and capable force no longer relying upon sheer numbers to out combat its oppotents. Though many will still join and undergo training, Thrawn's new training program has increased the performance of pilots by a considerable average and will continue to do so."
- imp_thrawn_unify_air3: "Air Reorganization Phase III"
- imp_thrawn_unify_air3_desc: "Thrawn will institute his final doctrinal changes into the Starfighter Corps ensuring they properly support ground and naval forces to the best of their ability pulling many tactics from the Rebels Playbook. Imperial Air Superiority will now proporely rival even the Rebel Alliance Pilots and Aces."
- 
- imp_thrawn_unify_military2: "A Grand Army for a New Unified Body"
- imp_thrawn_unify_military2_desc: "The Imperial Military was once apart of the Republic where it was comprised of Clone Troopers and once called a 'Grand Army of the Republic'. Imperial Military has been successfully reorganized into a capable fighting force that no longer adheres to its previous doctrines but to new leadership. Thrawn touts it is an army that was built on Earth, and it should foremost protect Earth from within and without."
- 
- imp_thrawn_unify_government1: "Redefining the Imperial Government"
- imp_thrawn_unify_government1_desc: "The Imperial Government's radical laws and its policies displeased Thrawn greatly having experienced first hand the bigotry and discrimination of the Empire. Thrawn will redefine the Imperial Government into something that is no longer feared, but valued by the hearts of all citizens and those whom are not within the Empire as well."
- 
- IMP_thrawn_revamp_gov: "Redefining Imperial Government"
- 
- 
- imp_thrawn_unify_government2: "A New Government for All"
- imp_thrawn_unify_government2_desc: "Galactic Empire is no longer being touted as an Empire but something else, many have begun speaking to it as the Imperial Government and Body. There has yet to be word from Thrawn on if the Empire will recieve a new name but within the hearts of many, it is no longer a government to fear but to be inspired by. A New Goverment for All of those whom seek a unified life."
- 
- imp_thrawn_unify_europe1: "Italy will see Her Leadership Removed"
- imp_thrawn_unify_europe1_desc: "Mussolini's Italy has orchastrated much strive through the Mediterranean Region of this planet and been directly involved in many issues plaguing this planet. Thrawn will first strike at the root of the problem by removing Mussolini and his government from the Italy. With Mussolini removed, Italy can prospore under a healthy form of government."
- 
- imp_thrawn_unify_europe2: "Speaking with the Allied Powers"
- imp_thrawn_unify_europe2_desc: "Allied Powers once known as the League of Nations were quickly formed together to combat the Axis powers which had formed due to the German Riech's pursuit of global dominance. Thrawn knows he cannot progress with his plans of aiding this planet without first speaking with the allied powers on his plans."
- 
- imp_thrawn_unify_europe3: "Ridding Germany of its Disease"
- imp_thrawn_unify_europe3_desc: "With the Allied Powers in line with Thrawn's plans to aid this planet, Thrawn's focus can shift to combating the disease that plagues the German People. He will cut off the head of the snake and free the German body."
- 
- imp_thrawn_unify_asia1: "Supporting China's Independence"
- imp_thrawn_unify_asia1_desc: "China has been a country always at odds with many enemies within and without. Thrawn wishes for the Chinese people to be united under a strong ruling body and in so will fully support the Republic of China."
- 
- imp_thrawn_unify_asia2: "Helping China Unify"
- imp_thrawn_unify_asia2_desc: "Imperial Government can aid the Republic of China into dealing with its various warlords which surrond her borders. Thrawn will send miltary and government aid to help aid Chiang Kai-Shek in annexing the Chinese territory into one unified body."
- 
- imp_thrawn_unify_asia3: "Japan's Position in the Pacific"
- imp_thrawn_unify_asia3_desc: "Japan has been touted as the Land of the Rising Sun, but her amibitions are divided amongst her people. An young officer coup was trampled out by the Senior Officers years ago. There are those whom still feel betrayel within their hearts and not all are in line with a total war against various powers. We can aid the Japanese Populace towards a new government that is better for all in the pacific."
- 
- imp_thrawn_unify_africa1: "Building New Infrastructure in Africa"
- imp_thrawn_unify_africa1_desc: "Thrawn wishes to construct a vast network of advance infrastructure to quick-start an economic boom within Northern Africa. This project will demand a lot out of the Imperial Engineering Corps but will prove to benefit the Imperial Government in the long-term."
- 
- imp_thrawn_unify_africa2: "New Workspaces and Jobs"
- imp_thrawn_unify_africa2_desc: "Thrawn's economic plan for Africa has already seen much success. A vast array of new workspaces and jobs have appeared across the territories as more people will soon immigrate towards the Imperial Government for a great work-life."
- 
- imp_thrawn_unify_africa3: "Introduce Galactic Tools and Industry into Africa"
- imp_thrawn_unify_africa3_desc: "Terraforming was common throughout the galaxy to turn inhabitable terrian into fully livable enviroments. Thrawn will have the Imperial Engineering Corps head throughout various territories to construct vast lands for the citizens of the Imperial Government."
- 
- imp_thrawn_unify2: "The Earth Ascendancy"
- imp_thrawn_unify2_desc: "Many Imperial citizens are questioning the name of the Galactic Empire and its subsequent baggage. Thrawn has noted that the Galactic Empire no longer acts as an Empire, but a unified government body that serves the well being of all not just its citizens. Thrawn has decided to offically rename the Imperial Goverment and the Galactic Empire to the Earth Ascendancy honoring his home whilist leaving the Empire behind."
-
- 
- #unify thrawn rebels
- imp_thrawn_rebels1: "Fate of the Rebellion"
- imp_thrawn_rebels1_desc: "Though luck may have it or whether it be the will of the force, the Rebels also happened to crash upon Earth alongside the Empire. With Tarkin's removal from Leadership, Vader's withdrawal and sparse apperances, Rebellion has begun to belive Thrawn's leadership to be for the better. Rebellion is open to a dialogue with Thrawn."
- imp_thrawn_rebels2: "Coaltion with the Rebellion"
- imp_thrawn_rebels2_desc: "With no Emperor to follow, nor no Empire to dismantle, the Rebellion has joined the Earth Ascendancy in a coaltion of friendship. Though it will not be easy to convince many within the ranks of the Rebellion to accept their new allies. It will be a new fight to ensure that peace remains once more within this new galaxy."
- imp_thrawn_rebels3: "War with the Rebellion"
- imp_thrawn_rebels3_desc: "The dialogue with the Rebellion has broken and tensions are rampant once again. The Earth Ascenday once the Galactic Empire cannot co-exist with the Rebel Alliance afoot within this world. One final war must happen whether it be for the good of all on earth or not at all. Thrawn has remained silent but it is clear he is disappointed in the current state of affairs and will carry out immediate plans for war."
- 
- imp_thrawn_rebels_unify1: "The Long Road towards Peace"
- imp_thrawn_rebels_unify1_desc: "With the Coaltion in effect, there has been some occurences of in fighting between disgruntled Imperials and Rebels. Thrawn wishes to strike down this disorder swiftly and make it clear to everyone within the Earth Ascendancy that the Rebel Alliance is no longer their foe but ally. Princess Leia Organa will also help the Rebel Alliance see to this as well for the Rebellion."
- imp_thrawn_rebels_unify2: "Leia's Proposal"
- imp_thrawn_rebels_unify2_desc: "With Rebellion soldiers laying down their arms to fight, many are beginning to question the cause of the Rebellion and are seeing that Thrawn's new government is one of unity and freedom. Though not all are convinced yet, Princess Leia has proposed that the Rebel Alliance integrates into the Earth Ascendancy to promote further unity."
- imp_thrawn_rebels_unify3: "Integrating the Allaince's Territory"
- imp_thrawn_rebels_unify4: "United and Together as One"
- 
- #unify vader path
- imp_alt_vader_unify1: "Establishing a New Empire"
- imp_alt_vader_unify1_desc: "Vader seeks to establish a New Empire under his rule. Grand Admiral Thrawn has shown concern but nonetheless, the Dark Lord of the Sith cannot be so easily convinced. Thrawn will attempt to push forward change, but Vader shall seek to establish a Empire through force, one way or another."
- 
- imp_alt_vader_unify_military1: "Imperial Military Reorganization"
- imp_alt_vader_unify_military1_desc: "Imperial Military has concerned Vader and Thrawn for years. The inability for the Military to correctly construct an effective structure and competent generals has gone on for too long. Vader and Thrawn will begin a great military reorgainzation effort to correct much of the Imperial Military's wrong doings and ineffectiveness. Imperial Military will once again be at the forefront of doctrine and effectiveness."
- 
- imp_alt_vader_unify_army1: "Army Reorganization Phase I"
- imp_alt_vader_unify_army1_desc: "Thrawn believes the entire Imperial Military should be comprised of Stromtroopers while this is not exactly a realistic approach, Thrawn will integrate many measures to ensure the basic infantry of the Empire recieves major overhauls to treat them as valuable personale not just expendable grunts in service to a ineffective government."
- imp_alt_vader_unify_army2: "Army Reorganization Phase II"
- imp_alt_vader_unify_army2_desc: "With Thrawn retraining most of the Imperial Military core, he will begin with a total doctrinal change to the Military as a whole. Thrawn believes much in a mobile fighting force less so quantity of troops. Thrawn will make sure new military programs are installed to ensure the Military furthers its doctrine into pursuing a mobile fighting force of quality."
- imp_alt_vader_unify_army3: "Army Reorganization Phase III"
- imp_alt_vader_unify_army3_desc: "Thrawn's final phase of army reorgainzation will be to rid the Military Command of any officers whom fail to adhere to the new army plan. Officers whom in the past used soldiers like meatshields will be retired immediatly, and those whom show strong stragetic and tactical prowess will be promoted to proper ranks. Thrawn wants men and women of experience to lead not yes-men."
- 
- imp_alt_vader_unify_navy1: "Navy Reorganization Phase I"
- imp_alt_vader_unify_navy1_desc: "Thrawn had the most issues with the doctrine of the Imperial Navy. Their use of large battleships such as the Imperial-1 Class Star Destoryer as a show of force rather than its proper position in a navy angered him deeply. The Rebels were able to cripple valuable and large ships of the Empire due to the incompetence of the navy doctrine. Thrawn will completely reorganize the navy from the ground up."
- imp_alt_vader_unify_navy2: "Navy Reorganization Phase II"
- imp_alt_vader_unify_navy2_desc: "With the Thrawn's Leadership, the Navy has begun to undergo much retraining as members of the 7th fleet did accompany Thrawn and were present on the crash site. Their training program has started to proporely train Naval Officers to support the various new roles assigned to their ships. Thrawn will no longer have large ships unsupported without a proper fleet to accompany battleships."
- imp_alt_vader_unify_navy3: "Navy Reorganization Phase III"
- imp_alt_vader_unify_navy3_desc: "Thrawn's Naval Doctrine has fully begun to flush throughout the various ranks and ships of the Imperial Military. The Navy has never once been at its strongest nor its most competent before not since the Clone Wars. With this shift, Yularen will oversee the Imperial Navy alongside Thrawn as both are acting Grand Admirals."
- 
- imp_alt_vader_unify_air1: "Air Reorganization Phase I"
- imp_alt_vader_unify_air1_desc: "Imperial Starfighter Corps has much displeased Thrawn due to various levels of pilot training. Thrawn will see to it that the Starfighter Corps will strongly focus on training its existing pilots while slowing down its recruitment process to ensure every pilot is a capable pilot."
- imp_alt_vader_unify_air2: "Air Reorganization Phase II"
- imp_alt_vader_unify_air2_desc: "Starfighter Corps has slowly become a more stable and capable force no longer relying upon sheer numbers to out combat its oppotents. Though many will still join and undergo training, Thrawn's new training program has increased the performance of pilots by a considerable average and will continue to do so."
- imp_alt_vader_unify_air3: "Air Reorganization Phase III"
- imp_alt_vader_unify_air3_desc: "Thrawn will institute his final doctrinal changes into the Starfighter Corps ensuring they properly support ground and naval forces to the best of their ability pulling many tactics from the Rebels Playbook. Imperial Air Superiority will now proporely rival even the Rebel Alliance Pilots and Aces."
-
- imp_alt_vader_unify_military2: "A Grand Army for a New Empire"
- imp_alt_vader_unify_military2_desc: "The Imperial Military was once apart of the Republic where it was comprised of Clone Troopers and once called a 'Grand Army of the Republic'. Imperial Military has been successfully reorganized into a capable fighting force that no longer adheres to its previous doctrines but to new leadership. Vader is most pleased with Thrawn's reconstruction of the military."
- 
- 
- imp_alt_vader_unify_government1: "Redefining the Imperial Government"
- imp_alt_vader_unify_government1_desc: "Vader was only loyal to the Empire due to the iron grip of the Emperor. Many of the radical laws and its policies displeased Vader internally as he did believe in the Republic due to Padme. Vader will seek to redefine the Imperial Government into something far more powerful than the Emperor could have imagined in his life."
- 
- imp_alt_vader_unify_government2: "A New Empire"
- imp_alt_vader_unify_government2_desc: "Without the presence of the Emperor, Vader has brought the Empire under his control and instated his philosophy into its very core. The Empire can no longer be touted as the First Galactic Empire. It is far more, a New Empire."
- 
- imp_alt_vader_unify_europe1: "Operation Cinder"
- imp_alt_vader_unify_europe1_desc: "Mussolini's Italy has orchastrated much strive through the Mediterranean Region of this planet and been directly involved in many issues plaguing this planet. Thrawn will first strike at the root of the problem by removing Mussolini and his government from the Italy. With Mussolini removed, Italy can prospore under a healthy form of government."
- 
- imp_alt_vader_unify_europe2: "Operation Blackwing"
- imp_alt_vader_unify_europe2_desc: "Allied Powers once known as the League of Nations were quickly formed together to combat the Axis powers which had formed due to the German Riech's pursuit of global dominance. Thrawn knows he cannot progress with his plans of aiding this planet without first speaking with the allied powers on his plans."
- 
- imp_alt_vader_unify_europe3: "Operation Morticia"
- imp_alt_vader_unify_europe3_desc: "With the Allied Powers in line with Thrawn's plans to aid this planet, Thrawn's focus can shift to combating the disease that plagues the German People. He will cut off the head of the snake and free the German body."
- 
- imp_alt_vader_unify_asia1: "Supporting China for our Future Operation"
- imp_alt_vader_unify_asia1_desc: "China has been a country always at odds with many enemies within and without. Thrawn wishes for the Chinese people to be united under a strong ruling body and in so will fully support the Republic of China."
- 
- imp_alt_vader_unify_asia2: "Further Measures in China's Unification"
- imp_alt_vader_unify_asia2_desc: "Imperial Government can aid the Republic of China into dealing with its various warlords which surrond her borders. Thrawn will send miltary and government aid to help aid Chiang Kai-Shek in annexing the Chinese territory into one unified body."
- 
- imp_alt_vader_unify_asia3: "Operation Lightfall"
- imp_alt_vader_unify_asia3_desc: "Japan has been touted as the Land of the Rising Sun, and China as a Red Dragon. Vader has devised a swift strike to fully unify these lands into the banner of our new government."
- 
- imp_alt_vader_unify_africa1: "Building New Infrastructure in Africa"
- imp_alt_vader_unify_africa1_desc: "Thrawn may not lead the Empire, but has spoken to Vader about establishing a proper economy. Thrawn wishes to construct a vast network of advance infrastructure to quick-start an economic boom within Northern Africa. This project will demand a lot out of the Imperial Engineering Corps but will prove to benefit the New Imperial Government in the long-term."
- 
- imp_alt_vader_unify_africa2: "New Workspaces and Jobs"
- imp_alt_vader_unify_africa2_desc: "Thrawn's economic plan for Africa has already seen much success. A vast array of new workspaces and jobs have appeared across the territories as more people will soon immigrate towards the Imperial Government for a great work-life."
- 
- imp_alt_vader_unify_africa3: "Introduce Galactic Tools and Industry into Africa"
- imp_alt_vader_unify_africa3_desc: "Terraforming was common throughout the galaxy to turn inhabitable terrian into fully livable enviroments. Thrawn will have the Imperial Engineering Corps head throughout various territories to construct vast lands for the citizens of the Imperial Government."
- 
- imp_alt_vader_unify2: "The Second Galactic Empire"
- imp_alt_vader_unify2_desc: "Thrawn has spoken with Vader about the goals of the new government. Vader has informed Thrawn that Earth is a new start. Vader intends to create a Second Galactic Empire, free of the past and the Emperor. Vader held a public speech today informing all citizens of the plan to control this galaxy and explore what resides beyond. \n LONG LIVE THE NEW EMPIRE!"
- 
- IMP_vader_alt_party_long: "New Vader Imperialism"
- IMP_vader_alt_party: "New Imperialism"
- 
- imp_alt_vader_core_ita: "Last Command: \nItaly"
- imp_alt_vader_core_ita_desc: "Thrawn has ordered Vader's Military to commence a final operation. Be aware that will be consequences for the alignment of new territory."
- 
- imp_alt_vader_core_fra: "Last Command: \nFrance"
- imp_alt_vader_core_fra_desc: "Thrawn has ordered Vader's Military to commence a final operation. Be aware that will be consequences for the alignment of new territory."
- 
- imp_alt_vader_core_usa: "Last Command: \nUnited States"
- imp_alt_vader_core_usa_desc: "Thrawn has ordered Vader's Military to commence a final operation. Be aware that will be consequences for the alignment of new territory."
- 
- imp_alt_vader_core_eng: "Last Command: \nEngland"
- imp_alt_vader_core_eng_desc: "Thrawn has ordered Vader's Military to commence a final operation. Be aware that will be consequences for the alignment of new territory."
- 
- imp_alt_vader_core_ger: "Last Command: Germany"
- imp_alt_vader_core_ger_desc: "Thrawn has ordered Vader's Military to commence a final operation. Be aware that will be consequences for the alignment of new territory."
- 
- imp_alt_vader_core_jap: "Last Command: \nJapan"
- imp_alt_vader_core_jap_desc: "Thrawn has ordered Vader's Military to commence a final operation. Be aware that will be consequences for the alignment of new territory."
- 
- imp_alt_vader_core_chi: "Last Command: \nChina"
- imp_alt_vader_core_chi_desc: "Thrawn has ordered Vader's Military to commence a final operation. Be aware that will be consequences for the alignment of new territory."
- 
- 
- 
- 
- 
- 
-
-
-
-
-
-
-
-
-
-
-
  #### STAR WARS EQUIPMENT
  ##IMPERIAL EQUIPMENT
  # IMPERIAL INFANTRY EQUIPMENT
