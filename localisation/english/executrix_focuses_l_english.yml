@@ -89,17 +89,45 @@
   imp_colonial_deal: "Colonial Agreement"
   imp_colonial_deal_desc: "We can negotiate with the bordering colonial powers of this planet in giving us the surrounding territories. These territories will help make our borders more coherent and allow room for development."
   imp_subjugate_iran: "Subjugate Iran"
-  imp_subjugate_iran_desc: "f"
+  imp_subjugate_iran_desc: "The time has come to take the land known as Iran. It is a large country rich with resources, and it is a strategic location for us to control.""
   imp_integrate_iran: "Integrate Iran"
-  imp_integrate_iran_desc: "f"
+  imp_integrate_iran_desc: "Iran has been under our control for some time now, and it is time to fully integrate them into our empire. We can use their resources and manpower to further our goals, and they will be better off under our rule than they were before."
   imp_prepare_for_afghanistan: "Prepare For Afghanistan"
   imp_prepare_for_afghanistan_desc: "Afghanistan is a mountainous country which would be difficult to conquer with very few airports and a lack of supply infastructure. We should send a logistics team to the region to build critical supply lines and makeshift airfields to allow us to more easily conquer the region when the time comes."
   imp_subjugate_afghanistan: "Subjugate Afghanistan"
-  imp_subjugate_afghanistan_desc: "f"
+  imp_subjugate_afghanistan_desc: "Now that we have prepared the region, we can begin our assault on Afghanistan. The mountainous terrain will make this a difficult fight, but with our superior technology and air support we should be able to quickly subjugate the region."
   imp_integrate_afghanistan: "Integrate Afghanistan"
-  imp_integrate_afghanistan_desc: "f"
+  imp_integrate_afghanistan_desc: "With Afghanistan under our control, it is now time to integrate the region into our empire. With the resources and manpower of Afghanistan, we can further our goals and make the region more prosperous under our rule."
   imp_turkey_one: "Invite Turkey"
   imp_turkey_one_desc: "Inviting Turkey rather than beginning with force will be seen as a gesture of goodwill between us, making it appear as though we aren’t the aggressors. If they decline, however, we will take them by force. Goodwill only gets you so far."
+  imp_prepare_balkan_campaign: "Prepare For Balkan Campaign"
+  imp_prepare_balkan_campaign_desc: "The Balkan region is a strategic location for us to control giving us a foothold on the European continent. We should begin preparations for our campaign to take the region."
+  imp_balkan_campaign:
+  imp_balkan_campaign_desc:
+  imp_wwii_allies:
+  imp_wwii_allies_desc:
+  imp_wwii_axis:
+  imp_wwii_axis_desc:
+  imp_new_order:
+  imp_new_order_desc:
+  imp_conquest_of_europe:
+  imp_conquest_of_europe_desc:
+  imp_conquest_of_asia:
+  imp_conquest_of_asia_desc:
+  imp_conquest_of_aftrica:
+  imp_conquest_of_africa_desc:
+  imp_atlantic_naval_bases:
+  imp_atlantic_naval_bases_desc:
+  imp_conquest_of_north_america:
+  imp_conquest_of_north_america_desc:
+  imp_conquest_of_south_america:
+  imp_conquest_of_south_america_desc:
+  imp_pacific_naval_bases:
+  imp_pacific_naval_bases_desc:
+  imp_conquest_of_oceania:
+  imp_conquest_of_oceania_desc:
+  imp_empire_of_earth:
+  imp_empire_of_earth_desc:
   ### Army Branch ###
   imp_army_branch: "Lessons of the Clone Wars"
   imp_army_branch_desc: "We do not have many troops to spare and are heavily reliant on our superior technology. We've been in this situation before during the Clone Wars, when the Droids greatly outnumbered our Clone Troops. We have to adopt strategies that prioritize our Stormtroopers' lives, otherwise we'll have no men left!"
@@ -139,6 +167,3 @@
   ### Navy Branch ###
   imp_navy_branch:
   imp_navy_branch_desc:
-  ### Technology Branch ###
-  imp_restore_database:
-  imp_restore_database_desc:

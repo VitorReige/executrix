@@ -28,13 +28,13 @@ focus_tree = {
 	###Focus Path Shortcuts###
 	shortcut = {
 		name = imp_economy_shortcut
-		target = imp_logistics_review
+		target = imp_electricity
 		scroll_wheel_factor = 1.5
 	}
 	shortcut = {
 		name = imp_conquest_shortcut
-		target = imp_subjugate_iran
-		scroll_wheel_factor = 1.5
+		target = imp_prepare_for_afghanistan
+		scroll_wheel_factor = 1
 	}
 	shortcut = {
 		name = imp_army_shortcut
@@ -48,7 +48,7 @@ focus_tree = {
 	}
 	shortcut = {
 		name = imp_navy_shortcut
-		target = imp_capital_ships
+		target = imp_marines_three
 		scroll_wheel_factor = 1.5
 	}
 	shortcut = {
@@ -350,8 +350,234 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_executrix_phase_two
 		}
+		completion_reward = {
+			reduce_focus_completion_cost = {
+				focus = imp_hyper_reactor_repair
+				cost = 52
+			}
+		}
 		relative_position_id = imp_executrix_phase_two
 		x = -20
+		y = 1
+	}
+	focus = {
+		id = imp_gonk_droid_factory
+		cost = 2
+		prerequisite = {
+			focus = imp_logistics_review
+		}
+		relative_position_id = imp_logistics_review
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_passive_economic_growth
+		cost = 2	
+		prerequisite = {
+			focus = imp_gonk_droid_factory
+		}
+		mutually_exclusive = {
+			focus = imp_aggressive_economic_growth
+		}
+		relative_position_id = imp_gonk_droid_factory
+		x = -4
+		y = 1
+	}
+	focus = {
+		id = imp_citizenship_for_service
+		cost = 2
+		prerequisite = {
+			focus = imp_passive_economic_growth
+		}
+		relative_position_id = imp_passive_economic_growth
+		x = 0
+		y = 1
+	}
+		focus = {
+		id = imp_internal_developments
+		cost = 2
+		prerequisite = {
+			focus = imp_citizenship_for_service
+		}
+		relative_position_id = imp_citizenship_for_service
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_civilian_industry
+		cost = 2
+		prerequisite = {
+			focus = imp_internal_developments
+		}
+		relative_position_id = imp_internal_developments
+		x = 0
+		y = 1
+	}
+		focus = {
+		id = imp_imperial_senate
+		cost = 2
+		prerequisite = {
+			focus = imp_civilian_industry
+		}
+		mutually_exclusive = {
+			focus = imp_imperial_oligarchy
+		}
+		relative_position_id = imp_civilian_industry
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = imp_imperial_oligarchy
+		cost = 2
+		prerequisite = {
+			focus = imp_civilian_industry
+		}
+		mutually_exclusive = {
+			focus = imp_imperial_senate
+		}
+		relative_position_id = imp_civilian_industry
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = imp_imperial_capital
+		cost = 2
+		prerequisite = {
+			focus = imp_imperial_senate
+		}
+		prerequisite = {
+			focus = imp_imperial_oligarchy
+		}
+		relative_position_id = imp_imperial_senate
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = imp_aggressive_economic_growth
+		cost = 2
+		prerequisite = {
+			focus = imp_gonk_droid_factory
+		}	
+		mutually_exclusive = {
+			focus = imp_passive_economic_growth
+		}
+		relative_position_id = imp_gonk_droid_factory
+		x = 4
+		y = 1
+	}
+	focus = {
+		id = imp_landscape_terraforming
+		cost = 2
+		prerequisite = {
+			focus = imp_aggressive_economic_growth
+		}	
+		relative_position_id = imp_aggressive_economic_growth
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_imperial_warmachine
+		cost = 2
+		prerequisite = {
+			focus = imp_landscape_terraforming
+		}	
+		relative_position_id = imp_landscape_terraforming
+		x = 0
+		y = 1
+	}
+	focus ={
+		id = imp_military_industry
+		cost = 2
+		prerequisite = {
+			focus = imp_imperial_warmachine
+		}
+		relative_position_id = imp_imperial_warmachine
+		x = 0
+		y = 1
+	}
+		focus = {
+		id = imp_exploitation
+		cost = 2
+		prerequisite = {
+			focus = imp_military_industry
+		}	
+		relative_position_id = imp_military_industry
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_headquarters
+		cost = 2
+		prerequisite = {
+			focus = imp_exploitation
+		}	
+		relative_position_id = imp_exploitation
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_long_live_the_empire
+		cost = 2
+		prerequisite = {
+			focus = imp_headquarters
+			focus = imp_imperial_capital
+		}	
+		relative_position_id = imp_headquarters
+		x = -4
+		y = 1
+	}
+	focus = {
+		id = imp_infrastructure
+		cost = 2
+		prerequisite = {
+			focus = imp_passive_economic_growth
+			focus = imp_aggressive_economic_growth
+		}
+		relative_position_id = imp_passive_economic_growth
+		x = 4
+		y = 1
+	}
+	focus = {
+		id = imp_dam_euphrates
+		cost = 2
+		prerequisite = {
+			focus = imp_infrastructure
+		}
+		relative_position_id = imp_infrastructure
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = imp_civs
+		cost = 2
+		prerequisite = {
+			focus = imp_infrastructure
+		}
+		relative_position_id = imp_infrastructure
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = imp_electricity
+		cost = 2
+		prerequisite = {
+			focus = imp_civs
+		}
+		prerequisite = {
+			focus = imp_dam_euphrates
+		}
+		relative_position_id = imp_civs
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = imp_restore_database
+		cost = 2
+		prerequisite = {
+			focus = imp_electricity
+		}
+		relative_position_id = imp_electricity
+		x = 0
 		y = 1
 	}
 		###Intelligence Branch###
@@ -635,7 +861,7 @@ focus_tree = {
 		y = 2
 	}
 	focus = {
-		id = imp_reactor_repair
+		id = imp_auxiliary_reactor_repair
 		cost = 2
 		prerequisite = {
 			focus = imp_auxiliary_systems_complete
@@ -661,11 +887,62 @@ focus_tree = {
 		id = imp_phase_four
 		cost = 2
 		prerequisite = {
-			focus = imp_reactor_repair
+			focus = imp_auxiliary_reactor_repair
 		}
-		relative_position_id = imp_reactor_repair
+		relative_position_id = imp_auxiliary_reactor_repair
 		x = 0
 		y = 1		
+	}
+	focus = {
+		id = imp_hyper_reactor_repair
+		cost = 15
+		overlay = GFX_focus_fast_overlay_generic_clock
+		prerequisite = {
+			focus = imp_phase_four
+		}
+		relative_position_id = imp_phase_four
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_all_systems_operational
+		cost = 2
+		prerequisite = {
+			focus = imp_hyper_reactor_repair
+		}
+		relative_position_id = imp_hyper_reactor_repair
+		x = 0
+		y = 1
+	}
+	focus= {
+		id = imp_executrix_in_orbit
+		cost = 2
+		prerequisite = {
+			focus = imp_all_systems_operational
+		}
+		relative_position_id = imp_all_systems_operational
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_orbital_bombardment
+		cost = 2
+		prerequisite = {
+			focus = imp_executrix_in_orbit
+		}
+		relative_position_id = imp_executrix_in_orbit
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_starship_executrix
+		cost = 2
+		prerequisite = {
+			focus = imp_orbital_bombardment
+		}
+		relative_position_id = imp_orbital_bombardment
+		x = 0
+		y = 1
 	}
 	### Conquest Branch ###
 	focus = {
@@ -773,7 +1050,156 @@ focus_tree = {
 		x = 0
 		y = 2
 	}
-
+	focus = {
+		id = imp_prepare_balkan_campaign
+		cost = 2
+		prerequisite = {
+			focus = imp_turkey_one
+		}
+		relative_position_id = imp_turkey_one
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_balkan_campaign
+		cost = 2
+		prerequisite = {
+			focus = imp_prepare_balkan_campaign
+		}
+		relative_position_id = imp_prepare_balkan_campaign
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_wwii_allies
+		cost = 2
+		prerequisite = {
+			focus = imp_balkan_campaign
+		}
+		mutually_exclusive = {
+			focus = imp_wwii_axis
+		}
+		relative_position_id = imp_balkan_campaign
+		x = -1
+		y = 1
+	}
+		focus = {
+		id = imp_wwii_axis
+		cost = 2
+		prerequisite = {
+			focus = imp_balkan_campaign
+		}
+		mutually_exclusive = {
+			focus = imp_wwii_allies
+		}
+		relative_position_id = imp_balkan_campaign
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = imp_new_order
+		cost = 2
+		prerequisite = {
+			focus = imp_wwii_allies
+			focus = imp_wwii_axis
+		}
+		relative_position_id = imp_wwii_allies
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = imp_conquest_of_europe
+		cost = 2
+		prerequisite = {
+			focus = imp_new_order
+		}
+		relative_position_id = imp_new_order
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = imp_conquest_of_asia
+		cost = 2
+		prerequisite = {
+			focus = imp_new_order
+		}
+		relative_position_id = imp_new_order
+		x = 2
+		y = 1
+	}
+	focus = {
+		id = imp_conquest_of_africa
+		cost = 2
+		prerequisite = {
+			focus = imp_new_order
+		}
+		relative_position_id = imp_new_order
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_atlantic_naval_bases
+		cost = 2
+		prerequisite = {
+			focus = imp_conquest_of_europe
+		}
+		relative_position_id = imp_conquest_of_europe
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_pacific_naval_bases
+		cost = 2
+		prerequisite = {
+			focus = imp_conquest_of_asia
+		}
+		relative_position_id = imp_conquest_of_asia
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_conquest_of_north_america
+		cost = 2
+		prerequisite = {
+			focus = imp_atlantic_naval_bases
+		}
+		relative_position_id = imp_atlantic_naval_bases
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_conquest_of_south_america
+		cost = 2
+		prerequisite = {
+			focus = imp_conquest_of_north_america
+		}
+		relative_position_id = imp_conquest_of_north_america
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_conquest_oceania
+		cost = 2
+		prerequisite = {
+			focus = imp_pacific_naval_bases
+		}
+		relative_position_id = imp_pacific_naval_bases
+		x = 0
+		y = 2
+	}
+	focus = {
+		id = imp_empire_of_earth
+		cost = 2
+		prerequisite = {
+			focus = imp_conquest_of_south_america
+		}
+		prerequisite = {
+			focus = imp_conquest_oceania
+		}
+		relative_position_id = imp_conquest_of_south_america
+		x = 2
+		y = 1
+	}
 	### Vader Branch ###
 	focus = {
 		id = imp_political_path
@@ -791,8 +1217,100 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_political_path
 		}
+		mutually_exclusive = {
+			focus = imp_tarkin_branch
+		}
 		relative_position_id = imp_political_path
 		x = -1
+		y = 1
+	}
+	focus = {
+		id = imp_vader_great_purge_one
+		cost = 2
+		prerequisite = {
+			focus = imp_vader_branch
+		}	
+		relative_position_id = imp_vader_branch
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_vader_bacta_bath
+		cost = 2
+		prerequisite = {
+			focus = imp_vader_great_purge_one
+		}
+		relative_position_id = imp_vader_great_purge_one
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = imp_vader_great_purge_two
+		cost = 2
+		prerequisite = {
+			focus = imp_vader_great_purge_one
+		}	
+		available = {
+			days > 90
+		}
+		available = {
+			has_country_flag = {
+				flag = imp_vader_great_purge_one
+				days > 90
+			}
+		}
+		relative_position_id = imp_vader_great_purge_one
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_vader_suit_repair
+		cost = 2
+		prerequisite = {
+			focus = imp_vader_great_purge_two
+		}
+		relative_position_id = imp_vader_great_purge_two
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = imp_vader_darkside_cult
+		cost = 2
+		prerequisite = {
+			focus = imp_vader_great_purge_two
+		}	
+		available = {
+			has_country_flag = {
+				flag = imp_vader_great_purge_two
+				days > 90
+			}
+		}
+		relative_position_id = imp_vader_great_purge_two
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_dark_side_of_the_force
+		cost = 2
+		prerequisite = {
+			focus = imp_vader_darkside_cult
+		}
+		relative_position_id = imp_vader_darkside_cult
+		x = 0
+		y = 1
+	}
+	###Tarkin Branch###
+	focus = {
+		id = imp_tarkin_branch
+		cost = 2
+		prerequisite = {
+			focus = imp_political_path
+		}
+		mutually_exclusive = {
+			focus = imp_vader_branch
+		}
+		relative_position_id = imp_political_path
+		x = 1
 		y = 1
 	}
 	### Army Branch ###
@@ -803,7 +1321,7 @@ focus_tree = {
 			focus = imp_executrix_phase_two
 		}
 		relative_position_id = imp_executrix_phase_two
-		x = 30
+		x = 25
 		y = 1
 	}
 	focus = {
@@ -989,6 +1507,85 @@ focus_tree = {
 		x = 15
 		y = 1
 	}
+	focus = {
+		id = imp_tank_branch
+		cost = 2
+		prerequisite = {
+			focus = imp_armored_path
+		}
+		mutually_exclusive = {
+			focus = imp_walker_branch
+		}
+		relative_position_id = imp_armored_path
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = imp_study_earth_tank_doctrine
+		cost = 2
+		prerequisite = {
+			focus = imp_promote_tank_research
+		}
+		relative_position_id = imp_promote_tank_research
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_walker_branch
+		cost = 2
+		prerequisite = {
+			focus = imp_armored_path
+		}
+		mutually_exclusive = {
+			focus = imp_tank_branch
+		}
+		relative_position_id = imp_armored_path
+		x = 2
+		y = 1
+	}
+	focus = {
+		id = imp_promote_tank_research
+		cost = 2
+		prerequisite = {
+			focus = imp_tank_branch
+		}
+		relative_position_id = imp_tank_branch
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_promote_walker_research
+		cost = 2
+		prerequisite = {
+			focus = imp_walker_branch
+		}
+		relative_position_id = imp_walker_branch
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_study_walker_doctrine
+		cost = 2
+		prerequisite = {
+			focus = imp_promote_walker_research
+		}
+		relative_position_id = imp_promote_walker_research
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_mechanized_infantry
+		cost = 2
+		prerequisite = {
+			focus = imp_study_earth_tank_doctrine
+			focus = imp_study_walker_doctrine
+			focus = imp_training_camps
+			focus = imp_army_five
+		}
+		relative_position_id = imp_study_walker_doctrine
+		x = -2
+		y = 1
+	}
 	### Air Branch ###
 	focus = {
 		id = imp_air_branch
@@ -997,34 +1594,102 @@ focus_tree = {
 			focus = imp_biweekly_conference
 		}
 		relative_position_id = imp_biweekly_conference
-		x = 20
+		x = 25
 		y = 1	
 	}
 	focus = {
-		id = imp_bombers
+		id = imp_expand_plane_production
 		cost = 2
 		prerequisite = {
 			focus = imp_air_branch
 		}
 		relative_position_id = imp_air_branch
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_paratroopers_two
+		cost = 2
+		prerequisite = {
+			focus = imp_expand_plane_production
+		}
+		available = {
+			has_tech = paratroopers
+		}
+		relative_position_id = imp_expand_plane_production
+		x = -3
+		y = 1
+	}
+	focus = {
+		id = imp_study_imperial_air_doctrine
+		cost = 2
+		prerequisite = {
+			focus = imp_expand_plane_production
+		}
+		relative_position_id = imp_expand_plane_production
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_cas
+		cost = 2
+		prerequisite = {
+			focus = imp_study_imperial_air_doctrine
+		}
+		relative_position_id = imp_study_imperial_air_doctrine
 		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = imp_bombers
+		}
+	}
+	focus = {
+		id = imp_battlefield_support
+		cost = 2
+		prerequisite = {
+			focus = imp_cas
+		}
+		prerequisite = {
+			focus = imp_study_earth_tank_doctrine
+			focus = imp_study_walker_doctrine
+		}
+		relative_position_id = imp_cas
+		x = -4
+		y = 2
+	}
+	focus = {
+		id = imp_bombers
+		cost = 2
+		prerequisite = {
+			focus = imp_study_imperial_air_doctrine
+		}
+		relative_position_id = imp_study_imperial_air_doctrine
+		x = 1
 		y = 1
 		mutually_exclusive = {
 			focus = imp_cas
 		}
 	}
 	focus = {
-		id = imp_cas
+		id = imp_carrier_fighters
 		cost = 2
 		prerequisite = {
-			focus = imp_air_branch
+			focus = imp_expand_plane_production
 		}
-		relative_position_id = imp_air_branch
-		x = 1
-		y = 1
-		mutually_exclusive = {
+		relative_position_id = imp_expand_plane_production
+		x = 3
+		y = 2
+	}
+	focus = {
+		id = imp_naval_bombers
+		cost = 2
+		prerequisite = {
 			focus = imp_bombers
+			focus = imp_carrier_fighters
 		}
+		relative_position_id = imp_carrier_fighters
+		x = 0
+		y = 1
 	}
 	### Navy Branch ###
 	focus = {
@@ -1034,11 +1699,11 @@ focus_tree = {
 			focus = imp_biweekly_conference
 		}
 		relative_position_id = imp_biweekly_conference
-		x = 26
+		x = 35
 		y = 1
 	}
 	focus = {
-		id = imp_navy_two
+		id = imp_expand_dockyards
 		cost = 2
 		prerequisite = {
 			focus = imp_establish_navy
@@ -1048,50 +1713,19 @@ focus_tree = {
 		y = 1
 	}
 	focus = {
-		id = imp_flexible_navy
-		cost = 2
-		prerequisite = {
-			focus = imp_navy_two
-		}
-		mutually_exclusive = {
-			focus = imp_large_navy
-		}
-		relative_position_id = imp_navy_two
-		x = -1
-		y = 1
-	}
-	focus = {
-		id = imp_submarines
-		cost = 2
-		prerequisite = {
-			focus = imp_flexible_navy
-			focus = imp_large_navy
-		}
-		relative_position_id = imp_flexible_navy
-		x = 0
-		y = 1
-	}
-	focus = {
-		id = imp_destroyers
-		cost = 2
-		prerequisite = {
-			focus = imp_submarines
-		}
-		relative_position_id = imp_submarines
-		x = 0
-		y = 1
-	}
-	focus = {
 		id = imp_large_navy
 		cost = 2
 		prerequisite = {
-			focus = imp_navy_two
+			focus = imp_expand_dockyards
 		}
-		mutually_exclusive = {
-			focus = imp_flexible_navy
+		available = {
+			OR = {
+				NOT = { has_completed_focus = imp_convoy_warfare }
+				has_completed_focus = imp_sea_wolves
+			}
 		}
-		relative_position_id = imp_navy_two
-		x = 1
+		relative_position_id = imp_expand_dockyards
+		x = -3
 		y = 1
 	}
 	focus = {
@@ -1099,20 +1733,130 @@ focus_tree = {
 		cost = 2
 		prerequisite = {
 			focus = imp_large_navy
-			focus = imp_flexible_navy
 		}
 		relative_position_id = imp_large_navy
-		x = 0
+		x = -1
 		y = 1
 	}
 	focus = {
 		id = imp_capital_ships
 		cost = 2
 		prerequisite = {
+			focus = imp_large_navy
+		}
+		relative_position_id = imp_large_navy
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = imp_carrier_effort
+		cost = 2
+		prerequisite = {
 			focus = imp_cruisers
 		}
-		relative_position_id = imp_cruisers
+		prerequisite = {
+			focus = imp_capital_ships
+		}
+		prerequisite = {
+			focus = imp_naval_bombers
+		}
+		relative_position_id = imp_capital_ships
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = imp_imperial_fleet
+		cost = 2
+		prerequisite = {
+			focus = imp_carrier_effort
+		}
+		relative_position_id = imp_carrier_effort
 		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_marines_two
+		cost = 2
+		prerequisite = {
+			focus = imp_expand_dockyards
+		}
+		available = {
+			has_tech = marines
+		}
+		relative_position_id = imp_expand_dockyards
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_amphibious_tanks
+		cost = 2
+		prerequisite = {
+			focus = imp_marines_two
+		}
+		relative_position_id = imp_marines_two
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_marines_three
+		cost = 2
+		prerequisite = {
+			focus = imp_amphibious_tanks
+		}
+		available = {
+			has_tech = marines
+		}
+		relative_position_id = imp_amphibious_tanks
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = imp_convoy_warfare
+		cost = 2
+		prerequisite = {
+			focus = imp_expand_dockyards
+		}
+		available = {
+			OR = {
+				NOT = { has_completed_focus = imp_large_navy }
+				has_completed_focus = imp_imperial_fleet
+			}
+		}
+		relative_position_id = imp_expand_dockyards
+		x = 3
+		y = 1
+	}
+	focus = {
+		id = imp_submarines
+		cost = 2
+		prerequisite = {
+			focus = imp_convoy_warfare
+		}
+		relative_position_id = imp_convoy_warfare
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = imp_destroyers
+		cost = 2
+		prerequisite = {
+			focus = imp_convoy_warfare
+		}
+		relative_position_id = imp_convoy_warfare
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = imp_sea_wolves
+		cost = 2
+		prerequisite = {
+			focus = imp_destroyers
+		}
+		prerequisite = {
+			focus = imp_submarines
+		}
+		relative_position_id = imp_destroyers
+		x = -1
 		y = 1
 	}
 	### Technology Branch ###
