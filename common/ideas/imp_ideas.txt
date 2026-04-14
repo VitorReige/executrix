@@ -12,7 +12,7 @@ ideas = {
 				stability_factor = -0.2
 			}
 		}
-		Military Ideas###
+		###Military Ideas###
 		imp_imperial_military = {
 			picture = imperial_military
 			modifier = {
