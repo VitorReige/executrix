@@ -1,11 +1,11 @@
 ﻿l_english:
  #IMP
- darth_vader:0 "Darth Vader"
- darth_vader_alt: "Emperor Vader"
+ darth_vader_repaired: "Darth Vader"
+ darth_vader_damaged: "Vader"
  tarkin: "Grand Moff Wilhuff Tarkin"
  tk_417_General: "TK-421"
  cc_appo: "CC-1119 'Appo'"
- mod_terrik: "Mod Terrik""
+ mod_terrik: "Mod Terrik"
  
  
  #IMP MILITARY GENERALS

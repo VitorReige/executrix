@@ -303,7 +303,7 @@ focus_tree = {
 	
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = ruined_ship
+				remove_idea = imp_ruined_ship
 				add_idea = damaged_ship
 			}
 		}
@@ -351,9 +351,13 @@ focus_tree = {
 			focus = imp_executrix_phase_two
 		}
 		completion_reward = {
-			reduce_focus_completion_cost = {
-				focus = imp_hyper_reactor_repair
-				cost = 52
+			add_political_power = 100
+			656 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 		relative_position_id = imp_executrix_phase_two
@@ -365,6 +369,29 @@ focus_tree = {
 		cost = 2
 		prerequisite = {
 			focus = imp_logistics_review
+		}
+		completion_reward = {
+			656 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			656 = {
+				add_building_construction = {
+					type = industrial_infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			656 = {
+				add_building_construction = {
+					type = energy_infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		relative_position_id = imp_logistics_review
 		x = 0
@@ -522,6 +549,12 @@ focus_tree = {
 			focus = imp_headquarters
 			focus = imp_imperial_capital
 		}	
+		completion_reward = {
+			reduce_focus_completion_cost = {
+				focus = imp_hyper_reactor_repair
+				cost = 52
+			}
+		}
 		relative_position_id = imp_headquarters
 		x = -4
 		y = 1
@@ -640,6 +673,12 @@ focus_tree = {
 		cost = 2
 		prerequisite = {
 			focus = imp_executrix_phase_two
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = imp_damaged_ship
+				add_idea = imp_partial_ship
+			}
 		}
 		relative_position_id = imp_executrix_phase_two
 		x = 0
@@ -826,6 +865,12 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_integrate_afghanistan
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = imp_partial_ship
+				add_idea = imp_half_functional_ship
+			}
+		}
 		relative_position_id = imp_restore_weapon_systems
 		x = 0
 		y = 4
@@ -889,6 +934,12 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_auxiliary_reactor_repair
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = imp_half_functional_ship
+				add_idea = imp_functional_ship
+			}
+		}
 		relative_position_id = imp_auxiliary_reactor_repair
 		x = 0
 		y = 1		
@@ -919,6 +970,10 @@ focus_tree = {
 		cost = 2
 		prerequisite = {
 			focus = imp_all_systems_operational
+		}
+		completion_reward = {
+			remove_ideas = imp_functional_ship
+			add_ideas = imp_fully_repaired_ship
 		}
 		relative_position_id = imp_all_systems_operational
 		x = 0
@@ -1103,6 +1158,9 @@ focus_tree = {
 			focus = imp_wwii_allies
 			focus = imp_wwii_axis
 		}
+		prerequisite = {
+			focus = imp_phase_four
+		}
 		relative_position_id = imp_wwii_allies
 		x = 1
 		y = 1
@@ -1196,6 +1254,9 @@ focus_tree = {
 		prerequisite = {
 			focus = imp_conquest_oceania
 		}
+		prerequisite = {
+			focus = imp_starship_executrix
+		}
 		relative_position_id = imp_conquest_of_south_america
 		x = 2
 		y = 1
@@ -1268,6 +1329,16 @@ focus_tree = {
 		cost = 2
 		prerequisite = {
 			focus = imp_vader_great_purge_two
+		}
+		completion_reward = {
+			add_country_leader_role = {
+				character = darth_vader_repaired
+				promote_leader = yes
+				country_leader = {
+					ideology = imperial
+					expire = "1965.1.1"
+				}
+			}
 		}
 		relative_position_id = imp_vader_great_purge_two
 		x = -2

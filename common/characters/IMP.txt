@@ -1,18 +1,18 @@
-characters={
-	darth_vader={
-		name=darth_vader
-		portraits={
-			civilian={
+characters = {
+	darth_vader_repaired = {
+		name = darth_vader_repaired
+		portraits = {
+			civilian = {
 				large="gfx/leaders/IMP/portrait_imp_vader.dds"
 			}
-			army={
+			army = {
 				small="GFX_idea_vader"
 			}
 		}
 		country_leader={
-			ideology=imperial
-			traits={ headstrong sith_presence lord_vader }
-			expire="1965.1.1.1"
+			ideology = imperial
+			traits = { headstrong sith_presence lord_vader }
+			expire = "1965.1.1.1"
 		}
 		advisor={
 			cost = 100
@@ -27,33 +27,40 @@ characters={
 			}
 		}
 	}
-	
-	darth_vader_alt={
-		name=darth_vader_alt
-		portraits={
-			civilian={
-				large="gfx/leaders/IMP/portrait_emperor_vader.dds"
+	darth_vader_damaged = {
+		name = darth_vader_damaged
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IMP/portrait_vader_damaged.dds"
 			}
+			army = {
+				small = "GFX_idea_vader"
+			}
+		}
+		country_leader = {
+			ideology = imperial
+			expire = "1965.1.1.1"
 		}
 	}
-
 	tarkin={
-		name=tarkin
-		portraits={
-			civilian={
-				large="gfx/leaders/IMP/portrait_imp_tarkin.dds"
+		name = tarkin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IMP/portrait_imp_tarkin.dds"
 			}
-			army={
-				large="gfx/leaders/IMP/portrait_imp_tarkin.dds"
-				small="GFX_idea_tarkin_general"
+			army = {
+				large = "gfx/leaders/IMP/portrait_imp_tarkin.dds"
+				small = "GFX_idea_tarkin_general"
 			}
 		}
-		country_leader={
-			ideology=liberalism
-			traits={ imperial_connections respected_imperial imperial_doctrine }
-			expire="1965.1.1.1"
+		country_leader = {
+			ideology = liberalism
+			traits = {
+				imperial_connections respected_imperial imperial_doctrine
+			}
+			expire = "1965.1.1.1"
 		}
-		advisor={
+		advisor = {
 			slot = army_chief
 			cost = 100
 			idea_token = tarkin_general
@@ -146,7 +153,7 @@ characters={
 		name=thrawn_officer
 		portraits={
 			army={
-				large="gfx/leaders/IMP/portrait_thrawn3.dds"
+				large="gfx/leaders/IMP/portrait_thrawn.dds"
 			}
 			army={
 				small="GFX_idea_thrawn"
@@ -525,7 +532,7 @@ characters={
 		name=tiaan_jerjerrod
 		portraits={
 			army={
-				large="gfx/leaders/IMP/portrait_tiaan_jerjerrod.dds"
+				large="gfx/leaders/GER/Portrait_Germany_Heinz_Guderian.dds"
 				small="GFX_idea_tiaan_jerjerrod"
 			}
 		}

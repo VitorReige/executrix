@@ -1,7 +1,7 @@
 spriteTypes = {
 	### IMP
 	spriteType = {
-		name = "GFX_portrait_darth_vader"
+		name = "GFX_portrait_darth_vader_repaired"
 		texturefile = "gfx/leaders/IMP/portrait_imp_vader.dds"
 	}
 	
@@ -21,4 +21,9 @@ spriteTypes = {
 		texturefile = "gfx/leaders/IMP/portrait_imp_cody.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_portrait_darth_vader_damaged"
+		texturefile = "gfx/leaders/IMP/portrait_vader_damaged.dds"
+	}
+
 }

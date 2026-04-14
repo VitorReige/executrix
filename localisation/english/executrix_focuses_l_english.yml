@@ -77,10 +77,24 @@
   imp_motion_sensor_ii_desc: "Further repairs allow for us to detect enemy aircraft as they take off, allowing increased air superiority in any region we choose to occupy."
   imp_auxiliary_systems_complete: "Finish Auxiliary Systems"
   imp_auxiliary_systems_complete_desc: "The ships sensors are operating at nearly 100%, allowing us to effectively detect enemies and coordinate our defenses with field commanders being given information as soon as it’s available."
+  imp_auxiliary_reactor_repair: "Repair Auxiliary Reactors"
+  imp_auxiliary_reactor_repair_desc: "With many of the primary systems aboard the ship now repaired, we should turn our atttention to the auxiliary reactors. Repairing theses reactors will provide the Executrix with its own independent power source."
   imp_hull_repair2: "Finalize Hull Repairs"
   imp_hull_repair2_desc: "Completely resealing the hull will allow us to one day return to space, and in the meantime it allows for us to house all of our troopers inside of the ship once again, and makes us nearly invulnerable to any kind of bombing our enemies may attempt."
   imp_complement_land_1: "Walker/Tank Support"
   imp_complement_land_1_desc: "With our prefabricated garrisons there were also large numbers of ground vehicles stored in a nearby hangar. With time and effort, we could begin to clear the rubble and salvage what vehicles we can. It is likely a number of vehicles survived due to their high durability, and location of the hangar."
+  imp_phase_four: "Grounded Ship"
+  imp_phase_four_desc: "With the ship's primary systems repaired, we can now focus on repairing the more intricate systems that will allow us to get the Executrix in the Earth's orbit."
+  imp_hyper_reactor_repair: "Repairing the Hypermatter Reactor"
+  imp_hyper_reactor_repair_desc: "The hypermatter reactor is the Executrix's main power source. The reactor was heavily damaged in the crash and our reports indicate that more time will be needed to repair it due to work arounds our engineers need to make due to the lack of hypermatter on the planet."
+  imp_all_systems_operational: "All Systems Operational"
+  imp_all_systems_operational_desc: "With all of the ship's systems repaired, we can now begin preparations to get the Executrix airborne and into orbit."
+  imp_executrix_in_orbit: "Executrix In Orbit"
+  imp_executrix_in_orbit_desc: "The Executrix is go for takeoff. The Executrix will soon be a symbol of fear and power to those who would oppose us."
+  imp_orbital_bombardment: "Orbital Bombardment"
+  imp_orbital_bombardment_desc: "With the Executrix in orbit, we can now activate the ship's primary weapons and strike the surface of the planet. This will allow us to devestate our remaining enemies."
+  imp_starship_executrix: "Starship Executrix"
+  imp_starship_executrix_desc: "The Executrix is the symbol of Imperial Might on Earth."
   ###Conquest Branch ###
   imp_prepare_for_expansion: "War Plans"
   imp_prepare_for_expansion_desc: "Planning out our assaults on our neighbors will allow us greater lethality and speed in subjugating them. Using our newly repaired conference room we will swiftly plan to end the conflicts with our neighbors while mitigating casualties to our own men where possible."
@@ -102,68 +116,68 @@
   imp_turkey_one_desc: "Inviting Turkey rather than beginning with force will be seen as a gesture of goodwill between us, making it appear as though we aren’t the aggressors. If they decline, however, we will take them by force. Goodwill only gets you so far."
   imp_prepare_balkan_campaign: "Prepare For Balkan Campaign"
   imp_prepare_balkan_campaign_desc: "The Balkan region is a strategic location for us to control giving us a foothold on the European continent. We should begin preparations for our campaign to take the region."
-  imp_balkan_campaign:
-  imp_balkan_campaign_desc:
-  imp_wwii_allies:
-  imp_wwii_allies_desc:
-  imp_wwii_axis:
-  imp_wwii_axis_desc:
-  imp_new_order:
-  imp_new_order_desc:
-  imp_conquest_of_europe:
-  imp_conquest_of_europe_desc:
-  imp_conquest_of_asia:
-  imp_conquest_of_asia_desc:
-  imp_conquest_of_aftrica:
-  imp_conquest_of_africa_desc:
-  imp_atlantic_naval_bases:
-  imp_atlantic_naval_bases_desc:
-  imp_conquest_of_north_america:
-  imp_conquest_of_north_america_desc:
-  imp_conquest_of_south_america:
-  imp_conquest_of_south_america_desc:
-  imp_pacific_naval_bases:
-  imp_pacific_naval_bases_desc:
-  imp_conquest_of_oceania:
-  imp_conquest_of_oceania_desc:
-  imp_empire_of_earth:
-  imp_empire_of_earth_desc:
+  imp_balkan_campaign: "Balkan Campaign"
+  imp_balkan_campaign_desc: "The time has come to begin our operations in the Balkans. Our reports indicate that the region is heavily divided and weak, making it an easy target for us to conquer. With our superior technology and air support, we should be able to quickly subjugate the region."
+  imp_wwii_allies: "Intervention in World War II: Allies"
+  imp_wwii_allies_desc: "The greater powers of the world are currently embroiled in a global conflict, and it would be wise for us to take advantage of this situation. We can intervene on the side of the Allies and gain valuable experience and resources."
+  imp_wwii_axis: "Intervention in World War II: Axis"
+  imp_wwii_axis_desc: "The greater powers of the world are currently embroiled in a global conflict, the political structure of the nations in the Axis are more similar to our own, and it would be wise for us to take advantage of this situation. If we intervene on the side of the Axis, we may even be able to take control of more territory once the war is over."
+  imp_new_order: "The New Order"
+  imp_new_order_desc: "With the conflict known as World War II ending. We can take advantage of the weakened state of the world. The time has come to establish a new order, with us at the top. We can use our superior technology and military might to take control of the world and reshape it in our image."
+  imp_conquest_of_europe: "Conquest of Europe"
+  imp_conquest_of_europe_desc: "The time has come to begin our campaign to take control of Europe. The nations of Europe still reeling from the aftermath of World War II will be easy targets for us to conquer."
+  imp_conquest_of_asia: "Conquest of Asia"
+  imp_conquest_of_asia_desc: "According to our intelligence, the nations of Asia are in a state of disarray, with many of them still recovering from the effects of World War II. China particuarly is also in a state of civil war. We should take advantage of this situation and begin our campaign to take control of Asia."
+  imp_conquest_of_africa: "Conquest of Africa"
+  imp_conquest_of_africa_desc: "Much of Africa has been colonized by the European powers though there are still some independent nations. The time has come to begin our campaign to take control of Africa. The nations of Africa will be easy targets for us to conquer, and the resources of the continent will be valuable for our empire."
+  imp_atlantic_naval_bases: "Establish Atlantic Naval Bases"
+  imp_atlantic_naval_bases_desc: "Establishing naval bases in the Atlantic Ocean will allow us to project our power across the ocean. This will be crucial for our future campaigns to take control of the American continents."
+  imp_conquest_of_north_america: "Conquest of North America"
+  imp_conquest_of_north_america_desc: "North America is host to argueably the most powerful nation on the planet known as the United States of America. Our intelligence indicates that any conflict with them would be long and costly due to their large population and industrial capacity. With all that we have accomplished so far, we should be well prepared to face this adversary."
+  imp_conquest_of_south_america: "Conquest of South America"
+  imp_conquest_of_south_america_desc: "South America is a continent rich in resources and relatively weak militarily. The time has come to begin our campaign to take control of South America. The nations of South America will be easy targets for us to conquer, and the resources of the continent will be valuable for our empire."
+  imp_pacific_naval_bases: "Establish Pacific Naval Bases"
+  imp_pacific_naval_bases_desc: "With the establishment of naval bases in the Pacific Ocean, we can project our might further to reach the shores of the nations of the Pacific."
+  imp_conquest_oceania: "Conquest of Oceania"
+  imp_conquest_oceania_desc: "The region of Oceania is made up of many small islands as well as the larger landmasses of Australia, New Zealand, and Indonesia. This land is rich in resources and strategically located, making it a valuable addition to our empire. The time has come to begin our campaign to take control of Oceania."
+  imp_empire_of_earth: "The Empire of Earth"
+  imp_empire_of_earth_desc: "We have conquered this planet and established Imperial rule over it. Even though the Galactic Empire is gone, we now have this world to call our own and the Empire will live on through us."
   ### Army Branch ###
   imp_army_branch: "Lessons of the Clone Wars"
   imp_army_branch_desc: "We do not have many troops to spare and are heavily reliant on our superior technology. We've been in this situation before during the Clone Wars, when the Droids greatly outnumbered our Clone Troops. We have to adopt strategies that prioritize our Stormtroopers' lives, otherwise we'll have no men left!"
-  imp_logistics:
-  imp_logistics_desc:
-  imp_army_one:
-  imp_army_one_desc:
-  imp_army_two:
-  imp_army_two_desc:
-  imp_army_three:
-  imp_army_three_desc:
-  imp_army_four:
-  imp_army_four_desc:
+  imp_logistics: "Supply Lines and Logistics"
+  imp_logistics_desc: "Logistics is the backbone of any military operation, and we must ensure that our supply lines are secure and efficient. This will allow us to maintain our forces in the field and keep them well-equipped for battle."
+  imp_army_one: "Infantry Tactics"
+  imp_army_one_desc: "While Stormtroopers are more specialized than the average soldier, infantry should be used as our primary force in combat. Not only can we conscript the locals to bolster our numbers, but we can also effecively train them faster than we could train Stormtroopers."
+  imp_army_two: "Army Reforms"
+  imp_army_two_desc: "We should implement reforms to our army to improve its efficiency and effectiveness. This could include changes to our training programs, organizational structure, and tactics."
+  imp_army_three: "Enhanced Training Programs"
+  imp_army_three_desc: "We should invest in the enhancement of our training programs for our troops to improve their combat effectiveness and survivability on the battlefield."
+  imp_army_four: "Modernization of Equipment"
+  imp_army_four_desc: "We should focus our research and development on improving the weapons and equipment used by our troops."
   imp_army_five:
   imp_army_five_desc:
-  imp_army_six:
-  imp_army_six_desc:
-  imp_recruitment_drive:
-  imp_recruitment_drive_desc:
-  imp_stormtrooper_corps:
-  imp_stormtrooper_corps_desc:
-  imp_marines:
-  imp_marines_desc:
-  imp_paratroopers:
-  imp_paratroopers_desc:
-  imp_mountaineers:
-  imp_mountaineers_desc:
-  imp_rangers:
-  imp_rangers_desc:
-  imp_stormtrooper_corps_two:
-  imp_stormtrooper_corps_two_desc:
-  imp_training_camp:
-  imp_training_camp_desc:
+  imp_army_six: "Imperial Army"
+  imp_army_six_desc: "Through discipline, training, and doctrine, our forces have become the embodiment of Imperial Might. With a unified command structure and hardened soldiers, our army will stand ready to crush all opposition."
+  imp_recruitment_drive: "Recruitment Drive"
+  imp_recruitment_drive_desc: "We should bolster our manpower by recruiting the local population."
+  imp_stormtrooper_corps: "The Stormtrooper Corps"
+  imp_stormtrooper_corps_desc: "We should focus on training our Stormtroopers to be the best soldiers in the world. They are the backbone of our military, and we must ensure that they are well-trained and equipped for battle."
+  imp_marines: "Sea Troopers"
+  imp_marines_desc: "Sea Troopers are trained to operate in aquatic environments and can be deployed effectively as marines to secure coastal areas and conduct amphibious assaults."
+  imp_paratroopers: "Jet Troopers"
+  imp_paratroopers_desc: "Jet Troopers are trained to operate in the air and can be deployed from aircraft to quickly respond to threats on the ground."
+  imp_mountaineers: "Snow Troopers"
+  imp_mountaineers_desc: "Snow troopers are trained to operate in cold and mountainous environments."
+  imp_rangers: "Scout Troopers"
+  imp_rangers_desc: "Scout Troopers are trained to operate along with our primary forces in dense wooded areas such as forests and jungles."
+  imp_stormtrooper_corps_two: "Expanding the Stormtrooper Corps"
+  imp_stormtrooper_corps_two_desc: "We should focus on expanding the Stormtrooper Corps to increase our specialized forces. This will allow us to have a more versatile military that can adapt to different combat situations and environments."
+  imp_training_camps: "Training Camps"
+  imp_training_camps_desc: "Setting up training camps will allow us to train our troops faster and more efficiently."
   ### Air Branch ###
-  imp_air_branch:
-  imp_air_branch_desc:
+  imp_air_branch: "Establishing The Imperial Air Force"
+  imp_air_branch_desc: "The Empire never truely had an air force as our fighters were designed for space combat integrated in the Imperial Navy, but we will need to adapt to our situation and develop an separate branch of our military focused on air combat and support."
   ### Navy Branch ###
-  imp_navy_branch:
-  imp_navy_branch_desc:
+  imp_navy_branch: "Establishing The Imperial Navy"
+  imp_navy_branch_desc: "This planet has several continents surrounded by large bodies of water, and we will need a strong navy to control these waters and protect our shores. While in the past our navy was focused on space combat, we will need to adapt our tactics and technology to be effective in naval warfare on the oceans of this planet."
