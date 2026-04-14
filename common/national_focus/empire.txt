@@ -7,7 +7,7 @@
 ### search_filters = {FOCUS_FILTER_MANPOWER}
 ### search_filters = {FOCUS_FILTER_ANNEXATION}
 
-### Intro Path ###
+### Intro Path ####
 focus_tree = {
 	id = imp_focus
 	country = {
