@@ -532,7 +532,7 @@ characters = {
 		name=tiaan_jerjerrod
 		portraits={
 			army={
-				large="gfx/leaders/GER/portrait_tiaan_jerjerrod.dds"
+				large="gfx/leaders/IMP/portrait_tiaan_jerjerrod.dds"
 				small="GFX_idea_tiaan_jerjerrod"
 			}
 		}
