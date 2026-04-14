@@ -1,0 +1,187 @@
+ideas = {
+	country = {
+		imp_stranded = {
+			picture = stranded
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+		Military Ideas###
+		imp_imperial_military = {
+			picture = imperial_military
+			modifier = {
+				offensive_war_stability_factor = -0.05
+				planning_speed  = -0.15
+				command_power_gain = -0.05
+				imperialism_drift = 0.1
+				non_core_manpower = -0.15
+				political_power_gain = -0.35
+				required_garrison_factor = 0.05
+			}
+		}
+		imp_air_force = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				fighter_sortie_efficiency = -0.55
+				air_accidents_factor = 0.25
+				air_training_xp_gain_factor = -0.15
+				experience_gain_air_factor = -0.30
+				air_range_factor = -0.40
+			}
+		}
+		imp_navy = {
+			modifier = {
+				escort_efficiency = -0.25
+				naval_defense = -0.10
+				fleet_coordination = -0.25
+				naval_speed_factor = -0.15
+				naval_range_factor = -0.30
+			}
+		}
+		###Economy Ideas###
+		imp_no_industry = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_factory_max_efficiency_factor = -0.3
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+				production_speed_dockyard_factor = -0.3
+				production_speed_infrastructure_factor = -0.3			
+			}
+		}
+		imp_passive_industry = {
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_infrastructure_factor = -0.15
+			}
+		}
+		imp_aggresive_industry = {
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_arms_factory_factor = -0.15
+				production_speed_infrastructure_factor = -0.15
+			}
+		}
+	###Executrix Ideas###
+		imp_ruined_ship = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ruined_ship
+			modifier =	{
+				planning_speed = -0.5
+				political_power_factor = -0.5
+				industrial_capacity_factory = -0.5
+				training_time_army_factor = 0.25
+				production_speed_arms_factory_factor = -0.3
+			}
+		}
+		imp_damaged_ship = {
+			picture = damaged_ship
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				planning_speed = -0.4
+				political_power_factor = -0.4
+				industrial_capacity_factory = -0.4
+				training_time_army_factor = 0.15
+				production_speed_arms_factory_factor = -0.2
+			}
+		}
+		imp_partial_ship = {
+			picture = partial_ship
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = IMP
+			}
+			modifier = {
+				planning_speed = -0.3
+				political_power_factor = -0.3
+				industrial_capacity_factory = -0.3
+				training_time_army_factor = 0.05
+				production_speed_arms_factory_factor = -0.1
+			}
+		}
+		imp_half_functional_ship = {
+			picture = half_functional_ship
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = IMP
+			}
+			modifier = {
+				planning_speed = -0.2
+				political_power_factor = -0.2
+				industrial_capacity_factory = -0.2
+			}
+		}
+		imp_functional_ship = {
+			picture = functional_ship
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = -0.1
+				political_power_factor = -0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+		imp_fully_repaired_ship = {
+			picture = fully_repaired_ship
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				air_accidents_factor = -0.1
+				air_night_penalty = -0.1
+				decryption_factor = 0.1
+				land_reinforce_rate = 0.05
+				army_bonus_air_superiority_factor = 0.1
+				army_defence_factor = 0.05
+				recon_factor = 0.05
+				static_anti_air_damage_factor = 0.2
+				static_anti_air_hit_chance_factor = 0.35
+				army_morale_factor = 0.08
+				industry_air_damage_factor = -0.15
+				political_power_factor = 0.10
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+	}
+}
