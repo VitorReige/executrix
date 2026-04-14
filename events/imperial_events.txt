@@ -1020,9 +1020,7 @@ country_event = {
 			state = 656
 		}
 
-		add_ideas = {
-			idea = more_droid
-		}
+		add_ideas = { more_droid }
 	}
 
 	option = {
@@ -1050,9 +1048,7 @@ country_event = {
 			state = 656
 		}
 
-		add_ideas = {
-			idea = more_weapon
-		}
+		add_ideas = { more_weapon }
 	}
 }
 country_event = {

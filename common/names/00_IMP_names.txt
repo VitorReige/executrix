@@ -1,63 +1,35 @@
 ﻿
 IMP = {
 	male = {
-		names = {  
-			Sagcorb Sidhild
-			Kellbra Moumerr
-			Tyrmuh Infqui
-			Jamluc Stamark
-			Wilwar Valnotm
-			Jamijim Beemor
-			Jaremav Rantup
-			Stanstep Combig
-			Deongian Tormaws
-			Kengus Tyeirwi
-			Skydary Creajon
-			Raygia Doubgil
-			Weskevo Butilif
-			Nattrey Nuttholt
-			Greykurt Kingmell
-			Dasdor Kibhea
-			Kadsul Sarvnor
-			Jacrobe Tenpixt
-			Zacnels Reamfla
-			Marqbrya Wheahase
-			Bradabel Wilcsho
-			Lanejude Timmick
-			Phikev Besbla
-			Neilcol Devreid
-			Kelvnico Filcre
-			Samulore Pidcmat
-			Cobyaro Dodbask
-			Tremal Motbro
-			Javedext Redbwak
-			Keagchr Browelf
-		 }
+		names = {
+			Aldren Alric Anden Arden Arvik Barik Beren Corden Corin Darek 
+			Delmar Denvik Edran Eron Falrik Faren Galen Goren Hadrik Hasken 
+			Jorad Jorvik Kaelen Kelran Korrin Lethan Loran Merek Morik Nalen 
+			Norren Odran Orvik Peren Perik Quaren Ralen Renvik Sarik Soren 
+			Tarek Toren Valen Varek Varik Weyran Wystan Xalor Xeran Yevik 
+			Yorik Zalen Zorren
+		}
 	}
 	female = {
-		names = { Anne Marie }
+		names = {
+			Adra Alenra Alera Belra Bria Ceren Cyra Dena Dira Elen Elira 
+			Fara Felyn Ilra Isera Jessa Jora Kalen Kira Lirae Lyra Mera 
+			Merin Nira Nora Orelia Orla Pira Pyria Qira Rena Rynna Sira 
+			Sola Tera Teyra Vessa Vira Wera Wynra Xira Xylen Yena Ysera 
+			Zena Zira
+		}
 	}
 	surnames = {
-		Bradabel 
-		Wilcsho
-		Lanejude 
-		Timmick
-		Phikev 
-		Besbla
-		Neilcol 
-		Devreid
-		Kelvnico
-		Filcre
-		Samulore 
-		Pidcmat
-		Cobyaro 
-		Dodbask
-		Tremal
-		Motbro
-		Javedext
-		Redbwak
-		Keagchr 
-		Browelf
+		Alvex Arvane Belcor Brannor Cadris Corlen Delvar Denvor Edris 
+		Erix Falden Farlon Galdrex Gorris Halvek Helcor Jexis Jorvan 
+		Keldor Kormel Lendrix Lorcan Merrox Morval Nexor Norvik Orlax 
+		Orven Perdan Praxel Qendris Quorik Ralvek Renvor Sarnel Sarvon 
+		Tormax Torvek Ulran Ulvex Varnel Varros Wexan Wexor Xandor 
+		Xelvar Yevran Yordex Zarkel Zenvor
 	}
-	callsigns = { "Aurek" "Besh" "Cresh" "Cherek" "Dorn" "Esk" "Enth" "Onith" "Forn" "Grek" "Herf" "Isk" "Jenth" "Krill" "Krenth" "Leth" "Mern"}
+	callsigns = { 
+		"Aurek" "Besh" "Cresh" "Dorn" "Esk" "Forn" "Grek" "Herf" "Isk" 
+		"Jenth" "Krill" "Leth" "Mern" "Nern" "Osk" "Peth" "Qek" "Resh" 
+		"Senth" "Trill" "Usk" "Vev" "Wesk" "Xesh" "Yirt" "Zerek" 
+	}
 }
