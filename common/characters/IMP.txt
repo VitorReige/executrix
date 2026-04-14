@@ -153,7 +153,7 @@ characters = {
 		name=thrawn_officer
 		portraits={
 			army={
-				large="gfx/leaders/IMP/portrait_thrawn.dds"
+				large="gfx/leaders/IMP/portrait_thrawn3.dds"
 			}
 			army={
 				small="GFX_idea_thrawn"
@@ -532,7 +532,7 @@ characters = {
 		name=tiaan_jerjerrod
 		portraits={
 			army={
-				large="gfx/leaders/GER/Portrait_Germany_Heinz_Guderian.dds"
+				large="gfx/leaders/GER/portrait_tiaan_jerjerrod.dds"
 				small="GFX_idea_tiaan_jerjerrod"
 			}
 		}
