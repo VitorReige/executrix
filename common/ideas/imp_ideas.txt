@@ -5,11 +5,26 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			allowed_civil_war = {
-				always = yes
-			}
 			modifier = {
 				stability_factor = -0.2
+			}
+		}
+		imp_more_droids = {
+			allowed = {
+				always = no
+			}
+			picture = idea_droid
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		imp_more_weapons = {
+			allowed = {
+				always = no
+			}
+			picture = idea_droid
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
 			}
 		}
 		###Military Ideas###
@@ -86,7 +101,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = ruined_ship
+			picture = idea_ruined_ship
 			modifier =	{
 				planning_speed = -0.5
 				political_power_factor = -0.5
@@ -96,7 +111,7 @@ ideas = {
 			}
 		}
 		imp_damaged_ship = {
-			picture = damaged_ship
+			picture = idea_damaged_ship
 			allowed = {
 				always = no
 			}
@@ -112,7 +127,7 @@ ideas = {
 			}
 		}
 		imp_partial_ship = {
-			picture = partial_ship
+			picture = idea_partial_ship
 			allowed = {
 				always = no
 			}
@@ -128,7 +143,7 @@ ideas = {
 			}
 		}
 		imp_half_functional_ship = {
-			picture = half_functional_ship
+			picture = idea_half_functional_ship
 			allowed = {
 				always = no
 			}
@@ -142,7 +157,7 @@ ideas = {
 			}
 		}
 		imp_functional_ship = {
-			picture = functional_ship
+			picture = idea_functional_ship
 			allowed = {
 				always = no
 			}
@@ -160,7 +175,7 @@ ideas = {
 			}
 		}
 		imp_fully_repaired_ship = {
-			picture = fully_repaired_ship
+			picture = idea_fully_repaired_ship
 			allowed = {
 				always = no
 			}
