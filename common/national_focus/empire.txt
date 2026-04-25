@@ -304,7 +304,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = imp_ruined_ship
-				add_idea = damaged_ship
+				add_idea = imp_damaged_ship
 			}
 		}
 		x = 0
@@ -1304,6 +1304,16 @@ focus_tree = {
 		relative_position_id = imp_vader_great_purge_one
 		x = -2
 		y = 1
+		completion_reward = {
+			add_country_leader_role = {
+				character = darth_vader_slightly_damaged
+				promote_leader = yes
+				country_leader = {
+					ideology = imperial
+					expire = "1965.1.1"
+				}
+			}
+		}
 	}
 	focus = {
 		id = imp_vader_great_purge_two

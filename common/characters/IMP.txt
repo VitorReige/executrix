@@ -42,6 +42,21 @@ characters = {
 			expire = "1965.1.1.1"
 		}
 	}
+	darth_vader_slightly_damaged = {
+		name= darth_vader_slightly_damaged
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IMP/portrait_vader_slightly_damaged.dds"
+			}
+			army = {
+				small = "GFX_idea_vader"
+			}
+		}
+		country_leader = {
+			ideology = imperial
+			expire = "1965.1.1.1"
+		}
+	}
 	tarkin={
 		name = tarkin
 		portraits = {
