@@ -20,3 +20,18 @@ imperial_story.4.t: "Construction Zone"
 imperial_story.4.d: "We can command our droids to scavenge the area for pieces of the ship, allowing us to recycle the material for more droids. This would speed up the process in the long-run.\n\n Alternatively, we can use those materials to create more weapons and stick with the droids we have now."
 imperial_story.4.a: "More Droids"
 imperial_story.4.b: "More Weapons"
+### Vader Events ###
+imperial_vader_purge.1.t:
+imperial_vader_purge.1.d:
+imperial_vader_bacta.1.t:
+imperial_vader_bacta.1.d:
+imperial_vader_bacta.1.a:
+imperial_vader_purge.1.a:
+imperial_vader_purge.2.t:
+imperial_vader_purge.2.d:
+imperial_vader_repair.1.t:
+imperial_vader_repair.1.d:
+imperial_vader_repair.1.a:
+imperial_darkside_cult.1.t:
+imperial_darkside_cult.1.d:
+imperial_darkside_cult.1.a:

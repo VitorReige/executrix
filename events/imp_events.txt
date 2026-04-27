@@ -115,3 +115,59 @@ country_event = {
 		add_political_power = 25
 	}
 }
+### Vader Events ###
+country_event = {
+	id = imperial_vader_purge.1
+	title = imperial_vader_purge.1.t
+	desc = imperial_vader_purge.1.d
+	picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = imperial_vader_purge.1.a
+	}
+}
+country_event = {
+	id = imperial_vader_bacta.1
+	title = imperial_vader_bacta.1.t
+	desc = imperial_vader_bacta.1.d
+	picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = imperial_vader_bacta.1.a
+	}
+}
+country_event = {
+	id = imperial_vader_purge.2
+	title = imperial_vader_purge.2.t
+	desc = imperial_vader_purge.2.d
+	picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = imperial_vader_purge.2.a
+	}
+}
+country_event = {
+	id = imperial_vader_repair.1
+	title = imperial_vader_repair.1.t
+	desc = imperial_vader_repair.1.d
+	picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = imperial_vader_repair.1.a
+	}
+}
+country_event = {
+	id = imperial_darkside_cult.1
+	title = imperial_darkside_cult.1.t
+	desc = imperial_darkside_cult.1.d
+	picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = imperial_darkside_cult.1.a
+	}
+}

@@ -906,7 +906,7 @@ country_event = {
 		hidden_effect = {
 			load_oob = "IMP_deploy_troopers"
 			
-			if = { # Just so the AI isn't complete shit
+			if = { 
 				limit = { is_ai = yes }
 				load_oob = "IMP_ai_troopers"
 				add_manpower = 2000000
@@ -916,7 +916,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = imperial.1  #investigate
+	id = imperial.1
 	title = imperial.1.t
 	desc = imperial.1.d
 	picture = GFX_survey_team
