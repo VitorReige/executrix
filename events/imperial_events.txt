@@ -915,8 +915,6 @@ country_event = {
 		}
 	}
 }
-
-
 country_event = {
 	id = imperial.1  #investigate
 	title = imperial.1.t

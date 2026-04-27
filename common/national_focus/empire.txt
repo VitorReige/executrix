@@ -71,7 +71,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				id = imperial.6
+				id = imperial_story.1
 			}
 		}
 	}
@@ -87,7 +87,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward ={
 			country_event = {
-				id = imperial.0
+				id = imperial_story.2
 			}
 		}
 	}
@@ -104,7 +104,7 @@ focus_tree = {
 		relative_position_id = imp_assessing_the_situation
 		completion_reward = {
 			country_event = {
-				id = imperial.1
+				id = imperial_story.3
 			}
 		}
 	}
@@ -121,7 +121,7 @@ focus_tree = {
 		relative_position_id = imp_assessing_the_situation
 		completion_reward = {
 			country_event = {
-				id = imperial.2
+				id = imperial_story.4
 			}
 		}
 	}
