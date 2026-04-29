@@ -1126,15 +1126,37 @@ focus_tree = {
 		y = 1
 	}
 	focus = {
-		id = imp_wwii_allies
+		id = imp_wwii
 		cost = 2
 		prerequisite = {
 			focus = imp_balkan_campaign
 		}
+		available = {
+        tag = GER
+        any_of = {
+            war_with = ENG
+			war_with = FRA
+			}
+		}
+		relative_position_id = imp_balkan_campaign
+		x = 0
+		y = 1
+		completion_reward = {
+			country_event = {
+				id = wwii_choose_side.1
+			}
+		}
+	}	
+	focus = {
+		id = imp_wwii_allies
+		cost = 2
+		prerequisite = {
+			focus = imp_wwii
+		}
 		mutually_exclusive = {
 			focus = imp_wwii_axis
 		}
-		relative_position_id = imp_balkan_campaign
+		relative_position_id = imp_wwii
 		x = -1
 		y = 1
 	}
@@ -1142,12 +1164,12 @@ focus_tree = {
 		id = imp_wwii_axis
 		cost = 2
 		prerequisite = {
-			focus = imp_balkan_campaign
+			focus = imp_wwii
 		}
 		mutually_exclusive = {
 			focus = imp_wwii_allies
 		}
-		relative_position_id = imp_balkan_campaign
+		relative_position_id = imp_wwii
 		x = 1
 		y = 1
 	}

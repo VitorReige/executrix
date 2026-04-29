@@ -115,6 +115,83 @@ country_event = {
 		add_political_power = 25
 	}
 }
+### Conquest ###
+country_event = {
+	id = colonial_agreement.1
+	title = colonial_agreement.1.t
+	desc = colonial_agreement.1.d
+	picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = colonial_agreement.1.a
+		transfer_state = {
+			state = 658
+			owner = IMP
+		}
+		transfer_state = {
+			state = 1014
+			owner = IMP
+		}
+		transfer_state = {
+			state = 765
+			owner = IMP
+		}
+		transfer_state = {
+			state = 659
+			owner = IMP
+		}
+		transfer_state = {
+			state = 992
+			owner = IMP
+		}
+		transfer_state = {
+			state = 455
+			owner = IMP
+		}
+		transfer_state = {
+			state = 454
+			owner = IMP
+		}
+		transfer_state = {
+			state = 553
+			owner = IMP
+		}
+		transfer_state = {
+			state = 554
+			owner = IMP
+		}
+		transfer_state = {
+			state = 680
+			owner = IMP
+		}
+		transfer_state = {
+			state = 677
+			owner = IMP
+		}
+		transfer_state = {
+		state = 799
+		owner = IMP
+		}
+	}
+}
+country_event = {
+	id = wwii_choose_side.1
+	title = wwii_choose_side.1.t
+	desc = wwii_choose_side.1.d
+	picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = wwii_choose_side.1.a
+		complete_focus = imp_wwii_axis
+	}
+	option = {
+		name = wwii_choose_side.1.b
+		complete_focus = imp_wwii_allies
+	}
+}
+
 ### Vader Events ###
 country_event = {
 	id = imperial_vader_purge.1
