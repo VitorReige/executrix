@@ -1,6 +1,6 @@
-version="1.18.1"
+version="1.19.0"
 tags={
 	"Alternative History"
 }
 name="executrix"
-supported_version="1.18.1.0"
+supported_version="1.19.0.0"
