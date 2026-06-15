@@ -27,6 +27,23 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 			}
 		}
+		empire_sympathy = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = unification_war
+
+			modifier = {
+				imperialism_drift = 0.1
+				imperialism_acceptance = 85
+			}
+		}
 		###Military Ideas###
 		imp_imperial_military = {
 			picture = imperial_military
@@ -61,6 +78,524 @@ ideas = {
 				naval_range_factor = -0.30
 			}
 		}
+		###Warplans Ideas###
+		middle_east_bonus = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = IMP
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = PER
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = AFG
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		colonial_bonus = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = IMP
+			}
+			removal_cost = -1
+			picture = eng_guided_by_britain
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = RAJ
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = BRM
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+		}
+		balkan_bonus = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = IMP
+			}
+			removal_cost = -1
+			picture = bul_the_fate_of_the_balkans
+			targeted_modifier = {
+				tag = YUG
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = GRE
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = ALB
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = ROM
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = HUN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = BUL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		soviet_bonus = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = IMP
+			}
+			removal_cost = -1
+			picture = anti_commie_bonus
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = TAN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		asia_bonus = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = IMP
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SND
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = HBC
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SHX
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = NXM
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = GSM
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = XIC
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = XSM
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = KHM
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SIK
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SIC
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = YUN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = GXC
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = GDC
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = TIB
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SIA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = MEN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = PHI
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = MAL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		axis_bonus = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = IMP
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SLO
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+		}
+		allies_bonus = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = IMP
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = POL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = BEL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = HOL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}targeted_modifier = {
+				tag = LUX
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = DEN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}targeted_modifier = {
+				tag = NOR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		europe_bonus = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = IMP
+			}
+			removal_cost = -1	
+			targeted_modifier = {
+				tag = SPA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = POR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SWI
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = IRE
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SWE
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = FIN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		africa_bonus = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = IMP
+			}
+			removal_cost = -1	
+			targeted_modifier = {
+				tag = LIB
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = SAF
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = ETH
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+		}
+		oceania_bonus = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = IMP
+			}
+			removal_cost = -1	
+			targeted_modifier = {
+				tag = INS
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = AST
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = NZL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+		}
+		north_america_bonus = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = IMP
+			}
+			removal_cost = -1	
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = MEX
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = CUB
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = GUA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = HON
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = NIC
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = ELS
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = COS
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = PAN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = HAI
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = DOM
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+		}	
+		south_america_bonus = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = IMP
+			}
+			removal_cost = -1	
+			targeted_modifier = {
+				tag = COL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = VEN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = ECU
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = PRU
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = BOL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = BRA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = PAR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = CHL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = ARG
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
+			targeted_modifier = {
+				tag = URG
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}	
 		###Economy Ideas###
 		imp_no_industry = {
 			allowed = {
@@ -90,6 +625,20 @@ ideas = {
 				consumer_goods_factor = 0.15
 				production_speed_arms_factory_factor = -0.15
 				production_speed_infrastructure_factor = -0.15
+			}
+		}
+		concentrated_industry = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = IMP
+				tag = GAR
+			}
+			removal_cost = -1
+			picture = concentrated_industry
+			modifier = {
+				consumer_goods_factor = -0.2
 			}
 		}
 	###Executrix Ideas###

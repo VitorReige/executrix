@@ -23,7 +23,7 @@ IMP_statebuilding_decisions = {
 		original_tag = IMP
 	}
 	visible = {
-		has_completed_focus = imp_restart_conquered_industry
+		has_completed_focus = imp_gonk_droid_factory
 	}
 }
 
@@ -33,17 +33,7 @@ IMP_wargoals_decisions = {
 		original_tag = IMP
 	}
 	visible = {
-		has_completed_focus = imp_approach_the_colonial_powers
-	}
-}
-
-IMP_borderconflict_decisions = {
-	icon = usa_intervention_mandate
-	allowed = {
-		original_tag = IMP
-	}
-	visible = {
-		has_completed_focus = imp_border_conflict_decisions
+		has_completed_focus = imp_prepare_for_expansion
 	}
 }
 
@@ -70,26 +60,17 @@ IMP_turkey_puppet_decisions = {
 		original_tag = IMP
 	}
 	visible = {
-		has_completed_focus = imp_begin_establshing_a_shadow_admin
+		has_completed_focus = imp_turkey_one
 	}
 }
-IMP_turkey_core_decisions = {
+
+IMP_resource_decisions = {
 	icon = generic_propaganda
 	priority = 10
 	allowed = {
 		original_tag = IMP
 	}
 	visible = {
-		has_completed_focus = imp_begin_intergrating_turkey
-	}
-}
-IMP_turkish_resources_decisions = {
-	icon = generic_propaganda
-	priority = 10
-	allowed = {
-		original_tag = IMP
-	}
-	visible = {
-		has_completed_focus = imp_turkish_geological_surveys
+		has_completed_focus = imp_exploitation
 	}
 }

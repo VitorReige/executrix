@@ -3,4 +3,4 @@ tags={
 	"Alternative History"
 }
 name="executrix"
-supported_version="1.19.0.0"
+supported_version="1.19.0.1"

@@ -1,0 +1,971 @@
+IMP_rise_of_the_empire_decisions = {
+	imperialism_boost = {
+		available = {
+			is_ai = no
+			is_major = no
+			NOT = { has_government = imperialism }
+		}
+		visible = {
+			is_major = no
+			NOT = { has_government = imperialism }
+		}
+		cost = 50
+		days_remove = 180
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = empire_sympathy
+				days = 180
+			}
+		}
+	}
+	imperialism_convert = {
+		available = {
+			imperialism > 0.4
+		}
+		visible = {
+			NOT = { has_government = imperialism }
+		}
+		cost = 150
+		days_remove = 0
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+			set_politics = {
+				ruling_party = imperialism
+			}
+			hidden_effect = {
+				set_cosmetic_tag = ALL
+				OVERLORD = { end_puppet = ROOT }
+			}
+			IMP = {
+				set_autonomy = {
+					target = ROOT
+					autonomy_state = autonomy_supervised_state
+				} 
+				ROOT = {
+					set_rule = {
+						can_declare_war_on_same_ideology = no
+					}
+				}
+			}
+			add_ideas = empire_sympathy
+			add_research_slot = 1
+		}
+	
+	}
+	imperialism_share_research = {
+		available = {
+			is_in_faction_with = IMP
+			IMP = { is_faction_leader = yes }
+		}
+		visible = {
+			has_government = imperialism
+		}
+		cost = 30
+		fire_only_once = yes
+		days_remove = 0
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = { 
+			set_technology = {
+				#military tech
+				tech_special_forces = 1
+				republic_weapon1 = 1
+				infantry_weapons = 1
+				improved_special_forces = 1
+				survival_training = 1
+				elite_forces = 1
+				radio = 1
+				#industrial tech
+				#electronics
+				electronic_mechanical_engineering = 1
+				atomic_research = 1
+			}
+			ROOT = { set_country_flag = star_wars_tech_flag } 
+			custom_effect_tooltip = imperialism_share_research_tooltip
+		}
+	}
+}
+IMP_statebuilding_decisions = {
+	#Industry
+	focus_on_materials = {
+		available = {
+			NOT = { has_decision = focus_on_industry }
+		}
+		visible = {
+			has_full_control_of_state = 656
+		}
+		ai_will_do = {
+			base = 5
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 35
+		remove_effect = {
+			add_resource = {
+				type = oil
+				amount = 18
+				state = 291
+			}
+		}
+	}
+	focus_on_industry = {
+		available = {
+			NOT = { has_decision = focus_on_materials }
+		}
+		visible = {
+			has_full_control_of_state = 656
+		}
+		ai_will_do = {
+			base = 5
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 35
+		remove_effect = {
+			656 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	concentrated_development = {
+		available = {
+			always = yes
+		}
+		visible = {
+			has_full_control_of_state = 836
+		}
+		ai_will_do = {
+			base = 5
+		}
+		days_remove = 0
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			add_timed_idea = {
+				idea = concentrated_industry
+				days = 360
+			}
+		}
+	}
+dispersed_development = {
+		available = {
+			always = yes
+		}
+		visible = {
+			has_full_control_of_state = 656
+			has_full_control_of_state = 835
+			has_full_control_of_state = 836
+		}
+		ai_will_do = {
+			base = 5
+		}
+		days_remove = 70
+		cost = 30
+		fire_only_once = yes
+		remove_effect = {
+			656 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			835 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			836 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+IMP_wargoals_decisions = {
+	middle_east_bonus = {
+		available = {
+			OR = {
+				PER = { NOT = {is_subject_of = IMP} }
+				AFG = { NOT = {is_subject_of = IMP} }
+			}
+		}
+		visible = {
+			OR = {
+				PER = { is_neighbor_of = IMP }
+				AFG = { is_neighbor_of = IMP}
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 50
+				has_war_with = TUR
+			}
+		}
+		days_remove = 50
+		cost = 50
+		fire_only_once = yes
+		remove_effect = {
+			add_timed_idea = {
+				idea = middle_east_bonus
+				days = 720
+			}
+		}
+	}
+	intimidate_oman = {
+		available = {
+			has_army_manpower = {
+				size > 25000
+			}
+			strength_ratio = {
+				tag = OMA
+				ratio > 2
+			}
+			OR = {
+				NOT = { country_exists = SAU }
+				SAU = { is_subject_of = IMP }
+			}
+		}
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			base = 5
+		}
+		days_remove = 50
+		cost = 15
+		fire_only_once = yes
+		remove_effect = {
+			if = {
+				limit = {
+					SAU = {
+						is_subject_of = IMP
+						is_neighbor_of = OMA
+					}
+					has_country_flag = tarkin_flag
+				}
+				SAU = {
+					transfer_state = 294
+					add_state_core = 294
+				}
+				else_if = {
+					limit = {
+						has_country_flag = tarkin_flag
+					}
+					IMP = {
+						set_autonomy = {
+							target = OMA
+							autonomy_state = autonomy_integrated_puppet
+						}
+					}
+					else = { transfer_state = 294 add_state_core = 294 }
+				}
+			}
+		}
+
+	}
+	intimidate_yemen = {
+		available = {
+			has_army_manpower = {
+				size > 25000
+			}
+			strength_ratio = {
+				tag = YEM
+				ratio > 2
+			}
+			OR = {
+				NOT = { country_exists = SAU }
+				SAU = { is_subject_of = IMP }
+			}
+		}
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			base = 5
+		}
+		days_remove = 50
+		cost = 15
+		fire_only_once = yes
+		remove_effect = {
+			if = {
+				limit = {
+					SAU = {
+						is_subject_of = IMP
+						is_neighbor_of = YEM
+					}
+					has_country_flag = tarkin_flag
+				}
+				SAU = {
+						transfer_state = 293
+						add_state_core = 293
+						if = {
+							limit = { YEM = { has_full_control_of_state = 659 } }
+							transfer_state = 659
+							add_state_core = 659
+						}
+						if = {
+							limit = { YEM = { has_full_control_of_state = 992 } }
+							transfer_state = 992
+							add_state_core = 992
+						}
+					}
+				else_if = {
+					limit = {
+						has_country_flag = tarkin_flag
+					}
+					IMP = {
+						set_autonomy = {
+							target = YEM
+							autonomy_state = autonomy_integrated_puppet
+						}
+					}
+					else = {
+						transfer_state = 293
+						add_state_core = 293
+						if = {
+							limit = { YEM = { has_full_control_of_state = 659 } }
+							transfer_state = 659
+							add_state_core = 659
+						}
+						if = {
+							limit = { YEM = { has_full_control_of_state = 992 } }
+							transfer_state = 992
+							add_state_core = 992
+						}
+					}
+				}
+			}
+		}
+	}
+	anti_colonial_campaign = {
+		available = {
+			OR = {
+				FRA = { NOT = {is_subject_of = IMP} }
+				ENG = { NOT = {is_subject_of = IMP} }
+				RAJ = { NOT = {is_subject_of = IMP} }
+			}
+		}
+		visible = {
+			OR = {
+				ENG = { is_neighbor_of = IMP }
+				FRA = { is_neighbor_of = IMP}
+				RAJ = { is_neighbor_of = IMP }
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 50
+				has_war_with = TUR
+			}
+		}
+		days_remove = 50
+		cost = 50
+		fire_only_once = yes
+
+		remove_effect = {
+			add_timed_idea = {
+				idea = colonial_bonus
+				days = 720
+			}
+		}
+	}
+	intimidate_nepal = {
+available = {
+			has_army_manpower = {
+				size > 25000
+			}
+			strength_ratio = {
+				tag = NEP
+				ratio > 2
+			}
+			OR = {
+				NOT = { country_exists = RAJ }
+				RAJ = { is_subject_of = IMP }
+			}
+		}
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			base = 5
+		}
+		days_remove = 50
+		cost = 15
+		fire_only_once = yes
+		remove_effect = {
+			if = {
+				limit = {
+					RAJ = {
+						is_subject_of = IMP
+						is_neighbor_of = NEP
+					}
+					has_country_flag = tarkin_flag
+				}
+				RAJ = {
+						transfer_state = 323
+						add_state_core = 323
+					}
+				else_if = {
+					limit = {
+						has_country_flag = tarkin_flag
+					}
+					IMP = {
+						set_autonomy = {
+							target = NEP
+							autonomy_state = autonomy_integrated_puppet
+						}
+					}
+					else = {
+						transfer_state = 323
+						add_state_core = 323
+					}
+				}
+			}
+		}
+	}
+	intimidate_bhutan = {
+		available = {
+			has_army_manpower = {
+				size > 25000
+			}
+			strength_ratio = {
+				tag = BHU
+				ratio > 2
+			}
+			OR = {
+				NOT = { country_exists = RAJ }
+				RAJ = { is_subject_of = IMP }
+			}
+		}
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			base = 5
+		}
+		days_remove = 50
+		cost = 15
+		fire_only_once = yes
+		remove_effect = {
+			if = {
+				limit = {
+					RAJ = {
+						is_subject_of = IMP
+						is_neighbor_of = BHU
+					}
+					has_country_flag = tarkin_flag
+				}
+				RAJ = {
+						transfer_state = 324
+						add_state_core = 324
+					}
+				else_if = {
+					limit = {
+						has_country_flag = tarkin_flag
+					}
+					IMP = {
+						set_autonomy = {
+							target = BHU
+							autonomy_state = autonomy_integrated_puppet
+						}
+					}
+					else = {
+						transfer_state = 324
+						add_state_core = 324
+					}
+				}
+			}
+		}
+	}
+	balkan_campaign = {
+		available = {
+			OR = {
+				GRE = { is_subject = no }
+				BUL = {is_subject = no }
+				YUG = {  is_subject = no }
+				ROM = { is_subject = no }
+				HUN = { is_subject = no }
+				ALB = { is_subject = no }
+			}
+		}
+		visible = {
+			OR = {
+				GRE = { is_neighbor_of = IMP }
+				BUL = { is_neighbor_of = IMP}
+				YUG = { is_neighbor_of = IMP }
+				ROM = { is_neighbor_of = IMP }
+				HUN = { is_neighbor_of = IMP }
+				ALB = { is_neighbor_of = IMP }
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 50
+				has_war_with = TUR
+			}
+		}
+		days_remove = 50
+		cost = 50
+		fire_only_once = yes
+		remove_effect = {
+			add_timed_idea = {
+				idea = balkan_bonus
+				days = 720
+			}
+		}
+	}
+	soviet_bonus = {
+		available = {
+			OR = {
+				SOV = { NOT = {is_subject_of = IMP} }
+				TAN = { NOT = {is_subject_of = IMP} }
+				MON = { NOT = {is_subject_of = IMP} }
+			}
+		}
+		visible = {
+			OR = {
+				SOV = { is_neighbor_of = IMP }
+				TAN = { is_neighbor_of = IMP}
+				MON = { is_neighbor_of = IMP }
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 50
+				has_war_with = TUR
+			}
+		}
+		days_remove = 50
+		cost = 50
+		fire_only_once = yes
+		remove_effect = {
+			add_timed_idea = {
+				idea = soviet_bonus
+				days = 720
+			}
+		}
+	}
+	intimidate_iceland = {
+		available = {
+			has_army_manpower = {
+				size > 25000
+			}
+			strength_ratio = {
+				tag = ICE
+				ratio > 2
+			}
+			OR = {
+				NOT = { country_exists = DEN }
+				DEN = { is_subject_of = IMP }
+			}
+		}
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			base = 5
+		}
+		days_remove = 50
+		cost = 15
+		fire_only_once = yes
+		remove_effect = {
+			if = {
+				limit = {
+					DEN = {
+						is_subject_of = IMP
+						is_neighbor_of = DEN
+					}
+					has_country_flag = tarkin_flag
+				}
+				DEN = {
+						transfer_state = 100
+						add_state_core = 100
+					}
+				else_if = {
+					limit = {
+						has_country_flag = tarkin_flag
+					}
+					IMP = {
+						set_autonomy = {
+							target = ICE
+							autonomy_state = autonomy_integrated_puppet
+						}
+					}
+					else = {
+						transfer_state = 100
+						add_state_core = 100
+					}
+				}
+			}
+		}
+	}
+	asia_bonus = {
+		available = {
+			OR = {
+				CHI = { is_neighbor_of = IMP }
+				SND = { is_neighbor_of = IMP}
+				HBC = { is_neighbor_of = IMP }
+				SHX = { is_neighbor_of = IMP }
+				PRC = { is_neighbor_of = IMP }
+				NXM = { is_neighbor_of = IMP }
+				GSM = { is_neighbor_of = IMP }
+				XIC = { is_neighbor_of = IMP }
+				XSM = { is_neighbor_of = IMP }
+				KHM = { is_neighbor_of = IMP }
+				SIK = { is_neighbor_of = IMP }
+				SIC = { is_neighbor_of = IMP }
+				YUN = { is_neighbor_of = IMP }
+				GXC = { is_neighbor_of = IMP }
+				GDC = { is_neighbor_of = IMP }
+				TIB = { is_neighbor_of = IMP }
+				SIA = { is_neighbor_of = IMP }
+				MEN = { is_neighbor_of = IMP }
+				MAN = { is_neighbor_of = IMP }
+				JAP = { is_neighbor_of = IMP }
+				PHI = { is_neighbor_of = IMP }
+				MAL = { is_neighbor_of = IMP }
+			}
+		}
+		visible = {
+			OR = {
+				CHI = { is_neighbor_of = IMP }
+				SND = { is_neighbor_of = IMP}
+				HBC = { is_neighbor_of = IMP }
+				SHX = { is_neighbor_of = IMP }
+				PRC = { is_neighbor_of = IMP }
+				NXM = { is_neighbor_of = IMP }
+				GSM = { is_neighbor_of = IMP }
+				XIC = { is_neighbor_of = IMP }
+				XSM = { is_neighbor_of = IMP }
+				KHM = { is_neighbor_of = IMP }
+				SIK = { is_neighbor_of = IMP }
+				SIC = { is_neighbor_of = IMP }
+				YUN = { is_neighbor_of = IMP }
+				GXC = { is_neighbor_of = IMP }
+				GDC = { is_neighbor_of = IMP }
+				TIB = { is_neighbor_of = IMP }
+				SIA = { is_neighbor_of = IMP }
+				MEN = { is_neighbor_of = IMP }
+				MAN = { is_neighbor_of = IMP }
+				JAP = { is_neighbor_of = IMP }
+				PHI = { is_neighbor_of = IMP }
+				MAL = { is_neighbor_of = IMP }
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 50
+				has_war_with = TUR
+			}
+		}
+		days_remove = 50
+		cost = 50
+		fire_only_once = yes
+		remove_effect = {
+			add_timed_idea = {
+				idea = asia_bonus
+				days = 720
+			}
+		}
+	}
+	axis_bonus = {
+		available = {
+			OR = {
+				GER = { NOT = {is_subject_of = IMP} }
+				ITA = { NOT = {is_subject_of = IMP} }
+				SLO = { NOT = {is_subject_of = IMP} }
+			}
+		}
+		visible = {
+			OR = {
+				GER = { is_neighbor_of = IMP }
+				ITA = { is_neighbor_of = IMP }
+				SLO = { is_neighbor_of = IMP }
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 50
+				has_war_with = TUR
+			}
+		}
+		days_remove = 50
+		cost = 50
+		fire_only_once = yes
+		remove_effect = {
+			add_timed_idea = {
+				idea = axis_bonus
+				days = 720
+			}
+		}
+	}
+	allies_bonus = {
+		available = {
+			OR = {
+				ENG = { NOT = {is_subject_of = IMP} }
+				FRA = { NOT = {is_subject_of = IMP} }
+				POL = { NOT = {is_subject_of = IMP} }
+				BEL = { NOT = {is_subject_of = IMP} }
+				HOL = { NOT = {is_subject_of = IMP} }
+				LUX = { NOT = {is_subject_of = IMP} }
+				DEN = { NOT = {is_subject_of = IMP} }
+				NOR = { NOT = {is_subject_of = IMP} }
+			}
+		}
+		visible = {
+			OR = {
+				ENG = { NOT = {is_subject_of = IMP} }
+				FRA = { NOT = {is_subject_of = IMP} }
+				POL = { NOT = {is_subject_of = IMP} }
+				BEL = { NOT = {is_subject_of = IMP} }
+				HOL = { NOT = {is_subject_of = IMP} }
+				LUX = { NOT = {is_subject_of = IMP} }
+				DEN = { NOT = {is_subject_of = IMP} }
+				NOR = { NOT = {is_subject_of = IMP} }
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 50
+				has_war_with = TUR
+			}
+		}
+		days_remove = 50
+		cost = 50
+		fire_only_once = yes
+		remove_effect = {
+			add_timed_idea = {
+				idea = allies_bonus
+				days = 720
+			}
+		}
+	}
+	europe_bonus = {
+		available = {
+			OR = {
+				SPA = { NOT = {is_subject_of = IMP} }
+				POR = { NOT = {is_subject_of = IMP} }
+				SWI = { NOT = {is_subject_of = IMP} }
+				IRE = { NOT = {is_subject_of = IMP} }
+				SWE = { NOT = {is_subject_of = IMP} }
+				FIN = { NOT = {is_subject_of = IMP} }
+			}
+		}
+		visible = {
+			OR = {
+				SPA = { NOT = {is_subject_of = IMP} }
+				POR = { NOT = {is_subject_of = IMP} }
+				SWI = { NOT = {is_subject_of = IMP} }
+				IRE = { NOT = {is_subject_of = IMP} }
+				SWE = { NOT = {is_subject_of = IMP} }
+				FIN = { NOT = {is_subject_of = IMP} }
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 50
+				has_war_with = TUR
+			}
+		}
+		days_remove = 50
+		cost = 50
+		fire_only_once = yes
+		remove_effect = {
+			add_timed_idea = {
+				idea = europe_bonus
+				days = 720
+			}
+		}
+	}
+	africa_bonus = {
+		available = {
+			OR = {
+				LIB = { NOT = {is_subject_of = IMP} }
+				SAF = { NOT = {is_subject_of = IMP} }
+				ETH = { NOT = {is_subject_of = IMP} }
+			}
+		}
+		visible = {
+			OR = {
+				LIB = { NOT = {is_subject_of = IMP} }
+				SAF = { NOT = {is_subject_of = IMP} }
+				ETH = { NOT = {is_subject_of = IMP} }
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 50
+				has_war_with = TUR
+			}
+		}
+		days_remove = 50
+		cost = 50
+		fire_only_once = yes
+		remove_effect = {
+			add_timed_idea = {
+				idea = africa_bonus
+				days = 720
+			}
+		}
+	}
+	oceania_bonus = {
+		available = {
+			OR = {
+				INS = { NOT = {is_subject_of = IMP} }
+				AST = { NOT = {is_subject_of = IMP} }
+				NZL = { NOT = {is_subject_of = IMP} }
+			}
+		}
+		visible = {
+			OR = {
+				INS = { NOT = {is_subject_of = IMP} }
+				AST = { NOT = {is_subject_of = IMP} }
+				NZL = { NOT = {is_subject_of = IMP} }
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 50
+				has_war_with = TUR
+			}
+		}
+		days_remove = 50
+		cost = 50
+		fire_only_once = yes
+		remove_effect = {
+			add_timed_idea = {
+				idea = oceania_bonus
+				days = 720
+			}
+		}
+	}
+	north_america_bonus = {
+		available = {
+			OR = {
+				USA = { NOT = {is_subject_of = IMP} }
+				CAN = { NOT = {is_subject_of = IMP} }
+				MEX = { NOT = {is_subject_of = IMP} }
+				CUB = { NOT = {is_subject_of = IMP} }
+				GUA = { NOT = {is_subject_of = IMP} }
+				HON = { NOT = {is_subject_of = IMP} }
+				NIC = { NOT = {is_subject_of = IMP} }
+				ELS = { NOT = {is_subject_of = IMP} }
+				COS = { NOT = {is_subject_of = IMP} }
+				PAN = { NOT = {is_subject_of = IMP} }
+				HAI = { NOT = {is_subject_of = IMP} }
+				DOM = { NOT = {is_subject_of = IMP} }
+
+			}
+		}
+		visible = {
+			OR = {
+				USA = { NOT = {is_subject_of = IMP} }
+				CAN = { NOT = {is_subject_of = IMP} }
+				MEX = { NOT = {is_subject_of = IMP} }
+				CUB = { NOT = {is_subject_of = IMP} }
+				GUA = { NOT = {is_subject_of = IMP} }
+				HON = { NOT = {is_subject_of = IMP} }
+				NIC = { NOT = {is_subject_of = IMP} }
+				ELS = { NOT = {is_subject_of = IMP} }
+				COS = { NOT = {is_subject_of = IMP} }
+				PAN = { NOT = {is_subject_of = IMP} }
+				HAI = { NOT = {is_subject_of = IMP} }
+				DOM = { NOT = {is_subject_of = IMP} }
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 50
+				has_war_with = TUR
+			}
+		}
+		days_remove = 50
+		cost = 50
+		fire_only_once = yes
+		remove_effect = {
+			add_timed_idea = {
+				idea = north_america_bonus
+				days = 720
+			}
+		}
+	}
+	south_america_bonus = {
+		available = {
+			OR = {
+				COL = { NOT = {is_subject_of = IMP} }
+				VEN = { NOT = {is_subject_of = IMP} }
+				ECU = { NOT = {is_subject_of = IMP} }
+				PRU = { NOT = {is_subject_of = IMP} }
+				BOL = { NOT = {is_subject_of = IMP} }
+				BRA = { NOT = {is_subject_of = IMP} }
+				PAR = { NOT = {is_subject_of = IMP} }
+				CHL = { NOT = {is_subject_of = IMP} }
+				ARG = { NOT = {is_subject_of = IMP} }
+				URG = { NOT = {is_subject_of = IMP} }
+			}
+		}
+		visible = {
+			OR = {
+				COL = { NOT = {is_subject_of = IMP} }
+				VEN = { NOT = {is_subject_of = IMP} }
+				ECU = { NOT = {is_subject_of = IMP} }
+				PRU = { NOT = {is_subject_of = IMP} }
+				BOL = { NOT = {is_subject_of = IMP} }
+				BRA = { NOT = {is_subject_of = IMP} }
+				PAR = { NOT = {is_subject_of = IMP} }
+				CHL = { NOT = {is_subject_of = IMP} }
+				ARG = { NOT = {is_subject_of = IMP} }
+				URG = { NOT = {is_subject_of = IMP} }
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 50
+				has_war_with = TUR
+			}
+		}
+		days_remove = 50
+		cost = 50
+		fire_only_once = yes
+		remove_effect = {
+			add_timed_idea = {
+				idea = south_america_bonus
+				days = 720
+			}
+		}
+	}
+}
