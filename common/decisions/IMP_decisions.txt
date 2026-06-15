@@ -204,36 +204,6 @@ dispersed_development = {
 	}
 }
 IMP_wargoals_decisions = {
-	middle_east_bonus = {
-		available = {
-			OR = {
-				PER = { NOT = {is_subject_of = IMP} }
-				AFG = { NOT = {is_subject_of = IMP} }
-			}
-		}
-		visible = {
-			OR = {
-				PER = { is_neighbor_of = IMP }
-				AFG = { is_neighbor_of = IMP}
-			}
-		}
-		ai_will_do = {
-			base = 5
-			modifier = {
-				factor = 50
-				has_war_with = TUR
-			}
-		}
-		days_remove = 50
-		cost = 50
-		fire_only_once = yes
-		remove_effect = {
-			add_timed_idea = {
-				idea = middle_east_bonus
-				days = 720
-			}
-		}
-	}
 	intimidate_oman = {
 		available = {
 			has_army_manpower = {
@@ -360,41 +330,8 @@ IMP_wargoals_decisions = {
 			}
 		}
 	}
-	anti_colonial_campaign = {
-		available = {
-			OR = {
-				FRA = { NOT = {is_subject_of = IMP} }
-				ENG = { NOT = {is_subject_of = IMP} }
-				RAJ = { NOT = {is_subject_of = IMP} }
-			}
-		}
-		visible = {
-			OR = {
-				ENG = { is_neighbor_of = IMP }
-				FRA = { is_neighbor_of = IMP}
-				RAJ = { is_neighbor_of = IMP }
-			}
-		}
-		ai_will_do = {
-			base = 5
-			modifier = {
-				factor = 50
-				has_war_with = TUR
-			}
-		}
-		days_remove = 50
-		cost = 50
-		fire_only_once = yes
-
-		remove_effect = {
-			add_timed_idea = {
-				idea = colonial_bonus
-				days = 720
-			}
-		}
-	}
 	intimidate_nepal = {
-available = {
+		available = {
 			has_army_manpower = {
 				size > 25000
 			}
@@ -498,6 +435,71 @@ available = {
 						add_state_core = 324
 					}
 				}
+			}
+		}
+	}
+}
+IMP_campaign_decisions = {
+	middle_east_bonus = {
+		available = {
+			OR = {
+				PER = { NOT = {is_subject_of = IMP} }
+				AFG = { NOT = {is_subject_of = IMP} }
+			}
+		}
+		visible = {
+			OR = {
+				PER = { is_neighbor_of = IMP }
+				AFG = { is_neighbor_of = IMP}
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 50
+				has_war_with = TUR
+			}
+		}
+		days_remove = 50
+		cost = 50
+		fire_only_once = yes
+		remove_effect = {
+			add_timed_idea = {
+				idea = middle_east_bonus
+				days = 720
+			}
+		}
+	}
+	anti_colonial_campaign = {
+		available = {
+			OR = {
+				FRA = { NOT = {is_subject_of = IMP} }
+				ENG = { NOT = {is_subject_of = IMP} }
+				RAJ = { NOT = {is_subject_of = IMP} }
+			}
+		}
+		visible = {
+			OR = {
+				ENG = { is_neighbor_of = IMP }
+				FRA = { is_neighbor_of = IMP}
+				RAJ = { is_neighbor_of = IMP }
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 50
+				has_war_with = TUR
+			}
+		}
+		days_remove = 50
+		cost = 50
+		fire_only_once = yes
+
+		remove_effect = {
+			add_timed_idea = {
+				idea = colonial_bonus
+				days = 720
 			}
 		}
 	}
