@@ -115,6 +115,104 @@ country_event = {
 		add_political_power = 25
 	}
 }
+country_event = {
+	id = imperial_story.4
+	title = imperial_story.4.t
+	desc = imperial_story.4.d
+	picture = GFX_crashed_executor
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = imperial_story.4.a
+		country_event = {
+			id = imperial_story.5
+			days = 25
+		}
+	}
+}
+country_event = {
+	id = imperial_story.5
+	title = imperial_story.5.t
+	desc = imperial_story.5.d
+	picture = GFX_introduction
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = imperial_story.5.a
+		add_timed_idea = {
+			idea = hidden_truth
+			days = 210
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+		country_event = {
+			id = imperial_story.6
+			days = 3
+		}
+	}
+	option = {
+		name = imperial_story.5.b
+		add_ideas = general_announcement
+		country_event = {
+			id = imperial_story.7
+			days = 3
+		}
+	}
+}
+
+country_event = {
+	id = imperial_story.6
+	title = imperial_story.6.t
+	desc = imperial_story.6.d
+	picture = GFX_crashed_executor
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+
+	option = {
+		name = imperial_story.6.a
+		country_event = {
+			id = imperial_story.8
+			days = 10
+		}
+	}
+}
+
+country_event = {
+	id = imperial_story.7
+	title = imperial_story.7.t
+	desc = imperial_story.7.d
+	picture = GFX_crashed_executor
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+
+	option = {
+		name = imperial_story.7.a
+	}
+}
+
+country_event = {
+	id = imperial_story.8
+	title = imperial_story.8.t
+	desc = imperial_story.8.d
+	picture = GFX_crashed_executor
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = imperial_story.8.a
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+	}
+}
 ### Conquest ###
 country_event = {
 	id = colonial_agreement.1

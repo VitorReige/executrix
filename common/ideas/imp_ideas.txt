@@ -34,11 +34,8 @@ ideas = {
 			allowed_civil_war = {
 				always = no
 			}
-
 			removal_cost = -1
-
 			picture = unification_war
-
 			modifier = {
 				imperialism_drift = 0.1
 				imperialism_acceptance = 85
@@ -126,6 +123,7 @@ ideas = {
 				tag = BRM
 				attack_bonus_against = 0.1
 				defense_bonus_against = 0.1
+			}
 		}
 		balkan_bonus = {
 			allowed = {
@@ -596,6 +594,7 @@ ideas = {
 				attack_bonus_against = 0.1
 				defense_bonus_against = 0.1
 			}	
+		}
 		###Economy Ideas###
 		imp_no_industry = {
 			allowed = {
@@ -748,4 +747,4 @@ ideas = {
 			}
 		}
 	}
-}
+}	

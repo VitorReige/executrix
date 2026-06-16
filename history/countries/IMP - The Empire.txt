@@ -176,9 +176,9 @@ add_ideas = {
 	imp_recruit_law
 	imp_closed_economy
 	imp_ruined_ship
-	imp_imperial_military
 	imp_stranded
 	imp_no_industry
+	imp_imperial_military
 	imp_air_force
 	imp_navy
 }
