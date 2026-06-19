@@ -368,31 +368,10 @@ country_event = {
 		}
 	}
 }
-
 country_event = {
 	id = imperial_story.11
 	title = imperial_story.11.t
 	desc = imperial_story.11.d
-	picture = GFX_tarkin_choice
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = IMP
-		date > 1937.01.05
-		has_country_flag = tarkin_flag
-	}
-
-	option = {
-		name = imperial_story.11.a
-		add_ideas = the_plan
-	}
-}
-
-country_event = {
-	id = imperial_story.12
-	title = imperial_story.12.t
-	desc = imperial_story.12.d
 	picture = GFX_vader_choice
 
 	fire_only_once = yes
@@ -404,7 +383,7 @@ country_event = {
 	}
 
 	option = {
-		name = imperial_story.12.a
+		name = imperial_story.11.a
 		add_popularity = {
 			ideology = imperialism
 			popularity = 0.10
@@ -412,34 +391,12 @@ country_event = {
 		add_stability = 0.10
 		add_political_power = 100
 		add_war_support = 0.05
-		country_event = {
-			id = imperial_story.13
-			days = 20
-		}
 	}
 }
-
 country_event = {
-	id = imperial_story.13
-	title = imperial_story.13.t
-	desc = imperial_story.13.d
-	picture = GFX_vader_choice
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = imperial_story.13.a
-		add_ideas = the_plan
-		add_threat = 5
-	}
-
-}
-
-country_event = {
-	id = imperial_story.16
-	title = imperial_story.16.t
-	desc = imperial_story.16.d
+	id = imperial_story.12
+	title = imperial_story.12.t
+	desc = imperial_story.12.d
 	picture = GFX_AT-AT
 
 	fire_only_once = yes
@@ -458,9 +415,8 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
-		name = imperial_story.16.a
+		name = imperial_story.12.a
 		remove_ideas = {
 			the_plan
 			general_announcement
@@ -476,18 +432,15 @@ country_event = {
 		}
 	}
 }
-
 country_event = {
-	id = imperial_story.17
-	title = imperial_story.17.t
-	desc = imperial_story.17.d
+	id = imperial_story.13
+	title = imperial_story.13.t
+	desc = imperial_story.13.d
 	picture = GFX_vader_choice
 	is_triggered_only = yes
 	fire_only_once = yes
-
-
 	option = {
-		name = imperial_story.17.a
+		name = imperial_story.13.a
 		retire_country_leader = yes
 		create_country_leader = {
 			name = "Wilhuff Tarkin"
@@ -497,7 +450,6 @@ country_event = {
 			ideology = imperial
 			traits = { respected_imperial imperial_doctrine imperial_connections }
 		}
-
 		create_field_marshal = {
 			name = "Darth Vader"
 			picture = "portrait_imp_vader.dds"
@@ -514,9 +466,8 @@ country_event = {
 			logistics_skill = 3
 		}
 	}
-
 	option = {
-		name = imperial_story.17.b
+		name = imperial_story.13.b
 		create_field_marshal = {
 			name = "Wilhuff Tarkin"
 			picture = "portrait_imp_tarkin.dds"
@@ -530,129 +481,18 @@ country_event = {
 			logistics_skill = 4
 		}
 	}
-
 	option = {
-		name = imperial_story.17.c
+		name = imperial_story.13.c
 		add_ideas = imp_moff_tarkin
-	}
-
-	
-}
-
-country_event = {
-	id = imperial_story.18
-	title = imperial_story.18.t
-	desc = imperial_story.18.d
-	picture = GFX_AT-AT
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = imperial_story.18.a
-		add_ideas = imp_army_fueled
-	}
-
-	option = {
-		name = imperial_story.18.b
-		add_ideas = imp_air_fueled
-	}
-
-	option = {
-		name = imperial_story.18.c
-		add_ideas = imp_sold_fuel
-	}
-	
-}
-
-country_event = {
-	id = imperial_story.19
-	title = imperial_story.19.t
-	desc = imperial_story.19.d
-	picture = GFX_AT-AT
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = imperial_story.19.a
 	}
 }
 ##### END OF STORY EVENTS####
-
-####TURKISH EVENTS######
-country_event = {
-	id = imperial_move.1
-	title = imperial_move.1.t
-	desc = imperial_move.1.d
-	picture = GFX_AT-AT
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = imperial_move.1.a
-		ai_chance = {
-			base = 40
-			modifier = {
-				has_idea = TUR_imp_control_3
-				factor = 60
-			}
-			modifier = {
-				has_idea = TUR_imp_control_2
-				factor = 10
-			}
-
-			modifier = {
-				has_idea = TUR_imp_control_2
-				factor = 30
-			}
-		}
-		transfer_state = 352
-	}
-	option = {
-		name = imperial_move.1.b
-		ai_chance = {
-			base = 20
-			modifier = {
-				has_idea = TUR_imp_control_1
-				factor = 10
-			}
-			modifier = {
-				has_idea = TUR_imp_control_2
-				factor = 60
-			}
-		}
-		transfer_state = 352
-	}
-
-	option = {
-		name = imperial_move.1.c
-		ai_chance = {
-			base = 20
-		}
-	}
-}
-
-country_event = {
-	id = imperial_move_turkey.1
-	title = imperial_move_turkey.1.t
-	desc = imperial_move_turkey.1.d
-	picture = GFX_AT-AT
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = imperial_move_turkey.1.a
-	}
-
-}
-
 country_event = {
 	id = imperial.3
 	title = imperial.3.t
 	desc = imperial.3.d
 	picture = GFX_report_event_bose_meeting #Placeholder
-
 	is_triggered_only = yes
-    
 	option = {
 		name = imperial.3.a
 		create_field_marshal = {
@@ -668,7 +508,6 @@ country_event = {
 			logistics_skill = 4
 		}
 	}
-
 	option = {
 		name = imperial.3.b
 		retire_country_leader = yes
@@ -680,7 +519,6 @@ country_event = {
 			ideology = imperial
 			traits = { respected_imperial imperial_doctrine imperial_connections }
 		}
-
 		create_field_marshal = {
 			name = "Darth Vader"
 			picture = "portrait_imp_vader.dds"
@@ -703,16 +541,13 @@ country_event = {
 		#custom_effect_tooltip = thrawn_leader_tt
 	}
 }
-
+###Turkey ###
 country_event = {
 	id = imperial.4
 	title = imperial.4.t
 	desc = imperial.4.d
 	picture = GFX_report_event_bose_meeting
-
-
 	is_triggered_only = yes
-
 	option = {
 		name = imperial.4.a
 		ai_chance = { factor = 50 }
@@ -743,131 +578,13 @@ country_event = {
 
 	}
 }
-
-country_event = {
-	id = imperial.7
-	title = imperial.7.t
-	desc = imperial.7.d
-	picture = GFX_report_event_bose_meeting
-
-
-	is_triggered_only = yes
-
-	option = {
-		name = imperial.7.a
-		ai_chance = { factor = 60 }
-		IMP = {
-			news_event = {
-				id = imperial_response_news.3
-				days = 1
-			}
-		}
-
-		hidden_effect = {
-			if = {
-				limit = {
-					IMP = { has_country_flag = give_starwars_tech_flag }
-				}
-				ROOT = { set_country_flag = star_wars_tech_flag }
-			}
-		}
-	}
-	option = {
-		name = imperial.7.b
-		ai_chance = { factor = 40 }
-		IMP = {
-			news_event = {
-				id = imperial_response_news.4
-				days = 1
-			}
-		}
-
-	}
-}
-
-country_event = {
-	id = imperial.8
-	title = imperial.8.t
-	desc = imperial.8.d
-	picture = GFX_report_event_bose_meeting
-
-
-	is_triggered_only = yes
-
-	option = {
-		name = imperial.8.a
-		ai_chance = { factor = 60 }
-		IMP = {
-			news_event = {
-				id = imperial_response_news.5
-				days = 1
-			}
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					IMP = { has_country_flag = give_starwars_tech_flag }
-				}
-				ROOT = { set_country_flag = star_wars_tech_flag }
-			}
-		}
-	}
-	option = {
-		name = imperial.8.b
-		ai_chance = { factor = 40 }
-		IMP = {
-			news_event = {
-				id = imperial_response_news.6
-				days = 1
-			}
-		}
-
-	}
-}
-
-country_event = {
-	id = imperial.99
-	title = imperial.99.t
-	desc = imperial.99.d
-	picture = GFX_report_event_bose_meeting
-
-	hidden = yes
-
-	is_triggered_only = no
-	fire_only_once = yes
-
-	trigger = {
-		has_country_flag = instant_wargoal_flag
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	immediate = {
-		every_other_country = {
-			IMP = {
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = PREV
-				}
-			}
-		}
-	}
-
-	option = {
-		name = imperial.99.a
-	}
-}
-
+### News Events ###
 news_event = {
 	id = imperial_response_news.0
 	title = imperial_response_news.0.t
 	desc =  imperial_response_news.0.d
 	picture = GFX_news_event_generic_sign_treaty1
-
 	is_triggered_only = yes
-
 	option = {
 		name = imperial_response_news.0.a
 		IMP = {
@@ -875,16 +592,12 @@ news_event = {
 		}
 	}
 }
-
-
 news_event = {
 	id = imperial_response_news.1
 	title = imperial_response_news.1.t
 	desc = imperial_response_news.1.d
 	picture = GFX_imperial_news
-
 	is_triggered_only = yes
-
 	option = {
 		name = imperial_response_news.1.a
 		IMP = {
@@ -895,93 +608,13 @@ news_event = {
 		}
 	}
 }
-
-news_event = {
-	id = imperial_response_news.3
-	title = imperial_response_news.3.t
-	desc =  imperial_response_news.3.d
-	picture = GFX_news_event_generic_sign_treaty1
-
-	is_triggered_only = yes
-
-	option = {
-		name = imperial_response_news.0.a
-		IMP = {
-			puppet = PER
-		}
-	}
-}
-
-
-news_event = {
-	id = imperial_response_news.4
-	title = imperial_response_news.4.t
-	desc = imperial_response_news.4.d
-	picture = GFX_imperial_news
-
-	is_triggered_only = yes
-
-	option = {
-		name = imperial_response_news.1.a
-		IMP = {
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = PER
-			}
-		}
-	}
-}
-
-news_event = {
-	id = imperial_response_news.5
-	title = imperial_response_news.5.t
-	desc =  imperial_response_news.5.d
-	picture = GFX_news_event_generic_sign_treaty1
-
-	is_triggered_only = yes
-
-	option = {
-		name = imperial_response_news.0.a
-		IMP = {
-			puppet = AFG
-		}
-	}
-}
-
-
-news_event = {
-	id = imperial_response_news.6
-	title = imperial_response_news.6.t
-	desc = imperial_response_news.6.d
-	picture = GFX_imperial_news
-
-	is_triggered_only = yes
-
-	option = {
-		name = imperial_response_news.1.a
-		IMP = {
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = AFG
-			}
-		}
-	}
-}
-
-
-
-
 news_event = {
 	id = imperial_global_news.0
 	title = imperial_global_news.0.t
 	desc = imperial_global_news.0.d
-
 	picture = GFX_imperial_news
-
 	major = yes
-
 	fire_only_once = yes
-
 	trigger = {
 		IMP = {
 			has_completed_focus = imp_subjugate_iraq
@@ -990,30 +623,23 @@ news_event = {
 			country_exists = IRQ
 		}
 	}
-
 	immediate = {
 		set_country_flag = iraq_dead_flag
 	}
 	mean_time_to_happen = {
 		days = 1
 	}
-
 	option = {
 		name = imperial_global_news.0.a
 	}
 }
-
 news_event = {
 	id = imperial_global_news.1
 	title = imperial_global_news.1.t
 	desc = imperial_global_news.1.d
-
 	picture = GFX_imperial_news
-
 	major = yes
-
 	fire_only_once = yes
-
 	trigger = {
 		IMP = {
 			has_completed_focus = imp_subjugate_saudi
@@ -1022,44 +648,33 @@ news_event = {
 			country_exists = SAU
 		}
 	}
-
 	immediate = {
 		set_country_flag = saudi_dead_flag
 	}
-
 	mean_time_to_happen = {
 		days = 1
 	}
-
 	option = {
 		name = imperial_global_news.1.a
 	}
 }
-
 news_event = {
 	id = imperial_global_news.2
 	title = imperial_global_news.2.t
 	desc = imperial_global_news.2.d
-
 	picture = GFX_imperial_news
-
 	major = yes
-
 	fire_only_once = yes
-
 	immediate = {
 		set_country_flag = imp_expands_flag
 	}
-
 	trigger = {
 		has_country_flag = saudi_dead_flag
 		has_country_flag = iraq_dead_flag
 	}
-
 	mean_time_to_happen = {
 		days = 5
 	}
-
 	option = {
 		name = imperial_global_news.2.a
 		IMP = {
@@ -1086,10 +701,8 @@ news_event = { #tech Event
 	id = imperial_global_news.5
 	title = imperial_global_news.5.t
 	desc = imperial_global_news.5.d
-
 	picture = GFX_imperial_news
 	fire_only_once = yes
-
 	immediate = {
 		every_country = {
 			if = {
@@ -1103,13 +716,10 @@ news_event = { #tech Event
 			}
 		}
 	}
-
-
 	trigger = {
 		IMP = {
 			has_country_flag = give_starwars_tech_flag
 		}
-
 		any_country = {
 			OR = {
 				is_puppet_of = IMP
@@ -1117,22 +727,17 @@ news_event = { #tech Event
 			}
 		}
 	}
-
 	option = {
 		name = imperial_global_news.5.a
 	}
 }
-
 news_event = {
 	id = imperial_global_news.3
 	title = imperial_global_news.3.t
 	desc = imperial_global_news.3.d
 	picture = GFX_imperial_news
-
 	hidden = yes
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			293 = { is_controlled_by = IMP }
@@ -1143,7 +748,6 @@ news_event = {
 		}
 		659 = { is_controlled_by = YEM }
 	}
-
 	option = {
 		name = imperial_global_news.3.a
 		if = {
@@ -1156,13 +760,11 @@ news_event = {
 		}
 	}
 }
-
 news_event = { #Usurpation event
 	id = imperial_global_news.4
 	title = imperial_global_news.4.t
 	desc = imperial_global_news.4.d
 	picture = GFX_imperial_news
-
 	major = yes
 	is_triggered_only = yes
 
@@ -1170,52 +772,20 @@ news_event = { #Usurpation event
 		name = imperial_global_news.4.a
 	}
 }
-
 news_event = {
 	id = imperial_response_news.2
 	title = imperial_response_news.2.t
 	desc = imperial_response_news.2.d
 	picture = GFX_rebel_symbol
-
 	fire_only_once = yes
-
 	trigger = {
 		has_government = democratic
 	}
-
 	mean_time_to_happen = {
 		days = 1
 	}
-
 	option = {
 		name = imperial_response_news.2.a
-	}
-}
-
-# WAR CAMPAIGN EVENTS
-
-add_namespace = imp_campaign_diplo
-country_event = {
-	id = imp_campaign_diplo.1
-	title = imp_campaign_diplo.1.t
-	desc = imp_campaign_diplo.1.d
-
-	is_triggered_only = yes
-	
-	option = {
-		name = imp_campaign_diplo.1.a
-		IMP = {
-			puppet = THIS
-		}
-	}
-	option = {
-		name = imp_campaign_diplo.1.b
-		IMP = {
-			create_wargoal = {
-				type = annex_everything
-				target = THIS
-			}
-		}
 	}
 }
 #STORY EVENTS FOR ECONOMIC TREE#
@@ -1223,11 +793,8 @@ country_event = {
 	id = imperial_economicstory.1
 	title = imperial_economicstory.1.t
 	desc = imperial_economicstory.1.d
-	
-
 	is_triggered_only = yes
 	fire_only_once = yes
-
 	option = {
 		name = imperial_economicstory.1.a
 		add_timed_idea = {
@@ -1236,7 +803,6 @@ country_event = {
 		}
 		add_manpower = -20000
 	}
-	
 	option = {
 		name = imperial_economicstory.1.b
 		add_manpower = 1000
@@ -1245,18 +811,13 @@ country_event = {
 			days = 365
 		}
 	}
-	
 }
-
 country_event = {
 	id = imperial_economicstory.2
 	title = imperial_economicstory.2.t
 	desc = imperial_economicstory.2.d
-	
-
 	is_triggered_only = yes
 	fire_only_once = yes
-
 	option = {
 		name = imperial_economicstory.2.a
 		add_timed_idea = {
@@ -1266,16 +827,12 @@ country_event = {
 	}
 	
 }
-
 country_event = {
 	id = imperial_economicstory.3
 	title = imperial_economicstory.3.t
 	desc = imperial_economicstory.3.d
-	
-
 	is_triggered_only = yes
 	fire_only_once = yes
-
 	option = {
 		name = imperial_economicstory.3.a
 		add_stability = 0.03
@@ -1283,48 +840,34 @@ country_event = {
 	}
 	
 }
-
 country_event = {
 	id = imperial_economicstory.4
 	title = imperial_economicstory.4.t
 	desc = imperial_economicstory.4.d
-	
-
 	is_triggered_only = yes
 	fire_only_once = yes
-
 	option = {
 		name = imperial_economicstory.4.a
 		add_stability = 0.05
 	}
-	
 }
-
 country_event = {
 	id = imperial_economicstory.5
 	title = imperial_economicstory.5.t
 	desc = imperial_economicstory.5.d
-	
-
 	is_triggered_only = yes
 	fire_only_once = yes
-
 	option = {
 		name = imperial_economicstory.5.a
 		add_political_power = 75
 	}
-	
 }
-
 country_event = {
 	id = imperial_economicstory.6
 	title = imperial_economicstory.6.t
 	desc = imperial_economicstory.6.d
-	
-
 	is_triggered_only = yes
 	fire_only_once = yes
-
 	option = {
 		name = imperial_economicstory.6.a
 		add_popularity = {
@@ -1333,30 +876,19 @@ country_event = {
 		}
 		add_stability = 0.1
 	}
-	
 }
-
 country_event = {
 	id = imperial_economicstory.7
 	title = imperial_economicstory.7.t
 	desc = imperial_economicstory.7.d
-	
-
 	is_triggered_only = yes
 	fire_only_once = yes
-
 	option = {
 		name = imperial_economicstory.7.a
 		add_stability = 0.15
 	}
-	
 }
-
-
-### END OF REDUX EVENTS###
-
 ### Conquest Events ###
-### Conquest ###
 country_event = {
 	id = wwii_choose_side.1
 	title = wwii_choose_side.1.t
@@ -1372,5 +904,4 @@ country_event = {
 		complete_focus = imp_wwii_allies
 	}
 }
-
 #End Country Events

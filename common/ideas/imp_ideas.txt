@@ -41,6 +41,65 @@ ideas = {
 				imperialism_acceptance = 85
 			}
 		}
+		hidden_truth = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = hidden_truth
+			modifier = {
+				stability_weekly = -0.001
+			}
+
+		}
+		general_announcement = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = general_anouncement
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.1
+			}
+		}
+		imp_great_depression = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = imp_great_depression
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				army_org_factor = -0.2
+				political_power_gain = -0.35
+			}
+		}
+		the_plan = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				tag = IMP
+			}
+			removal_cost = -1
+			picture = the_plan
+			modifier = {
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				non_core_manpower = -0.35
+			}
+
+		}
 		###Military Ideas###
 		imp_imperial_military = {
 			picture = imperial_military
