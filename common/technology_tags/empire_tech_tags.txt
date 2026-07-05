@@ -1,0 +1,89 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new technology, make sure they are uniquely named.
+
+technology_categories = {
+	imperial_tech
+	imperial_vehicles_tech
+	imperial_transport_tech
+	imperial_starfighter_tech
+	imperial_interceptor_tech
+	imperial_bomber_tech
+	imperial_defender_tech
+	imperial_mobile_anti_tank
+	imperial_mobile_anti_air
+	imperial_mobile_artillery
+	imperial_motor_tech
+	imperial_land_vehicle_tech
+	imperial_aircraft_tech
+	imperial_speeder_tech
+	imperial_light_tech
+	imperial_assault_tech
+	imperial_heavy_tech
+	imperial_weapons_tech
+	imperial_support
+	imperial_naval_tech
+	cl_tech
+}
+
+technology_folders = {
+	imperial_folder = {
+		available = {
+			always = no
+		}
+		ledger = army
+	}
+	swsupport_folder = {
+		available = {
+			has_country_flag = star_wars_tech_flag
+			NOT = { has_country_flag = tech_toggle_imp}
+		}
+		ledger = army
+	}
+	swarmour_folder = {
+		available = {
+			has_country_flag = star_wars_tech_flag
+			NOT = { has_country_flag = tech_toggle_imp}
+		}
+		ledger = army
+	}
+	swartillery_folder = {
+		available = {
+			has_country_flag = star_wars_tech_flag
+			NOT = { has_country_flag = tech_toggle_imp}
+		}
+		ledger = army
+	}
+	swair_folder = {
+		available = {
+			has_country_flag = star_wars_tech_flag
+			NOT = { has_country_flag = tech_toggle_imp}
+		}
+		ledger = air
+	}
+	swinfantry_folder = {
+		available = {
+			has_country_flag = star_wars_tech_flag
+			NOT = { has_country_flag = tech_toggle_imp}
+		}
+		ledger = army
+	}
+	# TEMPORARILY DISABLED — naval designer/icon bugs being tackled first.
+	# To re-enable: restore the commented `available` block below and remove `always = no`.
+	swnaval_folder = {
+		available = {
+			always = no
+			# has_country_flag = star_wars_tech_flag
+			# NOT = { has_country_flag = tech_toggle_imp}
+		}
+		ledger = navy
+	}
+	swnaval_support_folder = {
+		available = {
+			always = no
+			# has_country_flag = star_wars_tech_flag
+			# NOT = { has_country_flag = tech_toggle_imp}
+		}
+		ledger = navy
+	}
+	#secret_weapons_folder
+}

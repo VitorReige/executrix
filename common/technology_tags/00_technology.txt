@@ -21,6 +21,7 @@ technology_categories = {
 	nuclear
 	industry
 	electronics
+	cat_fortification
 	land_doctrine
 	air_doctrine
 	naval_doctrine
@@ -38,7 +39,6 @@ technology_categories = {
 	cas_bomber
 	ship_modules_tech
 	dd_tech
-	cl_tech
 	ca_tech
 	cv_tech
 	bc_tech
@@ -62,6 +62,8 @@ technology_categories = {
 	cat_superior_firepower
 	cat_grand_battle_plan
 	cat_mass_assault
+	cat_deep_battle
+	cat_mass_mobilization
 	cat_base_strike
 	cat_trade_interdiction
 	cat_fleet_in_being
@@ -76,6 +78,7 @@ technology_categories = {
 	engineers_tech
 	recon_tech
 	mountaineers_tech
+	rangers_tech_cat
 	military_police_tech
 	hospital_tech
 	logistics_tech
@@ -108,7 +111,14 @@ technology_categories = {
 	cat_mountaineers_doctrine
 	cat_marines_doctrine
 	cat_paratroopers_doctrine
+	cat_rangers_doctrine
+	naval_armor
+	naval_artillery
+	helicopter_tech
+	pykrete_tech
+	transport_planes_cat
 
+	mio_cat_tech_all_armor_and_modules #Includes modules and chassis (DOES NOT INCLUDE ARMORED CARS)
 	mio_cat_tech_light_armor_and_modules #Includes modules and stand-alone Amphibious Chassis
 	mio_cat_tech_medium_armor_and_modules #Includes modules and Modern Tank
 	mio_cat_tech_heavy_armor_and_modules #Includes modules and Super-Heavy Tank
@@ -125,153 +135,80 @@ technology_categories = {
 	mio_cat_tech_all_carrier_and_modules #Includes CV and all related modules
 	mio_cat_tech_all_cruiser_and_modules #Includes all CA (+ Coastal etc.), CL (Torpedo Cruiser) and all related modules
 	mio_cat_tech_all_destroyer_and_modules #Includes all DD and all related modules
+	mio_cat_tech_all_motorized_mechanized #Includes all Motorized (incl. Motorized Rocket Artillery) and Mechanized Equipment. (DOES NOT INCLUDE ARMORED CARS)
+	mio_cat_artillery #Includes Artillery only (no AT, AA or Rocketry)
 }
 
 technology_folders = {
+	# === MOD EDIT: each vanilla folder gated by NOT star_wars_tech_flag ===
+	# IMP (any country with star_wars_tech_flag) sees only Empire folders
+	# from empire_tech_tags.txt; vanilla folders hide. Inverse: vanilla
+	# countries see only vanilla folders. Minimal vanilla-clone needed to
+	# gate folders (documented approach per HoI4 wiki Technology_modding:
+	# `available` is a trigger block that controls folder visibility).
 	infantry_folder = {
 		ledger = army
-		available = {
-			NOT = {
-				original_tag = IMP
-				has_country_flag = starwarstech_unlock
-			}
-		}
-	}
-	starwars_folder = {
-		ledger = civilian
-		available = {
-			has_country_flag = starwarstech_unlock
-			original_tag = IMP
-		}
+		available = { NOT = { has_country_flag = star_wars_tech_flag } }
 	}
 	support_folder = {
 		ledger = army
-		available = {
-			NOT = { original_tag = IMP }
-			NOT = { has_country_flag = starwarstech_unlock }
-		}
+		available = { NOT = { has_country_flag = star_wars_tech_flag } }
 	}
 	armour_folder = {
 		ledger = army
 		available = {
-			NOT = {
-				has_dlc = "No Step Back"
-			}
+			NOT = { has_dlc = "No Step Back" }
+			NOT = { has_country_flag = star_wars_tech_flag }
 		}
 	}
 	nsb_armour_folder = {
 		ledger = army
 		available = {
 			has_dlc = "No Step Back"
-			NOT = { original_tag = IMP }
-			NOT = { has_country_flag = starwarstech_unlock }
+			NOT = { has_country_flag = star_wars_tech_flag }
 		}
 	}
 	artillery_folder = {
 		ledger = army
-		available = {
-			NOT = { original_tag = IMP }
-			NOT = { has_country_flag = starwarstech_unlock }
-		}
+		available = { NOT = { has_country_flag = star_wars_tech_flag } }
 	}
 	air_techs_folder = {
-		available = { NOT = { has_dlc = "By Blood Alone" } }
 		ledger = air
+		available = {
+			NOT = { has_dlc = "By Blood Alone" }
+			NOT = { has_country_flag = star_wars_tech_flag }
+		}
 	}
 	bba_air_techs_folder = {
+		ledger = air
 		available = {
 			has_dlc = "By Blood Alone"
-			NOT = { original_tag = IMP }
-			NOT = { has_country_flag = starwarstech_unlock }
+			NOT = { has_country_flag = star_wars_tech_flag }
 		}
-		ledger = air
 	}
+	# Naval, industry, and electronics are intentionally NOT gated by
+	# star_wars_tech_flag: IMP needs ships (Earth-based amphibious warfare),
+	# vanilla production tech (no Imperial production folder), and the
+	# electronics path that contains nuclear reactor / atomic_research
+	# which IMP already starts with from its country file.
+	# Naval will be reworked later to better fit Imperial flavor.
 	naval_folder = {
+		ledger = navy
 		available = {
 			not = { has_dlc = "Man the Guns" }
 		}
-		ledger = navy
 	}
 	mtgnavalfolder = {
+		ledger = navy
 		available = {
 			has_dlc = "Man the Guns"
-			NOT = { original_tag = IMP }
-			NOT = { has_country_flag = starwarstech_unlock }
 		}
-		ledger = navy
 	}
-
-	imp_naval_folder = {
-		available = {
-			has_dlc = "Man the Guns"
-
-			OR = {
-				original_tag = IMP
-				has_country_flag = starwarstech_unlock
-			}
-		}
-		ledger = navy
-	}
-
-	imp_naval_modules_folder = {
-		available = {
-			has_dlc = "Man the Guns"
-
-			OR = {
-				original_tag = IMP
-				has_country_flag = starwarstech_unlock
-			}
-		}
-		ledger = navy
-	}
-
-	imp_infantry_folder = {
-		available = {
-			original_tag = IMP
-			has_country_flag = starwarstech_unlock
-		}
-		ledger = army
-	}
-
-	imp_arty_folder = {
-		available = {
-			original_tag = IMP
-			has_country_flag = starwarstech_unlock
-		}
-		ledger = army
-	}
-
-	imp_armour_folder = {
-		available = {
-			original_tag = IMP
-			has_country_flag = starwarstech_unlock
-		}
-		ledger = army
-	}
-
-	imp_support_folder = {
-		available = {
-			original_tag = IMP
-			has_country_flag = starwarstech_unlock
-		}
-		ledger = army
-	}
-
-	imp_air_folder = {
-		available = {
-			original_tag = IMP
-			has_country_flag = starwarstech_unlock
-		}
-		ledger = air
-	}
-
 	mtgnavalsupportfolder = {
+		ledger = navy
 		available = {
 			has_dlc = "Man the Guns"
-			NOT = { original_tag = IMP }
-			NOT = { has_country_flag = starwarstech_unlock }
 		}
-		ledger = navy
 	}
 	industry_folder = {
 		ledger = civilian
@@ -279,26 +216,32 @@ technology_folders = {
 	land_doctrine_folder = {
 		ledger = army
 		doctrine = yes
+		available = { NOT = { has_country_flag = star_wars_tech_flag } }
 	}
 	naval_doctrine_folder = {
 		ledger = navy
 		doctrine = yes
+		available = { NOT = { has_country_flag = star_wars_tech_flag } }
 	}
 	air_doctrine_folder = {
 		ledger = air
 		doctrine = yes
+		available = { NOT = { has_country_flag = star_wars_tech_flag } }
 	}
 	special_forces_doctrine_folder = {
-		available = {
-			has_dlc = "Arms Against Tyranny"
-		}
 		ledger = hidden #For now
 		doctrine = yes
+		available = {
+			OR = {
+				has_dlc = "Arms Against Tyranny"
+				has_dlc = "No Compromise, No Surrender"
+			}
+			NOT = { has_country_flag = star_wars_tech_flag }
+		}
 	}
 	electronics_folder = {
 		ledger = civilian
 	}
-	#secret_weapons_folder
 }
 
  
